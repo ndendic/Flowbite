@@ -18,7 +18,7 @@ yarn-error.log
 .yarn-integrity
 package-lock.json
 yarn.lock
-
+*dashboard/*
 # Build outputs
 .cache/
 .next/

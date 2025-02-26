@@ -1,7 +1,5 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from starlette.middleware import Middleware
-from starlette.middleware.sessions import SessionMiddleware
 from components.buttons import Buttons
 from components.navbar import Navbar
 
@@ -46,8 +44,9 @@ def site_page(title, content):
         Body(
             Navbar(),
             Main(
-                cls="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 format lg:format-lg dark:format-invert"  # dark:bg-gray-900 dark:text-white
+                cls="max-w-7xl mx-auto px-4 mt-12 sm:px-6 lg:px-8 py-12 format lg:format-lg dark:format-invert"  # dark:bg-gray-900 dark:text-white
             )(
+                
                 Div(cls="grid grid-cols-1 md:grid-cols-3 gap-8")(
                     content,
                     cls="min-h-screen",
