@@ -18,7 +18,7 @@ yarn-error.log
 .yarn-integrity
 package-lock.json
 yarn.lock
-*dashboard/*
+
 # Build outputs
 .cache/
 .next/
@@ -32,3 +32,7 @@ yarn.lock
 
 # Zone.Identifier files
 *Zone.Identifier
+
+# html files
+dashboard/
+landing-pages/

@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from components.buttons import Buttons
-from components.navbar import Navbar
+from components.elements.buttons import ButtonGroup
+from components.navigation.navbar import Navbar
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -61,7 +61,7 @@ content = Div(
         "Hello, Flowbite!",
         # cls="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white",
     ),
-    Buttons(),
+    ButtonGroup(),
     Div(cls="relative max-w-sm")(
         Div(
             cls="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
