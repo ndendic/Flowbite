@@ -253,13 +253,16 @@ typography = Div(
         """
     ),
     Br(),
-    # TODO: Add data list
-    H3("Data"),
-    Summary("SSS",Data(
+    # TODO: Add to list data list
+    H3("Summary"),
+    Summary("SSS"),
+    Br(),
+    H3("Details"),
+    Details(Summary("Summary of details"),
         """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
-    )),
+        """,cls="cursor-pointer"
+    ),
     Br(),
     H3("Dl"),
     Dl(
@@ -274,6 +277,14 @@ typography = Div(
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         """
     ),
+    Br(),
+    H3("Meter"),
+    Meter(
+        """
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        """"",value=50,min=0,max=100
+    ),
+
     
     # Div(cls="relative max-w-sm")(
     #     Div(
