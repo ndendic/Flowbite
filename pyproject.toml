@@ -1,11 +1,35 @@
 [project]
 name = "flowbite"
-version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "Nikola Dendic", email = "ndendic@gmail.com" }
+]
 requires-python = ">=3.12"
+license = { text = "Apache Software License 2.0" }
+
+dynamic = [
+    "keywords",
+    "classifiers",
+    "entry-points",
+    "optional-dependencies",
+    "version",
+]
+
 dependencies = [
     "fastwand>=0.1.31",
     "monsterui>=1.0.10",
     "python-fasthtml>=0.12.1",
+]
+
+[tool.uv.sources]
+fasthtml = { workspace = true }
+
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "nbdev>=2.3.35",
 ]

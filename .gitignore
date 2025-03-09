@@ -36,3 +36,4 @@ yarn.lock
 # html files
 dashboard/
 landing-pages/
+flowbite*
