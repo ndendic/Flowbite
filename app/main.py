@@ -1,9 +1,8 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from components.navigation.navbar import Navbar
 from fh_flowbite.components import *
 from fh_flowbite.core import *
-
+from navigation import Sidebar, Main, Navbar
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
@@ -22,6 +21,51 @@ flowbite_hdrs = (
 
 flowbite_ftrs = [
     Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"),
+    Script("""
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to elements
+        const drawerButton = document.querySelector('[data-drawer-target="logo-sidebar"]');
+        const sidebar = document.getElementById('logo-sidebar');
+        const mainContent = document.querySelector('.p-4:not(.mt-14)');
+        
+        // Function to toggle main content margin
+        function toggleMainMargin() {
+            // Check if sidebar is visible (doesn't have -translate-x-full class)
+            if (!sidebar.classList.contains('-translate-x-full')) {
+                // Sidebar is visible, add margin to main content
+                mainContent.classList.add('ml-64');
+            } else {
+                // Sidebar is hidden, remove margin from main content
+                mainContent.classList.remove('ml-64');
+            }
+        }
+        
+        // Initial check
+        toggleMainMargin();
+        
+        // Listen for sidebar visibility changes
+        if (drawerButton) {
+            drawerButton.addEventListener('click', function() {
+                // Wait for the drawer animation to complete
+                setTimeout(toggleMainMargin, 300);
+            });
+        }
+        
+        // Create a MutationObserver to watch for class changes on the sidebar
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'class') {
+                    toggleMainMargin();
+                }
+            });
+        });
+        
+        // Start observing the sidebar for class changes
+        if (sidebar) {
+            observer.observe(sidebar, { attributes: true });
+        }
+    });
+    """)
 ]
 
 app, rt = fast_app(
@@ -38,24 +82,28 @@ app, rt = fast_app(
     # exception_handlers={404: custom_404_handler},
 )
 
+def is_htmx(request=None):
+    "Check if the request is an HTMX request"
+    return request and "hx-request" in request.headers
 
 def site_page(title, content):
     return (
         Title(title),
         Body(
             Navbar(),
-            Main(
-                # cls="max-w-7xl mx-auto px-4 mt-12 sm:px-6 lg:px-8 py-12"  # dark:bg-gray-900 dark:text-white
-                cls="max-w-7xl mx-auto px-4 mt-12 sm:px-6 lg:px-8 py-12 lg:format-lg format dark:format-invert"  # dark:bg-gray-900 dark:text-white
-            )(
-                
-                Div(cls="grid grid-cols-1 md:grid-cols-3 gap-8")(
-                    content,
-                    cls="min-h-screen",
-                ),
-            ),
+            Sidebar(),
+            Main(content),
         ),
     )
+def page_template(title):
+    def decorator(func):
+        def wrapper(request, *args, **kwargs):
+            content = func(request)
+            if is_htmx(request):
+                return content
+            return site_page(title, content)
+        return wrapper
+    return decorator
 
 typography = Div(
     H1("Typography", cls=TextT.center),
@@ -336,28 +384,25 @@ def ButtonGroup():
 buttons = Div(
     H1("Buttons"),
     ButtonGroup(),
-    
-    # Button("Button", cls=ButtonT.primary),
-    # Button("Button", cls=ButtonT.secondary),
-    # Button("Button", cls=ButtonT.success),
 )
 
 @rt("/")
+@page_template("Home")
 def home(req):
-    return site_page("Flowbite CSS", 
-    Ul(
+    return Ul(
         Li(A("Typography", href="/typography")), 
         Li(A("Buttons", href="/buttons"))
     )
-    )
 
 @rt("/typography")
+@page_template("Typography")
 def get(req):
-    return site_page("Typography", typography)
+    return typography
 
 @rt("/buttons")
+@page_template("Buttons")
 def get(req):
-    return site_page("Buttons", buttons)
+    return buttons
 
 
 if __name__ == "__main__":
