@@ -74,7 +74,7 @@ typography = Div(
     H2("Text alignment", ),
     P("Text alignment left", cls=TextT.left),
     P("Text alignment right", cls=TextT.right),
-    P("Text alignment center", ),
+    P("Text alignment center", cls=TextT.center),
     P("Text alignment justify", cls=TextT.justify),
     P("Text alignment start", cls=TextT.start),
     P("Text alignment end", cls=TextT.end),

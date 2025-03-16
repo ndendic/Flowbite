@@ -3,7 +3,7 @@ from fasthtml.svg import *
 from fh_flowbite.components import *
 from fh_flowbite.core import *
 from navigation import Sidebar, Main, Navbar
-from typography import typography
+from pages.typography import typography
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -111,37 +111,35 @@ def page_template(title):
 def ButtonGroup():
     """Example of different button styles"""
     return Div(
-        H2("Button Colors", cls=TextT.center),
+        H2("Button Types"),
         Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Default", cls=ButtonColor.default),
-            Button("Alternative", cls=ButtonColor.alternative),
-            Button("Dark", cls=ButtonColor.dark),
-            Button("Light", cls=ButtonColor.light),
-            Button("Green", cls=ButtonColor.green),
-            Button("Red", cls=ButtonColor.red),
-            Button("Yellow", cls=ButtonColor.yellow),
-            Button("Purple", cls=ButtonColor.purple),
+            Button("Primary", cls=ButtonT.primary),
+            Button("Secondary", cls=ButtonT.secondary),
+            Button("Ghost", cls=ButtonT.ghost),
+            Button("Link", cls=ButtonT.link),
+            Button("Success", cls=ButtonT.success),
+            Button("Warning", cls=ButtonT.warning),
+            Button("Error", cls=ButtonT.error), 
+            Button("Info", cls=ButtonT.info),
+        ),
+        H2("Button Shape"),
+        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+            Button("Default", cls=  ButtonT.primary,shape=Round.default),
+            Button("Full", cls=ButtonT.primary, shape=Round.full),
+            Button("None", cls=ButtonT.primary, shape=Round.none),
+            Button("Small", cls=ButtonT.primary, shape=Round.sm),
+            Button("Medium", cls=ButtonT.primary, shape=Round.md),
+            Button("Large", cls=ButtonT.primary, shape=Round.lg),
+            Button("XLarge", cls=ButtonT.primary, shape=Round.xl),
 
         ),
-        H2("Button Shape", cls=TextT.center),
+        H2("Button Size"),
         Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Default", cls=ButtonColor.default,shape=ButtonShape.pill),
-            Button("Alternative", cls=ButtonColor.alternative, shape=ButtonShape.pill),
-            Button("Dark", cls=ButtonColor.dark, shape=ButtonShape.pill),
-            Button("Light", cls=ButtonColor.light, shape=ButtonShape.pill),
-            Button("Green", cls=ButtonColor.green, shape=ButtonShape.pill),
-            Button("Red", cls=ButtonColor.red, shape=ButtonShape.pill),
-            Button("Yellow", cls=ButtonColor.yellow, shape=ButtonShape.pill),
-            Button("Purple", cls=ButtonColor.purple, shape=ButtonShape.pill),
-
-        ),
-        H2("Button Size", cls=TextT.center),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Button xs", cls=ButtonColor.default+ButtonSize.xs),
-            Button("Button sm", cls=ButtonColor.default+ButtonSize.sm),
-            Button("Button base", cls=ButtonColor.default+ButtonSize.base),
-            Button("Button lg", cls=ButtonColor.default+ButtonSize.lg),
-            Button("Button xl", cls=ButtonColor.default+ButtonSize.xl),
+            Button("Button xs", cls=ButtonT.primary+ButtonSize.xs),
+            Button("Button sm", cls=ButtonT.primary+ButtonSize.sm),
+            Button("Button base", cls=ButtonT.primary+ButtonSize.base),
+            Button("Button lg", cls=ButtonT.primary+ButtonSize.lg),
+            Button("Button xl", cls=ButtonT.primary+ButtonSize.xl),
 
         ),
     )
