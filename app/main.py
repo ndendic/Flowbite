@@ -142,6 +142,16 @@ def ButtonGroup():
             Button("Button xl", cls=ButtonT.primary+ButtonSize.xl),
 
         ),
+        H2("Button Outline"),
+        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+            Button("Default", cls=ButtonOutline.default),
+            Button("Dark", cls=ButtonOutline.dark),
+            Button("Green", cls=ButtonOutline.green),
+            Button("Red", cls=ButtonOutline.red),
+            Button("Yellow", cls=ButtonOutline.yellow),
+            Button("Purple", cls=ButtonOutline.purple),
+
+        ),
     )
 buttons = Div(
     H1("Buttons"),

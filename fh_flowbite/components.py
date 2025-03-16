@@ -232,12 +232,12 @@ class ButtonSize(VEnum):
     
 class ButtonOutline(VEnum):
     """Button outline variants"""
-    default = "border-blue-700 hover:bg-blue-800 dark:border-blue-500 dark:hover:bg-blue-500 text-blue-700 hover:text-white dark:text-blue-500 dark:hover:text-white focus:ring-blue-300 dark:focus:ring-blue-800"
-    dark = "border-gray-800 hover:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-600 text-gray-900 hover:text-white dark:text-gray-400 dark:hover:text-white focus:ring-gray-300 dark:focus:ring-gray-800"
-    green = "border-green-700 hover:bg-green-800 dark:border-green-500 dark:hover:bg-green-600 text-green-700 hover:text-white dark:text-green-500 dark:hover:text-white focus:ring-green-300 dark:focus:ring-green-800"
-    red = "border-red-700 hover:bg-red-800 dark:border-red-500 dark:hover:bg-red-600 text-red-700 hover:text-white dark:text-red-500 dark:hover:text-white focus:ring-red-300 dark:focus:ring-red-900"
-    yellow = "border-yellow-400 hover:bg-yellow-500 dark:border-yellow-300 dark:hover:bg-yellow-400 text-yellow-400 hover:text-white dark:text-yellow-300 dark:hover:text-white focus:ring-yellow-300 dark:focus:ring-yellow-900"
-    purple = "border-purple-700 hover:bg-purple-800 dark:border-purple-400 dark:hover:bg-purple-500 text-purple-700 hover:text-white dark:text-purple-400 dark:hover:text-white focus:ring-purple-300 dark:focus:ring-purple-900"
+    default = "border border-blue-700 hover:bg-blue-800 dark:border-blue-500 dark:hover:bg-blue-500 text-blue-700 hover:text-white dark:text-blue-500 dark:hover:text-white focus:ring-blue-300 dark:focus:ring-blue-800"
+    dark = "border border-gray-800 hover:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-600 text-gray-900 hover:text-white dark:text-gray-400 dark:hover:text-white focus:ring-gray-300 dark:focus:ring-gray-800"
+    green = "border border-green-700 hover:bg-green-800 dark:border-green-500 dark:hover:bg-green-600 text-green-700 hover:text-white dark:text-green-500 dark:hover:text-white focus:ring-green-300 dark:focus:ring-green-800"
+    red = "border border-red-700 hover:bg-red-800 dark:border-red-500 dark:hover:bg-red-600 text-red-700 hover:text-white dark:text-red-500 dark:hover:text-white focus:ring-red-300 dark:focus:ring-red-900"
+    yellow = "border border-yellow-400 hover:bg-yellow-500 dark:border-yellow-300 dark:hover:bg-yellow-400 text-yellow-400 hover:text-white dark:text-yellow-300 dark:hover:text-white focus:ring-yellow-300 dark:focus:ring-yellow-900"
+    purple = "border border-purple-700 hover:bg-purple-800 dark:border-purple-400 dark:hover:bg-purple-500 text-purple-700 hover:text-white dark:text-purple-400 dark:hover:text-white focus:ring-purple-300 dark:focus:ring-purple-900"
 
 class ButtonGradientOutline(VEnum):
     """Gradient outline button variants"""
