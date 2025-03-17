@@ -183,45 +183,6 @@ containers = Div(
             cls=(FlexT.block,FlexT.center,"mb-6 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg gap-4")
         ),
 
-        H3("Responsive Grid Layout", cls=TextHeading.h3 + " mt-8 mb-2"),
-        P("Container with a responsive grid that changes columns based on screen size.", cls=TextT.muted + " mb-4"),
-        
-        # TODO: Add responsive grid layout
-        Container(
-            Div("Card 1", cls="bg-pink-100 dark:bg-pink-900 p-8 rounded-lg text-center font-bold"),
-            Div("Card 2", cls="bg-pink-200 dark:bg-pink-800 p-8 rounded-lg text-center font-bold"),
-            Div("Card 3", cls="bg-pink-300 dark:bg-pink-700 p-8 rounded-lg text-center font-bold"),
-            Div("Card 4", cls="bg-pink-400 dark:bg-pink-600 p-8 rounded-lg text-center font-bold"),
-            Div("Card 5", cls="bg-pink-500 dark:bg-pink-500 p-8 rounded-lg text-center font-bold"),
-            Div("Card 6", cls="bg-pink-600 dark:bg-pink-400 p-8 rounded-lg text-center font-bold"),
-            cls="mb-6"
-        ),
-        
-        H3("Card Container", cls=TextHeading.h3 + " mt-8 mb-2"),
-        P("Flexible container for displaying card-like elements.", cls=TextT.muted + " mb-4"),
-        
-        Container(
-            Div(
-                H4("Card Title 1", cls=TextHeading.h4), 
-                P("Card content with some descriptive text.", cls="mb-4"),
-                Button("Action", size=ButtonSize.sm, cls=ButtonT.primary),
-                cls="bg-white dark:bg-gray-800 p-4 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm"
-            ),
-            Div(
-                H4("Card Title 2", cls=TextHeading.h4), 
-                P("Another card with different content.", cls="mb-4"),
-                Button("Action", size=ButtonSize.sm, cls=ButtonT.secondary),
-                cls="bg-white dark:bg-gray-800 p-4 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm"
-            ),
-            Div(
-                H4("Card Title 3", cls=TextHeading.h4), 
-                P("Third card with more example content.", cls="mb-4"),
-                Button("Action", size=ButtonSize.sm, cls=ButtonT.success),
-                cls="bg-white dark:bg-gray-800 p-4 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm"
-            ),
-            cls=FlexT.wrap+"mb-12"
-        ),
-        
         cls="mb-12"
     ),
     
@@ -315,11 +276,11 @@ containers = Div(
 
     # Grid Layout Components
     Section(
-        H2("Grid Layout Components", cls=TextHeading.h2),
+        H2("Grid Layout Components"),
         P("Responsive CSS Grid layouts with automatic column sizing and breakpoints.", cls=TextT.muted + " mb-4"),
         
         # Basic Grid Example
-        H3("Basic Responsive Grid", cls=TextHeading.h3 + " mt-8 mb-2"),
+        H3("Basic Responsive Grid", cls=" mt-8 mb-2"),
         P("A grid that automatically adjusts the number of columns based on screen size and content.", cls=TextT.muted + " mb-4"),
         
         Container(
@@ -330,12 +291,9 @@ containers = Div(
                 Div("Item 4", cls="bg-blue-400 dark:bg-blue-600 p-6 rounded-lg text-center font-bold"),
                 Div("Item 5", cls="bg-blue-500 dark:bg-blue-500 p-6 rounded-lg text-center font-bold"),
                 Div("Item 6", cls="bg-blue-600 dark:bg-blue-400 p-6 rounded-lg text-center font-bold"),
-                # Default values: cols_min=1, cols_max=4 
-                # This will create a responsive grid that starts with 1 column on small screens
-                # and increases up to 4 columns on larger screens
-                cls="mb-6"
+                cls="mb-6 gap-4"
             ),
-            size=ContainerSize.lg,
+            size=ContainerSize.fluid,
             cls="mb-8"
         ),
         
@@ -349,9 +307,9 @@ containers = Div(
                 Div("Column 2", cls="bg-green-200 dark:bg-green-800 p-6 rounded-lg text-center font-bold"),
                 Div("Column 3", cls="bg-green-300 dark:bg-green-700 p-6 rounded-lg text-center font-bold"),
                 cols=3,  # Always display 3 columns regardless of screen size
-                cls="mb-6"
+                cls="mb-6 gap-4"
             ),
-            size=ContainerSize.lg,
+            size=ContainerSize.fluid,
             cls="mb-8"
         ),
         
@@ -372,9 +330,9 @@ containers = Div(
                 cols_md=3,   # 3 columns on medium screens
                 cols_lg=3,   # 3 columns on large screens
                 cols_xl=6,   # 6 columns on extra large screens
-                cls="mb-6"
+                cls="mb-6 gap-4"
             ),
-            size=ContainerSize.lg,
+            size=ContainerSize.fluid,
             cls="mb-8"
         ),
         
@@ -428,7 +386,7 @@ containers = Div(
                     cls="gap-x-8 gap-y-4 mb-6"  # Different horizontal and vertical gaps
                 ),
             ),
-            size=ContainerSize.lg,
+            size=ContainerSize.fluid,
             cls="mb-8"
         ),
         
@@ -507,54 +465,9 @@ containers = Div(
                 cols_lg=4,   # 4 columns on large screens
                 cls="gap-6"  # Larger gap for product cards
             ),
-            size=ContainerSize.lg,
+            # size=ContainerSize.lg,
             cls="mb-8"
         ),
-        
-        # Auto-responsive Grid
-        H3("Auto-responsive Grid", cls=TextHeading.h3 + " mt-8 mb-2"),
-        P("A grid that automatically calculates column count based on the number of items.", cls=TextT.muted + " mb-4"),
-        
-        Container(
-            DivVStacked(
-                P("3 Items (auto-adjusts to at most 3 columns):", cls=TextT.muted + " mb-2"),
-                Grid(
-                    Div("Item 1", cls="bg-pink-100 dark:bg-pink-900 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 2", cls="bg-pink-200 dark:bg-pink-800 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 3", cls="bg-pink-300 dark:bg-pink-700 p-6 rounded-lg text-center font-bold"),
-                    # With just 3 items, the Grid component will automatically adjust columns
-                    # based on screen size up to a maximum of 3
-                    cls="mb-6"
-                ),
-                
-                P("7 Items (auto-adjusts to at most 4 columns by default):", cls=TextT.muted + " mb-2"),
-                Grid(
-                    Div("Item 1", cls="bg-indigo-100 dark:bg-indigo-900 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 2", cls="bg-indigo-200 dark:bg-indigo-800 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 3", cls="bg-indigo-300 dark:bg-indigo-700 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 4", cls="bg-indigo-400 dark:bg-indigo-600 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 5", cls="bg-indigo-500 dark:bg-indigo-500 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 6", cls="bg-indigo-600 dark:bg-indigo-400 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 7", cls="bg-indigo-700 dark:bg-indigo-300 p-6 rounded-lg text-center font-bold"),
-                    # With 7 items, the default cols_max=4 will limit to 4 columns
-                    cls="mb-6"
-                ),
-                
-                P("5 Items with custom max columns (cols_max=5):", cls=TextT.muted + " mb-2"),
-                Grid(
-                    Div("Item 1", cls="bg-orange-100 dark:bg-orange-900 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 2", cls="bg-orange-200 dark:bg-orange-800 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 3", cls="bg-orange-300 dark:bg-orange-700 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 4", cls="bg-orange-400 dark:bg-orange-600 p-6 rounded-lg text-center font-bold"),
-                    Div("Item 5", cls="bg-orange-500 dark:bg-orange-500 p-6 rounded-lg text-center font-bold"),
-                    cols_max=5,  # Allow up to 5 columns
-                    cls="mb-6"
-                ),
-            ),
-            size=ContainerSize.lg,
-            cls="mb-8"
-        ),
-        
         cls="mb-12"
     ),
 ) 

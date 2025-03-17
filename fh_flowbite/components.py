@@ -451,15 +451,21 @@ def Grid(*div, # `Div` components to put in the grid
          **kwargs # Additional args for `Div` tag
          )->FT: # Responsive grid component
     "Creates a responsive grid layout with smart defaults based on content"
-    if cols: cols_min = cols_sm = cols_md = cols_lg = cols_xl = cols
+    n = len(div)
+    
+    if cols:
+        # If cols is specified, use it for all breakpoints
+        cols_min = cols_sm = cols_md = cols_lg = cols_xl = cols
     else:
-        n = len(div)
+        # Otherwise, calculate progressive defaults for each breakpoint
         cols_max = min(n, cols_max)
-        cols_sm = cols_sm or min(n, cols_min, cols_max)
-        cols_md = cols_md or min(n, cols_min+1, cols_max) 
-        cols_lg = cols_lg or min(n, cols_min+2, cols_max) 
-        cols_xl = cols_xl or cols_max
-    return Div(cls=(f'grid grid-cols-{cols_min} sm:grid-cols-{cols_sm} md:grid-cols-{cols_md} lg:grid-cols-{cols_lg} xl:grid-cols-{cols_xl}', stringify(cls)), **kwargs)(*div)
+        cols_sm = cols_sm or min(2, n)                # Default to 2 columns for small screens
+        cols_md = cols_md or min(3, n)                # Default to 3 columns for medium screens
+        cols_lg = cols_lg or min(4, n, cols_max)      # Default to 4 columns for large screens
+        cols_xl = cols_xl or min(cols_max, n)         # Default to cols_max for extra large screens
+    
+    grid_cls = f'grid grid-cols-{cols_min} sm:grid-cols-{cols_sm} md:grid-cols-{cols_md} lg:grid-cols-{cols_lg} xl:grid-cols-{cols_xl}'
+    return Div(cls=(grid_cls, stringify(cls)), **kwargs)(*div)
 
 def DivFullySpaced(*c,                # Components
                    cls='w-full',# Classes for outer div (`w-full` makes it use all available width)
