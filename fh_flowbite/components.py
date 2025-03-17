@@ -353,7 +353,7 @@ class ButtonT(VEnum):
     """Button type variants"""
     primary = ButtonColor.primary.value
     secondary = "bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700"
-    ghost = "hover:bg-gray-100 hover:text-gray-700 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
+    ghost = "hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
     link = "dark:text-white cursor-pointer"
     success = ButtonColor.green.value   
     warning = ButtonColor.yellow.value
