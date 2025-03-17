@@ -3,7 +3,8 @@
 # %% auto 0
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
            'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize',
-           'Container', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked', 'DivHStacked']
+           'Container', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
+           'DivHStacked']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -438,6 +439,28 @@ def Container(*c: Union[str, FT],
     return Div(*c, cls=all_cls, **kwargs)
 
 # %% ../nbs/01_flowbite.ipynb 9
+def Grid(*div, # `Div` components to put in the grid
+         cols_min:int=1, # Minimum number of columns at any screen size
+         cols_max:int=4, # Maximum number of columns allowed at any screen size
+         cols_sm:int=None, # Number of columns on small screens
+         cols_md:int=None, # Number of columns on medium screens
+         cols_lg:int=None, # Number of columns on large screens
+         cols_xl:int=None, # Number of columns on extra large screens
+         cols:int=None, # Number of columns on all screens
+         cls='gap-4', # Additional classes on the grid (tip: `gap` provides spacing for grids)
+         **kwargs # Additional args for `Div` tag
+         )->FT: # Responsive grid component
+    "Creates a responsive grid layout with smart defaults based on content"
+    if cols: cols_min = cols_sm = cols_md = cols_lg = cols_xl = cols
+    else:
+        n = len(div)
+        cols_max = min(n, cols_max)
+        cols_sm = cols_sm or min(n, cols_min, cols_max)
+        cols_md = cols_md or min(n, cols_min+1, cols_max) 
+        cols_lg = cols_lg or min(n, cols_min+2, cols_max) 
+        cols_xl = cols_xl or cols_max
+    return Div(cls=(f'grid grid-cols-{cols_min} sm:grid-cols-{cols_sm} md:grid-cols-{cols_md} lg:grid-cols-{cols_lg} xl:grid-cols-{cols_xl}', stringify(cls)), **kwargs)(*div)
+
 def DivFullySpaced(*c,                # Components
                    cls='w-full',# Classes for outer div (`w-full` makes it use all available width)
                    **kwargs           # Additional args for outer div
