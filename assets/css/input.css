@@ -2,6 +2,31 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* --- Override Flowbite default dark mode media queries - more targeted approach --- */
+@media (prefers-color-scheme: dark) {
+  /* Target only specific text color classes that are causing issues */
+  :not(.dark) .dark\:text-white {
+    color: inherit !important;
+  }
+  
+  :not(.dark) .dark\:text-gray-400 {
+    color: inherit !important;
+  }
+  
+  :not(.dark) .dark\:text-gray-300 {
+    color: inherit !important;
+  }
+}
+
+/* --- Custom fixes for specific elements --- */
+html:not(.dark) .dark\:text-white {
+  color: inherit !important;
+}
+
+html.dark .dark\:text-white {
+  color: white !important;
+}
+
 @theme {
     --color-primary-50: #fff1f2;
     --color-primary-100: #ffe4e6;

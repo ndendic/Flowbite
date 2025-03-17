@@ -26,15 +26,14 @@ import fasthtml.components as fh_comp
 
 # %% ../nbs/01_flowbite.ipynb 2
 flowbite_hdrs = (
-    # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
+    Script(src="https://unpkg.com/@tailwindcss/browser@4"),
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
-    ),
+    ),    
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
-    # Script(src="/tailwind.config.js"),
 )
 
 flowbite_ftrs = [
@@ -83,8 +82,51 @@ flowbite_ftrs = [
             observer.observe(sidebar, { attributes: true });
         }
     });
+    """),
+    Script("""
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Change the icons inside the button based on previous settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function() {
+
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+
+            // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+
+        });
     """)
 ]
+
 
 
 # %% ../nbs/01_flowbite.ipynb 3
@@ -311,9 +353,8 @@ class ButtonT(VEnum):
     """Button type variants"""
     primary = ButtonColor.primary.value
     secondary = "bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700"
-    alternative = "bg-white border border-gray-200 hover:bg-gray-100 hover:text-primary-700 dark:bg-gray-800 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 text-gray-600 dark:text-gray-600 focus:ring-gray-200 dark:focus:ring-gray-700"
-    ghost = "text-white hover:bg-gray-100 hover:text-primary-700 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
-    link = "text-white cursor-pointer"
+    ghost = "hover:bg-gray-100 hover:text-gray-700 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
+    link = "dark:text-white cursor-pointer"
     success = ButtonColor.green.value   
     warning = ButtonColor.yellow.value
     error = ButtonColor.red.value

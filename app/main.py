@@ -66,9 +66,68 @@ flowbite_ftrs = [
             observer.observe(sidebar, { attributes: true });
         }
     });
+    """),
+    Script("""
+    document.addEventListener('DOMContentLoaded', function() {
+        // Theme toggle functionality
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+        var themeToggleBtn = document.getElementById('theme-toggle');
+        
+        // Function to update icon visibility
+        function updateThemeToggleIcons() {
+            if (document.documentElement.classList.contains('dark')) {
+                themeToggleLightIcon.classList.remove('hidden');
+                themeToggleDarkIcon.classList.add('hidden');
+            } else {
+                themeToggleLightIcon.classList.add('hidden');
+                themeToggleDarkIcon.classList.remove('hidden');
+            }
+        }
+
+        // Set initial state based on localStorage or system preference
+        if (localStorage.getItem('color-theme') === 'dark' || 
+            (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        
+        // Update icons based on initial state
+        updateThemeToggleIcons();
+        
+        // Handle theme toggle button click
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', function() {
+                // Toggle dark class on the html element
+                document.documentElement.classList.toggle('dark');
+                
+                // Update localStorage based on current state
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    localStorage.setItem('color-theme', 'light');
+                }
+                
+                // Update icon visibility
+                updateThemeToggleIcons();
+            });
+        }
+        
+        // Listen for system preference changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            if (!localStorage.getItem('color-theme')) {
+                if (e.matches) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+                updateThemeToggleIcons();
+            }
+        });
+    });
     """)
 ]
-
 app, rt = fast_app(
     live=True,
     pico=False,
@@ -80,7 +139,7 @@ app, rt = fast_app(
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
     ftrs=flowbite_ftrs,
-    htmlkw=dict(cls="bg-white dark:bg-gray-950 text-white font-sans antialiased"),
+    htmlkw=dict(cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
     # exception_handlers={404: custom_404_handler},
 )
 

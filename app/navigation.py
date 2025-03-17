@@ -48,11 +48,11 @@ def Navbar():
                             xmlns='http://www.w3.org/2000/svg',
                             fill='currentColor',
                             viewbox='0 0 20 20',
-                            cls='w-4 h-4'
+                            cls='w-4 h-4 hidden'
                         ),
                         Span('Toggle dark mode', cls='sr-only'),
                         id='theme-toggle',
-                        data_tooltip_target='tooltip-toggle',
+                        # data_tooltip_target='tooltip-toggle',
                         type='button',
                         cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
                     ),
