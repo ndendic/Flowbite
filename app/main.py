@@ -4,21 +4,20 @@ from fh_flowbite.components import *
 from fh_flowbite.core import *
 from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
+from pages.buttons import buttons
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
 flowbite_hdrs = (
-    Script(src="https://unpkg.com/@tailwindcss/browser@4"),
+    # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
-    ),
-    Link(rel="stylesheet", href="/css/output.css"),
+    ),    
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
-    # Script(src="/tailwind.config.js"),
 )
 
 flowbite_ftrs = [
@@ -77,6 +76,7 @@ app, rt = fast_app(
     hdrs=(
         favicons,
         flowbite_hdrs,
+        Link(rel="stylesheet", href="/css/output.css"),
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
     ftrs=flowbite_ftrs,
@@ -106,57 +106,6 @@ def page_template(title):
             return site_page(title, content)
         return wrapper
     return decorator
-
-
-def ButtonGroup():
-    """Example of different button styles"""
-    return Div(
-        H2("Button Types"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Primary", cls=ButtonT.primary),
-            Button("Secondary", cls=ButtonT.secondary),
-            Button("Ghost", cls=ButtonT.ghost),
-            Button("Link", cls=ButtonT.link),
-            Button("Success", cls=ButtonT.success),
-            Button("Warning", cls=ButtonT.warning),
-            Button("Error", cls=ButtonT.error), 
-            Button("Info", cls=ButtonT.info),
-        ),
-        H2("Button Shape"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Default", cls=  ButtonT.primary,shape=Round.default),
-            Button("Full", cls=ButtonT.primary, shape=Round.full),
-            Button("None", cls=ButtonT.primary, shape=Round.none),
-            Button("Small", cls=ButtonT.primary, shape=Round.sm),
-            Button("Medium", cls=ButtonT.primary, shape=Round.md),
-            Button("Large", cls=ButtonT.primary, shape=Round.lg),
-            Button("XLarge", cls=ButtonT.primary, shape=Round.xl),
-
-        ),
-        H2("Button Size"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Button xs", cls=ButtonT.primary+ButtonSize.xs),
-            Button("Button sm", cls=ButtonT.primary+ButtonSize.sm),
-            Button("Button base", cls=ButtonT.primary+ButtonSize.base),
-            Button("Button lg", cls=ButtonT.primary+ButtonSize.lg),
-            Button("Button xl", cls=ButtonT.primary+ButtonSize.xl),
-
-        ),
-        H2("Button Outline"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
-            Button("Default", cls=ButtonOutline.default),
-            Button("Dark", cls=ButtonOutline.dark),
-            Button("Green", cls=ButtonOutline.green),
-            Button("Red", cls=ButtonOutline.red),
-            Button("Yellow", cls=ButtonOutline.yellow),
-            Button("Purple", cls=ButtonOutline.purple),
-
-        ),
-    )
-buttons = Div(
-    H1("Buttons"),
-    ButtonGroup(),
-)
 
 @rt("/")
 @page_template("Home")

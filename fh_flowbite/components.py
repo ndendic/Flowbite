@@ -2,7 +2,7 @@
 
 # %% auto 0
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
-           'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonGradientOutline', 'ButtonT', 'Button', 'FlexT']
+           'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -26,12 +26,11 @@ import fasthtml.components as fh_comp
 
 # %% ../nbs/01_flowbite.ipynb 2
 flowbite_hdrs = (
-    Script(src="https://unpkg.com/@tailwindcss/browser@4"),
+    # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
     ),
-    Link(rel="stylesheet", href="/output.css"),
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
@@ -40,7 +39,53 @@ flowbite_hdrs = (
 
 flowbite_ftrs = [
     Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"),
+    Script("""
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to elements
+        const drawerButton = document.querySelector('[data-drawer-target="logo-sidebar"]');
+        const sidebar = document.getElementById('logo-sidebar');
+        const mainContent = document.querySelector('.p-4:not(.mt-14)');
+        
+        // Function to toggle main content margin
+        function toggleMainMargin() {
+            // Check if sidebar is visible (doesn't have -translate-x-full class)
+            if (!sidebar.classList.contains('-translate-x-full')) {
+                // Sidebar is visible, add margin to main content
+                mainContent.classList.add('ml-64');
+            } else {
+                // Sidebar is hidden, remove margin from main content
+                mainContent.classList.remove('ml-64');
+            }
+        }
+        
+        // Initial check
+        toggleMainMargin();
+        
+        // Listen for sidebar visibility changes
+        if (drawerButton) {
+            drawerButton.addEventListener('click', function() {
+                // Wait for the drawer animation to complete
+                setTimeout(toggleMainMargin, 300);
+            });
+        }
+        
+        // Create a MutationObserver to watch for class changes on the sidebar
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'class') {
+                    toggleMainMargin();
+                }
+            });
+        });
+        
+        // Start observing the sidebar for class changes
+        if (sidebar) {
+            observer.observe(sidebar, { attributes: true });
+        }
+    });
+    """)
 ]
+
 
 # %% ../nbs/01_flowbite.ipynb 3
 class TextT(VEnum):
@@ -203,11 +248,34 @@ class ButtonColor(VEnum):
     """Button style variants for Flowbite components"""
     # Base styles
     primary = "bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700  text-white focus:ring-primary-300 dark:focus:ring-primary-800"
-    green = "bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-white focus:ring-green-300"
     blue = "bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white focus:ring-blue-300"
+    green = "bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-white focus:ring-green-300"
+    cyan = "bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800 text-white focus:ring-cyan-300"
+    teal = "bg-teal-700 hover:bg-teal-800 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800 text-white focus:ring-teal-300"
+    lime = "bg-lime-700 hover:bg-lime-800 dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800 text-white focus:ring-lime-300"
     red = "bg-red-700 hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 text-white focus:ring-red-300"
     yellow = "bg-yellow-400 hover:bg-yellow-500 dark:focus:ring-yellow-900 text-white focus:ring-yellow-300"
+    pink = "bg-pink-700 hover:bg-pink-800 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-900 text-white focus:ring-pink-300"
     purple = "bg-purple-700 hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-white focus:ring-purple-300"
+    
+    grad_primary = "text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800"
+    grad_blue = "text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+    grad_green = "text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800"
+    grad_cyan = "text-white bg-gradient-to-r from-cyan-500 via-cyan-600 to-cyan-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800"
+    grad_teal = "text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800"
+    grad_lime = "text-white bg-gradient-to-r from-lime-500 via-lime-600 to-lime-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800"
+    grad_red = "text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800"
+    grad_yellow = "text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800"
+    grad_pink = "text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800"
+    grad_purple = "text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800"
+    #Duotone
+    purple_blue = "text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+    cyan_blue = "text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800"
+    green_blue = "text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+    purple_pink = "text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
+    pink_orange = "text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+    teal_lime = "text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700"
+    red_yellow = "text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
 
 class Round(VEnum):
     """Button shape variants"""
@@ -239,16 +307,6 @@ class ButtonOutline(VEnum):
     yellow = "border border-yellow-400 hover:bg-yellow-500 dark:border-yellow-300 dark:hover:bg-yellow-400 text-yellow-400 hover:text-white dark:text-yellow-300 dark:hover:text-white focus:ring-yellow-300 dark:focus:ring-yellow-900"
     purple = "border border-purple-700 hover:bg-purple-800 dark:border-purple-400 dark:hover:bg-purple-500 text-purple-700 hover:text-white dark:text-purple-400 dark:hover:text-white focus:ring-purple-300 dark:focus:ring-purple-900"
 
-class ButtonGradientOutline(VEnum):
-    """Gradient outline button variants"""
-    purple_blue = "group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-blue-300 dark:focus:ring-blue-800 group bg-gradient-to-br from-purple-600 to-blue-500 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    cyan_blue = "group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-cyan-200 dark:focus:ring-cyan-800 group bg-gradient-to-br from-cyan-500 to-blue-500 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    green_blue = "group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-green-200 dark:focus:ring-green-800 group bg-gradient-to-br from-green-400 to-blue-600 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    purple_pink = "group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-purple-200 dark:focus:ring-purple-800 group bg-gradient-to-br from-purple-500 to-pink-500 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    pink_orange = "group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-pink-200 dark:focus:ring-pink-800 group bg-gradient-to-br from-pink-500 to-orange-400 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    teal_lime = "group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-lime-200 dark:focus:ring-lime-800 group bg-gradient-to-br from-teal-300 to-lime-300 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-    red_yellow = "group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-red-100 dark:focus:ring-red-400 group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 focus:ring-4 focus:outline-none"
-
 class ButtonT(VEnum):
     """Button type variants"""
     primary = ButtonColor.primary.value
@@ -263,10 +321,10 @@ class ButtonT(VEnum):
     
 
 # %% ../nbs/01_flowbite.ipynb 6
-def Button(*c: Union[str, FT],cls: Union[str, Enum]=ButtonT.primary, shape: Union[str, Enum]=Round.default, submit=True, **kwargs) -> FT: 
-    base_class = "font-medium text-sm px-5 py-2.5 focus:outline-none focus:ring-4 text-center inline-flex items-center"
+def Button(*c: Union[str, FT],cls: Union[str, Enum]=ButtonT.primary, shape: Union[str, Enum]=Round.default, size: Union[str, Enum]=ButtonSize.base, submit=True, **kwargs) -> FT: 
+    base_class = "text-center inline-flex items-center"
     if 'type' not in kwargs: kwargs['type'] = 'submit' if submit else 'button'
-    return fh.Button(*c, cls=(base_class, stringify(shape), stringify(cls)), **kwargs)
+    return fh.Button(*c, cls=(base_class, stringify(shape), stringify(cls), stringify(size)), **kwargs)
 
 
 # %% ../nbs/01_flowbite.ipynb 7
