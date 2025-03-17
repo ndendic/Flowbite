@@ -14,7 +14,7 @@ typography = Div(
     Br(),
 
     H2("Text size", ),
-    Div(cls=(FlexT.flex, FlexT.items_center, "gap-2 py-4"))(
+    Div(cls=(FlexT.block, FlexT.middle, "gap-2 py-4"))(
         P("xs ", cls=TextT.xs),
         Span("sm", cls=TextT.sm),
         P("base", cls=TextT.base),

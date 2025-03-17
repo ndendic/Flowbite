@@ -7,7 +7,7 @@ def Buttons():
     """Example of different button styles"""
     return Div(
         H2("Button Types"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Primary", cls=ButtonT.primary),
             Button("Secondary", cls=ButtonT.secondary),
             Button("Ghost", cls=ButtonT.ghost),
@@ -19,7 +19,7 @@ def Buttons():
         ),
         H2("Button Colors"),
         H4("Flat"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Primary", cls=ButtonColor.primary),
             Button("Blue", cls=ButtonColor.blue),
             Button("Green", cls=ButtonColor.green),
@@ -33,7 +33,7 @@ def Buttons():
 
         ),
         H4("Monotone gradient"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Primary", cls=ButtonColor.grad_primary),
             Button("Blue", cls=ButtonColor.grad_blue),
             Button("Green", cls=ButtonColor.grad_green),
@@ -46,7 +46,7 @@ def Buttons():
             Button("Purple", cls=ButtonColor.grad_purple),
         ),
         H4("Duotone gradient"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Cyan Blue", cls=ButtonColor.cyan_blue),
             Button("Green Blue", cls=ButtonColor.green_blue),
             Button("Pink Orange", cls=ButtonColor.pink_orange),
@@ -57,7 +57,7 @@ def Buttons():
 
         ),
         H2("Button Outline"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Default", cls=ButtonOutline.default),
             Button("Dark", cls=ButtonOutline.dark),
             Button("Green", cls=ButtonOutline.green),
@@ -67,7 +67,7 @@ def Buttons():
 
         ),
         H2("Button Shape"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Default", cls=  ButtonT.secondary,shape=Round.default),
             Button("Full", cls=ButtonT.secondary, shape=Round.full),
             Button("None", cls=ButtonT.secondary, shape=Round.none),
@@ -78,7 +78,7 @@ def Buttons():
 
         ),
         H2("Button Size"),
-        Div(cls=stringify((FlexT.flex, FlexT.items_center, "gap-2 py-4")))(
+        Div(cls=stringify((FlexT.block, FlexT.middle, "gap-2 py-4")))(
             Button("Extra small", cls=ButtonT.primary, size=ButtonSize.xs),
             Button("Small", cls=ButtonT.primary, size=ButtonSize.sm),
             Button("Base", cls=ButtonT.primary, size=ButtonSize.base),

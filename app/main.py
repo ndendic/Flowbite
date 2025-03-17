@@ -5,6 +5,7 @@ from fh_flowbite.core import *
 from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
 from pages.buttons import buttons
+from pages.containers import containers
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -171,7 +172,8 @@ def page_template(title):
 def home(req):
     return Ul(
         Li(A("Typography", href="/typography")), 
-        Li(A("Buttons", href="/buttons"))
+        Li(A("Buttons", href="/buttons")),
+        Li(A("Containers", href="/containers"))
     )
 
 @rt("/typography")
@@ -184,6 +186,10 @@ def get(req):
 def get(req):
     return buttons
 
+@rt("/containers")
+@page_template("Containers")
+def get(req):
+    return containers
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)

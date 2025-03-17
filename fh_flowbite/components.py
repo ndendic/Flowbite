@@ -2,7 +2,8 @@
 
 # %% auto 0
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
-           'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT']
+           'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize',
+           'Container', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked', 'DivHStacked']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -370,72 +371,119 @@ def Button(*c: Union[str, FT],cls: Union[str, Enum]=ButtonT.primary, shape: Unio
 
 # %% ../nbs/01_flowbite.ipynb 7
 class FlexT(VEnum):
-    """Flexbox utility types"""
-    def _generate_next_value_(name, start, count, last_values): 
-        return str2cls('flex', name)
+    'Flexbox modifiers using Tailwind CSS'
+    def _generate_next_value_(name, start, count, last_values): return name
     
     # Display
-    flex = "flex"
-    inline = "inline-flex"
+    block = 'flex'
+    inline = 'inline-flex'
+    
+    # Horizontal Alignment
+    left = 'justify-start' 
+    center = 'justify-center'
+    right = 'justify-end'
+    between = 'justify-between'
+    around = 'justify-around'
+    
+    # Vertical Alignment
+    stretch = 'items-stretch'
+    top = 'items-start'
+    middle = 'items-center' 
+    bottom = 'items-end'
     
     # Direction
-    row = auto()  # Will generate "flex-row"
-    row_reverse = auto()  # Will generate "flex-row-reverse"
-    col = auto()  # Will generate "flex-col"
-    col_reverse = auto()  # Will generate "flex-col-reverse"
-    
-    # Justify content
-    justify_start = "justify-start"
-    justify_end = "justify-end"
-    justify_center = "justify-center"
-    justify_between = "justify-between"
-    justify_around = "justify-around"
-    justify_evenly = "justify-evenly"
-    
-    # Align items
-    items_start = "items-start"
-    items_end = "items-end"
-    items_center = "items-center"
-    items_baseline = "items-baseline"
-    items_stretch = "items-stretch"
+    row = 'flex-row'
+    row_reverse = 'flex-row-reverse'
+    column = 'flex-col'
+    column_reverse = 'flex-col-reverse'
     
     # Wrap
-    wrap = auto()  # Will generate "flex-wrap"
-    wrap_reverse = auto()  # Will generate "flex-wrap-reverse"
-    nowrap = auto()  # Will generate "flex-nowrap" 
+    nowrap = 'flex-nowrap'
+    wrap = 'flex-wrap'
+    wrap_reverse = 'flex-wrap-reverse'
 
 # %% ../nbs/01_flowbite.ipynb 8
-class FlexT(VEnum):
-    """Flexbox utility types"""
-    def _generate_next_value_(name, start, count, last_values): 
-        return str2cls('flex', name)
+class ContainerSize(VEnum):
+    """Container size variants for Flowbite components"""
+    # Base container with responsive padding
+    default = "container mx-auto"    
+    # Fixed width containers based on Flowbite size variables
+    # These add mx-auto to center and have responsive padding
+    _3xs = "max-w-3xs" # --container-3xs:16rem
+    _2xs = "max-w-2xs" # --container-2xs:18rem
+    xs = "max-w-xs"  # --container-xs:20rem
+    sm = "max-w-sm"  # --container-sm:24rem
+    md = "max-w-md"  # --container-md:28rem
+    lg = "max-w-lg"  # --container-lg:32rem
+    xl = "max-w-xl"  # --container-xl:36rem
+    _2xl = "max-w-2xl" # --container-2xl:42rem
+    _3xl = "max-w-3xl" # --container-3xl:48rem
+    _4xl = "max-w-4xl" # --container-4xl:56rem
+    _5xl = "max-w-5xl" # --container-5xl:64rem
+    _6xl = "max-w-6xl" # --container-6xl:72rem
+    _7xl = "max-w-7xl" # --container-7xl:80rem
     
-    # Display
-    flex = "flex"
-    inline = "inline-flex"
-    
-    # Direction
-    row = auto()  # Will generate "flex-row"
-    row_reverse = auto()  # Will generate "flex-row-reverse"
-    col = auto()  # Will generate "flex-col"
-    col_reverse = auto()  # Will generate "flex-col-reverse"
-    
-    # Justify content
-    justify_start = "justify-start"
-    justify_end = "justify-end"
-    justify_center = "justify-center"
-    justify_between = "justify-between"
-    justify_around = "justify-around"
-    justify_evenly = "justify-evenly"
-    
-    # Align items
-    items_start = "items-start"
-    items_end = "items-end"
-    items_center = "items-center"
-    items_baseline = "items-baseline"
-    items_stretch = "items-stretch"
-    
-    # Wrap
-    wrap = auto()  # Will generate "flex-wrap"
-    wrap_reverse = auto()  # Will generate "flex-wrap-reverse"
-    nowrap = auto()  # Will generate "flex-nowrap" 
+    # Special container types
+    fluid = "w-full px-4"  # Full width with padding
+    responsive = "w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl px-4"  # Responsive sizing
+
+def Container(*c: Union[str, FT], 
+            size: Union[str, Enum]=ContainerSize.default, 
+            cls: Union[str, Enum, tuple]=(),
+            **kwargs) -> FT:
+    """
+    Container component based on Flowbite container sizes.
+    """
+    all_cls = (stringify(size), stringify(cls))
+    return Div(*c, cls=all_cls, **kwargs)
+
+# %% ../nbs/01_flowbite.ipynb 9
+def DivFullySpaced(*c,                # Components
+                   cls='w-full',# Classes for outer div (`w-full` makes it use all available width)
+                   **kwargs           # Additional args for outer div
+                  ):                  # Div with spaced components via flex classes
+    "Creates a flex div with it's components having as much space between them as possible"
+    cls = stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.between,FlexT.middle,cls), **kwargs)(*c)
+
+def DivCentered(*c,      # Components
+                cls='space-y-4',  # Classes for outer div (`space-y-4` provides spacing between components)
+                vstack=True, # Whether to stack the components vertically
+                **kwargs # Additional args for outer div
+               )->FT: # Div with components centered in it
+    "Creates a flex div with it's components centered in it"
+    cls=stringify(cls)
+    return Div(cls=(FlexT.block,(FlexT.column if vstack else FlexT.row),FlexT.middle,FlexT.center,cls),**kwargs)(*c)
+
+def DivLAligned(*c, # Components
+                cls='space-x-4',  # Classes for outer div
+                **kwargs # Additional args for outer div
+               )->FT: # Div with components aligned to the left
+    "Creates a flex div with it's components aligned to the left"
+    cls=stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.left,FlexT.middle,cls), **kwargs)(*c)
+
+def DivRAligned(*c, # Components
+                cls='space-x-4',  # Classes for outer div
+                **kwargs # Additional args for outer div
+               )->FT: # Div with components aligned to the right
+    "Creates a flex div with it's components aligned to the right"
+    cls=stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.right,FlexT.middle,cls), **kwargs)(*c)
+
+def DivVStacked(*c, # Components
+                cls='space-y-4', # Additional classes on the div  (tip: `space-y-4` provides spacing between components)
+                **kwargs # Additional args for the div
+               )->FT: # Div with components stacked vertically
+    "Creates a flex div with it's components stacked vertically"
+    cls=stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.column,FlexT.middle,cls), **kwargs)(*c)
+
+def DivHStacked(*c, # Components
+                cls='space-x-4', # Additional classes on the div (`space-x-4` provides spacing between components)
+                **kwargs # Additional args for the div
+               )->FT: # Div with components stacked horizontally
+    "Creates a flex div with it's components stacked horizontally"
+    cls=stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.row,FlexT.middle,cls), **kwargs)(*c)
+   

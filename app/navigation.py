@@ -118,9 +118,10 @@ def SidebarItem(name, href = "#", icon=None):
     )
 
 sidebar_items = [
-    SidebarItem('Home', '/'),
-    SidebarItem('Typography', '/typography'),
-    SidebarItem('Buttons', '/buttons'),
+    SidebarItem("Home", href="/"),
+    SidebarItem("Typography", href="/typography"),
+    SidebarItem("Buttons", href="/buttons"),
+    SidebarItem("Containers", href="/containers"),
 ]
 
 def Sidebar():
