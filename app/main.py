@@ -127,6 +127,16 @@ flowbite_ftrs = [
             }
         });
     });
+    """),
+    Script("""
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }
+
+    // On page load, set the theme based on localStorage
+    const savedTheme = localStorage.getItem('theme') || 'retro';
+    document.documentElement.setAttribute('data-theme', savedTheme);
     """)
 ]
 app, rt = fast_app(
@@ -140,7 +150,7 @@ app, rt = fast_app(
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
     ftrs=flowbite_ftrs,
-    htmlkw=dict(cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
+    htmlkw=dict(data_theme="retro",cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
     # exception_handlers={404: custom_404_handler},
 )
 
