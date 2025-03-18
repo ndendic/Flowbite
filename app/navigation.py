@@ -1,5 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
+from fh_flowbite import *
 
 def Navbar():
     return Nav(

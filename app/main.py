@@ -129,15 +129,16 @@ flowbite_ftrs = [
     });
     """),
     Script("""
-      function setTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    }
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
 
-    // On page load, set the theme based on localStorage
-    const savedTheme = localStorage.getItem('theme') || 'retro';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    """)
+        // On page load, set the theme based on localStorage
+        const savedTheme = localStorage.getItem('theme') || 'none';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        """
+    )
 ]
 app, rt = fast_app(
     live=True,
