@@ -4,7 +4,7 @@
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
            'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize',
            'Container', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
-           'DivHStacked', 'Icon']
+           'DivHStacked', 'Icon', 'DiceBearAvatar', 'PicSumImg']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -528,3 +528,27 @@ def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
     "Creates an icon using lucide icons"
     return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
 
+def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
+                   h:int=20,         # Height 
+                   w:int=20,          # Width
+                  ):          # Span with Avatar
+    "Creates an Avatar using https://dicebear.com/"
+    url = 'https://api.dicebear.com/8.x/lorelei/svg?seed='
+    return Span(cls=f"relative flex h-{h} w-{w} shrink-0 overflow-hidden rounded-full bg-secondary")(
+            fh.Img(cls=f"aspect-square h-{h} w-{w}", alt="Avatar", loading="lazy", src=f"{url}{seed_name}"))
+
+def PicSumImg(h:int=200,           # Height in pixels
+              w:int=200,           # Width in pixels
+              id:int=None,        # Optional specific image ID to use
+              grayscale:bool=False, # Whether to return grayscale version
+              blur:int=None,       # Optional blur amount (1-10)
+              **kwargs             # Additional args for Img tag
+              )->FT:              # Img tag with picsum image
+    "Creates a placeholder image using https://picsum.photos/"
+    url = f"https://picsum.photos"
+    if id is not None: url = f"{url}/id/{id}"
+    url = f"{url}/{w}/{h}"
+    if grayscale: url = f"{url}?grayscale"
+    if blur is not None: 
+        url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
+    return fh.Img(src=url, loading="lazy", **kwargs)

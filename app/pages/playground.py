@@ -7,6 +7,7 @@ from theme_switcher import ThemeSwitcher
 playground = Container(
     H1("Playground", cls="text-3xl font-bold mb-6"),
     DivCentered(
+        PicSumImg(h=200,w=200),
         NotStr("""
         <section class="bg-gray-900 text-white">
             <div class="max-w-screen-xl px-4 py-20 mx-auto text-center">
