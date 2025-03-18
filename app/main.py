@@ -16,7 +16,8 @@ flowbite_hdrs = (
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
-    ),    
+    ),
+    Script(src='https://unpkg.com/lucide@latest/dist/umd/lucide.js'),
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
@@ -139,8 +140,10 @@ flowbite_ftrs = [
         const savedTheme = localStorage.getItem('theme') || 'none';
         document.documentElement.setAttribute('data-theme', savedTheme);
         """
-    )
-]
+    ),
+    Script('lucide.createIcons();')
+    ]
+
 app, rt = fast_app(
     live=True,
     pico=False,
