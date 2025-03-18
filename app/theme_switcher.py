@@ -1,16 +1,18 @@
 from fasthtml.common import *
 from fasthtml.svg import *
+from fh_flowbite.components import *
 
-palette_icon = Svg(
-    Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M12 7h.01m3.486 1.513h.01m-6.978 0h.01M6.99 12H7m9 4h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 3.043 12.89 9.1 9.1 0 0 0 8.2 20.1a8.62 8.62 0 0 0 3.769.9 2.013 2.013 0 0 0 2.03-2v-.857A2.036 2.036 0 0 1 16 16Z'),
-    aria_hidden='true',
-    xmlns='http://www.w3.org/2000/svg',
-    width='24',
-    height='24',
-    fill='none',
-    viewbox='0 0 24 24',
-    cls='w-6 h-6 text-gray-800 dark:text-white'
-)
+# palette_icon = Svg(
+#     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M12 7h.01m3.486 1.513h.01m-6.978 0h.01M6.99 12H7m9 4h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 3.043 12.89 9.1 9.1 0 0 0 8.2 20.1a8.62 8.62 0 0 0 3.769.9 2.013 2.013 0 0 0 2.03-2v-.857A2.036 2.036 0 0 1 16 16Z'),
+#     aria_hidden='true',
+#     xmlns='http://www.w3.org/2000/svg',
+#     width='24',
+#     height='24',
+#     fill='none',
+#     viewbox='0 0 24 24',
+#     cls='w-6 h-6 text-gray-800 dark:text-white'
+# )
+palette_icon = Icon("palette", cls="w-4 h-4")
 
 default_themes = {
     "none": "Default",
@@ -35,12 +37,12 @@ def ThemeSwitcher(themes=default_themes):
     dropdown_id = "theme-palette-dropdown"
     
     # Create the dropdown button
-    toggle_button = Button(
+    toggle_button = Div(
         palette_icon,
         Span("Select Theme", cls="sr-only"),
         id="theme-palette-toggle",
         type="button",
-        cls="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5",
+        cls="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-2.5 py-2.5",
         data_dropdown_toggle=dropdown_id,
         aria_expanded="false"
     )

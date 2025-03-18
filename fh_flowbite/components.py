@@ -4,7 +4,7 @@
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
            'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize',
            'Container', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
-           'DivHStacked']
+           'DivHStacked', 'Icon']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -516,3 +516,15 @@ def DivHStacked(*c, # Components
     cls=stringify(cls)
     return Div(cls=(FlexT.block,FlexT.row,FlexT.middle,cls), **kwargs)(*c)
    
+
+# %% ../nbs/01_flowbite.ipynb 10
+def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
+           height:int=None, 
+           width:int=None, 
+           stroke_width:int=None, # Thickness of lines
+           cls=(), # Additional classes on the `Uk_icon` tag
+           **kwargs # Additional args for `Uk_icon` tag
+           )->FT: # a lucide icon of the specified size 
+    "Creates an icon using lucide icons"
+    return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
+
