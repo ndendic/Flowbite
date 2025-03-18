@@ -1,6 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fh_flowbite import *
+from theme_switcher import ThemeSwitcher, palette_icon
 
 def Navbar():
     return Nav(
@@ -32,8 +33,7 @@ def Navbar():
                     cls='flex items-center justify-start rtl:justify-end'
                 ),
                 Div(
-                    Button("Retro",onclick="setTheme('retro')"),
-                    Button("None",onclick="setTheme('none')"),
+                    ThemeSwitcher(),
                     Button(
                         Svg(
                             Path(d='M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z'),
@@ -125,6 +125,7 @@ sidebar_items = [
     SidebarItem("Typography", href="/typography"),
     SidebarItem("Buttons", href="/buttons"),
     SidebarItem("Containers", href="/containers"),
+    SidebarItem("Themes", href="/themes", icon=palette_icon),
 ]
 
 def Sidebar():

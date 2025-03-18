@@ -6,6 +6,7 @@ from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
 from pages.buttons import buttons
 from pages.containers import containers
+from pages.themes import themes
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -184,7 +185,8 @@ def home(req):
     return Ul(
         Li(A("Typography", href="/typography")), 
         Li(A("Buttons", href="/buttons")),
-        Li(A("Containers", href="/containers"))
+        Li(A("Containers", href="/containers")),
+        Li(A("Themes", href="/themes")),
     )
 
 @rt("/typography")
@@ -201,6 +203,11 @@ def get(req):
 @page_template("Containers")
 def get(req):
     return containers
+
+@rt("/themes")
+@page_template("Color Themes")
+def get(req):
+    return themes
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)
