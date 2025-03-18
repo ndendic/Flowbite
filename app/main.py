@@ -6,7 +6,8 @@ from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
 from pages.buttons import buttons
 from pages.containers import containers
-
+from pages.themes import themes
+from pages.playground import playground
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
@@ -127,7 +128,18 @@ flowbite_ftrs = [
             }
         });
     });
-    """)
+    """),
+    Script("""
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // On page load, set the theme based on localStorage
+        const savedTheme = localStorage.getItem('theme') || 'none';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        """
+    )
 ]
 app, rt = fast_app(
     live=True,
@@ -140,7 +152,7 @@ app, rt = fast_app(
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
     ftrs=flowbite_ftrs,
-    htmlkw=dict(cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
+    htmlkw=dict(data_theme="retro",cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
     # exception_handlers={404: custom_404_handler},
 )
 
@@ -173,7 +185,8 @@ def home(req):
     return Ul(
         Li(A("Typography", href="/typography")), 
         Li(A("Buttons", href="/buttons")),
-        Li(A("Containers", href="/containers"))
+        Li(A("Containers", href="/containers")),
+        Li(A("Themes", href="/themes")),
     )
 
 @rt("/typography")
@@ -190,6 +203,16 @@ def get(req):
 @page_template("Containers")
 def get(req):
     return containers
+
+@rt("/themes")
+@page_template("Color Themes")
+def get(req):
+    return themes
+
+@rt("/playground")
+@page_template("Playground")
+def get(req):
+    return playground
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)
