@@ -9,7 +9,7 @@ from pages.containers import containers
 from pages.themes import themes
 from pages.playground import playground
 from pages.icons import icons_images
-
+from pages.input_fields_showcase import input_fields_showcase
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
@@ -223,6 +223,11 @@ def get(req):
 @page_template("Icons")
 def get(req):
     return icons_images
+
+@rt("/input_fields")
+@page_template("Input Fields")
+def get(req):
+    return input_fields_showcase
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)

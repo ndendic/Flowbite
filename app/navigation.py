@@ -128,6 +128,7 @@ sidebar_items = [
     SidebarItem("Playground", href="/playground"),
     SidebarItem("Icons", href="/icons"),
     SidebarItem("Themes", href="/themes", icon=palette_icon),
+    SidebarItem("Input Fields", href="/input_fields"),
 ]
 
 def Sidebar():

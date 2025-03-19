@@ -26,7 +26,8 @@ playground = Container(
     Button("Warning", cls=ButtonT.warning),
     Button("Error", cls=ButtonT.error), 
     Button("Info", cls=ButtonT.info),
-)"""
+)""",
+        id="button-group",
     ),       
     DivCentered(
         NotStr("""        
