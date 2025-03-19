@@ -81,20 +81,16 @@ typography = Div(
     Br(),
     H2("Code", ),
     Code(
-        """
-        Button("Default", cls=ButtonT.default),
-        Button("Alternative", cls=ButtonT.alternative),
-        Button("Dark", cls=ButtonT.dark),
-        Button("Light", cls=ButtonT.light),
-        """
+        """Button("Default", cls=ButtonT.default),
+Button("Alternative", cls=ButtonT.alternative),
+Button("Dark", cls=ButtonT.dark),
+Button("Light", cls=ButtonT.light),"""
     ),
     Pre(Code(
-        """
-        Button("Default", cls=ButtonT.default),
-        Button("Alternative", cls=ButtonT.alternative),
-        Button("Dark", cls=ButtonT.dark),
-        Button("Light", cls=ButtonT.light),
-        """
+        """Button("Default", cls=ButtonT.default),
+Button("Alternative", cls=ButtonT.alternative),
+Button("Dark", cls=ButtonT.dark),
+Button("Light", cls=ButtonT.light),"""
     )),
     Br(),
     H2("Special tags", ),

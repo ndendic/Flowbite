@@ -4,7 +4,7 @@
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Meter',
            'ButtonColor', 'Round', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize',
            'Container', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
-           'DivHStacked', 'Icon', 'DiceBearAvatar', 'PicSumImg']
+           'DivHStacked', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'TabItem', 'TabContainer']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -552,3 +552,26 @@ def PicSumImg(h:int=200,           # Height in pixels
     if blur is not None: 
         url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
     return fh.Img(src=url, loading="lazy", **kwargs)
+
+# %% ../nbs/01_flowbite.ipynb 11
+def TabItem(text:str, # Components
+            controls:str, # Controls of the tab
+            **kwargs # Additional args for the `Li`
+           )->FT: # Tab item
+    ctrl = f'{controls}' if controls else text
+    "A TabItem where children will be different tabs"
+    return Li(role='presentation', cls='me-2')(
+            Button(text, id=f'{text}-tab', data_tabs_target=f'#{ctrl}', type='button', role='tab', aria_controls=ctrl, aria_selected='false', cls='inline-block p-4 border-b-2'+Round.none, **kwargs)
+        )
+
+def TabContainer(*li, # Components
+                  cls='', # Additional classes on the `Ul`,
+                  active_items_cls='text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-500 border-primary-600 dark:border-primary-500', # Additional classes on the active items
+                  inactive_items_cls='dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300', # Additional classes on the inactive items
+                  **kwargs # Additional args for the `Ul`
+                 )->FT: # Tab container
+    "A TabContainer where children will be different tabs"
+    base_cls = "-mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400"
+    ul_cls = "flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400"
+    cls = stringify(cls)
+    return Div(cls=(FlexT.block,FlexT.wrap,base_cls,"mb-2 border-b-2 border-gray-200 dark:border-gray-700"),**kwargs)(Ul(cls=(ul_cls,stringify(cls)), data_tabs_active_classes=active_items_cls, data_tabs_inactive_classes=inactive_items_cls,**kwargs)(*li))

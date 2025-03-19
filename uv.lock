@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.12"
 
 [[package]]
@@ -140,7 +141,7 @@ name = "click"
 version = "8.1.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz", hash = "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a", size = 226593 }
 wheels = [
@@ -228,7 +229,6 @@ wheels = [
 
 [[package]]
 name = "flowbite"
-version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "fastwand" },
@@ -236,7 +236,7 @@ dependencies = [
     { name = "python-fasthtml" },
 ]
 
-[package.dependency-groups]
+[package.dev-dependencies]
 dev = [
     { name = "nbdev" },
 ]
@@ -247,8 +247,9 @@ requires-dist = [
     { name = "monsterui", specifier = ">=1.0.10" },
     { name = "python-fasthtml", specifier = ">=0.12.1" },
 ]
+provides-extras = ["dev"]
 
-[package.metadata.dependency-groups]
+[package.metadata.requires-dev]
 dev = [{ name = "nbdev", specifier = ">=2.3.35" }]
 
 [[package]]

@@ -126,6 +126,7 @@ sidebar_items = [
     SidebarItem("Buttons", href="/buttons"),
     SidebarItem("Containers", href="/containers"),
     SidebarItem("Playground", href="/playground"),
+    SidebarItem("Icons", href="/icons"),
     SidebarItem("Themes", href="/themes", icon=palette_icon),
 ]
 

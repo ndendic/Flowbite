@@ -30,6 +30,8 @@ yarn.lock
 .env.test.local
 .env.production.local
 
+tailwindcss-linux-x64
+
 # Zone.Identifier files
 *Zone.Identifier
 

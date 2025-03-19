@@ -58,6 +58,8 @@ html.dark .dark\:text-white {
 }
 
 @layer base {
+  /* Simple approach: transition only on html element for theme changes */
+
   [data-theme='retro'] {
     --color-primary-50: #eff5ff;
     --color-primary-100: #dbe8fe;
@@ -114,8 +116,4 @@ html.dark .dark\:text-white {
     --color-primary-950: #4c0519;
   }
 
-  * {
-    @apply transition-colors duration-300 ease-in-out;
-  }
 }
-

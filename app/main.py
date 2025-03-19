@@ -8,6 +8,8 @@ from pages.buttons import buttons
 from pages.containers import containers
 from pages.themes import themes
 from pages.playground import playground
+from pages.icons import icons_images
+
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
@@ -216,6 +218,11 @@ def get(req):
 @page_template("Playground")
 def get(req):
     return playground
+
+@rt("/icons")
+@page_template("Icons")
+def get(req):
+    return icons_images
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)
