@@ -16,6 +16,7 @@ from component_registry import component_registry
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
+
 flowbite_hdrs = (
     # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
     Link(
@@ -174,7 +175,7 @@ def site_page(title, content):
         Body(
             Navbar(),
             Sidebar(),
-            Main(content,cls="mx-4"),            
+            Main(content,cls="mx-4")   
         ),
     )
 def page_template(title):

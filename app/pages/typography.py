@@ -80,18 +80,18 @@ typography = Div(
     P("Text alignment end", cls=TextT.end),
     Br(),
     H2("Code", ),
-    Code(
+    CodeSpan(
         """Button("Default", cls=ButtonT.default),
 Button("Alternative", cls=ButtonT.alternative),
 Button("Dark", cls=ButtonT.dark),
 Button("Light", cls=ButtonT.light),"""
     ),
-    Pre(Code(
+    CodeBlock(
         """Button("Default", cls=ButtonT.default),
 Button("Alternative", cls=ButtonT.alternative),
 Button("Dark", cls=ButtonT.dark),
 Button("Light", cls=ButtonT.light),"""
-    )),
+    ),
     Br(),
     H2("Special tags", ),
     Br(),
@@ -263,4 +263,5 @@ Button("Light", cls=ButtonT.light),"""
     #             });
     #         """),
     # ),
+    # cls="format"
 )

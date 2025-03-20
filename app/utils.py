@@ -26,6 +26,23 @@ def component_showcase(*c:FT|str, # Components
                 )
             ),   
         ),
+        # Add an inline script for immediate execution after the component is added to the DOM
+        Script(f"""
+        document.addEventListener('DOMContentLoaded', function() {{
+            var tabElement = document.querySelector('[data-tabs-toggle="#{id}-tab-content"]');
+            if (tabElement && typeof Tabs !== 'undefined') {{
+                new Tabs(tabElement);
+            }}
+        }});
+        
+        // Also try to initialize immediately in case this runs after DOMContentLoaded
+        (function() {{
+            var tabElement = document.querySelector('[data-tabs-toggle="#{id}-tab-content"]');
+            if (tabElement && typeof Tabs !== 'undefined') {{
+                new Tabs(tabElement);
+            }}
+        }})();
+        """),
         cls=(cls,"max-w-6xl"),
         **kwargs
     )
