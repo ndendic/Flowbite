@@ -19,8 +19,8 @@ def InputFieldsShowcase():
     description = P("Various input field components following Flowbite design system.", className="mb-8 text-gray-600 dark:text-gray-400")
     
     # Default input
-    default_input_code = inspect.getsource(DefaultInputField)
     default_input_component = DefaultInputField("Default input", "Type your text here")
+    default_input_code = 'DefaultInputField("Default input", "Type your text here")'
     default_input_showcase = component_showcase(default_input_component, code=default_input_code, id="default-input")
     
     # Helper text input

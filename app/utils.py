@@ -26,4 +26,6 @@ def component_showcase(*c:FT|str, # Components
                 )
             ),   
         ),
+        cls=cls,
+        **kwargs
     )

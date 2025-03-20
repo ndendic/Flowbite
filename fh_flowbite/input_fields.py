@@ -1,5 +1,5 @@
 from fasthtml.components import Div, Label, Input, P, A
-
+from .components import Round
 def DefaultInputField(label_text="Default input", placeholder="", input_id="default-input"):
     """
     Creates a default input field component.
@@ -13,9 +13,8 @@ def DefaultInputField(label_text="Default input", placeholder="", input_id="defa
         Div: A Div component containing the label and input field.
     """
     return Div(
-        Label(label_text, className="block mb-2 text-sm font-medium text-gray-900 dark:text-white", htmlFor=input_id),
-        Input(type="text", id=input_id, className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder=placeholder),
-        className="mb-6"
+        Label( label_text, fr=input_id, cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
+        Input(type='text', id=input_id, placeholder=placeholder, required='', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
     )
 
 def InputWithHelperText(label_text="Your email", placeholder="name@flowbite.com", helper_text="We'll never share your details. Read our", link_text="Privacy Policy", input_id="helper-text", helper_id="helper-text-explanation"):

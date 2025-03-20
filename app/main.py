@@ -10,6 +10,9 @@ from pages.themes import themes
 from pages.playground import playground
 from pages.icons import icons_images
 from pages.input_fields_showcase import input_fields_showcase
+
+from extracted.file_input import component as file_input_component 
+
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
@@ -228,6 +231,11 @@ def get(req):
 @page_template("Input Fields")
 def get(req):
     return input_fields_showcase
+
+@rt("/file_input")
+@page_template("File Input")
+def get(req):
+    return file_input_component
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)
