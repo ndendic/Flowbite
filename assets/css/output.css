@@ -141,6 +141,7 @@
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
     --breakpoint-xl: 80rem;
+    --breakpoint-2xl: 96rem;
     --container-3xs: 16rem;
     --container-2xs: 18rem;
     --container-xs: 20rem;
@@ -718,6 +719,9 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
@@ -867,6 +871,9 @@
   }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
   }
   .mt-\[2px\] {
     margin-top: 2px;
@@ -6419,14 +6426,34 @@
       width: calc(var(--spacing) * 96);
     }
   }
+  .lg\:max-w-2xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-2xl);
+    }
+  }
   .lg\:max-w-7xl {
     @media (width >= 64rem) {
       max-width: var(--container-7xl);
     }
   }
+  .lg\:max-w-\[800px\] {
+    @media (width >= 64rem) {
+      max-width: 800px;
+    }
+  }
+  .lg\:max-w-\[950px\] {
+    @media (width >= 64rem) {
+      max-width: 950px;
+    }
+  }
   .lg\:max-w-lg {
     @media (width >= 64rem) {
       max-width: var(--container-lg);
+    }
+  }
+  .lg\:max-w-screen-2xl {
+    @media (width >= 64rem) {
+      max-width: var(--breakpoint-2xl);
     }
   }
   .lg\:max-w-xl {

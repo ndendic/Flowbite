@@ -482,7 +482,7 @@ def DivCentered(*c,      # Components
                )->FT: # Div with components centered in it
     "Creates a flex div with it's components centered in it"
     cls=stringify(cls)
-    return Div(cls=(FlexT.block,(FlexT.column if vstack else FlexT.row),FlexT.middle,FlexT.center,cls),**kwargs)(*c)
+    return Div(cls=(FlexT.block,FlexT.column if vstack else FlexT.row,FlexT.middle,FlexT.center,cls),**kwargs)(*c)
 
 def DivLAligned(*c, # Components
                 cls='space-x-4',  # Classes for outer div
@@ -528,7 +528,7 @@ def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
     "Creates an icon using lucide icons"
     return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
 
-def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
+def DiceBearAvatar(seed_name:str, # Seed name (ie 'Nikola')
                    h:int=20,         # Height 
                    w:int=20,          # Width
                   ):          # Span with Avatar

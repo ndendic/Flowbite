@@ -10,7 +10,7 @@ def component_showcase(*c:FT|str, # Components
               cls:str|tuple=(), # Additional classes
               **kwargs # Additional args
               )->FT: # Playground
-    return Container(
+    return Div(
         TabContainer(
             TabItem('Preview', controls=f'{id}-preview'),
             TabItem('Code', controls=f'{id}-code'),
@@ -26,6 +26,6 @@ def component_showcase(*c:FT|str, # Components
                 )
             ),   
         ),
-        cls=cls,
+        cls=(cls,"max-w-6xl"),
         **kwargs
     )

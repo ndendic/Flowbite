@@ -11,7 +11,7 @@ from pages.playground import playground
 from pages.icons import icons_images
 from pages.input_fields_showcase import input_fields_showcase
 
-from extracted.file_input import component as file_input_component 
+from component_registry import component_registry
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -174,7 +174,7 @@ def site_page(title, content):
         Body(
             Navbar(),
             Sidebar(),
-            Main(content),
+            Main(content,cls="mx-4"),            
         ),
     )
 def page_template(title):
@@ -232,10 +232,7 @@ def get(req):
 def get(req):
     return input_fields_showcase
 
-@rt("/file_input")
-@page_template("File Input")
-def get(req):
-    return file_input_component
+component_registry.register_routes(rt, page_template)
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)

@@ -1,7 +1,8 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fh_flowbite import *
+from fh_flowbite.components import *
 from theme_switcher import ThemeSwitcher, palette_icon
+from component_registry import component_registry
 
 def Navbar():
     return Nav(
@@ -25,49 +26,41 @@ def Navbar():
                         cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),  
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='Logo', cls='h-8 me-3'),
-                        Span('Flowbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
-                        href='https://flowbite.com',
+                        Img(src='images/logo.svg', alt='Logo', cls='h-8 me-3'),
+                        Span('BiteHTML', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        href='/',
                         cls='flex ms-2 md:me-24'
                     ),
                     cls='flex items-center justify-start rtl:justify-end'
                 ),
                 Div(
                     ThemeSwitcher(),
-                    Button(
-                        Svg(
-                            Path(d='M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z'),
+                    Div(
+                        Icon(
+                            "moon",
                             id='theme-toggle-dark-icon',
-                            aria_hidden='true',
-                            xmlns='http://www.w3.org/2000/svg',
-                            fill='currentColor',
-                            viewbox='0 0 18 20',
-                            cls='w-4 h-4 hidden'
+                            cls='w-4 h-4'
                         ),
-                        Svg(
-                            Path(d='M10 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-11a1 1 0 0 0 1-1V1a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm0 12a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1ZM4.343 5.757a1 1 0 0 0 1.414-1.414L4.343 2.929a1 1 0 0 0-1.414 1.414l1.414 1.414Zm11.314 8.486a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM4 10a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm15-1h-2a1 1 0 1 0 0 2h2a1 1 0 0 0 0-2ZM4.343 14.243l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414a1 1 0 0 0-1.414-1.414ZM14.95 6.05a1 1 0 0 0 .707-.293l1.414-1.414a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 .707 1.707Z'),
+                        Icon(
+                            "sun",
                             id='theme-toggle-light-icon',
-                            aria_hidden='true',
-                            xmlns='http://www.w3.org/2000/svg',
-                            fill='currentColor',
-                            viewbox='0 0 20 20',
                             cls='w-4 h-4 hidden'
                         ),
                         Span('Toggle dark mode', cls='sr-only'),
                         id='theme-toggle',
-                        # data_tooltip_target='tooltip-toggle',
+                        data_tooltip_target='tooltip-toggle',
                         type='button',
-                        cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
+                        cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
                     ),
                     Div(
                         Div(
-                            Button(
+                            Div(
                                 Span('Open user menu', cls='sr-only'),
-                                Img(src='https://flowbite.com/docs/images/people/profile-picture-5.jpg', alt='user photo', cls='w-8 h-8 rounded-full'),
+                                DiceBearAvatar(seed_name='Neil Sims',h=9,w=9),
                                 type='button',
                                 aria_expanded='false',
                                 data_dropdown_toggle='dropdown-user',
-                                cls='flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600'
+                                cls='flex text-sm rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600'
                             )
                         ),
                         Div(
@@ -96,7 +89,7 @@ def Navbar():
                             id='dropdown-user',
                             cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                         ),
-                        cls='flex items-center ms-3'
+                        cls='flex items-center'
                     ),
                     cls='flex items-center'
                 ),
@@ -120,7 +113,7 @@ def SidebarItem(name, href = "#", icon=None):
         )
     )
 
-sidebar_items = [
+standard_sidebar_items = [
     SidebarItem("Home", href="/"),
     SidebarItem("Typography", href="/typography"),
     SidebarItem("Buttons", href="/buttons"),
@@ -129,8 +122,10 @@ sidebar_items = [
     SidebarItem("Icons", href="/icons"),
     SidebarItem("Themes", href="/themes", icon=palette_icon),
     SidebarItem("Input Fields", href="/input_fields"),
-    SidebarItem("File Input", href="/file_input"),
 ]
+
+component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)
+sidebar_items = standard_sidebar_items + component_sidebar_items
 
 def Sidebar():
     return Aside(
@@ -146,11 +141,11 @@ def Sidebar():
         cls='fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
     )
 
-def Main(content):
-    return Div(
+def Main(content,cls=()):
+    return DivCentered(
         Div(content,
-            cls='p-4 mt-14',
+            cls='p-4 mt-18 max-w-6xl',
             id='content',
         ),
-        cls='p-4'
+        cls=cls
     )
