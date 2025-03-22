@@ -85,12 +85,9 @@ component = Div(
     P('You can also include a descriptive icon to complement the message inside the alert component with the following example.'),
     component_showcase(Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -102,15 +99,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'alert-triangle',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Danger', cls='sr-only'),
         Div(
             Span('Danger alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -119,15 +113,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'check-circle',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Success', cls='sr-only'),
         Div(
             Span('Success alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -136,15 +127,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Warning', cls='sr-only'),
         Div(
             Span('Warning alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -153,15 +141,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Dark', cls='sr-only'),
         Div(
             Span('Dark alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -171,12 +156,9 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -188,15 +170,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'alert-triangle',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Danger', cls='sr-only'),
         Div(
             Span('Danger alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -205,15 +184,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'check-circle',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Success', cls='sr-only'),
         Div(
             Span('Success alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -222,15 +198,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'alert-triangle',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Warning', cls='sr-only'),
         Div(
             Span('Warning alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -239,15 +212,12 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
-        Span('Info', cls='sr-only'),
+        Span('Dark', cls='sr-only'),
         Div(
             Span('Dark alert!', cls='font-medium'),
             'Change a few things up and try submitting again.'
@@ -265,12 +235,9 @@ component = Div(
     P('Use this example to add a border accent to the alert component instead of just a plain background.'),
     component_showcase(Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -282,12 +249,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-primary-800 border border-primary-300 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400 dark:border-primary-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -299,12 +263,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -316,12 +277,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -333,12 +291,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -351,12 +306,9 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -368,12 +320,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-primary-800 border border-primary-300 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400 dark:border-primary-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -385,12 +334,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -402,12 +348,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -419,12 +362,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
         Span('Info', cls='sr-only'),
@@ -445,12 +385,9 @@ component = Div(
     P('Use this example to show a list and a description inside an alert component.'),
     component_showcase(Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
         Span('Info', cls='sr-only'),
@@ -467,12 +404,9 @@ component = Div(
         cls='flex p-4 mb-4 text-sm text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
         Span('Danger', cls='sr-only'),
@@ -490,12 +424,9 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
         Span('Info', cls='sr-only'),
@@ -512,12 +443,9 @@ component = Div(
         cls='flex p-4 mb-4 text-sm text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
         Span('Danger', cls='sr-only'),
@@ -572,12 +500,9 @@ component = Div(
     P('Use the following alert elements that are also dismissible.'),
     component_showcase(Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -607,12 +532,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -642,12 +564,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -677,12 +596,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -712,12 +628,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4 dark:text-gray-300'
         ),
         Span('Info', cls='sr-only'),
@@ -748,12 +661,9 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -783,12 +693,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-primary-800 rounded-lg bg-primary-50 dark:bg-gray-800 dark:text-primary-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -818,12 +725,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -853,12 +757,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4'
         ),
         Span('Info', cls='sr-only'),
@@ -888,12 +789,9 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
             cls='shrink-0 w-4 h-4 dark:text-gray-300'
         ),
         Span('Info', cls='sr-only'),
@@ -932,13 +830,10 @@ component = Div(
     P('Use this example to add a border accent on top of the alert component for further visual distinction.'),
     component_showcase(Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple info alert with an',
@@ -966,13 +861,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-primary-800 border-t-4 border-primary-300 bg-primary-50 dark:text-primary-400 dark:bg-gray-800 dark:border-primary-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple danger alert with an',
@@ -1000,13 +892,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple success alert with an',
@@ -1034,13 +923,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple danger alert with an',
@@ -1068,13 +954,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-yellow-800 border-t-4 border-yellow-300 bg-yellow-50 dark:text-yellow-300 dark:bg-gray-800 dark:border-yellow-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4 dark:text-gray-300'
+            cls='shrink-0 inline w-4 h-4 dark:text-gray-300'
         ),
         Div(
             'A simple dark alert with an',
@@ -1103,13 +986,10 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple info alert with an',
@@ -1137,13 +1017,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-primary-800 border-t-4 border-primary-300 bg-primary-50 dark:text-primary-400 dark:bg-gray-800 dark:border-primary-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple danger alert with an',
@@ -1171,13 +1048,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'circle-check',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple success alert with an',
@@ -1205,13 +1079,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'triangle-alert',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4'
+            cls='shrink-0 inline w-4 h-4'
         ),
         Div(
             'A simple danger alert with an',
@@ -1239,13 +1110,10 @@ component = Div(
         cls='flex items-center p-4 mb-4 text-yellow-800 border-t-4 border-yellow-300 bg-yellow-50 dark:text-yellow-300 dark:bg-gray-800 dark:border-yellow-800'
     ),
     Div(
-        Svg(
-            Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+        Icon(
+            'info',
             aria_hidden='true',
-            xmlns='http://www.w3.org/2000/svg',
-            fill='currentColor',
-            viewbox='0 0 20 20',
-            cls='shrink-0 w-4 h-4 dark:text-gray-300'
+            cls='shrink-0 inline w-4 h-4 dark:text-gray-300'
         ),
         Div(
             'A simple dark alert with an',
@@ -1283,12 +1151,9 @@ component = Div(
     component_showcase(Div(
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'info',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1319,12 +1184,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'triangle-alert',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1355,12 +1217,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'circle-check',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1391,12 +1250,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'triangle-alert',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1427,12 +1283,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'info',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2 dark:text-gray-300'
             ),
             Span('Info', cls='sr-only'),
@@ -1464,12 +1317,9 @@ component = Div(
 ), code="""Div(
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'info',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1500,12 +1350,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'triangle-alert',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1536,12 +1383,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'circle-check',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1572,12 +1416,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'triangle-alert',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
             Span('Info', cls='sr-only'),
@@ -1608,12 +1449,9 @@ component = Div(
     ),
     Div(
         Div(
-            Svg(
-                Path(d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z'),
+            Icon(
+                'info',
                 aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 20 20',
                 cls='shrink-0 w-4 h-4 me-2 dark:text-gray-300'
             ),
             Span('Info', cls='sr-only'),
@@ -2288,11 +2126,11 @@ component = Div(
         cls='relative group'
     ),
     P(
-        'If you’re using the',
+        'If you\'re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
         'from Flowbite then you can import the types for the Dismiss class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here\'s an example that applies the types from Flowbite to the code above:'),
     Div(
         Pre(
             Code(

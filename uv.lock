@@ -158,6 +158,15 @@ wheels = [
 ]
 
 [[package]]
+name = "datastar-py"
+version = "0.4.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/7b/68c1440f9fe092d462d1e6fa8f10bd9b68ac81422423d8176d6cfeafb87d/datastar_py-0.4.3.tar.gz", hash = "sha256:1b74dd0a0ed184a8df4049caf8a6827e60a18bf97a80cc8d676422630b7e2fde", size = 66465 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f4/c6/b34230cb1ab97f28e1d384261067e9962fd658e12141ec9c412c3200ca8e/datastar_py-0.4.3-py3-none-any.whl", hash = "sha256:97fce29952a5d2ba49705a2c65fd4b20a0ebd81c88dab469c85428a27c0ddf4c", size = 6875 },
+]
+
+[[package]]
 name = "decorator"
 version = "5.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -232,6 +241,7 @@ name = "flowbite"
 source = { editable = "." }
 dependencies = [
     { name = "fastwand" },
+    { name = "ft-datastar" },
     { name = "monsterui" },
     { name = "python-fasthtml" },
 ]
@@ -244,6 +254,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "fastwand", specifier = ">=0.1.31" },
+    { name = "ft-datastar", git = "https://github.com/banditburai/ft-datastar.git" },
     { name = "monsterui", specifier = ">=1.0.10" },
     { name = "python-fasthtml", specifier = ">=0.12.1" },
 ]
@@ -251,6 +262,15 @@ provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [{ name = "nbdev", specifier = ">=2.3.35" }]
+
+[[package]]
+name = "ft-datastar"
+version = "0.1.0"
+source = { git = "https://github.com/banditburai/ft-datastar.git#03e529db898fa99a5eae613e8f07f1e7383f5914" }
+dependencies = [
+    { name = "datastar-py" },
+    { name = "python-fasthtml" },
+]
 
 [[package]]
 name = "ghapi"

@@ -9,9 +9,13 @@ from pages.containers import containers
 from pages.themes import themes
 from pages.playground import playground
 from pages.icons import icons_images
-from pages.input_fields_showcase import input_fields_showcase
 
 from component_registry import component_registry
+datastar_script = Script(src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.0-beta.8/bundles/datastar.js", type="module")
+
+
+if __name__ == "__main__":
+    serve()    
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
@@ -157,6 +161,7 @@ app, rt = fast_app(
     hdrs=(
         favicons,
         flowbite_hdrs,
+        datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
@@ -227,11 +232,6 @@ def get(req):
 @page_template("Icons")
 def get(req):
     return icons_images
-
-@rt("/input_fields")
-@page_template("Input Fields")
-def get(req):
-    return input_fields_showcase
 
 component_registry.register_routes(rt, page_template)
 
