@@ -12,10 +12,7 @@ from pages.icons import icons_images
 
 from component_registry import component_registry
 datastar_script = Script(src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.0-beta.8/bundles/datastar.js", type="module")
-
-
-if __name__ == "__main__":
-    serve()    
+  
 
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"

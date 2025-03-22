@@ -145,8 +145,10 @@ def Sidebar():
 def Main(content,cls=()):
     return DivCentered(
         Div(content,
-            cls='p-4 mt-18 max-w-6xl',
+            Script('htmx.onLoad(function(content) {initTabs();})'),
+            cls='p-4 mt-18 max-w-5xl',
             id='content',
+
         ),
         cls=cls
     )

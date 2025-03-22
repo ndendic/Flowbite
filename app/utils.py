@@ -42,6 +42,6 @@ def component_showcase(*c:FT|str, # Components
             }}
         }})();
         """),
-        cls=(cls,"max-w-6xl"),
+        cls=(cls,"max-w-5xl"),
         **kwargs
     )
