@@ -2,7 +2,6 @@ from fasthtml.common import *
 from fasthtml.svg import *
 from fh_flowbite.components import *
 from fh_flowbite.core import *
-from theme_switcher import ThemeSwitcher
 
 def component_showcase(*c:FT|str, # Components
               code:str, # Code
