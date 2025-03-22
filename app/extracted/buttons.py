@@ -438,12 +438,6 @@ component = Div(
                 Path(d='M1860.54 2086.04L1834.96 2121.15L1748.09 2075.93L1860.54 2086.04Z', fill='#161616', stroke='#161616', stroke_width='5.94955'),
                 clip_path='url(#clip0_1512_1323)'
             ),
-            Defs(
-                Clippath(
-                    Rect(width='2404', height='2500', fill='white', transform='translate(0.519043 0.132812)'),
-                    id='clip0_1512_1323'
-                )
-            ),
             aria_hidden='true',
             viewbox='0 0 2405 2501',
             fill='none',
@@ -455,38 +449,6 @@ component = Div(
         cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
     ),
     Button(
-        Svg(
-            Lineargradient(
-                Stop(offset='0', stop_color='#ff1b2d'),
-                Stop(offset='.3', stop_color='#ff1b2d'),
-                Stop(offset='.614', stop_color='#ff1b2d'),
-                Stop(offset='1', stop_color='#a70014'),
-                id='a',
-                gradienttransform='matrix(0 -54.944 -54.944 0 23.62 79.474)',
-                gradientunits='userSpaceOnUse',
-                x2='1'
-            ),
-            Lineargradient(
-                Rect(width='80', height='80', fill='white', transform='translate(0.519043 0.132812)'),
-                Stop(offset='0', stop_color='#9c0000'),
-                Stop(offset='.7', stop_color='#ff4b4b'),
-                Stop(offset='1', stop_color='#ff4b4b'),
-                id='b',
-                gradienttransform='matrix(0 -48.595 -48.595 0 37.854 76.235)',
-                gradientunits='userSpaceOnUse',
-                x2='1'
-            ),
-            G(
-                Path(d='m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z', fill='url(#a)'),
-                Path(d='m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297', fill='url(#b)'),
-                transform='matrix(1.3333 0 0 -1.3333 0 107.2)'
-            ),
-            aria_hidden='true',
-            viewbox='0 0 80 80',
-            xmlns='http://www.w3.org/2000/svg',
-            cls='w-5 h-5 me-2 -ms-1',
-            **{'xmlns:xlink': 'http://www.w3.org/1999/xlink'}
-        ),
         'Connect with Opera Wallet',
         type='button',
         cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
@@ -675,12 +637,6 @@ component = Div(
                 Path(d='M1860.54 2086.04L1834.96 2121.15L1748.09 2075.93L1860.54 2086.04Z', fill='#161616', stroke='#161616', stroke_width='5.94955'),
                 clip_path='url(#clip0_1512_1323)'
             ),
-            Defs(
-                Clippath(
-                    Rect(width='2404', height='2500', fill='white', transform='translate(0.519043 0.132812)'),
-                    id='clip0_1512_1323'
-                )
-            ),
             aria_hidden='true',
             viewbox='0 0 2405 2501',
             fill='none',
@@ -692,38 +648,6 @@ component = Div(
         cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
     ),
     Button(
-        Svg(
-            Lineargradient(
-                Stop(offset='0', stop_color='#ff1b2d'),
-                Stop(offset='.3', stop_color='#ff1b2d'),
-                Stop(offset='.614', stop_color='#ff1b2d'),
-                Stop(offset='1', stop_color='#a70014'),
-                id='a',
-                gradienttransform='matrix(0 -54.944 -54.944 0 23.62 79.474)',
-                gradientunits='userSpaceOnUse',
-                x2='1'
-            ),
-            Lineargradient(
-                Rect(width='80', height='80', fill='white', transform='translate(0.519043 0.132812)'),
-                Stop(offset='0', stop_color='#9c0000'),
-                Stop(offset='.7', stop_color='#ff4b4b'),
-                Stop(offset='1', stop_color='#ff4b4b'),
-                id='b',
-                gradienttransform='matrix(0 -48.595 -48.595 0 37.854 76.235)',
-                gradientunits='userSpaceOnUse',
-                x2='1'
-            ),
-            G(
-                Path(d='m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z', fill='url(#a)'),
-                Path(d='m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297', fill='url(#b)'),
-                transform='matrix(1.3333 0 0 -1.3333 0 107.2)'
-            ),
-            aria_hidden='true',
-            viewbox='0 0 80 80',
-            xmlns='http://www.w3.org/2000/svg',
-            cls='w-5 h-5 me-2 -ms-1',
-            **{'xmlns:xlink': 'http://www.w3.org/1999/xlink'}
-        ),
         'Connect with Opera Wallet',
         type='button',
         cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'

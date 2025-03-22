@@ -103,59 +103,6 @@ component = Div(
     Form(
         Div(
             Button(
-                Svg(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    Mask(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        id='a',
-                        style='mask-type:luminance',
-                        width='20',
-                        height='15',
-                        x='0',
-                        y='0',
-                        maskunits='userSpaceOnUse'
-                    ),
-                    G(
-                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                        G(
-                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                            filter='url(#filter0_d_343_121520)'
-                        ),
-                        mask='url(#a)'
-                    ),
-                    Defs(
-                        Lineargradient(
-                            Stop(stop_color='#fff'),
-                            Stop(offset='1', stop_color='#F0F0F0'),
-                            id='paint0_linear_343_121520',
-                            x1='.933',
-                            x2='.933',
-                            y1='1.433',
-                            y2='6.1',
-                            gradientunits='userSpaceOnUse'
-                        ),
-                        Filter(
-                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                            Feoffset(dy='1'),
-                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                            id='filter0_d_343_121520',
-                            width='6.533',
-                            height='5.667',
-                            x='.933',
-                            y='1.433',
-                            color_interpolation_filters='sRGB',
-                            filterunits='userSpaceOnUse'
-                        )
-                    ),
-                    fill='none',
-                    aria_hidden='true',
-                    viewbox='0 0 20 15',
-                    cls='h-4 w-4 me-2'
-                ),
                 '+1',
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -175,59 +122,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                        G(
-                                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_343_121520)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_343_121520',
-                                            x1='.933',
-                                            x2='.933',
-                                            y1='1.433',
-                                            y2='6.1',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(dy='1'),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                            id='filter0_d_343_121520',
-                                            width='6.533',
-                                            height='5.667',
-                                            x='.933',
-                                            y='1.433',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    aria_hidden='true',
-                                    viewbox='0 0 20 15',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'United States (+1)',
                                 cls='inline-flex items-center'
                             ),
@@ -273,53 +167,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#0A17A7', d='M0 .5h19.6v14H0z'),
-                                        Path(fill='#fff', stroke='#fff', stroke_width='.667', d='M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z'),
-                                        Path(fill='url(#paint0_linear_374_135177)', fill_rule='evenodd', d='M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z', clip_rule='evenodd'),
-                                        Path(fill='url(#paint1_linear_374_135177)', fill_rule='evenodd', d='M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z', clip_rule='evenodd'),
-                                        Path(fill='#fff', fill_rule='evenodd', d='M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z', clip_rule='evenodd'),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_374_135177',
-                                            x1='0',
-                                            x2='0',
-                                            y1='.5',
-                                            y2='7.5',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Lineargradient(
-                                            Stop(stop_color='#FF2E3B'),
-                                            Stop(offset='1', stop_color='#FC0D1B'),
-                                            id='paint1_linear_374_135177',
-                                            x1='0',
-                                            x2='0',
-                                            y1='.5',
-                                            y2='7.033',
-                                            gradientunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    viewbox='0 0 20 15',
-                                    xmlns='http://www.w3.org/2000/svg',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'Australia (+61)',
                                 cls='inline-flex items-center'
                             ),
@@ -331,66 +178,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#262626', fill_rule='evenodd', d='M0 5.167h19.6V.5H0v4.667z', clip_rule='evenodd'),
-                                        G(
-                                            Path(fill='#F01515', fill_rule='evenodd', d='M0 9.833h19.6V5.167H0v4.666z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_374_135180)'
-                                        ),
-                                        G(
-                                            Path(fill='#FFD521', fill_rule='evenodd', d='M0 14.5h19.6V9.833H0V14.5z', clip_rule='evenodd'),
-                                            filter='url(#filter1_d_374_135180)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_374_135180'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_374_135180', result='shape'),
-                                            id='filter0_d_374_135180',
-                                            width='19.6',
-                                            height='4.667',
-                                            x='0',
-                                            y='5.167',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_374_135180'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_374_135180', result='shape'),
-                                            id='filter1_d_374_135180',
-                                            width='19.6',
-                                            height='4.667',
-                                            x='0',
-                                            y='9.833',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    viewbox='0 0 20 15',
-                                    cls='w-4 h-4 me-2'
-                                ),
                                 'Germany (+49)',
                                 cls='inline-flex items-center'
                             ),
@@ -434,66 +221,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#262626', fill_rule='evenodd', d='M0 5.167h19.6V.5H0v4.667z', clip_rule='evenodd'),
-                                        G(
-                                            Path(fill='#F01515', fill_rule='evenodd', d='M0 9.833h19.6V5.167H0v4.666z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_374_135180)'
-                                        ),
-                                        G(
-                                            Path(fill='#FFD521', fill_rule='evenodd', d='M0 14.5h19.6V9.833H0V14.5z', clip_rule='evenodd'),
-                                            filter='url(#filter1_d_374_135180)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_374_135180'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_374_135180', result='shape'),
-                                            id='filter0_d_374_135180',
-                                            width='19.6',
-                                            height='4.667',
-                                            x='0',
-                                            y='5.167',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_374_135180'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_374_135180', result='shape'),
-                                            id='filter1_d_374_135180',
-                                            width='19.6',
-                                            height='4.667',
-                                            x='0',
-                                            y='9.833',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    viewbox='0 0 20 15',
-                                    cls='w-4 h-4 me-2'
-                                ),
                                 'Germany (+49)',
                                 cls='inline-flex items-center'
                             ),
@@ -521,59 +248,6 @@ component = Div(
     Form(
         Div(
             Button(
-                Svg(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    Mask(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        id='a',
-                        style='mask-type:luminance',
-                        width='20',
-                        height='15',
-                        x='0',
-                        y='0',
-                        maskunits='userSpaceOnUse'
-                    ),
-                    G(
-                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                        G(
-                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                            filter='url(#filter0_d_343_121520)'
-                        ),
-                        mask='url(#a)'
-                    ),
-                    Defs(
-                        Lineargradient(
-                            Stop(stop_color='#fff'),
-                            Stop(offset='1', stop_color='#F0F0F0'),
-                            id='paint0_linear_343_121520',
-                            x1='.933',
-                            x2='.933',
-                            y1='1.433',
-                            y2='6.1',
-                            gradientunits='userSpaceOnUse'
-                        ),
-                        Filter(
-                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                            Feoffset(dy='1'),
-                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                            id='filter0_d_343_121520',
-                            width='6.533',
-                            height='5.667',
-                            x='.933',
-                            y='1.433',
-                            color_interpolation_filters='sRGB',
-                            filterunits='userSpaceOnUse'
-                        )
-                    ),
-                    fill='none',
-                    aria_hidden='true',
-                    viewbox='0 0 20 15',
-                    cls='h-4 w-4 me-2'
-                ),
                 '+1',
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -593,59 +267,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                        G(
-                                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_343_121520)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_343_121520',
-                                            x1='.933',
-                                            x2='.933',
-                                            y1='1.433',
-                                            y2='6.1',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(dy='1'),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                            id='filter0_d_343_121520',
-                                            width='6.533',
-                                            height='5.667',
-                                            x='.933',
-                                            y='1.433',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    aria_hidden='true',
-                                    viewbox='0 0 20 15',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'United States (+1)',
                                 cls='inline-flex items-center'
                             ),
@@ -691,53 +312,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#0A17A7', d='M0 .5h19.6v14H0z'),
-                                        Path(fill='#fff', stroke='#fff', stroke_width='.667', d='M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z'),
-                                        Path(fill='url(#paint0_linear_374_135177)', fill_rule='evenodd', d='M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z', clip_rule='evenodd'),
-                                        Path(fill='url(#paint1_linear_374_135177)', fill_rule='evenodd', d='M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z', clip_rule='evenodd'),
-                                        Path(fill='#fff', fill_rule='evenodd', d='M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z', clip_rule='evenodd'),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_374_135177',
-                                            x1='0',
-                                            x2='0',
-                                            y1='.5',
-                                            y2='7.5',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Lineargradient(
-                                            Stop(stop_color='#FF2E3B'),
-                                            Stop(offset='1', stop_color='#FC0D1B'),
-                                            id='paint1_linear_374_135177',
-                                            x1='0',
-                                            x2='0',
-                                            y1='.5',
-                                            y2='7.033',
-                                            gradientunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    viewbox='0 0 20 15',
-                                    xmlns='http://www.w3.org/2000/svg',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'Australia (+61)',
                                 cls='inline-flex items-center'
                             ),
@@ -1257,59 +831,6 @@ component = Div(
             cls='relative w-full'
         ),
         Button(
-            Svg(
-                Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                Mask(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    id='a',
-                    style='mask-type:luminance',
-                    width='20',
-                    height='15',
-                    x='0',
-                    y='0',
-                    maskunits='userSpaceOnUse'
-                ),
-                G(
-                    Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                    Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                    G(
-                        Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                        filter='url(#filter0_d_343_121520)'
-                    ),
-                    mask='url(#a)'
-                ),
-                Defs(
-                    Lineargradient(
-                        Stop(stop_color='#fff'),
-                        Stop(offset='1', stop_color='#F0F0F0'),
-                        id='paint0_linear_343_121520',
-                        x1='.933',
-                        x2='.933',
-                        y1='1.433',
-                        y2='6.1',
-                        gradientunits='userSpaceOnUse'
-                    ),
-                    Filter(
-                        Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                        Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                        Feoffset(dy='1'),
-                        Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                        Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                        Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                        id='filter0_d_343_121520',
-                        width='6.533',
-                        height='5.667',
-                        x='.933',
-                        y='1.433',
-                        color_interpolation_filters='sRGB',
-                        filterunits='userSpaceOnUse'
-                    )
-                ),
-                fill='none',
-                aria_hidden='true',
-                viewbox='0 0 20 15',
-                cls='h-4 w-4 me-2'
-            ),
             'USD',
             Svg(
                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -1329,59 +850,6 @@ component = Div(
                 Li(
                     Button(
                         Div(
-                            Svg(
-                                Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                Mask(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    id='a',
-                                    style='mask-type:luminance',
-                                    width='20',
-                                    height='15',
-                                    x='0',
-                                    y='0',
-                                    maskunits='userSpaceOnUse'
-                                ),
-                                G(
-                                    Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                    Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                    G(
-                                        Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                        filter='url(#filter0_d_343_121520)'
-                                    ),
-                                    mask='url(#a)'
-                                ),
-                                Defs(
-                                    Lineargradient(
-                                        Stop(stop_color='#fff'),
-                                        Stop(offset='1', stop_color='#F0F0F0'),
-                                        id='paint0_linear_343_121520',
-                                        x1='.933',
-                                        x2='.933',
-                                        y1='1.433',
-                                        y2='6.1',
-                                        gradientunits='userSpaceOnUse'
-                                    ),
-                                    Filter(
-                                        Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                        Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                        Feoffset(dy='1'),
-                                        Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                        Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                        Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                        id='filter0_d_343_121520',
-                                        width='6.533',
-                                        height='5.667',
-                                        x='.933',
-                                        y='1.433',
-                                        color_interpolation_filters='sRGB',
-                                        filterunits='userSpaceOnUse'
-                                    )
-                                ),
-                                fill='none',
-                                aria_hidden='true',
-                                viewbox='0 0 20 15',
-                                cls='h-4 w-4 me-2'
-                            ),
                             'USD',
                             cls='inline-flex items-center'
                         ),
@@ -1519,59 +987,6 @@ component = Div(
             cls='relative w-full'
         ),
         Button(
-            Svg(
-                Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                Mask(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    id='a',
-                    style='mask-type:luminance',
-                    width='20',
-                    height='15',
-                    x='0',
-                    y='0',
-                    maskunits='userSpaceOnUse'
-                ),
-                G(
-                    Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                    Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                    G(
-                        Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                        filter='url(#filter0_d_343_121520)'
-                    ),
-                    mask='url(#a)'
-                ),
-                Defs(
-                    Lineargradient(
-                        Stop(stop_color='#fff'),
-                        Stop(offset='1', stop_color='#F0F0F0'),
-                        id='paint0_linear_343_121520',
-                        x1='.933',
-                        x2='.933',
-                        y1='1.433',
-                        y2='6.1',
-                        gradientunits='userSpaceOnUse'
-                    ),
-                    Filter(
-                        Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                        Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                        Feoffset(dy='1'),
-                        Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                        Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                        Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                        id='filter0_d_343_121520',
-                        width='6.533',
-                        height='5.667',
-                        x='.933',
-                        y='1.433',
-                        color_interpolation_filters='sRGB',
-                        filterunits='userSpaceOnUse'
-                    )
-                ),
-                fill='none',
-                aria_hidden='true',
-                viewbox='0 0 20 15',
-                cls='h-4 w-4 me-2'
-            ),
             'USD',
             Svg(
                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -1591,59 +1006,6 @@ component = Div(
                 Li(
                     Button(
                         Div(
-                            Svg(
-                                Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                Mask(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    id='a',
-                                    style='mask-type:luminance',
-                                    width='20',
-                                    height='15',
-                                    x='0',
-                                    y='0',
-                                    maskunits='userSpaceOnUse'
-                                ),
-                                G(
-                                    Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                    Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                    G(
-                                        Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                        filter='url(#filter0_d_343_121520)'
-                                    ),
-                                    mask='url(#a)'
-                                ),
-                                Defs(
-                                    Lineargradient(
-                                        Stop(stop_color='#fff'),
-                                        Stop(offset='1', stop_color='#F0F0F0'),
-                                        id='paint0_linear_343_121520',
-                                        x1='.933',
-                                        x2='.933',
-                                        y1='1.433',
-                                        y2='6.1',
-                                        gradientunits='userSpaceOnUse'
-                                    ),
-                                    Filter(
-                                        Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                        Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                        Feoffset(dy='1'),
-                                        Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                        Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                        Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                        id='filter0_d_343_121520',
-                                        width='6.533',
-                                        height='5.667',
-                                        x='.933',
-                                        y='1.433',
-                                        color_interpolation_filters='sRGB',
-                                        filterunits='userSpaceOnUse'
-                                    )
-                                ),
-                                fill='none',
-                                aria_hidden='true',
-                                viewbox='0 0 20 15',
-                                cls='h-4 w-4 me-2'
-                            ),
                             'USD',
                             cls='inline-flex items-center'
                         ),
@@ -1948,59 +1310,6 @@ component = Div(
     Form(
         Div(
             Button(
-                Svg(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    Mask(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        id='a',
-                        style='mask-type:luminance',
-                        width='20',
-                        height='15',
-                        x='0',
-                        y='0',
-                        maskunits='userSpaceOnUse'
-                    ),
-                    G(
-                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                        G(
-                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                            filter='url(#filter0_d_343_121520)'
-                        ),
-                        mask='url(#a)'
-                    ),
-                    Defs(
-                        Lineargradient(
-                            Stop(stop_color='#fff'),
-                            Stop(offset='1', stop_color='#F0F0F0'),
-                            id='paint0_linear_343_121520',
-                            x1='.933',
-                            x2='.933',
-                            y1='1.433',
-                            y2='6.1',
-                            gradientunits='userSpaceOnUse'
-                        ),
-                        Filter(
-                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                            Feoffset(dy='1'),
-                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                            id='filter0_d_343_121520',
-                            width='6.533',
-                            height='5.667',
-                            x='.933',
-                            y='1.433',
-                            color_interpolation_filters='sRGB',
-                            filterunits='userSpaceOnUse'
-                        )
-                    ),
-                    fill='none',
-                    aria_hidden='true',
-                    viewbox='0 0 20 15',
-                    cls='h-4 w-4 me-2'
-                ),
                 'USD',
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -2020,59 +1329,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                        G(
-                                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_343_121520)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_343_121520',
-                                            x1='.933',
-                                            x2='.933',
-                                            y1='1.433',
-                                            y2='6.1',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(dy='1'),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                            id='filter0_d_343_121520',
-                                            width='6.533',
-                                            height='5.667',
-                                            x='.933',
-                                            y='1.433',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    aria_hidden='true',
-                                    viewbox='0 0 20 15',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'USD',
                                 cls='inline-flex items-center'
                             ),
@@ -2211,59 +1467,6 @@ component = Div(
     Form(
         Div(
             Button(
-                Svg(
-                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                    Mask(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        id='a',
-                        style='mask-type:luminance',
-                        width='20',
-                        height='15',
-                        x='0',
-                        y='0',
-                        maskunits='userSpaceOnUse'
-                    ),
-                    G(
-                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                        G(
-                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                            filter='url(#filter0_d_343_121520)'
-                        ),
-                        mask='url(#a)'
-                    ),
-                    Defs(
-                        Lineargradient(
-                            Stop(stop_color='#fff'),
-                            Stop(offset='1', stop_color='#F0F0F0'),
-                            id='paint0_linear_343_121520',
-                            x1='.933',
-                            x2='.933',
-                            y1='1.433',
-                            y2='6.1',
-                            gradientunits='userSpaceOnUse'
-                        ),
-                        Filter(
-                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                            Feoffset(dy='1'),
-                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                            id='filter0_d_343_121520',
-                            width='6.533',
-                            height='5.667',
-                            x='.933',
-                            y='1.433',
-                            color_interpolation_filters='sRGB',
-                            filterunits='userSpaceOnUse'
-                        )
-                    ),
-                    fill='none',
-                    aria_hidden='true',
-                    viewbox='0 0 20 15',
-                    cls='h-4 w-4 me-2'
-                ),
                 'USD',
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -2283,59 +1486,6 @@ component = Div(
                     Li(
                         Button(
                             Div(
-                                Svg(
-                                    Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                    Mask(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        id='a',
-                                        style='mask-type:luminance',
-                                        width='20',
-                                        height='15',
-                                        x='0',
-                                        y='0',
-                                        maskunits='userSpaceOnUse'
-                                    ),
-                                    G(
-                                        Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                        Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                        G(
-                                            Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                            filter='url(#filter0_d_343_121520)'
-                                        ),
-                                        mask='url(#a)'
-                                    ),
-                                    Defs(
-                                        Lineargradient(
-                                            Stop(stop_color='#fff'),
-                                            Stop(offset='1', stop_color='#F0F0F0'),
-                                            id='paint0_linear_343_121520',
-                                            x1='.933',
-                                            x2='.933',
-                                            y1='1.433',
-                                            y2='6.1',
-                                            gradientunits='userSpaceOnUse'
-                                        ),
-                                        Filter(
-                                            Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                            Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                            Feoffset(dy='1'),
-                                            Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                            Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                            Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                            id='filter0_d_343_121520',
-                                            width='6.533',
-                                            height='5.667',
-                                            x='.933',
-                                            y='1.433',
-                                            color_interpolation_filters='sRGB',
-                                            filterunits='userSpaceOnUse'
-                                        )
-                                    ),
-                                    fill='none',
-                                    aria_hidden='true',
-                                    viewbox='0 0 20 15',
-                                    cls='h-4 w-4 me-2'
-                                ),
                                 'USD',
                                 cls='inline-flex items-center'
                             ),
@@ -2488,59 +1638,6 @@ component = Div(
                     cls='relative w-full'
                 ),
                 Button(
-                    Svg(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        Mask(
-                            Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                            id='a',
-                            style='mask-type:luminance',
-                            width='20',
-                            height='15',
-                            x='0',
-                            y='0',
-                            maskunits='userSpaceOnUse'
-                        ),
-                        G(
-                            Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                            Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                            G(
-                                Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                filter='url(#filter0_d_343_121520)'
-                            ),
-                            mask='url(#a)'
-                        ),
-                        Defs(
-                            Lineargradient(
-                                Stop(stop_color='#fff'),
-                                Stop(offset='1', stop_color='#F0F0F0'),
-                                id='paint0_linear_343_121520',
-                                x1='.933',
-                                x2='.933',
-                                y1='1.433',
-                                y2='6.1',
-                                gradientunits='userSpaceOnUse'
-                            ),
-                            Filter(
-                                Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                Feoffset(dy='1'),
-                                Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                id='filter0_d_343_121520',
-                                width='6.533',
-                                height='5.667',
-                                x='.933',
-                                y='1.433',
-                                color_interpolation_filters='sRGB',
-                                filterunits='userSpaceOnUse'
-                            )
-                        ),
-                        fill='none',
-                        aria_hidden='true',
-                        viewbox='0 0 20 15',
-                        cls='h-4 w-4 me-2'
-                    ),
                     'USD',
                     Svg(
                         Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -2560,59 +1657,6 @@ component = Div(
                         Li(
                             Button(
                                 Div(
-                                    Svg(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        Mask(
-                                            Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                            id='a',
-                                            style='mask-type:luminance',
-                                            width='20',
-                                            height='15',
-                                            x='0',
-                                            y='0',
-                                            maskunits='userSpaceOnUse'
-                                        ),
-                                        G(
-                                            Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                            Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                            G(
-                                                Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                                filter='url(#filter0_d_343_121520)'
-                                            ),
-                                            mask='url(#a)'
-                                        ),
-                                        Defs(
-                                            Lineargradient(
-                                                Stop(stop_color='#fff'),
-                                                Stop(offset='1', stop_color='#F0F0F0'),
-                                                id='paint0_linear_343_121520',
-                                                x1='.933',
-                                                x2='.933',
-                                                y1='1.433',
-                                                y2='6.1',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Filter(
-                                                Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                                Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                                Feoffset(dy='1'),
-                                                Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                                Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                                Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                                id='filter0_d_343_121520',
-                                                width='6.533',
-                                                height='5.667',
-                                                x='.933',
-                                                y='1.433',
-                                                color_interpolation_filters='sRGB',
-                                                filterunits='userSpaceOnUse'
-                                            )
-                                        ),
-                                        fill='none',
-                                        aria_hidden='true',
-                                        viewbox='0 0 20 15',
-                                        cls='h-4 w-4 me-2'
-                                    ),
                                     'USD',
                                     cls='inline-flex items-center'
                                 ),
@@ -2835,53 +1879,6 @@ component = Div(
                         Li(
                             Button(
                                 Div(
-                                    Svg(
-                                        G(
-                                            Path(fill='url(#paint0_linear_460_40742)', d='M2.599 9.8a.524.524 0 01.37-.152h12.77c.233 0 .35.282.185.447L13.4 12.617a.523.523 0 01-.37.153H.261a.261.261 0 01-.184-.447l2.522-2.522z'),
-                                            Path(fill='url(#paint1_linear_460_40742)', d='M2.599.383a.538.538 0 01.37-.153h12.77c.232 0 .35.282.184.446L13.401 3.2a.523.523 0 01-.37.153H.26a.262.262 0 01-.185-.447L2.599.383z'),
-                                            Path(fill='url(#paint2_linear_460_40742)', d='M13.401 5.062a.523.523 0 00-.37-.153H.261a.262.262 0 00-.184.446l2.522 2.523c.097.096.23.153.37.153h12.77c.233 0 .35-.282.185-.447L13.4 5.062z'),
-                                            clip_path='url(#clip0_460_40742)'
-                                        ),
-                                        Defs(
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint0_linear_460_40742',
-                                                x1='14.519',
-                                                x2='5.681',
-                                                y1='-1.277',
-                                                y2='15.65',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint1_linear_460_40742',
-                                                x1='10.654',
-                                                x2='1.817',
-                                                y1='-3.294',
-                                                y2='13.633',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint2_linear_460_40742',
-                                                x1='12.574',
-                                                x2='3.737',
-                                                y1='-2.292',
-                                                y2='14.635',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Clippath(
-                                                Path(fill='#fff', d='M0 0h16v12.54H0z', transform='translate(0 .23)'),
-                                                id='clip0_460_40742'
-                                            )
-                                        ),
-                                        fill='none',
-                                        viewbox='0 0 16 13',
-                                        cls='h-4 w-4 me-2'
-                                    ),
                                     'SOL',
                                     cls='inline-flex items-center'
                                 ),
@@ -2929,59 +1926,6 @@ component = Div(
                     cls='relative w-full'
                 ),
                 Button(
-                    Svg(
-                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                        Mask(
-                            Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                            id='a',
-                            style='mask-type:luminance',
-                            width='20',
-                            height='15',
-                            x='0',
-                            y='0',
-                            maskunits='userSpaceOnUse'
-                        ),
-                        G(
-                            Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                            Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                            G(
-                                Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                filter='url(#filter0_d_343_121520)'
-                            ),
-                            mask='url(#a)'
-                        ),
-                        Defs(
-                            Lineargradient(
-                                Stop(stop_color='#fff'),
-                                Stop(offset='1', stop_color='#F0F0F0'),
-                                id='paint0_linear_343_121520',
-                                x1='.933',
-                                x2='.933',
-                                y1='1.433',
-                                y2='6.1',
-                                gradientunits='userSpaceOnUse'
-                            ),
-                            Filter(
-                                Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                Feoffset(dy='1'),
-                                Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                id='filter0_d_343_121520',
-                                width='6.533',
-                                height='5.667',
-                                x='.933',
-                                y='1.433',
-                                color_interpolation_filters='sRGB',
-                                filterunits='userSpaceOnUse'
-                            )
-                        ),
-                        fill='none',
-                        aria_hidden='true',
-                        viewbox='0 0 20 15',
-                        cls='h-4 w-4 me-2'
-                    ),
                     'USD',
                     Svg(
                         Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4'),
@@ -3001,59 +1945,6 @@ component = Div(
                         Li(
                             Button(
                                 Div(
-                                    Svg(
-                                        Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                        Mask(
-                                            Rect(width='19.6', height='14', y='.5', fill='#fff', rx='2'),
-                                            id='a',
-                                            style='mask-type:luminance',
-                                            width='20',
-                                            height='15',
-                                            x='0',
-                                            y='0',
-                                            maskunits='userSpaceOnUse'
-                                        ),
-                                        G(
-                                            Path(fill='#D02F44', fill_rule='evenodd', d='M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z', clip_rule='evenodd'),
-                                            Path(fill='#46467F', d='M0 .5h8.4v6.533H0z'),
-                                            G(
-                                                Path(fill='url(#paint0_linear_343_121520)', fill_rule='evenodd', d='M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z', clip_rule='evenodd'),
-                                                filter='url(#filter0_d_343_121520)'
-                                            ),
-                                            mask='url(#a)'
-                                        ),
-                                        Defs(
-                                            Lineargradient(
-                                                Stop(stop_color='#fff'),
-                                                Stop(offset='1', stop_color='#F0F0F0'),
-                                                id='paint0_linear_343_121520',
-                                                x1='.933',
-                                                x2='.933',
-                                                y1='1.433',
-                                                y2='6.1',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Filter(
-                                                Feflood(flood_opacity='0', result='BackgroundImageFix'),
-                                                Fecolormatrix(in='SourceAlpha', result='hardAlpha', values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'),
-                                                Feoffset(dy='1'),
-                                                Fecolormatrix(values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'),
-                                                Feblend(in2='BackgroundImageFix', result='effect1_dropShadow_343_121520'),
-                                                Feblend(in='SourceGraphic', in2='effect1_dropShadow_343_121520', result='shape'),
-                                                id='filter0_d_343_121520',
-                                                width='6.533',
-                                                height='5.667',
-                                                x='.933',
-                                                y='1.433',
-                                                color_interpolation_filters='sRGB',
-                                                filterunits='userSpaceOnUse'
-                                            )
-                                        ),
-                                        fill='none',
-                                        aria_hidden='true',
-                                        viewbox='0 0 20 15',
-                                        cls='h-4 w-4 me-2'
-                                    ),
                                     'USD',
                                     cls='inline-flex items-center'
                                 ),
@@ -3276,53 +2167,6 @@ component = Div(
                         Li(
                             Button(
                                 Div(
-                                    Svg(
-                                        G(
-                                            Path(fill='url(#paint0_linear_460_40742)', d='M2.599 9.8a.524.524 0 01.37-.152h12.77c.233 0 .35.282.185.447L13.4 12.617a.523.523 0 01-.37.153H.261a.261.261 0 01-.184-.447l2.522-2.522z'),
-                                            Path(fill='url(#paint1_linear_460_40742)', d='M2.599.383a.538.538 0 01.37-.153h12.77c.232 0 .35.282.184.446L13.401 3.2a.523.523 0 01-.37.153H.26a.262.262 0 01-.185-.447L2.599.383z'),
-                                            Path(fill='url(#paint2_linear_460_40742)', d='M13.401 5.062a.523.523 0 00-.37-.153H.261a.262.262 0 00-.184.446l2.522 2.523c.097.096.23.153.37.153h12.77c.233 0 .35-.282.185-.447L13.4 5.062z'),
-                                            clip_path='url(#clip0_460_40742)'
-                                        ),
-                                        Defs(
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint0_linear_460_40742',
-                                                x1='14.519',
-                                                x2='5.681',
-                                                y1='-1.277',
-                                                y2='15.65',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint1_linear_460_40742',
-                                                x1='10.654',
-                                                x2='1.817',
-                                                y1='-3.294',
-                                                y2='13.633',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Lineargradient(
-                                                Stop(stop_color='#00FFA3'),
-                                                Stop(offset='1', stop_color='#DC1FFF'),
-                                                id='paint2_linear_460_40742',
-                                                x1='12.574',
-                                                x2='3.737',
-                                                y1='-2.292',
-                                                y2='14.635',
-                                                gradientunits='userSpaceOnUse'
-                                            ),
-                                            Clippath(
-                                                Path(fill='#fff', d='M0 0h16v12.54H0z', transform='translate(0 .23)'),
-                                                id='clip0_460_40742'
-                                            )
-                                        ),
-                                        fill='none',
-                                        viewbox='0 0 16 13',
-                                        cls='h-4 w-4 me-2'
-                                    ),
                                     'SOL',
                                     cls='inline-flex items-center'
                                 ),

@@ -65,9 +65,15 @@ class ComponentRegistry:
     
     def get_sidebar_items(self, SidebarItem):
         """Generate sidebar items for all components"""
+        # Sort the components by display_name alphabetically
+        sorted_components = sorted(
+            self.components.items(),
+            key=lambda item: item[1]["display_name"]
+        )
+        
         return [
             SidebarItem(info["display_name"], href=info["route_path"])
-            for name, info in self.components.items()
+            for name, info in sorted_components
         ]
 
 # Create a singleton instance
