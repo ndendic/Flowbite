@@ -558,13 +558,15 @@ def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
     return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
 
 def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
-                   h:int=20,         # Height 
-                   w:int=20,          # Width
+                   h:int=12,         # Height 
+                   w:int=12,  
+                   cls:str=Round.full,
+                   **kwargs # Additional args for the span
                   ):          # Span with Avatar
     "Creates an Avatar using https://dicebear.com/"
     url = 'https://api.dicebear.com/8.x/lorelei/svg?seed='
-    return Span(cls=f"relative flex h-{h} w-{w} shrink-0 overflow-hidden rounded-full bg-secondary")(
-            fh.Img(cls=f"aspect-square h-{h} w-{w}", alt="Avatar", loading="lazy", src=f"{url}{seed_name}"))
+    return Span(cls=(stringify(cls),f"relative flex h-{h} w-{w} shrink-0 overflow-hidden bg-gray-200 dark:bg-gray-700"))(
+            fh.Img(cls=f"aspect-square h-{h} w-{w}", alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))
 
 def PicSumImg(h:int=200,           # Height in pixels
               w:int=200,           # Width in pixels
