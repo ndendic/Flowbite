@@ -13,16 +13,16 @@ component = Div(
     ),
     P(
         'Use this example to separate text content with a',
-        Code('<hr>'),
+        Code('Hr'),
         'horizontal line.'
     ),
     component_showcase(Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
-    Hr(cls='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700'),
+    Divider(),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.', cls='text-gray-500 dark:text-gray-400')
 ), code="""Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
-    Hr(cls='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700'),
+    Divider(),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.', cls='text-gray-500 dark:text-gray-400')
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -34,11 +34,11 @@ component = Div(
     P('Use this example to show a shorter version of the horizontal line.'),
     component_showcase(Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
-    Hr(cls='w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700'),
+    Divider(cls=DividerT.trimmed),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.', cls='text-gray-500 dark:text-gray-400')
 ), code="""Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
-    Hr(cls='w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700'),
+    Divider(cls=DividerT.trimmed),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.', cls='text-gray-500 dark:text-gray-400')
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -52,25 +52,13 @@ component = Div(
         A('SVG icon', href='https://flowbite.com/icons/'),
         'in the middle of the HR element.'
     ),
-    component_showcase(Div(
-    P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
-    Div(
-        Hr(cls='w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700'),
+    component_showcase(
         Div(
-            Svg(
-                Path(d='M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z'),
-                aria_hidden='true',
-                xmlns='http://www.w3.org/2000/svg',
-                fill='currentColor',
-                viewbox='0 0 18 14',
-                cls='w-4 h-4 text-gray-700 dark:text-gray-300'
-            ),
-            cls='absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900'
-        ),
-        cls='inline-flex items-center justify-center w-full'
-    ),
-    P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil.', cls='text-gray-500 dark:text-gray-400')
-), code="""Div(
+            P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
+            DividerSplit(Icon("quote")),
+            P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil.', cls='text-gray-500 dark:text-gray-400')
+        ), 
+        code="""Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
     Div(
         Hr(cls='w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700'),

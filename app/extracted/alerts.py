@@ -2501,6 +2501,5 @@ component = Div(
             cls='chroma'
         ),
         cls='highlight'
-    ),
-    id='mainContent'
+    )
 )

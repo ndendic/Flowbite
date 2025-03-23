@@ -5,9 +5,10 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub', 'Sup', 'BlockquoteT',
            'Blockquote', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'KbdT', 'Kbd', 'Samp', 'Var', 'Figure',
            'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'P', 'Meter',
-           'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'ContainerSize', 'Container',
-           'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked', 'DivHStacked', 'Icon',
-           'DiceBearAvatar', 'PicSumImg', 'TabItem', 'TabContainer']
+           'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'BackgroundT', 'ContainerSize',
+           'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
+           'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'Icon', 'DiceBearAvatar',
+           'PicSumImg', 'TabItem', 'TabContainer']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -660,6 +661,45 @@ class FlexT(VEnum):
     wrap = 'flex-wrap'
     wrap_reverse = 'flex-wrap-reverse'
 
+class BackgroundT(VEnum):
+    primary = "bg-primary-100 dark:bg-primary-800"
+    secondary = "bg-gray-100 dark:bg-gray-800"
+    success = "bg-green-100 dark:bg-green-800"
+    warning = "bg-yellow-100 dark:bg-yellow-800"
+    error = "bg-red-100 dark:bg-red-800"
+    info = "bg-blue-100 dark:bg-blue-800"
+
+    hover_primary = "bg-primary-100 dark:bg-primary-800 hover:bg-primary-200 dark:hover:bg-primary-700"
+    hover_secondary = "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
+    hover_success = "bg-green-100 dark:bg-green-800 hover:bg-green-200 dark:hover:bg-green-700"
+    hover_warning = "bg-yellow-100 dark:bg-yellow-800 hover:bg-yellow-200 dark:hover:bg-yellow-700"
+    hover_error = "bg-red-100 dark:bg-red-800 hover:bg-red-200 dark:hover:bg-red-700"
+    hover_info = "bg-blue-100 dark:bg-blue-800 hover:bg-blue-200 dark:hover:bg-blue-700"
+    
+    grad_primary = "bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br"
+    grad_secondary = "bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br"
+    grad_success = "bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br"
+    grad_warning = "bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br"
+    grad_error = "bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br"
+    grad_info = "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br"
+    grad_blue = "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br"
+    grad_green = "bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br"
+    grad_cyan = "bg-gradient-to-r from-cyan-500 via-cyan-600 to-cyan-700 hover:bg-gradient-to-br"
+    grad_teal = "bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br"
+    grad_lime = "bg-gradient-to-r from-lime-500 via-lime-600 to-lime-700 hover:bg-gradient-to-br"
+    grad_red = "bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br"
+    grad_yellow = "bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br"
+    grad_pink = "bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br"
+    grad_purple = "bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br"
+    #Duotone
+    purple_blue = "bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"
+    cyan_blue = "bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl"
+    green_blue = "bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl"
+    purple_pink = "bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l"
+    pink_orange = "bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl"
+    teal_lime = "bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200"
+    red_yellow = "bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl"
+
 # %% ../nbs/01_flowbite.ipynb 9
 class ContainerSize(VEnum):
     """Container size variants for Flowbite components"""
@@ -696,6 +736,16 @@ def Container(*c: Union[str, FT],
     return Div(*c, cls=all_cls, **kwargs)
 
 # %% ../nbs/01_flowbite.ipynb 10
+def Titled(title:str="FastHTML app", # Title of the page
+           *c, # Contents of the page (often other tags)
+           cls=ContainerSize.xl, # Classes in addition to Container styling
+           **kwargs # Additional args for Container (`Div` tag)
+           )->FT: # Title, Main(Container(H1(title), content))
+    "Creates a standard page structure for titled page.  Main(Container(title, content))"
+    return fh.Title(title), fh.Main(Container(H1(title), *c, cls=cls, **kwargs))
+
+
+# %% ../nbs/01_flowbite.ipynb 11
 def Grid(*div, # `Div` components to put in the grid
          cols_min:int=1, # Minimum number of columns at any screen size
          cols_max:int=4, # Maximum number of columns allowed at any screen size
@@ -774,7 +824,50 @@ def DivHStacked(*c, # Components
     return Div(cls=(FlexT.block,FlexT.row,FlexT.middle,cls), **kwargs)(*c)
    
 
-# %% ../nbs/01_flowbite.ipynb 11
+# %% ../nbs/01_flowbite.ipynb 13
+class DividerT(VEnum):
+    default = "h-px my-8 bg-gray-200 border-0 dark:bg-gray-600"
+    vertical = "h-full w-px mx-4 bg-gray-200 border-0 dark:bg-gray-600"
+    trimmed = "w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-600"
+    trimmed_vertical = "h-48 w-1 my-auto mx-4 bg-gray-100 border-0 rounded-sm md:mx-10 dark:bg-gray-600"
+
+def Divider(*c, # contents of Divider tag (often nothing)
+            vertical=False, # Whether to create a vertical divider
+            cls=(), # Classes in addition to Divider styling
+            **kwargs # Additional args for Divider tag
+            )->FT: #  Hr(..., cls='uk-divider-icon') or Div(..., cls='uk-divider-vertical')
+    "Divider with default styling and margin"
+    cls = (stringify(cls), DividerT.vertical) if vertical else (stringify(cls), DividerT.default)
+    container = Div if vertical else Hr
+    return container(*c, cls=cls, **kwargs)
+
+# TODO: This is a copy of the DividerSplit function in fh_flowbite/components.py
+def DividerSplit(*c, cls=(), line_cls=(), text_cls=()):
+    "Creates a simple horizontal line divider with configurable thickness and vertical spacing"
+    cls, line_cls, text_cls = map(stringify,(cls, line_cls, text_cls))
+    return Div(
+            Divider(cls='w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700'),
+            Div(
+                *c,
+                cls='absolute px-4 -translate-x-1/2 left-1/2 bg-inherit'
+            ),
+            cls='inline-flex items-center justify-center w-full'
+        )
+
+
+def DividerLine(lwidth=2, y_space=4): return Hr(cls=f"my-{y_space} h-[{lwidth}px] w-full bg-gray-200 dark:bg-gray-700")
+
+
+# %% ../nbs/01_flowbite.ipynb 15
+def Article(*c, # contents of Article tag (often other tags)
+            cls=(), # Classes in addition to Article styling
+            **kwargs # Additional args for Article tag
+            )->FT: # Article(..., cls='uk-article')
+    "A styled article container for blog posts or similar content"
+    return fh.Article(*c, cls=('format lg:format-lg dark:format-invert',stringify(cls)), **kwargs)
+
+
+# %% ../nbs/01_flowbite.ipynb 16
 def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=None, 
            width:int=None, 
@@ -812,7 +905,7 @@ def PicSumImg(h:int=200,           # Height in pixels
         url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
     return fh.Img(src=url, loading="lazy", **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 12
+# %% ../nbs/01_flowbite.ipynb 17
 def TabItem(text:str, # Components
             controls:str, # Controls of the tab
             **kwargs # Additional args for the `Li`
