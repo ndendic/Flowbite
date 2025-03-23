@@ -20,28 +20,9 @@ def component_showcase(*c:FT|str, # Components
                 *c
             ),
             Li(id=f'{id}-code', role='tabpanel', aria_labelledby=f'{id}-code-tab', cls='hidden rounded-lg bg-gray-50 dark:bg-gray-800')(
-                Pre(cls='text-sm text-gray-500 dark:text-gray-400'+Round.lg)(
-                    Code(cls='language-python')(code)
-                )
+                CodeBlock(code)
             ),   
         ),
-        # Add an inline script for immediate execution after the component is added to the DOM
-        Script(f"""
-        document.addEventListener('DOMContentLoaded', function() {{
-            var tabElement = document.querySelector('[data-tabs-toggle="#{id}-tab-content"]');
-            if (tabElement && typeof Tabs !== 'undefined') {{
-                new Tabs(tabElement);
-            }}
-        }});
-        
-        // Also try to initialize immediately in case this runs after DOMContentLoaded
-        (function() {{
-            var tabElement = document.querySelector('[data-tabs-toggle="#{id}-tab-content"]');
-            if (tabElement && typeof Tabs !== 'undefined') {{
-                new Tabs(tabElement);
-            }}
-        }})();
-        """),
         cls=(cls,"max-w-5xl"),
         **kwargs
     )

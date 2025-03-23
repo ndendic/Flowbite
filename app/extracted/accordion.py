@@ -1,6 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fh_flowbite.components import *
+from fh_flowbite.components import CodeSpan as Code
 from utils import component_showcase
 
 component = Div(
@@ -18,11 +19,11 @@ component = Div(
         )
     ),
     P(
-        'Don’t forget to set the',
+        'Don’t forget to set the ',
         Code('data-accordion-target="{selector}"'),
-        'data attribute to the header element where the value is the id or class of the accordion body element and the',
+        ' data attribute to the header element where the value is the id or class of the accordion body element and the',
         Code('aria-expanded="{true|false}"'),
-        'attribute to mark the active or inactive state of the accordion.'
+        ' attribute to mark the active or inactive state of the accordion.'
     ),
     H2(
         'Default accordion',
@@ -31,14 +32,14 @@ component = Div(
         cls='relative group'
     ),
     P(
-        'Use the',
+        'Use the ',
         Code('data-accordion="collapse"'),
-        'to collapse every other child element when expanding a single one.'
+        ' to collapse every other child element when expanding a single one.'
     ),
     component_showcase(Div(
     Div(
         H2(
-            Button(
+            Div(
                 Span('What is Flowbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -49,6 +50,7 @@ component = Div(
                     viewbox='0 0 10 6',
                     cls='w-3 h-3 rotate-180 shrink-0'
                 ),
+                # shape=Round.none,
                 type='button',
                 data_accordion_target='#accordion-collapse-body-1',
                 aria_expanded='true',

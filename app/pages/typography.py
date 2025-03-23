@@ -96,30 +96,39 @@ Button("Light", cls=ButtonT.light),"""
     H2("Special tags", ),
     Br(),
     H3("Blockquote"),
+    P("Default"),
     Blockquote(
-        """
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    ),
+    P("With icon"),
+    Blockquote(
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+        with_icon=True
+    ),
+    P("Solid background"),
+    Blockquote(
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+        cls=BlockquoteT.solid
+    ),
+    P("Solid background with icon"),
+    Blockquote(
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+        with_icon=True,
+        cls=BlockquoteT.solid
     ),
     H3("Del"),
     Del(
-        """
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
     ),
     Br(),
     H3("Ins"),
     Ins(
-        """
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
     ),
     Br(),
     H3("Mark"),
     Mark(
-        """
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
+        '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
     ),
     Br(),
     H3("Sub"),
@@ -218,11 +227,11 @@ Button("Light", cls=ButtonT.light),"""
     ),
     Br(),
     H3("Kbd"),
-    Kbd(
-        """
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        """
-    ),
+    P("Default type", cls=TextT.base),
+    Kbd("Ctrl + L", cls=KbdT.default),
+    P("Advanced type", cls=TextT.base),
+    Kbd("Ctrl + L", cls=KbdT.advanced),
+    Br(),
     Br(),
     H3("Meter"),
     Meter(
