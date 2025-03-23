@@ -360,8 +360,8 @@ class BlockquoteT(VEnum):
     """Blockquote variants"""
     default = "italic font-semibold text-gray-900 dark:text-white p-4 my-4"
     solid = "italic font-semibold text-gray-900 dark:text-white p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800"
-    secondary = "border-l-4 border-secondary-500"
-    success = "border-l-4 border-success-500"
+    secondary = "border-l-4 border-gray-300 dark:border-gray-500"
+    success = "border-l-4 border-green-500"
     
 
 def Blockquote(*c:FT|str, # Contents of Blockquote tag (often text)
@@ -415,7 +415,7 @@ def Abbr(*c:FT|str, # Contents of Abbr tag
          )->FT:
     "Styled abbreviation with dotted underline"
     if title: kwargs['title'] = title
-    return fh.Abbr(*c, cls=('border-b border-dotted border-secondary hover:cursor-help', stringify(cls)), **kwargs)
+    return fh.Abbr(*c, cls=('border-b border-dotted border-gray-300 dark:border-gray-500 hover:cursor-help', stringify(cls)), **kwargs)
 
 def Dfn(*c:FT|str, # Contents of Dfn tag (definition)
         cls:Enum|str|tuple=(), # Additional classes
@@ -426,7 +426,7 @@ def Dfn(*c:FT|str, # Contents of Dfn tag (definition)
 
 class KbdT(VEnum):
     """Keyboard input variants"""
-    default = "font-mono px-1.5 py-0.5 text-sm bg-secondary border border-gray-300 dark:border-gray-600 rounded shadow-sm"
+    default = "font-mono px-1.5 py-0.5 text-sm bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-sm"
     advanced = "px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
 
 def Kbd(*c:FT|str, # Contents of Kbd tag (keyboard input)
@@ -442,7 +442,7 @@ def Samp(*c:FT|str, # Contents of Samp tag (sample output)
          **kwargs # Additional args for Samp tag
          )->FT:
     "Styled sample output with subtle background"
-    return fh.Samp(*c, cls=('font-mono bg-secondary px-1 rounded', TextT.gray, stringify(cls)), **kwargs)
+    return fh.Samp(*c, cls=('font-mono bg-gray-200 dark:bg-gray-800 px-1 rounded', TextT.gray, stringify(cls)), **kwargs)
 
 def Var(*c:FT|str, # Contents of Var tag (variable)
         cls:Enum|str|tuple=(), # Additional classes
@@ -457,7 +457,7 @@ def Figure(*c:FT|str, # Contents of Figure tag
           **kwargs # Additional args for Figure tag
           )->FT:
     "Styled figure container with card-like appearance"
-    return fh.Figure(*c, cls=('p-4 my-4 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm bg-card', stringify(cls)), **kwargs)
+    return fh.Figure(*c, cls=('p-4 my-4 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm bg-gray-200 dark:bg-gray-800', stringify(cls)), **kwargs)
 
 
 def Details(*c:FT|str, # Contents of Details tag
@@ -465,14 +465,15 @@ def Details(*c:FT|str, # Contents of Details tag
            **kwargs # Additional args for Details tag
            )->FT:
     "Styled details element"
-    return fh.Details(*c, cls=('border border-secondary rounded-lg', stringify(cls)), **kwargs)
+    # TODO: Add secondary color variant
+    return fh.Details(*c, cls=('border border-gray-200 dark:border-gray-800 rounded-lg', stringify(cls)), **kwargs)
 
 def Summary(*c:FT|str, # Contents of Summary tag
            cls:Enum|str|tuple=(), # Additional classes
            **kwargs # Additional args for Summary tag
            )->FT:
     "Styled summary element"
-    return fh.Summary(*c, cls=(TextT.medium + ' p-3 hover:bg-secondary cursor-pointer', stringify(cls)), **kwargs)
+    return fh.Summary(*c, cls=(TextT.medium + ' p-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer', stringify(cls)), **kwargs)
 
 def Data(*c:FT|str, # Contents of Data tag
          value:str=None, # Value attribute
@@ -481,7 +482,7 @@ def Data(*c:FT|str, # Contents of Data tag
          )->FT:
     "Styled data element"
     if value: kwargs['value'] = value
-    return fh.Data(*c, cls=('font-mono text-sm bg-secondary px-1 rounded', stringify(cls)), **kwargs)
+    return fh.Data(*c, cls=('font-mono text-sm bg-gray-200 dark:bg-gray-800 px-1 rounded', stringify(cls)), **kwargs)
 
 
 def S(*c:FT|str, # Contents of S tag (strikethrough)
@@ -507,7 +508,7 @@ def Output(*c:FT|str, # Contents of Output tag
     "Styled output element for form results"
     if form: kwargs['form'] = form
     if for_: kwargs['for'] = for_  # Note: 'for' is reserved in Python
-    return fh.Output(*c, cls=('font-mono bg-secondary px-2 py-1 rounded', 
+    return fh.Output(*c, cls=('font-mono bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded', 
                              stringify(cls)), **kwargs)
 
 # %% ../nbs/01_flowbite.ipynb 4
