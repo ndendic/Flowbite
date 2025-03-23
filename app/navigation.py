@@ -146,7 +146,7 @@ def Main(content,cls=()):
     return DivCentered(
         Div(content,
             Script('htmx.onLoad(function(content) {initTabs();})'),
-            cls='p-4 mt-18 max-w-5xl',
+            cls='p-4 mt-18 max-w-4xl',
             id='content',
 
         ),

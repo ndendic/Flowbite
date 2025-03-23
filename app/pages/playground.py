@@ -67,7 +67,7 @@ def component_showcase(*c: FT | str, code: str, id: str, cls: str | tuple = (), 
             ),
         ),
 
-        cls=(cls, "max-w-5xl"),
+        cls=(cls, "max-w-4xl"),
         **kwargs
     )
 

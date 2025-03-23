@@ -23,6 +23,6 @@ def component_showcase(*c:FT|str, # Components
                 CodeBlock(code)
             ),   
         ),
-        cls=(cls,"max-w-5xl"),
+        cls=(cls,"max-w-4xl"),
         **kwargs
     )

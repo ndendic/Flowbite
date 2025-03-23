@@ -539,8 +539,9 @@ def CodeBlock(*c: str, # Contents of Code tag (often text)
 #             cls=('bg-gray-100 dark:bg-gray-800 dark:text-gray-200 p-0.4 rounded text-sm font-mono'))
         cls=(Round.lg, stringify(cls)))
 
+
 def P(*c, # Contents of P tag (often text)
-      cls=(), # Classes in addition to P styling
+      cls=TextT.gray, # Classes in addition to P styling
       **kwargs # Additional args for P tag
       )->FT: # P(..., cls='uk-p')
     "A P with Styling"
@@ -864,7 +865,7 @@ def Article(*c, # contents of Article tag (often other tags)
             **kwargs # Additional args for Article tag
             )->FT: # Article(..., cls='uk-article')
     "A styled article container for blog posts or similar content"
-    return fh.Article(*c, cls=('format lg:format-lg dark:format-invert',stringify(cls)), **kwargs)
+    return fh.Article(*c, cls=('format format-sm sm:format-base lg:format-lg format-primary dark:format-invert',stringify(cls)), **kwargs)
 
 
 # %% ../nbs/01_flowbite.ipynb 16
