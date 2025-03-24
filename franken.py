@@ -41,14 +41,6 @@ import fasthtml.components as fh_comp
 
 
 # %% ../nbs/02_franken.ipynb
-def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
-          cls='space-y-3', # Classes in addition to Form styling (default is 'space-y-3' to prevent scrunched up form elements)
-          **kwargs # Additional args for Form tag
-          )->FT: # Form(..., cls='space-y-3')
-    "A Form with default spacing between form elements"
-    return fh.Form(*c, cls=stringify(cls), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
 def Fieldset(*c, # contents of Fieldset tag (often other tags)
              cls=(), # Classes in addition to Fieldset styling
              **kwargs # Additional args for Fieldset tag
@@ -97,13 +89,7 @@ def Range(*c, # contents of Range tag (often nothing)
     "A Range with default styling"
     return Uk_input_range(*c, min=min, label=label, max=max, value=value, multiple=len(value.split(','))>1, cls=('uk-range',stringify(cls)), **kwargs)
 
-# %% ../nbs/02_franken.ipynb
-def TextArea(*c, # contents of TextArea tag (often text)
-             cls=(), # Classes in addition to TextArea styling
-             **kwargs # Additional args for TextArea tag
-             )->FT: # TextArea(..., cls='uk-textarea')
-    "A Textarea with default styling"
-    return fh.Textarea(*c, cls=('uk-textarea',stringify(cls)), **kwargs)
+
 def Switch(*c, # contents of Switch tag (often nothing)
            cls=(), # Classes in addition to Switch styling
            **kwargs # Additional args for Switch tag
@@ -230,58 +216,6 @@ def LabelCheckboxX(label:str|FT, # FormLabel content (often text)
     if container: return container(inp, label, cls=stringify(cls))
     return inp, label
 
-# %% ../nbs/02_franken.ipynb
-def LabelSelect(*option, # Options for the select dropdown (can use `Options` helper function to create)
-               label:str|FT, # FormLabel content (often text)
-               lbl_cls='', # Additional classes for `FormLabel`
-               input_cls='', # Additional classes for `Select`
-               container=Div, # Container to wrap label and input in (default is Div)
-               cls='space-y-2', # Classes on container (default is 'space-y-2')
-               id='', # id for `FormLabel` and `Select` (`id`, `name` and `for` attributes are set to this value)
-                **kwargs # Additional args for `Select`
-                ):
-    "A FormLabel and Select pair that provides default spacing and links/names them based on id (usually UkLabelSelect is a better choice)"
-    if isinstance(label, str) or label.tag != 'label': 
-        label = FormLabel(lbl_cls=stringify(lbl_cls), fr=id)(label)
-    inp = Select(*option, id=id, cls=stringify(input_cls), **kwargs)        
-    if container: return container(label, inp, cls=stringify(cls))
-    return label, inp
-
-# %% ../nbs/02_franken.ipynb
-def Options(*c,                    # Content for an `Option`
-            selected_idx:int=None, # Index location of selected `Option`
-            disabled_idxs:set=None # Idex locations of disabled `Options`
-           ):
-    "Helper function to wrap things into `Option`s for use in `Select`"
-    return [fh.Option(o,selected=i==selected_idx, disabled=disabled_idxs and i in disabled_idxs) for i,o in enumerate(c)]
-
-# %% ../nbs/02_franken.ipynb
-def Select(*option,            # Options for the select dropdown (can use `Options` helper function to create)
-          inp_cls=(),         # Additional classes for the select input
-          cls=('h-10',),      # Classes for the outer div (default h-10 for consistent height)
-          cls_custom='button: uk-input-fake dropdown: w-full', # Classes for the Uk_Select web component
-          id="",              # ID for the select input
-          name="",            # Name attribute for the select input
-          placeholder="",     # Placeholder text for the select input
-          searchable=False,   # Whether the select should be searchable
-          insertable=False,   # Whether to allow user-defined options to be added
-          select_kwargs=None, # Additional Arguments passed to Select
-           **kwargs           # Additional arguments passed to Uk_select
-          ):          
-    "Creates a select dropdown with uk styling and option for adding a search box"
-    inp_cls, cls, cls_custom= map(stringify, (inp_cls, cls, cls_custom))
-    select_kwargs = ifnone(select_kwargs, {})
-    uk_select = Uk_select(fh.Select(*option, hidden=True, id=id, name=name, **select_kwargs),
-                         cls_custom=cls_custom,
-                         searchable=searchable,
-                         placeholder=placeholder,
-                         insertable=insertable,
-                         cls=inp_cls,
-                         id=id, 
-                         name=name,
-                         **kwargs)
-    
-    return Div(cls=cls)(uk_select)
 
 # %% ../nbs/02_franken.ipynb
 @delegates(GenericLabelInput, but=['input_fn','cls'])

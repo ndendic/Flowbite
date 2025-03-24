@@ -45,8 +45,9 @@ form_component = Form(
         Input(label="Success",help_text="This is a success message",id="success",placeholder="Success",type="text",required=True,cls=InputT.success,lbl_cls=LabelInputT.success,help_cls=TextT.success+TextT.sm),
         Input(label="Error",help_text="This is an error message",id="error",placeholder="Error",type="text",required=True,cls=InputT.error,lbl_cls=LabelInputT.error,help_cls=TextT.error+TextT.sm),
         TextArea(label="Text Area",id="text_area",placeholder="Text Area",required=True,cls=InputT.default),
-        Select(Option("Option 1"),Option("Option 2"),label="Select",id="select",placeholder="Select",required=True,cls=InputT.default),
+        Select(*Options("Option 1","Option 2","Option 3"),label="Select",id="select",placeholder="Select",required=True,cls=InputT.default),
         # Button("Submit",cls=ButtonT.primary),
+        
     )
 
 playground = Section(cls=(SectionT.default))(

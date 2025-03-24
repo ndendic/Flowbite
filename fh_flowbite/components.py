@@ -1052,7 +1052,7 @@ def Options(*c,                    # Content for an `Option`
             disabled_idxs:set=None # Idex locations of disabled `Options`
            ):
     "Helper function to wrap things into `Option`s for use in `Select`"
-    return [fh.Option(o) for i,o in enumerate(c)]
+    return [fh.Option(o) for o in c]
 
 def Select(*options, # Options for the select dropdown (can use `Options` helper function to create)
           label:str|FT = None, # FormLabel content (often text)
