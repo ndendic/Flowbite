@@ -39,41 +39,6 @@ from fasthtml.components import Uk_input_range
 import fasthtml.components as fh_comp
 
 
-def ArticleTitle(*c, # contents of ArticleTitle tag (often other tags)
-                 cls=(), # Classes in addition to ArticleTitle styling
-                 **kwargs # Additional args for ArticleTitle tag
-                 )->FT: # H1(..., cls='uk-article-title')
-    "A title component for use within an Article"
-    return H1(*c, cls=('uk-article-title',stringify(cls)), **kwargs)
-
-def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
-                cls=(), # Classes in addition to ArticleMeta styling
-                **kwargs # Additional args for ArticleMeta tag
-                )->FT: # P(..., cls='uk-article-meta')
-    "A metadata component for use within an Article showing things like date, author etc"
-    return P(*c, cls=('uk-article-meta',stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-class SectionT(VEnum):
-    'Section styles from https://franken-ui.dev/docs/section'
-    def _generate_next_value_(name, start, count, last_values): return str2ukcls('section', name)
-    default = auto()
-    muted = auto()
-    primary = auto()
-    secondary = auto()
-    xs = 'uk-section-xsmall'
-    sm = 'uk-section-small'
-    lg = 'uk-section-large'
-    xl = 'uk-section-xlarge'
-    remove_vertical = auto()
-
-# %% ../nbs/02_franken.ipynb
-def Section(*c, # contents of Section tag (often other tags)
-            cls=(), # Classes in addition to Section styling
-            **kwargs # Additional args for Section tag
-            )->FT: # Div(..., cls='uk-section')
-    "Section with styling and margins"
-    return fh.Div(*c, cls=('uk-section',stringify(cls)), **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
@@ -219,49 +184,6 @@ def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, i
         DividerSplit(), *c,
         Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
 
-# %% ../nbs/02_franken.ipynb
-def GenericLabelInput(
-               label:str|FT, # FormLabel content (often text)
-               lbl_cls='', # Additional classes for FormLabel
-               input_cls='', # Additional classes for user input (Input, Select, etc)
-               container=Div, # Container to wrap label and input in (default is Div)
-               cls='', # Classes on container (default is '')
-               id=None, # id for label and input (`id`, `name` and `for` attributes are set to this value).  If `label` is str, this defaults to `label.lower()`
-               input_fn=noop, # User input FT component 
-                **kwargs # Additional args for user input
-                ): 
-    "`Div(Label,Input)` component with Uk styling injected appropriately. Generally you should higher level API, such as `LabelInput` which is created for you in this library"
-    if not id and isinstance(label, str): id = label.lower()
-    if isinstance(label, str) or label.tag != 'label': 
-        label = FormLabel(cls=stringify(lbl_cls), fr=id)(label)
-    inp = input_fn(id=id, cls=stringify(input_cls), **kwargs)        
-    if container: return container(label, inp, cls=stringify(cls))
-    return label, inp
-
-# %% ../nbs/02_franken.ipynb
-def LabelInput(label:str|FT, # FormLabel content (often text)
-               lbl_cls='', # Additional classes for `FormLabel`
-               input_cls='', # Additional classes for `Input`
-               cls='space-y-2', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
-               id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
-                **kwargs # Additional args for `Input`
-               )->FT:  # Div(cls='space-y-2')(`FormLabel`, `Input`)
-    "A `FormLabel` and `Input` pair that provides default spacing and links/names them based on id"
-    return GenericLabelInput(label=label, lbl_cls=lbl_cls, input_cls=input_cls,
-                             container=Div, cls=cls, id=id, input_fn=Input, **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-def LabelTextArea(label:str|FT, # FormLabel content (often text)
-                  value='', # Value for the textarea
-                  lbl_cls='', # Additional classes for `FormLabel`
-                  input_cls='', # Additional classes for `TextArea`
-                  cls='space-y-2', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
-                  id='', # id for `FormLabel` and `TextArea` (`id`, `name` and `for` attributes are set to this value)
-                  **kwargs # Additional args for `TextArea`
-                  )->FT:  # Div(cls='space-y-2')(`FormLabel`, `TextArea`)
-    def text_area_with_value(**kw): return TextArea(value, **kw)
-    return GenericLabelInput(label=label, lbl_cls=lbl_cls, input_cls=input_cls,
-                             container=Div, cls=cls, id=id, input_fn=text_area_with_value, **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 @delegates(GenericLabelInput, but=['input_fn','cls'])

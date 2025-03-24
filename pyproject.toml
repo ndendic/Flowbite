@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-fasthtml = { workspace = true }
+flowbite = { workspace = true }
 ft-datastar = { git = "https://github.com/banditburai/ft-datastar.git" }
 
 [build-system]

@@ -4,11 +4,12 @@
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
            'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub', 'Sup', 'BlockquoteT',
            'Blockquote', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'KbdT', 'Kbd', 'Samp', 'Var', 'Figure',
-           'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'P', 'Meter',
+           'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'Meter',
            'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'BackgroundT', 'ContainerSize',
            'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
-           'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'Icon', 'DiceBearAvatar',
-           'PicSumImg', 'TabItem', 'TabContainer']
+           'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'ArticleTitle',
+           'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem', 'TabContainer',
+           'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -158,6 +159,8 @@ class TextT(VEnum):
     # Text Style
     italic = 'italic'
     
+    # Text Format
+    article='format format-sm sm:format-base lg:format-lg format-primary dark:format-invert'
     # Text Color
     gray = 'text-gray-500 dark:text-gray-400'
     muted = 'text-gray-500 dark:text-gray-400'
@@ -539,9 +542,18 @@ def CodeBlock(*c: str, # Contents of Code tag (often text)
 #             cls=('bg-gray-100 dark:bg-gray-800 dark:text-gray-200 p-0.4 rounded text-sm font-mono'))
         cls=(Round.lg, stringify(cls)))
 
+class ParagrafT(VEnum):
+    default = TextT.gray+"my-3"
+    lead = TextT.gray+"my-3 text-lg md:text-xl"
+    capital_first = "my-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start"
+    link = "my-3 font-medium text-primary-600 underline dark:text-primary-500 dark:hover:text-primary-600 hover:text-primary-700 hover:no-underline"
+    primary = TextT.primary+"my-3"
+    secondary = TextT.secondary+"my-3"
+    xs = TextT.xs+"my-3"
+    sm = TextT.sm+"my-3"
 
 def P(*c, # Contents of P tag (often text)
-      cls=TextT.gray, # Classes in addition to P styling
+      cls=ParagrafT.default, # Classes in addition to P styling
       **kwargs # Additional args for P tag
       )->FT: # P(..., cls='uk-p')
     "A P with Styling"
@@ -865,7 +877,21 @@ def Article(*c, # contents of Article tag (often other tags)
             **kwargs # Additional args for Article tag
             )->FT: # Article(..., cls='uk-article')
     "A styled article container for blog posts or similar content"
-    return fh.Article(*c, cls=('format format-sm sm:format-base lg:format-lg format-primary dark:format-invert',stringify(cls)), **kwargs)
+    return fh.Article(*c, cls=(TextT.article,stringify(cls)), **kwargs)
+
+def ArticleTitle(*c, # contents of ArticleTitle tag (often other tags)
+                 cls=(), # Classes in addition to ArticleTitle styling
+                 **kwargs # Additional args for ArticleTitle tag
+                 )->FT: # H1(..., cls='uk-article-title')
+    "A title component for use within an Article"
+    return H1(*c, cls=(TextT.article,stringify(cls)), **kwargs)
+
+def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
+                cls=(), # Classes in addition to ArticleMeta styling
+                **kwargs # Additional args for ArticleMeta tag
+                )->FT: # P(..., cls='uk-article-meta')
+    "A metadata component for use within an Article showing things like date, author etc"
+    return P(*c, cls=('text-base text-gray-500 dark:text-gray-400',stringify(cls)), **kwargs)
 
 
 # %% ../nbs/01_flowbite.ipynb 16
@@ -906,7 +932,24 @@ def PicSumImg(h:int=200,           # Height in pixels
         url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
     return fh.Img(src=url, loading="lazy", **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 17
+# %% ../nbs/01_flowbite.ipynb 18
+class SectionT(VEnum):
+    default = "py-12 px-4"
+    muted = BackgroundT.secondary+"py-12 px-4"
+    primary = BackgroundT.primary+"py-12 px-4"
+    secondary = BackgroundT.secondary+"py-12 px-4"
+    xs = ContainerSize.xs+"py-12 px-4"
+    sm = ContainerSize.sm+"py-12 px-4"
+    lg = ContainerSize.lg+"py-12 px-4"
+    xl = ContainerSize.xl+"py-12 px-4"
+
+def Section(*c, # contents of Section tag (often other tags)
+            cls=(), # Classes in addition to Section styling
+            **kwargs # Additional args for Section tag
+            )->FT: # Div(..., cls='uk-section')
+    return fh.Section(*c, cls=(stringify(cls)), **kwargs)
+
+# %% ../nbs/01_flowbite.ipynb 19
 def TabItem(text:str, # Components
             controls:str, # Controls of the tab
             **kwargs # Additional args for the `Li`
@@ -928,3 +971,113 @@ def TabContainer(*li, # Components
     ul_cls = "flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400"
     cls = stringify(cls)
     return Div(cls=(FlexT.block,FlexT.wrap,base_cls,"mb-2 border-b-2 border-gray-200 dark:border-gray-700"),**kwargs)(Ul(cls=(ul_cls,stringify(cls)), data_tabs_active_classes=active_items_cls, data_tabs_inactive_classes=inactive_items_cls,**kwargs)(*li))
+
+# %% ../nbs/01_flowbite.ipynb 21
+class FormT(VEnum):
+    default = "max-w-md mx-auto"
+    slim = "max-w-sm mx-auto"
+
+
+def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
+          cls=FormT.default, # Classes in addition to Form styling (default is 'space-y-3' to prevent scrunched up form elements)
+          **kwargs # Additional args for Form tag
+          )->FT: # Form(..., cls='space-y-3')
+    "A Form with default spacing between form elements"
+    return fh.Form(*c, cls=stringify(cls), **kwargs)
+
+class LabelInputT(VEnum):
+    default = 'block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+    success = 'block mb-2 text-sm font-medium text-green-700 dark:text-green-500'
+    error = 'block mb-2 text-sm font-medium text-red-700 dark:text-red-500'
+
+class InputT(VEnum):
+    default = 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+    success = 'bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500'
+    error = 'bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500'
+
+def Input(label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
+          cls=InputT.default, # Additional classes for `Input`
+          help_cls=TextT.sm, # Additional classes for `P` (help text)
+          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          placeholder='', # Placeholder text for the input
+          required=False, # Whether the input is required
+          help_text:str|FT = None, # Help text for the input
+          icon='', # Icon for the input
+          disabled=False, # Whether the input is disabled
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(
+                Label(label, fr=id, cls=lbl_cls) if label else None,
+                Div(cls="relative")(
+                    Div(
+                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
+                    ),
+                    fh.Input(id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+                ),
+                P(help_text, cls=(help_cls,"mt-2")),
+                cls=(div_cls),                
+            )
+
+def TextArea(label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
+          cls=InputT.default, # Additional classes for `Input`
+          help_cls=TextT.sm, # Additional classes for `P` (help text)
+          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          placeholder='', # Placeholder text for the input
+          required=False, # Whether the input is required
+          help_text:str|FT = None, # Help text for the input
+          icon='', # Icon for the input
+          disabled=False, # Whether the input is disabled
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(
+                Label(label, fr=id, cls=lbl_cls) if label else None,
+                Div(cls="relative")(
+                    Div(
+                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
+                    ),
+                    fh.Textarea(id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+                ),
+                P(help_text, cls=(help_cls,"mt-2")),
+                cls=(div_cls),                
+            )
+
+def Options(*c,                    # Content for an `Option`
+            selected_idx:int=None, # Index location of selected `Option`
+            disabled_idxs:set=None # Idex locations of disabled `Options`
+           ):
+    "Helper function to wrap things into `Option`s for use in `Select`"
+    return [fh.Option(o) for i,o in enumerate(c)]
+
+def Select(*options, # Options for the select dropdown (can use `Options` helper function to create)
+          label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
+          cls=InputT.default, # Additional classes for `Input`
+          help_cls=TextT.sm, # Additional classes for `P` (help text)
+          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          placeholder='', # Placeholder text for the input
+          required=False, # Whether the input is required
+          help_text:str|FT = None, # Help text for the input
+          icon='', # Icon for the input
+          disabled=False, # Whether the input is disabled
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(
+                Label(label, fr=id, cls=lbl_cls) if label else None,
+                Div(cls="relative")(
+                    Div(
+                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
+                    ),
+                    fh.Select(*options,id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+                ),
+                P(help_text, cls=(help_cls,"mt-2")),
+                cls=(div_cls),                
+            )
+

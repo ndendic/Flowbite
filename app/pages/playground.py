@@ -9,68 +9,6 @@ from extracted.file_input import component as file_input_component
 
 from ft_datastar import *
 
-def TabItem(text: str, controls: str, tab_signal: str) -> FT:
-    return Li(role='presentation', cls='me-2')(
-        Button(
-            text,
-            id=f'{text}-tab',
-            type='button',
-            role='tab',
-            aria_controls=controls,
-            data_on_click=f"${tab_signal} = '{controls}'",
-            data_aria_selected=f"${tab_signal} === '{controls}'",
-            data_class=(
-                f"{'text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-500 border-primary-600 dark:border-primary-500'}"
-                f" if {tab_signal} === '{controls}' else "
-                f"'dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300'"
-            ),
-            cls='inline-block p-4 border-b-2' + Round.none,
-        )
-    )
-
-
-def TabContainer(*li: FT, **kwargs) -> FT:
-    return Div(cls="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400")(
-        Ul(cls="flex -mb-px text-sm font-medium text-center", **kwargs)(*li)
-    )
-
-
-def component_showcase(*c: FT | str, code: str, id: str, cls: str | tuple = (), **kwargs) -> FT:
-    tab_signal = f"{id}_tab"
-    return Div(
-        Div(data_signals={tab_signal: f"{id}-preview"}),  # Set default active tab
-
-        TabContainer(
-            TabItem("Preview", f"{id}-preview", tab_signal),
-            TabItem("Code", f"{id}-code", tab_signal),
-        ),
-
-        Ul(id=f'{id}-tab-content')(
-            Li(
-                id=f'{id}-preview',
-                role='tabpanel',
-                aria_labelledby='Preview-tab',
-                data_class_hidden=f"${tab_signal} !== '{id}-preview'",
-                cls='p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
-            )(*c),
-
-            Li(
-                id=f'{id}-code',
-                role='tabpanel',
-                aria_labelledby='Code-tab',
-                data_class_hidden=f"${tab_signal} !== '{id}-code'",
-                cls='rounded-lg bg-gray-50 dark:bg-gray-800'
-            )(
-                Pre(cls='text-sm text-gray-500 dark:text-gray-400' + Round.lg)(
-                    Code(cls='language-python')(code)
-                )
-            ),
-        ),
-
-        cls=(cls, "max-w-4xl"),
-        **kwargs
-    )
-
 component =Div(
         H2("Datastar + FastHTML Example", cls="text-xl font-bold mb-4"),
         Div(
@@ -95,20 +33,42 @@ component =Div(
         cls="p-4 space-x-2"
     )
 
-playground = Container(
+form_component = Form(
+        H3("Form Inputs", cls="mb-4"),
+        Input(id="first_name",placeholder="No label input",required=True),
+        Input(id="disabled",placeholder="Disabled input",disabled=True),
+        Input(label="First Name",id="first_name",placeholder="John",required=True,cls=InputT.default),
+        Input(label="Last Name",id="last_name",placeholder="Doe",required=True,cls=InputT.default),
+        Input(label="Email",icon="mail",id="email",placeholder="john.doe@example.com",type="email",required=True,cls=InputT.default),
+        Input(label="Password",id="password",placeholder="********",type="password",required=True,help_text="Password must be at least 8 characters long",cls=InputT.default),
+        Input(label="Phone",id="phone",placeholder="123-456-7890",type="tel",required=True,cls=InputT.default),
+        Input(label="Success",help_text="This is a success message",id="success",placeholder="Success",type="text",required=True,cls=InputT.success,lbl_cls=LabelInputT.success,help_cls=TextT.success+TextT.sm),
+        Input(label="Error",help_text="This is an error message",id="error",placeholder="Error",type="text",required=True,cls=InputT.error,lbl_cls=LabelInputT.error,help_cls=TextT.error+TextT.sm),
+        TextArea(label="Text Area",id="text_area",placeholder="Text Area",required=True,cls=InputT.default),
+        Select(Option("Option 1"),Option("Option 2"),label="Select",id="select",placeholder="Select",required=True,cls=InputT.default),
+        # Button("Submit",cls=ButtonT.primary),
+    )
+
+playground = Section(cls=(SectionT.default))(
     # input_field_component,
-    component,
+    P("This is your playground for developing Flowbite components.\n Go to and modify ",
+Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
+
+    # component,
+
+    form_component,
+
     component_showcase(Div(
-        Img(src='/docs/images/people/profile-picture-5.jpg', alt='Rounded avatar', cls='w-10 h-10 rounded-full'),
-        Img(src='/docs/images/people/profile-picture-5.jpg', alt='Default avatar', cls='w-10 h-10 rounded-sm')
+        DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
+        DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
     ), code="""Div(
-        Img(src='/docs/images/people/profile-picture-5.jpg', alt='Rounded avatar', cls='w-10 h-10 rounded-full'),
-        Img(src='/docs/images/people/profile-picture-5.jpg', alt='Default avatar', cls='w-10 h-10 rounded-sm')
+        DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
+        DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
     )""", id="example_0",cls='mt-2 mb-6'),
 
-    DivCentered(
-        NotStr("""        
+    # DivCentered(
+    #     NotStr("""        
         
-        """)
-    )
+    #     """)
+    # )
 ) 
