@@ -86,6 +86,7 @@ Code("app/pages/playground.py")," to see the components in action.",cls=Paragraf
     #     )""", id="example_0",cls='mt-2 mb-6'),
 
     DivCentered(
+        UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 
         NotStr("""        
 

@@ -10,7 +10,7 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'ArticleTitle',
            'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem', 'TabContainer',
            'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select', 'RadioT', 'Radio',
-           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload']
+           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -1184,3 +1184,35 @@ def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
         fh.Input(aria_describedby=f'{id}_help', cls=button_cls,**input_kwargs),
         P(help_text, id=f'{id}_help', cls='mt-1 text-sm text-gray-500 dark:text-gray-300')
     )
+
+
+def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
+          help_text:str|FT = None, # Help text for the input
+          cls="mb-5", # Classes in addition to Upload styling
+          lbl_cls=TextT.sm, # Classes for the label
+          multiple=False, # Whether to allow multiple file selection
+          accept=None, # File types to accept (e.g. 'image/*')
+          button_cls='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400', # Classes for the button
+          id='file_input', # ID for the file input
+          name=None, # Name for the file input
+          **kwargs # Additional args for the outer div
+          )->FT: # Div(Input(type='file'), Button(...))
+    "A file upload component with default styling"
+    input_kwargs = {'type': 'file', 'multiple': multiple}
+    if accept: input_kwargs['accept'] = accept
+    if id: input_kwargs['id'] = id
+    if name: input_kwargs['name'] = name
+    return Div(
+            Label(
+                Div(
+                    
+                    Icon("cloud-upload",cls='w-8 h-8 mb-4 text-gray-500 dark:text-gray-400'),
+                    P(label,cls=(lbl_cls,'mb-2')),
+                    P(help_text, cls='text-xs text-gray-500 dark:text-gray-400'),
+                    cls='flex flex-col items-center justify-center pt-5 pb-6'
+                ),
+                Input(id=id, type='file', cls='hidden'),fr=id,
+                cls='flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600'
+            ),
+            cls='flex items-center justify-center w-full'
+        )
