@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.12"
 
 [[package]]
@@ -308,7 +309,6 @@ wheels = [
 
 [[package]]
 name = "flowbite"
-version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "fastwand" },
@@ -330,6 +330,7 @@ requires-dist = [
     { name = "monsterui", specifier = ">=1.0.10" },
     { name = "python-fasthtml", specifier = ">=0.12.1" },
 ]
+provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [

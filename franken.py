@@ -40,41 +40,21 @@ import fasthtml.components as fh_comp
 
 
 
-# %% ../nbs/02_franken.ipynb
-def Fieldset(*c, # contents of Fieldset tag (often other tags)
-             cls=(), # Classes in addition to Fieldset styling
-             **kwargs # Additional args for Fieldset tag
-             )->FT: # Fieldset(..., cls='uk-fieldset')
-    "A Fieldset with default styling"
-    return fh.Fieldset(*c, cls=('uk-fieldset',stringify(cls)), **kwargs)
+# # %% ../nbs/02_franken.ipynb
+# def Fieldset(*c, # contents of Fieldset tag (often other tags)
+#              cls=(), # Classes in addition to Fieldset styling
+#              **kwargs # Additional args for Fieldset tag
+#              )->FT: # Fieldset(..., cls='uk-fieldset')
+#     "A Fieldset with default styling"
+#     return fh.Fieldset(*c, cls=('uk-fieldset',stringify(cls)), **kwargs)
 
-def Legend(*c, # contents of Legend tag (often other tags)
-           cls=(), # Classes in addition to Legend styling
-           **kwargs # Additional args for Legend tag
-           )->FT: # Legend(..., cls='uk-legend')
-    "A Legend with default styling"
-    return fh.Legend(*c, cls=('uk-legend',stringify(cls)), **kwargs)
+# def Legend(*c, # contents of Legend tag (often other tags)
+#            cls=(), # Classes in addition to Legend styling
+#            **kwargs # Additional args for Legend tag
+#            )->FT: # Legend(..., cls='uk-legend')
+#     "A Legend with default styling"
+#     return fh.Legend(*c, cls=('uk-legend',stringify(cls)), **kwargs)
 
-# %% ../nbs/02_franken.ipynb
-def Input(*c, # contents of Input tag (often nothing)
-          cls=(), # Classes in addition to Input styling
-          **kwargs # Additional args for Input tag
-          )->FT: # Input(..., cls='uk-input')
-    "An Input with default styling"
-    return fh.Input(*c, cls=('uk-input',stringify(cls)), **kwargs)
-
-def Radio(*c, # contents of Radio tag (often nothing)
-           cls=(), # Classes in addition to Radio styling
-           **kwargs # Additional args for Radio tag
-           )->FT: # Input(..., cls='uk-radio', type='radio')
-    "A Radio with default styling"
-    return fh.Input(*c, cls=('uk-radio',stringify(cls)), type='radio', **kwargs)
-def CheckboxX(*c, # contents of CheckboxX tag (often nothing)
-               cls=(), # Classes in addition to CheckboxX styling
-               **kwargs # Additional args for CheckboxX tag
-               )->FT: # Input(..., cls='uk-checkbox', type='checkbox')
-    "A Checkbox with default styling"
-    return fh.Input(*c, cls=('uk-checkbox',stringify(cls)), type='checkbox', **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 def Range(*c, # contents of Range tag (often nothing)
@@ -88,14 +68,6 @@ def Range(*c, # contents of Range tag (often nothing)
            )->FT: # Input(..., cls='uk-range', type='range')
     "A Range with default styling"
     return Uk_input_range(*c, min=min, label=label, max=max, value=value, multiple=len(value.split(','))>1, cls=('uk-range',stringify(cls)), **kwargs)
-
-
-def Switch(*c, # contents of Switch tag (often nothing)
-           cls=(), # Classes in addition to Switch styling
-           **kwargs # Additional args for Switch tag
-           )->FT: # Input(..., cls='uk-toggle-switch uk-toggle-switch-primary min-w-9', type='checkbox')
-    "A Switch with default styling"
-    return fh.Input(*c, cls=('uk-toggle-switch uk-toggle-switch-primary min-w-9',stringify(cls)), type='checkbox', **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 def Upload(*c, # Contents of Upload tag button (often text)

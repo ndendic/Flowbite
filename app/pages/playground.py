@@ -1,6 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fh_flowbite.components import *
+from fh_flowbite.components import Radio
 from fh_flowbite.core import *
 from utils import component_showcase
 from theme_switcher import ThemeSwitcher
@@ -46,6 +47,20 @@ form_component = Form(
         Input(label="Error",help_text="This is an error message",id="error",placeholder="Error",type="text",required=True,cls=InputT.error,lbl_cls=LabelInputT.error,help_cls=TextT.error+TextT.sm),
         TextArea(label="Text Area",id="text_area",placeholder="Text Area",required=True,cls=InputT.default),
         Select(*Options("Option 1","Option 2","Option 3"),label="Select",id="select",placeholder="Select",required=True,cls=InputT.default),
+        Radio("Option 1",help_text="For orders shipped from $25 in books or $29 in other categories",id="radio",required=True),
+        Radio("Option Checked",help_text="For orders shipped from $30 in books or $39 in other categories",id="radio",checked=True),
+        Radio("Option disabled",help_text="For orders shipped from $30 in books or $39 in other categories",id="radio",disabled=True),
+        Checkbox("Option 1",id="checkbox"),
+        Checkbox("Option disabled",id="checkbox",disabled=True),
+        Checkbox("Option checked",id="checkbox",checked=True),
+        Checkbox("Option help",help_text="For orders shipped from $30 in books or $39 in other categories",id="checkbox"),
+        
+        Switch("Option 1",id="switch"),
+        Switch("Option disabled",id="switch",disabled=True),
+        Switch("Option checked",id="switch",checked=True),
+        Switch("Option error",id="switch",cls=SwitchT.error,checked=True),
+        Switch("Option success",id="switch",cls=SwitchT.success,checked=True),
+        Upload("Upload file",id="file_input"),
         # Button("Submit",cls=ButtonT.primary),
         
     )
@@ -67,9 +82,28 @@ Code("app/pages/playground.py")," to see the components in action.",cls=Paragraf
         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
     )""", id="example_0",cls='mt-2 mb-6'),
 
-    # DivCentered(
-    #     NotStr("""        
-        
-    #     """)
-    # )
+    DivCentered(
+
+        NotStr("""        
+
+<label class="inline-flex items-center mb-5 cursor-pointer">
+  <input type="checkbox" value="" class="sr-only peer">
+  <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+  <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+</label>
+
+<label class="inline-flex items-center mb-5 cursor-pointer">
+  <input type="checkbox" value="" class="sr-only peer" checked>
+  <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+  <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Checked toggle</span>
+</label>
+
+<label class="inline-flex items-center mb-5 cursor-pointer">
+  <input type="checkbox" value="" class="sr-only peer" disabled>
+  <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+  <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Disabled toggle</span>
+</label>
+
+        """)
+    )
 ) 

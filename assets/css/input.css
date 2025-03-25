@@ -44,17 +44,6 @@ html.dark .dark\:text-white {
     --color-primary-900: #881337;
     --color-primary-950: #4c0519;    
 
-    --color-gray-50: #fafafa;
-    --color-gray-100: #f4f4f5;
-    --color-gray-200: #e4e4e7;
-    --color-gray-300: #d4d4d8;
-    --color-gray-400: #a1a1aa;
-    --color-gray-500: #71717a;
-    --color-gray-600: #52525b;
-    --color-gray-700: #3f3f46;
-    --color-gray-800: #27272a;
-    --color-gray-900: #18181b;
-    --color-gray-950: #09090b;
 
     --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
     --font-body: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
@@ -76,18 +65,6 @@ html.dark .dark\:text-white {
     --color-primary-800: #203cb6;
     --color-primary-900: #1e358a;
     --color-primary-950: #172254;
-
-    --color-gray-50: #fafafa;
-    --color-gray-100: #f4f4f5;
-    --color-gray-200: #e4e4e7;
-    --color-gray-300: #d4d4d8;
-    --color-gray-400: #a1a1aa;
-    --color-gray-500: #71717a;
-    --color-gray-600: #52525b;
-    --color-gray-700: #3f3f46;
-    --color-gray-800: #27272a;
-    --color-gray-900: #18181b;
-    --color-gray-950: #09090b;
   }
 
   [data-theme='emerald'] {
@@ -102,6 +79,18 @@ html.dark .dark\:text-white {
     --color-primary-800: #065f46;
     --color-primary-900: #064e3b;
     --color-primary-950: #022c22;
+
+    --color-gray-50: #fafafa;
+    --color-gray-100: #f4f4f5;
+    --color-gray-200: #e4e4e7;
+    --color-gray-300: #d4d4d8;
+    --color-gray-400: #a1a1aa;
+    --color-gray-500: #71717a;
+    --color-gray-600: #52525b;
+    --color-gray-700: #3f3f46;
+    --color-gray-800: #27272a;
+    --color-gray-900: #18181b;
+    --color-gray-950: #09090b;
   }
 
   [data-theme='amber'] {
@@ -130,6 +119,18 @@ html.dark .dark\:text-white {
     --color-primary-800: #9f1239;
     --color-primary-900: #881337;
     --color-primary-950: #4c0519;
+
+    --color-gray-50: #fafafa;
+    --color-gray-100: #f4f4f5;
+    --color-gray-200: #e4e4e7;
+    --color-gray-300: #d4d4d8;
+    --color-gray-400: #a1a1aa;
+    --color-gray-500: #71717a;
+    --color-gray-600: #52525b;
+    --color-gray-700: #3f3f46;
+    --color-gray-800: #27272a;
+    --color-gray-900: #18181b;
+    --color-gray-950: #09090b;
   }
 
 }

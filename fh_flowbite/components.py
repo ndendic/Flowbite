@@ -9,7 +9,8 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
            'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'ArticleTitle',
            'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem', 'TabContainer',
-           'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select']
+           'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select', 'RadioT', 'Radio',
+           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -1052,7 +1053,7 @@ def Options(*c,                    # Content for an `Option`
             disabled_idxs:set=None # Idex locations of disabled `Options`
            ):
     "Helper function to wrap things into `Option`s for use in `Select`"
-    return [fh.Option(o) for o in c]
+    return [fh.Option(o) for i,o in enumerate(c)]
 
 def Select(*options, # Options for the select dropdown (can use `Options` helper function to create)
           label:str|FT = None, # FormLabel content (often text)
@@ -1081,3 +1082,105 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
                 cls=(div_cls),                
             )
 
+class RadioT(VEnum):
+    default = "w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+    success = "w-4 h-4 text-green-600 bg-green-100 border-green-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-green-600"
+    error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
+
+def Radio(label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
+          cls=RadioT.default, # Additional classes for `Input`
+          help_cls=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
+          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          help_text:str|FT = None, # Help text for the input
+          disabled=False, # Whether the input is disabled
+          checked=False, # Whether the input is selected
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(cls=div_cls)(
+                Div(cls='flex items-center h-5')(
+                    fh.Input(id=id, aria_describedby=f'{id}-text', type='radio', value='', cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
+                ),
+                Div(cls='ms-2 text-sm')(
+                    Label(label, fr=id, cls=lbl_cls),
+                    P(help_text, id=f'{id}-text', cls=help_cls)
+                ),                         
+            )
+
+class CheckboxT(VEnum):
+    default="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+    success = "w-4 h-4 text-green-600 bg-green-100 border-green-300 rounded-sm focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-green-600"
+    error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 rounded-sm focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
+
+def Checkbox(label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
+          cls=CheckboxT.default, # Additional classes for `Input`
+          help_cls=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
+          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          help_text:str|FT = None, # Help text for the input
+          disabled=False, # Whether the input is disabled
+          checked=False, # Whether the input is selected
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(cls=div_cls)(
+                Div(cls='flex items-center h-5')(
+                    fh.Input(id=id, aria_describedby=f'{id}-text', type='checkbox', value='', cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
+                ),
+                Div(cls='ms-2 text-sm')(
+                    Label(label, fr=id, cls=lbl_cls),
+                    P(help_text, id=f'{id}-text', cls=help_cls)
+                ),                         
+            )
+
+class SwitchT(VEnum):
+    default = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"
+    success = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
+    error = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600 dark:peer-checked:bg-red-600"
+
+def Switch(label:str|FT = None, # FormLabel content (often text)
+          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
+          cls=SwitchT.default, # Additional classes for `Input`
+          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
+          disabled=False, # Whether the input is disabled
+          checked=False, # Whether the input is selected
+          **kwargs # Additional args for `Input`
+          )->FT:    
+    return Div(cls=div_cls)(Label(cls='inline-flex items-center cursor-pointer')(
+            fh.Input(type='checkbox',id=id, value='', cls='sr-only peer',disabled=disabled,checked=checked,**kwargs),
+            Div(cls=cls,disabled=disabled),
+            Span(label, cls=(lbl_cls,"ms-3"))
+        )
+    )
+# Label(cls='inline-flex items-center mb-5 cursor-pointer')(
+#             Input(type='checkbox', cls='sr-only peer',disabled=disabled,checked=checked),
+#             Div(cls="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"),
+#             Span(label, cls=(lbl_cls,"ms-3"))
+#         )
+
+
+
+# %% ../nbs/01_flowbite.ipynb 23
+def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
+          help_text:str|FT = None, # Help text for the input
+          cls=(), # Classes in addition to Upload styling
+          lbl_cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white', # Classes for the label
+          multiple=False, # Whether to allow multiple file selection
+          accept=None, # File types to accept (e.g. 'image/*')
+          button_cls='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400', # Classes for the button
+          id='file_input', # ID for the file input
+          name=None, # Name for the file input
+          **kwargs # Additional args for the outer div
+          )->FT: # Div(Input(type='file'), Button(...))
+    "A file upload component with default styling"
+    input_kwargs = {'type': 'file', 'multiple': multiple}
+    if accept: input_kwargs['accept'] = accept
+    if id: input_kwargs['id'] = id
+    if name: input_kwargs['name'] = name
+    return Div(cls=cls)(
+        Label(label, fr=id, cls=(lbl_cls,'block mb-2')),
+        fh.Input(aria_describedby=f'{id}_help', id=id, cls=button_cls,**input_kwargs),
+        P(help_text, id=f'{id}_help', cls='mt-1 text-sm text-gray-500 dark:text-gray-300')
+    )
