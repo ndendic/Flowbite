@@ -1165,7 +1165,7 @@ def Switch(label:str|FT = None, # FormLabel content (often text)
 # %% ../nbs/01_flowbite.ipynb 23
 def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
           help_text:str|FT = None, # Help text for the input
-          cls=(), # Classes in addition to Upload styling
+          cls="mb-5", # Classes in addition to Upload styling
           lbl_cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white', # Classes for the label
           multiple=False, # Whether to allow multiple file selection
           accept=None, # File types to accept (e.g. 'image/*')
@@ -1181,6 +1181,6 @@ def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
     if name: input_kwargs['name'] = name
     return Div(cls=cls)(
         Label(label, fr=id, cls=(lbl_cls,'block mb-2')),
-        fh.Input(aria_describedby=f'{id}_help', id=id, cls=button_cls,**input_kwargs),
+        fh.Input(aria_describedby=f'{id}_help', cls=button_cls,**input_kwargs),
         P(help_text, id=f'{id}_help', cls='mt-1 text-sm text-gray-500 dark:text-gray-300')
     )
