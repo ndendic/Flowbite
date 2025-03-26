@@ -76,8 +76,123 @@ form_component = Form(
         Range(label="Default",id="default-range"),
         Range(label="Large",id="default-range",cls=RangeT.lg),
         # Button("Submit",cls=ButtonT.primary),
+
+        H3("Link",cls="mb-4"),
+        Div(
+            A("Default",cls=AT.default),
+            A("Muted",cls=AT.muted),
+            A("Text",cls=AT.text),
+            A("Primary",cls=AT.primary),
+            A("Classic",cls=AT.classic),
+            cls="space-x-2 mb-4"
+        ),
+        H3("List",cls="mb-4"),
+        Div(
+            Ul("Unordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.ul+"mb-4"),
+            Ol("Ordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.ol+"mb-4"),
+            Ul("Unstyled",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.unstyled+"mb-4"),
+
+            Ul("Nested",
+                Ul("Nested ordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.nested_ol+"mb-4"),
+                Ul("Nested unordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.nested_ul+"mb-4"),
+            ),
+            H4("Horizontal",cls="mb-4"),
+            Ul(Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.horizontal+"mb-4"),
+            Ul("Definition list",
+                Div(Dt("Item 1", cls=ListT.dt),Dd("Item 1", cls=ListT.dd)),
+                Div(Dt("Item 2", cls=ListT.dt),Dd("Item 2", cls=ListT.dd)),
+                Div(Dt("Item 3", cls=ListT.dt),Dd("Item 3", cls=ListT.dd)),
+                cls=ListT.dl+"mb-4"
+            ),
+
+        ),
         
     )
+badges_component = Div(
+            H3("Badges",cls="mb-4"),
+            H4("Default",cls="mb-4"),
+            Div(
+                Badge("Default",cls=BadgeT.default),
+                Badge("Dark",cls=BadgeT.dark),
+                Badge("Red",cls=BadgeT.red),
+                Badge("Yellow",cls=BadgeT.yellow),
+                Badge("Green",cls=BadgeT.green),
+                Badge("Blue",cls=BadgeT.blue),
+                Badge("Indigo",cls=BadgeT.indigo),
+                Badge("Purple",cls=BadgeT.purple),
+                Badge("Pink",cls=BadgeT.pink),
+                cls="space-x-2 mb-4"
+            ),
+            H4("Large",cls="mb-4"),
+            Div(
+                Badge("Default",cls=BadgeT.default_lg),
+                Badge("Dark",cls=BadgeT.dark_lg),
+                Badge("Red",cls=BadgeT.red_lg),
+                Badge("Yellow",cls=BadgeT.yellow_lg),
+                Badge("Green",cls=BadgeT.green_lg),
+                Badge("Blue",cls=BadgeT.blue_lg),
+                Badge("Indigo",cls=BadgeT.indigo_lg),
+                Badge("Purple",cls=BadgeT.purple_lg),
+                Badge("Pink",cls=BadgeT.pink_lg),
+                cls="space-x-2 mb-4"
+            ),
+            H4("Pill",cls="mb-4"),
+            Div(
+                Badge("Default",cls=BadgeT.default_pill),
+                Badge("Dark",cls=BadgeT.dark_pill),
+                Badge("Red",cls=BadgeT.red_pill),
+                Badge("Yellow",cls=BadgeT.yellow_pill),
+                Badge("Green",cls=BadgeT.green_pill),
+                Badge("Blue",cls=BadgeT.blue_pill),
+                Badge("Indigo",cls=BadgeT.indigo_pill),
+                Badge("Purple",cls=BadgeT.purple_pill),
+                Badge("Pink",cls=BadgeT.pink_pill),
+                cls="space-x-2 mb-4"
+            ),
+
+            H4("Outline",cls="mb-4"),
+            Div(
+                Badge("Default",cls=BadgeT.default_outline),
+                Badge("Dark",cls=BadgeT.dark_outline),
+                Badge("Red",cls=BadgeT.red_outline),
+                Badge("Yellow",cls=BadgeT.yellow_outline),
+                Badge("Green",cls=BadgeT.green_outline),
+                Badge("Blue",cls=BadgeT.blue_outline),
+                Badge("Indigo",cls=BadgeT.indigo_outline),
+                Badge("Purple",cls=BadgeT.purple_outline),
+                Badge("Pink",cls=BadgeT.pink_outline),
+                cls="space-x-2 mb-4"
+            ),
+            H4("Icon",cls="mb-4"),
+            Div(
+                Badge("Default", icon="home",cls=BadgeT.default),
+                Badge("Dark", icon="home",cls=BadgeT.dark),
+                Badge("Red", icon="home",cls=BadgeT.red),
+                Badge("Yellow", icon="home",cls=BadgeT.yellow),
+                Badge("Green", icon="home",cls=BadgeT.green),
+                Badge("Blue", icon="home",cls=BadgeT.blue),
+                Badge("Indigo", icon="home",cls=BadgeT.indigo),
+                Badge("Purple", icon="home",cls=BadgeT.purple),
+                Badge("Pink", icon="home",cls=BadgeT.pink),
+                cls="space-x-2 mb-4"
+            ),
+            H4("Icon only",cls="mb-4"),
+            Div(
+                IconBadge(icon="home", cls=BackgroundT.primary+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.secondary+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.success+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.warning+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.error+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.info+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_primary+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_secondary+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_success+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_warning+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_error+"p-1"),
+                IconBadge(icon="home", cls=BackgroundT.grad_info+"p-1"),
+                cls="space-x-2 mb-4"
+            )
+        )
 
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
@@ -87,7 +202,7 @@ Code("app/pages/playground.py")," to see the components in action.",cls=Paragraf
     # component,
 
     form_component,
-
+    badges_component,
     # component_showcase(Div(
     #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
     #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')

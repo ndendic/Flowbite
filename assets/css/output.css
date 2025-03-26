@@ -2184,6 +2184,9 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
+  .border-blue-400 {
+    border-color: var(--color-blue-400);
+  }
   .border-blue-700 {
     border-color: var(--color-blue-700);
   }
@@ -3452,6 +3455,9 @@
   }
   .text-blue-700 {
     color: var(--color-blue-700);
+  }
+  .text-blue-800 {
+    color: var(--color-blue-800);
   }
   .text-gray-200 {
     color: var(--color-gray-200);
@@ -7195,6 +7201,11 @@
   .dark\:fill-white {
     &:where(.dark, .dark *) {
       fill: var(--color-white);
+    }
+  }
+  .dark\:text-blue-300 {
+    &:where(.dark, .dark *) {
+      color: var(--color-blue-300);
     }
   }
   .dark\:text-blue-400 {

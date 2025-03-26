@@ -4,13 +4,14 @@
 __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'TextHeading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
            'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub', 'Sup', 'BlockquoteT',
            'Blockquote', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'KbdT', 'Kbd', 'Samp', 'Var', 'Figure',
-           'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'Meter',
-           'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'Button', 'FlexT', 'BackgroundT', 'ContainerSize',
-           'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned', 'DivRAligned', 'DivVStacked',
-           'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'ArticleTitle',
-           'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem', 'TabContainer',
-           'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select', 'RadioT', 'Radio',
-           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone', 'RangeT', 'Range']
+           'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'ListT',
+           'Meter', 'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'AT', 'Button', 'FlexT', 'BackgroundT',
+           'ContainerSize', 'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned',
+           'DivRAligned', 'DivVStacked', 'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article',
+           'ArticleTitle', 'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem',
+           'TabContainer', 'FormT', 'Form', 'LabelInputT', 'FormLabel', 'InputT', 'Input', 'TextArea', 'Options',
+           'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone', 'RangeT',
+           'Range', 'BadgeT', 'Badge', 'IconBadge']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -560,7 +561,20 @@ def P(*c, # Contents of P tag (often text)
     "A P with Styling"
     return fh.Div(fh.P(*c, cls=(stringify(cls)), **kwargs))
 
-# %% ../nbs/01_flowbite.ipynb 5
+# %% ../nbs/01_flowbite.ipynb 6
+class ListT(VEnum):
+    'List styles using Tailwind CSS'
+    ul = 'max-w-md space-y-1 list-disc list-inside' 
+    ol = 'mt-2 space-y-1 list-decimal list-inside'
+    dl = 'divide-y divide-gray-200'
+    dt = 'mb-1 text-gray-500 dark:text-gray-400'
+    dd = 'mb-1'
+    horizontal = 'flex flex-wrap items-center justify-center'
+    unstyled = 'max-w-md space-y-1 list-none list-inside'
+    nested_ol = 'ps-5 mt-2 space-y-1 list-decimal list-inside'
+    nested_ul = 'ps-5 mt-2 space-y-1 list-disc list-inside'
+
+# %% ../nbs/01_flowbite.ipynb 7
 def Meter(*c:FT|str, # Contents of Meter tag
           value:float=None, # Current value
           min:float=None, # Minimum value
@@ -574,7 +588,7 @@ def Meter(*c:FT|str, # Contents of Meter tag
     if max is not None: kwargs['max'] = max
     return fh.Meter(*c, cls=('w-full h-2 rounded', stringify(cls)), **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 6
+# %% ../nbs/01_flowbite.ipynb 8
 class ButtonColor(VEnum):
     """Button style variants for Flowbite components"""
     # Base styles
@@ -636,13 +650,21 @@ class ButtonT(VEnum):
     error = ButtonColor.red.value
     info = ButtonColor.blue.value
 
-# %% ../nbs/01_flowbite.ipynb 7
+class AT(VEnum):
+    default = "underline"
+    primary = "text-primary-600 dark:text-primary-500 hover:underline"
+    muted = "text-gray-500 dark:text-gray-400 hover:underline"
+    text = "text-gray-900 dark:text-white hover:underline"
+    classic = 'text-blue-600 hover:text-blue-800 underline'
+
+
+# %% ../nbs/01_flowbite.ipynb 9
 def Button(*c: Union[str, FT],cls: Union[str, Enum]=ButtonT.primary, shape: Union[str, Enum]=Round.default, size: Union[str, Enum]=ButtonSize.base, submit=True, **kwargs) -> FT: 
     base_class = "text-center inline-flex items-center"
     if 'type' not in kwargs: kwargs['type'] = 'submit' if submit else 'button'
     return fh.Button(*c, cls=(base_class, stringify(shape), stringify(cls), stringify(size)), **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 8
+# %% ../nbs/01_flowbite.ipynb 10
 class FlexT(VEnum):
     'Flexbox modifiers using Tailwind CSS'
     def _generate_next_value_(name, start, count, last_values): return name
@@ -714,7 +736,7 @@ class BackgroundT(VEnum):
     teal_lime = "bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200"
     red_yellow = "bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl"
 
-# %% ../nbs/01_flowbite.ipynb 9
+# %% ../nbs/01_flowbite.ipynb 11
 class ContainerSize(VEnum):
     """Container size variants for Flowbite components"""
     # Base container with responsive padding
@@ -749,7 +771,7 @@ def Container(*c: Union[str, FT],
     all_cls = (stringify(size), stringify(cls))
     return Div(*c, cls=all_cls, **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 10
+# %% ../nbs/01_flowbite.ipynb 12
 def Titled(title:str="FastHTML app", # Title of the page
            *c, # Contents of the page (often other tags)
            cls=ContainerSize.xl, # Classes in addition to Container styling
@@ -759,7 +781,7 @@ def Titled(title:str="FastHTML app", # Title of the page
     return fh.Title(title), fh.Main(Container(H1(title), *c, cls=cls, **kwargs))
 
 
-# %% ../nbs/01_flowbite.ipynb 11
+# %% ../nbs/01_flowbite.ipynb 13
 def Grid(*div, # `Div` components to put in the grid
          cols_min:int=1, # Minimum number of columns at any screen size
          cols_max:int=4, # Maximum number of columns allowed at any screen size
@@ -838,7 +860,7 @@ def DivHStacked(*c, # Components
     return Div(cls=(FlexT.block,FlexT.row,FlexT.middle,cls), **kwargs)(*c)
    
 
-# %% ../nbs/01_flowbite.ipynb 13
+# %% ../nbs/01_flowbite.ipynb 15
 class DividerT(VEnum):
     default = "h-px my-8 bg-gray-200 border-0 dark:bg-gray-600"
     vertical = "h-full w-px mx-4 bg-gray-200 border-0 dark:bg-gray-600"
@@ -872,7 +894,7 @@ def DividerSplit(*c, cls=(), line_cls=(), text_cls=()):
 def DividerLine(lwidth=2, y_space=4): return Hr(cls=f"my-{y_space} h-[{lwidth}px] w-full bg-gray-200 dark:bg-gray-700")
 
 
-# %% ../nbs/01_flowbite.ipynb 15
+# %% ../nbs/01_flowbite.ipynb 17
 def Article(*c, # contents of Article tag (often other tags)
             cls=(), # Classes in addition to Article styling
             **kwargs # Additional args for Article tag
@@ -895,7 +917,7 @@ def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
     return P(*c, cls=('text-base text-gray-500 dark:text-gray-400',stringify(cls)), **kwargs)
 
 
-# %% ../nbs/01_flowbite.ipynb 16
+# %% ../nbs/01_flowbite.ipynb 18
 def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=None, 
            width:int=None, 
@@ -933,7 +955,7 @@ def PicSumImg(h:int=200,           # Height in pixels
         url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
     return fh.Img(src=url, loading="lazy", **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 18
+# %% ../nbs/01_flowbite.ipynb 20
 class SectionT(VEnum):
     default = "py-12 px-4"
     muted = BackgroundT.secondary+"py-12 px-4"
@@ -950,7 +972,7 @@ def Section(*c, # contents of Section tag (often other tags)
             )->FT: # Div(..., cls='uk-section')
     return fh.Section(*c, cls=(stringify(cls)), **kwargs)
 
-# %% ../nbs/01_flowbite.ipynb 19
+# %% ../nbs/01_flowbite.ipynb 21
 def TabItem(text:str, # Components
             controls:str, # Controls of the tab
             **kwargs # Additional args for the `Li`
@@ -973,7 +995,7 @@ def TabContainer(*li, # Components
     cls = stringify(cls)
     return Div(cls=(FlexT.block,FlexT.wrap,base_cls,"mb-2 border-b-2 border-gray-200 dark:border-gray-700"),**kwargs)(Ul(cls=(ul_cls,stringify(cls)), data_tabs_active_classes=active_items_cls, data_tabs_inactive_classes=inactive_items_cls,**kwargs)(*li))
 
-# %% ../nbs/01_flowbite.ipynb 21
+# %% ../nbs/01_flowbite.ipynb 23
 class FormT(VEnum):
     default = "max-w-md mx-auto"
     slim = "max-w-sm mx-auto"
@@ -990,6 +1012,13 @@ class LabelInputT(VEnum):
     default = 'block mb-2 text-sm font-medium text-gray-900 dark:text-white'
     success = 'block mb-2 text-sm font-medium text-green-700 dark:text-green-500'
     error = 'block mb-2 text-sm font-medium text-red-700 dark:text-red-500'
+
+def FormLabel(*c, # contents of FormLabel tag (often text)
+               cls=LabelInputT.default, # Classes in addition to FormLabel styling
+               **kwargs # Additional args for FormLabel tag
+               )->FT: # Label(..., cls='uk-form-label')
+    "A Label with default styling"
+    return fh.Label(*c, cls=stringify(cls), **kwargs)
 
 class InputT(VEnum):
     default = 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
@@ -1010,7 +1039,7 @@ def Input(label:str|FT = None, # FormLabel content (often text)
           **kwargs # Additional args for `Input`
           )->FT:    
     return Div(
-                Label(label, fr=id, cls=lbl_cls) if label else None,
+                FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
                         Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
@@ -1036,7 +1065,7 @@ def TextArea(label:str|FT = None, # FormLabel content (often text)
           **kwargs # Additional args for `Input`
           )->FT:    
     return Div(
-                Label(label, fr=id, cls=lbl_cls) if label else None,
+                FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
                         Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
@@ -1070,7 +1099,7 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
           **kwargs # Additional args for `Input`
           )->FT:    
     return Div(
-                Label(label, fr=id, cls=lbl_cls) if label else None,
+                FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
                         Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
@@ -1103,7 +1132,7 @@ def Radio(label:str|FT = None, # FormLabel content (often text)
                     fh.Input(id=id, aria_describedby=f'{id}-text', type='radio', value='', cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
                 ),
                 Div(cls='ms-2 text-sm')(
-                    Label(label, fr=id, cls=lbl_cls),
+                    FormLabel(label, fr=id, cls=lbl_cls),
                     P(help_text, id=f'{id}-text', cls=help_cls)
                 ),                         
             )
@@ -1129,7 +1158,7 @@ def Checkbox(label:str|FT = None, # FormLabel content (often text)
                     fh.Input(id=id, aria_describedby=f'{id}-text', type='checkbox', value='', cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
                 ),
                 Div(cls='ms-2 text-sm')(
-                    Label(label, fr=id, cls=lbl_cls),
+                    FormLabel(label, fr=id, cls=lbl_cls),
                     P(help_text, id=f'{id}-text', cls=help_cls)
                 ),                         
             )
@@ -1148,7 +1177,7 @@ def Switch(label:str|FT = None, # FormLabel content (often text)
           checked=False, # Whether the input is selected
           **kwargs # Additional args for `Input`
           )->FT:    
-    return Div(cls=div_cls)(Label(cls='inline-flex items-center cursor-pointer')(
+    return Div(cls=div_cls)(FormLabel(cls='inline-flex items-center cursor-pointer')(
             fh.Input(type='checkbox',id=id, value='', cls='sr-only peer',disabled=disabled,checked=checked,**kwargs),
             Div(cls=cls,disabled=disabled),
             Span(label, cls=(lbl_cls,"ms-3"))
@@ -1162,7 +1191,7 @@ def Switch(label:str|FT = None, # FormLabel content (often text)
 
 
 
-# %% ../nbs/01_flowbite.ipynb 23
+# %% ../nbs/01_flowbite.ipynb 25
 def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
           help_text:str|FT = None, # Help text for the input
           cls="mb-5", # Classes in addition to Upload styling
@@ -1180,7 +1209,7 @@ def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
     if id: input_kwargs['id'] = id
     if name: input_kwargs['name'] = name
     return Div(cls=cls)(
-        Label(label, fr=id, cls=(lbl_cls,'block mb-2')),
+        FormLabel(label, fr=id, cls=(lbl_cls,'block mb-2')),
         fh.Input(aria_describedby=f'{id}_help', cls=button_cls,**input_kwargs),
         P(help_text, id=f'{id}_help', cls='mt-1 text-sm text-gray-500 dark:text-gray-300')
     )
@@ -1203,7 +1232,7 @@ def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
     if id: input_kwargs['id'] = id
     if name: input_kwargs['name'] = name
     return Div(
-            Label(
+            FormLabel(
                 Div(
                     
                     Icon("cloud-upload",cls='w-8 h-8 mb-4 text-gray-500 dark:text-gray-400'),
@@ -1217,7 +1246,7 @@ def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
             cls='flex items-center justify-center w-full'
         )
 
-# %% ../nbs/01_flowbite.ipynb 25
+# %% ../nbs/01_flowbite.ipynb 27
 class RangeT(VEnum):
     default = 'w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700'
     sm = 'w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700'
@@ -1237,7 +1266,68 @@ def Range(*c, # contents of Range tag (often nothing)
            )->FT: 
     "A Range with default styling"
     return Div(cls=div_cls)(
-            Label(label, fr=id, cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
+            FormLabel(label, fr=id, cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
             fh.Input(*c, id=id, type='range',  value=value, min=min, max=max, step=step, cls=stringify(cls), **kwargs),
             DivFullySpaced(*[Span(l, cls='text-sm text-gray-500 dark:text-gray-400') for l in help_labels]) if help_labels else None
         )   
+
+# %% ../nbs/01_flowbite.ipynb 29
+class BadgeT(VEnum):
+    default = 'bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300'
+    dark = 'bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-300'
+    red = 'bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300'
+    green = 'bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-green-900 dark:text-green-300'
+    blue = 'bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300'
+    yellow = 'bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300'
+    indigo = 'bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300'
+    purple = 'bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-purple-900 dark:text-purple-300'
+    pink = 'bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-pink-900 dark:text-pink-300'
+
+    default_lg ='bg-primary-100 text-primary-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300'
+    dark_lg ='bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-300'
+    red_lg ='bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300'
+    green_lg ='bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-green-900 dark:text-green-300'
+    blue_lg ='bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300'
+    yellow_lg ='bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300'
+    indigo_lg ='bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300'
+    purple_lg ='bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-purple-900 dark:text-purple-300'
+    pink_lg ='bg-pink-100 text-pink-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-pink-900 dark:text-pink-300'
+
+    default_outline='bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-primary-400 border border-primary-400'
+    dark_outline='bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-gray-400 border border-gray-500'
+    red_outline='bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-red-400 border border-red-400'
+    green_outline='bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-green-400 border border-green-400'
+    blue_outline='bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-blue-400 border border-blue-400'
+    yellow_outline='bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400'
+    indigo_outline='bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400'
+    purple_outline='bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-purple-400 border border-purple-400'
+    pink_outline='bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-pink-400 border border-pink-400'
+
+    default_pill='bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-primary-900 dark:text-primary-300'
+    dark_pill='bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300'
+    red_pill='bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300'
+    green_pill='bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300'
+    blue_pill='bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300'
+    yellow_pill='bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300'
+    indigo_pill='bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300'
+    purple_pill='bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300'
+    pink_pill='bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300'
+
+
+def Badge(*c, # contents of Label tag (often text)
+           icon=None,
+           cls=(), # Classes in addition to Label styling
+           **kwargs # Additional args for Label tag
+           )->FT: # Label(..., cls='uk-label')
+    "FrankenUI labels, which look like pills"
+    return fh.Span(Icon(icon,cls='w-2.5 h-2.5 me-1.5') if icon else None,*c, cls=(stringify(cls),'inline-flex items-center' if icon else ''), **kwargs)
+
+def IconBadge(icon,
+           h="2.5",
+           w="2.5",
+           cls=(), # Classes in addition to Label styling
+           icon_cls=(), # Classes in addition to Icon styling
+           **kwargs # Additional args for Label tag
+           )->FT: # Label(..., cls='uk-label')
+    "FrankenUI labels, which look like pills" 
+    return fh.Span(Icon(icon,cls=(f'w-{w} h-{h}',stringify(icon_cls))), cls=(stringify(cls),'inline-flex items-center rounded-full'), **kwargs)
