@@ -20,43 +20,6 @@ from fasthtml.components import Uk_input_range
 import fasthtml.components as fh_comp
 
 # %% ../nbs/02_franken.ipynb
-def Range(*c, # contents of Range tag (often nothing)
-          value='',
-          label=True,
-          min=None,
-          max=None,
-          step=None,
-           cls=(), # Classes in addition to Range styling
-           **kwargs # Additional args for Range tag
-           )->FT: # Input(..., cls='uk-range', type='range')
-    "A Range with default styling"
-    return Uk_input_range(*c, min=min, label=label, max=max, value=value, multiple=len(value.split(','))>1, cls=('uk-range',stringify(cls)), **kwargs)
-
-
-# %% ../nbs/02_franken.ipynb
-def FormLabel(*c, # contents of FormLabel tag (often text)
-               cls=(), # Classes in addition to FormLabel styling
-               **kwargs # Additional args for FormLabel tag
-               )->FT: # Label(..., cls='uk-form-label')
-    "A Label with default styling"
-    return fh.Label(*c, cls=('uk-form-label',stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-class LabelT(VEnum):
-    def _generate_next_value_(name, start, count, last_values): return str2ukcls('label', name)
-    primary = auto()
-    secondary = auto()
-    danger = auto()
-
-# %% ../nbs/02_franken.ipynb
-def Label(*c, # contents of Label tag (often text)
-           cls=(), # Classes in addition to Label styling
-           **kwargs # Additional args for Label tag
-           )->FT: # Label(..., cls='uk-label')
-    "FrankenUI labels, which look like pills"
-    return fh.Label(*c, cls=('uk-label',stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
 def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, inner_margin=6):
     "A form section with a title, description and optional button"
     return Div(cls=f'space-y-{inner_margin} py-{outer_margin}')(
@@ -64,27 +27,6 @@ def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, i
         DividerSplit(), *c,
         Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
 
-# %% ../nbs/02_franken.ipynb
-class AT(VEnum):
-    'Link styles from https://franken-ui.dev/docs/link'
-    def _generate_next_value_(name, start, count, last_values): return str2ukcls('link', name)
-    muted = auto()
-    text = auto()
-    reset = auto()
-    primary = 'uk-link text-primary hover:text-primary-focus underline'
-    classic = 'text-blue-600 hover:text-blue-800 underline'
-
-# %% ../nbs/02_franken.ipynb
-class ListT(VEnum):
-    'List styles using Tailwind CSS'
-    disc = 'list-disc list-inside'
-    circle = 'list-[circle] list-inside' 
-    square = 'list-[square] list-inside'
-    decimal = 'uk-list uk-list-decimal'
-    hyphen = 'uk-list uk-list-hyphen'
-    bullet = 'uk-list uk-list-bullet'
-    divider = 'uk-list uk-list-divider'
-    striped = 'uk-list uk-list-striped'
 
 # %% ../nbs/02_franken.ipynb
 def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
