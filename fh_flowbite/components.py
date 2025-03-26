@@ -10,7 +10,7 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article', 'ArticleTitle',
            'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem', 'TabContainer',
            'FormT', 'Form', 'LabelInputT', 'InputT', 'Input', 'TextArea', 'Options', 'Select', 'RadioT', 'Radio',
-           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone']
+           'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone', 'RangeT', 'Range']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -1216,3 +1216,28 @@ def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
             ),
             cls='flex items-center justify-center w-full'
         )
+
+# %% ../nbs/01_flowbite.ipynb 25
+class RangeT(VEnum):
+    default = 'w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700'
+    sm = 'w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700'
+    lg = 'w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700'
+
+def Range(*c, # contents of Range tag (often nothing)
+          value='', # Value of the range
+          label='', # Label of the range
+          help_labels=None, # Help labels of the range
+          id='default-range', # ID of the range
+          min=None, # Minimum value of the range
+          max=None, # Maximum value of the range
+          step=None, # Step value of the range
+          cls=RangeT.default, # Classes in addition to Range styling
+          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          **kwargs # Additional args for Range tag
+           )->FT: 
+    "A Range with default styling"
+    return Div(cls=div_cls)(
+            Label(label, fr=id, cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
+            fh.Input(*c, id=id, type='range',  value=value, min=min, max=max, step=step, cls=stringify(cls), **kwargs),
+            DivFullySpaced(*[Span(l, cls='text-sm text-gray-500 dark:text-gray-400') for l in help_labels]) if help_labels else None
+        )   

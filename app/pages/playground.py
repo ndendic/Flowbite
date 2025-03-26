@@ -64,6 +64,17 @@ form_component = Form(
         Upload("Upload file",id="file_input"),
         Upload("Upload help",help_text="This is a help text",id="file_input"),
         Upload("Upload multiple",multiple=True,id="file_input"),
+        H3("Range",cls="mb-4"),
+        Range(label="Default range",id="default-range"),
+        Range(label="Range with help labels",id="default-range",help_labels=["0%","20%","40%","60%","80%","100%"]),
+        Range(label="Disabled range",id="default-range",disabled=True),
+        Range(label="Min Max",id="default-range",min=0,max=100, help_labels=["0%","50%","100%"]),
+        Range(label="Steps",id="default-range",min=0,max=100, step=10, help_labels=["0%","50%","100%"]),
+
+        H3("Range size",cls="mb-4"),
+        Range(label="Small",id="default-range",cls=RangeT.sm),
+        Range(label="Default",id="default-range"),
+        Range(label="Large",id="default-range",cls=RangeT.lg),
         # Button("Submit",cls=ButtonT.primary),
         
     )

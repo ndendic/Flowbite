@@ -32,26 +32,6 @@ def Range(*c, # contents of Range tag (often nothing)
     "A Range with default styling"
     return Uk_input_range(*c, min=min, label=label, max=max, value=value, multiple=len(value.split(','))>1, cls=('uk-range',stringify(cls)), **kwargs)
 
-def UploadZone(*c, # Contents of UploadZone tag (often text or other tags)
-               cls=(), # Classes in addition to UploadZone styling
-               multiple=False, # Whether to allow multiple file selection
-               accept=None, # File types to accept (e.g. 'image/*')
-               id=None, # ID for the file input
-               name=None, # Name for the file input
-               **kwargs # Additional args for the outer div
-               )->FT:
-    "A file drop zone component with default styling"
-    input_kwargs = {'type': 'file', 'multiple': multiple}
-    if accept: input_kwargs['accept'] = accept 
-    if id: input_kwargs['id'] = id
-    if name: input_kwargs['name'] = name
-    return Div(
-        Div(fh.Input(**input_kwargs),
-            Span(*c),
-            uk_form_custom=True, 
-            cls='w-full'),
-        cls=('js-upload uk-placeholder uk-text-center', stringify(cls)),
-        **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 def FormLabel(*c, # contents of FormLabel tag (often text)
