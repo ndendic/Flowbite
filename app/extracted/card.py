@@ -157,7 +157,7 @@ component = Div(
     component_showcase(Div(
     Div(
         A(
-            Img(src='/docs/images/blog/image-1.jpg', alt=True, cls='rounded-t-lg'),
+            PicSumImg(h=200, w=400, cls='rounded-t-lg'),
             href='#'
         ),
         Div(
@@ -186,7 +186,7 @@ component = Div(
 ), code="""Div(
     Div(
         A(
-            Img(src='/docs/images/blog/image-1.jpg', alt=True, cls='rounded-t-lg'),
+            PicSumImg(h=200, w=400, cls='rounded-t-lg'),
             href='#'
         ),
         Div(
@@ -222,7 +222,7 @@ component = Div(
     P('If you want to spice up your cards you can use the following card which has its child elements aligned horizontally.'),
     component_showcase(Div(
     A(
-        Img(src='/docs/images/blog/image-4.jpg', alt=True, cls='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'),
+        PicSumImg(h=80, w=60, cls='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'),
         Div(
             H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
             P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='mb-3 font-normal text-gray-700 dark:text-gray-400'),
@@ -233,7 +233,7 @@ component = Div(
     )
 ), code="""Div(
     A(
-        Img(src='/docs/images/blog/image-4.jpg', alt=True, cls='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'),
+        PicSumImg(h=200, w=400, cls='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'),
         Div(
             H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
             P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='mb-3 font-normal text-gray-700 dark:text-gray-400'),
@@ -288,7 +288,7 @@ component = Div(
             cls='flex justify-end px-4 pt-4'
         ),
         Div(
-            Img(src='/docs/images/people/profile-picture-3.jpg', alt='Bonnie image', cls='w-24 h-24 mb-3 rounded-full shadow-lg'),
+            DiceBearAvatar("Bonnie Green",h=400, w=400, cls='w-24 h-24 mb-3 rounded-full shadow-lg'),
             H5('Bonnie Green', cls='mb-1 text-xl font-medium text-gray-900 dark:text-white'),
             Span('Visual Designer', cls='text-sm text-gray-500 dark:text-gray-400'),
             Div(
@@ -439,7 +439,7 @@ component = Div(
     component_showcase(Div(
     Div(
         A(
-            Img(src='/docs/images/products/apple-watch.png', alt='product image', cls='p-8 rounded-t-lg'),
+            PicSumImg(h=200, w=400, cls='p-8 rounded-t-lg'),
             href='#'
         ),
         Div(
@@ -1484,7 +1484,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-1.jpg', alt='Neil image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Neil Sims",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1500,7 +1500,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-3.jpg', alt='Bonnie image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Bonnie Green",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1516,7 +1516,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-2.jpg', alt='Michael image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Michael Gough",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1532,7 +1532,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-4.jpg', alt='Lana image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Lana Byrd",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1548,7 +1548,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-5.jpg', alt='Thomas image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Thomas Lean",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1580,7 +1580,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-1.jpg', alt='Neil image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Neil Sims",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1596,7 +1596,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-3.jpg', alt='Bonnie image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Bonnie Green",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1612,7 +1612,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-2.jpg', alt='Michael image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Michael Gough",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1628,7 +1628,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-4.jpg', alt='Lana image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Lana Byrd",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1644,7 +1644,7 @@ component = Div(
                 Li(
                     Div(
                         Div(
-                            Img(src='/docs/images/people/profile-picture-5.jpg', alt='Thomas image', cls='w-8 h-8 rounded-full'),
+                            DiceBearAvatar("Thomas Lean",h=400, w=400, cls='w-8 h-8 rounded-full'),
                             cls='shrink-0'
                         ),
                         Div(
@@ -1889,7 +1889,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Karen Nelson",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Bonnie Green'),
                     Div('Developer at Open AI', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1906,7 +1906,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Roberta Casas",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Roberta Casas'),
                     Div('Lead designer at Dropbox', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1923,7 +1923,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Jese Leos",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Jese Leos'),
                     Div('Software Engineer at Facebook', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1940,7 +1940,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Joseph McFall",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Joseph McFall'),
                     Div('CTO at Google', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1961,7 +1961,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Karen Nelson",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Bonnie Green'),
                     Div('Developer at Open AI', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1978,7 +1978,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Roberta Casas",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Roberta Casas'),
                     Div('Lead designer at Dropbox', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -1995,7 +1995,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Jese Leos",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Jese Leos'),
                     Div('Software Engineer at Facebook', cls='text-sm text-gray-500 dark:text-gray-400'),
@@ -2012,7 +2012,7 @@ component = Div(
                 cls='max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400'
             ),
             Figcaption(
-                Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png', alt='profile picture', cls='rounded-full w-9 h-9'),
+                DiceBearAvatar("Joseph McFall",h=400, w=400, cls='rounded-full w-9 h-9'),
                 Div(
                     Div('Joseph McFall'),
                     Div('CTO at Google', cls='text-sm text-gray-500 dark:text-gray-400'),
