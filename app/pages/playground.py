@@ -1,7 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fh_flowbite.components import *
-from fh_flowbite.components import Radio
 from fh_flowbite.core import *
 from utils import component_showcase
 from theme_switcher import ThemeSwitcher
@@ -201,8 +200,97 @@ Code("app/pages/playground.py")," to see the components in action.",cls=Paragraf
 
     # component,
 
-    form_component,
-    badges_component,
+    # form_component,
+    # badges_component,
+    Button("Default Modal", data_modal_target="modal-id", data_modal_toggle="modal-id"),
+    Modal(
+        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
+It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
+            ,cls=TextT.gray
+        ),
+        header=[
+            ModalTitle("Modal Title"),
+            ModalCloseButton(modal_id="modal-id")
+        ],
+        footer=Button("Close", data_modal_toggle="modal-id", cls=ButtonT.primary),
+        id="modal-id"
+    ),
+    Button("Modal 2XL", data_modal_target="modal-id2", data_modal_toggle="modal-id2"),
+    Modal(
+        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
+It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
+            ,cls=TextT.gray
+        ),
+        header=[
+            ModalTitle("Modal Title"),
+            ModalCloseButton(modal_id="modal-id2")
+        ],
+        footer=[Button("Close", data_modal_toggle="modal-id2", cls=ButtonT.primary+"mr-2"),
+                Button("Save", data_modal_toggle="modal-id2", cls=ButtonT.secondary)],
+        id="modal-id2",
+        dialog_cls=ModalT._2xl,
+        placement=ModalT.top_left
+    ),
+    Grid(
+        Card(
+            CardHeader(
+                CardTitle("Noteworthy technology acquisitions 2021"),
+        ),
+            CardBody("Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.")
+        ),
+        Card(
+            CardHeader(
+                CardTitle("Noteworthy technology acquisitions 2021"),
+            ),
+            CardBody("Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."),
+            cls=CardT.default+CardT.hover
+        ),
+        Card(
+            CardHeader(
+                CardTitle("Noteworthy technology acquisitions 2021"),
+            ),
+            CardBody("Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."),
+            cls=CardT.primary+CardT.hover
+        ),
+        Card(
+            CardHeader(
+                CardTitle("Noteworthy technology acquisitions 2021"),
+            ),
+            CardBody("Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."),
+            cls=CardT.secondary+CardT.hover
+        ),
+        Card(
+            CardHeader(
+                CardTitle("Noteworthy technology acquisitions 2021"),
+            ),
+            CardBody("Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."),
+            cls=CardT.destructive+CardT.hover
+        ),
+        Card(
+            CardHeader(
+                CardTitle("Plain Card with footer Button"),
+            ),
+            CardBody("Here is a plain card with a footer button. It is a good way to add a button to the card, and it is also a good way to add a footer to the card.",
+            ),
+            footer=Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
+            cls=CardT.hover+CardT.plain
+        ),
+
+        Card(
+            CardHeader(
+                CardTitle("Plain Card with footer Button"),
+            ),
+            CardBody("Here is a plain card with a footer button. It is a good way to add a button to the card, and it is also a good way to add a footer to the card.",
+            ),
+            footer=Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
+            cls=CardT.hover+CardT.plain
+        ),
+        cols=2,
+        cls="space-y-2 space-x-2 mt-2"
+    ),
+
     # component_showcase(Div(
     #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
     #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
@@ -212,7 +300,7 @@ Code("app/pages/playground.py")," to see the components in action.",cls=Paragraf
     #     )""", id="example_0",cls='mt-2 mb-6'),
 
     DivCentered(
-        UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
+        # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 
         NotStr("""        
 

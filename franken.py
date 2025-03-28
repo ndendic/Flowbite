@@ -27,77 +27,6 @@ def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, i
         DividerSplit(), *c,
         Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
 
-
-# %% ../nbs/02_franken.ipynb
-def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
-                     cls=(), # Additional classes on the `ModalContainer`
-                     **kwargs # Additional args for `Div` tag
-                     )->FT: # Div(..., cls='uk-modal uk-modal-container')
-    "Creates a modal container that components go in"
-    return fh.Div(*c, cls=('uk-modal uk-modal-container',stringify(cls)), uk_modal=True, **kwargs)
-def ModalDialog(*c, # Components to put in the `ModalDialog` (often `ModalBody`, `ModalHeader`, etc)
-                  cls=(), # Additional classes on the `ModalDialog`
-                  **kwargs # Additional args for `Div` tag
-                  )->FT: # Div(..., cls='uk-modal-dialog')
-    "Creates a modal dialog"
-    return fh.Div(*c, cls=('uk-modal-dialog',   stringify(cls)),                **kwargs)
-def ModalHeader(*c, # Components to put in the `ModalHeader`
-                  cls=(), # Additional classes on the `ModalHeader`
-                  **kwargs # Additional args for `Div` tag
-                  )->FT: # Div(..., cls='uk-modal-header')
-    "Creates a modal header"
-    return fh.Div(*c, cls=('uk-modal-header',   stringify(cls)),                **kwargs)
-def ModalBody(*c, # Components to put in the `ModalBody` (often forms, sign in buttons, images, etc.)
-               cls=(), # Additional classes on the `ModalBody`
-               **kwargs # Additional args for `Div` tag
-               )->FT: # Div(..., cls='uk-modal-body')
-    "Creates a modal body"
-    return fh.Div(*c, cls=('uk-modal-body',     stringify(cls)),                **kwargs)
-def ModalFooter(*c, # Components to put in the `ModalFooter` (often buttons)
-                 cls=(), # Additional classes on the `ModalFooter`
-                 **kwargs # Additional args for `Div` tag
-                 )->FT: # Div(..., cls='uk-modal-footer')
-    "Creates a modal footer"
-    return fh.Div(*c, cls=('uk-modal-footer',   stringify(cls)),                **kwargs)
-def ModalTitle(*c, # Components to put in the `ModalTitle` (often text)
-                cls=(), # Additional classes on the `ModalTitle`
-                **kwargs # Additional args for `H2` tag
-                )->FT: # H2(..., cls='uk-modal-title')
-    "Creates a modal title"
-    return fh.H2(*c,  cls=('uk-modal-title',  stringify(cls)),  **kwargs)
-def ModalCloseButton(*c, # Components to put in the button (often text and/or an icon)
-                      cls=(), # Additional classes on the button
-                      htmx=False, # Whether to use HTMX to close the modal (must add hx_get to a route that closes the modal)
-                      **kwargs # Additional args for `Button` tag
-                      )->FT: # Button(..., cls='uk-modal-close') + `hx_target` and `hx_swap` if htmx is True
-    "Creates a button that closes a modal with js"
-    if htmx: kwargs['onclick'] = 'this.closest(".uk-modal").remove()'
-    return Button(*c, cls=('uk-modal-close', stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-def Modal(*c,                 # Components to put in the `ModalBody` (often forms, sign in buttons, images, etc.)
-        header=None,          # Components that go in the `ModalHeader` (often a `ModalTitle`)
-        footer=None,          # Components that go in the `ModalFooter` (often a `ModalCloseButton`)
-        cls=(),               # Additional classes on the outermost `ModalContainer` 
-        dialog_cls=(),        # Additional classes on the `ModalDialog` 
-        header_cls='p-6',     # Additional classes on the `ModalHeader`
-        body_cls='space-y-6', # Additional classes on the `ModalBody`
-        footer_cls=(),        # Additional classes on the `ModalFooter`
-        id='',                # id for the outermost container
-        open=False,           # Whether the modal is open (typically used for HTMX controlled modals)
-        **kwargs              # Additional args for the outermost `Div` tag
-        )->FT: # Fully styled modal FT Component
-    "Creates a modal with the appropriate classes to put the boilerplate in the appropriate places for you"
-    if open:
-        cls = stringify((cls, 'uk-open'))
-        kwargs['style'] = stringify((kwargs.get('style',''), 'display: block;'))
-    cls, dialog_cls, header_cls, body_cls, footer_cls = map(stringify, (cls, dialog_cls, header_cls, body_cls, footer_cls))
-    res = []
-    if header: res.append(ModalHeader(cls=header_cls)(header))
-    res.append(ModalBody(cls=body_cls)(*c))
-    if footer: res.append(ModalFooter(cls=footer_cls)(footer))
-    return ModalContainer(ModalDialog(*res, cls=dialog_cls), cls=cls, id=id, **kwargs)
-
 # %% ../nbs/02_franken.ipynb
 def Placeholder(*c, # Components to put in the placeholder
                   cls=(), # Additional classes on the placeholder
@@ -131,18 +60,6 @@ def UkIconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/ico
     return fn(cls=(f"uk-icon-{'button' if button else 'link'}", stringify(cls)), **kwargs)(
         UkIcon(icon=icon, height=height, width=width, stroke_width=stroke_width))
 
-# %% ../nbs/02_franken.ipynb
-def Center(*c, # Components to center
-          vertical:bool=True, # Whether to center vertically
-          horizontal:bool=True, # Whether to center horizontally 
-          cls=(), # Additional classes
-          **kwargs # Additional args for container div
-          )->FT: # Div with centered contents
-    "Centers contents both vertically and horizontally by default"
-    classes = ['flex']
-    if vertical: classes.append('items-center min-h-full') 
-    if horizontal: classes.append('justify-center min-w-full')
-    return fh_comp.Center(*c, cls=(stringify(classes), stringify(cls)), **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 class NavT(VEnum):

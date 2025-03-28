@@ -8,8 +8,8 @@ component = Div(
     P('Get started with multiple sizes, colors, and styles built with the utility classes from Tailwind CSS and the components from Flowbite.'),
     H2(
         'Default modal',
-        Span(id='default-modal', cls='absolute -top-[140px]'),
-        A('#', aria_label='Link to this section: Default modal', href='#default-modal', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
+        Span(id='modal-01', cls='absolute -top-[140px]'),
+        A('#', aria_label='Link to this section: Default modal', href='#modal-01', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
     P(
@@ -35,49 +35,22 @@ component = Div(
         )
     ),
     component_showcase(Div(
-    Button('Toggle modal', data_modal_target='default-modal', data_modal_toggle='default-modal', type='button', cls='block text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-    Div(
-        Div(
-            Div(
-                Div(
-                    H3('Terms of Service', cls='text-xl font-semibold text-gray-900 dark:text-white'),
-                    Button(
-                        Svg(
-                            Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6'),
-                            aria_hidden='true',
-                            xmlns='http://www.w3.org/2000/svg',
-                            fill='none',
-                            viewbox='0 0 14 14',
-                            cls='w-3 h-3'
-                        ),
-                        Span('Close modal', cls='sr-only'),
-                        type='button',
-                        data_modal_hide='default-modal',
-                        cls='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
-                    ),
-                    cls='flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200'
-                ),
-                Div(
-                    P('With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.', cls='text-base leading-relaxed text-gray-500 dark:text-gray-400'),
-                    P('The European Unionâ\x80\x99s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.', cls='text-base leading-relaxed text-gray-500 dark:text-gray-400'),
-                    cls='p-4 md:p-5 space-y-4'
-                ),
-                Div(
-                    Button('I accept', data_modal_hide='default-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='default-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
-                    cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
-                ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
-            ),
-            cls='relative p-4 w-full max-w-2xl max-h-full'
+    Button('Toggle modal', data_modal_target='modal-01', data_modal_toggle='modal-01'),
+    Modal(
+        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
+It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
+            ,cls=TextT.gray
         ),
-        id='default-modal',
-        tabindex='-1',
-        aria_hidden='true',
-        cls='hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'
+        header=[
+            ModalTitle("Modal Title"),
+            ModalCloseButton(modal_id="modal-id")
+        ],
+        footer=Button("Close", data_modal_toggle="modal-01", cls=ButtonT.primary),
+        id="modal-01"
     )
 ), code="""Div(
-    Button('Toggle modal', data_modal_target='default-modal', data_modal_toggle='default-modal', type='button', cls='block text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
+    Button('Toggle modal', data_modal_target='modal-01', data_modal_toggle='modal-01', type='button', cls='block text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
         Div(
             Div(
@@ -94,7 +67,7 @@ component = Div(
                         ),
                         Span('Close modal', cls='sr-only'),
                         type='button',
-                        data_modal_hide='default-modal',
+                        data_modal_hide='modal-01',
                         cls='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
                     ),
                     cls='flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200'
@@ -105,15 +78,15 @@ component = Div(
                     cls='p-4 md:p-5 space-y-4'
                 ),
                 Div(
-                    Button('I accept', data_modal_hide='default-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='default-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('I accept', data_modal_hide='modal-01', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
+                    Button('Decline', data_modal_hide='modal-01', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
                 cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-2xl max-h-full'
         ),
-        id='default-modal',
+        id='modal-01',
         tabindex='-1',
         aria_hidden='true',
         cls='hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'

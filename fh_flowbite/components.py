@@ -5,13 +5,15 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub', 'Sup', 'BlockquoteT',
            'Blockquote', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'KbdT', 'Kbd', 'Samp', 'Var', 'Figure',
            'Details', 'Summary', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'ListT',
-           'Meter', 'ButtonColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'AT', 'Button', 'FlexT', 'BackgroundT',
+           'Meter', 'BgColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'AT', 'Button', 'FlexT', 'BackgroundT',
            'ContainerSize', 'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned',
            'DivRAligned', 'DivVStacked', 'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article',
            'ArticleTitle', 'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem',
            'TabContainer', 'FormT', 'Form', 'LabelInputT', 'FormLabel', 'InputT', 'Input', 'TextArea', 'Options',
            'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone', 'RangeT',
-           'Range', 'BadgeT', 'Badge', 'IconBadge']
+           'Range', 'BadgeT', 'Badge', 'IconBadge', 'ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader',
+           'ModalBody', 'ModalFooter', 'ModalTitle', 'ModalCloseButton', 'Modal', 'CardT', 'CardTitle', 'CardHeader',
+           'CardBody', 'CardFooter', 'CardContainer', 'Card']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -589,7 +591,7 @@ def Meter(*c:FT|str, # Contents of Meter tag
     return fh.Meter(*c, cls=('w-full h-2 rounded', stringify(cls)), **kwargs)
 
 # %% ../nbs/01_flowbite.ipynb 8
-class ButtonColor(VEnum):
+class BgColor(VEnum):
     """Button style variants for Flowbite components"""
     # Base styles
     primary = "bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700  text-white focus:ring-primary-300 dark:focus:ring-primary-800"
@@ -641,14 +643,14 @@ class ButtonOutline(VEnum):
 
 class ButtonT(VEnum):
     """Button type variants"""
-    primary = ButtonColor.primary.value
+    primary = BgColor.primary.value
     secondary = "bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700"
     ghost = "hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
     link = "dark:text-white cursor-pointer"
-    success = ButtonColor.green.value   
-    warning = ButtonColor.yellow.value
-    error = ButtonColor.red.value
-    info = ButtonColor.blue.value
+    success = BgColor.green.value   
+    warning = BgColor.yellow.value
+    error = BgColor.red.value
+    info = BgColor.blue.value
 
 class AT(VEnum):
     default = "underline"
@@ -1331,3 +1333,209 @@ def IconBadge(icon,
            )->FT: # Label(..., cls='uk-label')
     "FrankenUI labels, which look like pills" 
     return fh.Span(Icon(icon,cls=(f'w-{w} h-{h}',stringify(icon_cls))), cls=(stringify(cls),'inline-flex items-center rounded-full'), **kwargs)
+
+
+# %% ../nbs/01_flowbite.ipynb 31
+class ModalT(VEnum):
+    """Modal styling variants for Flowbite components"""
+    # Container styles
+    container = 'hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'
+    
+    # Dialog styles
+    dialog = 'relative p-4 w-full max-h-full'
+    dialog_inner = 'relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+    
+    # Header styles
+    header = 'flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200'
+    
+    # Body styles
+    body = 'p-4 md:p-5'
+    
+    # Footer styles
+    footer = 'flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
+    
+    # Title styles
+    title = 'text-lg font-semibold text-gray-900 dark:text-white'
+    
+    # Close button styles
+    close_btn = 'text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
+    
+    # Size variants for dialog
+    sm = 'sm:max-w-sm'  # Small modal
+    md = 'max-w-md'     # Default/medium modal
+    lg = 'max-w-lg'     # Large modal
+    xl = 'max-w-xl'     # Extra large modal
+    _2xl = 'max-w-2xl'  # 2X large modal
+    _3xl = 'max-w-3xl'  # 3X large modal
+    _4xl = 'max-w-4xl'  # 4X large modal
+    _5xl = 'max-w-5xl'  # 5X large modal
+    _6xl = 'max-w-6xl'  # 6X large modal
+    _7xl = 'max-w-7xl'  # 7X large modal
+    
+    # Special size variants
+    fluid = 'w-full'    # Full width modal
+    responsive = 'w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl'  # Responsive modal
+    
+    # Placement variants
+    center = 'items-center justify-center'  # Center modal (default)
+    top_left = 'items-start justify-start'  # Top left
+    top_center = 'items-start justify-center'  # Top center
+    top_right = 'items-start justify-end'  # Top right
+    center_left = 'items-center justify-start'  # Center left
+    center_right = 'items-center justify-end'  # Center right
+    bottom_left = 'items-end justify-start'  # Bottom left
+    bottom_center = 'items-end justify-center'  # Bottom center
+    bottom_right = 'items-end justify-end'  # Bottom right
+
+def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
+                  id:str='', # ID for the modal container
+                  cls:str='', # Additional classes on the modal container
+                  placement:str=None, # Placement of the modal (use ModalT placement variants)
+                  **kwargs # Additional args for the container div
+                  )->FT:
+    "Creates a modal container that components go in"
+    classes = [ModalT.container]
+    if placement:
+        classes.append(placement)
+    if cls:
+        classes.append(stringify(cls))
+    return Div(*c, id=id, tabindex='-1', aria_hidden='true', cls=tuple(classes), **kwargs)
+
+def ModalDialog(*c, # Components to put in the dialog (often `ModalBody`, `ModalHeader`, etc)
+                cls:str='', # Additional classes on the dialog
+                **kwargs # Additional args for the dialog div
+                )->FT:
+    "Creates a modal dialog"
+    return Div(Div(*c, cls=ModalT.dialog_inner), cls=(ModalT.dialog, stringify(cls)), **kwargs)
+
+def ModalHeader(*c, # Components to put in the header
+                cls:str='', # Additional classes on the header
+                **kwargs # Additional args for the header div
+                )->FT:
+    "Creates a modal header"
+    return Div(*c, cls=(ModalT.header, stringify(cls)), **kwargs)
+
+def ModalBody(*c, # Components to put in the body
+              cls:str='', # Additional classes on the body
+              **kwargs # Additional args for the body div
+              )->FT:
+    "Creates a modal body"
+    return Div(*c, cls=(ModalT.body, stringify(cls)), **kwargs)
+
+def ModalFooter(*c, # Components to put in the footer
+                cls:str='', # Additional classes on the footer
+                **kwargs # Additional args for the footer div
+                )->FT:
+    "Creates a modal footer"
+    return Div(*c, cls=(ModalT.footer, stringify(cls)), **kwargs)
+
+def ModalTitle(*c, # Components to put in the title
+               cls:str='', # Additional classes on the title
+               **kwargs # Additional args for the title
+               )->FT:
+    "Creates a modal title"
+    return H3(*c, cls=(ModalT.title, stringify(cls)), **kwargs)
+
+def ModalCloseButton(*c, # Components to put in the button
+                     cls:str='', # Additional classes on the button
+                     modal_id:str='', # ID of modal to close
+                     **kwargs # Additional args for the button
+                     )->FT:
+    "Creates a button that closes a modal"
+    return fh.Button(
+        Icon('X'),
+        Span('Close modal', cls='sr-only'),
+        type='button',
+        data_modal_toggle=modal_id,
+        cls=(ModalT.close_btn, stringify(cls)),
+        **kwargs
+    )
+
+def Modal(*c, # Components to put in the modal body
+         header=None, # Components for the header (often a ModalTitle)
+         footer=None, # Components for the footer
+         cls:str='', # Additional classes on the container
+         dialog_cls:str=ModalT.lg, # Additional classes on the dialog
+         header_cls:str='', # Additional classes on the header
+         body_cls:str='', # Additional classes on the body
+         footer_cls:str='', # Additional classes on the footer
+         id:str='', # ID for the modal
+         placement:str=ModalT.center, # Placement of the modal (use ModalT placement variants)
+         **kwargs # Additional args for the container
+         )->FT:
+    "Creates a complete modal with header, body and footer sections"
+    res = []
+    if header: res.append(ModalHeader(*header if isinstance(header, (list, tuple)) else [header], cls=header_cls))
+    res.append(ModalBody(*c, cls=body_cls))
+    if footer: res.append(ModalFooter(*footer if isinstance(footer, (list, tuple)) else [footer], cls=footer_cls))
+    return ModalContainer(
+        ModalDialog(*res, cls=dialog_cls),
+        Script('htmx.onLoad(function(content) {initModals();})'),
+        id=id,
+        cls=cls,
+        placement=placement,
+        **kwargs
+    )
+
+# %% ../nbs/01_flowbite.ipynb 33
+class CardT(VEnum):
+    default = 'block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+    primary = 'block max-w-sm p-6 bg-primary-50 border border-gray-200 rounded-lg shadow-sm hover:bg-primary-100 dark:bg-primary-800 dark:border-gray-700 dark:hover:bg-primary-700'
+    secondary = 'block max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow-sm hover:bg-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+    destructive = 'block max-w-sm p-6 bg-red-50 border border-gray-200 rounded-lg shadow-sm hover:bg-red-300 dark:bg-red-800 dark:border-gray-700 dark:hover:bg-red-700'
+    horizontal = 'flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+    hover = 'hover:shadow-lg hover:-translate-y-1 transition-all duration-200'
+    plain = 'block max-w-sm p-6 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700'
+
+def CardTitle(*c, # Components (often a string)
+              cls=(), # Additional classes on the div
+              **kwargs # Additional args for the div
+             ): 
+    "Creates a card title"
+    return fh.Div(*c, cls=('mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white',stringify(cls)), **kwargs)
+
+def CardHeader(*c, # Components that goes in the header (often a `ModalTitle` and description)
+               cls=(), # Additional classes on the div
+               **kwargs # Additional args for the div
+              )->FT: # Container for the header of a card
+    "Creates a card header"
+    return fh.Div(*c, cls=(stringify(cls)), **kwargs)
+
+def CardBody(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
+              cls=(), # Additional classes on the div
+              **kwargs # Additional args for the div
+             )->FT: # Container for the body of a card
+    "Creates a card body"
+    return fh.Div(*c, cls=('font-normal text-gray-700 dark:text-gray-400',stringify(cls)), **kwargs)
+
+def CardFooter(*c, # Components that go in the footer (often a `ModalCloseButton`)
+               cls=(), # Additional classes on the div
+               **kwargs # Additional args for the div
+              )->FT: # Container for the footer of a card
+    "Creates a card footer"
+    return fh.Div(*c, cls=("mt-4",stringify(cls)), **kwargs)
+
+def CardContainer(*c, # Components (typically `CardHeader`, `CardBody`, `CardFooter`)
+                   cls=(), # Additional classes on the div
+                   **kwargs # Additional args for the div
+                  )->FT: # Container for a card
+    "Creates a card container"
+    return fh.Div(*c, cls=(stringify(cls)), **kwargs)
+
+def Card(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
+        header:FT|Iterable[FT]=None, # Component(s) that goes in the header (often a `ModalTitle` and a subtitle)
+        footer:FT|Iterable[FT]=None,  # Component(s) that goes in the footer (often a `ModalCloseButton`)
+        body_cls=(), # classes for the body
+        header_cls=(), # classes for the header
+        footer_cls=(), # classes for the footer
+        cls=CardT.default, 
+        **kwargs # additional arguments for the `CardContainer`
+        )->FT: # Card component
+    "Creates a Card with a header, body, and footer"
+    header_cls, footer_cls, body_cls, cls = map(stringify, (header_cls, footer_cls, body_cls, cls))
+    res = []
+    if header: res.append(CardHeader(cls=header_cls)(header))
+    res.append(CardBody(cls=body_cls)(*c))
+    if footer: res.append(CardFooter(cls=footer_cls)(footer))
+    return CardContainer(cls=cls, **kwargs)(*res)
+
