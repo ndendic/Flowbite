@@ -381,7 +381,7 @@ def Blockquote(*c:FT|str, # Contents of Blockquote tag (often text)
     elements =[]
     if with_icon:
         elements.append(Icon("quote",cls="h-8 w-8 text-gray-400 dark:text-gray-600 mb-1"))
-    elements.append(*c)
+    elements.append(o for o in c)
     return fh.Blockquote(*elements, cls=(stringify(cls)), **kwargs)
 
 

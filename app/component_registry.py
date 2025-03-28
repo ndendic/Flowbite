@@ -4,6 +4,7 @@ from pathlib import Path
 import inspect
 from fasthtml.components import *
 from fh_flowbite.components import *
+import traceback
 
 class ComponentRegistry:
     def __init__(self):
@@ -51,6 +52,8 @@ class ComponentRegistry:
                     
             except Exception as e:
                 print(f"Error registering component {component_name}: {str(e)}")
+                print("Stack trace:")
+                traceback.print_exc()
     
     def register_routes(self, router, page_template):
         """Register all components with the router"""
