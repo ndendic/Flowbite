@@ -20,12 +20,12 @@ from fasthtml.components import Uk_input_range
 import fasthtml.components as fh_comp
 
 # %% ../nbs/02_franken.ipynb
-def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, inner_margin=6):
-    "A form section with a title, description and optional button"
-    return Div(cls=f'space-y-{inner_margin} py-{outer_margin}')(
-        Div(H3(title), P(description, cls=TextPresets.muted_sm)),
-        DividerSplit(), *c,
-        Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
+# def UkFormSection(title, description, *c, button_txt='Update', outer_margin=6, inner_margin=6):
+#     "A form section with a title, description and optional button"
+#     return Div(cls=f'space-y-{inner_margin} py-{outer_margin}')(
+#         Div(H3(title), P(description, cls=TextPresets.muted_sm)),
+#         DividerSplit(), *c,
+#         Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
 
 # %% ../nbs/02_franken.ipynb
 def Placeholder(*c, # Components to put in the placeholder
@@ -34,31 +34,6 @@ def Placeholder(*c, # Components to put in the placeholder
                   )->FT: # Div(..., cls='uk-placeholder')
     "Creates a placeholder"
     return fh.Div(*c, cls=('uk-placeholder',stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-def Progress(*c, # Components to put in the progress bar (often nothing)
-             cls=(), # Additional classes on the progress bar
-             value="", # Value of the progress bar
-             max="100", # Max value of the progress bar (defaults to 100 for percentage)
-             **kwargs # Additional args for `Progress` tag
-             )->FT: # Progress(..., cls='uk-progress')
-    "Creates a progress bar"
-    return fh.Progress(*c, value=value, max=max, cls=('uk-progress',stringify(cls)), **kwargs)
-
-
-# %% ../nbs/02_franken.ipynb
-def UkIconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons/)
-           height:int=None, 
-           width:int=None, 
-           stroke_width:int=None, # Thickness of lines
-           cls=(), # Additional classes on the icon
-           button:bool=False, # Whether to use a button (defaults to a link)
-           **kwargs # Additional args for `A` or `Button` tag
-           )->FT: # a lucide icon  button or link of the specified size
-    "Creates an icon link using lucide icons"
-    fn = fh.Button if button else fh.A
-    return fn(cls=(f"uk-icon-{'button' if button else 'link'}", stringify(cls)), **kwargs)(
-        UkIcon(icon=icon, height=height, width=width, stroke_width=stroke_width))
 
 
 # %% ../nbs/02_franken.ipynb
@@ -224,71 +199,6 @@ def TabContainer(*li, # Components
     "A TabContainer where children will be different tabs"
     cls = stringify(cls)
     return Ul(cls=(f"uk-tab{'-alt' if alt else ''}",stringify(cls)),**kwargs)(*li)
-
-# %% ../nbs/02_franken.ipynb
-class CardT(VEnum):
-    'Card styles from UIkit'
-    def _generate_next_value_(name, start, count, last_values): return str2ukcls('card', name)
-    default = auto()
-    primary = auto()
-    secondary = auto()
-    destructive = auto()
-    hover = 'uk-card hover:shadow-lg hover:-translate-y-1 transition-all duration-200'
-
-# %% ../nbs/02_franken.ipynb
-def CardTitle(*c, # Components (often a string)
-              cls=(), # Additional classes on the div
-              **kwargs # Additional args for the div
-             ): 
-    "Creates a card title"
-    return fh.Div(*c, cls=('uk-card-title',stringify(cls)), **kwargs)
-
-def CardHeader(*c, # Components that goes in the header (often a `ModalTitle` and description)
-               cls=(), # Additional classes on the div
-               **kwargs # Additional args for the div
-              )->FT: # Container for the header of a card
-    "Creates a card header"
-    return fh.Div(*c, cls=('uk-card-header',stringify(cls)), **kwargs)
-
-def CardBody(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
-              cls=(), # Additional classes on the div
-              **kwargs # Additional args for the div
-             )->FT: # Container for the body of a card
-    "Creates a card body"
-    return fh.Div(*c, cls=('uk-card-body',stringify(cls)), **kwargs)
-
-def CardFooter(*c, # Components that go in the footer (often a `ModalCloseButton`)
-               cls=(), # Additional classes on the div
-               **kwargs # Additional args for the div
-              )->FT: # Container for the footer of a card
-    "Creates a card footer"
-    return fh.Div(*c, cls=('uk-card-footer',stringify(cls)), **kwargs)
-
-def CardContainer(*c, # Components (typically `CardHeader`, `CardBody`, `CardFooter`)
-                   cls=CardT.default, # Additional classes on the div
-                   **kwargs # Additional args for the div
-                  )->FT: # Container for a card
-    "Creates a card container"
-    return fh.Div(*c, cls=('uk-card',stringify(cls)), **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-def Card(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
-        header:FT|Iterable[FT]=None, # Component(s) that goes in the header (often a `ModalTitle` and a subtitle)
-        footer:FT|Iterable[FT]=None,  # Component(s) that goes in the footer (often a `ModalCloseButton`)
-        body_cls='space-y-6', # classes for the body
-        header_cls=(), # classes for the header
-        footer_cls=(), # classes for the footer
-        cls=(), #class for outermost component
-        **kwargs # additional arguments for the `CardContainer`
-        )->FT: # Card component
-    "Creates a Card with a header, body, and footer"
-    header_cls, footer_cls, body_cls, cls = map(stringify, (header_cls, footer_cls, body_cls, cls))
-    res = []
-    if header: res.append(CardHeader(cls=header_cls)(header))
-    res.append(CardBody(cls=body_cls)(*c))
-    if footer: res.append(CardFooter(cls=footer_cls)(footer))
-    return CardContainer(cls=cls, **kwargs)(*res)
-
 # %% ../nbs/02_franken.ipynb
 class TableT(VEnum):
     def _generate_next_value_(name, start, count, last_values): return str2ukcls('table', name)

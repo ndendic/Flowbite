@@ -8,12 +8,12 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Meter', 'BgColor', 'ButtonSize', 'ButtonOutline', 'ButtonT', 'AT', 'Button', 'FlexT', 'BackgroundT',
            'ContainerSize', 'Container', 'Titled', 'Grid', 'DivFullySpaced', 'DivCentered', 'DivLAligned',
            'DivRAligned', 'DivVStacked', 'DivHStacked', 'DividerT', 'Divider', 'DividerSplit', 'DividerLine', 'Article',
-           'ArticleTitle', 'ArticleMeta', 'Icon', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section', 'TabItem',
-           'TabContainer', 'FormT', 'Form', 'LabelInputT', 'FormLabel', 'InputT', 'Input', 'TextArea', 'Options',
-           'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone', 'RangeT',
-           'Range', 'BadgeT', 'Badge', 'IconBadge', 'ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader',
+           'ArticleTitle', 'ArticleMeta', 'Icon', 'IconLink', 'DiceBearAvatar', 'PicSumImg', 'SectionT', 'Section',
+           'TabItem', 'TabContainer', 'FormT', 'Form', 'LabelInputT', 'FormLabel', 'InputT', 'Input', 'TextArea',
+           'Options', 'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone',
+           'RangeT', 'Range', 'BadgeT', 'Badge', 'IconBadge', 'ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader',
            'ModalBody', 'ModalFooter', 'ModalTitle', 'ModalCloseButton', 'Modal', 'CardT', 'CardTitle', 'CardHeader',
-           'CardBody', 'CardFooter', 'CardContainer', 'Card']
+           'CardBody', 'CardFooter', 'CardContainer', 'Card', 'ProgressT', 'Progress']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -381,7 +381,7 @@ def Blockquote(*c:FT|str, # Contents of Blockquote tag (often text)
     elements =[]
     if with_icon:
         elements.append(Icon("quote",cls="h-8 w-8 text-gray-400 dark:text-gray-600 mb-1"))
-    elements.append(o for o in c)
+    elements.append(*c)
     return fh.Blockquote(*elements, cls=(stringify(cls)), **kwargs)
 
 
@@ -929,6 +929,23 @@ def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
            )->FT: # a lucide icon of the specified size 
     "Creates an icon using lucide icons"
     return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
+
+def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons/)
+           height:int=None, 
+           width:int=None, 
+           stroke_width:int=None, # Thickness of lines
+           cls=(), # Additional classes on the icon
+           base_cls=(), # Additional classes on the icon
+           icon_cls=(), # Additional classes on the icon
+           button:bool=False, # Whether to use a button (defaults to a link)
+           **kwargs # Additional args for `A` or `Button` tag
+           )->FT: # a lucide icon  button or link of the specified size
+    "Creates an icon link using lucide icons"
+    if not base_cls:
+        base_cls = 'inline-flex items-center p-2 rounded-full' if button else 'inline-flex items-center'
+    fn = fh.Button if button else fh.A
+    return fn(cls=(base_cls, stringify(cls)), **kwargs)(
+        Icon(icon=icon, height=height, width=width, stroke_width=stroke_width, cls=icon_cls))
 
 def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
                    h:int=12,         # Height 
@@ -1538,4 +1555,57 @@ def Card(*c, # Components that go in the body (Main content of the card such as 
     res.append(CardBody(cls=body_cls)(*c))
     if footer: res.append(CardFooter(cls=footer_cls)(footer))
     return CardContainer(cls=cls, **kwargs)(*res)
+
+
+# %% ../nbs/01_flowbite.ipynb 35
+class ProgressT(VEnum):
+    progress_primary = 'rounded-full bg-primary-600'
+    progress_dark = 'rounded-full bg-gray-700 dark:bg-gray-300'
+    progress_blue = 'rounded-full bg-blue-600'
+    progress_red = 'rounded-full bg-red-600'
+    progress_green = 'rounded-full bg-green-600'
+    progress_yellow = 'rounded-full bg-yellow-600'
+    progress_purple = 'rounded-full bg-purple-600'
+    progress_pink = 'rounded-full bg-pink-600'
+
+    bg_default = 'w-full rounded-full bg-gray-200 dark:bg-gray-700'
+    bg_primary = 'w-full rounded-full bg-primary-600'
+    bg_dark = 'w-full rounded-full bg-gray-300 dark:bg-gray-700'
+    bg_blue = 'w-full rounded-full bg-blue-600'
+    bg_red = 'w-full rounded-full bg-red-600'
+    bg_green = 'w-full rounded-full bg-green-600'
+    bg_yellow = 'w-full rounded-full bg-yellow-600'
+    
+
+
+from typing import Literal
+def Progress(*c, # Components to put in the progress bar (often nothing)
+             label:str|FT='', # Label of the progress bar (often a string or a component)
+             label_cls=TextT.sm, # Additional classes on the label
+             progress_cls=ProgressT.progress_primary, # Additional classes on the progress bar
+             bg_cls=ProgressT.bg_default, # Additional classes on the background of the progress bar
+             value="", # Value of the progress bar in percentage from 0 to 100
+             size:Literal['sm', 'md', 'lg']='md',
+             cls=(), # Additional classes on the progress bar
+             **kwargs # Additional args for `Progress` tag
+             )->FT: # Progress(..., cls='uk-progress')
+    "Creates a progress bar"
+    size_map = {
+        'sm': 'h-1.5',
+        'md': 'h-2.5',
+        'lg': 'h-4',
+        'xl': 'h-6'
+    }
+    size_cls = size_map[size]
+    return Div(
+        Div(cls='flex justify-between mb-1')(
+            Span(label, cls=f'{label_cls}') if isinstance(label, str) else label
+        ),
+        Div(
+            Div(*c,style=f'width: {value}%', cls=(stringify(progress_cls), size_cls,"text-xs font-medium text-center p-0.5 leading-none")),
+            cls=(stringify(bg_cls),stringify(cls), size_cls),
+            **kwargs
+        )
+    )
+        # return fh.Progress(*c, value=value, max=max, cls=(stringify(cls)), **kwargs)
 

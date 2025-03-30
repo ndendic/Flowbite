@@ -9,7 +9,7 @@ from extracted.file_input import component as file_input_component
 
 from ft_datastar import *
 
-component =Div(
+datastar_example =Div(
         H2("Datastar + FastHTML Example", cls="text-xl font-bold mb-4"),
         Div(
             "Using signals we default the starting count to 5",
@@ -192,48 +192,7 @@ badges_component = Div(
                 cls="space-x-2 mb-4"
             )
         )
-
-playground = Section(cls=(SectionT.default))(
-    # input_field_component,
-    P("This is your playground for developing Flowbite components.\n Go to and modify ",
-Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
-
-    # component,
-
-    # form_component,
-    # badges_component,
-    Button("Default Modal", data_modal_target="modal-id", data_modal_toggle="modal-id"),
-    Modal(
-        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
-It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
-            ,cls=TextT.gray
-        ),
-        header=[
-            ModalTitle("Modal Title"),
-            ModalCloseButton(modal_id="modal-id")
-        ],
-        footer=Button("Close", data_modal_toggle="modal-id", cls=ButtonT.primary),
-        id="modal-id"
-    ),
-    Button("Modal 2XL", data_modal_target="modal-id2", data_modal_toggle="modal-id2"),
-    Modal(
-        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
-It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
-            ,cls=TextT.gray
-        ),
-        header=[
-            ModalTitle("Modal Title"),
-            ModalCloseButton(modal_id="modal-id2")
-        ],
-        footer=[Button("Close", data_modal_toggle="modal-id2", cls=ButtonT.primary+"mr-2"),
-                Button("Save", data_modal_toggle="modal-id2", cls=ButtonT.secondary)],
-        id="modal-id2",
-        dialog_cls=ModalT._2xl,
-        placement=ModalT.top_left
-    ),
-    Grid(
+cards = Grid(
         Card(
             CardHeader(
                 CardTitle("Noteworthy technology acquisitions 2021"),
@@ -289,16 +248,95 @@ It requires organizations to notify users as soon as possible of high-risk data 
         ),
         cols=2,
         cls="space-y-2 space-x-2 mt-2"
+    )
+modals= Div(
+    Button("Default Modal", data_modal_target="modal-id", data_modal_toggle="modal-id"),
+    Modal(
+        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
+It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
+            ,cls=TextT.gray
+        ),
+        header=[
+            ModalTitle("Modal Title"),
+            ModalCloseButton(modal_id="modal-id")
+        ],
+        footer=Button("Close", data_modal_toggle="modal-id", cls=ButtonT.primary),
+        id="modal-id"
+    ),
+    Button("Modal 2XL", data_modal_target="modal-id2", data_modal_toggle="modal-id2"),
+    Modal(
+        P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+The European Unionâs General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. 
+It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."""
+            ,cls=TextT.gray
+        ),
+        header=[
+            ModalTitle("Modal Title"),
+            ModalCloseButton(modal_id="modal-id2")
+        ],
+        footer=[Button("Close", data_modal_toggle="modal-id2", cls=ButtonT.primary+"mr-2"),
+                Button("Save", data_modal_toggle="modal-id2", cls=ButtonT.secondary)],
+        id="modal-id2",
+        dialog_cls=ModalT._2xl,
+        placement=ModalT.top_left
     ),
 
-    # component_showcase(Div(
-    #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
-    #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
-    #     ), code="""Div(
-    #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-full'),
-    #         DiceBearAvatar("Nikola", cls='w-10 h-10 rounded-sm')
-    #     )""", id="example_0",cls='mt-2 mb-6'),
-
+    )
+icon_links = Div(
+        H3("Icon Links"),
+        Div(cls="space-x-2")(
+        IconLink("home", cls=AT.default),
+        IconLink("home", cls=AT.primary),
+        IconLink("home", cls=AT.muted),
+        IconLink("home", cls=AT.classic),
+        ),
+        H3("Icon Links with button"),
+        Div(cls="space-x-2")(
+        IconLink("home", button=True),
+        IconLink("home", cls=ButtonT.ghost, button=True),
+        IconLink("home", cls=ButtonT.primary, button=True),
+        IconLink("home", cls=ButtonT.secondary, button=True),
+        IconLink("home", cls=ButtonT.success, button=True),
+        IconLink("home", cls=ButtonT.warning, button=True),
+        IconLink("home", cls=ButtonT.error, button=True),
+        ),
+        cls="space-y-2"
+    )
+progress = Div(
+        H3("Progress",cls="mb-2"),
+    Progress(value="50", cls="mb-2"),
+    Progress(value="50", label="Progress Label" ,cls="mb-2"),
+    Progress(value="20",size='sm', label="Small",cls="mb-2"),
+    Progress(value="40",label="Default Medium",cls="mb-2"),
+    Progress(value="60",size='lg', label="Large",cls="mb-2"),
+    Progress(value="80",size='xl', label="XLarge",cls="mb-2"),
+    Progress("80%",value="80",size="lg", label="Label Inside",cls="mb-2"),
+    H3("Progress Colors",cls="mb-2"),
+    Progress(value="50",label="Primary", progress_cls=ProgressT.progress_primary+"animate-pulse"),
+    Progress(value="50",label="Dark", progress_cls=ProgressT.progress_dark),
+    Progress(value="50",label="Green", progress_cls=ProgressT.progress_green),
+    Progress(value="50",label="Blue", progress_cls=ProgressT.progress_blue),
+    Progress(value="50",label="Red", progress_cls=ProgressT.progress_red),
+    Progress(value="50",label="Yellow", progress_cls=ProgressT.progress_yellow),
+    Progress(value="50",label="Purple", progress_cls=ProgressT.progress_purple),
+    Progress(value="50",label="Pink", progress_cls=ProgressT.progress_pink),
+    cls="space-y-2"
+)
+playground = Section(cls=(SectionT.default))(
+    # input_field_component,
+    P("This is your playground for developing Flowbite components.\n Go to and modify ",
+    Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
+    # datastar_example,
+    # form_component,
+    # badges_component,
+    # cards,
+    # modals,
+    # icon_links,
+    # progress,
+    
+ 
+    
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 
