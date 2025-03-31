@@ -13,7 +13,7 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Options', 'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone',
            'RangeT', 'Range', 'BadgeT', 'Badge', 'IconBadge', 'ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader',
            'ModalBody', 'ModalFooter', 'ModalTitle', 'ModalCloseButton', 'Modal', 'CardT', 'CardTitle', 'CardHeader',
-           'CardBody', 'CardFooter', 'CardContainer', 'Card', 'ProgressT', 'Progress']
+           'CardBody', 'CardFooter', 'CardContainer', 'Card', 'ProgressT', 'Progress', 'PlaceholderT', 'Placeholder']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -1609,3 +1609,15 @@ def Progress(*c, # Components to put in the progress bar (often nothing)
     )
         # return fh.Progress(*c, value=value, max=max, cls=(stringify(cls)), **kwargs)
 
+
+# %% ../nbs/01_flowbite.ipynb 37
+class PlaceholderT(VEnum):
+    dashed="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
+    gray="p-4 flex items-center justify-center rounded-sm bg-gray-50 dark:bg-gray-800"
+
+def Placeholder(*c, # Components to put in the placeholder
+                  cls=PlaceholderT.dashed, # Additional classes on the placeholder
+                  **kwargs # Additional args for `Div` tag
+                  )->FT: # Div(..., cls='uk-placeholder')
+    "Creates a placeholder"
+    return fh.Div(*c, cls=stringify(cls), **kwargs)

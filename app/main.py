@@ -24,7 +24,7 @@ flowbite_hdrs = (
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
     ),
-    Script(src='https://unpkg.com/lucide@latest/dist/umd/lucide.js'),
+    Script(src='https://unpkg.com/lucide@latest'),
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),

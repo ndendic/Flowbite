@@ -27,13 +27,6 @@ import fasthtml.components as fh_comp
 #         DividerSplit(), *c,
 #         Div(Button(button_txt, cls=ButtonT.primary)) if button_txt else None)
 
-# %% ../nbs/02_franken.ipynb
-def Placeholder(*c, # Components to put in the placeholder
-                  cls=(), # Additional classes on the placeholder
-                  **kwargs # Additional args for `Div` tag
-                  )->FT: # Div(..., cls='uk-placeholder')
-    "Creates a placeholder"
-    return fh.Div(*c, cls=('uk-placeholder',stringify(cls)), **kwargs)
 
 
 # %% ../nbs/02_franken.ipynb

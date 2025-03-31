@@ -323,6 +323,15 @@ progress = Div(
     Progress(value="50",label="Pink", progress_cls=ProgressT.progress_pink),
     cls="space-y-2"
 )
+placeholders = Div(
+        Placeholder(cls=PlaceholderT.dashed),
+        Placeholder(Icon("plus"),cls=PlaceholderT.gray),
+        Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.sm),
+        Placeholder(Placeholder(Icon("plus"),cls=(PlaceholderT.gray,"h-48")),cls=(PlaceholderT.dashed,ContainerSize.lg)),
+        Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.xl),
+        cls="space-y-2"
+    )
+
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
     P("This is your playground for developing Flowbite components.\n Go to and modify ",
@@ -334,8 +343,8 @@ playground = Section(cls=(SectionT.default))(
     # modals,
     # icon_links,
     # progress,
+    # placeholders,
     
- 
     
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
