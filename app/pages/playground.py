@@ -1,4 +1,4 @@
-from fasthtml.common import *
+import fasthtml.common as fh
 from fasthtml.svg import *
 from fh_flowbite.components import *
 from fh_flowbite.core import *
@@ -9,9 +9,9 @@ from extracted.file_input import component as file_input_component
 
 from ft_datastar import *
 
-datastar_example =Div(
+datastar_example = fh.Div(
         H2("Datastar + FastHTML Example", cls="text-xl font-bold mb-4"),
-        Div(
+        fh.Div(
             "Using signals we default the starting count to 5",
             ds_signals(count="5")
         ),
@@ -25,9 +25,9 @@ datastar_example =Div(
             ds_on(click="$count = 0"),
             cls=ButtonT.warning
         ),
-        Div(
+        fh.Div(
             "Count: ",
-            Span(ds_text("$count"), cls="font-mono"),
+            fh.Span(ds_text("$count"), cls="font-mono"),
             cls="mt-2"
         ),
         cls="p-4 space-x-2"
@@ -77,40 +77,40 @@ form_component = Form(
         # Button("Submit",cls=ButtonT.primary),
 
         H3("Link",cls="mb-4"),
-        Div(
-            A("Default",cls=AT.default),
-            A("Muted",cls=AT.muted),
-            A("Text",cls=AT.text),
-            A("Primary",cls=AT.primary),
-            A("Classic",cls=AT.classic),
+        fh.Div(
+            fh.A("Default",cls=AT.default),
+            fh.A("Muted",cls=AT.muted),
+            fh.A("Text",cls=AT.text),
+            fh.A("Primary",cls=AT.primary),
+            fh.A("Classic",cls=AT.classic),
             cls="space-x-2 mb-4"
         ),
         H3("List",cls="mb-4"),
-        Div(
-            Ul("Unordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.ul+"mb-4"),
-            Ol("Ordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.ol+"mb-4"),
-            Ul("Unstyled",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.unstyled+"mb-4"),
+        fh.Div(
+            fh.Ul("Unordered list",fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.ul+"mb-4"),
+            fh.Ol("Ordered list",fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.ol+"mb-4"),
+            fh.Ul("Unstyled",fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.unstyled+"mb-4"),
 
-            Ul("Nested",
-                Ul("Nested ordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.nested_ol+"mb-4"),
-                Ul("Nested unordered list",Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.nested_ul+"mb-4"),
+            fh.Ul("Nested",
+                fh.Ul("Nested ordered list",fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.nested_ol+"mb-4"),
+                fh.Ul("Nested unordered list",fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.nested_ul+"mb-4"),
             ),
             H4("Horizontal",cls="mb-4"),
-            Ul(Li("Item 1"),Li("Item 2"),Li("Item 3"),cls=ListT.horizontal+"mb-4"),
-            Ul("Definition list",
-                Div(Dt("Item 1", cls=ListT.dt),Dd("Item 1", cls=ListT.dd)),
-                Div(Dt("Item 2", cls=ListT.dt),Dd("Item 2", cls=ListT.dd)),
-                Div(Dt("Item 3", cls=ListT.dt),Dd("Item 3", cls=ListT.dd)),
+            fh.Ul(fh.Li("Item 1"),fh.Li("Item 2"),fh.Li("Item 3"),cls=ListT.horizontal+"mb-4"),
+            fh.Ul("Definition list",
+                fh.Div(fh.Dt("Item 1", cls=ListT.dt),fh.Dd("Item 1", cls=ListT.dd)),
+                fh.Div(fh.Dt("Item 2", cls=ListT.dt),fh.Dd("Item 2", cls=ListT.dd)),
+                fh.Div(fh.Dt("Item 3", cls=ListT.dt),fh.Dd("Item 3", cls=ListT.dd)),
                 cls=ListT.dl+"mb-4"
             ),
 
         ),
         
     )
-badges_component = Div(
+badges_component = fh.Div(
             H3("Badges",cls="mb-4"),
             H4("Default",cls="mb-4"),
-            Div(
+            fh.Div(
                 Badge("Default",cls=BadgeT.default),
                 Badge("Dark",cls=BadgeT.dark),
                 Badge("Red",cls=BadgeT.red),
@@ -123,7 +123,7 @@ badges_component = Div(
                 cls="space-x-2 mb-4"
             ),
             H4("Large",cls="mb-4"),
-            Div(
+            fh.Div(
                 Badge("Default",cls=BadgeT.default_lg),
                 Badge("Dark",cls=BadgeT.dark_lg),
                 Badge("Red",cls=BadgeT.red_lg),
@@ -136,7 +136,7 @@ badges_component = Div(
                 cls="space-x-2 mb-4"
             ),
             H4("Pill",cls="mb-4"),
-            Div(
+            fh.Div(
                 Badge("Default",cls=BadgeT.default_pill),
                 Badge("Dark",cls=BadgeT.dark_pill),
                 Badge("Red",cls=BadgeT.red_pill),
@@ -150,7 +150,7 @@ badges_component = Div(
             ),
 
             H4("Outline",cls="mb-4"),
-            Div(
+            fh.Div(
                 Badge("Default",cls=BadgeT.default_outline),
                 Badge("Dark",cls=BadgeT.dark_outline),
                 Badge("Red",cls=BadgeT.red_outline),
@@ -163,7 +163,7 @@ badges_component = Div(
                 cls="space-x-2 mb-4"
             ),
             H4("Icon",cls="mb-4"),
-            Div(
+            fh.Div(
                 Badge("Default", icon="home",cls=BadgeT.default),
                 Badge("Dark", icon="home",cls=BadgeT.dark),
                 Badge("Red", icon="home",cls=BadgeT.red),
@@ -176,7 +176,7 @@ badges_component = Div(
                 cls="space-x-2 mb-4"
             ),
             H4("Icon only",cls="mb-4"),
-            Div(
+            fh.Div(
                 IconBadge(icon="home", cls=BackgroundT.primary+"p-1"),
                 IconBadge(icon="home", cls=BackgroundT.secondary+"p-1"),
                 IconBadge(icon="home", cls=BackgroundT.success+"p-1"),
@@ -233,7 +233,7 @@ cards = Grid(
             ),
             CardBody("Here is a plain card with a footer button. It is a good way to add a button to the card, and it is also a good way to add a footer to the card.",
             ),
-            footer=Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
+            footer=fh.Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
             cls=CardT.hover+CardT.plain
         ),
 
@@ -243,13 +243,13 @@ cards = Grid(
             ),
             CardBody("Here is a plain card with a footer button. It is a good way to add a button to the card, and it is also a good way to add a footer to the card.",
             ),
-            footer=Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
+            footer=fh.Div(Button("Read more", cls=ButtonT.primary), Button("Subscribe", cls=ButtonT.secondary), cls="flex space-x-2"),
             cls=CardT.hover+CardT.plain
         ),
         cols=2,
         cls="space-y-2 space-x-2 mt-2"
     )
-modals= Div(
+modals= fh.Div(
     Button("Default Modal", data_modal_target="modal-id", data_modal_toggle="modal-id"),
     Modal(
         P("""With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
@@ -283,16 +283,16 @@ It requires organizations to notify users as soon as possible of high-risk data 
     ),
 
     )
-icon_links = Div(
+icon_links = fh.Div(
         H3("Icon Links"),
-        Div(cls="space-x-2")(
+        fh.Div(cls="space-x-2")(
         IconLink("home", cls=AT.default),
         IconLink("home", cls=AT.primary),
         IconLink("home", cls=AT.muted),
         IconLink("home", cls=AT.classic),
         ),
         H3("Icon Links with button"),
-        Div(cls="space-x-2")(
+        fh.Div(cls="space-x-2")(
         IconLink("home", button=True),
         IconLink("home", cls=ButtonT.ghost, button=True),
         IconLink("home", cls=ButtonT.primary, button=True),
@@ -303,7 +303,7 @@ icon_links = Div(
         ),
         cls="space-y-2"
     )
-progress = Div(
+progress = fh.Div(
         H3("Progress",cls="mb-2"),
     Progress(value="50", cls="mb-2"),
     Progress(value="50", label="Progress Label" ,cls="mb-2"),
@@ -323,13 +323,30 @@ progress = Div(
     Progress(value="50",label="Pink", progress_cls=ProgressT.progress_pink),
     cls="space-y-2"
 )
-placeholders = Div(
+placeholders = fh.Div(
         Placeholder(cls=PlaceholderT.dashed),
         Placeholder(Icon("plus"),cls=PlaceholderT.gray),
         Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.sm),
         Placeholder(Placeholder(Icon("plus"),cls=(PlaceholderT.gray,"h-48")),cls=(PlaceholderT.dashed,ContainerSize.lg)),
         Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.xl),
         cls="space-y-2"
+    )
+navs = NavContainer(
+        NavHeaderLi(label="Flowbite"),
+        NavSubtitle("Subtitle"),
+        NavParentLi(
+            NavContainer(
+                NavChildLi('Products', href='#'),
+                NavChildLi('Billing', href='#'),
+                NavChildLi('Invoice', href='#'),
+                parent=False,
+            ),
+            label="Home",
+            icon="home"
+        ),
+        NavDividerLi(),
+        NavLi(label='About', href='#'),
+        NavParentLi(label="Contact"),
     )
 
 playground = Section(cls=(SectionT.default))(
@@ -344,13 +361,60 @@ playground = Section(cls=(SectionT.default))(
     # icon_links,
     # progress,
     # placeholders,
-    
+    NavBar(
+        NavBarItem("Home", href="#"),
+        NavBarItem("About", href="#"),
+        NavBarItem("Services", href="#"),
+        NavBarItem("Pricing", href="#"),
+        NavBarItem("Contact", href="#"),
+        brand=DivLAligned(Icon("home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
+    ),
+
+    SubNavBar(
+        SubNavBarItem("Home", href="#"),
+        SubNavBarItem("About", href="#"),
+        SubNavBarItem("Services", href="#"),
+        SubNavBarItem("Pricing", href="#"),
+        SubNavBarItem("Contact", href="#"),
+    ),
+
+    navs,
+    DropdownButton("Dropdown button", cls=ButtonT.link, controls="dropdown-example"),
+    Dropdown(        
+        DropdownItem("Dropdown item"),
+        DropdownItem("Dropdown item"),
+        DropdownItem("Dropdown item"),
+        id="dropdown-example"
+    ),
+
+    Slider([
+        PicSumImg(id=i, alt='...', cls=SliderItemT.ease_out_in, h=400, w=800)
+        for i in range(100, 600, 100)
+    ]),
+
+    Slider(
+        [
+            fh.Div(
+                H2("Slide 1 Title", cls="px-4"),
+                P("Some content", cls="px-4"),
+                cls=SliderItemT.default+BackgroundT.primary+Round.lg
+            ),
+            fh.Div(
+                H2("Slide 2 Title", cls="px-4"),
+                P("Other content", cls="px-4"),
+                cls=SliderItemT.default+BackgroundT.secondary+Round.lg
+            ),
+        ],
+        wrapper_cls='relative h-64 overflow-hidden rounded-lg',
+        show_indicators=True,
+        show_controls=False
+    ),
+
     
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 
-        NotStr("""        
-
+        fh.NotStr("""        
 
         """)
     )

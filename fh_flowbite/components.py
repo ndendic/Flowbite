@@ -13,7 +13,11 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'Options', 'Select', 'RadioT', 'Radio', 'CheckboxT', 'Checkbox', 'SwitchT', 'Switch', 'Upload', 'UploadZone',
            'RangeT', 'Range', 'BadgeT', 'Badge', 'IconBadge', 'ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader',
            'ModalBody', 'ModalFooter', 'ModalTitle', 'ModalCloseButton', 'Modal', 'CardT', 'CardTitle', 'CardHeader',
-           'CardBody', 'CardFooter', 'CardContainer', 'Card', 'ProgressT', 'Progress', 'PlaceholderT', 'Placeholder']
+           'CardBody', 'CardFooter', 'CardContainer', 'Card', 'ProgressT', 'Progress', 'PlaceholderT', 'Placeholder',
+           'DropdownItem', 'DropdownList', 'DropdownContainer', 'DropdownHeader', 'Dropdown', 'DropdownButton', 'NavT',
+           'NavContainer', 'NavLi', 'NavChildLi', 'NavParentLi', 'NavDividerLi', 'NavHeaderLi', 'NavSubtitle',
+           'NavCloseLi', 'NavbarT', 'NavBarItem', 'NavBar', 'SubNavBarItem', 'SubNavBar', 'SliderContainer',
+           'SliderItemT', 'SliderItem', 'SliderItems', 'SliderControls', 'SliderNav', 'Slider']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -921,8 +925,8 @@ def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
 
 # %% ../nbs/01_flowbite.ipynb 18
 def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
-           height:int=None, 
-           width:int=None, 
+           height:int=20, 
+           width:int=20, 
            stroke_width:int=None, # Thickness of lines
            cls=(), # Additional classes on the `Uk_icon` tag
            **kwargs # Additional args for `Uk_icon` tag
@@ -1621,3 +1625,386 @@ def Placeholder(*c, # Components to put in the placeholder
                   )->FT: # Div(..., cls='uk-placeholder')
     "Creates a placeholder"
     return fh.Div(*c, cls=stringify(cls), **kwargs)
+
+# %% ../nbs/01_flowbite.ipynb 39
+def DropdownItem(*c, # Components to put in the dropdown item
+                 href:str='#', # Href for the dropdown item
+                 cls='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white', # Additional classes on the dropdown item
+                 **kwargs # Additional args for the dropdown item
+                 )->FT: # Dropdown item component
+    "Creates a dropdown item"
+    return fh.Li(fh.A(*c, href=href, cls=stringify(cls), **kwargs))
+
+def DropdownList(*li, # List items are dropdown items (Special `DropdownItem` such as `DropdownHeader`, `DropdownDivider`, `DropdownItem` can also be used)
+                 cls='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown
+                 **kwargs # Additional args for the dropdown
+                 )->FT: # Dropdown list component
+    "Creates a dropdown list"
+    return fh.Ul(*li, cls=stringify(cls), **kwargs)
+
+def DropdownContainer(*c, # Components to put in the dropdown container
+                      id:str='', # ID for the dropdown
+                      devider:bool=False, # Whether to show a divider
+                      cls='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
+                      **kwargs # Additional args for the dropdown
+                      )->FT: # Dropdown component
+    "Creates a dropdown"
+    id = fh.unqid() if not id else id
+    devider_cls = 'divide-y divide-gray-100 dark:divide-gray-600' if devider else ''
+    return fh.Div(*c, id=id, cls=(devider_cls, stringify(cls)), **kwargs)
+
+def DropdownHeader(*c, # Components to put in the dropdown header
+                   cls='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
+                   **kwargs # Additional args for the dropdown header
+                   )->FT: # Dropdown header component
+    "Creates a dropdown header"
+    return fh.Div(*c, cls=stringify(cls), **kwargs)
+
+def Dropdown(*c, # Components to put in the dropdown
+             id:str='', # ID for the dropdown
+             header:FT|Iterable[FT]=None, # Components for the header (often a `DropdownHeader`)
+             header_cls='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
+             list_cls='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown list
+             cls='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the Dropdown Container
+             devider:bool=False, # Whether to show a divider
+             **kwargs # Additional args for the dropdown
+             )->FT: # Dropdown component
+    "Creates a dropdown"
+    id = fh.unqid() if not id else id
+    res = []
+    if header: res.append(DropdownHeader(*header if isinstance(header, (list, tuple)) else [header], cls=header_cls))
+    res.append(DropdownList(*c, cls=list_cls))
+    res.append(Script('htmx.onLoad(function(content) {initDropdowns();})'))
+    return DropdownContainer(*res, id=id, devider=devider, cls=stringify(cls), **kwargs)
+
+def DropdownButton(*c, # Components to put in the dropdown button
+                   cls='', # Additional classes on the dropdown button
+                   controls:str='', # Control for the dropdown button
+                   icon:str='chevron-down', # Icon for the dropdown button
+                   show_icon:bool=True, # Whether to show the icon
+                   **kwargs # Additional args for the dropdown button
+                   )->FT: # Dropdown button component
+    "Creates a dropdown button"
+    return Button(*c,Icon(icon, height=16, width=16, cls='ms-3') if icon and show_icon else None, data_dropdown_toggle=controls, cls=stringify(cls), **kwargs)
+
+
+
+# %% ../nbs/01_flowbite.ipynb 41
+import random
+class NavT(VEnum):
+    default = 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+    dark = 'bg-gray-800 dark:bg-gray-800'
+    light = 'bg-white dark:bg-gray-800'
+    transparent = 'bg-transparent'
+    child = 'hidden space-y-2'
+
+def NavContainer(*li, # List items are navigation elements (Special `Li` such as `NavParentLi`, `NavDividerLi`, `NavHeaderLi`, `NavSubtitle`, `NavCloseLi` can also be used)
+                 cls=NavT.default, # Additional classes on the nav
+                 parent=True, # Whether this nav is a *parent* or *sub* nav
+                 uk_nav=False, #True for default collapsible behavior, see [frankenui docs](https://franken-ui.dev/docs/nav#component-options) for more advanced options
+                 sticky=False, # Whether to stick to the top of the page while scrolling
+                 **kwargs # Additional args
+                 )->FT: # FT Component that is a list of `Li` styled for a sidebar navigation menu
+    "Creates a navigation container (useful for creating a sidebar navigation).  A Nav is a list (NavBar is something different)"
+    _sticky = 'float-left sticky top-4 hidden md:block' if sticky else ''
+    return fh.Ul(*li, uk_nav=uk_nav, cls=("px-3 py-4 space-y-2 font-medium" if parent else 'space-y-2 font-medium', stringify(cls), _sticky), **kwargs)
+
+def NavLi(*c, # `NavContainer` container for a nested nav with `parent=False`)
+        label:str='',
+        icon:str='',
+        href:str='#',
+        cls=(), # Additional classes on the li
+        **kwargs # Additional args for the li
+        )->FT: # Navigation list item
+    "Creates a navigation list item with a parent nav for nesting"
+    return fh.Li(
+        fh.A(href=href, cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group')(
+            Icon(icon, aria_hidden='true', cls='shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
+            Span(label, cls='ms-3') if label else None,
+            *c,
+            **kwargs
+        ),
+        cls=(stringify(cls)),
+    )
+
+def NavChildLi(*c, # creates a list item with an anchor tag with a nested nav
+                cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700', # Additional classes on the li
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item with a nested nav
+    "Creates a navigation list item with a nested nav"
+    return fh.Li(
+                A(*c, cls=(stringify(cls)),**kwargs)
+            )
+
+def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `parent=False`)
+                label:str='',
+                icon:str='',
+                id:str="", # Random id for the parent nav as 5 digit number
+                cls=(), # Additional classes on the li
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item
+    "Creates a navigation list item with a parent nav for nesting"
+    id = random.randint(10000,99999) if not id else id
+    return Li(
+    fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700')(
+        Icon(icon, aria_hidden='true', cls='shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
+        Span(label, cls='flex-1 ms-3 text-left font-medium rtl:text-right whitespace-nowrap'),
+        Icon('chevron-down',height=24,width=24),
+        # Svg(xmlns='http://www.w3.org/2000/svg', fill='none', viewbox='0 0 10 6', cls='w-3 h-3')(
+        #     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4')
+        # )
+    ),
+    NavContainer(*nav_items, cls=NavT.child, parent=False, id=f'dropdown-{id}', **kwargs),
+    )
+    # return fh.Li(*nav_container,  cls=('uk-parent',  stringify(cls)),**kwargs)
+
+def NavDividerLi(*c, # Components
+                 cls='border-t border-gray-200 dark:border-gray-700', # Divider default class
+                 **kwargs # Additional args for the li
+                )->FT: # Navigation list item with a divider
+    "Creates a navigation list item with a divider"
+    return fh.Li(*c, cls=(stringify(cls)),**kwargs)
+
+def NavHeaderLi(*c, # Components
+                cls=(), # Additional classes on the li
+                label:str='',
+                href:str='#',
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item with a header
+    "Creates a navigation list item with a header"
+    content = [A(href=href, cls='flex items-center ps-2.5 mb-2')(
+        Span(label, cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white')
+    )] if label else c
+    return fh.Li(*content, cls=(stringify(cls)),**kwargs)
+
+def NavSubtitle(*c, # Components
+                cls='flex items-center ps-2.5 mb-5'+TextT.muted, # Additional classes on the div
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item with a header
+    "Creates a navigation subtitle"
+    return fh.Div(*c, cls=(stringify(cls)),**kwargs)
+
+
+def NavCloseLi(*c, # Components
+                label:str='',
+                icon:str='',
+                id:str=None, # Random id for the parent nav as 5 digit number
+                cls=(), # Additional classes on the li
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item
+    "Creates a navigation list item with a parent nav for nesting"
+    if id is None: id = fh.unqid()
+    return Li(
+    fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700')(
+        Span(label, cls='flex-1 ms-3 text-left font-medium rtl:text-right whitespace-nowrap'),
+        Icon(icon,height=24,width=24),
+        cls=(stringify(cls)),
+        *c,
+        **kwargs
+    ))
+
+# %% ../nbs/01_flowbite.ipynb 43
+class NavbarT(VEnum):
+    default = 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+    dark = 'bg-gray-800 dark:bg-gray-800'
+    light = 'bg-white dark:bg-gray-800'
+    transparent = 'bg-transparent'
+
+def NavBarItem(*c,
+                cls=(), # Additional classes on the li            
+                href='#', # Href for the link
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item
+    "Creates a navigation list item"
+    return fh.Li(
+                A(*c, href=href, aria_current='page', 
+                    cls='block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+                ),
+                cls=(stringify(cls)),
+                **kwargs
+            )
+
+def NavBar(*c,
+            brand=H4("Title"), # Brand/logo component for left side
+            right_cls='items-center space-x-4', # Spacing for desktop links
+            mobile_cls='space-y-4', # Spacing for mobile links
+            sticky:bool=False, # Whether to stick to the top of the page while scrolling
+            cls='bg-white border-gray-200 dark:bg-gray-900', # Classes for navbar
+            menu_id=None, # ID for menu container (used for mobile toggle)
+           ) ->FT:
+    if menu_id is None: menu_id = fh.unqid()
+    return Nav(cls=stringify(cls))(
+    DivFullySpaced(cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4')(
+        brand,
+        fh.Button(data_collapse_toggle=menu_id, type='button', aria_controls=menu_id, aria_expanded='false', cls='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600')(
+            Span('Open main menu', cls='sr-only'),
+            Icon('menu')
+        ),
+        Div(id=menu_id, cls='hidden w-full md:block md:w-auto')(
+            Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(
+                *c,
+            )
+        )
+    )
+)
+
+
+def SubNavBarItem(*c,
+                cls='text-gray-900 dark:text-white hover:underline', # Additional classes on the li            
+                href='#', # Href for the link
+                **kwargs # Additional args for the li
+               )->FT: # Navigation list item
+    "Creates a navigation list item"
+    return fh.Li(
+                A(*c, href=href, aria_current='page', cls=cls, **kwargs)
+            )
+
+def SubNavBar(*c,
+              cls=(), # Additional classes on the nav
+              **kwargs # Additional args for the nav
+             )->FT: # Sub navigation bar
+    "Creates a sub navigation bar"
+    return fh.Nav(cls='bg-gray-50 dark:bg-gray-700')(
+    Div(cls='max-w-screen-xl px-4 py-3 mx-auto')(
+        Div(cls='flex items-center')(
+            Ul(cls='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm')(
+                *c,
+            )
+        ),
+        # cls=(stringify(cls)),
+        **kwargs
+    )
+)
+
+
+# %% ../nbs/01_flowbite.ipynb 45
+def SliderContainer(*c, # Components
+                    cls=(), # Additional classes on the container
+                    type:Literal['slide', 'static']='slide', # Type of slider
+                    id:str=None, # Optional ID for the carousel
+                    **kwargs # Additional args for the container
+                    ) -> FT:
+    "Creates a slider container"
+    id = id or 'default-carousel'
+    base_cls = 'relative w-full'
+    return fh.Div(
+        *c,
+        cls=(base_cls, stringify(cls)), 
+        data_carousel=type,
+        id=id,
+        **kwargs
+    )
+
+class SliderItemT(VEnum):
+    default = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out'
+    linear = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-linear'
+    ease_out_in = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in'
+    cubic_bezier = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in-cubic'
+
+def SliderItem(*c, # Components to be displayed in the slide
+                cls=SliderItemT.default, # Additional classes for the items
+                **kwargs # Additional args for the items
+                ) -> FT:
+    "Creates a slider item"
+    return fh.Div(
+        *c,  # Allow any content to be passed
+        cls=(stringify(cls)), 
+        data_carousel_item=True, 
+        **kwargs
+    )
+
+def SliderItems(
+        *c, # Components
+        cls='', # Additional classes for the items
+        **kwargs # Additional args for the items
+    ) -> FT: # Div(..., cls='uk-slider-items uk-grid', ...)
+    "Creates a slider items container"
+    return Div(*c, cls=(stringify(cls)), **kwargs)
+
+def SliderControls(
+    cls='', # Additional classes for controls
+    **kwargs # Additional args for controls
+) -> tuple:
+    "Creates previous and next controls for the slider"
+    prev_button = fh.Button(
+        type='button',
+        data_carousel_prev=True,
+        cls='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+    )(
+        fh.Span(
+            cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+        )(
+            Icon('chevron-left', height=24, width=24, cls='text-gray-800 dark:text-gray-300'),
+            fh.Span('Previous', cls='sr-only')
+        )
+    )
+
+    next_button = fh.Button(
+        type='button',
+        data_carousel_next=True,
+        cls='absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+    )(
+        fh.Span(
+            cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+        )(
+            Icon('chevron-right', height=24, width=24, cls='text-gray-800 dark:text-gray-300'),
+            fh.Span('Next', cls='sr-only')
+        )
+    )
+    
+    return prev_button, next_button
+
+
+def SliderNav(
+        num_slides:int, # Number of slides
+        cls='absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse', # Additional classes for the navigation
+        **kwargs # Additional args for the navigation
+    ) -> FT:
+    "Navigation indicators for Slider component"
+    return Div(
+        *[fh.Button(
+            type='button',
+            aria_current='true' if i == 0 else 'false',
+            aria_label=f'Slide {i+1}',
+            data_carousel_slide_to=f'{i}',
+            cls='w-3 h-3 rounded-full'
+        ) for i in range(num_slides)],
+        cls=(stringify(cls)),
+        **kwargs
+    )
+
+def Slider(items, # List of items to show in slider
+          wrapper_cls='relative h-56 overflow-hidden rounded-lg md:h-96', # Classes for the wrapper div
+          cls='', # Classes for slider container
+          show_controls=True, # Whether to show navigation controls
+          show_indicators=True, # Whether to show slide indicators
+          type:Literal['slide', 'static']='slide', # Type of slider
+          id:str=None, # Optional ID for the carousel
+          **kwargs # Additional args for slider container
+    ) -> FT:
+    "Creates a complete slider with items, controls, and indicators"
+    
+    # Create wrapper for slides
+    wrapper = fh.Div(
+        *[SliderItem(item) for item in items],
+        cls=wrapper_cls
+    )
+    
+    components = [wrapper]
+    
+    # Add indicators if requested
+    if show_indicators:
+        components.append(SliderNav(num_slides=len(items)))
+    
+    # Add controls if requested
+    if show_controls:
+        prev_button, next_button = SliderControls()
+        components.extend([prev_button, next_button])
+    
+    return SliderContainer(
+        *components,
+        type=type,
+        id=id,
+        cls=cls,
+        **kwargs
+    )
