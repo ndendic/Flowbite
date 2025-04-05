@@ -1,3 +1,4 @@
+from pydoc import render_doc
 import fasthtml.common as fh
 from fasthtml.svg import *
 from fh_flowbite.components import *
@@ -517,6 +518,25 @@ tables = fh.Div(
 
     )
 
+markdown_example = """
+# Hello World
+
+This is a test of the markdown component.
+
+## Subheading
+
+This is a subheading.
+
+![Flowbite Logo](https://flowbite.com/docs/images/logo.svg)
+
+[Flowbite](https://flowbite.com) is a library of pre-built components for Tailwind CSS.
+
+> This is a block quote.
+> It can span multiple paragraphs,
+> if you like.
+
+
+"""
 
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
@@ -536,7 +556,10 @@ playground = Section(cls=(SectionT.default))(
     # sliders,
     # dropdowns,
 
-    tables,
+    # tables,
+
+    render_md(markdown_example),
+    render_md_article(markdown_example),
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 
