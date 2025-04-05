@@ -348,6 +348,23 @@ navs = NavContainer(
         NavLi(label='About', href='#'),
         NavParentLi(label="Contact"),
     )
+navbars = fh.Div(
+        NavBar(
+            NavBarItem("Home", href="#"),
+            NavBarItem("About", href="#"),
+            NavBarItem("Services", href="#"),
+            NavBarItem("Pricing", href="#"),
+            NavBarItem("Contact", href="#"),
+            brand=DivLAligned(Icon("home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
+        ),
+        SubNavBar(
+            SubNavBarItem("Home", href="#"),
+            SubNavBarItem("About", href="#"),
+            SubNavBarItem("Services", href="#"),
+            SubNavBarItem("Pricing", href="#"),
+            SubNavBarItem("Contact", href="#"),
+        ),
+    )
 sliders = fh.Div(
         Slider([PicSumImg(id=i, alt='...', cls=SliderItemT.ease_out_in, h=400, w=800) for i in range(100, 600, 100)],
                 cls="h-64 overflow-hidden rounded-lg"
@@ -370,7 +387,16 @@ sliders = fh.Div(
             show_controls=False
         )
     ),
-
+dropdowns = fh.Div(
+        DropdownButton("Dropdown button", cls=ButtonT.link, controls="dropdown-example"),
+        Dropdown(        
+            DropdownItem("Dropdown item"),
+            DropdownItem("Dropdown item"),
+            DropdownItem("Dropdown item"),
+            id="dropdown-example"
+        ),
+        cls="space-y-2"
+    ),
 
 headers = ['Product name', 'Color', 'Category', 'Price']
 rows = [
@@ -379,7 +405,85 @@ rows = [
     ['Magic Mouse 2', 'Black', 'Accessories', '$99']
 ]
 
-table = SimpleTable(headers, rows)
+tables = fh.Div(
+        H4("Default Simple Table"),
+        SimpleTable(headers, rows),
+
+        H4("DataTable"),
+        DataTable(
+            headers=headers,
+            rows=rows,
+            # expand_column=0,
+            # row_cls="dark:bg-gray-950",  # Custom row background
+            container_cls="mt-4 rounded-lg"
+        ),
+
+        H4("Striped Table"),
+        DataTable(
+            headers=headers,
+            rows=rows,
+            expand_column=0,
+            with_shadow=True,
+            cls=TableT.table_default,
+            container_cls="mt-4 rounded-lg",
+            striped=True,  # Will apply row_striped to tbody
+            hover=True,    # Will apply row_hover to tbody
+        ),
+
+        H4("Hover Table"),
+        DataTable(
+            headers=headers,
+            rows=rows,
+            expand_column=0,
+            with_shadow=True,
+            row_cls=TableT.row_hover,  # Custom row background
+            cls=TableT.table_default,
+            container_cls="mt-4 rounded-lg",
+        ),
+
+        H4("Custom Table"),
+        Table(
+            Thead(
+                Tr(
+                    Th('Product name', expand=True),  # This column will expand
+                    Th('Color', expand=True),         # This column will shrink to content
+                    Th('Category'),
+                    Th('Price', shrink=True),         # This column will shrink to content
+                    header=True
+                ),
+            ),
+            Tbody(
+                Tr(
+                    Td('Apple MacBook Pro 17"', expand=True),
+                    Td('Silver'),
+                    Td('Laptop'),
+                    Td('$2999'),
+                    cls=TableT.row_hover,
+                ),
+                Tr(
+                    Td('Apple MacBook Pro 17"', expand=True),
+                    Td('Silver'),
+                    Td('Laptop'),
+                    Td('$2999'),
+                    cls=TableT.row_hover,
+                ),
+                Tr(
+                    Td('Apple MacBook Pro 17"', expand=True),
+                    Td('Silver'),
+                    Td('Laptop'),
+                    Td('$2999'),
+                    cls=TableT.row_hover,
+                ),
+                # ... more rows
+            ),
+            cls=TableT.table_default,
+            container_cls="mt-4 rounded-lg",
+            with_shadow=True
+        ),
+
+    )
+
+
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
     P("This is your playground for developing Flowbite components.\n Go to and modify ",
@@ -392,92 +496,13 @@ playground = Section(cls=(SectionT.default))(
     # icon_links,
     # progress,
     # placeholders,
-    NavBar(
-        NavBarItem("Home", href="#"),
-        NavBarItem("About", href="#"),
-        NavBarItem("Services", href="#"),
-        NavBarItem("Pricing", href="#"),
-        NavBarItem("Contact", href="#"),
-        brand=DivLAligned(Icon("home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
-    ),
-    SubNavBar(
-        SubNavBarItem("Home", href="#"),
-        SubNavBarItem("About", href="#"),
-        SubNavBarItem("Services", href="#"),
-        SubNavBarItem("Pricing", href="#"),
-        SubNavBarItem("Contact", href="#"),
-    ),
-
+    # tables,
+    # navbars,
     # navs,
     # sliders,
+    # dropdowns,
 
-    DropdownButton("Dropdown button", cls=ButtonT.link, controls="dropdown-example"),
-    Dropdown(        
-        DropdownItem("Dropdown item"),
-        DropdownItem("Dropdown item"),
-        DropdownItem("Dropdown item"),
-        id="dropdown-example"
-    ),
-
-    Table(
-        Thead(
-            Tr(
-                Th('Product name', expand=True),  # This column will expand
-                Th('Color', expand=True),         # This column will shrink to content
-                Th('Category'),
-                Th('Price', shrink=True)          # This column will shrink to content
-            )
-        ),
-        Tbody(
-            Tr(
-                Td('Apple MacBook Pro 17"', expand=True),
-                Td('Silver'),
-                Td('Laptop'),
-                Td('$2999'),
-                cls=TableT.row_hover,
-            ),
-            Tr(
-                Td('Apple MacBook Pro 17"', expand=True),
-                Td('Silver'),
-                Td('Laptop'),
-                Td('$2999'),
-                cls=TableT.row_hover,
-            ),
-            Tr(
-                Td('Apple MacBook Pro 17"', expand=True),
-                Td('Silver'),
-                Td('Laptop'),
-                Td('$2999'),
-                cls=TableT.row_hover,
-            ),
-            # ... more rows
-        ),
-        cls=TableT.table_default,
-        container_cls="mt-4 rounded-lg",
-        with_shadow=True
-    ),
-
-    DataTable(
-        headers=headers,
-        rows=rows,
-        # expand_column=0,
-        row_cls="dark:bg-gray-950",  # Custom row background
-        container_cls="mt-4 rounded-lg"
-    ),
-
-    DataTable(
-        headers=headers,
-        rows=rows,
-        expand_column=0,
-        with_shadow=True,
-        row_cls=TableT.row_striped,  # Custom row background
-        # Table specific classes
-        cls=TableT.table_default,
-        # Container specific classes
-        container_cls="mt-4 rounded-lg",
-        striped=True,  # Will apply row_striped to tbody
-        hover=True,    # Will apply row_hover to tbody
-    ),
+    tables,
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 

@@ -18,7 +18,7 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'NavContainer', 'NavLi', 'NavChildLi', 'NavParentLi', 'NavDividerLi', 'NavHeaderLi', 'NavSubtitle',
            'NavCloseLi', 'NavbarT', 'NavBarItem', 'NavBar', 'SubNavBarItem', 'SubNavBar', 'SliderContainer',
            'SliderItemT', 'SliderItem', 'SliderItems', 'SliderControls', 'SliderNav', 'Slider', 'TableT', 'Thead',
-           'Table', 'Td', 'Th', 'Tbody', 'Tr', 'DataTable', 'SimpleTable']
+           'Table', 'Td', 'Th', 'Tbody', 'Tr', 'TrHeader', 'DataTable', 'SimpleTable']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -2022,23 +2022,21 @@ class TableT(VEnum):
     container_shadow = "shadow-md"
     
     # Row level styles
-    row_default = "bg-white dark:bg-gray-800"
-    row_striped = "even:bg-gray-50 dark:even:bg-gray-800"
-    row_hover = "hover:bg-gray-50 dark:hover:bg-gray-800"
+    row_default = "bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+    row_striped = "odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200"
+    row_hover = "hover:bg-gray-50 dark:hover:bg-gray-600"
     row_bordered = "border-b dark:border-gray-700 border-gray-200"
-    
-    # Header level styles
-    header_default = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-    header_cell = "px-6 py-3"
+    row_header = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
     
     # Cell level styles
     cell_default = "px-6 py-4 text-gray-500 dark:text-gray-400"
     cell_expand = "w-full"
     cell_shrink = "w-1"
     cell_first = "font-medium text-gray-900 whitespace-nowrap dark:text-white"
+    cell_header = "px-6 py-3"
 
 def Thead(*c, 
-          cls=TableT.header_default, 
+          cls=TableT.row_header, 
           **kwargs):
     "Creates a table header with Flowbite styling"
     # Extract any rounding classes from the parent table and apply only top rounding
@@ -2077,7 +2075,7 @@ def _TableCell(Component,
               )->FT:
     "Creates a table cell with Flowbite styling"
     classes = []
-    base_cls = TableT.header_cell if is_header else TableT.cell_default
+    base_cls = TableT.cell_header if is_header else TableT.cell_default
     classes.append(base_cls)
     
     if expand:
@@ -2114,8 +2112,21 @@ def Tbody(*c,
 def Tr(*c,
        cls=TableT.row_default,
        bordered=True,
+       header=False,
        **kwargs):
     "Creates a table row with Flowbite styling"
+    if header: 
+        if cls == TableT.row_default: cls = TableT.row_header
+        else: cls = (cls, TableT.row_header)
+
+    if bordered: cls = (cls, TableT.row_bordered)
+    return fh.Tr(*c, cls=stringify(cls), **kwargs)
+
+def TrHeader(*c,
+       cls=TableT.cell_header,
+       bordered=True,
+       **kwargs):
+    "Creates a table header row with Flowbite styling"
     if bordered: cls = (cls, TableT.row_bordered)
     return fh.Tr(*c, cls=stringify(cls), **kwargs)
 
@@ -2137,7 +2148,7 @@ def DataTable(headers:list, # List of header labels
     header_cells = []
     for i, h in enumerate(headers):
         header_cells.append(Th(h, expand=(i == expand_column)))
-    header_row = Tr(*header_cells)
+    header_row = TrHeader(*header_cells)
     
     # Create data rows
     data_rows = []
@@ -2157,6 +2168,8 @@ def DataTable(headers:list, # List of header labels
             row_classes += " " + stringify(row_cls)
         if bordered: 
             row_classes += " " + stringify(TableT.row_bordered)
+        if striped:
+            row_classes += " " + stringify(TableT.row_striped)
         
         data_rows.append(Tr(*cells, cls=row_classes))
     
