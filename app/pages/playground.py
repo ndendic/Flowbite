@@ -348,7 +348,38 @@ navs = NavContainer(
         NavLi(label='About', href='#'),
         NavParentLi(label="Contact"),
     )
+sliders = fh.Div(
+        Slider([PicSumImg(id=i, alt='...', cls=SliderItemT.ease_out_in, h=400, w=800) for i in range(100, 600, 100)],
+                cls="h-64 overflow-hidden rounded-lg"
+        ),
+        Slider(
+            [
+                fh.Div(
+                    H2("Slide 1 Title", cls="px-4"),
+                    P("Some content", cls="px-4"),
+                    cls=SliderItemT.default+BackgroundT.primary+Round.lg
+                ),
+                fh.Div(
+                    H2("Slide 2 Title", cls="px-4"),
+                    P("Other content", cls="px-4"),
+                    cls=SliderItemT.default+BackgroundT.secondary+Round.lg
+                ),
+            ],
+            wrapper_cls='relative h-64 overflow-hidden rounded-lg',
+            show_indicators=True,
+            show_controls=False
+        )
+    ),
 
+
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99']
+]
+
+table = SimpleTable(headers, rows)
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
     P("This is your playground for developing Flowbite components.\n Go to and modify ",
@@ -369,7 +400,6 @@ playground = Section(cls=(SectionT.default))(
         NavBarItem("Contact", href="#"),
         brand=DivLAligned(Icon("home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
     ),
-
     SubNavBar(
         SubNavBarItem("Home", href="#"),
         SubNavBarItem("About", href="#"),
@@ -378,7 +408,9 @@ playground = Section(cls=(SectionT.default))(
         SubNavBarItem("Contact", href="#"),
     ),
 
-    navs,
+    # navs,
+    # sliders,
+
     DropdownButton("Dropdown button", cls=ButtonT.link, controls="dropdown-example"),
     Dropdown(        
         DropdownItem("Dropdown item"),
@@ -387,30 +419,65 @@ playground = Section(cls=(SectionT.default))(
         id="dropdown-example"
     ),
 
-    Slider([
-        PicSumImg(id=i, alt='...', cls=SliderItemT.ease_out_in, h=400, w=800)
-        for i in range(100, 600, 100)
-    ]),
-
-    Slider(
-        [
-            fh.Div(
-                H2("Slide 1 Title", cls="px-4"),
-                P("Some content", cls="px-4"),
-                cls=SliderItemT.default+BackgroundT.primary+Round.lg
+    Table(
+        Thead(
+            Tr(
+                Th('Product name', expand=True),  # This column will expand
+                Th('Color', expand=True),         # This column will shrink to content
+                Th('Category'),
+                Th('Price', shrink=True)          # This column will shrink to content
+            )
+        ),
+        Tbody(
+            Tr(
+                Td('Apple MacBook Pro 17"', expand=True),
+                Td('Silver'),
+                Td('Laptop'),
+                Td('$2999'),
+                cls=TableT.row_hover,
             ),
-            fh.Div(
-                H2("Slide 2 Title", cls="px-4"),
-                P("Other content", cls="px-4"),
-                cls=SliderItemT.default+BackgroundT.secondary+Round.lg
+            Tr(
+                Td('Apple MacBook Pro 17"', expand=True),
+                Td('Silver'),
+                Td('Laptop'),
+                Td('$2999'),
+                cls=TableT.row_hover,
             ),
-        ],
-        wrapper_cls='relative h-64 overflow-hidden rounded-lg',
-        show_indicators=True,
-        show_controls=False
+            Tr(
+                Td('Apple MacBook Pro 17"', expand=True),
+                Td('Silver'),
+                Td('Laptop'),
+                Td('$2999'),
+                cls=TableT.row_hover,
+            ),
+            # ... more rows
+        ),
+        cls=TableT.table_default,
+        container_cls="mt-4 rounded-lg",
+        with_shadow=True
     ),
 
-    
+    DataTable(
+        headers=headers,
+        rows=rows,
+        # expand_column=0,
+        row_cls="dark:bg-gray-950",  # Custom row background
+        container_cls="mt-4 rounded-lg"
+    ),
+
+    DataTable(
+        headers=headers,
+        rows=rows,
+        expand_column=0,
+        with_shadow=True,
+        row_cls=TableT.row_striped,  # Custom row background
+        # Table specific classes
+        cls=TableT.table_default,
+        # Container specific classes
+        container_cls="mt-4 rounded-lg",
+        striped=True,  # Will apply row_striped to tbody
+        hover=True,    # Will apply row_hover to tbody
+    ),
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 

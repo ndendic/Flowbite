@@ -17,7 +17,8 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'DropdownItem', 'DropdownList', 'DropdownContainer', 'DropdownHeader', 'Dropdown', 'DropdownButton', 'NavT',
            'NavContainer', 'NavLi', 'NavChildLi', 'NavParentLi', 'NavDividerLi', 'NavHeaderLi', 'NavSubtitle',
            'NavCloseLi', 'NavbarT', 'NavBarItem', 'NavBar', 'SubNavBarItem', 'SubNavBar', 'SliderContainer',
-           'SliderItemT', 'SliderItem', 'SliderItems', 'SliderControls', 'SliderNav', 'Slider']
+           'SliderItemT', 'SliderItem', 'SliderItems', 'SliderControls', 'SliderNav', 'Slider', 'TableT', 'Thead',
+           'Table', 'Td', 'Th', 'Tbody', 'Tr', 'DataTable', 'SimpleTable']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -2006,5 +2007,179 @@ def Slider(items, # List of items to show in slider
         type=type,
         id=id,
         cls=cls,
+        **kwargs
+    )
+
+# %% ../nbs/01_flowbite.ipynb 47
+class TableT(VEnum):
+    """Table styling variants for Flowbite components"""
+    # Table level styles
+    table_default = "w-full text-sm text-left rtl:text-right"
+    
+    # Container level styles
+    container_default = "relative overflow-x-auto"
+    container_responsive = "overflow-x-auto"
+    container_shadow = "shadow-md"
+    
+    # Row level styles
+    row_default = "bg-white dark:bg-gray-800"
+    row_striped = "even:bg-gray-50 dark:even:bg-gray-800"
+    row_hover = "hover:bg-gray-50 dark:hover:bg-gray-800"
+    row_bordered = "border-b dark:border-gray-700 border-gray-200"
+    
+    # Header level styles
+    header_default = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+    header_cell = "px-6 py-3"
+    
+    # Cell level styles
+    cell_default = "px-6 py-4 text-gray-500 dark:text-gray-400"
+    cell_expand = "w-full"
+    cell_shrink = "w-1"
+    cell_first = "font-medium text-gray-900 whitespace-nowrap dark:text-white"
+
+def Thead(*c, 
+          cls=TableT.header_default, 
+          **kwargs):
+    "Creates a table header with Flowbite styling"
+    # Extract any rounding classes from the parent table and apply only top rounding
+    all_cls = stringify(cls).split()
+    rounding_classes = [c.replace('rounded', 'rounded-t') for c in all_cls if 'rounded' in c]
+    other_classes = [c for c in all_cls if 'rounded' not in c]
+    
+    return fh.Thead(*c, cls=(stringify(other_classes), *rounding_classes), **kwargs)
+
+def Table(*c, # Components (typically `Thead`, `Tbody`, `Tfoot`)
+          cls=TableT.table_default, # Classes for the table element itself
+          container_cls=TableT.container_default, # Classes for the outer container
+          responsive=True, # Whether to make the table responsive
+          with_shadow=False, # Whether to add shadow styling
+          **kwargs # Additional args for the table
+         )->FT:
+    "Creates a table with Flowbite styling"
+    
+    # Build container classes
+    container_classes = [container_cls]
+    if responsive: container_classes.append(TableT.container_responsive)
+    if with_shadow: container_classes.append(TableT.container_shadow)
+    
+    return Div(
+        fh.Table(*c, cls=stringify(cls), **kwargs),
+        cls=tuple(container_classes)
+    )
+
+def _TableCell(Component, 
+               *c, # Components that go in the cell
+               cls=(), # Additional classes on the cell
+               is_header=False, # Whether this is a header cell
+               expand=False, # Whether to expand the cell
+               shrink=False, # Whether to shrink the cell
+               **kwargs # Additional args for the cell
+              )->FT:
+    "Creates a table cell with Flowbite styling"
+    classes = []
+    base_cls = TableT.header_cell if is_header else TableT.cell_default
+    classes.append(base_cls)
+    
+    if expand:
+        classes.append(TableT.cell_expand)
+    if shrink:
+        classes.append(TableT.cell_shrink)
+    if cls:
+        classes.append(stringify(cls))
+    
+    return Component(*c, cls=tuple(classes), **kwargs)
+
+@delegates(_TableCell, but=['Component'])
+def Td(*c, **kwargs):
+    "Creates a table data cell"
+    return _TableCell(fh.Td, *c, **kwargs)
+
+@delegates(_TableCell, but=['Component'])
+def Th(*c, scope='col', **kwargs):
+    "Creates a table header cell"
+    return _TableCell(fh.Th, *c, scope=scope, is_header=True, **kwargs)
+
+def Tbody(*c,
+          cls=(), 
+          striped=False,
+          hover=False,
+          **kwargs):
+    "Creates a table body with Flowbite styling"
+    classes = []
+    if striped: classes.append(TableT.row_striped)
+    if hover: classes.append(TableT.row_hover)
+    if cls: classes.append(stringify(cls))
+    return fh.Tbody(*c, cls=tuple(classes), **kwargs)
+
+def Tr(*c,
+       cls=TableT.row_default,
+       bordered=True,
+       **kwargs):
+    "Creates a table row with Flowbite styling"
+    if bordered: cls = (cls, TableT.row_bordered)
+    return fh.Tr(*c, cls=stringify(cls), **kwargs)
+
+def DataTable(headers:list, # List of header labels
+             rows:list, # List of row data
+             first_col_header=False, # Whether to style first column as header
+             expand_column=None, # Index of column to expand (0-based)
+             cls=TableT.table_default, # Classes for the table element
+             container_cls="", # Classes for the outer container
+             row_cls="", # Classes to apply to each row
+             striped=False, # Whether to apply striped styling to rows
+             hover=False, # Whether to apply hover styling to rows
+             bordered=True, # Whether to apply borders between rows
+             **kwargs # Additional args for the Table
+            )->FT:
+    "Creates a data table from headers and rows"
+    
+    # Create header row
+    header_cells = []
+    for i, h in enumerate(headers):
+        header_cells.append(Th(h, expand=(i == expand_column)))
+    header_row = Tr(*header_cells)
+    
+    # Create data rows
+    data_rows = []
+    for row in rows:
+        cells = []
+        for i, cell in enumerate(row):
+            if first_col_header and i == 0:
+                cells.append(Th(cell, scope='row', 
+                              cls=TableT.cell_first,
+                              expand=(i == expand_column)))
+            else:
+                cells.append(Td(cell, expand=(i == expand_column)))
+        
+        # Build row classes properly
+        row_classes = stringify(TableT.row_default)  # Start with default
+        if row_cls: 
+            row_classes += " " + stringify(row_cls)
+        if bordered: 
+            row_classes += " " + stringify(TableT.row_bordered)
+        
+        data_rows.append(Tr(*cells, cls=row_classes))
+    
+    # Build tbody classes properly
+    tbody_classes = []
+    if striped: tbody_classes.append(stringify(TableT.row_striped))
+    if hover: tbody_classes.append(stringify(TableT.row_hover))
+    
+    return Table(
+        Thead(header_row),
+        Tbody(*data_rows, cls=" ".join(tbody_classes) if tbody_classes else None),
+        cls=stringify(cls),
+        container_cls=stringify(container_cls),
+        **kwargs
+    )
+    
+# Example usage of the table components:
+def SimpleTable(headers:list, rows:list, **kwargs):
+    "Creates a simple table with hover effect and striped rows"
+    return DataTable(
+        headers=headers,
+        rows=rows,
+        with_shadow=True,
+        first_col_header=True,
         **kwargs
     )
