@@ -402,7 +402,26 @@ headers = ['Product name', 'Color', 'Category', 'Price']
 rows = [
     ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
     ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
-    ['Magic Mouse 2', 'Black', 'Accessories', '$99']
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
 ]
 footer = ["Total", "3", "3", "$6000"]
 tables = fh.Div(
@@ -410,9 +429,11 @@ tables = fh.Div(
         SimpleTable(headers, rows),
 
         H4("DataTable"),
-        DataTable(
+        DataTable(id="datatable-default",
             headers=headers,
             rows=rows,
+            sortable=True,
+            searchable=True,
             # expand_column=0,
             # row_cls="dark:bg-gray-950",  # Custom row background
             container_cls="mt-4 rounded-lg"
@@ -427,6 +448,9 @@ tables = fh.Div(
             with_shadow=True,
             cls=TableT.table_default,
             container_cls="mt-4 rounded-lg",
+            id="datatable-striped",
+            sortable=True,
+            searchable=True,
             striped=True,  # Will apply row_striped to tbody
             hover=True,    # Will apply row_hover to tbody
         ),
@@ -462,23 +486,32 @@ tables = fh.Div(
                     cls=TableT.row_hover,
                 ),
                 Tr(
-                    Td('Apple MacBook Pro 17"', expand=True),
+                    Td('MacBook Pro 17"', expand=True),
                     Td('Silver'),
                     Td('Laptop'),
-                    Td('$2999'),
+                    Td('$100'),
                     cls=TableT.row_hover,
                 ),
                 Tr(
-                    Td('Apple MacBook Pro 17"', expand=True),
+                    Td('MacBook Pro 19"', expand=True),
                     Td('Silver'),
                     Td('Laptop'),
-                    Td('$2999'),
+                    Td('$300'),
                     cls=TableT.row_hover,
                 ),
                 # ... more rows
             ),
+            fh.Script("""
+            if (document.getElementById('my_table') && typeof simpleDatatables.DataTable !== 'undefined') {
+                const dataTable = new simpleDatatables.DataTable('#my_table', {
+                    searchable: false,
+                    perPageSelect: false
+                });
+            }
+            """),
             cls=TableT.table_default,
             container_cls="mt-4 rounded-lg",
+            id="my_table",
             with_shadow=True
         ),
 

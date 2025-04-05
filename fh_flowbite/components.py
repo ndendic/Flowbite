@@ -2036,7 +2036,7 @@ class TableT(VEnum):
     cell_first = "font-medium text-gray-900 whitespace-nowrap dark:text-white"
     cell_header = "px-6 py-3"
     cell_footer = "px-6 py-4"
-    
+
 def Thead(*c, 
           cls=TableT.row_header, 
           **kwargs):
@@ -2147,6 +2147,7 @@ def Tfoot(*c,
 def DataTable(headers:list, # List of header labels
              rows:list, # List of row data
              footer:list=None, # List of footer data
+             id:str=None, # Optional ID for the table
              first_col_header=False, # Whether to style first column as header
              expand_column=None, # Index of column to expand (0-based)
              cls=TableT.table_default, # Classes for the table element
@@ -2155,6 +2156,8 @@ def DataTable(headers:list, # List of header labels
              striped=False, # Whether to apply striped styling to rows
              hover=False, # Whether to apply hover styling to rows
              bordered=True, # Whether to apply borders between rows
+             searchable=False, # Whether to apply searchable styling to rows
+             sortable=False, # Whether to apply sortable styling to rows
              **kwargs # Additional args for the Table
             )->FT:
     "Creates a data table from headers and rows"
@@ -2206,6 +2209,15 @@ def DataTable(headers:list, # List of header labels
         Thead(header_row),
         Tbody(*data_rows, cls=" ".join(tbody_classes) if tbody_classes else None),
         Tfoot(footer_row) if footer else None,
+        fh.Script(f"""
+            if (document.getElementById('{id}') && typeof simpleDatatables.DataTable !== 'undefined') {{
+                const dataTable = new simpleDatatables.DataTable('#{id}', {{
+                    searchable: {str(searchable).lower()},
+                    sortable: {str(sortable).lower()}
+                }});
+            }}
+            """) if id else None,
+        id=id,
         cls=stringify(cls),
         container_cls=stringify(container_cls),
         **kwargs

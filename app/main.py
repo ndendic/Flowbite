@@ -28,6 +28,7 @@ flowbite_hdrs = (
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
+    Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript')
 )
 
 flowbite_ftrs = [
