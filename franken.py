@@ -1,6 +1,8 @@
 
 # %% ../nbs/02_franken.ipynb
 import fasthtml.common as fh
+
+from fh_flowbite.components import TabContainer
 from .foundations import *
 from fasthtml.common import Div, P, Span, FT
 from enum import Enum, auto
@@ -31,69 +33,6 @@ import fasthtml.components as fh_comp
 # class ScrollspyT(VEnum):
 #     underline = 'navbar-underline'
 #     bold = 'navbar-bold'
-
-# %% ../nbs/02_franken.ipynb
-def DropDownNavContainer(*li, # Components
-                         cls=NavT.primary, # Additional classes on the nav
-                         parent=True, # Whether to use a parent nav
-                         uk_nav=False, #True for default collapsible behavior, see https://franken-ui.dev/docs/nav#component-options for more advanced options
-                         uk_dropdown=True, # Whether to use a dropdown
-                         **kwargs # Additional args for the nav
-                        )->FT: # DropDown nav container
-    "A Nav that is part of a DropDown"
-    return Div(cls = 'uk-drop w-full uk-dropdown',uk_dropdown=uk_dropdown)(NavContainer(*li, cls=('uk-dropdown-nav',stringify(cls)), uk_nav=uk_nav, parent=parent, **kwargs))
-
-# %% ../nbs/02_franken.ipynb
-def TabContainer(*li, # Components
-                  cls='', # Additional classes on the `Ul`
-                  alt=False, # Whether to use an alternative tab style
-                  **kwargs # Additional args for the `Ul`
-                 )->FT: # Tab container
-    "A TabContainer where children will be different tabs"
-    cls = stringify(cls)
-    return Ul(cls=(f"uk-tab{'-alt' if alt else ''}",stringify(cls)),**kwargs)(*li)
-# %% ../nbs/02_franken.ipynb
-class TableT(VEnum):
-    def _generate_next_value_(name, start, count, last_values): return str2ukcls('table', name)
-    divider = auto()
-    striped = auto()
-    hover = auto()
-    sm = auto()
-    lg = auto()
-    justify = auto()
-    middle = auto()
-    responsive = auto()
-
-# %% ../nbs/02_franken.ipynb
-def Table(*c, # Components (typically `Thead`, `Tbody`, `Tfoot`)
-          cls=(TableT.middle, TableT.divider, TableT.hover, TableT.sm), # Additional classes on the table
-          **kwargs # Additional args for the table
-         )->FT: # Table component
-    "Creates a table"
-    return fh.Table(cls=('uk-table', stringify(cls)), *c, **kwargs)
-
-# %% ../nbs/02_franken.ipynb
-def _TableCell(Component, 
-               *c, # Components that go in the cell
-               cls=(), # Additional classes on the cell container
-               shrink=False, # Whether to shrink the cell
-               expand=False, # Whether to expand the cell
-               small=False, # Whether to use a small table
-               **kwargs # Additional args for the cell
-              )->FT: # Table cell
-    "Creates a table cell"
-    cls = stringify(cls)
-    if shrink: cls += ' uk-table-shrink'
-    if expand: cls += ' uk-table-expand'
-    if small: cls += ' uk-table-small'
-    return Component(*c,cls=cls, **kwargs)
-
-@delegates(_TableCell, but=['Component'])
-def Td(*c,**kwargs):  return _TableCell(fh.Td, *c, **kwargs)
-@delegates(_TableCell, but=['Component'])
-def Th(*c,**kwargs): return _TableCell(fh.Th, *c, **kwargs)
-
-def Tbody(*rows, cls=(), sortable=False, **kwargs): return fh.Tbody(*rows, cls=stringify(cls), uk_sortable=sortable, **kwargs)
 
 # %% ../nbs/02_franken.ipynb
 def TableFromLists(header_data:Sequence, # List of header data

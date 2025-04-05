@@ -18,7 +18,7 @@ __all__ = ['flowbite_hdrs', 'flowbite_ftrs', 'Round', 'TextT', 'TextPresets', 'T
            'NavContainer', 'NavLi', 'NavChildLi', 'NavParentLi', 'NavDividerLi', 'NavHeaderLi', 'NavSubtitle',
            'NavCloseLi', 'NavbarT', 'NavBarItem', 'NavBar', 'SubNavBarItem', 'SubNavBar', 'SliderContainer',
            'SliderItemT', 'SliderItem', 'SliderItems', 'SliderControls', 'SliderNav', 'Slider', 'TableT', 'Thead',
-           'Table', 'Td', 'Th', 'Tbody', 'Tr', 'TrHeader', 'DataTable', 'SimpleTable']
+           'Table', 'Td', 'Th', 'Tf', 'Tbody', 'Tr', 'TrHeader', 'Tfoot', 'DataTable', 'SimpleTable']
 
 # %% ../nbs/01_flowbite.ipynb 1
 import fasthtml.common as fh
@@ -386,7 +386,7 @@ def Blockquote(*c:FT|str, # Contents of Blockquote tag (often text)
     elements =[]
     if with_icon:
         elements.append(Icon("quote",cls="h-8 w-8 text-gray-400 dark:text-gray-600 mb-1"))
-    elements.append(*c)
+    elements.extend(c)
     return fh.Blockquote(*elements, cls=(stringify(cls)), **kwargs)
 
 
@@ -2027,14 +2027,16 @@ class TableT(VEnum):
     row_hover = "hover:bg-gray-50 dark:hover:bg-gray-600"
     row_bordered = "border-b dark:border-gray-700 border-gray-200"
     row_header = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-    
+    row_footer = "font-semibold text-gray-900 dark:text-white"
+
     # Cell level styles
     cell_default = "px-6 py-4 text-gray-500 dark:text-gray-400"
     cell_expand = "w-full"
     cell_shrink = "w-1"
     cell_first = "font-medium text-gray-900 whitespace-nowrap dark:text-white"
     cell_header = "px-6 py-3"
-
+    cell_footer = "px-6 py-4"
+    
 def Thead(*c, 
           cls=TableT.row_header, 
           **kwargs):
@@ -2069,13 +2071,14 @@ def _TableCell(Component,
                *c, # Components that go in the cell
                cls=(), # Additional classes on the cell
                is_header=False, # Whether this is a header cell
+               is_footer=False, # Whether this is a footer cell
                expand=False, # Whether to expand the cell
                shrink=False, # Whether to shrink the cell
                **kwargs # Additional args for the cell
               )->FT:
     "Creates a table cell with Flowbite styling"
     classes = []
-    base_cls = TableT.cell_header if is_header else TableT.cell_default
+    base_cls = TableT.cell_header if is_header else TableT.cell_default if not is_footer else TableT.cell_footer
     classes.append(base_cls)
     
     if expand:
@@ -2096,6 +2099,11 @@ def Td(*c, **kwargs):
 def Th(*c, scope='col', **kwargs):
     "Creates a table header cell"
     return _TableCell(fh.Th, *c, scope=scope, is_header=True, **kwargs)
+
+@delegates(_TableCell, but=['Component'])
+def Tf(*c, **kwargs):
+    "Creates a table footer cell"
+    return _TableCell(fh.Td, *c, is_footer=True, **kwargs)
 
 def Tbody(*c,
           cls=(), 
@@ -2130,8 +2138,15 @@ def TrHeader(*c,
     if bordered: cls = (cls, TableT.row_bordered)
     return fh.Tr(*c, cls=stringify(cls), **kwargs)
 
+def Tfoot(*c,
+          cls=TableT.row_footer,
+          **kwargs):
+    "Creates a table footer with Flowbite styling"
+    return fh.Tfoot(*c, cls=stringify(cls), **kwargs)
+
 def DataTable(headers:list, # List of header labels
              rows:list, # List of row data
+             footer:list=None, # List of footer data
              first_col_header=False, # Whether to style first column as header
              expand_column=None, # Index of column to expand (0-based)
              cls=TableT.table_default, # Classes for the table element
@@ -2150,6 +2165,15 @@ def DataTable(headers:list, # List of header labels
         header_cells.append(Th(h, expand=(i == expand_column)))
     header_row = TrHeader(*header_cells)
     
+    # Create footer row
+    if footer:
+        footer_cells = []
+        for i, f in enumerate(footer):
+            footer_cells.append(Tf(f, expand=(i == expand_column)))
+        footer_row = Tfoot(*footer_cells)
+    else:
+        footer_row = None
+
     # Create data rows
     data_rows = []
     for row in rows:
@@ -2181,6 +2205,7 @@ def DataTable(headers:list, # List of header labels
     return Table(
         Thead(header_row),
         Tbody(*data_rows, cls=" ".join(tbody_classes) if tbody_classes else None),
+        Tfoot(footer_row) if footer else None,
         cls=stringify(cls),
         container_cls=stringify(container_cls),
         **kwargs

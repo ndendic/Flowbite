@@ -404,7 +404,7 @@ rows = [
     ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
     ['Magic Mouse 2', 'Black', 'Accessories', '$99']
 ]
-
+footer = ["Total", "3", "3", "$6000"]
 tables = fh.Div(
         H4("Default Simple Table"),
         SimpleTable(headers, rows),
@@ -422,6 +422,7 @@ tables = fh.Div(
         DataTable(
             headers=headers,
             rows=rows,
+            footer=footer,
             expand_column=0,
             with_shadow=True,
             cls=TableT.table_default,
