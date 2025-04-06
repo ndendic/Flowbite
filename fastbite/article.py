@@ -4,12 +4,12 @@
 __all__ = ['Article', 'ArticleTitle', 'ArticleMeta']
 
 # %% ../nbs/09_article.ipynb 1
-from enum import Enum
 import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 
 # %% ../nbs/09_article.ipynb 2
 def Article(*c, # contents of Article tag (often other tags)

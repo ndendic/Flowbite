@@ -10,6 +10,7 @@ from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 
 # %% ../nbs/08_divider.ipynb 2
 class DividerT(VEnum):

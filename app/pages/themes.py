@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite import *
+from fastbite.all import *
 from theme_switcher import ThemeSwitcher
 
 themes = Container(

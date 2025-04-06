@@ -9,6 +9,7 @@ from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 from .containers import *
 from .media import *
 

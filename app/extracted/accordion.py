@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite import *
+from fastbite.all import *
 from fastbite import CodeSpan as Code
 from utils import component_showcase
 

@@ -10,6 +10,7 @@ from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 from .media import *
 
 # %% ../nbs/14_modals.ipynb 2

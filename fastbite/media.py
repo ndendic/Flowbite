@@ -9,6 +9,7 @@ from .core import *
 from fasthtml.common import Span, FT
 from fastcore.all import *
 from .base import *
+from .base_styles import *
 
 # %% ../nbs/03_media.ipynb 2
 def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)

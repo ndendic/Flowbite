@@ -1,7 +1,7 @@
 from fasthtml.components import *
 from fasthtml.svg import *
 from fastbite.core import *
-from fastbite import *
+from fastbite.all import *
 
 def Buttons():
     """Example of different button styles"""

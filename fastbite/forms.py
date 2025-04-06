@@ -5,12 +5,12 @@ __all__ = ['FormT', 'Form', 'LabelInputT', 'FormLabel', 'InputT', 'Input', 'Text
            'CheckboxT', 'Checkbox', 'SwitchT', 'Switch']
 
 # %% ../nbs/07_forms.ipynb 1
-from enum import Enum
 import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 from .media import *
 from .buttons import *
 

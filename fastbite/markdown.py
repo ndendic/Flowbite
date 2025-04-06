@@ -8,6 +8,7 @@ from fasthtml.common import FT
 from fastcore.all import *
 from .core import *
 from .base import *
+from .base_styles import *
 
 import mistletoe
 from lxml import html, etree
