@@ -66,7 +66,20 @@ flowbite_ftrs = [
             }
 
         });
-    """)
+    """),
+    Script("""
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // On page load, set the theme based on localStorage
+        const savedTheme = localStorage.getItem('theme') || 'none';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        """
+    ),
+    Script('lucide.createIcons();')
+
 ]
 
 # %% ../nbs/00_core.ipynb 5

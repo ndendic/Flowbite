@@ -36,6 +36,7 @@ tailwindcss-linux-x64
 *Zone.Identifier
 
 # html files
+.flowbite_examples
 dashboard/
 landing-pages/
 flowbite*

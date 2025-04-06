@@ -13,7 +13,7 @@ from fasthtml.common import Span, FT
 from fastcore.all import *
 from enum import Enum
 
-# %% ../nbs/02_base.ipynb 3
+# %% ../nbs/02_base.ipynb 4
 def H1(*c:FT|str, # Contents of H1 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H1 styling
        **kwargs # Additional args for H1 tag
@@ -271,7 +271,7 @@ def Output(*c:FT|str, # Contents of Output tag
     return fh.Output(*c, cls=('font-mono bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded', 
                              stringify(cls)), **kwargs)
 
-# %% ../nbs/02_base.ipynb 4
+# %% ../nbs/02_base.ipynb 5
 def CodeSpan(*c, # Contents of CodeSpan tag (inline text code snippets)
              cls="text-sm text-primary-800 dark:text-primary-400 bg-tw-format-code-bg", # Classes in addition to CodeSpan styling
              **kwargs # Additional args for CodeSpan tag
