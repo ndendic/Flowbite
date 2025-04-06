@@ -1,6 +1,6 @@
 from fasthtml.components import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite import *
 
 typography = Div(
     H1("Typography", ),

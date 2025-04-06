@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
-from fastbite.components import CodeSpan as Code
+from fastbite import *
+from fastbite import CodeSpan as Code
 from utils import component_showcase
 
 component = Div(

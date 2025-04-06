@@ -2,7 +2,7 @@
 # %% ../nbs/02_franken.ipynb
 import fasthtml.common as fh
 
-from fastbite.components import TabContainer
+from fastbite import TabContainer
 from .foundations import *
 from fasthtml.common import Div, P, Span, FT
 from enum import Enum, auto

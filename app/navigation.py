@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite import *
 from theme_switcher import ThemeSwitcher, palette_icon
 from component_registry import component_registry
 

@@ -1,5 +1,5 @@
 from fasthtml.common import Div, P, Html, Head, Body
-from fastbite.components import *
+from fastbite import *
 
 def visual_components_showcase():
     """Page showcasing visual components including Icons, Avatars and Images"""

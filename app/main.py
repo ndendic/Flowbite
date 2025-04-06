@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite import *
 from fastbite.core import *
 from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
