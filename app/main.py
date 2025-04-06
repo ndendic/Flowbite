@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fh_flowbite.components import *
-from fh_flowbite.core import *
+from fastbite.components import *
+from fastbite.core import *
 from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
 from pages.buttons import buttons

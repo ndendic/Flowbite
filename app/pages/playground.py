@@ -1,8 +1,8 @@
 from pydoc import render_doc
 import fasthtml.common as fh
 from fasthtml.svg import *
-from fh_flowbite.components import *
-from fh_flowbite.core import *
+from fastbite.components import *
+from fastbite.core import *
 from utils import component_showcase
 from theme_switcher import ThemeSwitcher
 from extracted.input_field import component as input_field_component

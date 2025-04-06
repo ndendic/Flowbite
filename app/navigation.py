@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fh_flowbite.components import *
+from fastbite.components import *
 from theme_switcher import ThemeSwitcher, palette_icon
 from component_registry import component_registry
 
@@ -27,7 +27,7 @@ def Navbar():
                     ),  
                     A(
                         Img(src='images/logo.svg', alt='Logo', cls='h-8 me-3'),
-                        Span('BiteHTML', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        Span('FastBite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='/',
                         cls='flex ms-2 md:me-24'
                     ),

@@ -150,7 +150,7 @@ def create_python_file(ft_components, filename):
     
     file_content = f"""from fasthtml.common import *
 from fasthtml.svg import *
-from fh_flowbite.components import *
+from fastbite.components import *
 from utils import component_showcase
 
 component = {ft_components}

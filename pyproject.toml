@@ -5,7 +5,7 @@ readme = "README.md"
 authors = [
     { name = "Nikola Dendic", email = "ndendic@gmail.com" }
 ]
-requires-python=">=3.7"
+requires-python=">=3.11"
 license = { text = "Apache Software License 2.0" }
 
 dynamic = [
@@ -17,10 +17,8 @@ dynamic = [
 ]
 
 dependencies = [
-    "fastwand>=0.1.31",
     "ft-datastar",
     "mistletoe>=1.4.0",
-    "monsterui>=1.0.10",
     "python-fasthtml>=0.12.1",
 ]
 

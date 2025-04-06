@@ -1,7 +1,7 @@
 from fasthtml.components import *
 from fasthtml.svg import *
-from fh_flowbite.core import *
-from fh_flowbite.components import *
+from fastbite.core import *
+from fastbite.components import *
 
 def Buttons():
     """Example of different button styles"""

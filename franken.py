@@ -2,7 +2,7 @@
 # %% ../nbs/02_franken.ipynb
 import fasthtml.common as fh
 
-from fh_flowbite.components import TabContainer
+from fastbite.components import TabContainer
 from .foundations import *
 from fasthtml.common import Div, P, Span, FT
 from enum import Enum, auto
@@ -106,37 +106,7 @@ franken_class_map = {
 }
 
 # %% ../nbs/02_franken.ipynb
-def apply_classes(html_str:str, # Html string
-                  class_map=None, # Class map
-                  class_map_mods=None # Class map that will modify the class map map (useful for small changes to a base class map)
-                 )->str: # Html string with classes applied
-    "Apply classes to html string"
-    if not html_str: return html_str
-    try:
-        class_map = ifnone(class_map, franken_class_map)
-        if class_map_mods: class_map = {**class_map, **class_map_mods}
-        html_str = html.fromstring(html_str)
-        for selector, classes in class_map.items():
-            # Handle descendant selectors (e.g., 'pre code')
-            xpath = '//' + '/descendant::'.join(selector.split())
-            for element in html_str.xpath(xpath):
-                existing_class = element.get('class', '')
-                new_class = f"{existing_class} {classes}".strip()
-                element.set('class', new_class)
-        return etree.tostring(html_str, encoding='unicode', method='html')
-    except etree.ParserError:
-        return html_str
 
-# %% ../nbs/02_franken.ipynb
-def render_md(md_content:str, # Markdown content
-               class_map=None, # Class map
-               class_map_mods=None # Additional class map
-              )->FT: # Rendered markdown
-    "Renders markdown using mistletoe and lxml"
-    if md_content=='': return md_content
-    # Check for required dependencies        
-    html_content = mistletoe.markdown(md_content) #, mcp.PygmentsRenderer)
-    return NotStr(apply_classes(html_content, class_map, class_map_mods))
 
 # %% ../nbs/02_franken.ipynb
 def get_franken_renderer(img_dir):
@@ -183,19 +153,4 @@ def LightboxItem(*c, # Component that when clicked will open the lightbox (often
                 )->FT: # A(... href, data_alt, cls., ...)
     "Anchor tag with appropriate structure to go inside a `LightBoxContainer`"
     return fh.A(*c, href=href, data_alt=data_alt, cls=stringify(cls), **kwargs)
-
-# # %% ../nbs/02_franken.ipynb
-# def Fieldset(*c, # contents of Fieldset tag (often other tags)
-#              cls=(), # Classes in addition to Fieldset styling
-#              **kwargs # Additional args for Fieldset tag
-#              )->FT: # Fieldset(..., cls='uk-fieldset')
-#     "A Fieldset with default styling"
-#     return fh.Fieldset(*c, cls=('uk-fieldset',stringify(cls)), **kwargs)
-
-# def Legend(*c, # contents of Legend tag (often other tags)
-#            cls=(), # Classes in addition to Legend styling
-#            **kwargs # Additional args for Legend tag
-#            )->FT: # Legend(..., cls='uk-legend')
-#     "A Legend with default styling"
-#     return fh.Legend(*c, cls=('uk-legend',stringify(cls)), **kwargs)
 

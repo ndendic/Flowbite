@@ -1,5 +1,5 @@
 from fasthtml.common import *
-from fh_flowbite.components import *
+from fastbite.components import *
 
 containers = Div(
     H1("Container Examples", cls=TextHeading.h1),

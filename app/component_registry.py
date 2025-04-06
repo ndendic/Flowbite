@@ -3,7 +3,7 @@ import importlib
 from pathlib import Path
 import inspect
 from fasthtml.components import *
-from fh_flowbite.components import *
+from fastbite.components import *
 import traceback
 
 class ComponentRegistry:

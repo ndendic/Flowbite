@@ -36,14 +36,16 @@ from lxml import html, etree
 
 # %% ../nbs/01_flowbite.ipynb 2
 flowbite_hdrs = (
-    Script(src="https://unpkg.com/@tailwindcss/browser@4"),
+    # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
-    ),    
+    ),
+    Script(src='https://unpkg.com/lucide@latest'),
     Script(
         "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
     ),
+    Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript')
 )
 
 flowbite_ftrs = [
@@ -155,7 +157,6 @@ class TextT(VEnum):
     """
     Text Styles from Flowbite UI
     """
-    
     # Text Size
     xs, sm, base, lg, xl = 'text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl'
     text_2xl, text_3xl, text_4xl = 'text-2xl', 'text-3xl', 'text-4xl'
@@ -765,7 +766,6 @@ class ContainerSize(VEnum):
     _5xl = "max-w-5xl" # --container-5xl:64rem
     _6xl = "max-w-6xl" # --container-6xl:72rem
     _7xl = "max-w-7xl" # --container-7xl:80rem
-    
     # Special container types
     fluid = "w-full px-4"  # Full width with padding
     responsive = "w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl px-4"  # Responsive sizing
@@ -2302,8 +2302,5 @@ def render_md_article(md_content:str, # Markdown content
                       class_map_mods=None # Additional class map
                      )->FT: # Rendered markdown
     "Renders markdown using mistletoe and lxml"
-    if md_content=='': return md_content
-    # Check for required dependencies        
-    html_content = mistletoe.markdown(md_content) #, mcp.PygmentsRenderer)
-    return Div(NotStr(html_content),cls=("format lg:format-lg dark:format-invert"))
+    return Div(render_md(md_content, class_map, class_map_mods),cls=("format lg:format-lg dark:format-invert"))
 
