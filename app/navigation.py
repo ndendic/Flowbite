@@ -26,8 +26,8 @@ def Navbar():
                         cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),  
                     A(
-                        Img(src='images/logo.svg', alt='Logo', cls='h-8 me-3'),
-                        Span('FastBite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='/',
                         cls='flex ms-2 md:me-24'
                     ),
