@@ -15,7 +15,7 @@ from .media import *
 
 # %% ../nbs/20_tables.ipynb 2
 class TableT(VEnum):
-    """Table styling variants for Fastbite components"""
+    """Table styling variants for Flowbite components"""
     # Table level styles
     table_default = "w-full text-sm text-left rtl:text-right"
     
@@ -43,7 +43,7 @@ class TableT(VEnum):
 def Thead(*c, 
           cls=TableT.row_header, 
           **kwargs):
-    "Creates a table header with Fastbite styling"
+    "Creates a table header with Flowbite styling"
     # Extract any rounding classes from the parent table and apply only top rounding
     all_cls = stringify(cls).split()
     rounding_classes = [c.replace('rounded', 'rounded-t') for c in all_cls if 'rounded' in c]
@@ -58,7 +58,7 @@ def Table(*c, # Components (typically `Thead`, `Tbody`, `Tfoot`)
           with_shadow=False, # Whether to add shadow styling
           **kwargs # Additional args for the table
          )->FT:
-    "Creates a table with Fastbite styling"
+    "Creates a table with Flowbite styling"
     
     # Build container classes
     container_classes = [container_cls]
@@ -79,7 +79,7 @@ def _TableCell(Component,
                shrink=False, # Whether to shrink the cell
                **kwargs # Additional args for the cell
               )->FT:
-    "Creates a table cell with Fastbite styling"
+    "Creates a table cell with Flowbite styling"
     classes = []
     base_cls = TableT.cell_header if is_header else TableT.cell_default if not is_footer else TableT.cell_footer
     classes.append(base_cls)
@@ -113,7 +113,7 @@ def Tbody(*c,
           striped=False,
           hover=False,
           **kwargs):
-    "Creates a table body with Fastbite styling"
+    "Creates a table body with Flowbite styling"
     classes = []
     if striped: classes.append(TableT.row_striped)
     if hover: classes.append(TableT.row_hover)
@@ -125,7 +125,7 @@ def Tr(*c,
        bordered=True,
        header=False,
        **kwargs):
-    "Creates a table row with Fastbite styling"
+    "Creates a table row with Flowbite styling"
     if header: 
         if cls == TableT.row_default: cls = TableT.row_header
         else: cls = (cls, TableT.row_header)
@@ -137,14 +137,14 @@ def TrHeader(*c,
        cls=TableT.cell_header,
        bordered=True,
        **kwargs):
-    "Creates a table header row with Fastbite styling"
+    "Creates a table header row with Flowbite styling"
     if bordered: cls = (cls, TableT.row_bordered)
     return fh.Tr(*c, cls=stringify(cls), **kwargs)
 
 def Tfoot(*c,
           cls=TableT.row_footer,
           **kwargs):
-    "Creates a table footer with Fastbite styling"
+    "Creates a table footer with Flowbite styling"
     return fh.Tfoot(*c, cls=stringify(cls), **kwargs)
 
 def DataTable(headers:list, # List of header labels

@@ -4,11 +4,8 @@ from fastbite.all import *
 from fastbite.core import *
 from navigation import Sidebar, Main, Navbar
 from pages.typography import typography
-from pages.buttons import buttons
-from pages.containers import containers
-from pages.themes import themes
-from pages.playground import playground
-from pages.icons import icons_images
+from pages.templates import page_template
+from route_collector import add_routes
 
 from component_registry import component_registry
 datastar_script = Script(src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.0-beta.8/bundles/datastar.js", type="module")
@@ -168,29 +165,6 @@ app, rt = fast_app(
     # exception_handlers={404: custom_404_handler},
 )
 
-def is_htmx(request=None):
-    "Check if the request is an HTMX request"
-    return request and "hx-request" in request.headers
-
-def site_page(title, content):
-    return (
-        Title(title),
-        Body(
-            Navbar(),
-            Sidebar(),
-            Main(content,cls="mx-4")   
-        ),
-    )
-def page_template(title):
-    def decorator(func):
-        def wrapper(request, *args, **kwargs):
-            content = func(request)
-            if is_htmx(request):
-                return content
-            return site_page(title, content)
-        return wrapper
-    return decorator
-
 @rt("/")
 @page_template("Home")
 def home(req):
@@ -201,36 +175,7 @@ def home(req):
         Li(A("Themes", href="/themes")),
     )
 
-@rt("/typography")
-@page_template("Typography")
-def get(req):
-    return typography
-
-@rt("/buttons")
-@page_template("Buttons")
-def get(req):
-    return buttons
-
-@rt("/containers")
-@page_template("Containers")
-def get(req):
-    return containers
-
-@rt("/themes")
-@page_template("Color Themes")
-def get(req):
-    return themes
-
-@rt("/playground")
-@page_template("Playground")
-def get(req):
-    return playground
-
-@rt("/icons")
-@page_template("Icons")
-def get(req):
-    return icons_images
-
+app = add_routes(app)
 component_registry.register_routes(rt, page_template)
 
 if __name__ == "__main__":

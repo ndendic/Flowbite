@@ -109,20 +109,18 @@ def SidebarItem(name, href = "#", icon=None):
             hx_boost="true",
             hx_target="#content",
             hx_swap_oob=True,
-            hx_on_load="initializeComponents()",
             cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group'
         )
     )
 
 standard_sidebar_items = [
-    SidebarItem("Home", href="/"),
-    SidebarItem("Typography", href="/typography"),
-    SidebarItem("Buttons", href="/buttons"),
-    SidebarItem("Containers", href="/containers"),
-    SidebarItem("Playground", href="/playground"),
-    SidebarItem("Icons", href="/icons"),
-    SidebarItem("Themes", href="/themes", icon=palette_icon),
-    SidebarItem("Input Fields", href="/input_fields"),
+    NavLi("Home", href="/#", icon="home",hx_boost="true",hx_target="#content",hx_swap_oob=True),
+    NavLi("Typography", href="/typography#", icon="type",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Buttons", href="/buttons#", icon="stretch-horizontal",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Containers", href="/containers#", icon="layout-dashboard",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Playground", href="/playground#", icon="brush",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Icons and images", href="/icons#", icon="image",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Themes", href="/themes#", icon='palette',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)
@@ -146,6 +144,7 @@ def Main(content,cls=()):
     return DivCentered(
         Div(content,
             Script('htmx.onLoad(function(content) {initTabs();})'),
+            # Script('htmx.onLoad(function(content) {initSidebars();})'),
             cls='p-4 mt-18 max-w-4xl',
             id='content',
 

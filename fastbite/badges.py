@@ -12,7 +12,7 @@ from .base import *
 from .base_styles import *
 from .containers import *
 from .media import *
-
+from enum import Enum
 # %% ../nbs/13_badges.ipynb 2
 class BadgeT(VEnum):
     default = 'bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300'
@@ -58,7 +58,7 @@ class BadgeT(VEnum):
 
 def Badge(*c, # contents of Label tag (often text)
            icon=None,
-           cls=(), # Classes in addition to Label styling
+           cls:Union[str,Enum]=BadgeT.default_pill, # Classes in addition to Label styling
            **kwargs # Additional args for Label tag
            )->FT: # Label(..., cls='uk-label')
     "FrankenUI labels, which look like pills"
@@ -72,6 +72,6 @@ def IconBadge(icon,
            **kwargs # Additional args for Label tag
            )->FT: # Label(..., cls='uk-label')
     "FrankenUI labels, which look like pills" 
-    return fh.Span(Icon(icon,cls=(f'w-{w} h-{h}',stringify(icon_cls))), cls=(stringify(cls),'inline-flex items-center rounded-full'), **kwargs)
+    return fh.Span(Icon(icon,cls=(f'w-{w} h-{h}',stringify(icon_cls))), cls=(stringify(cls),'inline-flex items-center rounded-full p-1'), **kwargs)
 
 

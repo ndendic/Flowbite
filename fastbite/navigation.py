@@ -13,6 +13,7 @@ from .base import *
 from .base_styles import *
 from .media import *
 from .containers import *
+from enum import Enum
 
 # %% ../nbs/18_navigation.ipynb 2
 import random
@@ -24,7 +25,7 @@ class NavT(VEnum):
     child = 'hidden space-y-2'
 
 def NavContainer(*li, # List items are navigation elements (Special `Li` such as `NavParentLi`, `NavDividerLi`, `NavHeaderLi`, `NavSubtitle`, `NavCloseLi` can also be used)
-                 cls=NavT.default, # Additional classes on the nav
+                 cls:Enum|str|tuple=NavT.default, # Additional classes on the nav
                  parent=True, # Whether this nav is a *parent* or *sub* nav
                  uk_nav=False, #True for default collapsible behavior, see [frankenui docs](https://franken-ui.dev/docs/nav#component-options) for more advanced options
                  sticky=False, # Whether to stick to the top of the page while scrolling
@@ -38,14 +39,19 @@ def NavLi(*c, # `NavContainer` container for a nested nav with `parent=False`)
         label:str='',
         icon:str='',
         href:str='#',
-        cls=(), # Additional classes on the li
+        cls:Enum|str|tuple=(), # Additional classes on the li
+        label_cls:Enum|str|tuple=(),
         **kwargs # Additional args for the li
         )->FT: # Navigation list item
     "Creates a navigation list item with a parent nav for nesting"
     return fh.Li(
         fh.A(href=href, cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group')(
-            Icon(icon, aria_hidden='true', cls='shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
-            Span(label, cls='ms-3') if label else None,
+            Icon(icon, 
+                 aria_hidden='true',
+                 height=18,
+                 width=18,
+                 cls='me-2 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
+            fh.Span(label, cls=stringify(label_cls)) if label else None,
             *c,
             **kwargs
         ),
@@ -53,28 +59,32 @@ def NavLi(*c, # `NavContainer` container for a nested nav with `parent=False`)
     )
 
 def NavChildLi(*c, # creates a list item with an anchor tag with a nested nav
-                cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700', # Additional classes on the li
+                cls:Enum|str|tuple='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700', # Additional classes on the li
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item with a nested nav
     "Creates a navigation list item with a nested nav"
     return fh.Li(
-                A(*c, cls=(stringify(cls)),**kwargs)
+                fh.A(*c, cls=(stringify(cls)),**kwargs)
             )
 
 def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `parent=False`)
                 label:str='',
                 icon:str='',
                 id:str="", # Random id for the parent nav as 5 digit number
-                cls=(), # Additional classes on the li
+                cls:Enum|str|tuple=(), # Additional classes on the li
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item
     "Creates a navigation list item with a parent nav for nesting"
     id = random.randint(10000,99999) if not id else id
-    return Li(
+    return fh.Li(
     fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700')(
-        Icon(icon, aria_hidden='true', cls='shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
-        Span(label, cls='flex-1 ms-3 text-left font-medium rtl:text-right whitespace-nowrap'),
-        Icon('chevron-down',height=24,width=24),
+        Icon(icon, 
+             aria_hidden='true',
+             height=18,
+             width=18,
+             cls='me-2 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white') if icon else None,
+        fh.Span(label, cls='flex-1 text-left font-medium rtl:text-right whitespace-nowrap'),
+        Icon('chevron-down',height=20,width=20),
         # Svg(xmlns='http://www.w3.org/2000/svg', fill='none', viewbox='0 0 10 6', cls='w-3 h-3')(
         #     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4')
         # )
@@ -84,26 +94,26 @@ def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `pa
     # return fh.Li(*nav_container,  cls=('uk-parent',  stringify(cls)),**kwargs)
 
 def NavDividerLi(*c, # Components
-                 cls='border-t border-gray-200 dark:border-gray-700', # Divider default class
+                 cls:Enum|str|tuple='border-t border-gray-200 dark:border-gray-700', # Divider default class
                  **kwargs # Additional args for the li
                 )->FT: # Navigation list item with a divider
     "Creates a navigation list item with a divider"
     return fh.Li(*c, cls=(stringify(cls)),**kwargs)
 
 def NavHeaderLi(*c, # Components
-                cls=(), # Additional classes on the li
+                cls:Enum|str|tuple=(), # Additional classes on the li
                 label:str='',
                 href:str='#',
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item with a header
     "Creates a navigation list item with a header"
-    content = [A(href=href, cls='flex items-center ps-2.5 mb-2')(
-        Span(label, cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white')
+    content = [fh.A(href=href, cls='flex items-center ps-2.5 mb-2')(
+        fh.Span(label, cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white')
     )] if label else c
     return fh.Li(*content, cls=(stringify(cls)),**kwargs)
 
 def NavSubtitle(*c, # Components
-                cls='flex items-center ps-2.5 mb-5'+TextT.muted, # Additional classes on the div
+                cls:Enum|str|tuple=('flex items-center ps-2.5 mb-5', TextT.muted), # Additional classes on the div
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item with a header
     "Creates a navigation subtitle"
@@ -114,15 +124,15 @@ def NavCloseLi(*c, # Components
                 label:str='',
                 icon:str='',
                 id:str=None, # Random id for the parent nav as 5 digit number
-                cls=(), # Additional classes on the li
+                cls:Enum|str|tuple=(), # Additional classes on the li
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item
     "Creates a navigation list item with a parent nav for nesting"
     if id is None: id = fh.unqid()
-    return Li(
+    return fh.Li(
     fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls='flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700')(
-        Span(label, cls='flex-1 ms-3 text-left font-medium rtl:text-right whitespace-nowrap'),
-        Icon(icon,height=24,width=24),
+        fh.Span(label, cls='flex-1 ms-3 text-left font-medium rtl:text-right whitespace-nowrap'),
+        Icon(icon,height=20,width=20),
         cls=(stringify(cls)),
         *c,
         **kwargs
@@ -137,13 +147,13 @@ class NavbarT(VEnum):
     transparent = 'bg-transparent'
 
 def NavBarItem(*c,
-                cls=(), # Additional classes on the li            
+                cls:Enum|str|tuple=(), # Additional classes on the li            
                 href='#', # Href for the link
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item
     "Creates a navigation list item"
     return fh.Li(
-                A(*c, href=href, aria_current='page', 
+                fh.A(*c, href=href, aria_current='page', 
                     cls='block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
                 ),
                 cls=(stringify(cls)),
@@ -152,22 +162,22 @@ def NavBarItem(*c,
 
 def NavBar(*c,
             brand=H4("Title"), # Brand/logo component for left side
-            right_cls='items-center space-x-4', # Spacing for desktop links
-            mobile_cls='space-y-4', # Spacing for mobile links
+            right_cls:Enum|str|tuple='items-center space-x-4', # Spacing for desktop links
+            mobile_cls:Enum|str|tuple='space-y-4', # Spacing for mobile links
             sticky:bool=False, # Whether to stick to the top of the page while scrolling
-            cls='bg-white border-gray-200 dark:bg-gray-900', # Classes for navbar
+            cls:Enum|str|tuple='bg-white border-gray-200 dark:bg-gray-900', # Classes for navbar
             menu_id=None, # ID for menu container (used for mobile toggle)
            ) ->FT:
     if menu_id is None: menu_id = fh.unqid()
-    return Nav(cls=stringify(cls))(
+    return fh.Nav(cls=stringify(cls))(
     DivFullySpaced(cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4')(
         brand,
         fh.Button(data_collapse_toggle=menu_id, type='button', aria_controls=menu_id, aria_expanded='false', cls='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600')(
-            Span('Open main menu', cls='sr-only'),
+            fh.Span('Open main menu', cls='sr-only'),
             Icon('menu')
         ),
-        Div(id=menu_id, cls='hidden w-full md:block md:w-auto')(
-            Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(
+        fh.Div(id=menu_id, cls='hidden w-full md:block md:w-auto')(
+            fh.Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(
                 *c,
             )
         )
@@ -182,18 +192,18 @@ def SubNavBarItem(*c,
                )->FT: # Navigation list item
     "Creates a navigation list item"
     return fh.Li(
-                A(*c, href=href, aria_current='page', cls=cls, **kwargs)
+                fh.A(*c, href=href, aria_current='page', cls=cls, **kwargs)
             )
 
 def SubNavBar(*c,
-              cls=(), # Additional classes on the nav
+              cls:Enum|str|tuple=(), # Additional classes on the nav
               **kwargs # Additional args for the nav
              )->FT: # Sub navigation bar
     "Creates a sub navigation bar"
     return fh.Nav(cls='bg-gray-50 dark:bg-gray-700')(
-    Div(cls='max-w-screen-xl px-4 py-3 mx-auto')(
-        Div(cls='flex items-center')(
-            Ul(cls='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm')(
+    fh.Div(cls='max-w-screen-xl px-4 py-3 mx-auto')(
+        fh.Div(cls='flex items-center')(
+            fh.Ul(cls='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm')(
                 *c,
             )
         ),

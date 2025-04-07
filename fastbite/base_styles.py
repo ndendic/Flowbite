@@ -23,7 +23,7 @@ class Round(VEnum):
 
 class TextT(VEnum):
     """
-    Text Styles from Fastbite UI
+    Text Styles from Flowbite UI
     """
     # Text Size
     xs, sm, base, lg, xl = 'text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl'
@@ -93,7 +93,7 @@ class TextT(VEnum):
 
 class TextPresets(VEnum):
     """
-    Common Typography Presets for Fastbite UI
+    Common Typography Presets for Flowbite UI
     """
     muted_sm = TextT.muted+TextT.sm
     muted_lg = TextT.muted+TextT.lg
@@ -110,7 +110,7 @@ class TextPresets(VEnum):
     md_weight_muted = stringify((TextT.medium, TextT.muted))
 
 class TextHeading(VEnum):
-    """Text heading variants for Fastbite components"""
+    """Text heading variants for Flowbite components"""
     h1 = "text-5xl font-extrabold dark:text-white mb-4"
     h2 = "text-4xl font-bold dark:text-white mb-3"
     h3 = "text-3xl font-bold dark:text-white mb-2"
@@ -125,7 +125,8 @@ class ListT(VEnum):
     dl = 'divide-y divide-gray-200'
     dt = 'mb-1 text-gray-500 dark:text-gray-400'
     dd = 'mb-1'
-    horizontal = 'flex flex-wrap items-center justify-center'
+    horizontal = 'flex flex-wrap items-center'
+    horizontal_center = 'flex flex-wrap items-center justify-center'
     unstyled = 'max-w-md space-y-1 list-none list-inside'
     nested_ol = 'ps-5 mt-2 space-y-1 list-decimal list-inside'
     nested_ul = 'ps-5 mt-2 space-y-1 list-disc list-inside'
