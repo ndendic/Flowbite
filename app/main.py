@@ -146,7 +146,6 @@ flowbite_ftrs = [
         document.documentElement.setAttribute('data-theme', savedTheme);
         """
     ),
-    Script('lucide.createIcons();')
     ]
 
 app, rt = fast_app(

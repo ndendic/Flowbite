@@ -20,7 +20,8 @@ def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
            **kwargs # Additional args for `Uk_icon` tag
            )->FT: # a lucide icon of the specified size 
     "Creates an icon using lucide icons"
-    return I(data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
+    
+    return I(Script('lucide.createIcons();'),data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
 
 def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=None, 
