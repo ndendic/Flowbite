@@ -4,7 +4,7 @@ from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The carousel component can be used to cycle through a set of elements using custom options, controls, and indicators based on the JavaScript object from Flowbite.'),
+    P('The carousel component can be used to cycle through a set of elements using custom options, controls, and indicators based on the JavaScript object from Fastbite.'),
     H2(
         'Default slider',
         Span(id='default-slider', cls='absolute -top-[140px]'),
@@ -669,7 +669,7 @@ component = Div(
     P(
         'Use the',
         Strong('Carousel'),
-        'class from Flowbite to create an object that you can use to apply custom styles, change the active slide item, set callback functions directly from JavaScript.'
+        'class from Fastbite to create an object that you can use to apply custom styles, change the active slide item, set callback functions directly from JavaScript.'
     ),
     H3(
         'Object parameters',
@@ -3002,9 +3002,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Carousel class, parameters and its options.'
+        'from Fastbite then you can import the types for the Carousel class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

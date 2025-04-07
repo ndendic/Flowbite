@@ -4,11 +4,11 @@ from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The number input component from Flowbite can be used to introduce numeric values inside a form such as for a quantity field, a ZIP code, a phone number, your credit card number, and more. All of the UI components are coded exclusively with Tailwind CSS.'),
+    P('The number input component from Fastbite can be used to introduce numeric values inside a form such as for a quantity field, a ZIP code, a phone number, your credit card number, and more. All of the UI components are coded exclusively with Tailwind CSS.'),
     P(
         'The examples on this page have basic functionality coded with JavaScript and the quantity input has a more advanced ability to increment and decrement the value with the help of the',
         Code('data-input-counter'),
-        'attribute from the Flowbite JS API.'
+        'attribute from the Fastbite JS API.'
     ),
     H2(
         'Default number input',
@@ -519,7 +519,7 @@ component = Div(
     P('Use this example with control buttons to increment and decrement the value inside the input field.'),
     P(
         'If you have the',
-        A('Flowbite JS', href='https://flowbite.com/docs/getting-started/quickstart/'),
+        A('Fastbite JS', href='https://flowbite.com/docs/getting-started/quickstart/'),
         'installed in your project then you can use the',
         Code('data-input-counter'),
         'data attribute to initialize the target input field and then use the following data attributes to target the buttons that will increment and decrement the value of the input field:'
@@ -1133,7 +1133,7 @@ component = Div(
     ),
     P(
         'Use this component to set the information needed when making an online transaction with a credit card by adding the card number, expiration date, and security code. The component uses the',
-        A('Flowbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
+        A('Fastbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
         '.'
     ),
     component_showcase(Div(
@@ -1303,7 +1303,7 @@ component = Div(
     ),
     P(
         'This example can be used to set the value of a number input field by sliding the range slider component or by typing the value in the input field. The component uses the',
-        A('Flowbite Range Slider', href='https://flowbite.com/docs/components/range-slider/'),
+        A('Fastbite Range Slider', href='https://flowbite.com/docs/components/range-slider/'),
         '.'
     ),
     component_showcase(Div(
@@ -2497,7 +2497,7 @@ component = Div(
         A('#', aria_label='Link to this section: Min and max values', href='#min-and-max-values', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('By using the InputCounter object from the Flowbite JS API, you ca set the min and max values of a number input component by using the following data attributes:'),
+    P('By using the InputCounter object from the Fastbite JS API, you ca set the min and max values of a number input component by using the following data attributes:'),
     Ul(
         Li(
             Code('data-input-counter-min'),
@@ -2595,7 +2595,7 @@ component = Div(
     P(
         'Use the',
         Strong('InputCounter'),
-        'object from the Flowbite JS API to create a number input component with increment and decrement buttons that can be used to increase or decrease the value of the input.'
+        'object from the Fastbite JS API to create a number input component with increment and decrement buttons that can be used to increase or decrease the value of the input.'
     ),
     H3(
         'Object parameters',
@@ -3487,9 +3487,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the InputCounter object, parameters and its options.'
+        'from Fastbite then you can import the types for the InputCounter object, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

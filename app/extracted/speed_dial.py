@@ -5,9 +5,9 @@ from utils import component_showcase
 
 component = Div(
     P('Get started with the speed dial component to show a list of buttons or menu items positioned relative to the body in either corner as a quick way to allow certains actions to be made by your users.'),
-    P('This component can be easily customized by changing the colors, text, icons, sizes, alignment, and even positioning using our examples built with Tailwind CSS and making use of Flowbite’s JavaScript API.'),
+    P('This component can be easily customized by changing the colors, text, icons, sizes, alignment, and even positioning using our examples built with Tailwind CSS and making use of Fastbite’s JavaScript API.'),
     P(
-        'Make sure that you have the Flowbite JS file included in your application by following our',
+        'Make sure that you have the Fastbite JS file included in your application by following our',
         A('quickstart guide', href='https://flowbite.com/docs/getting-started/quickstart/'),
         '.'
     ),
@@ -3819,7 +3819,7 @@ component = Div(
         A('#', aria_label='Link to this section: JavaScript behaviour', href='#javascript-behaviour', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('The Speed Dial API from Flowbite can be used to create an object in JavaScript to set up the options, methods, and behaviour of a speed dial component manually.'),
+    P('The Speed Dial API from Fastbite can be used to create an object in JavaScript to set up the options, methods, and behaviour of a speed dial component manually.'),
     H3(
         'Object parameters',
         Span(id='object-parameters', cls='absolute -top-[140px]'),
@@ -5785,9 +5785,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Speed Dial class, parameters and its options.'
+        'from Fastbite then you can import the types for the Speed Dial class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The button component is probably the most widely used element in any user interface or website as it can be used to launch an action but also to link to other pages.'),
-    P('Flowbite provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.'),
+    P('Fastbite provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.'),
     H2(
         'Default button',
         Span(id='default-button', cls='absolute -top-[140px]'),
@@ -1165,7 +1165,7 @@ component = Div(
     P(
         'Use the following',
         A('spinner components', href='https://flowbite.com/docs/components/spinner/'),
-        'from Flowbite to indicate a loader animation inside buttons:'
+        'from Fastbite to indicate a loader animation inside buttons:'
     ),
     component_showcase(Div(
     Button(

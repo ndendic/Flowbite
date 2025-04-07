@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The input field is an important part of the form element that can be used to create interactive controls to accept data from the user based on multiple input types, such as text, email, number, password, URL, phone number, and more.'),
-    P('On this page you will find all of the input types based on multiple variants, styles, colors, and sizes built with the utility classes from Tailwind CSS and components from Flowbite.'),
+    P('On this page you will find all of the input types based on multiple variants, styles, colors, and sizes built with the utility classes from Tailwind CSS and components from Fastbite.'),
     H2(
         'Input fields',
         Span(id='input-fields', cls='absolute -top-[140px]'),
@@ -26,7 +26,7 @@ component = Div(
             ),
             Div(
                 Label('Company', fr='company', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-                Input(type='text', id='company', placeholder='Flowbite', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', id='company', placeholder='Fastbite', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Phone number', fr='phone', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
@@ -86,7 +86,7 @@ component = Div(
             ),
             Div(
                 Label('Company', fr='company', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-                Input(type='text', id='company', placeholder='Flowbite', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', id='company', placeholder='Fastbite', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Phone number', fr='phone', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
@@ -256,7 +256,7 @@ component = Div(
             ),
             cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
         ),
-        Input(type='text', id='input-group-1', placeholder='name@flowbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+        Input(type='text', id='input-group-1', placeholder='name@fastbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
         cls='relative mb-6'
     ),
     Label('Username', fr='website-admin', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
@@ -290,7 +290,7 @@ component = Div(
             ),
             cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
         ),
-        Input(type='text', id='input-group-1', placeholder='name@flowbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+        Input(type='text', id='input-group-1', placeholder='name@fastbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
         cls='relative mb-6'
     ),
     Label('Username', fr='website-admin', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
@@ -319,7 +319,7 @@ component = Div(
     P('Use this example to show a helper text below the input field for additional explanation and links.'),
     component_showcase(Div(
     Label('Your email', fr='helper-text', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-    Input(type='email', id='helper-text', aria_describedby='helper-text-explanation', placeholder='name@flowbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+    Input(type='email', id='helper-text', aria_describedby='helper-text-explanation', placeholder='name@fastbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
     P(
         'Weâ\x80\x99ll never share your details. Read our',
         A('Privacy Policy', href='#', cls='font-medium text-primary-600 hover:underline dark:text-primary-500'),
@@ -329,7 +329,7 @@ component = Div(
     )
 ), code="""Div(
     Label('Your email', fr='helper-text', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-    Input(type='email', id='helper-text', aria_describedby='helper-text-explanation', placeholder='name@flowbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+    Input(type='email', id='helper-text', aria_describedby='helper-text-explanation', placeholder='name@fastbite.com', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
     P(
         'Weâ\x80\x99ll never share your details. Read our',
         A('Privacy Policy', href='#', cls='font-medium text-primary-600 hover:underline dark:text-primary-500'),
@@ -400,7 +400,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -409,7 +409,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),

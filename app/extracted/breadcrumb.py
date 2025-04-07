@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The breadcrumb component is an important part of any website or application that can be used to show the current location of a page in a hierarchical structure of pages.'),
-    P('Flowbite includes two styles of breadcrumb elements, one that has a transparent background and a few more that come with a background in different colors.'),
+    P('Fastbite includes two styles of breadcrumb elements, one that has a transparent background and a few more that come with a background in different colors.'),
     H2(
         'Default breadcrumb',
         Span(id='default-breadcrumb', cls='absolute -top-[140px]'),
@@ -56,7 +56,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='rtl:rotate-180 w-3 h-3 text-gray-400 mx-1'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'
@@ -109,7 +109,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='rtl:rotate-180 w-3 h-3 text-gray-400 mx-1'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'
@@ -170,7 +170,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='rtl:rotate-180 w-3 h-3 mx-1 text-gray-400'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'
@@ -223,7 +223,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='rtl:rotate-180 w-3 h-3 mx-1 text-gray-400'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'

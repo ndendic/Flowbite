@@ -88,10 +88,10 @@ class BackgroundT(VEnum):
 
 # %% ../nbs/05_containers.ipynb 3
 class ContainerSize(VEnum):
-    """Container size variants for Flowbite components"""
+    """Container size variants for Fastbite components"""
     # Base container with responsive padding
     default = "container mx-auto"    
-    # Fixed width containers based on Flowbite size variables
+    # Fixed width containers based on Fastbite size variables
     # These add mx-auto to center and have responsive padding
     _3xs = "max-w-3xs" # --container-3xs:16rem
     _2xs = "max-w-2xs" # --container-2xs:18rem
@@ -115,7 +115,7 @@ def Container(*c: Union[str, FT],
             cls: Union[str, Enum, tuple]=(),
             **kwargs) -> FT:
     """
-    Container component based on Flowbite container sizes.
+    Container component based on Fastbite container sizes.
     """
     all_cls = (stringify(size), stringify(cls))
     return Div(*c, cls=all_cls, **kwargs)

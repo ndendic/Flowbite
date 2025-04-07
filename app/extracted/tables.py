@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The table component represents a set of structured elements made up of rows and columns as table cells that can be used to show data sets to your website users.'),
-    P('Get started with multiple variants and styles of these table components built with the utility classes from Tailwind CSS and components from Flowbite.'),
+    P('Get started with multiple variants and styles of these table components built with the utility classes from Tailwind CSS and components from Fastbite.'),
     H2(
         'Default table',
         Span(id='default-table', cls='absolute -top-[140px]'),
@@ -834,7 +834,7 @@ component = Div(
         Table(
             Caption(
                 'Our products',
-                P('Browse a list of Flowbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
+                P('Browse a list of Fastbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
                 cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800'
             ),
             Thead(
@@ -895,7 +895,7 @@ component = Div(
         Table(
             Caption(
                 'Our products',
-                P('Browse a list of Flowbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
+                P('Browse a list of Fastbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
                 cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800'
             ),
             Thead(
@@ -2035,7 +2035,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -2044,7 +2044,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -3344,7 +3344,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -3353,7 +3353,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -3459,7 +3459,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Neil Sims', cls='text-base font-semibold'),
-                            Div('neil.sims@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('neil.sims@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3493,7 +3493,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-3.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Bonnie Green', cls='text-base font-semibold'),
-                            Div('bonnie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('bonnie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3527,7 +3527,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-2.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Jese Leos', cls='text-base font-semibold'),
-                            Div('jese@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('jese@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3561,7 +3561,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-5.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Thomas Lean', cls='text-base font-semibold'),
-                            Div('thomes@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('thomes@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3595,7 +3595,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-4.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Leslie Livingston', cls='text-base font-semibold'),
-                            Div('leslie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('leslie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3714,7 +3714,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Neil Sims', cls='text-base font-semibold'),
-                            Div('neil.sims@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('neil.sims@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3748,7 +3748,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-3.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Bonnie Green', cls='text-base font-semibold'),
-                            Div('bonnie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('bonnie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3782,7 +3782,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-2.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Jese Leos', cls='text-base font-semibold'),
-                            Div('jese@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('jese@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3816,7 +3816,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-5.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Thomas Lean', cls='text-base font-semibold'),
-                            Div('thomes@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('thomes@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -3850,7 +3850,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-4.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Leslie Livingston', cls='text-base font-semibold'),
-                            Div('leslie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('leslie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4237,7 +4237,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -4246,7 +4246,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -4352,7 +4352,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Neil Sims', cls='text-base font-semibold'),
-                            Div('neil.sims@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('neil.sims@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4386,7 +4386,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-3.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Bonnie Green', cls='text-base font-semibold'),
-                            Div('bonnie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('bonnie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4420,7 +4420,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-2.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Jese Leos', cls='text-base font-semibold'),
-                            Div('jese@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('jese@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4454,7 +4454,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-5.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Thomas Lean', cls='text-base font-semibold'),
-                            Div('thomes@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('thomes@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4488,7 +4488,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-4.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Leslie Livingston', cls='text-base font-semibold'),
-                            Div('leslie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('leslie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4687,7 +4687,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Neil Sims', cls='text-base font-semibold'),
-                            Div('neil.sims@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('neil.sims@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4721,7 +4721,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-3.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Bonnie Green', cls='text-base font-semibold'),
-                            Div('bonnie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('bonnie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4755,7 +4755,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-2.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Jese Leos', cls='text-base font-semibold'),
-                            Div('jese@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('jese@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4789,7 +4789,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-5.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Thomas Lean', cls='text-base font-semibold'),
-                            Div('thomes@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('thomes@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -4823,7 +4823,7 @@ component = Div(
                         Img(src='/docs/images/people/profile-picture-4.jpg', alt='Jese image', cls='w-10 h-10 rounded-full'),
                         Div(
                             Div('Leslie Livingston', cls='text-base font-semibold'),
-                            Div('leslie@flowbite.com', cls='font-normal text-gray-500'),
+                            Div('leslie@fastbite.com', cls='font-normal text-gray-500'),
                             cls='ps-3'
                         ),
                         scope='row',
@@ -5922,7 +5922,7 @@ component = Div(
         A('#', aria_label='Link to this section: More examples', href='#more-examples', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('You can check out more table component examples from the following resources from Flowbite Blocks:'),
+    P('You can check out more table component examples from the following resources from Fastbite Blocks:'),
     Ul(
         Li(
             A('Advanced tables', href='https://flowbite.com/blocks/application/advanced-tables/')

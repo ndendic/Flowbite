@@ -15,7 +15,7 @@ component = Div(
     P('Use this example of a H1 heading in the context of a paragraph and CTA button for landing pages.'),
     component_showcase(Div(
     H1('We invest in the worldâ\x80\x99s potential', cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'),
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'),
     A(
         'Learn more',
         Svg(
@@ -31,7 +31,7 @@ component = Div(
     )
 ), code="""Div(
     H1('We invest in the worldâ\x80\x99s potential', cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'),
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'),
     A(
         'Learn more',
         Svg(
@@ -102,7 +102,7 @@ component = Div(
         'CRM.',
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 ), code="""Div(
     H1(
         'Get back to growth with',
@@ -110,7 +110,7 @@ component = Div(
         'CRM.',
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
         'Heading mark',
@@ -126,7 +126,7 @@ component = Div(
         'over your days',
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 ), code="""Div(
     H1(
         'Regain',
@@ -134,7 +134,7 @@ component = Div(
         'over your days',
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
         'Heading gradient',
@@ -149,14 +149,14 @@ component = Div(
         'Scalable AI.',
         cls='mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 ), code="""Div(
     H1(
         Span('Better Data', cls='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'),
         'Scalable AI.',
         cls='mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
         'Heading underline',
@@ -171,14 +171,14 @@ component = Div(
         Span('worldâ\x80\x99s potential', cls='underline underline-offset-3 decoration-8 decoration-primary-400 dark:decoration-primary-600'),
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 ), code="""Div(
     H1(
         'We invest in the',
         Span('worldâ\x80\x99s potential', cls='underline underline-offset-3 decoration-8 decoration-primary-400 dark:decoration-primary-600'),
         cls='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'
     ),
-    P('Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
+    P('Here at Fastbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.', cls='text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400')
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
         'Breadcrumb context',
@@ -230,7 +230,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='w-3 h-3 text-gray-400 mx-1 rtl:rotate-180'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'
@@ -284,7 +284,7 @@ component = Div(
                         viewbox='0 0 6 10',
                         cls='w-3 h-3 text-gray-400 mx-1 rtl:rotate-180'
                     ),
-                    Span('Flowbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
+                    Span('Fastbite', cls='ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400'),
                     cls='flex items-center'
                 ),
                 aria_current='page'
@@ -305,13 +305,13 @@ component = Div(
     P('Use this example to show a badge component inside the heading text element as a secondary indicator.'),
     component_showcase(Div(
     H1(
-        'Flowbite',
+        'Fastbite',
         Span('PRO', cls='bg-primary-100 text-primary-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-200 dark:text-primary-800 ms-2'),
         cls='flex items-center text-5xl font-extrabold dark:text-white'
     )
 ), code="""Div(
     H1(
-        'Flowbite',
+        'Fastbite',
         Span('PRO', cls='bg-primary-100 text-primary-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-200 dark:text-primary-800 ms-2'),
         cls='flex items-center text-5xl font-extrabold dark:text-white'
     )
@@ -325,13 +325,13 @@ component = Div(
     P('This example can be used to add a secondary text inside the main heading component.'),
     component_showcase(Div(
     H1(
-        'Flowbite',
+        'Fastbite',
         Small('This is secondary text', cls='ms-2 font-semibold text-gray-500 dark:text-gray-400'),
         cls='text-5xl font-extrabold dark:text-white'
     )
 ), code="""Div(
     H1(
-        'Flowbite',
+        'Fastbite',
         Small('This is secondary text', cls='ms-2 font-semibold text-gray-500 dark:text-gray-400'),
         cls='text-5xl font-extrabold dark:text-white'
     )

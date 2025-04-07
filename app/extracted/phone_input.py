@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P(
-        'The phone number input component from Flowbite can be used to set a phone number inside a form field by using the native',
+        'The phone number input component from Fastbite can be used to set a phone number inside a form field by using the native',
         Code('type="tel"'),
         'attribute and also use a dropdown menu to select the country code.'
     ),

@@ -6,7 +6,7 @@ from utils import component_showcase
 component = Div(
     P('The copy to clipboard component allows you to copy text, lines of code, contact details or any other data to the clipboard with a single click on a trigger element such as a button. This component can be used to copy text from an input field, textarea, code block or even address fields in a form element.'),
     P('Use cases for websites can be found in the examples below and they include copying code installation commands, API keys, URLs, addresses, contact details, sharing course URLs inside a modal and more.'),
-    P('These components are built with Tailwind CSS and Flowbite and can be found on the internet on websites such as Bitly, Cloudflare, Amazon AWS and almost all open-source projects and documentations.'),
+    P('These components are built with Tailwind CSS and Fastbite and can be found on the internet on websites such as Bitly, Cloudflare, Amazon AWS and almost all open-source projects and documentations.'),
     H2(
         'Default copy to clipboard',
         Span(id='default-copy-to-clipboard', cls='absolute -top-[140px]'),
@@ -23,7 +23,7 @@ component = Div(
     P(
         'Use this example to copy the content of an input text field by clicking on a button and update the button text by applying the JavaScript code from the tab below based on the',
         Code('updateOnCopyCallback()'),
-        'function callback from the Flowbite JS API.'
+        'function callback from the Fastbite JS API.'
     ),
     component_showcase(Div(
     Div(
@@ -90,7 +90,7 @@ component = Div(
     P(
         'If you also want to update the text inside the tooltip and the icon, then you need to apply the JavaScript code based on the',
         Code('updateOnCopyCallback()'),
-        'function callback from the Flowbite JS API.'
+        'function callback from the Fastbite JS API.'
     ),
     component_showcase(Div(
     Div(
@@ -545,7 +545,7 @@ component = Div(
         Div(
             Div(
                 Pre(
-                    Code('\'use client\';\n\nimport Link from \'next/link\';\nimport { Navbar } from \'flowbite-react\';\n\nfunction Component() {\n  return (\n    <Navbar fluid rounded>\n      <Navbar.Brand as={Link} href="https://flowbite-react.com">\n        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />\n        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>\n      </Navbar.Brand>\n      <Navbar.Toggle />\n      <Navbar.Collapse>\n        <Navbar.Link href="#" active>\n          Home\n        </Navbar.Link>\n        <Navbar.Link as={Link} href="#">\n          About\n        </Navbar.Link>\n        <Navbar.Link href="#">Services</Navbar.Link>\n        <Navbar.Link href="#">Pricing</Navbar.Link>\n        <Navbar.Link href="#">Contact</Navbar.Link>\n      </Navbar.Collapse>\n    </Navbar>\n  );\n}', id='code-block', cls='text-sm text-gray-500 dark:text-gray-400 whitespace-pre')
+                    Code('\'use client\';\n\nimport Link from \'next/link\';\nimport { Navbar } from \'flowbite-react\';\n\nfunction Component() {\n  return (\n    <Navbar fluid rounded>\n      <Navbar.Brand as={Link} href="https://flowbite-react.com">\n        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Fastbite React Logo" />\n        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Fastbite React</span>\n      </Navbar.Brand>\n      <Navbar.Toggle />\n      <Navbar.Collapse>\n        <Navbar.Link href="#" active>\n          Home\n        </Navbar.Link>\n        <Navbar.Link as={Link} href="#">\n          About\n        </Navbar.Link>\n        <Navbar.Link href="#">Services</Navbar.Link>\n        <Navbar.Link href="#">Pricing</Navbar.Link>\n        <Navbar.Link href="#">Contact</Navbar.Link>\n      </Navbar.Collapse>\n    </Navbar>\n  );\n}', id='code-block', cls='text-sm text-gray-500 dark:text-gray-400 whitespace-pre')
                 ),
                 cls='overflow-scroll max-h-full'
             ),
@@ -591,7 +591,7 @@ component = Div(
             ),
             cls='relative bg-gray-50 rounded-lg dark:bg-gray-700 p-4 h-64'
         ),
-        P('Configure Tailwind CSS and Flowbite before copying the code', cls='mt-2 text-sm text-gray-500 dark:text-gray-400'),
+        P('Configure Tailwind CSS and Fastbite before copying the code', cls='mt-2 text-sm text-gray-500 dark:text-gray-400'),
         cls='w-full max-w-lg'
     )
 ), code="""Div(
@@ -603,7 +603,7 @@ component = Div(
         Div(
             Div(
                 Pre(
-                    Code('\'use client\';\n\nimport Link from \'next/link\';\nimport { Navbar } from \'flowbite-react\';\n\nfunction Component() {\n  return (\n    <Navbar fluid rounded>\n      <Navbar.Brand as={Link} href="https://flowbite-react.com">\n        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />\n        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>\n      </Navbar.Brand>\n      <Navbar.Toggle />\n      <Navbar.Collapse>\n        <Navbar.Link href="#" active>\n          Home\n        </Navbar.Link>\n        <Navbar.Link as={Link} href="#">\n          About\n        </Navbar.Link>\n        <Navbar.Link href="#">Services</Navbar.Link>\n        <Navbar.Link href="#">Pricing</Navbar.Link>\n        <Navbar.Link href="#">Contact</Navbar.Link>\n      </Navbar.Collapse>\n    </Navbar>\n  );\n}', id='code-block', cls='text-sm text-gray-500 dark:text-gray-400 whitespace-pre')
+                    Code('\'use client\';\n\nimport Link from \'next/link\';\nimport { Navbar } from \'flowbite-react\';\n\nfunction Component() {\n  return (\n    <Navbar fluid rounded>\n      <Navbar.Brand as={Link} href="https://flowbite-react.com">\n        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Fastbite React Logo" />\n        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Fastbite React</span>\n      </Navbar.Brand>\n      <Navbar.Toggle />\n      <Navbar.Collapse>\n        <Navbar.Link href="#" active>\n          Home\n        </Navbar.Link>\n        <Navbar.Link as={Link} href="#">\n          About\n        </Navbar.Link>\n        <Navbar.Link href="#">Services</Navbar.Link>\n        <Navbar.Link href="#">Pricing</Navbar.Link>\n        <Navbar.Link href="#">Contact</Navbar.Link>\n      </Navbar.Collapse>\n    </Navbar>\n  );\n}', id='code-block', cls='text-sm text-gray-500 dark:text-gray-400 whitespace-pre')
                 ),
                 cls='overflow-scroll max-h-full'
             ),
@@ -649,7 +649,7 @@ component = Div(
             ),
             cls='relative bg-gray-50 rounded-lg dark:bg-gray-700 p-4 h-64'
         ),
-        P('Configure Tailwind CSS and Flowbite before copying the code', cls='mt-2 text-sm text-gray-500 dark:text-gray-400'),
+        P('Configure Tailwind CSS and Fastbite before copying the code', cls='mt-2 text-sm text-gray-500 dark:text-gray-400'),
         cls='w-full max-w-lg'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
@@ -665,14 +665,14 @@ component = Div(
     Div(
         H2('Create a role with read only in-line policies', cls='text-lg font-semibold text-gray-900 dark:text-white mb-2'),
         P(
-            'To give Flowbite read access, please create an IAM Role following',
+            'To give Fastbite read access, please create an IAM Role following',
             A('trust relationship', href='#', cls='text-primary-700 dark:text-primary-500 underline hover:no-underline font-medium'),
             'and',
             A('inline policy', href='#', cls='text-primary-700 dark:text-primary-500 underline hover:no-underline font-medium'),
             '.',
             cls='text-gray-500 dark:text-gray-400 mb-6'
         ),
-        Label('Flowbite account ID:', fr='account-id', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
+        Label('Fastbite account ID:', fr='account-id', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
         Div(
             Input(id='account-id', type='text', value='756593826', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
@@ -756,7 +756,7 @@ component = Div(
         ),
         Label('Role ARN:', fr='role-arn', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
         Div(
-            Input(id='role-arn', type='text', value='123456789012:user/Flowbite', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Input(id='role-arn', type='text', value='123456789012:user/Fastbite', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
                 Span(
                     Svg(
@@ -806,14 +806,14 @@ component = Div(
     Div(
         H2('Create a role with read only in-line policies', cls='text-lg font-semibold text-gray-900 dark:text-white mb-2'),
         P(
-            'To give Flowbite read access, please create an IAM Role following',
+            'To give Fastbite read access, please create an IAM Role following',
             A('trust relationship', href='#', cls='text-primary-700 dark:text-primary-500 underline hover:no-underline font-medium'),
             'and',
             A('inline policy', href='#', cls='text-primary-700 dark:text-primary-500 underline hover:no-underline font-medium'),
             '.',
             cls='text-gray-500 dark:text-gray-400 mb-6'
         ),
-        Label('Flowbite account ID:', fr='account-id', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
+        Label('Fastbite account ID:', fr='account-id', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
         Div(
             Input(id='account-id', type='text', value='756593826', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
@@ -897,7 +897,7 @@ component = Div(
         ),
         Label('Role ARN:', fr='role-arn', cls='text-sm font-medium text-gray-900 dark:text-white mb-2 block'),
         Div(
-            Input(id='role-arn', type='text', value='123456789012:user/Flowbite', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Input(id='role-arn', type='text', value='123456789012:user/Fastbite', disabled=True, readonly=True, cls='col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
                 Span(
                     Svg(
@@ -975,7 +975,7 @@ component = Div(
             Div(
                 'Bonnie Green',
                 Br(),
-                'name@flowbite.com',
+                'name@fastbite.com',
                 Br(),
                 '+ 12 345 67890',
                 id='contact-details',
@@ -1037,7 +1037,7 @@ component = Div(
             Div(
                 'Bonnie Green',
                 Br(),
-                'name@flowbite.com',
+                'name@fastbite.com',
                 Br(),
                 '+ 12 345 67890',
                 id='contact-details',
@@ -1284,7 +1284,7 @@ component = Div(
     P(
         'Use the',
         Strong('CopyClipboard'),
-        'object from the Flowbite JS API to create a component with a trigger element (ie. an input field, code blocks, address tag) and target element (ie. button or text) where the content of the target element is copied to the clipboard when the trigger element is clicked.'
+        'object from the Fastbite JS API to create a component with a trigger element (ie. an input field, code blocks, address tag) and target element (ie. button or text) where the content of the target element is copied to the clipboard when the trigger element is clicked.'
     ),
     H3(
         'Object parameters',
@@ -1468,7 +1468,7 @@ component = Div(
         A('#', aria_label='Link to this section: Example', href='#example', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('Check out the following example to learn how to create a new CopyClipboard component via the Flowbite JavaScript API and set up the class, options, and methods to programmatically work with the component.'),
+    P('Check out the following example to learn how to create a new CopyClipboard component via the Fastbite JavaScript API and set up the class, options, and methods to programmatically work with the component.'),
     Div(
         Pre(
             Code(
@@ -2104,9 +2104,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the CopyClipboard object, parameters and its options.'
+        'from Fastbite then you can import the types for the CopyClipboard object, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

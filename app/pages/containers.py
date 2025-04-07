@@ -3,7 +3,7 @@ from fastbite.all import *
 
 containers = Div(
     H1("Container Examples", cls=TextHeading.h1),
-    P("This page demonstrates the various container types available in Flowbite.", cls=TextT.muted + TextT.lg + " mb-4"),
+    P("This page demonstrates the various container types available in Fastbite.", cls=TextT.muted + TextT.lg + " mb-4"),
     
     # Default container
     Section(
@@ -19,7 +19,7 @@ containers = Div(
     # Fixed-width containers
     Section(
         H2("Fixed-Width Containers", cls=TextHeading.h2),
-        P("These containers have fixed widths based on Flowbite's container size variables.", cls=TextT.muted + " mb-4"),
+        P("These containers have fixed widths based on Fastbite's container size variables.", cls=TextT.muted + " mb-4"),
         
         Container(
             Div("XXS Container (16rem)", cls="bg-purple-100 dark:bg-purple-900 p-4 rounded-lg text-center font-bold"),

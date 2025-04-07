@@ -7,7 +7,7 @@ component = Div(
     P('The dropdown component can be used to show a list of menu items when clicking on an element such as a button and hiding it when focusing outside of the triggering element.'),
     P(
         'Make sure to include',
-        A('Flowbite’s JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
+        A('Fastbite’s JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
         'inside your project to enable dropdowns.'
     ),
     H2(
@@ -390,7 +390,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -432,7 +432,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2435,7 +2435,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2470,7 +2470,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2522,7 +2522,7 @@ component = Div(
     Div(
         Div(
             Div('Pro User', cls='font-medium'),
-            Div('name@flowbite.com', cls='truncate'),
+            Div('name@fastbite.com', cls='truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2566,7 +2566,7 @@ component = Div(
     Div(
         Div(
             Div('Pro User', cls='font-medium'),
-            Div('name@flowbite.com', cls='truncate'),
+            Div('name@fastbite.com', cls='truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2605,8 +2605,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -2690,8 +2690,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -2934,7 +2934,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -2975,7 +2975,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -3017,7 +3017,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -3058,7 +3058,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -3740,7 +3740,7 @@ component = Div(
     P(
         'For more dropdown examples you can check out the',
         A('dropdown filter', href='https://flowbite.com/blocks/application/filter/'),
-        'components from Flowbite Blocks.'
+        'components from Fastbite Blocks.'
     ),
     H2(
         'JavaScript behaviour',
@@ -3751,7 +3751,7 @@ component = Div(
     P(
         'The',
         Strong('Dropdown'),
-        'class from Flowbite can be used to create an object that will show a dropdown menu relative to the main trigger element (eg. a button) based on the parameters, options, and methods that you provide.'
+        'class from Fastbite can be used to create an object that will show a dropdown menu relative to the main trigger element (eg. a button) based on the parameters, options, and methods that you provide.'
     ),
     H3(
         'Object parameters',
@@ -4823,9 +4823,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Dropdown class, parameters and its options.'
+        'from Fastbite then you can import the types for the Dropdown class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

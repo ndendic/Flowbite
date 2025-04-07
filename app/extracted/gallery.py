@@ -318,7 +318,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -327,7 +327,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -495,7 +495,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -504,7 +504,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),

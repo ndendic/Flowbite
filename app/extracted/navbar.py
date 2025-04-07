@@ -4,7 +4,7 @@ from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('Get started with the responsive navbar component from Flowbite to quickly set up a navigation menu for your website and set up the logo, list of pages, CTA button, search input, user profile options with a dropdown, and more.'),
+    P('Get started with the responsive navbar component from Fastbite to quickly set up a navigation menu for your website and set up the logo, list of pages, CTA button, search input, user profile options with a dropdown, and more.'),
     H2(
         'Default navbar',
         Span(id='default-navbar', cls='absolute -top-[140px]'),
@@ -16,8 +16,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -67,8 +67,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -126,8 +126,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -211,8 +211,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -304,8 +304,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -425,8 +425,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -554,8 +554,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -606,8 +606,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -666,8 +666,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -708,8 +708,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -758,8 +758,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -853,8 +853,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -956,8 +956,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1008,8 +1008,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1068,8 +1068,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1273,8 +1273,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1486,8 +1486,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1505,7 +1505,7 @@ component = Div(
                 Div(
                     Div(
                         Span('Bonnie Green', cls='block text-sm text-gray-900 dark:text-white'),
-                        Span('name@flowbite.com', cls='block text-sm text-gray-500 truncate dark:text-gray-400'),
+                        Span('name@fastbite.com', cls='block text-sm text-gray-500 truncate dark:text-gray-400'),
                         cls='px-4 py-3'
                     ),
                     Ul(
@@ -1575,8 +1575,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1594,7 +1594,7 @@ component = Div(
                 Div(
                     Div(
                         Span('Bonnie Green', cls='block text-sm text-gray-900 dark:text-white'),
-                        Span('name@flowbite.com', cls='block text-sm text-gray-500 truncate dark:text-gray-400'),
+                        Span('name@fastbite.com', cls='block text-sm text-gray-500 truncate dark:text-gray-400'),
                         cls='px-4 py-3'
                     ),
                     Ul(
@@ -1676,8 +1676,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1799,8 +1799,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1930,8 +1930,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -1978,8 +1978,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -2039,8 +2039,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -2087,8 +2087,8 @@ component = Div(
     Nav(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                 href='#',
                 cls='flex items-center space-x-3 rtl:space-x-reverse'
             ),
@@ -2138,7 +2138,7 @@ component = Div(
         A('#', aria_label='Link to this section: More examples', href='#more-examples', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('You can check out more navbar component examples from the following resources from Flowbite Blocks:'),
+    P('You can check out more navbar component examples from the following resources from Fastbite Blocks:'),
     Ul(
         Li(
             A('Headers for marketing', href='https://flowbite.com/blocks/marketing/header/')
@@ -2994,9 +2994,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Collapse object, parameters and its options.'
+        'from Fastbite then you can import the types for the Collapse object, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

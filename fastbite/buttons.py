@@ -14,7 +14,7 @@ from .base_styles import *
 
 # %% ../nbs/06_buttons.ipynb 2
 class BgColor(VEnum):
-    """Button style variants for Flowbite components"""
+    """Button style variants for Fastbite components"""
     # Base styles
     primary = "bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700  text-white focus:ring-primary-300 dark:focus:ring-primary-800"
     blue = "bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white focus:ring-blue-300"

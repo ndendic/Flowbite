@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The chat bubble component is the building block for creating chat interfaces where users can send messages to each other by text, voice notes, images, galleries and other attachments. These components are usually used in chat applications and social media platforms such as Facebook, Twitter/X, WhatsApp, and more.'),
-    P('The examples below provide multiple variations of default, outline, and clean styles coded with the utility classes from Tailwind CSS. Some of the components may require you to include the Flowbite JavaScript to enable the dropdowns and tooltips functionality.'),
+    P('The examples below provide multiple variations of default, outline, and clean styles coded with the utility classes from Tailwind CSS. Some of the components may require you to include the Fastbite JavaScript to enable the dropdowns and tooltips functionality.'),
     H2(
         'Default chat bubble',
         Span(id='default-chat-bubble', cls='absolute -top-[140px]'),
@@ -369,7 +369,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(
@@ -491,7 +491,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(
@@ -1617,7 +1617,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(
@@ -1739,7 +1739,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(
@@ -2713,7 +2713,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(
@@ -2797,7 +2797,7 @@ component = Div(
                                 viewbox='0 0 20 21',
                                 cls='w-5 h-5 shrink-0'
                             ),
-                            'Flowbite Terms & Conditions',
+                            'Fastbite Terms & Conditions',
                             cls='flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white pb-2'
                         ),
                         Span(

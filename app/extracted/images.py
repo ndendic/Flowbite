@@ -122,7 +122,7 @@ component = Div(
             href='#'
         ),
         Figcaption(
-            P('Do you want to get notified when a new component is added to Flowbite?'),
+            P('Do you want to get notified when a new component is added to Fastbite?'),
             cls='absolute px-4 text-lg text-white bottom-6'
         ),
         cls='relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0'
@@ -134,7 +134,7 @@ component = Div(
             href='#'
         ),
         Figcaption(
-            P('Do you want to get notified when a new component is added to Flowbite?'),
+            P('Do you want to get notified when a new component is added to Fastbite?'),
             cls='absolute px-4 text-lg text-white bottom-6'
         ),
         cls='relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0'

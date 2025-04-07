@@ -697,7 +697,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -706,7 +706,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -721,7 +721,7 @@ component = Div(
     P(
         'Use this sidebar example to create multi-level menu items by applying the',
         Code('data-collapse-toggle="id"'),
-        'data attribute from Flowbite and toggle the second-level menu item.'
+        'data attribute from Fastbite and toggle the second-level menu item.'
     ),
     component_showcase(Div(
     Button(
@@ -2435,7 +2435,7 @@ component = Div(
                     ),
                     cls='flex items-center mb-3'
                 ),
-                P('Preview the new Flowbite dashboard navigation! You can turn the new navigation off for a limited time in your profile.', cls='mb-3 text-sm text-primary-800 dark:text-primary-400'),
+                P('Preview the new Fastbite dashboard navigation! You can turn the new navigation off for a limited time in your profile.', cls='mb-3 text-sm text-primary-800 dark:text-primary-400'),
                 A('Turn new navigation off', href='#', cls='text-sm text-primary-800 underline font-medium hover:text-primary-900 dark:text-primary-400 dark:hover:text-primary-300'),
                 id='dropdown-cta',
                 role='alert',
@@ -2796,7 +2796,7 @@ component = Div(
                     ),
                     cls='flex items-center mb-3'
                 ),
-                P('Preview the new Flowbite dashboard navigation! You can turn the new navigation off for a limited time in your profile.', cls='mb-3 text-sm text-primary-800 dark:text-primary-400'),
+                P('Preview the new Fastbite dashboard navigation! You can turn the new navigation off for a limited time in your profile.', cls='mb-3 text-sm text-primary-800 dark:text-primary-400'),
                 A('Turn new navigation off', href='#', cls='text-sm text-primary-800 underline font-medium hover:text-primary-900 dark:text-primary-400 dark:hover:text-primary-300'),
                 id='dropdown-cta',
                 role='alert',
@@ -3033,8 +3033,8 @@ component = Div(
     Aside(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-6 me-3 sm:h-7'),
-                Span('Flowbite', cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-6 me-3 sm:h-7'),
+                Span('Fastbite', cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center ps-2.5 mb-5'
             ),
@@ -3374,8 +3374,8 @@ component = Div(
     Aside(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-6 me-3 sm:h-7'),
-                Span('Flowbite', cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-6 me-3 sm:h-7'),
+                Span('Fastbite', cls='self-center text-xl font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center ps-2.5 mb-5'
             ),
@@ -3725,8 +3725,8 @@ component = Div(
                         cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='FlowBite Logo', cls='h-8 me-3'),
-                        Span('Flowbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='FlowBite Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='https://flowbite.com',
                         cls='flex ms-2 md:me-24'
                     ),
@@ -3747,7 +3747,7 @@ component = Div(
                         Div(
                             Div(
                                 P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
-                                P('neil.sims@flowbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
+                                P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
                                 role='none',
                                 cls='px-4 py-3'
                             ),
@@ -4120,8 +4120,8 @@ component = Div(
                         cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='FlowBite Logo', cls='h-8 me-3'),
-                        Span('Flowbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='FlowBite Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='https://flowbite.com',
                         cls='flex ms-2 md:me-24'
                     ),
@@ -4142,7 +4142,7 @@ component = Div(
                         Div(
                             Div(
                                 P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
-                                P('neil.sims@flowbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
+                                P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
                                 role='none',
                                 cls='px-4 py-3'
                             ),
@@ -4799,7 +4799,7 @@ component = Div(
         A('sidenav component', href='https://flowbite.com/blocks/application/sidenav/'),
         'examples and',
         A('application shell layouts', href='https://flowbite.com/blocks/application/shells/'),
-        'from Flowbite Blocks.'
+        'from Fastbite Blocks.'
     ),
     H2(
         'Dashboard Layout',
@@ -4809,7 +4809,7 @@ component = Div(
     ),
     P(
         'These sidebar examples can be viewed in action and used by checking out the',
-        A('Flowbite Admin Dashboard', href='https://github.com/themesberg/flowbite-admin-dashboard'),
+        A('Fastbite Admin Dashboard', href='https://github.com/themesberg/flowbite-admin-dashboard'),
         'template and use it as a solid starting point for you web application.'
     ),
     id='mainContent'

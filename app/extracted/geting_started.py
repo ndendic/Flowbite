@@ -6,7 +6,7 @@ from utils import component_showcase
 component = Div(
     P(
         'Get started with the',
-        A('Flowbite Typography', href='https://github.com/themesberg/flowbite-typography'),
+        A('Fastbite Typography', href='https://github.com/themesberg/flowbite-typography'),
         'plugin forked from the official',
         A('Tailwind CSS Typography', href='https://tailwindcss.com/docs/typography-plugin'),
         'plugin to set a custom',
@@ -32,7 +32,7 @@ component = Div(
         'already installed in your project.'
     ),
     Ol(
-        Li('Install the Flowbite Typography plugin via NPM:')
+        Li('Install the Fastbite Typography plugin via NPM:')
     ),
     Div(
         Pre(
@@ -178,7 +178,7 @@ component = Div(
         ),
         cls='highlight'
     ),
-    P('Now you can go ahead and use the new formatting classes from the Flowbite Typography plugin.'),
+    P('Now you can go ahead and use the new formatting classes from the Fastbite Typography plugin.'),
     H2(
         'Basic usage',
         Span(id='basic-usage', cls='absolute -top-[140px]'),
@@ -227,7 +227,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"lead"', cls='s'),
                         Span('>', cls='p'),
-                        'Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
+                        'Fastbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
                         Span('</', cls='p'),
                         Span('p', cls='nt'),
                         Span('>', cls='p'),
@@ -260,7 +260,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"#"', cls='s'),
                         Span('>', cls='p'),
-                        'component library based on Tailwind CSS called Flowbite',
+                        'component library based on Tailwind CSS called Fastbite',
                         Span('</', cls='p'),
                         Span('a', cls='nt'),
                         Span('>', cls='p'),
@@ -473,7 +473,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"lead"', cls='s'),
                         Span('>', cls='p'),
-                        'Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
+                        'Fastbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
                         Span('</', cls='p'),
                         Span('p', cls='nt'),
                         Span('>', cls='p'),
@@ -506,7 +506,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"#"', cls='s'),
                         Span('>', cls='p'),
-                        'component library based on Tailwind CSS called Flowbite',
+                        'component library based on Tailwind CSS called Fastbite',
                         Span('</', cls='p'),
                         Span('a', cls='nt'),
                         Span('>', cls='p'),
@@ -582,7 +582,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"lead"', cls='s'),
                         Span('>', cls='p'),
-                        'Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
+                        'Fastbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
                         Span('</', cls='p'),
                         Span('p', cls='nt'),
                         Span('>', cls='p'),
@@ -615,7 +615,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"#"', cls='s'),
                         Span('>', cls='p'),
-                        'component library based on Tailwind CSS called Flowbite',
+                        'component library based on Tailwind CSS called Fastbite',
                         Span('</', cls='p'),
                         Span('a', cls='nt'),
                         Span('>', cls='p'),
@@ -825,7 +825,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"lead"', cls='s'),
                         Span('>', cls='p'),
-                        'Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
+                        'Fastbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
                         Span('</', cls='p'),
                         Span('p', cls='nt'),
                         Span('>', cls='p'),
@@ -858,7 +858,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"#"', cls='s'),
                         Span('>', cls='p'),
-                        'component library based on Tailwind CSS called Flowbite',
+                        'component library based on Tailwind CSS called Fastbite',
                         Span('</', cls='p'),
                         Span('a', cls='nt'),
                         Span('>', cls='p'),
@@ -934,7 +934,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"lead"', cls='s'),
                         Span('>', cls='p'),
-                        'Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
+                        'Fastbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.',
                         Span('</', cls='p'),
                         Span('p', cls='nt'),
                         Span('>', cls='p'),
@@ -967,7 +967,7 @@ component = Div(
                         Span('=', cls='o'),
                         Span('"#"', cls='s'),
                         Span('>', cls='p'),
-                        'component library based on Tailwind CSS called Flowbite',
+                        'component library based on Tailwind CSS called Fastbite',
                         Span('</', cls='p'),
                         Span('a', cls='nt'),
                         Span('>', cls='p'),
@@ -2085,7 +2085,7 @@ component = Div(
     P(
         'You can check out the following',
         A('blog template', href='https://flowbite.com/blocks/publisher/blog-templates/'),
-        'layouts from Flowbite Blocks that use the Typography plugin.'
+        'layouts from Fastbite Blocks that use the Typography plugin.'
     ),
     id='mainContent'
 )

@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.11"
 
 [[package]]
@@ -169,7 +170,7 @@ name = "click"
 version = "8.1.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz", hash = "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a", size = 226593 }
 wheels = [
@@ -259,6 +260,35 @@ wheels = [
 ]
 
 [[package]]
+name = "fastbite"
+source = { editable = "." }
+dependencies = [
+    { name = "ft-datastar" },
+    { name = "mistletoe" },
+    { name = "python-fasthtml" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+    { name = "nbdev" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ft-datastar", git = "https://github.com/banditburai/ft-datastar.git" },
+    { name = "mistletoe", specifier = ">=1.4.0" },
+    { name = "python-fasthtml", specifier = ">=0.12.1" },
+]
+provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "ipykernel", specifier = ">=6.29.5" },
+    { name = "nbdev", specifier = ">=2.3.35" },
+]
+
+[[package]]
 name = "fastcore"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -281,35 +311,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/48/d5/e3f6867196a59cf287f77f89560d6d53b87a1b0ec9994f6d2ea50c09d7dd/fastlite-0.1.3.tar.gz", hash = "sha256:e18fbeca28d674b6854f71fe1015b5d1498223f4a307dbbc5ad0bdc2e53587d5", size = 21288 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b0/78/bc4fde56e49457f2441088c52661d10d7f108fba3e22c4a1f0f2cfed0ff3/fastlite-0.1.3-py3-none-any.whl", hash = "sha256:e7e26cde505a47fe77fd259aece94bbc6c9bcaf68972aac7ca2bd93972728c77", size = 17049 },
-]
-
-[[package]]
-name = "flowbite"
-version = "0.0.1"
-source = { editable = "." }
-dependencies = [
-    { name = "ft-datastar" },
-    { name = "mistletoe" },
-    { name = "python-fasthtml" },
-]
-
-[package.dependency-groups]
-dev = [
-    { name = "ipykernel" },
-    { name = "nbdev" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "ft-datastar", git = "https://github.com/banditburai/ft-datastar.git" },
-    { name = "mistletoe", specifier = ">=1.4.0" },
-    { name = "python-fasthtml", specifier = ">=0.12.1" },
-]
-
-[package.metadata.dependency-groups]
-dev = [
-    { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "nbdev", specifier = ">=2.3.35" },
 ]
 
 [[package]]
@@ -414,7 +415,7 @@ name = "ipykernel"
 version = "6.29.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "appnope", marker = "platform_system == 'Darwin'" },
+    { name = "appnope", marker = "sys_platform == 'darwin'" },
     { name = "comm" },
     { name = "debugpy" },
     { name = "ipython" },

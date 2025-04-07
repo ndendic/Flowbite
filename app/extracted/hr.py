@@ -112,14 +112,14 @@ component = Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
     Hr(cls='w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded-sm md:my-12 dark:bg-gray-700'),
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-center text-gray-900 dark:text-white'
     )
 ), code="""Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
     Hr(cls='w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded-sm md:my-12 dark:bg-gray-700'),
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-center text-gray-900 dark:text-white'
     )
 )""", id="example_4",cls='mt-2 mb-6'),

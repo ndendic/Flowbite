@@ -581,7 +581,7 @@ component = Div(
     component_showcase(Div(
     Div(
         H5('Work fast from anywhere', cls='mb-2 text-3xl font-bold text-gray-900 dark:text-white'),
-        P('Stay up to date and move work forward with Flowbite on iOS & Android. Download the app today.', cls='mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400'),
+        P('Stay up to date and move work forward with Fastbite on iOS & Android. Download the app today.', cls='mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400'),
         Div(
             A(
                 Svg(
@@ -630,7 +630,7 @@ component = Div(
 ), code="""Div(
     Div(
         H5('Work fast from anywhere', cls='mb-2 text-3xl font-bold text-gray-900 dark:text-white'),
-        P('Stay up to date and move work forward with Flowbite on iOS & Android. Download the app today.', cls='mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400'),
+        P('Stay up to date and move work forward with Fastbite on iOS & Android. Download the app today.', cls='mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400'),
         Div(
             A(
                 Svg(
@@ -1084,7 +1084,7 @@ component = Div(
                 Div(
                     H2(
                         Button(
-                            Span('What is Flowbite?'),
+                            Span('What is Fastbite?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
                                 data_accordion_icon=True,
@@ -1104,7 +1104,7 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('Fastbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P(
                                 'Check out this guide to learn how to',
                                 A('get started', href='/docs/getting-started/introduction/', cls='text-primary-600 dark:text-primary-500 hover:underline'),
@@ -1139,11 +1139,11 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('Fastbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P(
                                 'Check out the',
                                 A('Figma design system', href='https://flowbite.com/figma/', cls='text-primary-600 dark:text-primary-500 hover:underline'),
-                                'based on the utility classes from Tailwind CSS and components from Flowbite.',
+                                'based on the utility classes from Tailwind CSS and components from Fastbite.',
                                 cls='text-gray-500 dark:text-gray-400'
                             ),
                             cls='py-5 border-b border-gray-200 dark:border-gray-700'
@@ -1154,7 +1154,7 @@ component = Div(
                     ),
                     H2(
                         Button(
-                            Span('What are the differences between Flowbite and Tailwind UI?'),
+                            Span('What are the differences between Fastbite and Tailwind UI?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
                                 data_accordion_icon=True,
@@ -1174,12 +1174,12 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.', cls='mb-2 text-gray-500 dark:text-gray-400'),
-                            P('However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('The main difference is that the core components from Fastbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Fastbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('However, we actually recommend using both Fastbite, Fastbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P('Learn more about these technologies:', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             Ul(
                                 Li(
-                                    A('Flowbite Pro', href='https://flowbite.com/pro/', cls='text-primary-600 dark:text-primary-500 hover:underline')
+                                    A('Fastbite Pro', href='https://flowbite.com/pro/', cls='text-primary-600 dark:text-primary-500 hover:underline')
                                 ),
                                 Li(
                                     A('Tailwind UI', href='https://tailwindui.com/', rel='nofollow', cls='text-primary-600 dark:text-primary-500 hover:underline')
@@ -1341,7 +1341,7 @@ component = Div(
                 Div(
                     H2(
                         Button(
-                            Span('What is Flowbite?'),
+                            Span('What is Fastbite?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
                                 data_accordion_icon=True,
@@ -1361,7 +1361,7 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('Fastbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P(
                                 'Check out this guide to learn how to',
                                 A('get started', href='/docs/getting-started/introduction/', cls='text-primary-600 dark:text-primary-500 hover:underline'),
@@ -1396,11 +1396,11 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('Fastbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P(
                                 'Check out the',
                                 A('Figma design system', href='https://flowbite.com/figma/', cls='text-primary-600 dark:text-primary-500 hover:underline'),
-                                'based on the utility classes from Tailwind CSS and components from Flowbite.',
+                                'based on the utility classes from Tailwind CSS and components from Fastbite.',
                                 cls='text-gray-500 dark:text-gray-400'
                             ),
                             cls='py-5 border-b border-gray-200 dark:border-gray-700'
@@ -1411,7 +1411,7 @@ component = Div(
                     ),
                     H2(
                         Button(
-                            Span('What are the differences between Flowbite and Tailwind UI?'),
+                            Span('What are the differences between Fastbite and Tailwind UI?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
                                 data_accordion_icon=True,
@@ -1431,12 +1431,12 @@ component = Div(
                     ),
                     Div(
                         Div(
-                            P('The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.', cls='mb-2 text-gray-500 dark:text-gray-400'),
-                            P('However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('The main difference is that the core components from Fastbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Fastbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.', cls='mb-2 text-gray-500 dark:text-gray-400'),
+                            P('However, we actually recommend using both Fastbite, Fastbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             P('Learn more about these technologies:', cls='mb-2 text-gray-500 dark:text-gray-400'),
                             Ul(
                                 Li(
-                                    A('Flowbite Pro', href='https://flowbite.com/pro/', cls='text-primary-600 dark:text-primary-500 hover:underline')
+                                    A('Fastbite Pro', href='https://flowbite.com/pro/', cls='text-primary-600 dark:text-primary-500 hover:underline')
                                 ),
                                 Li(
                                     A('Tailwind UI', href='https://tailwindui.com/', rel='nofollow', cls='text-primary-600 dark:text-primary-500 hover:underline')

@@ -4,8 +4,8 @@ from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The timepicker component from Flowbite can be used to choose the hours and minutes of a given day through the usage of input fields such as the native HTML time field or even checkbox fields with predefined time interval which are popularly used for calendar event creation.'),
-    P('The examples on this page are all built with Tailwind CSS and some of the examples require you to install the Flowbite JavaScript dependency to make the interactive UI components functional such as the datepicker, dropdowns, modals and the drawers.'),
+    P('The timepicker component from Fastbite can be used to choose the hours and minutes of a given day through the usage of input fields such as the native HTML time field or even checkbox fields with predefined time interval which are popularly used for calendar event creation.'),
+    P('The examples on this page are all built with Tailwind CSS and some of the examples require you to install the Fastbite JavaScript dependency to make the interactive UI components functional such as the datepicker, dropdowns, modals and the drawers.'),
     P('The timepicker component is often used together with a datepicker so the more advanced examples on this page show you a combination of these two components where you can select both the date (year, month and day) and then the time of the day for the event.'),
     H2(
         'Default timepicker',
@@ -607,7 +607,7 @@ component = Div(
     ),
     P(
         'This is an advanced example that you can use to show the details of an event and select a date of the event based on the',
-        A('Flowbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
+        A('Fastbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
         'and select the time using a predefined set of time intervals based on checkbox elements.'
     ),
     component_showcase(Div(
@@ -881,7 +881,7 @@ component = Div(
     ),
     P(
         'Use this example to select a date and time inside of a modal component based on the',
-        A('Flowbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
+        A('Fastbite Datepicker', href='https://flowbite.com/docs/components/datepicker/'),
         'and select a time interval using checkbox elements with predefined time values for event time scheduling.'
     ),
     component_showcase(Div(

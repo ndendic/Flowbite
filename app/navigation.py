@@ -66,7 +66,7 @@ def Navbar():
                         Div(
                             Div(
                                 P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
-                                P('neil.sims@flowbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
+                                P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
                                 role='none',
                                 cls='px-4 py-3'
                             ),

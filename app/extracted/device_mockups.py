@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P('The device mockup component can be used to feature a preview and screenshot of your application as if you would already use it on a mobile phone and it’s a great use case for hero and CTA sections.'),
-    P('This component is built using only the utility classes from Tailwind CSS and has built-in dark mode support so it’s easy to customize, it loads very fast and integrates perfectly with Tailwind CSS and Flowbite.'),
+    P('This component is built using only the utility classes from Tailwind CSS and has built-in dark mode support so it’s easy to customize, it loads very fast and integrates perfectly with Tailwind CSS and Fastbite.'),
     P('You can choose from multiple examples of mockups including phone, tablet, laptop, and even desktop devices with iOS or Android support.'),
     H2(
         'Default mockup',

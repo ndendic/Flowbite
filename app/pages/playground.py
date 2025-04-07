@@ -334,7 +334,7 @@ placeholders = fh.Div(
         cls="space-y-2"
     )
 navs = NavContainer(
-        NavHeaderLi(label="Flowbite"),
+        NavHeaderLi(label="Fastbite"),
         NavSubtitle("Subtitle"),
         NavParentLi(
             NavContainer(
@@ -601,9 +601,9 @@ This is a test of the markdown component.
 
 This is a subheading.
 
-![Flowbite Logo](https://flowbite.com/docs/images/logo.svg)
+![Fastbite Logo](images/logo.png)
 
-[Flowbite](https://flowbite.com) is a library of pre-built components for Tailwind CSS.
+[Fastbite](https://flowbite.com) is a library of pre-built components for Tailwind CSS.
 
 > This is a block quote.
 > It can span multiple paragraphs,
@@ -614,7 +614,7 @@ This is a subheading.
 
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
-    P("This is your playground for developing Flowbite components.\n Go to and modify ",
+    P("This is your playground for developing Fastbite components.\n Go to and modify ",
     Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
     # datastar_example,
     # form_component,

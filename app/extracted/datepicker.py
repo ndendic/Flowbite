@@ -5,7 +5,7 @@ from utils import component_showcase
 
 component = Div(
     P(
-        'The Tailwind CSS datepicker component developed by Flowbite is built with vanilla JavaScript and using the utility-first classes from Tailwind. The datepicker features both inline and a date range picker functionality and some extra options such as autohide, custom format, positioning, and more. Check out the',
+        'The Tailwind CSS datepicker component developed by Fastbite is built with vanilla JavaScript and using the utility-first classes from Tailwind. The datepicker features both inline and a date range picker functionality and some extra options such as autohide, custom format, positioning, and more. Check out the',
         A('timepicker component', href='https://flowbite.com/docs/forms/timepicker/'),
         'to select time alongside dates.'
     ),
@@ -16,7 +16,7 @@ component = Div(
         cls='relative group'
     ),
     P(
-        'If you want to use the datepicker component from Flowbite you have to include the Flowbite JavaScript file either via NPM or CDN. For versions before',
+        'If you want to use the datepicker component from Fastbite you have to include the Fastbite JavaScript file either via NPM or CDN. For versions before',
         Code('2.4.0'),
         'please continue using the dedicated CDN and component.'
     ),
@@ -275,7 +275,7 @@ component = Div(
         A('#', aria_label='Link to this section: Options', href='#options', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('Learn more about the options that you can use with the Tailwind datepicker to enable features such as autohide, action buttons, date format, orientation, and more based on the vanilla JavaScript from Flowbite.'),
+    P('Learn more about the options that you can use with the Tailwind datepicker to enable features such as autohide, action buttons, date format, orientation, and more based on the vanilla JavaScript from Fastbite.'),
     H3(
         'Autohide',
         Span(id='autohide', cls='absolute -top-[140px]'),
@@ -545,7 +545,7 @@ component = Div(
             ),
             cls='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'
         ),
-        Input(id='datepicker-title', datepicker=True, datepicker_title='Flowbite datepicker', type='text', placeholder='Select date', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+        Input(id='datepicker-title', datepicker=True, datepicker_title='Fastbite datepicker', type='text', placeholder='Select date', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
         cls='relative max-w-sm'
     )
 ), code="""Div(
@@ -561,7 +561,7 @@ component = Div(
             ),
             cls='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'
         ),
-        Input(id='datepicker-title', datepicker=True, datepicker_title='Flowbite datepicker', type='text', placeholder='Select date', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+        Input(id='datepicker-title', datepicker=True, datepicker_title='Fastbite datepicker', type='text', placeholder='Select date', cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
         cls='relative max-w-sm'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
@@ -597,7 +597,7 @@ component = Div(
     P(
         'Use the native browser timepicker input field to select a time alongside the datepicker. Check out more examples on the',
         A('timepicker', href='https://flowbite.com/docs/forms/timepicker/'),
-        'component page from Flowbite.'
+        'component page from Fastbite.'
     ),
     component_showcase(Div(
     Form(
@@ -649,7 +649,7 @@ component = Div(
     P(
         'If you would like to enable dark mode for the datepicker please follow the',
         A('dark mode', href='https://flowbite.com/docs/customize/dark-mode/'),
-        'guide on Flowbite and enable it either manually or by using a dark mode switcher.'
+        'guide on Fastbite and enable it either manually or by using a dark mode switcher.'
     ),
     H2(
         'JavaScript Behaviour',
@@ -660,7 +660,7 @@ component = Div(
     P(
         'Use the',
         Strong('Tailwind CSS Datepicker'),
-        'component from Flowbite to select a date or range of dates based on the Datepicker API and configure the component using the methods and options that you can pass when creating the object using JavaScript.'
+        'component from Fastbite to select a date or range of dates based on the Datepicker API and configure the component using the methods and options that you can pass when creating the object using JavaScript.'
     ),
     H3(
         'Object parameters',
@@ -903,7 +903,7 @@ component = Div(
         A('#', aria_label='Link to this section: Example', href='#example', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('Check out the following examples to learn how to use a basic HTML markup together with the Flowbite Datepicker API JS.'),
+    P('Check out the following examples to learn how to use a basic HTML markup together with the Fastbite Datepicker API JS.'),
     P('First of all, you need to select the datepicker element (it can be an input field or div for inline datepickers) and set up the options object.'),
     Div(
         Pre(
@@ -1460,9 +1460,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Datepicker object, parameters and its options.'
+        'from Fastbite then you can import the types for the Datepicker object, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(
@@ -2154,7 +2154,7 @@ component = Div(
         cls='relative group'
     ),
     P(
-        'One of our community members built the React version of the Flowbite Datepicker and you can learn more about it on',
+        'One of our community members built the React version of the Fastbite Datepicker and you can learn more about it on',
         A('this repository on GitHub', href='https://github.com/OMikkel/tailwind-datepicker-react', rel='nofollow'),
         '.'
     ),

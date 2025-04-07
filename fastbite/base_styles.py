@@ -23,7 +23,7 @@ class Round(VEnum):
 
 class TextT(VEnum):
     """
-    Text Styles from Flowbite UI
+    Text Styles from Fastbite UI
     """
     # Text Size
     xs, sm, base, lg, xl = 'text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl'
@@ -93,7 +93,7 @@ class TextT(VEnum):
 
 class TextPresets(VEnum):
     """
-    Common Typography Presets for Flowbite UI
+    Common Typography Presets for Fastbite UI
     """
     muted_sm = TextT.muted+TextT.sm
     muted_lg = TextT.muted+TextT.lg
@@ -110,7 +110,7 @@ class TextPresets(VEnum):
     md_weight_muted = stringify((TextT.medium, TextT.muted))
 
 class TextHeading(VEnum):
-    """Text heading variants for Flowbite components"""
+    """Text heading variants for Fastbite components"""
     h1 = "text-5xl font-extrabold dark:text-white mb-4"
     h2 = "text-4xl font-bold dark:text-white mb-3"
     h3 = "text-3xl font-bold dark:text-white mb-2"
