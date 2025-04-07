@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The footer is one of the most underestimated sections of a website being located at the very bottom of every page, however, it can be used as a way to try to convince users to stay on your website if they haven’t found the information they’ve been looking for inside the main content area.'),
-    P('Use these footer sections coded with the utility classes from Tailwind CSS and components from Flowbite to offer valuable information to your users such as the brand’s logo, sitemap links, copyright notice, social media profiles, and more.'),
+    P('Use these footer sections coded with the utility classes from Tailwind CSS and components from Fastbite to offer valuable information to your users such as the brand’s logo, sitemap links, copyright notice, social media profiles, and more.'),
     H2(
         'Default footer',
         Span(id='default-footer', cls='absolute -top-[140px]'),
@@ -18,7 +18,7 @@ component = Div(
         Div(
             Span(
                 'Â© 2023',
-                A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                 '. All Rights Reserved.',
                 cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
             ),
@@ -46,7 +46,7 @@ component = Div(
         Div(
             Span(
                 'Â© 2023',
-                A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                 '. All Rights Reserved.',
                 cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
             ),
@@ -82,8 +82,8 @@ component = Div(
         Div(
             Div(
                 A(
-                    Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                    Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                    Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                    Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                     href='https://flowbite.com/',
                     cls='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
                 ),
@@ -107,7 +107,7 @@ component = Div(
             Hr(cls='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8'),
             Span(
                 'Â© 2023',
-                A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                 '. All Rights Reserved.',
                 cls='block text-sm text-gray-500 sm:text-center dark:text-gray-400'
             ),
@@ -120,8 +120,8 @@ component = Div(
         Div(
             Div(
                 A(
-                    Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-8'),
-                    Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                    Img(src='images/logo.png', alt='Fastbite Logo', cls='h-8'),
+                    Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                     href='https://flowbite.com/',
                     cls='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
                 ),
@@ -145,7 +145,7 @@ component = Div(
             Hr(cls='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8'),
             Span(
                 'Â© 2023',
-                A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                 '. All Rights Reserved.',
                 cls='block text-sm text-gray-500 sm:text-center dark:text-gray-400'
             ),
@@ -167,8 +167,8 @@ component = Div(
             Div(
                 Div(
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='FlowBite Logo', cls='h-8 me-3'),
-                        Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='FlowBite Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                         href='https://flowbite.com/',
                         cls='flex items-center'
                     ),
@@ -179,7 +179,7 @@ component = Div(
                         H2('Resources', cls='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'),
                         Ul(
                             Li(
-                                A('Flowbite', href='https://flowbite.com/', cls='hover:underline'),
+                                A('Fastbite', href='https://flowbite.com/', cls='hover:underline'),
                                 cls='mb-4'
                             ),
                             Li(
@@ -222,7 +222,7 @@ component = Div(
             Div(
                 Span(
                     'Â© 2023',
-                    A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                    A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                     '. All Rights Reserved.',
                     cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
                 ),
@@ -306,8 +306,8 @@ component = Div(
             Div(
                 Div(
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='FlowBite Logo', cls='h-8 me-3'),
-                        Span('Flowbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='FlowBite Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'),
                         href='https://flowbite.com/',
                         cls='flex items-center'
                     ),
@@ -318,7 +318,7 @@ component = Div(
                         H2('Resources', cls='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'),
                         Ul(
                             Li(
-                                A('Flowbite', href='https://flowbite.com/', cls='hover:underline'),
+                                A('Fastbite', href='https://flowbite.com/', cls='hover:underline'),
                                 cls='mb-4'
                             ),
                             Li(
@@ -361,7 +361,7 @@ component = Div(
             Div(
                 Span(
                     'Â© 2023',
-                    A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+                    A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
                     '. All Rights Reserved.',
                     cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
                 ),
@@ -540,7 +540,7 @@ component = Div(
             Div(
                 Span(
                     'Â© 2023',
-                    A('Flowbiteâ\x84¢', href='https://flowbite.com/'),
+                    A('Fastbiteâ\x84¢', href='https://flowbite.com/'),
                     '. All Rights Reserved.',
                     cls='text-sm text-gray-500 dark:text-gray-300 sm:text-center'
                 ),
@@ -711,7 +711,7 @@ component = Div(
             Div(
                 Span(
                     'Â© 2023',
-                    A('Flowbiteâ\x84¢', href='https://flowbite.com/'),
+                    A('Fastbiteâ\x84¢', href='https://flowbite.com/'),
                     '. All Rights Reserved.',
                     cls='text-sm text-gray-500 dark:text-gray-300 sm:text-center'
                 ),
@@ -801,7 +801,7 @@ component = Div(
     Footer(
         Span(
             'Â© 2023',
-            A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+            A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
             '. All Rights Reserved.',
             cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
         ),
@@ -826,7 +826,7 @@ component = Div(
     Footer(
         Span(
             'Â© 2023',
-            A('Flowbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
+            A('Fastbiteâ\x84¢', href='https://flowbite.com/', cls='hover:underline'),
             '. All Rights Reserved.',
             cls='text-sm text-gray-500 sm:text-center dark:text-gray-400'
         ),
@@ -854,7 +854,7 @@ component = Div(
         A('#', aria_label='Link to this section: More examples', href='#more-examples', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('For more footer examples you can check out the footer sections from Flowbite Blocks:'),
+    P('For more footer examples you can check out the footer sections from Fastbite Blocks:'),
     Ul(
         Li(
             A('Footers for dashboard', href='https://flowbite.com/blocks/application/dashboard-footer/')

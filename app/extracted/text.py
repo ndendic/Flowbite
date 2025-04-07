@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -113,19 +113,19 @@ component = Div(
         'class.'
     ),
     component_showcase(Div(
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tighter text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tight text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-normal text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wide text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wider text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-widest text-gray-500 md:text-lg dark:text-gray-400')
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tighter text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tight text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-normal text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wide text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wider text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-widest text-gray-500 md:text-lg dark:text-gray-400')
 ), code="""Div(
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tighter text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tight text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-normal text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wide text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wider text-gray-500 md:text-lg dark:text-gray-400'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='tracking-widest text-gray-500 md:text-lg dark:text-gray-400')
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tighter text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-tight text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-normal text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wide text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-wider text-gray-500 md:text-lg dark:text-gray-400'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='tracking-widest text-gray-500 md:text-lg dark:text-gray-400')
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
         'Text Decoration',
@@ -357,9 +357,9 @@ component = Div(
         'class to align the text to the left side of the page.'
     ),
     component_showcase(Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-left rtl:text-right text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-left rtl:text-right text-gray-500 dark:text-gray-400')
 ), code="""Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-left rtl:text-right text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-left rtl:text-right text-gray-500 dark:text-gray-400')
 )""", id="example_12",cls='mt-2 mb-6'),
     H3(
         'Center',
@@ -373,9 +373,9 @@ component = Div(
         'class to align the text content to the center of the page.'
     ),
     component_showcase(Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-center text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-center text-gray-500 dark:text-gray-400')
 ), code="""Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-center text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-center text-gray-500 dark:text-gray-400')
 )""", id="example_13",cls='mt-2 mb-6'),
     H3(
         'Right',
@@ -389,9 +389,9 @@ component = Div(
         'class to align the text element to the right side of the page.'
     ),
     component_showcase(Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-right rtl:text-left text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-right rtl:text-left text-gray-500 dark:text-gray-400')
 ), code="""Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-right rtl:text-left text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-right rtl:text-left text-gray-500 dark:text-gray-400')
 )""", id="example_14",cls='mt-2 mb-6'),
     H3(
         'Text justify',
@@ -405,9 +405,9 @@ component = Div(
         'class to justify the text content.'
     ),
     component_showcase(Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-justify text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-justify text-gray-500 dark:text-gray-400')
 ), code="""Div(
-    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Flowbite component library', cls='text-justify text-gray-500 dark:text-gray-400')
+    P('Get started with an enterprise-level, professionally designed, fully responsive, and HTML semantic set of web pages, sections and over 400+ components crafted with the utility classes from Tailwind CSS and based on the Fastbite component library', cls='text-justify text-gray-500 dark:text-gray-400')
 )""", id="example_15",cls='mt-2 mb-6'),
     H2(
         'Whitespace',
@@ -554,15 +554,15 @@ component = Div(
         'class from Tailwind CSS to set the opacity of inline text elements.'
     ),
     component_showcase(Div(
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/100 dark:text-primary-500/100'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/75 dark:text-primary-500/75'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/50 dark:text-primary-500/50'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/25 dark:text-primary-500/25')
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/100 dark:text-primary-500/100'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/75 dark:text-primary-500/75'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/50 dark:text-primary-500/50'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/25 dark:text-primary-500/25')
 ), code="""Div(
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/100 dark:text-primary-500/100'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/75 dark:text-primary-500/75'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/50 dark:text-primary-500/50'),
-    P('Flowbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/25 dark:text-primary-500/25')
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/100 dark:text-primary-500/100'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/75 dark:text-primary-500/75'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/50 dark:text-primary-500/50'),
+    P('Fastbite app will help you improve yourself by analysing your everyday life.', cls='text-xl font-semibold text-primary-600/25 dark:text-primary-500/25')
 )""", id="example_20",cls='mt-2 mb-6'),
     id='mainContent'
 )

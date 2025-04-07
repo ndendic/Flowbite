@@ -1,13 +1,13 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('Flowbite allows you to use the Tailwind CSS tooltip component to show extra information when hovering or focusing over an element in multiple positions, styles, and animations.'),
+    P('Fastbite allows you to use the Tailwind CSS tooltip component to show extra information when hovering or focusing over an element in multiple positions, styles, and animations.'),
     P(
         'Before continuing, make sure that you have the',
-        A('Flowbite JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
+        A('Fastbite JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
         'included in your project in order to make the tooltip component work.'
     ),
     H2(
@@ -275,7 +275,7 @@ component = Div(
     P(
         'The',
         Strong('Tooltip'),
-        'class from Flowbite can be used to create an object that will show a tooltip element relative to the main trigger element, such as a button, based on the parameters, options, and methods that you provide.'
+        'class from Fastbite can be used to create an object that will show a tooltip element relative to the main trigger element, such as a button, based on the parameters, options, and methods that you provide.'
     ),
     H3(
         'Object parameters',
@@ -1112,9 +1112,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Tooltip class, parameters and its options.'
+        'from Fastbite then you can import the types for the Tooltip class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

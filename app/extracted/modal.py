@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The modal component can be used as an interactive dialog on top of the main content area of the website to show notifications and gather information using form elements from your website users.'),
-    P('Get started with multiple sizes, colors, and styles built with the utility classes from Tailwind CSS and the components from Flowbite.'),
+    P('Get started with multiple sizes, colors, and styles built with the utility classes from Tailwind CSS and the components from Fastbite.'),
     H2(
         'Default modal',
         Span(id='modal-01', cls='absolute -top-[140px]'),
@@ -620,7 +620,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                             Label(
                                 Div(
                                     Div('UI/UX Engineer', cls='w-full text-lg font-semibold'),
-                                    Div('Flowbite', cls='w-full text-gray-500 dark:text-gray-400'),
+                                    Div('Fastbite', cls='w-full text-gray-500 dark:text-gray-400'),
                                     cls='block'
                                 ),
                                 Svg(
@@ -720,7 +720,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                             Label(
                                 Div(
                                     Div('UI/UX Engineer', cls='w-full text-lg font-semibold'),
-                                    Div('Flowbite', cls='w-full text-gray-500 dark:text-gray-400'),
+                                    Div('Fastbite', cls='w-full text-gray-500 dark:text-gray-400'),
                                     cls='block'
                                 ),
                                 Svg(
@@ -835,7 +835,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
                             H3(
-                                'Flowbite Application UI v2.0.0',
+                                'Fastbite Application UI v2.0.0',
                                 Span('Latest', cls='bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300 ms-3'),
                                 cls='flex items-start mb-1 text-lg font-semibold text-gray-900 dark:text-white'
                             ),
@@ -868,7 +868,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
-                            H3('Flowbite Figma v2.8.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+                            H3('Fastbite Figma v2.8.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
                             Time('Released on Oct 7th, 2023', cls='block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400'),
                             Button(
                                 Svg(
@@ -901,7 +901,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
-                            H3('Flowbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+                            H3('Fastbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
                             Time('Released on December 2nd, 2021', cls='block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400'),
                             cls='ms-8'
                         ),
@@ -957,7 +957,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
                             H3(
-                                'Flowbite Application UI v2.0.0',
+                                'Fastbite Application UI v2.0.0',
                                 Span('Latest', cls='bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300 ms-3'),
                                 cls='flex items-start mb-1 text-lg font-semibold text-gray-900 dark:text-white'
                             ),
@@ -990,7 +990,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
-                            H3('Flowbite Figma v2.8.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+                            H3('Fastbite Figma v2.8.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
                             Time('Released on Oct 7th, 2023', cls='block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400'),
                             Button(
                                 Svg(
@@ -1023,7 +1023,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 cls='absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600'
                             ),
-                            H3('Flowbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+                            H3('Fastbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
                             Time('Released on December 2nd, 2021', cls='block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400'),
                             cls='ms-8'
                         ),
@@ -2201,7 +2201,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
         A('#', aria_label='Link to this section: More examples', href='#more-examples', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('You can check out more modal component examples from the following resources from Flowbite Blocks:'),
+    P('You can check out more modal component examples from the following resources from Fastbite Blocks:'),
     Ul(
         Li(
             A('CRUD read modals', href='https://flowbite.com/blocks/application/crud-read-modals/')
@@ -2225,7 +2225,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
     P(
         'The',
         Strong('Modal'),
-        'class from Flowbite can be used to create an object that will launch an interactive modal based on the object parameters, options, and methods that you choose to apply.'
+        'class from Fastbite can be used to create an object that will launch an interactive modal based on the object parameters, options, and methods that you choose to apply.'
     ),
     H3(
         'Object parameters',
@@ -3629,9 +3629,9 @@ It requires organizations to notify users as soon as possible of high-risk data 
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Modal class, parameters and its options.'
+        'from Fastbite then you can import the types for the Modal class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

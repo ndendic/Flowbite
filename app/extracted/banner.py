@@ -1,10 +1,10 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('Get started with the sticky banner component coded with Tailwind CSS and Flowbite to show marketing, informational and CTA messages to your website visitors fixed to the top or bottom part of the page as the user scroll down the main content area.'),
+    P('Get started with the sticky banner component coded with Tailwind CSS and Fastbite to show marketing, informational and CTA messages to your website visitors fixed to the top or bottom part of the page as the user scroll down the main content area.'),
     P('Explore the following examples based on various styles, sizes, and positionings to leverage the sticky banner component and increase marketing conversions with a responsive element supporting dark mode.'),
     H2(
         'Default sticky banner',
@@ -31,7 +31,7 @@ component = Div(
                 ),
                 Span(
                     'New brand identity has been launched for the',
-                    A('Flowbite Library', href='https://flowbite.com', cls='inline font-medium text-primary-600 underline dark:text-primary-500 hover:no-underline')
+                    A('Fastbite Library', href='https://flowbite.com', cls='inline font-medium text-primary-600 underline dark:text-primary-500 hover:no-underline')
                 ),
                 cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'
             ),
@@ -76,7 +76,7 @@ component = Div(
                 ),
                 Span(
                     'New brand identity has been launched for the',
-                    A('Flowbite Library', href='https://flowbite.com', cls='inline font-medium text-primary-600 underline dark:text-primary-500 hover:no-underline')
+                    A('Fastbite Library', href='https://flowbite.com', cls='inline font-medium text-primary-600 underline dark:text-primary-500 hover:no-underline')
                 ),
                 cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'
             ),
@@ -241,8 +241,8 @@ component = Div(
     Div(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-6 me-2'),
-                Span('Flowbite', cls='self-center text-lg font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-6 me-2'),
+                Span('Fastbite', cls='self-center text-lg font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600'
             ),
@@ -275,8 +275,8 @@ component = Div(
     Div(
         Div(
             A(
-                Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite Logo', cls='h-6 me-2'),
-                Span('Flowbite', cls='self-center text-lg font-semibold whitespace-nowrap dark:text-white'),
+                Img(src='images/logo.png', alt='Fastbite Logo', cls='h-6 me-2'),
+                Span('Fastbite', cls='self-center text-lg font-semibold whitespace-nowrap dark:text-white'),
                 href='https://flowbite.com/',
                 cls='flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600'
             ),
@@ -389,7 +389,7 @@ component = Div(
     Div(
         Div(
             H2('Integration is the key', cls='mb-1 text-base font-semibold text-gray-900 dark:text-white'),
-            P('You can integrate Flowbite with many tools to make your work even more efficient and lightning fast based on Tailwind CSS.', cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'),
+            P('You can integrate Fastbite with many tools to make your work even more efficient and lightning fast based on Tailwind CSS.', cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'),
             cls='mb-4 md:mb-0 md:me-4'
         ),
         Div(
@@ -443,7 +443,7 @@ component = Div(
     Div(
         Div(
             H2('Integration is the key', cls='mb-1 text-base font-semibold text-gray-900 dark:text-white'),
-            P('You can integrate Flowbite with many tools to make your work even more efficient and lightning fast based on Tailwind CSS.', cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'),
+            P('You can integrate Fastbite with many tools to make your work even more efficient and lightning fast based on Tailwind CSS.', cls='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'),
             cls='mb-4 md:mb-0 md:me-4'
         ),
         Div(
@@ -503,7 +503,7 @@ component = Div(
     P(
         'For more sticky banner examples you can check',
         A('banner sections', href='https://flowbite.com/blocks/marketing/banner/'),
-        'from Flowbite Blocks.'
+        'from Fastbite Blocks.'
     ),
     id='mainContent'
 )

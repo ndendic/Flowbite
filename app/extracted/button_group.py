@@ -1,10 +1,10 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The button group component from Flowbite can be used to stack together multiple buttons and links inside a single element.'),
+    P('The button group component from Fastbite can be used to stack together multiple buttons and links inside a single element.'),
     H2(
         'Default example',
         Span(id='default-example', cls='absolute -top-[140px]'),

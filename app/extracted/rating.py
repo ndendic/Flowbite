@@ -1,10 +1,10 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('Get started with the rating component to show an aggregate of reviews and scores in the forms of stars or numbers using the utility classes from Tailwind CSS and components from Flowbite.'),
+    P('Get started with the rating component to show an aggregate of reviews and scores in the forms of stars or numbers using the utility classes from Tailwind CSS and components from Fastbite.'),
     P('You can find multiple examples on this page including different styles, sizes, and variants of the rating component and other associated elements such as a comment or card.'),
     H2(
         'Default rating',

@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -364,7 +364,7 @@ component = Div(
     Dl(
         Div(
             Dt('Email address', cls='mb-1 text-gray-500 md:text-lg dark:text-gray-400'),
-            Dd('yourname@flowbite.com', cls='text-lg font-semibold'),
+            Dd('yourname@fastbite.com', cls='text-lg font-semibold'),
             cls='flex flex-col pb-3'
         ),
         Div(
@@ -383,7 +383,7 @@ component = Div(
     Dl(
         Div(
             Dt('Email address', cls='mb-1 text-gray-500 md:text-lg dark:text-gray-400'),
-            Dd('yourname@flowbite.com', cls='text-lg font-semibold'),
+            Dd('yourname@fastbite.com', cls='text-lg font-semibold'),
             cls='flex flex-col pb-3'
         ),
         Div(
@@ -574,7 +574,7 @@ component = Div(
                 ),
                 Div(
                     P('Neil Sims', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$320', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -590,7 +590,7 @@ component = Div(
                 ),
                 Div(
                     P('Bonnie Green', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$3467', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -606,7 +606,7 @@ component = Div(
                 ),
                 Div(
                     P('Michael Gough', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$67', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -622,7 +622,7 @@ component = Div(
                 ),
                 Div(
                     P('Thomas Lean', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$2367', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -638,7 +638,7 @@ component = Div(
                 ),
                 Div(
                     P('Lana Byrd', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$367', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -658,7 +658,7 @@ component = Div(
                 ),
                 Div(
                     P('Neil Sims', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$320', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -674,7 +674,7 @@ component = Div(
                 ),
                 Div(
                     P('Bonnie Green', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$3467', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -690,7 +690,7 @@ component = Div(
                 ),
                 Div(
                     P('Michael Gough', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$67', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -706,7 +706,7 @@ component = Div(
                 ),
                 Div(
                     P('Thomas Lean', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$2367', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),
@@ -722,7 +722,7 @@ component = Div(
                 ),
                 Div(
                     P('Lana Byrd', cls='text-sm font-medium text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Div('$367', cls='inline-flex items-center text-base font-semibold text-gray-900 dark:text-white'),

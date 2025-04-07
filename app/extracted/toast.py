@@ -1,13 +1,13 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P(
         'The toast component can be used to enhance your website’s interactivity by pushing notifications to your visitors. You can choose from multiple styles, colors, sizes, and positions and even dismiss the component by using the',
         Code('data-dismiss-target'),
-        'data attribute from Flowbite.'
+        'data attribute from Fastbite.'
     ),
     H2(
         'Default toast',
@@ -408,7 +408,7 @@ component = Div(
             Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese Leos image', cls='w-8 h-8 rounded-full'),
             Div(
                 Span('Jese Leos', cls='mb-1 text-sm font-semibold text-gray-900 dark:text-white'),
-                Div('Hi Neil, thanks for sharing your thoughts regarding Flowbite.', cls='mb-2 text-sm font-normal'),
+                Div('Hi Neil, thanks for sharing your thoughts regarding Fastbite.', cls='mb-2 text-sm font-normal'),
                 A('Reply', href='#', cls='inline-flex px-2.5 py-1.5 text-xs font-medium text-center text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-600 dark:focus:ring-primary-800'),
                 cls='ms-3 text-sm font-normal'
             ),
@@ -439,7 +439,7 @@ component = Div(
             Img(src='/docs/images/people/profile-picture-1.jpg', alt='Jese Leos image', cls='w-8 h-8 rounded-full'),
             Div(
                 Span('Jese Leos', cls='mb-1 text-sm font-semibold text-gray-900 dark:text-white'),
-                Div('Hi Neil, thanks for sharing your thoughts regarding Flowbite.', cls='mb-2 text-sm font-normal'),
+                Div('Hi Neil, thanks for sharing your thoughts regarding Fastbite.', cls='mb-2 text-sm font-normal'),
                 A('Reply', href='#', cls='inline-flex px-2.5 py-1.5 text-xs font-medium text-center text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-600 dark:focus:ring-primary-800'),
                 cls='ms-3 text-sm font-normal'
             ),

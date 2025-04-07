@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -8,7 +8,7 @@ component = Div(
     P('You can set multiple options such as the placement, activate body scrolling, show or hide the backdrop and even use the swipeable edge functionality to show a small part of the drawer when it is not shown completely.'),
     P(
         'To enable interactivity via data attributes and the Drawer API you need to include',
-        A('Flowbite’s JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
+        A('Fastbite’s JavaScript file', href='https://flowbite.com/docs/getting-started/quickstart/'),
         '.'
     ),
     H2(
@@ -86,7 +86,7 @@ component = Div(
             P(
                 'Supercharge your hiring by taking advantage of our',
                 A('limited-time sale', href='#', cls='text-primary-600 underline dark:text-primary-500 hover:no-underline'),
-                'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+                'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
                 cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
             ),
             Div(
@@ -149,7 +149,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
@@ -985,7 +985,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
@@ -1047,7 +1047,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
@@ -1122,7 +1122,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
@@ -1184,7 +1184,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
@@ -1254,7 +1254,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
@@ -1313,7 +1313,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
@@ -1380,7 +1380,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
@@ -1439,7 +1439,7 @@ code="""Div(
         P(
             'Supercharge your hiring by taking advantage of our',
             A('limited-time sale', href='#', cls='text-primary-600 underline font-medium dark:text-primary-500 hover:no-underline'),
-            'for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
+            'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
@@ -3309,7 +3309,7 @@ code="""Div(
         A('#', aria_label='Link to this section: More examples', href='#more-examples', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('For more drawer component examples you can check out the following resources from Flowbite Blocks:'),
+    P('For more drawer component examples you can check out the following resources from Fastbite Blocks:'),
     Ul(
         Li(
             A('CRUD read drawers', href='https://flowbite.com/blocks/application/crud-read-drawers/')
@@ -4569,7 +4569,7 @@ code="""Div(
                     cls='line'
                 ),
                 Span(
-                    Span('for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked', cls='cl'),
+                    Span('for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked', cls='cl'),
                     cls='line'
                 ),
                 Span(
@@ -4839,9 +4839,9 @@ code="""Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Drawer (off-canvas) class, parameters and its options.'
+        'from Fastbite then you can import the types for the Drawer (off-canvas) class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

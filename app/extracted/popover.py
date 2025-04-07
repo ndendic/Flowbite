@@ -1,12 +1,12 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('Get started with the popover component to show any type of content inside a pop-up box when hovering or clicking over a trigger element. There are multiple examples that you can choose from, such as showing more information about a user profile, company profile, password strength, and more.'),
     P(
-        'Make sure that you have the Flowbite JavaScript included in your project to enable the popover interactivity by following the',
+        'Make sure that you have the Fastbite JavaScript included in your project to enable the popover interactivity by following the',
         A('quickstart guide', href='https://flowbite.com/docs/getting-started/quickstart/'),
         '.'
     ),
@@ -192,7 +192,7 @@ component = Div(
             Div(
                 Div(
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite logo', cls='w-8 h-8 rounded-full'),
+                        Img(src='images/logo.png', alt='Fastbite logo', cls='w-8 h-8 rounded-full'),
                         href='#',
                         cls='block p-2 bg-gray-100 rounded-lg dark:bg-gray-700'
                     ),
@@ -200,7 +200,7 @@ component = Div(
                 ),
                 Div(
                     P(
-                        A('Flowbite', href='#', cls='hover:underline'),
+                        A('Fastbite', href='#', cls='hover:underline'),
                         cls='mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white'
                     ),
                     P('Tech company', cls='mb-3 text-sm font-normal'),
@@ -314,7 +314,7 @@ component = Div(
             Div(
                 Div(
                     A(
-                        Img(src='https://flowbite.com/docs/images/logo.svg', alt='Flowbite logo', cls='w-8 h-8 rounded-full'),
+                        Img(src='images/logo.png', alt='Fastbite logo', cls='w-8 h-8 rounded-full'),
                         href='#',
                         cls='block p-2 bg-gray-100 rounded-lg dark:bg-gray-700'
                     ),
@@ -322,7 +322,7 @@ component = Div(
                 ),
                 Div(
                     P(
-                        A('Flowbite', href='#', cls='hover:underline'),
+                        A('Fastbite', href='#', cls='hover:underline'),
                         cls='mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white'
                     ),
                     P('Tech company', cls='mb-3 text-sm font-normal'),
@@ -737,7 +737,7 @@ component = Div(
     Form(
         Div(
             Label('Your email', fr='email', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-            Input(type='email', id='email', placeholder='name@flowbite.com', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Input(type='email', id='email', placeholder='name@fastbite.com', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             cls='mb-6'
         ),
         Div(
@@ -816,7 +816,7 @@ component = Div(
     Form(
         Div(
             Label('Your email', fr='email', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
-            Input(type='email', id='email', placeholder='name@flowbite.com', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Input(type='email', id='email', placeholder='name@fastbite.com', required=True, cls='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             cls='mb-6'
         ),
         Div(
@@ -1258,7 +1258,7 @@ component = Div(
         A('#', aria_label='Link to this section: JavaScript behaviour', href='#javascript-behaviour', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('The Popover API from Flowbite can be used to create an object that will show a pop-up box relative to the main trigger element based on the parameters, options, and methods that you provide.'),
+    P('The Popover API from Fastbite can be used to create an object that will show a pop-up box relative to the main trigger element based on the parameters, options, and methods that you provide.'),
     H3(
         'Object parameters',
         Span(id='object-parameters', cls='absolute -top-[140px]'),
@@ -2231,9 +2231,9 @@ component = Div(
     P(
         'If you’re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Popover class, parameters and its options.'
+        'from Fastbite then you can import the types for the Popover class, parameters and its options.'
     ),
-    P('Here’s an example that applies the types from Flowbite to the code above:'),
+    P('Here’s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(

@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -1719,7 +1719,7 @@ component = Div(
     Div(
         Div(
             Img(src='/docs/images/misc/flowbite-yt-screenshot.png', alt='Video preview', cls='h-8 me-3 rounded-sm'),
-            Span('Flowbite Crash Course', cls='text-sm text-gray-500 dark:text-gray-400'),
+            Span('Fastbite Crash Course', cls='text-sm text-gray-500 dark:text-gray-400'),
             cls='items-center justify-center hidden me-auto md:flex'
         ),
         Div(
@@ -1939,7 +1939,7 @@ component = Div(
     Div(
         Div(
             Img(src='/docs/images/misc/flowbite-yt-screenshot.png', alt='Video preview', cls='h-8 me-3 rounded-sm'),
-            Span('Flowbite Crash Course', cls='text-sm text-gray-500 dark:text-gray-400'),
+            Span('Fastbite Crash Course', cls='text-sm text-gray-500 dark:text-gray-400'),
             cls='items-center justify-center hidden me-auto md:flex'
         ),
         Div(

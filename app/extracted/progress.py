@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -29,7 +29,7 @@ component = Div(
         A('#', aria_label='Link to this section: Sizes', href='#sizes', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'),
         cls='relative group'
     ),
-    P('You can also use different sizes by using various sizing utility classes from Flowbite and Tailwind CSS.'),
+    P('You can also use different sizes by using various sizing utility classes from Fastbite and Tailwind CSS.'),
     component_showcase(Div(
     Div('Small', cls='mb-1 text-base font-medium dark:text-white'),
     Div(
@@ -100,7 +100,7 @@ component = Div(
     P('And this is an example of using a progress bar outside the bar.'),
     component_showcase(Div(
     Div(
-        Span('Flowbite', cls='text-base font-medium text-primary-700 dark:text-white'),
+        Span('Fastbite', cls='text-base font-medium text-primary-700 dark:text-white'),
         Span('45%', cls='text-sm font-medium text-primary-700 dark:text-white'),
         cls='flex justify-between mb-1'
     ),
@@ -110,7 +110,7 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Span('Flowbite', cls='text-base font-medium text-primary-700 dark:text-white'),
+        Span('Fastbite', cls='text-base font-medium text-primary-700 dark:text-white'),
         Span('45%', cls='text-sm font-medium text-primary-700 dark:text-white'),
         cls='flex justify-between mb-1'
     ),
@@ -128,7 +128,7 @@ component = Div(
     P(
         'You can also apply any color using the',
         Code('bg-{color}'),
-        'utility classes from Tailwind CSS and Flowbite.'
+        'utility classes from Tailwind CSS and Fastbite.'
     ),
     component_showcase(Div(
     Div('Dark', cls='mb-1 text-base font-medium dark:text-white'),

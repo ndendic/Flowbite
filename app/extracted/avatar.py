@@ -1,10 +1,10 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The avatar component can be used as a visual identifier for a user profile on your website and you can use the examples from Flowbite to modify the styles and sizes of these components using the utility classes from Tailwind CSS.'),
+    P('The avatar component can be used as a visual identifier for a user profile on your website and you can use the examples from Fastbite to modify the styles and sizes of these components using the utility classes from Tailwind CSS.'),
     H2(
         'Default avatar',
         Span(id='default-avatar', cls='absolute -top-[140px]'),
@@ -199,7 +199,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(
@@ -227,7 +227,7 @@ component = Div(
     Div(
         Div(
             Div('Bonnie Green'),
-            Div('name@flowbite.com', cls='font-medium truncate'),
+            Div('name@fastbite.com', cls='font-medium truncate'),
             cls='px-4 py-3 text-sm text-gray-900 dark:text-white'
         ),
         Ul(

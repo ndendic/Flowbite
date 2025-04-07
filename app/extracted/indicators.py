@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The indicator component can be used as a small element positioned absolutely relative to another component such as a button or card and show a number count, account status (red for offline, green for online) and other useful information.'),
-    P('Check out the following examples for multiple sizes, colors, positionings, styles, and more all coded with Tailwind CSS and Flowbite.'),
+    P('Check out the following examples for multiple sizes, colors, positionings, styles, and more all coded with Tailwind CSS and Fastbite.'),
     H2(
         'Default indicator',
         Span(id='default-indicator', cls='absolute -top-[140px]'),
@@ -173,7 +173,7 @@ component = Div(
                 ),
                 Div(
                     P('Neil Sims', cls='text-sm font-semibold text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Span(
@@ -193,7 +193,7 @@ component = Div(
                 ),
                 Div(
                     P('Bonnie Green', cls='text-sm font-semibold text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Span(
@@ -218,7 +218,7 @@ component = Div(
                 ),
                 Div(
                     P('Neil Sims', cls='text-sm font-semibold text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Span(
@@ -238,7 +238,7 @@ component = Div(
                 ),
                 Div(
                     P('Bonnie Green', cls='text-sm font-semibold text-gray-900 truncate dark:text-white'),
-                    P('email@flowbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
+                    P('email@fastbite.com', cls='text-sm text-gray-500 truncate dark:text-gray-400'),
                     cls='flex-1 min-w-0'
                 ),
                 Span(

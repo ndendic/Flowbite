@@ -1,10 +1,10 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
-    P('The timeline component can be used to show series of data in a chronological order for use cases such as activity feeds, user actions, application updates, and more. Get started with multiple vertical timeline styles built with the utility classes from Tailwind CSS and Flowbite.'),
+    P('The timeline component can be used to show series of data in a chronological order for use cases such as activity feeds, user actions, application updates, and more. Get started with multiple vertical timeline styles built with the utility classes from Tailwind CSS and Fastbite.'),
     H2(
         'Default timeline',
         Span(id='default-timeline', cls='absolute -top-[140px]'),
@@ -112,7 +112,7 @@ component = Div(
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
             H3(
-                'Flowbite Application UI v2.0.0',
+                'Fastbite Application UI v2.0.0',
                 Span('Latest', cls='bg-primary-100 text-primary-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300 ms-3'),
                 cls='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'
             ),
@@ -146,7 +146,7 @@ component = Div(
                 ),
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
-            H3('Flowbite Figma v1.3.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+            H3('Fastbite Figma v1.3.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
             Time('Released on December 7th, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
             P('All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
             cls='mb-10 ms-6'
@@ -163,7 +163,7 @@ component = Div(
                 ),
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
-            H3('Flowbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+            H3('Fastbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
             Time('Released on December 2nd, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
             P('Get started with dozens of web components and interactive elements built on top of Tailwind CSS.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
             cls='ms-6'
@@ -185,7 +185,7 @@ component = Div(
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
             H3(
-                'Flowbite Application UI v2.0.0',
+                'Fastbite Application UI v2.0.0',
                 Span('Latest', cls='bg-primary-100 text-primary-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300 ms-3'),
                 cls='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'
             ),
@@ -219,7 +219,7 @@ component = Div(
                 ),
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
-            H3('Flowbite Figma v1.3.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+            H3('Fastbite Figma v1.3.0', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
             Time('Released on December 7th, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
             P('All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
             cls='mb-10 ms-6'
@@ -236,7 +236,7 @@ component = Div(
                 ),
                 cls='absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900'
             ),
-            H3('Flowbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
+            H3('Fastbite Library v1.2.2', cls='mb-1 text-lg font-semibold text-gray-900 dark:text-white'),
             Time('Released on December 2nd, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
             P('Get started with dozens of web components and interactive elements built on top of Tailwind CSS.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
             cls='ms-6'
@@ -270,7 +270,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.0.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.0.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on December 2, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -294,7 +294,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.2.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.2.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on December 23, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -318,7 +318,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.3.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.3.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on January 5, 2022', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -346,7 +346,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.0.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.0.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on December 2, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -370,7 +370,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.2.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.2.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on December 23, 2021', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -394,7 +394,7 @@ component = Div(
                 cls='flex items-center'
             ),
             Div(
-                H3('Flowbite Library v1.3.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
+                H3('Fastbite Library v1.3.0', cls='text-lg font-semibold text-gray-900 dark:text-white'),
                 Time('Released on January 5, 2022', cls='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'),
                 P('Get started with dozens of web components and interactive elements.', cls='text-base font-normal text-gray-500 dark:text-gray-400'),
                 cls='mt-3 sm:pe-8'
@@ -441,7 +441,7 @@ component = Div(
                     Time('2 hours ago', cls='mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0'),
                     Div(
                         'Thomas Lean commented on',
-                        A('Flowbite Pro', href='#', cls='font-semibold text-gray-900 dark:text-white hover:underline'),
+                        A('Fastbite Pro', href='#', cls='font-semibold text-gray-900 dark:text-white hover:underline'),
                         cls='text-sm font-normal text-gray-500 lex dark:text-gray-300'
                     ),
                     cls='items-center justify-between mb-3 sm:flex'
@@ -501,7 +501,7 @@ component = Div(
                     Time('2 hours ago', cls='mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0'),
                     Div(
                         'Thomas Lean commented on',
-                        A('Flowbite Pro', href='#', cls='font-semibold text-gray-900 dark:text-white hover:underline'),
+                        A('Fastbite Pro', href='#', cls='font-semibold text-gray-900 dark:text-white hover:underline'),
                         cls='text-sm font-normal text-gray-500 lex dark:text-gray-300'
                     ),
                     cls='items-center justify-between mb-3 sm:flex'
@@ -552,7 +552,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),
@@ -620,7 +620,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),
@@ -681,7 +681,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),
@@ -753,7 +753,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),
@@ -821,7 +821,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),
@@ -882,7 +882,7 @@ component = Div(
                             'likes',
                             Span("Bonnie Green's", cls='font-medium text-gray-900 dark:text-white'),
                             'post in',
-                            Span('How to start with Flowbite library', cls='font-medium text-gray-900 dark:text-white'),
+                            Span('How to start with Fastbite library', cls='font-medium text-gray-900 dark:text-white'),
                             cls='text-base font-normal'
                         ),
                         Div('"I wanted to share a webinar zeroheight."', cls='text-sm font-normal'),

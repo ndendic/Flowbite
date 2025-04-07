@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from theme_switcher import ThemeSwitcher, palette_icon
 from component_registry import component_registry
 
@@ -26,8 +26,8 @@ def Navbar():
                         cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),  
                     A(
-                        Img(src='images/logo.svg', alt='Logo', cls='h-8 me-3'),
-                        Span('FastBite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                        Img(src='images/logo.png', alt='Logo', cls='h-8 me-3'),
+                        Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='/',
                         cls='flex ms-2 md:me-24'
                     ),
@@ -66,7 +66,7 @@ def Navbar():
                         Div(
                             Div(
                                 P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
-                                P('neil.sims@flowbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
+                                P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
                                 role='none',
                                 cls='px-4 py-3'
                             ),
@@ -109,20 +109,18 @@ def SidebarItem(name, href = "#", icon=None):
             hx_boost="true",
             hx_target="#content",
             hx_swap_oob=True,
-            hx_on_load="initializeComponents()",
             cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group'
         )
     )
 
 standard_sidebar_items = [
-    SidebarItem("Home", href="/"),
-    SidebarItem("Typography", href="/typography"),
-    SidebarItem("Buttons", href="/buttons"),
-    SidebarItem("Containers", href="/containers"),
-    SidebarItem("Playground", href="/playground"),
-    SidebarItem("Icons", href="/icons"),
-    SidebarItem("Themes", href="/themes", icon=palette_icon),
-    SidebarItem("Input Fields", href="/input_fields"),
+    NavLi("Home", href="/#", icon="home",hx_boost="true",hx_target="#content",hx_swap_oob=True),
+    NavLi("Typography", href="/typography#", icon="type",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Buttons", href="/buttons#", icon="stretch-horizontal",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Containers", href="/containers#", icon="layout-dashboard",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Playground", href="/playground#", icon="brush",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Icons and images", href="/icons#", icon="image",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Themes", href="/themes#", icon='palette',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)
@@ -146,6 +144,7 @@ def Main(content,cls=()):
     return DivCentered(
         Div(content,
             Script('htmx.onLoad(function(content) {initTabs();})'),
+            # Script('htmx.onLoad(function(content) {initSidebars();})'),
             cls='p-4 mt-18 max-w-4xl',
             id='content',
 

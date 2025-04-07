@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The range component can be used as an input field to get a number from the user based on your custom selection (ie. from 1 to 100) by using a sliding animation.'),
-    P('The examples on this page are all coded with Tailwind CSS and requires you to install Flowbite as a plugin inside your project to obtain all the necessary stylings.'),
+    P('The examples on this page are all coded with Tailwind CSS and requires you to install Fastbite as a plugin inside your project to obtain all the necessary stylings.'),
     H2(
         'Range slider example',
         Span(id='range-slider-example', cls='absolute -top-[140px]'),
@@ -77,7 +77,7 @@ component = Div(
         Code('range-sm'),
         'and',
         Code('range-lg'),
-        'utility classes from Flowbite and Tailwind CSS.'
+        'utility classes from Fastbite and Tailwind CSS.'
     ),
     component_showcase(Div(
     Label('Small range', fr='small-range', cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),

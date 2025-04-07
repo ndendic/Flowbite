@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 article=Article(
@@ -10,7 +10,7 @@ article=Article(
                 Img(src='https://flowbite.com/docs/images/people/profile-picture-2.jpg', alt='Jese Leos', cls='mr-4 w-16 h-16 rounded-full'),
                 Div(
                     A('Jese Leos', href='#', rel='author', cls='text-xl font-bold text-gray-900 dark:text-white'),
-                    P('Graphic Designer, educator & CEO Flowbite', cls='text-base text-gray-500 dark:text-gray-400'),
+                    P('Graphic Designer, educator & CEO Fastbite', cls='text-base text-gray-500 dark:text-gray-400'),
                     P(
                         Time('Feb. 8, 2022', pubdate='', datetime='2022-02-08', title='February 8th, 2022'),
                         cls='text-base text-gray-500 dark:text-gray-400'
@@ -23,29 +23,29 @@ article=Article(
         H1('Best practices for successful prototypes', cls='mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white'),
         cls='mb-4 lg:mb-6 not-format'
     ),
-    P('Flowbite is an open-source library of UI components built with the utility-first\r\n              classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals,\r\n              datepickers.', cls='lead'),
+    P('Fastbite is an open-source library of UI components built with the utility-first\r\n              classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals,\r\n              datepickers.', cls='lead'),
     P('Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way,\r\n              you can think things through before committing to an actual design project.'),
     P(
         'But then I found a',
-        A('component library based on Tailwind CSS called\r\n                  Flowbite', href='https://flowbite.com'),
+        A('component library based on Tailwind CSS called\r\n                  Fastbite', href='https://flowbite.com'),
         '. It comes with the most commonly used UI components, such as buttons, navigation\r\n              bars, cards, form elements, and more which are conveniently built with the utility classes from\r\n              Tailwind CSS.'
     ),
     Figure(
         Img(src='https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png', alt=''),
         Figcaption('Digital art by Anonymous')
     ),
-    H2('Getting started with Flowbite'),
-    P('First of all you need to understand how Flowbite works. This library is not another framework.\r\n              Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the\r\n              documentation.'),
+    H2('Getting started with Fastbite'),
+    P('First of all you need to understand how Fastbite works. This library is not another framework.\r\n              Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the\r\n              documentation.'),
     P('It also includes a JavaScript file that enables interactive components, such as modals, dropdowns,\r\n              and datepickers which you can optionally include into your project via CDN or NPM.'),
     P(
         'You can check out the',
         A('quickstart\r\n                  guide', href='https://flowbite.com/docs/getting-started/quickstart/'),
-        'to explore the elements by including the CDN files into your project. But if you want\r\n              to build a project with Flowbite I recommend you to follow the build tools steps so that you can\r\n              purge and minify the generated CSS.'
+        'to explore the elements by including the CDN files into your project. But if you want\r\n              to build a project with Fastbite I recommend you to follow the build tools steps so that you can\r\n              purge and minify the generated CSS.'
     ),
     P(
         "You'll also receive a lot of useful application UI, marketing UI, and e-commerce pages that can help\r\n              you get started with your projects even faster. You can check out this",
         A('comparison table', href='https://flowbite.com/docs/components/tables/'),
-        'to better understand\r\n              the differences between the open-source and pro version of Flowbite.'
+        'to better understand\r\n              the differences between the open-source and pro version of Fastbite.'
     ),
     H2('When does design come in handy?'),
     P('While it might seem like extra work at a first glance, here are some key moments in which prototyping\r\n              will come in handy:'),
@@ -99,7 +99,7 @@ article=Article(
     H3('Laying the best for successful prototyping'),
     P('A serif is a small shape or projection that appears at the beginning:'),
     Blockquote(
-        P('Flowbite is just awesome. It contains tons of predesigned components and pages starting from\r\n                  login screen to complex dashboard. Perfect choice for your next SaaS application.')
+        P('Fastbite is just awesome. It contains tons of predesigned components and pages starting from\r\n                  login screen to complex dashboard. Perfect choice for your next SaaS application.')
     ),
     H4('Code example'),
     P('A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.\r\n              Typefaces with serifs are called serif typefaces. Serif fonts are classified as one of the\r\n              following:'),
@@ -174,7 +174,7 @@ article=Article(
         Strong('Start from the inside out'),
         '. A nice way to both organize your tasks and create more\r\n              user-friendly prototypes is by building your prototypes ‘inside out’. Start by focusing on what will\r\n              be important to your user, like a Buy now button or an image gallery, and list each element by order\r\n              of priority. This way, you’ll be able to create a prototype that puts your users’ needs at the heart\r\n              of your design.'
     ),
-    P('And there you have it! Everything you need to design and share prototypes — right in Flowbite Figma.'),
+    P('And there you have it! Everything you need to design and share prototypes — right in Fastbite Figma.'),
     cls='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'
 )
 
@@ -194,7 +194,7 @@ component = Div(
                 Img(src='https://flowbite.com/docs/images/people/profile-picture-2.jpg', alt='Jese Leos', cls='mr-4 w-16 h-16 rounded-full'),
                 Div(
                     A('Jese Leos', href='#', rel='author', cls='text-xl font-bold text-gray-900 dark:text-white'),
-                    P('Graphic Designer, educator & CEO Flowbite', cls='text-base text-gray-500 dark:text-gray-400'),
+                    P('Graphic Designer, educator & CEO Fastbite', cls='text-base text-gray-500 dark:text-gray-400'),
                     P(
                         Time('Feb. 8, 2022', pubdate='', datetime='2022-02-08', title='February 8th, 2022'),
                         cls='text-base text-gray-500 dark:text-gray-400'
@@ -207,29 +207,29 @@ component = Div(
         H1('Best practices for successful prototypes', cls='mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white'),
         cls='mb-4 lg:mb-6 not-format'
     ),
-    P('Flowbite is an open-source library of UI components built with the utility-first\r\n              classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals,\r\n              datepickers.', cls='lead'),
+    P('Fastbite is an open-source library of UI components built with the utility-first\r\n              classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals,\r\n              datepickers.', cls='lead'),
     P('Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way,\r\n              you can think things through before committing to an actual design project.'),
     P(
         'But then I found a',
-        A('component library based on Tailwind CSS called\r\n                  Flowbite', href='https://flowbite.com'),
+        A('component library based on Tailwind CSS called\r\n                  Fastbite', href='https://flowbite.com'),
         '. It comes with the most commonly used UI components, such as buttons, navigation\r\n              bars, cards, form elements, and more which are conveniently built with the utility classes from\r\n              Tailwind CSS.'
     ),
     Figure(
         Img(src='https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png', alt=''),
         Figcaption('Digital art by Anonymous')
     ),
-    H2('Getting started with Flowbite'),
-    P('First of all you need to understand how Flowbite works. This library is not another framework.\r\n              Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the\r\n              documentation.'),
+    H2('Getting started with Fastbite'),
+    P('First of all you need to understand how Fastbite works. This library is not another framework.\r\n              Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the\r\n              documentation.'),
     P('It also includes a JavaScript file that enables interactive components, such as modals, dropdowns,\r\n              and datepickers which you can optionally include into your project via CDN or NPM.'),
     P(
         'You can check out the',
         A('quickstart\r\n                  guide', href='https://flowbite.com/docs/getting-started/quickstart/'),
-        'to explore the elements by including the CDN files into your project. But if you want\r\n              to build a project with Flowbite I recommend you to follow the build tools steps so that you can\r\n              purge and minify the generated CSS.'
+        'to explore the elements by including the CDN files into your project. But if you want\r\n              to build a project with Fastbite I recommend you to follow the build tools steps so that you can\r\n              purge and minify the generated CSS.'
     ),
     P(
         "You'll also receive a lot of useful application UI, marketing UI, and e-commerce pages that can help\r\n              you get started with your projects even faster. You can check out this",
         A('comparison table', href='https://flowbite.com/docs/components/tables/'),
-        'to better understand\r\n              the differences between the open-source and pro version of Flowbite.'
+        'to better understand\r\n              the differences between the open-source and pro version of Fastbite.'
     ),
     H2('When does design come in handy?'),
     P('While it might seem like extra work at a first glance, here are some key moments in which prototyping\r\n              will come in handy:'),
@@ -283,7 +283,7 @@ component = Div(
     H3('Laying the best for successful prototyping'),
     P('A serif is a small shape or projection that appears at the beginning:'),
     Blockquote(
-        P('Flowbite is just awesome. It contains tons of predesigned components and pages starting from\r\n                  login screen to complex dashboard. Perfect choice for your next SaaS application.')
+        P('Fastbite is just awesome. It contains tons of predesigned components and pages starting from\r\n                  login screen to complex dashboard. Perfect choice for your next SaaS application.')
     ),
     H4('Code example'),
     P('A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.\r\n              Typefaces with serifs are called serif typefaces. Serif fonts are classified as one of the\r\n              following:'),
@@ -358,7 +358,7 @@ component = Div(
         Strong('Start from the inside out'),
         '. A nice way to both organize your tasks and create more\r\n              user-friendly prototypes is by building your prototypes ‘inside out’. Start by focusing on what will\r\n              be important to your user, like a Buy now button or an image gallery, and list each element by order\r\n              of priority. This way, you’ll be able to create a prototype that puts your users’ needs at the heart\r\n              of your design.'
     ),
-    P('And there you have it! Everything you need to design and share prototypes — right in Flowbite Figma.'),
+    P('And there you have it! Everything you need to design and share prototypes — right in Fastbite Figma.'),
     cls='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'
 )""", id="example_0",cls='mt-2 mb-6'),
     

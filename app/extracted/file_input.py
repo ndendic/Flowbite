@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The file input component can be used to upload one or more files from the device storage of the user available in multiple sizes, styles, and variants and built with the utility-first classes from Tailwind CSS including support for dark mode.'),
-    P('Make sure that you have included Flowbite as a plugin inside your Tailwind CSS project to apply all the necessary styles for the file input component.'),
+    P('Make sure that you have included Fastbite as a plugin inside your Tailwind CSS project to apply all the necessary styles for the file input component.'),
     H2(
         'File upload example',
         Span(id='file-upload-example', cls='absolute -top-[140px]'),

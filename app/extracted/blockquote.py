@@ -1,6 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
@@ -21,12 +21,12 @@ component = Div(
     P('Use this example to quote an external source inside a blockquote element.'),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
@@ -40,17 +40,17 @@ component = Div(
     component_showcase(Div(
     P('Does your user know how to exit out of screens? Can they follow your intended user journey and buy something from the site youâ\x80\x99ve designed? By running a usability test, youâ\x80\x99ll be able to see how users will interact with your design once itâ\x80\x99s live.', cls='text-gray-500 dark:text-gray-400'),
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white'),
         cls='p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800'
     ),
-    P('First of all you need to understand how Flowbite works. This library is not another framework. Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the documentation.', cls='text-gray-500 dark:text-gray-400')
+    P('First of all you need to understand how Fastbite works. This library is not another framework. Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the documentation.', cls='text-gray-500 dark:text-gray-400')
 ), code="""Div(
     P('Does your user know how to exit out of screens? Can they follow your intended user journey and buy something from the site youâ\x80\x99ve designed? By running a usability test, youâ\x80\x99ll be able to see how users will interact with your design once itâ\x80\x99s live.', cls='text-gray-500 dark:text-gray-400'),
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white'),
         cls='p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800'
     ),
-    P('First of all you need to understand how Flowbite works. This library is not another framework. Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the documentation.', cls='text-gray-500 dark:text-gray-400')
+    P('First of all you need to understand how Fastbite works. This library is not another framework. Rather, it is a set of components based on Tailwind CSS that you can just copy-paste from the documentation.', cls='text-gray-500 dark:text-gray-400')
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
         'Blockquote icon',
@@ -69,7 +69,7 @@ component = Div(
             viewbox='0 0 18 14',
             cls='w-8 h-8 text-gray-400 dark:text-gray-600 mb-4'
         ),
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 ), code="""Div(
@@ -82,7 +82,7 @@ component = Div(
             viewbox='0 0 18 14',
             cls='w-8 h-8 text-gray-400 dark:text-gray-600 mb-4'
         ),
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
@@ -98,7 +98,7 @@ component = Div(
     Div(
         P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='mb-3 text-gray-500 dark:text-gray-400'),
         Blockquote(
-            P('" Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application. "', cls='text-xl italic font-semibold text-gray-900 dark:text-white'),
+            P('" Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application. "', cls='text-xl italic font-semibold text-gray-900 dark:text-white'),
             cls='mb-3'
         ),
         cls='grid grid-cols-1 md:gap-6 md:grid-cols-2'
@@ -109,7 +109,7 @@ component = Div(
     Div(
         P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='mb-3 text-gray-500 dark:text-gray-400'),
         Blockquote(
-            P('" Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application. "', cls='text-xl italic font-semibold text-gray-900 dark:text-white'),
+            P('" Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application. "', cls='text-xl italic font-semibold text-gray-900 dark:text-white'),
             cls='mb-3'
         ),
         cls='grid grid-cols-1 md:gap-6 md:grid-cols-2'
@@ -134,7 +134,7 @@ component = Div(
             cls='w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600'
         ),
         Blockquote(
-            P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl italic font-medium text-gray-900 dark:text-white')
+            P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl italic font-medium text-gray-900 dark:text-white')
         ),
         Figcaption(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png', alt='profile picture', cls='w-6 h-6 rounded-full'),
@@ -158,7 +158,7 @@ component = Div(
             cls='w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600'
         ),
         Blockquote(
-            P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl italic font-medium text-gray-900 dark:text-white')
+            P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl italic font-medium text-gray-900 dark:text-white')
         ),
         Figcaption(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png', alt='profile picture', cls='w-6 h-6 rounded-full'),
@@ -225,13 +225,13 @@ component = Div(
             cls='flex items-center mb-4 text-yellow-300'
         ),
         Blockquote(
-            P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl font-semibold text-gray-900 dark:text-white')
+            P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl font-semibold text-gray-900 dark:text-white')
         ),
         Figcaption(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png', alt='profile picture', cls='w-6 h-6 rounded-full'),
             Div(
                 Cite('Bonnie Green', cls='pe-3 font-medium text-gray-900 dark:text-white'),
-                Cite('CTO at Flowbite', cls='ps-3 text-sm text-gray-500 dark:text-gray-400'),
+                Cite('CTO at Fastbite', cls='ps-3 text-sm text-gray-500 dark:text-gray-400'),
                 cls='flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700'
             ),
             cls='flex items-center mt-6 space-x-3 rtl:space-x-reverse'
@@ -284,13 +284,13 @@ component = Div(
             cls='flex items-center mb-4 text-yellow-300'
         ),
         Blockquote(
-            P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl font-semibold text-gray-900 dark:text-white')
+            P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."', cls='text-2xl font-semibold text-gray-900 dark:text-white')
         ),
         Figcaption(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png', alt='profile picture', cls='w-6 h-6 rounded-full'),
             Div(
                 Cite('Bonnie Green', cls='pe-3 font-medium text-gray-900 dark:text-white'),
-                Cite('CTO at Flowbite', cls='ps-3 text-sm text-gray-500 dark:text-gray-400'),
+                Cite('CTO at Fastbite', cls='ps-3 text-sm text-gray-500 dark:text-gray-400'),
                 cls='flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700'
             ),
             cls='flex items-center mt-6 space-x-3 rtl:space-x-reverse'
@@ -314,12 +314,12 @@ component = Div(
     P('The default alignment of the blockquote text content is the left side of the document.'),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-left text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-left text-gray-900 dark:text-white'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
@@ -336,12 +336,12 @@ component = Div(
     ),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-center text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-center text-gray-900 dark:text-white'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
@@ -358,12 +358,12 @@ component = Div(
     ),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-right text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-right text-gray-900 dark:text-white'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
@@ -387,12 +387,12 @@ component = Div(
     ),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-lg italic font-semibold text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-lg italic font-semibold text-gray-900 dark:text-white'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
@@ -409,12 +409,12 @@ component = Div(
     ),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-xl italic font-semibold text-gray-900 dark:text-white'
     )
 )""", id="example_10",cls='mt-2 mb-6'),
@@ -431,12 +431,12 @@ component = Div(
     ),
     component_showcase(Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-2xl italic font-semibold text-gray-900 dark:text-white'
     )
 ), code="""Div(
     Blockquote(
-        P('"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
+        P('"Fastbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'),
         cls='text-2xl italic font-semibold text-gray-900 dark:text-white'
     )
 )""", id="example_11",cls='mt-2 mb-6'),

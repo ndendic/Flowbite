@@ -1,11 +1,11 @@
 from fasthtml.common import *
 from fasthtml.svg import *
-from fastbite.components import *
+from fastbite.all import *
 from utils import component_showcase
 
 component = Div(
     P('The alert component can be used to provide information to your users such as success or error messages, but also highlighted information complementing the normal flow of paragraphs and headers on a page.'),
-    P('Flowbite also includes dismissible alerts which can be hidden by the users by clicking on the close icon.'),
+    P('Fastbite also includes dismissible alerts which can be hidden by the users by clicking on the close icon.'),
     H2(
         'Default alert',
         Span(id='default-alert', cls='absolute -top-[140px]'),
@@ -476,7 +476,7 @@ component = Div(
                 aria_hidden='true',
                 cls='text-xs bg-primary-600 rounded-full text-white px-3 py-1.5 mr-3'
             ),
-            Span('Requires Flowbite JS', cls='text-sm font-medium'),
+            Span('Requires Fastbite JS', cls='text-sm font-medium'),
             Svg(
                 Path(d='m1 9 4-4-4-4', stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2'),
                 aria_hidden='true',
@@ -485,7 +485,7 @@ component = Div(
                 xmlns='http://www.w3.org/2000/svg',
                 cls='w-2.5 h-2.5 ml-2.5'
             ),
-            aria_label='Component requires Flowbite JavaScript',
+            aria_label='Component requires Fastbite JavaScript',
             href='/docs/getting-started/quickstart/',
             cls='inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
         ),
@@ -1490,7 +1490,7 @@ component = Div(
     P(
         'The',
         Strong('Dismiss'),
-        'class from Flowbite can be used to create an object that will hide a target element or elements based on the parameters, options, and methods that you provide.'
+        'class from Fastbite can be used to create an object that will hide a target element or elements based on the parameters, options, and methods that you provide.'
     ),
     H3(
         'Object parameters',
@@ -2128,9 +2128,9 @@ component = Div(
     P(
         'If you\'re using the',
         A('TypeScript configuration', href='https://flowbite.com/docs/getting-started/typescript/'),
-        'from Flowbite then you can import the types for the Dismiss class, parameters and its options.'
+        'from Fastbite then you can import the types for the Dismiss class, parameters and its options.'
     ),
-    P('Here\'s an example that applies the types from Flowbite to the code above:'),
+    P('Here\'s an example that applies the types from Fastbite to the code above:'),
     Div(
         Pre(
             Code(
