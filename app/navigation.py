@@ -123,6 +123,7 @@ standard_sidebar_items = [
     NavLi("Themes", href="/themes#", icon='palette',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Article", href="/article#", icon='file-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Badge", href="/badge#", icon='badge',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Dropdown", href="/dropdown#", icon='chevron-down',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)

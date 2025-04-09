@@ -7,6 +7,7 @@ from pages.typography import typography
 from pages.templates import page_template
 from pages.article import article_components
 from pages.badge import badge_components
+from pages.dropdown import dropdown_components
 
 rt = APIRouter()
 
@@ -44,3 +45,8 @@ def get(req):
 @page_template("Badge")
 def get(req):
     return badge_components
+
+@rt("/dropdown")
+@page_template("Dropdown")
+def get(req):
+    return dropdown_components
