@@ -5,6 +5,8 @@ from pages.playground import playground
 from pages.icons import icons_images
 from pages.typography import typography
 from pages.templates import page_template
+from pages.article import article_components
+from pages.badge import badge_components
 
 rt = APIRouter()
 
@@ -32,3 +34,13 @@ def get(req):
 @page_template("Icons")
 def get(req):
     return icons_images
+
+@rt("/article")
+@page_template("Article")
+def get(req):
+    return article_components
+
+@rt("/badge")
+@page_template("Badge")
+def get(req):
+    return badge_components

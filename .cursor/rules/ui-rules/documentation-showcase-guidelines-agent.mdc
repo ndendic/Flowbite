@@ -8,10 +8,13 @@ alwaysApply: false
 
 ## Critical Rules
 
+- Always import the component_showcase function with `from utils import component_showcase` at the top of documentation files
+- Always add `link=True` to all heading elements (H1, H2, H3, etc.) for proper navigation linking
 - Examine components thoroughly before documenting to understand implementation details
 - Build documentation and showcase pages component by component in small, reviewable steps
 - Always use `component_showcase` function with required parameters (examples, code, id)
 - Structure documentation with clear hierarchy (H2 for categories, H3/H4 for variants)
+- Place heading elements (H3, H4) outside the component_showcase Div, before the P() description
 - Add Br() after each component_showcase for proper spacing
 - Use P() with properly spaced inline Code() elements for API references
 - Include multiple examples demonstrating different properties or configurations
@@ -24,30 +27,47 @@ alwaysApply: false
 ## Examples
 
 <example>
+from utils import component_showcase
+from fasthtml.common import Div, P, Br, Code
+from fastbite.all import *
+
+# In document structure
+H1("Component Documentation", link=True)
+
+H2("Text Components", link=True)
+
+H3("Headings", link=True)
+P("The heading components are used for page structure and navigation:")
+
 component_showcase(
-    H1("Heading 1"),
-    H2("Heading 2"),
-    H3("Heading 3"),
-    H4("Heading 4"),
-    H5("Heading 5"),
-    H6("Heading 6"),
-    code="""H1("Heading 1"),
-H2("Heading 2"),
-H3("Heading 3"),
-H4("Heading 4"),
-H5("Heading 5"),
-H6("Heading 6"),""",
+    Div(
+        H1("Heading 1", link=True),
+        H2("Heading 2", link=True),
+        H3("Heading 3", link=True),
+        H4("Heading 4", link=True),
+        H5("Heading 5", link=True),
+        H6("Heading 6", link=True),
+    ),
+    code="""H1("Heading 1", link=True),
+H2("Heading 2", link=True),
+H3("Heading 3", link=True),
+H4("Heading 4", link=True),
+H5("Heading 5", link=True),
+H6("Heading 6", link=True),""",
     id="headings"
 )
 
 Br()
 
+H3("Button Variants", link=True)
 P("The ", Code("Button"), " component offers multiple variants through the ", Code("variant"), " parameter.")
 
 component_showcase(
-    Button("Primary Button", variant="primary"),
-    Button("Secondary Button", variant="secondary"),
-    Button("Outline Button", variant="outline"),
+    Div(
+        Button("Primary Button", variant="primary"),
+        Button("Secondary Button", variant="secondary"),
+        Button("Outline Button", variant="outline"),
+    ),
     code="""# Import at the top of your file
 from components import Button
 
@@ -60,12 +80,18 @@ Button("Outline Button", variant="outline")""",
 </example>
 
 <example type="invalid">
-# Missing id parameter and poor hierarchy
+# Missing import for component_showcase
+from fastbite.all import *
+
+# Missing link=True in headings
+H1("Component Demo")
+H2("Button Examples") 
+
+# Missing Div wrapper around components
 component_showcase(
-    H1("Component Demo"),
     Button("Click me"),
-    code="""H1("Component Demo")
-Button("Click me")"""
+    code="""Button("Click me")""",
+    id="button-demo"
 )
 
 # No spacing around Code elements and no comments in example
@@ -73,9 +99,11 @@ P("The"Code("Button")"component is used for actions.")
 
 # Everything in a single showcase without logical grouping
 component_showcase(
-    Button("Primary"),
-    Alert("Warning", type="warning"),
-    Card("Content"),
+    Div(
+        Button("Primary"),
+        Alert("Warning", type="warning"),
+        Card("Content"),
+    ),
     code="""Button("Primary")
 Alert("Warning", type="warning")
 Card("Content")""",
