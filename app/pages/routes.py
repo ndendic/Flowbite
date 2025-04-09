@@ -8,6 +8,7 @@ from pages.templates import page_template
 from pages.article import article_components
 from pages.badge import badge_components
 from pages.dropdown import dropdown_components
+from pages.forms import forms_components
 
 rt = APIRouter()
 
@@ -50,3 +51,8 @@ def get(req):
 @page_template("Dropdown")
 def get(req):
     return dropdown_components
+
+@rt("/forms")
+@page_template("Forms")
+def get(req):
+    return forms_components
