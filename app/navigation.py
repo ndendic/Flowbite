@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fastbite.all import *
-from theme_switcher import ThemeSwitcher, palette_icon
+from theme_switcher import ThemeSwitcher
 from component_registry import component_registry
 
 def Navbar():
@@ -124,6 +124,9 @@ standard_sidebar_items = [
     NavLi("Article", href="/article#", icon='file-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Badge", href="/badge#", icon='badge',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Dropdown", href="/dropdown#", icon='chevron-down',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Forms", href="/forms#", icon='form',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Markdown", href="/markdown#", icon='markdown',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Modals", href="/modals#", icon='modal',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)
