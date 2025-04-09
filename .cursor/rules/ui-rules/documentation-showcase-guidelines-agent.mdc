@@ -1,0 +1,84 @@
+---
+description: This rule governs the creation of component documentation and showcase pages. It should be applied whenever: (1) Creating new component documentation, (2) Updating existing documentation pages, (3) Designing showcase examples for components, (4) Explaining component APIs and usage patterns. The rule ensures consistent documentation structure, proper component showcasing, and clear explanatory content. It's particularly important when documenting UI components, their variants, parameters, and usage examples to maintain readability and usability of the documentation.
+globs: 
+alwaysApply: false
+---
+
+# Documentation and Showcase Guidelines
+
+## Critical Rules
+
+- Examine components thoroughly before documenting to understand implementation details
+- Build documentation and showcase pages component by component in small, reviewable steps
+- Always use `component_showcase` function with required parameters (examples, code, id)
+- Structure documentation with clear hierarchy (H2 for categories, H3/H4 for variants)
+- Add Br() after each component_showcase for proper spacing
+- Use P() with properly spaced inline Code() elements for API references
+- Include multiple examples demonstrating different properties or configurations
+- Group related components within a Div when appropriate
+- Include necessary imports in the first example of each component
+- Add comments in code examples to explain significant aspects
+- Show each variant of complex components in separate component_showcase blocks
+- Keep descriptions concise but informative about parameters and options
+
+## Examples
+
+<example>
+component_showcase(
+    H1("Heading 1"),
+    H2("Heading 2"),
+    H3("Heading 3"),
+    H4("Heading 4"),
+    H5("Heading 5"),
+    H6("Heading 6"),
+    code="""H1("Heading 1"),
+H2("Heading 2"),
+H3("Heading 3"),
+H4("Heading 4"),
+H5("Heading 5"),
+H6("Heading 6"),""",
+    id="headings"
+)
+
+Br()
+
+P("The ", Code("Button"), " component offers multiple variants through the ", Code("variant"), " parameter.")
+
+component_showcase(
+    Button("Primary Button", variant="primary"),
+    Button("Secondary Button", variant="secondary"),
+    Button("Outline Button", variant="outline"),
+    code="""# Import at the top of your file
+from components import Button
+
+# Usage examples
+Button("Primary Button", variant="primary")
+Button("Secondary Button", variant="secondary")
+Button("Outline Button", variant="outline")""",
+    id="button-variants"
+)
+</example>
+
+<example type="invalid">
+# Missing id parameter and poor hierarchy
+component_showcase(
+    H1("Component Demo"),
+    Button("Click me"),
+    code="""H1("Component Demo")
+Button("Click me")"""
+)
+
+# No spacing around Code elements and no comments in example
+P("The"Code("Button")"component is used for actions.")
+
+# Everything in a single showcase without logical grouping
+component_showcase(
+    Button("Primary"),
+    Alert("Warning", type="warning"),
+    Card("Content"),
+    code="""Button("Primary")
+Alert("Warning", type="warning")
+Card("Content")""",
+    id="mixed-components"
+)
+</example> 
