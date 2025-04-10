@@ -31,7 +31,7 @@ yarn.lock
 .env.production.local
 
 tailwindcss-linux-x64
-
+mcp.json
 # Zone.Identifier files
 *Zone.Identifier
 
@@ -40,3 +40,5 @@ tailwindcss-linux-x64
 dashboard/
 landing-pages/
 flowbite*
+# Private individual user cursor rules
+.cursor/rules/_*.mdc

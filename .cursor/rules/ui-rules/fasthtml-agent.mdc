@@ -1,0 +1,118 @@
+---
+description: "This rule provides guidelines for working with FastHTML, a Python library that combines Starlette, Uvicorn, HTMX, and fastcore's FT (FastTags) for creating server-rendered hypermedia applications. It should be applied when: (1) Creating new FastHTML applications, (2) Modifying existing FastHTML code, (3) Implementing routes, components, or forms in FastHTML, (4) Working with HTMX integrations in FastHTML applications. The rule ensures consistent implementation of FastHTML patterns, proper use of its API, and effective structuring of hypermedia applications."
+globs: 
+alwaysApply: false
+---
+
+# FastHTML Development Guidelines
+
+## Critical Rules
+
+- Always remember FastHTML is designed for hypermedia applications, not API services, despite similarities to FastAPI
+- Use the provided FastTags (`FT`) for HTML generation rather than string concatenation or templating
+- Always initialize apps with `app, rt = fast_app()` for standard configuration
+- Use `@rt("/path")` decorator pattern for routing instead of manual route registration
+- Use function naming to match HTTP verbs: `get()`, `post()`, etc. for handler methods
+- Always return `Titled()` components for complete pages, which automatically provides proper HTML document structure
+- Utilize `serve()` to run the application instead of manually configuring Uvicorn
+- For data validation and form handling, define dataclasses first, then create FT form components
+- Use the `fill_form()` function to populate forms with data from dataclasses
+- For file uploads, use `UploadFile` type annotation in route handlers
+- When implementing HTMX functionality, use HTMX attributes as named parameters to FT components
+- For server-sent events (SSE), ensure the frontend uses the HTMX SSE extension
+- For websockets, initialize the app with `exts='ws'` and define handlers with proper async pattern
+- Use `cookie()` function for setting cookies rather than manual header manipulation
+- For sessions, access the session via parameter annotation and modify directly as a dictionary
+- Use `add_toast()` with session context for flash messages after calling `setup_toasts(app)`
+- When implementing authentication, use Beforeware rather than middleware for most cases
+- For static assets, configure with `static_path` parameter to `fast_app()`
+- Always use `Response` objects for non-HTML returns, such as JSON, files, or redirects
+
+## Examples
+
+<example>
+```python
+# Proper FastHTML application setup
+from fasthtml.common import *
+
+# Initialize with standard configuration
+app, rt = fast_app()
+
+# Define a route with correct HTTP verb function name
+@rt("/")
+def get():
+    return Titled("FastHTML App", 
+        P("Welcome to my application!"),
+        Button("Click me", hx_post="/clicked", hx_target="#result"),
+        Div(id="result")
+    )
+
+# Form handling with dataclass validation
+@dataclass
+class Profile: 
+    email: str
+    name: str
+    age: int
+
+# Create a form component
+profile_form = Form(method="post", action="/profile")(
+    Fieldset(
+        Label('Email', Input(name="email")),
+        Label("Name", Input(name="name")),
+        Label("Age", Input(name="age")),
+    ),
+    Button("Save", type="submit")
+)
+
+@rt("/profile/{email}")
+def get(email: str):
+    profile = profiles[email]  # Database lookup
+    filled_form = fill_form(profile_form, profile)
+    return Titled(f'Profile for {profile.name}', filled_form)
+
+@rt("/profile")
+def post(profile: Profile):
+    profiles.update(profile)  # Database update
+    return RedirectResponse(url=f"/profile/{profile.email}")
+
+# Run the application
+serve()
+```
+</example>
+
+<example type="invalid">
+```python
+# Incorrect FastHTML usage
+from fasthtml.common import *
+import starlette
+
+# Don't initialize manually - use fast_app() instead
+app = FastHTML(debug=True)
+
+# Don't use direct string concatenation for HTML
+@app.route("/")
+def home(request):
+    return "<html><body><h1>FastHTML App</h1><p>Welcome</p></body></html>"
+
+# Don't use string templates for HTML
+@app.route("/profile")
+def profile(request):
+    name = "John"
+    return f"<html><body><h1>Profile for {name}</h1></body></html>"
+
+# Don't use manual form processing
+@app.route("/submit", methods=["POST"])
+async def submit(request):
+    form_data = await request.form()
+    email = form_data.get("email")
+    # Don't do manual validation
+    if not email or "@" not in email:
+        return "Invalid email"
+    return f"Submitted {email}"
+
+# Don't use manual Uvicorn configuration
+import uvicorn
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+</example> 

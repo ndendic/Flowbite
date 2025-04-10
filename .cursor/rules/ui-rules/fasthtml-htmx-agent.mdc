@@ -1,0 +1,177 @@
+---
+description: "This rule provides guidelines for using HTMX with FastHTML applications. It should be applied when: (1) Building interactive UI components with HTMX in FastHTML, (2) Implementing partial page updates, (3) Setting up server-sent events or WebSockets, (4) Creating forms with HTMX-powered submission. The rule ensures proper use of HTMX attributes in FastHTML components, correct server-side handling of HTMX requests, and effective implementation of HTMX extensions."
+globs: 
+alwaysApply: false
+---
+
+# FastHTML HTMX Integration Guidelines
+
+## Critical Rules
+
+- Use HTMX attributes directly as named parameters in FastHTML FT components
+- Include required HTMX extensions in the `hdrs` parameter when initializing with `fast_app()`
+- For SSE (Server-Sent Events), include the HTMX SSE extension and use `hx_ext="sse"` on elements
+- For WebSockets, initialize app with `exts='ws'` and add the HTMX WebSockets extension
+- Return only the HTML fragment needed for HTMX requests, not complete pages
+- Use `hx_target` to specify where response content should be inserted
+- Use `hx_swap` to control how content is swapped (innerHTML, outerHTML, beforeend, etc.)
+- Implement proper error handling with `hx-error` targets or attributes
+- For form submissions, use `hx_post` instead of traditional form submission
+- Include proper indicators using `hx_indicator` for loading states
+- Use HTMX response headers like `HX-Trigger` for client-side events
+- Implement optimistic UI updates with `hx_swap="none"` and client-side events
+- For advanced CORS scenarios, set appropriate CORS headers for HTMX requests
+- Use `request.headers` to check for `HX-Request` to detect if a request is from HTMX
+- Return `RedirectResponse` for redirects after HTMX form submissions
+- For validation errors, return the form with error messages rather than redirecting
+- When using OOB (Out of Band) swaps, properly structure the response with multiple elements
+- For file uploads with HTMX, ensure the `enctype` is set correctly on forms
+- Implement progressive enhancement by having forms work without JavaScript
+
+## Examples
+
+<example>
+```python
+from fasthtml.common import *
+
+# Set up FastHTML with HTMX extensions
+htmx_exts = (
+    # Core HTMX script
+    Script(src="https://unpkg.com/htmx.org@1.9.4"),
+    # SSE extension for server-sent events
+    Script(src="https://unpkg.com/htmx.org/dist/ext/sse.js"),
+    # JSON extension for working with JSON
+    Script(src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"),
+)
+
+app, rt = fast_app(hdrs=htmx_exts)
+
+# Basic HTMX form submission
+@rt("/")
+def get():
+    return Titled("HTMX Form Example",
+        Form(
+            Label("Name", Input(type="text", name="name")),
+            Button("Submit", type="submit"),
+            # HTMX attributes as parameters
+            hx_post="/submit",
+            hx_target="#result",
+            hx_indicator="#spinner"
+        ),
+        Div(id="spinner", cls="htmx-indicator", contents="Loading..."),
+        Div(id="result")
+    )
+
+# Handle form submission - return only the fragment needed
+@rt("/submit")
+def post(name: str):
+    # Check if request is from HTMX and return appropriate response
+    return Div(f"Hello, {name}!")
+
+# Server-Sent Events (SSE) example
+@rt("/sse-demo")
+def get():
+    return Titled("SSE Example",
+        Div(
+            # Set up SSE connection
+            hx_ext="sse",
+            sse_connect="/events",
+            # Target this element for updates
+            hx_target="this",
+            # Append new messages at the end
+            hx_swap="beforeend",
+            contents="Events will appear here:"
+        )
+    )
+
+# SSE endpoint
+shutdown_event = signal_shutdown()
+
+async def event_generator():
+    count = 0
+    while not shutdown_event.is_set() and count < 10:
+        yield sse_message(P(f"Event {count}"))
+        count += 1
+        await sleep(1)
+
+@rt("/events")
+async def get():
+    return EventStream(event_generator())
+
+# WebSocket example
+@rt("/ws-demo")
+def get():
+    return Titled("WebSocket Demo",
+        Div(
+            Form(
+                Input(id="message", name="message", placeholder="Type a message"),
+                Button("Send", type="submit"),
+                # Use WebSocket extension
+                hx_ext="ws",
+                ws_send="true"
+            ),
+            Div(id="chat"),
+            # Connect to WebSocket endpoint
+            hx_ext="ws",
+            ws_connect="/chat"
+        )
+    )
+
+# Set up WebSocket handler
+@app.ws("/chat")
+async def ws(msg: str, send):
+    # Echo message back with timestamp
+    return Div(f"{datetime.now().strftime('%H:%M:%S')}: {msg}", id="chat")
+```
+</example>
+
+<example type="invalid">
+```python
+from fasthtml.common import *
+import json
+
+# Don't initialize without HTMX extensions when using HTMX
+app, rt = fast_app()
+
+@rt("/")
+def get():
+    # Don't manually construct HTMX attributes as strings
+    return Titled("Bad HTMX Example",
+        # Don't use string attributes for HTMX
+        f"""
+        <form hx-post="/submit" hx-target="#result">
+            <input type="text" name="name">
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+        """
+    )
+
+# Don't return full page for HTMX requests
+@rt("/submit")
+def post(request):
+    form = await request.form()
+    name = form.get("name", "")
+    # Don't return a full page for HTMX requests
+    return Titled("Submission Result", 
+        P(f"Hello, {name}!")
+    )
+
+# Don't mix HTMX with manual AJAX
+@rt("/api")
+def api_endpoint(request):
+    # Don't return JSON when HTMX HTML is expected
+    data = {"message": "Hello World"}
+    return Response(json.dumps(data), media_type="application/json")
+
+# Don't use traditional redirects for HTMX requests
+@rt("/redirect-after-submit")
+def post(request):
+    # Check if HTMX request, but handle incorrectly
+    if "HX-Request" in request.headers:
+        # Don't use traditional redirects with HTMX
+        return RedirectResponse("/success")
+    else:
+        return RedirectResponse("/success")
+```
+</example> 

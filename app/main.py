@@ -174,8 +174,8 @@ def home(req):
         Li(A("Themes", href="/themes")),
     )
 
-app = add_routes(app)
 component_registry.register_routes(rt, page_template)
+app = add_routes(app)
 
 if __name__ == "__main__":
     serve(reload=True, port=8008)

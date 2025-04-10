@@ -5,6 +5,12 @@ from pages.playground import playground
 from pages.icons import icons_images
 from pages.typography import typography
 from pages.templates import page_template
+from pages.article import article_components
+from pages.badge import badge_components
+from pages.dropdown import dropdown_components
+from pages.forms import forms_components
+from pages.markdown import markdown_components
+from pages.modals import modals_components
 
 rt = APIRouter()
 
@@ -32,3 +38,33 @@ def get(req):
 @page_template("Icons")
 def get(req):
     return icons_images
+
+@rt("/article")
+@page_template("Article")
+def get(req):
+    return article_components
+
+@rt("/badge")
+@page_template("Badge")
+def get(req):
+    return badge_components
+
+@rt("/dropdown")
+@page_template("Dropdown")
+def get(req):
+    return dropdown_components
+
+@rt("/forms")
+@page_template("Forms")
+def get(req):
+    return forms_components
+
+@rt("/markdown")
+@page_template("Markdown")
+def get(req):
+    return markdown_components
+
+@rt("/modals")
+@page_template("Modals")
+def get(req):
+    return modals_components

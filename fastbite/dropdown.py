@@ -11,7 +11,7 @@ from .core import *
 from .base import *
 from .base_styles import *
 from .media import *
-
+from .buttons import *
 # %% ../nbs/17_dropdown.ipynb 2
 def DropdownItem(*c, # Components to put in the dropdown item
                  href:str='#', # Href for the dropdown item
@@ -40,7 +40,7 @@ def DropdownContainer(*c, # Components to put in the dropdown container
     return fh.Div(*c, id=id, cls=(devider_cls, stringify(cls)), **kwargs)
 
 def DropdownHeader(*c, # Components to put in the dropdown header
-                   cls='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
+                   cls='text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
                    **kwargs # Additional args for the dropdown header
                    )->FT: # Dropdown header component
     "Creates a dropdown header"
@@ -64,7 +64,7 @@ def Dropdown(*c, # Components to put in the dropdown
     return DropdownContainer(*res, id=id, devider=devider, cls=stringify(cls), **kwargs)
 
 def DropdownButton(*c, # Components to put in the dropdown button
-                   cls='', # Additional classes on the dropdown button
+                   cls:Union[str,ButtonT]=ButtonT.primary, # Additional classes on the dropdown button
                    controls:str='', # Control for the dropdown button
                    icon:str='chevron-down', # Icon for the dropdown button
                    show_icon:bool=True, # Whether to show the icon

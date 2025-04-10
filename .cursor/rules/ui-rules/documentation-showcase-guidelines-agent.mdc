@@ -1,0 +1,112 @@
+---
+description: This rule governs the creation of component documentation and showcase pages. It should be applied whenever: (1) Creating new component documentation, (2) Updating existing documentation pages, (3) Designing showcase examples for components, (4) Explaining component APIs and usage patterns. The rule ensures consistent documentation structure, proper component showcasing, and clear explanatory content. It's particularly important when documenting UI components, their variants, parameters, and usage examples to maintain readability and usability of the documentation.
+globs: 
+alwaysApply: false
+---
+
+# Documentation and Showcase Guidelines
+
+## Critical Rules
+
+- Always import the component_showcase function with `from utils import component_showcase` at the top of documentation files
+- Always add `link=True` to all heading elements (H1, H2, H3, etc.) for proper navigation linking
+- Examine components thoroughly before documenting to understand implementation details
+- Build documentation and showcase pages component by component in small, reviewable steps
+- Always use `component_showcase` function with required parameters (examples, code, id)
+- Structure documentation with clear hierarchy (H2 for categories, H3/H4 for variants)
+- Place heading elements (H3, H4) outside the component_showcase Div, before the P() description
+- Add Br() after each component_showcase for proper spacing
+- Use P() with properly spaced inline Code() elements for API references
+- Include multiple examples demonstrating different properties or configurations
+- Group related components within a Div when appropriate
+- Include necessary imports in the first example of each component
+- Add comments in code examples to explain significant aspects
+- Show each variant of complex components in separate component_showcase blocks
+- Keep descriptions concise but informative about parameters and options
+
+## Examples
+
+<example>
+from utils import component_showcase
+from fasthtml.common import Div, P, Br, Code
+from fastbite.all import *
+
+# In document structure
+H1("Component Documentation", link=True)
+
+H2("Text Components", link=True)
+
+H3("Headings", link=True)
+P("The heading components are used for page structure and navigation:")
+
+component_showcase(
+    Div(
+        H1("Heading 1", link=True),
+        H2("Heading 2", link=True),
+        H3("Heading 3", link=True),
+        H4("Heading 4", link=True),
+        H5("Heading 5", link=True),
+        H6("Heading 6", link=True),
+    ),
+    code="""H1("Heading 1", link=True),
+H2("Heading 2", link=True),
+H3("Heading 3", link=True),
+H4("Heading 4", link=True),
+H5("Heading 5", link=True),
+H6("Heading 6", link=True),""",
+    id="headings"
+)
+
+Br()
+
+H3("Button Variants", link=True)
+P("The ", Code("Button"), " component offers multiple variants through the ", Code("variant"), " parameter.")
+
+component_showcase(
+    Div(
+        Button("Primary Button", variant="primary"),
+        Button("Secondary Button", variant="secondary"),
+        Button("Outline Button", variant="outline"),
+    ),
+    code="""# Import at the top of your file
+from components import Button
+
+# Usage examples
+Button("Primary Button", variant="primary")
+Button("Secondary Button", variant="secondary")
+Button("Outline Button", variant="outline")""",
+    id="button-variants"
+)
+</example>
+
+<example type="invalid">
+# Missing import for component_showcase
+from fastbite.all import *
+
+# Missing link=True in headings
+H1("Component Demo")
+H2("Button Examples") 
+
+# Missing Div wrapper around components
+component_showcase(
+    Button("Click me"),
+    code="""Button("Click me")""",
+    id="button-demo"
+)
+
+# No spacing around Code elements and no comments in example
+P("The"Code("Button")"component is used for actions.")
+
+# Everything in a single showcase without logical grouping
+component_showcase(
+    Div(
+        Button("Primary"),
+        Alert("Warning", type="warning"),
+        Card("Content"),
+    ),
+    code="""Button("Primary")
+Alert("Warning", type="warning")
+Card("Content")""",
+    id="mixed-components"
+)
+</example> 
