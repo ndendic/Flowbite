@@ -11,6 +11,13 @@ from pages.dropdown import dropdown_components
 from pages.forms import forms_components
 from pages.markdown import markdown_components
 from pages.modals import modals_components
+from pages.navigation import navigation_components
+from pages.progress import progress_components
+from pages.ranges import ranges_components
+from pages.skeleton import skeleton_components
+from pages.slider import slider_components
+from pages.tables import tables_components
+from pages.tabs import tabs_components
 
 rt = APIRouter()
 
@@ -68,3 +75,38 @@ def get(req):
 @page_template("Modals")
 def get(req):
     return modals_components
+
+@rt("/navigation")
+@page_template("Navigation")
+def get(req):
+    return navigation_components
+
+@rt("/progress")
+@page_template("Progress")
+def get(req):
+    return progress_components
+
+@rt("/ranges")
+@page_template("Range Inputs")
+def get(req):
+    return ranges_components
+
+@rt("/skeleton")
+@page_template("Placeholder Components")
+def get(req):
+    return skeleton_components
+
+@rt("/slider")
+@page_template("Slider Components")
+def get(req):
+    return slider_components
+
+@rt("/tables")
+@page_template("Table Components")
+def get(req):
+    return tables_components
+
+@rt("/tabs")
+@page_template("Tabs Components")
+def get(req):
+    return tabs_components

@@ -2,7 +2,7 @@ from fasthtml.common import *
 from fasthtml.svg import *
 from fastbite.all import *
 from fastbite.core import *
-from navigation import Sidebar, Main, Navbar
+from app.navigation import Sidebar, Main, Navbar
 from pages.typography import typography
 from pages.templates import page_template
 from route_collector import add_routes

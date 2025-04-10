@@ -19,8 +19,8 @@ from enum import Enum
 import random
 class NavT(VEnum):
     default = 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700'
-    dark = 'bg-gray-800 dark:bg-gray-800'
-    light = 'bg-white dark:bg-gray-800'
+    primary = 'border border-primary-400 dark:border-primary-600 rounded-lg text-primary-500 dark:text-primary-500'
+    secondary = 'border border-gray-400 dark:border-gray-600 rounded-lg'
     transparent = 'bg-transparent'
     child = 'hidden space-y-2'
 
@@ -45,7 +45,7 @@ def NavLi(*c, # `NavContainer` container for a nested nav with `parent=False`)
         )->FT: # Navigation list item
     "Creates a navigation list item with a parent nav for nesting"
     return fh.Li(
-        fh.A(href=href, cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group')(
+        fh.A(href=href, cls='flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 group')(
             Icon(icon, 
                  aria_hidden='true',
                  height=18,

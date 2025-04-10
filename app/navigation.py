@@ -1,8 +1,8 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fastbite.all import *
-from theme_switcher import ThemeSwitcher
-from component_registry import component_registry
+from app.theme_switcher import ThemeSwitcher
+from app.component_registry import component_registry
 
 def Navbar():
     return Nav(
@@ -127,6 +127,13 @@ standard_sidebar_items = [
     NavLi("Forms", href="/forms#", icon='book-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Markdown", href="/markdown#", icon='text-select',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Modals", href="/modals#", icon='picture-in-picture',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Navigation", href="/navigation#", icon='menu',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Progress", href="/progress#", icon='activity',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Ranges", href="/ranges#", icon='sliders',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Placeholders", href="/skeleton#", icon='square-dashed',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Slider", href="/slider#", icon='slider',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Tables", href="/tables#", icon='table',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Tabs", href="/tabs#", icon='tab',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)

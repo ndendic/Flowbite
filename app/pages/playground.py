@@ -618,11 +618,11 @@ playground = Section(cls=(SectionT.default))(
     Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
     # datastar_example,
     # form_component,
-    badges_component,
+    # badges_component,
     # cards,
     # modals,
     # icon_links,
-    # progress,
+    progress,
     # placeholders,
     # tables,
     # navbars,
@@ -632,8 +632,8 @@ playground = Section(cls=(SectionT.default))(
 
     # tables,
 
-    render_md(markdown_example),
-    render_md_article(markdown_example),
+    # render_md(markdown_example),
+    # render_md_article(markdown_example),
     DivCentered(
         # UploadZone(label="Click to upload or drag and drop file",help_text="SVG, PNG, JPG or GIF (MAX. 800x400px)",id="file_input"),
 

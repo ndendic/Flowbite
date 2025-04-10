@@ -8,11 +8,11 @@ def _modal_basic_section():
     return Section(
         H2("Basic Modal", link=True, cls="mb-4 mt-10"),
         P("The ", Code("Modal"), " component provides a convenient way to create modals with header, body, and footer sections. It uses Flowbite's JavaScript for toggling visibility."),
-        P("You need a trigger element (like a button) with ", Code(f'data_modal_target="#{modal_id}"'), " and ", Code(f'data_modal_toggle="{modal_id}"'), " attributes."),
+        P("You need a trigger element (like a button) with ", Code(f'data_modal_target="{modal_id}"'), " and ", Code(f'data_modal_toggle="{modal_id}"'), " attributes."),
         component_showcase(
             # Trigger Button
             Button("Toggle Basic Modal", 
-                   data_modal_target=f'#{modal_id}', 
+                   data_modal_target=f'{modal_id}', 
                    data_modal_toggle=modal_id),
             # Modal Component (hidden by default)
             Modal(
@@ -35,7 +35,7 @@ modal_id = "{modal_id}"
 
 # Trigger Button
 Button("Toggle Basic Modal", 
-       data_modal_target=f'#{{modal_id}}', 
+       data_modal_target=f'{{modal_id}}', 
        data_modal_toggle='{modal_id}')
 
 # Modal Component
@@ -81,7 +81,7 @@ def _modal_sizing_section():
             component_showcase(
                 # Trigger Button
                 Button(f"Toggle {name.upper()} Modal", 
-                       data_modal_target=f'#{modal_id}', 
+                       data_modal_target=f'{modal_id}', 
                        data_modal_toggle=modal_id),
                 # Modal Component
                 Modal(
@@ -100,7 +100,7 @@ modal_id = "{modal_id}"
 
 # Trigger
 Button(f"Toggle {name.upper()} Modal", 
-       data_modal_target=f'#{{modal_id}}', 
+       data_modal_target=f'{{modal_id}}', 
        data_modal_toggle='{modal_id}')
 
 # Modal
@@ -146,7 +146,7 @@ def _modal_placement_section():
             component_showcase(
                 # Trigger Button
                 Button(f"Toggle {name_title} Modal", 
-                       data_modal_target=f'#{modal_id}', 
+                       data_modal_target=f'{modal_id}', 
                        data_modal_toggle=modal_id),
                 # Modal Component
                 Modal(
@@ -166,7 +166,7 @@ modal_id = "{modal_id}"
 
 # Trigger
 Button(f"Toggle {name_title} Modal", 
-       data_modal_target=f'#{{modal_id}}', 
+       data_modal_target=f'{{modal_id}}', 
        data_modal_toggle='{modal_id}')
 
 # Modal
