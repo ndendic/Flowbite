@@ -8,7 +8,7 @@ __all__ = ['HA', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Subtitle', 'Q', 'Em', 'Str
 # %% ../../nbs/02_base.ipynb 1
 import fasthtml.common as fh
 from ..core import *
-from ..base_styles import *
+from .base_styles import *
 from fasthtml.common import Span, FT
 from fastcore.all import *
 from enum import Enum

@@ -9,8 +9,8 @@ import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
+from .base import *
+from .base_styles import *
 
 # %% ../../nbs/06_buttons.ipynb 2
 class BgColor(VEnum):

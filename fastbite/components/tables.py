@@ -8,10 +8,10 @@ import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
-from ..containers import *
-from ..media import *
+from .base import *
+from .base_styles import *
+from .containers import *
+from .media import *
 
 # %% ../../nbs/20_tables.ipynb 2
 class TableT(VEnum):

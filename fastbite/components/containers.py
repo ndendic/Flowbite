@@ -11,8 +11,8 @@ import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
+from .base import *
+from .base_styles import *
 
 # %% ../../nbs/05_containers.ipynb 2
 class FlexT(VEnum):

@@ -8,8 +8,8 @@ from typing import Literal
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
+from .base import *
+from .base_styles import *
 
 # %% ../../nbs/15_progress.ipynb 2
 class ProgressT(VEnum):

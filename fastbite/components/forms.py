@@ -9,10 +9,10 @@ import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
-from ..media import *
-from ..buttons import *
+from .base import *
+from .base_styles import *
+from .media import *
+from .buttons import *
 
 
 # %% ../../nbs/07_forms.ipynb 2

@@ -9,9 +9,9 @@ import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
-from ..media import Icon
+from .base import *
+from .base_styles import *
+from .media import Icon
 
 # %% ../../nbs/04_blockquote.ipynb 2
 class BlockquoteT(VEnum):

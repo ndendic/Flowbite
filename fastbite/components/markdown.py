@@ -7,8 +7,8 @@ __all__ = ['DEFAULT_CLASS_MAP', 'apply_classes', 'render_md', 'render_md_article
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
-from ..base import *
-from ..base_styles import *
+from .base import *
+from .base_styles import *
 
 import mistletoe
 from lxml import html, etree
