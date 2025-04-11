@@ -1,4 +1,5 @@
 from fasthtml.common import *
+from fasthtml import components as fh
 from fasthtml.svg import *
 from fastbite.all import *
 from utils import component_showcase
@@ -46,41 +47,41 @@ component = Div(
     Div(
         Div(
             Div(
-                Img(src='/docs/images/carousel/carousel-1.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-2.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-3.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-4.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-5.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             cls='relative h-56 overflow-hidden rounded-lg md:h-96'
         ),
         Div(
-            Button(type='button', aria_current='true', aria_label='Slide 1', data_carousel_slide_to='0', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 2', data_carousel_slide_to='1', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 3', data_carousel_slide_to='2', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 4', data_carousel_slide_to='3', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 5', data_carousel_slide_to='4', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='true', aria_label='Slide 1', data_carousel_slide_to='0', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 2', data_carousel_slide_to='1', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 3', data_carousel_slide_to='2', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 4', data_carousel_slide_to='3', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 5', data_carousel_slide_to='4', cls='w-3 h-3 rounded-full'),
             cls='absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M5 1 1 5l4 4'),
@@ -97,7 +98,7 @@ component = Div(
             data_carousel_prev=True,
             cls='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 9 4-4-4-4'),
@@ -213,33 +214,33 @@ component = Div(
     Div(
         Div(
             Div(
-                Img(src='/docs/images/carousel/carousel-1.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1005, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-2.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=11, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item='active',
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-3.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-4.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=12, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-5.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1084, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             cls='relative h-56 overflow-hidden rounded-lg md:h-96'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M5 1 1 5l4 4'),
@@ -256,7 +257,7 @@ component = Div(
             data_carousel_prev=True,
             cls='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 9 4-4-4-4'),
@@ -361,41 +362,41 @@ component = Div(
     Div(
         Div(
             Div(
-                Img(src='/docs/images/carousel/carousel-1.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1005, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item='active',
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-2.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=11, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-3.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=12, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-4.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1084, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-5.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1085, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-700 ease-in-out'
             ),
             cls='relative h-56 overflow-hidden rounded-lg md:h-96'
         ),
         Div(
-            Button(type='button', aria_current='true', aria_label='Slide 1', data_carousel_slide_to='0', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 2', data_carousel_slide_to='1', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 3', data_carousel_slide_to='2', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 4', data_carousel_slide_to='3', cls='w-3 h-3 rounded-full'),
-            Button(type='button', aria_current='false', aria_label='Slide 5', data_carousel_slide_to='4', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='true', aria_label='Slide 1', data_carousel_slide_to='0', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 2', data_carousel_slide_to='1', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 3', data_carousel_slide_to='2', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 4', data_carousel_slide_to='3', cls='w-3 h-3 rounded-full'),
+            fh.Button(type='button', aria_current='false', aria_label='Slide 5', data_carousel_slide_to='4', cls='w-3 h-3 rounded-full'),
             cls='absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M5 1 1 5l4 4'),
@@ -412,7 +413,7 @@ component = Div(
             data_carousel_prev=True,
             cls='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
         ),
-        Button(
+        fh.Button(
             Span(
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 9 4-4-4-4'),
@@ -527,27 +528,27 @@ component = Div(
     Div(
         Div(
             Div(
-                Img(src='/docs/images/carousel/carousel-1.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1005, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-2.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=11, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-3.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=12, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item='active',
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-4.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1084, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-5.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1085, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
@@ -595,27 +596,27 @@ component = Div(
     Div(
         Div(
             Div(
-                Img(src='/docs/images/carousel/carousel-1.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1005, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-2.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=11, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-3.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=12, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item='active',
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-4.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1084, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),
             Div(
-                Img(src='/docs/images/carousel/carousel-5.svg', alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
+                PicSumImg(h=600, w=800, id=1085, alt='...', cls='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'),
                 data_carousel_item=True,
                 cls='hidden duration-200 ease-linear'
             ),

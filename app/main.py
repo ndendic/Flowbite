@@ -29,52 +29,7 @@ flowbite_hdrs = (
 )
 
 flowbite_ftrs = [
-    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"),
-    Script("""
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get references to elements
-        const drawerButton = document.querySelector('[data-drawer-target="logo-sidebar"]');
-        const sidebar = document.getElementById('logo-sidebar');
-        const mainContent = document.querySelector('.p-4:not(.mt-14)');
-        
-        // Function to toggle main content margin
-        function toggleMainMargin() {
-            // Check if sidebar is visible (doesn't have -translate-x-full class)
-            if (!sidebar.classList.contains('-translate-x-full')) {
-                // Sidebar is visible, add margin to main content
-                mainContent.classList.add('ml-64');
-            } else {
-                // Sidebar is hidden, remove margin from main content
-                mainContent.classList.remove('ml-64');
-            }
-        }
-        
-        // Initial check
-        toggleMainMargin();
-        
-        // Listen for sidebar visibility changes
-        if (drawerButton) {
-            drawerButton.addEventListener('click', function() {
-                // Wait for the drawer animation to complete
-                setTimeout(toggleMainMargin, 300);
-            });
-        }
-        
-        // Create a MutationObserver to watch for class changes on the sidebar
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.attributeName === 'class') {
-                    toggleMainMargin();
-                }
-            });
-        });
-        
-        // Start observing the sidebar for class changes
-        if (sidebar) {
-            observer.observe(sidebar, { attributes: true });
-        }
-    });
-    """),
+    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"), 
     Script("""
     document.addEventListener('DOMContentLoaded', function() {
         // Theme toggle functionality

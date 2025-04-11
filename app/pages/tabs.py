@@ -17,32 +17,34 @@ def _basic_tabs_section():
                     TabItem("Profile", controls="profile"),
                     TabItem("Settings", controls="settings"),
                     TabItem("Messages", controls="messages"),
+                    data_tabs_toggle="#basic-tabs",
                 ),
                 # Tab content
-                Div(
-                    Div(P("Profile content goes here..."), id="profile", cls="p-4"),
-                    Div(P("Settings content goes here..."), id="settings", cls="hidden p-4"),
-                    Div(P("Messages content goes here..."), id="messages", cls="hidden p-4")
+                Ul(
+                    Li(P("Profile content goes here..."), id="profile", cls="p-4"),
+                    Li(P("Settings content goes here..."), id="settings", cls="hidden p-4"),
+                    Li(P("Messages content goes here..."), id="messages", cls="hidden p-4"),
+                    id="basic-tabs"
                 )
             ),
-            code="""from fastbite.all import TabContainer, TabItem
+            code="""from fastbite.all import *
 
 # Create tab navigation
-tabs = TabContainer(
-    TabItem("Profile", controls="profile"),
-    TabItem("Settings", controls="settings"),
-    TabItem("Messages", controls="messages"),
-)
-
-# Create tab content panels
-content = Div(
-    Div(P("Profile content goes here..."), id="profile", cls="p-4"),
-    Div(P("Settings content goes here..."), id="settings", cls="hidden p-4"),
-    Div(P("Messages content goes here..."), id="messages", cls="hidden p-4")
-)
-
-# Combine tabs and content
-Div(tabs, content)""",
+Div(
+    TabContainer(
+        TabItem("Profile", controls="profile"),
+        TabItem("Settings", controls="settings"),
+        TabItem("Messages", controls="messages"),
+        data_tabs_toggle="#basic-tabs"
+    ),
+    # Tab content
+    Ul(
+        Li(P("Profile content goes here..."), id="profile", cls="p-4"),
+        Li(P("Settings content goes here..."), id="settings", cls="hidden p-4"),
+        Li(P("Messages content goes here..."), id="messages", cls="hidden p-4"),
+        id="basic-tabs"
+    )
+)""",
             id="basic-tabs"
         ),
         
@@ -57,9 +59,10 @@ Div(tabs, content)""",
                     TabItem("Products", controls="products-panel"),
                     TabItem("Services", controls="services-panel"),
                     TabItem("Support", controls="support-panel"),
+                    data_tabs_toggle="#rich-content-tabs"
                 ),
-                Div(
-                    Div(
+                Ul(
+                    Li(
                         H3("Featured Products", cls="mb-3"),
                         Ul(cls="list-disc pl-5")(
                             Li("Product A"),
@@ -69,7 +72,7 @@ Div(tabs, content)""",
                         id="products-panel", 
                         cls="p-4"
                     ),
-                    Div(
+                    Li(
                         H3("Our Services", cls="mb-3"),
                         Ul(cls="list-disc pl-5")(
                             Li("Consulting"),
@@ -79,7 +82,7 @@ Div(tabs, content)""",
                         id="services-panel", 
                         cls="hidden p-4"
                     ),
-                    Div(
+                    Li(
                         H3("Support Options", cls="mb-3"),
                         P("Contact us via:"),
                         Ul(cls="list-disc pl-5")(
@@ -90,54 +93,54 @@ Div(tabs, content)""",
                         id="support-panel", 
                         cls="hidden p-4"
                     )
-                )
+                ),
+                id="rich-content-tabs"
             ),
-            code="""from fastbite.all import TabContainer, TabItem
+            code="""from fastbite.all import *
 
 # Create tab navigation
-tabs = TabContainer(
-    TabItem("Products", controls="products-panel"),
-    TabItem("Services", controls="services-panel"),
-    TabItem("Support", controls="support-panel"),
-)
-
-# Create content panels with rich content
-content = Div(
-    Div(
-        H3("Featured Products", cls="mb-3"),
-        Ul(cls="list-disc pl-5")(
-            Li("Product A"),
-            Li("Product B"),
-            Li("Product C")
-        ),
-        id="products-panel", 
-        cls="p-4"
+Div(
+    TabContainer(
+        TabItem("Products", controls="products-panel"),
+        TabItem("Services", controls="services-panel"),
+        TabItem("Support", controls="support-panel"),
+        data_tabs_toggle="#rich-content-tabs"
     ),
-    Div(
-        H3("Our Services", cls="mb-3"),
-        Ul(cls="list-disc pl-5")(
-            Li("Consulting"),
-            Li("Development"),
-            Li("Support")
+    Ul(
+        Li(
+            H3("Featured Products", cls="mb-3"),
+            Ul(cls="list-disc pl-5")(
+                Li("Product A"),
+                Li("Product B"),
+                Li("Product C")
+            ),
+            id="products-panel", 
+            cls="p-4"
         ),
-        id="services-panel", 
-        cls="hidden p-4"
+        Li(
+            H3("Our Services", cls="mb-3"),
+            Ul(cls="list-disc pl-5")(
+                Li("Consulting"),
+                Li("Development"),
+                Li("Support")
+            ),
+            id="services-panel", 
+            cls="hidden p-4"
+        ),
+        Li(
+            H3("Support Options", cls="mb-3"),
+            P("Contact us via:"),
+            Ul(cls="list-disc pl-5")(
+                Li("Email: support@example.com"),
+                Li("Phone: +1 234 567 890"),
+                Li("Chat: Available 24/7")
+            ),
+            id="support-panel", 
+            cls="hidden p-4"
+        )
     ),
-    Div(
-        H3("Support Options", cls="mb-3"),
-        P("Contact us via:"),
-        Ul(cls="list-disc pl-5")(
-            Li("Email: support@example.com"),
-            Li("Phone: +1 234 567 890"),
-            Li("Chat: Available 24/7")
-        ),
-        id="support-panel", 
-        cls="hidden p-4"
-    )
-)
-
-# Combine tabs and content
-Div(tabs, content)""",
+    id="rich-content-tabs"
+)""",
             id="rich-content-tabs"
         ),
         
@@ -159,37 +162,41 @@ def _customized_tabs_section():
                     TabItem("Tab 1", controls="tab-1-custom"),
                     TabItem("Tab 2", controls="tab-2-custom"),
                     TabItem("Tab 3", controls="tab-3-custom"),
-                    active_items_cls="text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-400 border-blue-600 dark:border-blue-500",
+                    data_tabs_toggle="#custom-styled-tabs",
+                    active_items_cls="text-lime-600 hover:text-lime-800 dark:text-lime-500 dark:hover:text-lime-400 border-lime-600 dark:border-lime-500",
                     inactive_items_cls="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 border-transparent hover:border-gray-300 dark:border-transparent"
                 ),
                 # Tab content
-                Div(
-                    Div(P("Content for Tab 1"), id="tab-1-custom", cls="p-4 bg-blue-50 dark:bg-gray-800 rounded-lg"),
-                    Div(P("Content for Tab 2"), id="tab-2-custom", cls="hidden p-4 bg-blue-50 dark:bg-gray-800 rounded-lg"),
-                    Div(P("Content for Tab 3"), id="tab-3-custom", cls="hidden p-4 bg-blue-50 dark:bg-gray-800 rounded-lg")
-                )
+                Ul(
+                    Li(P("Content for Tab 1", cls=TextT.text_3xl+"text-white"), id="tab-1-custom", cls="p-4"),
+                    Li(P("Content for Tab 2", cls=TextT.text_3xl+"text-white"), id="tab-2-custom", cls="p-4 hidden"),
+                    Li(P("Content for Tab 3", cls=TextT.text_3xl+"text-white"), id="tab-3-custom", cls="p-4 hidden"),
+                    id="custom-styled-tabs",
+                    cls="mt-2 rounded-lg"+BgColor.grad_lime
+                ),
             ),
-            code="""from fastbite.all import TabContainer, TabItem
+            code="""from fastbite.all import *
 
 # Custom color styling for tabs
-custom_tabs = TabContainer(
-    TabItem("Tab 1", controls="tab-1-custom"),
-    TabItem("Tab 2", controls="tab-2-custom"),
-    TabItem("Tab 3", controls="tab-3-custom"),
-    # Custom styling for active tabs
-    active_items_cls="text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-400 border-blue-600 dark:border-blue-500",
-    # Custom styling for inactive tabs
-    inactive_items_cls="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 border-transparent hover:border-gray-300 dark:border-transparent"
-)
-
-# Content panels with custom background
-content = Div(
-    Div(P("Content for Tab 1"), id="tab-1-custom", cls="p-4 bg-blue-50 dark:bg-gray-800 rounded-lg"),
-    Div(P("Content for Tab 2"), id="tab-2-custom", cls="hidden p-4 bg-blue-50 dark:bg-gray-800 rounded-lg"),
-    Div(P("Content for Tab 3"), id="tab-3-custom", cls="hidden p-4 bg-blue-50 dark:bg-gray-800 rounded-lg")
-)
-
-Div(custom_tabs, content)""",
+Div(
+    # Custom styled tabs
+    TabContainer(
+        TabItem("Tab 1", controls="tab-1-custom"),
+        TabItem("Tab 2", controls="tab-2-custom"),
+        TabItem("Tab 3", controls="tab-3-custom"),
+        data_tabs_toggle="#custom-styled-tabs",
+        active_items_cls="text-green-600 hover:text-green-800 dark:text-green-500 dark:hover:text-green-400 border-green-600 dark:border-green-500",
+        inactive_items_cls="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 border-transparent hover:border-gray-300 dark:border-transparent"
+    ),
+    # Tab content
+    Ul(
+        Li(P("Content for Tab 1", cls=TextT.text_3xl+"text-white"), id="tab-1-custom", cls="p-4"),
+        Li(P("Content for Tab 2", cls=TextT.text_3xl+"text-white"), id="tab-2-custom", cls="p-4 hidden"),
+        Li(P("Content for Tab 3", cls=TextT.text_3xl+"text-white"), id="tab-3-custom", cls="p-4 hidden"),
+        id="custom-styled-tabs",
+        cls="mt-2 bg-primary-500 dark:bg-primary-500 rounded-lg"
+    ),
+)""",
             id="custom-styled-tabs"
         ),
         
@@ -204,33 +211,34 @@ Div(custom_tabs, content)""",
                     TabItem("Files", controls="files-tab"),
                     TabItem("Images", controls="images-tab"),
                     TabItem("Videos", controls="videos-tab"),
-                    cls="border rounded-t-lg p-2 bg-gray-50 dark:bg-gray-700"
+                    data_tabs_toggle="#tabs-with-additional-classes",
+                    cls=TabContainerT.rounded
                 ),
-                Div(
-                    Div(P("Files content here..."), id="files-tab", cls="p-4 border border-t-0 rounded-b-lg"),
-                    Div(P("Images content here..."), id="images-tab", cls="hidden p-4 border border-t-0 rounded-b-lg"),
-                    Div(P("Videos content here..."), id="videos-tab", cls="hidden p-4 border border-t-0 rounded-b-lg")
+                Ul(
+                    Li(P("Files content here..."), id="files-tab", cls="p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+                    Li(P("Images content here..."), id="images-tab", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+                    Li(P("Videos content here..."), id="videos-tab", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+                    id="tabs-with-additional-classes"
                 )
             ),
-            code="""from fastbite.all import TabContainer, TabItem
+            code="""from fastbite.all import *
 
 # Tabs with additional styling classes
-styled_tabs = TabContainer(
-    TabItem("Files", controls="files-tab"),
-    TabItem("Images", controls="images-tab"),
-    TabItem("Videos", controls="videos-tab"),
-    # Additional styling for the tab container
-    cls="border rounded-t-lg p-2 bg-gray-50 dark:bg-gray-700"
-)
-
-# Content panels with border styling
-content = Div(
-    Div(P("Files content here..."), id="files-tab", cls="p-4 border border-t-0 rounded-b-lg"),
-    Div(P("Images content here..."), id="images-tab", cls="hidden p-4 border border-t-0 rounded-b-lg"),
-    Div(P("Videos content here..."), id="videos-tab", cls="hidden p-4 border border-t-0 rounded-b-lg")
-)
-
-Div(styled_tabs, content)""",
+Div(
+    TabContainer(
+        TabItem("Files", controls="files-tab"),
+        TabItem("Images", controls="images-tab"),
+        TabItem("Videos", controls="videos-tab"),
+        data_tabs_toggle="#tabs-with-additional-classes",
+        cls=TabContainerT.rounded
+    ),
+    Ul(
+        Li(P("Files content here..."), id="files-tab", cls="p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+        Li(P("Images content here..."), id="images-tab", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+        Li(P("Videos content here..."), id="videos-tab", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-700"),
+        id="tabs-with-additional-classes"
+    )
+)""",
             id="tabs-with-additional-classes"
         ),
         
@@ -251,16 +259,17 @@ def _integration_section():
                 TabContainer(
                     TabItem("Details", controls="details-tab"),
                     TabItem("Specifications", controls="specs-tab"),
-                    TabItem("Reviews", controls="reviews-tab")
+                    TabItem("Reviews", controls="reviews-tab"),
+                    data_tabs_toggle="#tabs-with-cards"
                 ),
-                Div(
-                    Div(
+                Ul(
+                    Li(
                         P("This product is designed for professional use with high-quality materials."),
                         P("Features include durability, ease of use, and premium components."),
                         id="details-tab", 
                         cls="p-4"
                     ),
-                    Div(
+                    Li(
                         P("Technical Specifications:"),
                         Ul(cls="list-disc pl-5 mt-2")(
                             Li("Dimensions: 10 x 5 x 2 inches"),
@@ -272,7 +281,7 @@ def _integration_section():
                         id="specs-tab", 
                         cls="hidden p-4"
                     ),
-                    Div(
+                    Li(
                         P("Customer Reviews:"),
                         Div(
                             P("\"Excellent product, highly recommended!\" - John D."),
@@ -282,28 +291,29 @@ def _integration_section():
                         ),
                         id="reviews-tab", 
                         cls="hidden p-4"
-                    )
-                )
+                    ),
+                    id="tabs-with-cards"
+                ),
+                cls=CardT.hover
             ),
-            code="""from fastbite.all import Card, Title, TabContainer, TabItem
+            code="""from fastbite.all import *
 
 Card(
     Title("Product Information"),
-    # Tab navigation
     TabContainer(
         TabItem("Details", controls="details-tab"),
         TabItem("Specifications", controls="specs-tab"),
-        TabItem("Reviews", controls="reviews-tab")
+        TabItem("Reviews", controls="reviews-tab"),
+        data_tabs_toggle="#tabs-with-cards"
     ),
-    # Tab content panels
-    Div(
-        Div(
+    Ul(
+        Li(
             P("This product is designed for professional use with high-quality materials."),
             P("Features include durability, ease of use, and premium components."),
             id="details-tab", 
             cls="p-4"
         ),
-        Div(
+        Li(
             P("Technical Specifications:"),
             Ul(cls="list-disc pl-5 mt-2")(
                 Li("Dimensions: 10 x 5 x 2 inches"),
@@ -315,7 +325,7 @@ Card(
             id="specs-tab", 
             cls="hidden p-4"
         ),
-        Div(
+        Li(
             P("Customer Reviews:"),
             Div(
                 P("\"Excellent product, highly recommended!\" - John D."),
@@ -325,8 +335,10 @@ Card(
             ),
             id="reviews-tab", 
             cls="hidden p-4"
-        )
-    )
+        ),
+        id="tabs-with-cards"
+    ),
+    cls=CardT.hover
 )""",
             id="tabs-with-cards"
         ),
@@ -342,131 +354,99 @@ Card(
                 TabContainer(
                     TabItem("Personal", controls="personal-info"),
                     TabItem("Contact", controls="contact-info"),
-                    TabItem("Preferences", controls="preferences")
+                    TabItem("Preferences", controls="preferences"),
+                    data_tabs_toggle="#tabs-for-forms",
+                    cls=TabContainerT.rounded
                 ),
-                Div(
-                    Div(id="personal-info", cls="p-4 border border-t-0 rounded-b-lg")(
+                Ul(
+                    Li(id="personal-info", cls="p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
                         Div(cls="mb-3")(
-                            Label("First Name", for_="first-name"),
-                            Input(id="first-name", placeholder="Enter your first name", required=True)
+                            Input(label="First Name", id="first-name", placeholder="Enter your first name", required=True)
                         ),
                         Div(cls="mb-3")(
-                            Label("Last Name", for_="last-name"),
-                            Input(id="last-name", placeholder="Enter your last name", required=True)
+                            Input(label="Last Name", id="last-name", placeholder="Enter your last name", required=True)
                         ),
                         Div(cls="mb-3")(
-                            Label("Date of Birth", for_="dob"),
-                            Input(id="dob", type="date")
+                            Input(label="Date of Birth", id="dob", type="date")
                         )
                     ),
-                    Div(id="contact-info", cls="hidden p-4 border border-t-0 rounded-b-lg")(
+                    Li(id="contact-info", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
                         Div(cls="mb-3")(
-                            Label("Email", for_="email"),
-                            Input(id="email", type="email", placeholder="Enter your email", required=True)
+                            Input(label="Email", id="email", type="email", placeholder="Enter your email", required=True)
                         ),
                         Div(cls="mb-3")(
-                            Label("Phone", for_="phone"),
-                            Input(id="phone", type="tel", placeholder="Enter your phone number")
+                            Input(label="Phone", id="phone", type="tel", placeholder="Enter your phone number")
                         ),
                         Div(cls="mb-3")(
-                            Label("Address", for_="address"),
-                            Textarea(id="address", placeholder="Enter your address", rows=3)
+                            TextArea(label="Address", id="address", placeholder="Enter your address", rows=3)
                         )
                     ),
-                    Div(id="preferences", cls="hidden p-4 border border-t-0 rounded-b-lg")(
+                    Li(id="preferences", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
                         Div(cls="mb-3")(
-                            Label("Language"),
-                            Select()(
-                                Option("English"),
-                                Option("Spanish"),
-                                Option("French"),
-                                Option("German")
-                            )
+                            Select(*Options("English","Spanish","French","German"),label="Language",id="language",placeholder="Select",required=True)
+                        ),                        
+                        Div(cls="mb-3")(FormLabel("Theme Preference"),
+                            Radio(label="Light", id="light-theme", name="theme", value="light", cls="mr-2", checked=True),
+                            Radio(label="Dark", id="dark-theme", name="theme", value="dark", cls="mr-2"),
                         ),
                         Div(cls="mb-3")(
-                            Checkbox(id="newsletter", cls="mr-2"),
-                            Label("Subscribe to newsletter", for_="newsletter")
-                        ),
-                        Div(cls="mb-3")(
-                            P("Theme Preference", cls="mb-2"),
-                            Radio(id="light-theme", name="theme", value="light", cls="mr-2", checked=True),
-                            Label("Light", for_="light-theme", cls="mr-4"),
-                            Radio(id="dark-theme", name="theme", value="dark", cls="mr-2"),
-                            Label("Dark", for_="dark-theme")
+                            Checkbox(label="Subscribe to newsletter", id="newsletter", cls="mr-2"),
                         )
-                    )
+                    ),
+                    id="tabs-for-forms"
                 ),
                 Div(cls="mt-4")(
                     Button("Submit", variant="primary")
                 )
             ),
-            code="""from fastbite.all import TabContainer, TabItem, Label, Input, Textarea, Select, Option, Checkbox, Radio, Button
+            code="""from fastbite.all import *
 
 Div(cls="max-w-2xl mx-auto")(
     H3("Registration Form", cls="text-xl font-bold mb-4"),
-    # Form tabs
     TabContainer(
         TabItem("Personal", controls="personal-info"),
         TabItem("Contact", controls="contact-info"),
-        TabItem("Preferences", controls="preferences")
+        TabItem("Preferences", controls="preferences"),
+        data_tabs_toggle="#tabs-for-forms",
+        cls=TabContainerT.rounded
     ),
-    # Form sections in tabs
-    Div(
-        # Personal information tab
-        Div(id="personal-info", cls="p-4 border border-t-0 rounded-b-lg")(
+    Ul(
+        Li(id="personal-info", cls="p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
             Div(cls="mb-3")(
-                Label("First Name", for_="first-name"),
-                Input(id="first-name", placeholder="Enter your first name", required=True)
+                Input(label="First Name", id="first-name", placeholder="Enter your first name", required=True)
             ),
             Div(cls="mb-3")(
-                Label("Last Name", for_="last-name"),
-                Input(id="last-name", placeholder="Enter your last name", required=True)
+                Input(label="Last Name", id="last-name", placeholder="Enter your last name", required=True)
             ),
             Div(cls="mb-3")(
-                Label("Date of Birth", for_="dob"),
-                Input(id="dob", type="date")
+                Input(label="Date of Birth", id="dob", type="date")
             )
         ),
-        # Contact information tab
-        Div(id="contact-info", cls="hidden p-4 border border-t-0 rounded-b-lg")(
+        Li(id="contact-info", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
             Div(cls="mb-3")(
-                Label("Email", for_="email"),
-                Input(id="email", type="email", placeholder="Enter your email", required=True)
+                Input(label="Email", id="email", type="email", placeholder="Enter your email", required=True)
             ),
             Div(cls="mb-3")(
-                Label("Phone", for_="phone"),
-                Input(id="phone", type="tel", placeholder="Enter your phone number")
+                Input(label="Phone", id="phone", type="tel", placeholder="Enter your phone number")
             ),
             Div(cls="mb-3")(
-                Label("Address", for_="address"),
-                Textarea(id="address", placeholder="Enter your address", rows=3)
+                TextArea(label="Address", id="address", placeholder="Enter your address", rows=3)
             )
         ),
-        # Preferences tab
-        Div(id="preferences", cls="hidden p-4 border border-t-0 rounded-b-lg")(
+        Li(id="preferences", cls="hidden p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600")(
             Div(cls="mb-3")(
-                Label("Language"),
-                Select()(
-                    Option("English"),
-                    Option("Spanish"),
-                    Option("French"),
-                    Option("German")
-                )
+                Select(*Options("English","Spanish","French","German"),label="Language",id="language",placeholder="Select",required=True)
+            ),                        
+            Div(cls="mb-3")(FormLabel("Theme Preference"),
+                Radio(label="Light", id="light-theme", name="theme", value="light", cls="mr-2", checked=True),
+                Radio(label="Dark", id="dark-theme", name="theme", value="dark", cls="mr-2"),
             ),
             Div(cls="mb-3")(
-                Checkbox(id="newsletter", cls="mr-2"),
-                Label("Subscribe to newsletter", for_="newsletter")
-            ),
-            Div(cls="mb-3")(
-                P("Theme Preference", cls="mb-2"),
-                Radio(id="light-theme", name="theme", value="light", cls="mr-2", checked=True),
-                Label("Light", for_="light-theme", cls="mr-4"),
-                Radio(id="dark-theme", name="theme", value="dark", cls="mr-2"),
-                Label("Dark", for_="dark-theme")
+                Checkbox(label="Subscribe to newsletter", id="newsletter", cls="mr-2"),
             )
-        )
+        ),
+        id="tabs-for-forms"
     ),
-    # Submit button
     Div(cls="mt-4")(
         Button("Submit", variant="primary")
     )

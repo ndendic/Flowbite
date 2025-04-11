@@ -7,6 +7,8 @@ __all__ = ['Round', 'TextT', 'TextPresets', 'TextHeading', 'ListT']
 from .core import *
 from fastcore.all import *
 
+# TODO: Add animation and effects classes
+
 # %% ../nbs/01_base_styles.ipynb 2
 class Round(VEnum):
     """Button shape variants"""

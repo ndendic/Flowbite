@@ -3,6 +3,13 @@ from fastbite.all import *
 from fasthtml.svg import *
 from utils import component_showcase
 
+
+cites = [
+    ("This is the best product I've ever used! It completely changed my life.", "John Doe", "CEO at TechCorp"),
+    ("I was skeptical at first, but this product exceeded all my expectations!", "Jane Smith", "Designer at CreativeCo"),
+    ("Our team's productivity increased by 200% after implementing this solution.", "Mike Johnson", "Project Manager at BuildInc")
+]
+
 slider_components = Div(
     H1("Slider Components", link=True),
     
@@ -14,27 +21,17 @@ slider_components = Div(
     P("The ", Code("Slider"), " component creates a basic image carousel with navigation controls and indicators:"),
 
     component_showcase(
-        Div(
-            Slider(
-                [
-                    PicSumImg(h=600, w=800, alt="Slide 1", cls="d-block w-full"),
-                    PicSumImg(h=600, w=800, id=237, alt="Slide 2", cls="d-block w-full"),
-                    PicSumImg(h=600, w=800, id=42, alt="Slide 3", cls="d-block w-full")
-                ],
-                id="default-slider"
-            ),
-            cls="max-w-3xl"
+        Slider(
+            PicSumImg(h=600, w=900, alt="Slide 1"),
+            PicSumImg(h=600, w=900, id=237, alt="Slide 2"),
+            PicSumImg(h=600, w=900, id=42, alt="Slide 3"),
         ),
-        code="""from fastbite.all import Slider, PicSumImg
+        code="""from fastbite.all import *
 
-# Basic slider with images
 Slider(
-    [
-        PicSumImg(h=400, w=800, alt="Slide 1", cls="d-block w-full"),
-        PicSumImg(h=400, w=800, id=237, alt="Slide 2", cls="d-block w-full"),
-        PicSumImg(h=400, w=800, id=42, alt="Slide 3", cls="d-block w-full")
-    ],
-    id="default-slider"  # Unique ID for the slider
+    PicSumImg(h=600, w=900, alt="Slide 1"),
+    PicSumImg(h=600, w=900, id=237, alt="Slide 2"),
+    PicSumImg(h=600, w=900, id=42, alt="Slide 3"),
 )""",
         id="basic-slider"
     ),
@@ -45,52 +42,41 @@ Slider(
     P("Create sliders with custom content instead of just images:"),
 
     component_showcase(
-        Div(
-            Slider(
-                [
-                    Div(
-                        H3("First Slide", cls="text-2xl font-bold mb-2 text-white"),
-                        P("This is the first slide content", cls="text-white"),
-                        cls="flex flex-col items-center justify-center h-full p-4 bg-blue-600"
-                    ),
-                    Div(
-                        H3("Second Slide", cls="text-2xl font-bold mb-2 text-white"),
-                        P("This is the second slide content", cls="text-white"),
-                        cls="flex flex-col items-center justify-center h-full p-4 bg-green-600"
-                    ),
-                    Div(
-                        H3("Third Slide", cls="text-2xl font-bold mb-2 text-white"),
-                        P("This is the third slide content", cls="text-white"),
-                        cls="flex flex-col items-center justify-center h-full p-4 bg-purple-600"
-                    )
-                ],
-                id="content-slider"
+        Slider(            
+            Div(
+                H3("First Slide", cls="text-2xl font-bold mb-2 text-white"),
+                P("This is the first slide content", cls="text-white"),
+                cls="flex flex-col items-center justify-center h-full p-4 bg-blue-600"+Round.lg
             ),
-            cls="max-w-3xl"
+            Div(
+                H3("Second Slide", cls="text-2xl font-bold mb-2 text-white"),
+                P("This is the second slide content", cls="text-white"),
+                cls="flex flex-col items-center justify-center h-full p-4 bg-green-600"+Round.lg
+            ),
+            Div(
+                H3("Third Slide", cls="text-2xl font-bold mb-2 text-white"),
+                P("This is the third slide content", cls="text-white"),
+                cls="flex flex-col items-center justify-center h-full p-4 bg-purple-600"+Round.lg
+            ),
         ),
-        code="""from fastbite.all import Slider
-from fasthtml.common import Div, H3, P
+        code="""from fastbite.all import *
 
-# Slider with custom content
-Slider(
-    [
-        Div(
-            H3("First Slide", cls="text-2xl font-bold mb-2 text-white"),
-            P("This is the first slide content", cls="text-white"),
-            cls="flex flex-col items-center justify-center h-full p-4 bg-blue-600"
-        ),
-        Div(
-            H3("Second Slide", cls="text-2xl font-bold mb-2 text-white"),
-            P("This is the second slide content", cls="text-white"),
-            cls="flex flex-col items-center justify-center h-full p-4 bg-green-600"
-        ),
-        Div(
-            H3("Third Slide", cls="text-2xl font-bold mb-2 text-white"),
-            P("This is the third slide content", cls="text-white"),
-            cls="flex flex-col items-center justify-center h-full p-4 bg-purple-600"
-        )
-    ],
-    id="content-slider"
+Slider(            
+    Div(
+        H3("First Slide", cls="text-2xl font-bold mb-2 text-white"),
+        P("This is the first slide content", cls="text-white"),
+        cls="flex flex-col items-center justify-center h-full p-4 bg-blue-600"+Round.lg
+    ),
+    Div(
+        H3("Second Slide", cls="text-2xl font-bold mb-2 text-white"),
+        P("This is the second slide content", cls="text-white"),
+        cls="flex flex-col items-center justify-center h-full p-4 bg-green-600"+Round.lg
+    ),
+    Div(
+        H3("Third Slide", cls="text-2xl font-bold mb-2 text-white"),
+        P("This is the third slide content", cls="text-white"),
+        cls="flex flex-col items-center justify-center h-full p-4 bg-purple-600"+Round.lg
+    ),
 )""",
         id="content-slider"
     ),
@@ -107,74 +93,79 @@ Slider(
             Div(
                 H4("Slider without Controls", cls="mb-2"),
                 Slider(
-                    [
-                        PicSumImg(h=300, w=800, alt="Slide 1", cls="d-block w-full"),
-                        PicSumImg(h=300, w=800, id=240, alt="Slide 2", cls="d-block w-full")
-                    ],
+                    PicSumImg(h=600, w=900, alt="Slide 1"),
+                    PicSumImg(h=600, w=900, id=240, alt="Slide 2"),
+                    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
                     show_controls=False,
-                    id="no-controls-slider"
                 ),
                 cls="mb-8"
             ),
             Div(
                 H4("Slider without Indicators", cls="mb-2"),
                 Slider(
-                    [
-                        PicSumImg(h=300, w=800, id=244, alt="Slide 1", cls="d-block w-full"),
-                        PicSumImg(h=300, w=800, id=243, alt="Slide 2", cls="d-block w-full")
-                    ],
+                    PicSumImg(h=600, w=900, id=244, alt="Slide 1"),
+                    PicSumImg(h=600, w=900, id=243, alt="Slide 2"),
+                    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
                     show_indicators=False,
-                    id="no-indicators-slider"
                 ),
                 cls="mb-8"
             ),
             Div(
                 H4("Slider without Controls or Indicators", cls="mb-2"),
                 Slider(
-                    [
-                        PicSumImg(h=300, w=800, id=239, alt="Slide 1", cls="d-block w-full"),
-                        PicSumImg(h=300, w=800, id=248, alt="Slide 2", cls="d-block w-full")
-                    ],
+                    PicSumImg(h=600, w=900, id=239, alt="Slide 1"),
+                    PicSumImg(h=600, w=900, id=248, alt="Slide 2"),
+                    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
                     show_controls=False,
                     show_indicators=False,
-                    id="minimal-slider"
                 )
             ),
-            cls="max-w-3xl"
+            Div(
+                H4("Static Slider", cls="mb-2"),
+                Slider(
+                    PicSumImg(h=600, w=900, id=239, alt="Slide 1"),
+                    PicSumImg(h=600, w=900, id=248, alt="Slide 2"),
+                    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
+                    static=True,
+                )
+            ),
         ),
         code="""from fastbite.all import Slider, PicSumImg
 from fasthtml.common import Div, H4
 
 # Slider without control arrows
 Slider(
-    [
-        PicSumImg(h=300, w=800, alt="Slide 1", cls="d-block w-full"),
-        PicSumImg(h=300, w=800, id=240, alt="Slide 2", cls="d-block w-full")
-    ],
-    show_controls=False,  # Hide the next/previous arrows
-    id="no-controls-slider"
+    PicSumImg(h=600, w=900, alt="Slide 1"),
+    PicSumImg(h=600, w=900, id=240, alt="Slide 2"),
+    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
+    show_controls=False,
 )
 
 # Slider without indicator dots
 Slider(
-    [
-        PicSumImg(h=300, w=800, id=244, alt="Slide 1", cls="d-block w-full"),
-        PicSumImg(h=300, w=800, id=243, alt="Slide 2", cls="d-block w-full")
-    ],
-    show_indicators=False,  # Hide the indicator dots
-    id="no-indicators-slider"
+    PicSumImg(h=600, w=900, id=244, alt="Slide 1"),
+    PicSumImg(h=600, w=900, id=243, alt="Slide 2"),
+    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
+    show_indicators=False,
 )
 
 # Minimal slider without controls or indicators
 Slider(
-    [
-        PicSumImg(h=300, w=800, id=239, alt="Slide 1", cls="d-block w-full"),
-        PicSumImg(h=300, w=800, id=248, alt="Slide 2", cls="d-block w-full")
-    ],
+    PicSumImg(h=600, w=900, id=239, alt="Slide 1"),
+    PicSumImg(h=600, w=900, id=248, alt="Slide 2")
+    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
     show_controls=False,
     show_indicators=False,
-    id="minimal-slider"
-)""",
+)
+
+# Static slider
+Slider(
+    PicSumImg(h=600, w=900, id=239, alt="Slide 1"),
+    PicSumImg(h=600, w=900, id=248, alt="Slide 2"),
+    PicSumImg(h=600, w=900, id=1053, alt="Slide 3"),
+    static=True,
+)
+""",
         id="slider-options"
     ),
     
@@ -189,11 +180,11 @@ Slider(
             SliderContainer(
                 Div(
                     SliderItem(
-                        PicSumImg(h=300, w=800, id=250, alt="Slide 1", cls="d-block w-full"),
+                        PicSumImg(h=600, w=900, id=250, alt="Slide 1"),
                         cls=SliderItemT.default
                     ),
                     SliderItem(
-                        PicSumImg(h=300, w=800, id=251, alt="Slide 2", cls="d-block w-full"),
+                        PicSumImg(h=600, w=900, id=251, alt="Slide 2"),
                         cls=SliderItemT.default
                     ),
                     cls="relative h-56 overflow-hidden rounded-lg md:h-72"
@@ -211,11 +202,11 @@ from fasthtml.common import Div
 SliderContainer(
     Div(
         SliderItem(
-            PicSumImg(h=300, w=800, id=250, alt="Slide 1", cls="d-block w-full"),
+            PicSumImg(h=600, w=900, id=250, alt="Slide 1"),
             cls=SliderItemT.default  # Default transition (ease-in-out)
         ),
         SliderItem(
-            PicSumImg(h=300, w=800, id=251, alt="Slide 2", cls="d-block w-full"),
+            PicSumImg(h=600, w=900, id=251, alt="Slide 2"),
             cls=SliderItemT.default
         ),
         cls="relative h-56 overflow-hidden rounded-lg md:h-72"
@@ -235,11 +226,11 @@ SliderContainer(
             SliderContainer(
                 Div(
                     SliderItem(
-                        PicSumImg(h=300, w=800, id=252, alt="Slide 1", cls="d-block w-full"),
+                        PicSumImg(h=600, w=900, id=252, alt="Slide 1"),
                         cls=SliderItemT.linear
                     ),
                     SliderItem(
-                        PicSumImg(h=300, w=800, id=253, alt="Slide 2", cls="d-block w-full"),
+                        PicSumImg(h=600, w=900, id=253, alt="Slide 2"),
                         cls=SliderItemT.linear
                     ),
                     cls="relative h-56 overflow-hidden rounded-lg md:h-72"
@@ -257,11 +248,11 @@ from fasthtml.common import Div
 SliderContainer(
     Div(
         SliderItem(
-            PicSumImg(h=300, w=800, id=252, alt="Slide 1", cls="d-block w-full"),
+            PicSumImg(h=600, w=900, id=252, alt="Slide 1"),
             cls=SliderItemT.linear  # Linear transition
         ),
         SliderItem(
-            PicSumImg(h=300, w=800, id=253, alt="Slide 2", cls="d-block w-full"),
+            PicSumImg(h=600, w=900, id=253, alt="Slide 2"),
             cls=SliderItemT.linear
         ),
         cls="relative h-56 overflow-hidden rounded-lg md:h-72"
@@ -347,181 +338,131 @@ SliderContainer(
     
     H2("Practical Examples", link=True),
     
-    H3("Product Showcase", link=True),
-    P("Use sliders to create product galleries with thumbnails:"),
+#     H3("Product Showcase", link=True),
+#     P("Use sliders to create product galleries with thumbnails:"),
 
-    component_showcase(
-        Div(
-            Div(
-                H4("Product Gallery", cls="text-xl font-bold mb-4"),
-                Slider(
-                    [
-                        Div(
-                            PicSumImg(h=500, w=800, id=26, alt="Product 1", cls="mx-auto"),
-                            H5("Premium Camera", cls="text-lg font-medium mt-2"),
-                            P("$199.99", cls="text-primary-600 font-bold"),
-                            P("High-quality premium camera with enhanced features", cls="text-gray-600 text-sm"),
-                            cls="p-4"
-                        ),
-                        Div(
-                            PicSumImg(h=500, w=800, id=28, alt="Product 2", cls="mx-auto"),
-                            H5("Deluxe Camera Plus", cls="text-lg font-medium mt-2"),
-                            P("$249.99", cls="text-primary-600 font-bold"),
-                            P("Our deluxe model with advanced shooting capabilities", cls="text-gray-600 text-sm"),
-                            cls="p-4"
-                        ),
-                        Div(
-                            PicSumImg(h=500, w=800, id=27, alt="Product 3", cls="mx-auto"),
-                            H5("Ultimate Camera Pro", cls="text-lg font-medium mt-2"),
-                            P("$299.99", cls="text-primary-600 font-bold"),
-                            P("Professional-grade camera for serious photography enthusiasts", cls="text-gray-600 text-sm"),
-                            cls="p-4"
-                        )
-                    ],
-                    id="product-slider",
-                    wrapper_cls="relative h-96 overflow-hidden rounded-lg md:h-[450px]"
-                ),
-                cls="border rounded-lg shadow-sm"
-            ),
-            cls="max-w-3xl"
-        ),
-        code="""from fastbite.all import Slider, PicSumImg
-from fasthtml.common import Div, H4, H5, P
+#     component_showcase(
+#         Div(
+#             Div(
+#                 H4("Product Gallery", cls="text-xl font-bold p-4 mb-4"),
+#                 Slider(
+#                     Div(
+#                         PicSumImg(h=500, w=800, id=26, alt="Product 1", cls="mx-auto"),
+#                         H5("Premium Camera", cls="text-lg font-medium mt-2"),
+#                         P("$199.99", cls="text-primary-600 font-bold"),
+#                         P("High-quality premium camera with enhanced features", cls="text-gray-600 text-sm"),
+#                         cls="p-4 bg-gray-100 dark:bg-gray-800"
+#                     ),
+#                     Div(
+#                         PicSumImg(h=500, w=800, id=28, alt="Product 2", cls="mx-auto"),
+#                         H5("Deluxe Camera Plus", cls="text-lg font-medium mt-2"),
+#                         P("$249.99", cls="text-primary-600 font-bold"),
+#                         P("Our deluxe model with advanced shooting capabilities", cls="text-gray-600 text-sm"),
+#                         cls="p-4 bg-gray-100 dark:bg-gray-800"
 
-# Product showcase slider
-Div(
-    H4("Product Gallery", cls="text-xl font-bold mb-4"),
-    Slider(
-        [
-            Div(
-                PicSumImg(h=500, w=800, id=26, alt="Product 1", cls="mx-auto"),
-                H5("Premium Camera", cls="text-lg font-medium mt-2"),
-                P("$199.99", cls="text-primary-600 font-bold"),
-                P("High-quality premium camera with enhanced features", cls="text-gray-600 text-sm"),
-                cls="p-4"
-            ),
-            Div(
-                PicSumImg(h=500, w=800, id=28, alt="Product 2", cls="mx-auto"),
-                H5("Deluxe Camera Plus", cls="text-lg font-medium mt-2"),
-                P("$249.99", cls="text-primary-600 font-bold"),
-                P("Our deluxe model with advanced shooting capabilities", cls="text-gray-600 text-sm"),
-                cls="p-4"
-            ),
-            Div(
-                PicSumImg(h=500, w=800, id=27, alt="Product 3", cls="mx-auto"),
-                H5("Ultimate Camera Pro", cls="text-lg font-medium mt-2"),
-                P("$299.99", cls="text-primary-600 font-bold"),
-                P("Professional-grade camera for serious photography enthusiasts", cls="text-gray-600 text-sm"),
-                cls="p-4"
-            )
-        ],
-        id="product-slider",
-        wrapper_cls="relative h-96 overflow-hidden rounded-lg md:h-[450px]"
-    ),
-    cls="border rounded-lg shadow-sm"
-)""",
-        id="product-showcase"
-    ),
+#                     ),
+#                     Div(
+#                         PicSumImg(h=500, w=800, id=27, alt="Product 3", cls="mx-auto"),
+#                         H5("Ultimate Camera Pro", cls="text-lg font-medium mt-2"),
+#                         P("$299.99", cls="text-primary-600 font-bold"),
+#                         P("Professional-grade camera for serious photography enthusiasts", cls="text-gray-600 text-sm"),
+#                         cls="p-4 bg-gray-100 dark:bg-gray-800"
+#                     ),
+#                     id="product-slider",
+#                     wrapper_cls="relative h-96 overflow-hidden rounded-lg md:h-[450px]"
+#                 ),
+#                 cls="border rounded-lg shadow-sm"
+#             ),
+#             cls="max-w-3xl"
+#         ),
+#         code="""from fastbite.all import Slider, PicSumImg
+# from fasthtml.common import Div, H4, H5, P
+
+# # Product showcase slider
+# Div(
+#     H4("Product Gallery", cls="text-xl font-bold mb-4"),
+#     Slider(
+#         [
+#             Div(
+#                 PicSumImg(h=500, w=800, id=26, alt="Product 1", cls="mx-auto"),
+#                 H5("Premium Camera", cls="text-lg font-medium mt-2"),
+#                 P("$199.99", cls="text-primary-600 font-bold"),
+#                 P("High-quality premium camera with enhanced features", cls="text-gray-600 text-sm"),
+#                 cls="p-4"
+#             ),
+#             Div(
+#                 PicSumImg(h=500, w=800, id=28, alt="Product 2", cls="mx-auto"),
+#                 H5("Deluxe Camera Plus", cls="text-lg font-medium mt-2"),
+#                 P("$249.99", cls="text-primary-600 font-bold"),
+#                 P("Our deluxe model with advanced shooting capabilities", cls="text-gray-600 text-sm"),
+#                 cls="p-4"
+#             ),
+#             Div(
+#                 PicSumImg(h=500, w=800, id=27, alt="Product 3", cls="mx-auto"),
+#                 H5("Ultimate Camera Pro", cls="text-lg font-medium mt-2"),
+#                 P("$299.99", cls="text-primary-600 font-bold"),
+#                 P("Professional-grade camera for serious photography enthusiasts", cls="text-gray-600 text-sm"),
+#                 cls="p-4"
+#             )
+#         ],
+#         id="product-slider",
+#         wrapper_cls="relative h-96 overflow-hidden rounded-lg md:h-[450px]"
+#     ),
+#     cls="border rounded-lg shadow-sm"
+# )""",
+#         id="product-showcase"
+#     ),
     
     Br(),
     
     H3("Testimonial Carousel", link=True),
     P("Create a testimonial carousel to showcase customer feedback:"),
-
+    
     component_showcase(
-        Div(
-            Slider(
-                [
+        Slider(
+            *[
+                Div(
+                    Blockquote(quote, cls=BlockquoteT.default_no_spacing+TextT.text_2xl, with_icon=True),
                     Div(
-                        P("\"This is the best product I've ever used! It completely changed my life.\"", cls="text-lg italic mb-4"),
+                        DiceBearAvatar(name, h=10, w=10, cls="rounded-full me-2"),
                         Div(
-                            DiceBearAvatar("John Doe", h=10, w=10, cls="rounded-full"),
-                            Div(
-                                H5("John Doe", cls="font-medium"),
-                                P("CEO at TechCorp", cls="text-sm text-gray-600"),
-                                cls=""
-                            ),
-                            cls="flex items-center"
+                            H5(name, cls="font-medium"),
+                            P(role, cls="text-sm"),
                         ),
-                        cls="bg-white p-6 rounded-lg shadow-md mx-4"
+                        cls="flex items-center mt-2"
                     ),
-                    Div(
-                        P("\"I was skeptical at first, but this product exceeded all my expectations!\"", cls="text-lg italic mb-4"),
-                        Div(
-                            DiceBearAvatar("Jane Smith", h=10, w=10, cls="rounded-full"),
-                            Div(
-                                H5("Jane Smith", cls="font-medium"),
-                                P("Designer at CreativeCo", cls="text-sm text-gray-600"),
-                                cls=""
-                            ),
-                            cls="flex items-center"
-                        ),
-                        cls="bg-white p-6 rounded-lg shadow-md mx-4"
-                    ),
-                    Div(
-                        P("\"Our team's productivity increased by 200% after implementing this solution.\"", cls="text-lg italic mb-4"),
-                        Div(
-                            DiceBearAvatar("Mike Johnson", h=10, w=10, cls="rounded-full"),
-                            Div(
-                                H5("Mike Johnson", cls="font-medium"),
-                                P("Project Manager at BuildInc", cls="text-sm text-gray-600"),
-                                cls=""
-                            ),
-                            cls="flex items-center"
-                        ),
-                        cls="bg-white p-6 rounded-lg shadow-md mx-4"
-                    )
-                ],
-                id="testimonial-slider",
-                wrapper_cls="relative h-64 overflow-hidden rounded-lg md:h-72 bg-gray-100"
-            ),
-            cls="max-w-3xl"
+                    cls="p-6 px-16 rounded-lg shadow-md mx-4"+BgColor.pink_orange
+                )
+                for quote, name, role in cites
+            ],            
+            # wrapper_cls="relative h-64 overflow-hidden rounded-lg md:h-72"
         ),
-        code="""from fastbite.all import Slider, DiceBearAvatar
-from fasthtml.common import Div, H5, P
+        code="""from fastbite.all import *
+        
+cites = [
+    ("This is the best product I've ever used! It completely changed my life.", "John Doe", "CEO at TechCorp"),
+    ("I was skeptical at first, but this product exceeded all my expectations!", "Jane Smith", "Designer at CreativeCo"),
+    ("Our team's productivity increased by 200% after implementing this solution.", "Mike Johnson", "Project Manager at BuildInc")
+]
 
 # Testimonial carousel
 Slider(
-    [
+*[
+    DivCentered(
+        Blockquote(quote, cls=BlockquoteT.default_no_spacing+TextT.lg, with_icon=True),
         Div(
-            P("\"This is the best product I've ever used! It completely changed my life.\"", cls="text-lg italic mb-4"),
+            DiceBearAvatar(name, h=10, w=10, cls="rounded-full me-2"),
             Div(
-                DiceBearAvatar("John Doe", h=10, w=10, cls="rounded-full"),  # Avatar with DiceBearAvatar
-                Div(
-                    H5("John Doe", cls="font-medium"),
-                    P("CEO at TechCorp", cls="text-sm text-gray-600"),
-                ),
-                cls="flex items-center"
+                H5(name, cls="font-medium"),
+                P(role, cls="text-sm"),
             ),
-            cls="bg-white p-6 rounded-lg shadow-md mx-4"
+            cls="flex items-center mt-2"
         ),
-        Div(
-            P("\"I was skeptical at first, but this product exceeded all my expectations!\"", cls="text-lg italic mb-4"),
-            Div(
-                DiceBearAvatar("Jane Smith", h=10, w=10, cls="rounded-full"),  # Avatar with DiceBearAvatar
-                Div(
-                    H5("Jane Smith", cls="font-medium"),
-                    P("Designer at CreativeCo", cls="text-sm text-gray-600"),
-                ),
-                cls="flex items-center"
-            ),
-            cls="bg-white p-6 rounded-lg shadow-md mx-4"
-        ),
-        Div(
-            P("\"Our team's productivity increased by 200% after implementing this solution.\"", cls="text-lg italic mb-4"),
-            Div(
-                DiceBearAvatar("Mike Johnson", h=10, w=10, cls="rounded-full"),  # Avatar with DiceBearAvatar
-                Div(
-                    H5("Mike Johnson", cls="font-medium"),
-                    P("Project Manager at BuildInc", cls="text-sm text-gray-600"),
-                ),
-                cls="flex items-center"
-            ),
-            cls="bg-white p-6 rounded-lg shadow-md mx-4"
-        )
-    ],
-    id="testimonial-slider",
-    wrapper_cls="relative h-64 overflow-hidden rounded-lg md:h-72 bg-gray-100"
+        cls="p-6 rounded-lg shadow-md mx-4"+BgColor.pink_orange
+    )
+    for quote, name, role in cites
+],            
+# wrapper_cls="relative h-64 overflow-hidden rounded-lg md:h-72"
 )""",
         id="testimonial-carousel"
     ),

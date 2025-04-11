@@ -209,7 +209,9 @@
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-spin: spin 1s linear infinite;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-bounce: bounce 1s infinite;
     --blur-xs: 4px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1177,6 +1179,9 @@
   .max-h-full {
     max-height: 100%;
   }
+  .min-h-56 {
+    min-height: calc(var(--spacing) * 56);
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -1573,6 +1578,12 @@
   }
   .transform-none {
     transform: none;
+  }
+  .animate-bounce {
+    animation: var(--animate-bounce);
+  }
+  .animate-ping {
+    animation: var(--animate-ping);
   }
   .animate-pulse {
     animation: var(--animate-pulse);
@@ -2039,14 +2050,6 @@
     border-top-left-radius: var(--radius-xl);
     border-top-right-radius: var(--radius-xl);
   }
-  .rounded-l-lg {
-    border-top-left-radius: var(--radius-lg);
-    border-bottom-left-radius: var(--radius-lg);
-  }
-  .rounded-r-lg {
-    border-top-right-radius: var(--radius-lg);
-    border-bottom-right-radius: var(--radius-lg);
-  }
   .rounded-b {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
@@ -2188,11 +2191,11 @@
   .border-blue-500 {
     border-color: var(--color-blue-500);
   }
-  .border-blue-600 {
-    border-color: var(--color-blue-600);
-  }
   .border-blue-700 {
     border-color: var(--color-blue-700);
+  }
+  .border-gray-50 {
+    border-color: var(--color-gray-50);
   }
   .border-gray-100 {
     border-color: var(--color-gray-100);
@@ -2239,6 +2242,9 @@
   .border-indigo-400 {
     border-color: var(--color-indigo-400);
   }
+  .border-lime-600 {
+    border-color: var(--color-lime-600);
+  }
   .border-pink-400 {
     border-color: var(--color-pink-400);
   }
@@ -2247,6 +2253,9 @@
   }
   .border-primary-400 {
     border-color: var(--color-primary-400);
+  }
+  .border-primary-500 {
+    border-color: var(--color-primary-500);
   }
   .border-primary-600 {
     border-color: var(--color-primary-600);
@@ -2533,17 +2542,8 @@
   .bg-primary-200 {
     background-color: var(--color-primary-200);
   }
-  .bg-primary-300 {
-    background-color: var(--color-primary-300);
-  }
   .bg-primary-500 {
     background-color: var(--color-primary-500);
-  }
-  .bg-primary-500\/30 {
-    background-color: color-mix(in oklab, var(--color-primary-500) 30%, transparent);
-  }
-  .bg-primary-500\/70 {
-    background-color: color-mix(in oklab, var(--color-primary-500) 70%, transparent);
   }
   .bg-primary-600 {
     background-color: var(--color-primary-600);
@@ -3077,6 +3077,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
   }
@@ -3508,6 +3511,9 @@
   }
   .text-indigo-800 {
     color: var(--color-indigo-800);
+  }
+  .text-lime-600 {
+    color: var(--color-lime-600);
   }
   .text-orange-500 {
     color: var(--color-orange-500);
@@ -5011,6 +5017,13 @@
       }
     }
   }
+  .hover\:text-green-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-green-800);
+      }
+    }
+  }
   .hover\:text-green-900 {
     &:hover {
       @media (hover: hover) {
@@ -5022,6 +5035,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-indigo-900);
+      }
+    }
+  }
+  .hover\:text-lime-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-lime-800);
       }
     }
   }
@@ -6057,6 +6077,11 @@
       height: auto;
     }
   }
+  .md\:min-h-96 {
+    @media (width >= 48rem) {
+      min-height: calc(var(--spacing) * 96);
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -6795,6 +6820,11 @@
       border-color: var(--color-green-800);
     }
   }
+  .dark\:border-lime-500 {
+    &:where(.dark, .dark *) {
+      border-color: var(--color-lime-500);
+    }
+  }
   .dark\:border-primary-500 {
     &:where(.dark, .dark *) {
       border-color: var(--color-primary-500);
@@ -7055,11 +7085,6 @@
       background-color: var(--color-primary-600);
     }
   }
-  .dark\:bg-primary-700 {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-primary-700);
-    }
-  }
   .dark\:bg-primary-800 {
     &:where(.dark, .dark *) {
       background-color: var(--color-primary-800);
@@ -7279,6 +7304,11 @@
   .dark\:text-indigo-500 {
     &:where(.dark, .dark *) {
       color: var(--color-indigo-500);
+    }
+  }
+  .dark\:text-lime-500 {
+    &:where(.dark, .dark *) {
+      color: var(--color-lime-500);
     }
   }
   .dark\:text-orange-200 {
@@ -8132,15 +8162,6 @@
       }
     }
   }
-  .dark\:hover\:text-blue-400 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-blue-400);
-        }
-      }
-    }
-  }
   .dark\:hover\:text-gray-100 {
     &:where(.dark, .dark *) {
       &:hover {
@@ -8186,11 +8207,29 @@
       }
     }
   }
+  .dark\:hover\:text-green-400 {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-green-400);
+        }
+      }
+    }
+  }
   .dark\:hover\:text-indigo-300 {
     &:where(.dark, .dark *) {
       &:hover {
         @media (hover: hover) {
           color: var(--color-indigo-300);
+        }
+      }
+    }
+  }
+  .dark\:hover\:text-lime-400 {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-lime-400);
         }
       }
     }
@@ -9092,8 +9131,24 @@ html.dark .dark\:text-white {
     transform: rotate(360deg);
   }
 }
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 @keyframes pulse {
   50% {
     opacity: 0.5;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }

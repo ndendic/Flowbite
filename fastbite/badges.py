@@ -13,6 +13,7 @@ from .base_styles import *
 from .containers import *
 from .media import *
 from enum import Enum
+
 # %% ../nbs/13_badges.ipynb 2
 class BadgeT(VEnum):
     default = 'bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300'

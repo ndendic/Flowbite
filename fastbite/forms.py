@@ -136,7 +136,8 @@ class RadioT(VEnum):
     success = "w-4 h-4 text-green-600 bg-green-100 border-green-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-green-600"
     error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
 
-def Radio(label:str|FT = None, # FormLabel content (often text)
+def Radio(value:str='', # Value for the radio button
+          label:str|FT = None, # FormLabel content (often text)
           lbl_cls=TextT.medium, # Additional classes for `FormLabel`
           cls=RadioT.default, # Additional classes for `Input`
           help_cls=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
@@ -149,7 +150,7 @@ def Radio(label:str|FT = None, # FormLabel content (often text)
           )->FT:    
     return Div(cls=div_cls)(
                 Div(cls='flex items-center h-5')(
-                    fh.Input(id=id, aria_describedby=f'{id}-text', type='radio', value='', cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
+                    fh.Input(id=id, aria_describedby=f'{id}-text', type='radio', value=value, cls=(cls,'cursor-not-allowed' if disabled else ''), disabled=disabled, checked=checked, **kwargs)
                 ),
                 Div(cls='ms-2 text-sm')(
                     FormLabel(label, fr=id, cls=lbl_cls),

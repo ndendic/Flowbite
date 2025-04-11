@@ -2,6 +2,32 @@ from fasthtml.common import *
 from fastbite.all import *
 from utils import component_showcase
 
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
+
 def _basic_table_section():
     return Section(
         H2("Basic Tables", link=True, cls="mb-4 mt-10"),
@@ -41,7 +67,7 @@ def _basic_table_section():
                     )
                 )
             ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td
+            code="""from fastbite.all import *
 
 Table(
     Thead(
@@ -101,7 +127,7 @@ Table(
                 ),
                 with_shadow=True
             ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td
+            code="""from fastbite.all import *
 
 Table(
     Thead(
@@ -124,75 +150,7 @@ Table(
 )""",
             id="table-with-shadow"
         ),
-        
-        Br(),
-        
-        H3("Table with Footer", link=True, cls="mb-3"),
-        P("Tables can include a footer section using the ", Code("Tfoot"), " and ", Code("Tf"), " components:"),
-        
-        component_showcase(
-            Table(
-                Thead(
-                    TrHeader(
-                        Th("Item"),
-                        Th("Quantity"),
-                        Th("Price")
-                    )
-                ),
-                Tbody(
-                    Tr(
-                        Td("Widget A"),
-                        Td("5"),
-                        Td("$10.00")
-                    ),
-                    Tr(
-                        Td("Widget B"),
-                        Td("3"),
-                        Td("$8.00")
-                    )
-                ),
-                Tfoot(
-                    Tr(
-                        Tf("Total"),
-                        Tf("8"),
-                        Tf("$18.00")
-                    )
-                )
-            ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td, Tfoot, Tf
-
-Table(
-    Thead(
-        TrHeader(
-            Th("Item"),
-            Th("Quantity"),
-            Th("Price")
-        )
-    ),
-    Tbody(
-        Tr(
-            Td("Widget A"),
-            Td("5"),
-            Td("$10.00")
-        ),
-        Tr(
-            Td("Widget B"),
-            Td("3"),
-            Td("$8.00")
-        )
-    ),
-    Tfoot(
-        Tr(
-            Tf("Total"),  # Tf is used for footer cells
-            Tf("8"),
-            Tf("$18.00")
-        )
-    )
-)""",
-            id="table-with-footer"
-        ),
-        
-        Br(),
+                    
     )
 
 def _styled_table_section():
@@ -234,9 +192,10 @@ def _styled_table_section():
                         Td("Berlin")
                     )
                 ),
+                cls=TableT.row_striped,
                 with_shadow=True
             ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td
+            code="""from fastbite.all import *
 
 Table(
     Thead(
@@ -308,7 +267,7 @@ Table(
                     ]
                 )
             ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td
+            code="""from fastbite.all import *
 
 Table(
     Thead(
@@ -376,7 +335,7 @@ Table(
                     ]
                 )
             ),
-            code="""from fastbite.all import Table, Thead, TrHeader, Th, Tbody, Tr, Td, TableT
+            code="""from fastbite.all import *
 
 Table(
     Thead(
@@ -413,6 +372,7 @@ Table(
     )
 
 def _datatable_section():
+
     return Section(
         H2("DataTable Component", link=True, cls="mb-4 mt-10"),
         P("The ", Code("DataTable"), " component provides a convenient way to create tables from data arrays."),
@@ -422,84 +382,87 @@ def _datatable_section():
         
         component_showcase(
             DataTable(
-                headers=["Product", "Category", "Price"],
-                rows=[
-                    ["Apple MacBook Pro", "Laptop", "$1999"],
-                    ["Microsoft Surface Pro", "Laptop", "$1299"],
-                    ["Google Pixel 6", "Smartphone", "$599"]
-                ]
+                headers=headers,
+                rows=rows[:5]
             ),
-            code="""from fastbite.all import DataTable
+            code="""from fastbite.all import *
 
-DataTable(
-    headers=["Product", "Category", "Price"],
-    rows=[
-        ["Apple MacBook Pro", "Laptop", "$1999"],
-        ["Microsoft Surface Pro", "Laptop", "$1299"],
-        ["Google Pixel 6", "Smartphone", "$599"]
-    ]
-)""",
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
+
+DataTable(headers=headers,rows=rows[:5])""",
             id="basic-datatable"
         ),
         
         Br(),
-        
-        H3("DataTable with Footer", link=True, cls="mb-3"),
-        P("Add a footer row to a DataTable:"),
-        
-        component_showcase(
-            DataTable(
-                headers=["Item", "Quantity", "Price"],
-                rows=[
-                    ["Widget A", "5", "$10.00"],
-                    ["Widget B", "3", "$8.00"]
-                ],
-                footer=["Total", "8", "$18.00"],
-                with_shadow=True
-            ),
-            code="""from fastbite.all import DataTable
-
-DataTable(
-    headers=["Item", "Quantity", "Price"],
-    rows=[
-        ["Widget A", "5", "$10.00"],
-        ["Widget B", "3", "$8.00"]
-    ],
-    footer=["Total", "8", "$18.00"],  # Footer row data
-    with_shadow=True
-)""",
-            id="datatable-with-footer"
-        ),
-        
-        Br(),
+                
         
         H3("Styled DataTable", link=True, cls="mb-3"),
         P("Apply various styling options to a DataTable:"),
         
         component_showcase(
             DataTable(
-                headers=["Name", "Position", "Office", "Age", "Start Date", "Salary"],
-                rows=[
-                    ["Tiger Nixon", "System Architect", "Edinburgh", "61", "2011/04/25", "$320,800"],
-                    ["Garrett Winters", "Accountant", "Tokyo", "63", "2011/07/25", "$170,750"],
-                    ["Ashton Cox", "Junior Technical Author", "San Francisco", "66", "2009/01/12", "$86,000"],
-                    ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "22", "2012/03/29", "$433,060"]
-                ],
+                headers=headers,
+                rows=rows[:5],
                 first_col_header=True,
                 striped=True,
                 hover=True,
                 with_shadow=True
             ),
-            code="""from fastbite.all import DataTable
+            code="""from fastbite.all import *
+
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
 
 DataTable(
-    headers=["Name", "Position", "Office", "Age", "Start Date", "Salary"],
-    rows=[
-        ["Tiger Nixon", "System Architect", "Edinburgh", "61", "2011/04/25", "$320,800"],
-        ["Garrett Winters", "Accountant", "Tokyo", "63", "2011/07/25", "$170,750"],
-        ["Ashton Cox", "Junior Technical Author", "San Francisco", "66", "2009/01/12", "$86,000"],
-        ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "22", "2012/03/29", "$433,060"]
-    ],
+    headers=headers,
+    rows=rows[:5],    
     first_col_header=True,  # Style first column as header
     striped=True,           # Apply striped styling
     hover=True,             # Apply hover effect
@@ -515,33 +478,45 @@ DataTable(
         
         component_showcase(
             DataTable(
-                headers=["Name", "Position", "Office", "Age", "Start Date", "Salary"],
-                rows=[
-                    ["Tiger Nixon", "System Architect", "Edinburgh", "61", "2011/04/25", "$320,800"],
-                    ["Garrett Winters", "Accountant", "Tokyo", "63", "2011/07/25", "$170,750"],
-                    ["Ashton Cox", "Junior Technical Author", "San Francisco", "66", "2009/01/12", "$86,000"],
-                    ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "22", "2012/03/29", "$433,060"],
-                    ["Airi Satou", "Accountant", "Tokyo", "33", "2008/11/28", "$162,700"],
-                    ["Brielle Williamson", "Integration Specialist", "New York", "61", "2012/12/02", "$372,000"]
-                ],
+                headers=headers,
+                rows=rows,
                 id="sortable-search-example",
                 first_col_header=True,
                 sortable=True,
                 searchable=True,
                 with_shadow=True
             ),
-            code="""from fastbite.all import DataTable
+            code="""from fastbite.all import *
+
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
 
 DataTable(
-    headers=["Name", "Position", "Office", "Age", "Start Date", "Salary"],
-    rows=[
-        ["Tiger Nixon", "System Architect", "Edinburgh", "61", "2011/04/25", "$320,800"],
-        ["Garrett Winters", "Accountant", "Tokyo", "63", "2011/07/25", "$170,750"],
-        ["Ashton Cox", "Junior Technical Author", "San Francisco", "66", "2009/01/12", "$86,000"],
-        ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "22", "2012/03/29", "$433,060"],
-        ["Airi Satou", "Accountant", "Tokyo", "33", "2008/11/28", "$162,700"],
-        ["Brielle Williamson", "Integration Specialist", "New York", "61", "2012/12/02", "$372,000"]
-    ],
+    headers=headers,
+    rows=rows,
     id="sortable-search-example",  # Required for interactive features
     first_col_header=True,
     sortable=True,                 # Enable sorting
@@ -563,26 +538,36 @@ def _simpletable_section():
         P("Create a table with hover effect, striped rows, shadow, and first column header:"),
         
         component_showcase(
-            SimpleTable(
-                headers=["Product", "Category", "Price", "Stock"],
-                rows=[
-                    ["Apple MacBook Pro", "Laptop", "$1999", "In Stock"],
-                    ["Microsoft Surface Pro", "Laptop", "$1299", "Limited"],
-                    ["Google Pixel 6", "Smartphone", "$599", "Out of Stock"],
-                    ["Samsung Galaxy S21", "Smartphone", "$799", "In Stock"]
-                ]
-            ),
-            code="""from fastbite.all import SimpleTable
+            SimpleTable(headers=headers,rows=rows),
+            code="""from fastbite.all import *
 
-SimpleTable(
-    headers=["Product", "Category", "Price", "Stock"],
-    rows=[
-        ["Apple MacBook Pro", "Laptop", "$1999", "In Stock"],
-        ["Microsoft Surface Pro", "Laptop", "$1299", "Limited"],
-        ["Google Pixel 6", "Smartphone", "$599", "Out of Stock"],
-        ["Samsung Galaxy S21", "Smartphone", "$799", "In Stock"]
-    ]
-)
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
+
+SimpleTable(headers=headers,rows=rows),
 
 # SimpleTable is a convenience function that applies:
 # - with_shadow=True
@@ -598,30 +583,37 @@ SimpleTable(
         P("SimpleTable with additional customization:"),
         
         component_showcase(
-            SimpleTable(
-                headers=["Project", "Status", "Deadline", "Progress"],
-                rows=[
-                    ["Website Redesign", "In Progress", "2023-06-30", "75%"],
-                    ["Mobile App", "Planning", "2023-08-15", "20%"],
-                    ["CRM Integration", "Completed", "2023-04-10", "100%"]
-                ],
-                sortable=True,
-                searchable=True,
-                id="project-tracker"
-            ),
-            code="""from fastbite.all import SimpleTable
+            SimpleTable(headers=headers,rows=rows,sortable=True,searchable=True,id="project-tracker"),            
+            code="""from fastbite.all import *
 
-SimpleTable(
-    headers=["Project", "Status", "Deadline", "Progress"],
-    rows=[
-        ["Website Redesign", "In Progress", "2023-06-30", "75%"],
-        ["Mobile App", "Planning", "2023-08-15", "20%"],
-        ["CRM Integration", "Completed", "2023-04-10", "100%"]
-    ],
-    sortable=True,       # Enable sorting
-    searchable=True,     # Enable searching
-    id="project-tracker" # Required for interactive features
-)""",
+headers = ['Product name', 'Color', 'Category', 'Price']
+rows = [
+    ['Apple MacBook Pro 17"', 'Silver', 'Laptop', '$2999'],
+    ['Microsoft Surface Pro', 'White', 'Laptop PC', '$1999'],
+    ['Magic Mouse 2', 'Black', 'Accessories', '$99'],
+    ['Dell XPS 13', 'Silver', 'Laptop', '$1499'],
+    ['HP Spectre x360', 'Black', 'Laptop', '$1599'],
+    ['Logitech MX Master 3', 'Gray', 'Accessories', '$99'],
+    ['Samsung Galaxy S21', 'Phantom Gray', 'Smartphone', '$799'],
+    ['Sony WH-1000XM4', 'Black', 'Headphones', '$349'],
+    ['Google Pixel 5', 'Just Black', 'Smartphone', '$699'],
+    ['Amazon Echo Dot', 'Charcoal', 'Smart Home', '$49'],
+    ['Apple iPad Pro', 'Space Gray', 'Tablet', '$999'],
+    ['Asus ROG Strix', 'Black', 'Gaming Laptop', '$1999'],
+    ['Bose QuietComfort 35', 'Silver', 'Headphones', '$299'],
+    ['Apple iPhone 12', 'Black', 'Smartphone', '$799'],
+    ['Sony A7 III', 'Black', 'Mirrorless Camera', '$1499'],
+    ['Canon EOS R6', 'White', 'Mirrorless Camera', '$1999'],
+    ['DJI Mavic Air 2', 'Silver', 'Drone', '$799'],
+    ['DJI Mavic 3', 'Black', 'Drone', '$1299'],
+    ['Panasonic Lumix G9', 'Black', 'Mirrorless Camera', '$1499'],
+    ['DJI Osmo Action', 'Black', 'Action Camera', '$299'],
+    ['DJI Osmo Pocket', 'White', 'Action Camera', '$399'],
+    ['DJI Osmo Mobile 3', 'Black', 'Gimbal', '$199'],
+]
+
+SimpleTable(headers=headers,rows=rows)
+""",
             id="simple-table-options"
         ),
         
@@ -639,7 +631,7 @@ def tables_showcase():
         
         # Call section functions
         _basic_table_section(),
-        _styled_table_section(),
+        # _styled_table_section(),
         _datatable_section(),
         _simpletable_section(),
     )

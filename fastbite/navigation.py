@@ -154,7 +154,7 @@ def NavBarItem(*c,
     "Creates a navigation list item"
     return fh.Li(
                 fh.A(*c, href=href, aria_current='page', 
-                    cls='block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+                    cls='block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-primary-700 md:p-0 dark:text-white md:dark:text-primary-500'
                 ),
                 cls=(stringify(cls)),
                 **kwargs

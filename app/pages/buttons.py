@@ -3,7 +3,7 @@ from fasthtml.svg import *
 from fastbite.all import *
 from utils import component_showcase
 
-component = Div(
+button_components = Div(
     P("Buttons are interactive elements that users can click to perform actions, navigate to new pages, or submit forms. They are essential building blocks for creating interactive interfaces."),
     P("Fastbite provides a comprehensive set of button components with various styles, sizes, and variants to meet different design requirements."),
 

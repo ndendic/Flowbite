@@ -33,7 +33,7 @@ def SliderContainer(*c, # Components
     )
 
 class SliderItemT(VEnum):
-    default = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out'
+    default = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
     linear = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-linear'
     ease_out_in = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in'
     cubic_bezier = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in-cubic'
@@ -44,8 +44,8 @@ def SliderItem(*c, # Components to be displayed in the slide
                 ) -> FT:
     "Creates a slider item"
     return fh.Div(
-        *c,  # Allow any content to be passed
-        cls=(stringify(cls)), 
+        fh.Div(*c, cls=cls),  # Allow any content to be passed
+        cls="hidden duration-700 ease-in-out", 
         data_carousel_item=True, 
         **kwargs
     )
@@ -110,12 +110,12 @@ def SliderNav(
         **kwargs
     )
 
-def Slider(items, # List of items to show in slider
-          wrapper_cls='relative h-56 overflow-hidden rounded-lg md:h-96', # Classes for the wrapper div
+def Slider(*items, # List of items to show in slider
+          wrapper_cls='relative min-h-56 overflow-hidden rounded-lg md:min-h-96', # Classes for the wrapper div
           cls='', # Classes for slider container
           show_controls=True, # Whether to show navigation controls
           show_indicators=True, # Whether to show slide indicators
-          type:Literal['slide', 'static']='slide', # Type of slider
+          static:bool=False, # Whether to show static slider
           id:str=None, # Optional ID for the carousel
           **kwargs # Additional args for slider container
     ) -> FT:
@@ -124,7 +124,8 @@ def Slider(items, # List of items to show in slider
     # Create wrapper for slides
     wrapper = fh.Div(
         *[SliderItem(item) for item in items],
-        cls=wrapper_cls
+        Script("htmx.onLoad(function(content) {initCarousels();})"),
+        cls=wrapper_cls,
     )
     
     components = [wrapper]
@@ -140,7 +141,7 @@ def Slider(items, # List of items to show in slider
     
     return SliderContainer(
         *components,
-        type=type,
+        type="static" if static else "slide",
         id=id,
         cls=cls,
         **kwargs

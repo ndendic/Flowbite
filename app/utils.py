@@ -13,13 +13,14 @@ def component_showcase(*c:FT|str, # Components
         TabContainer(
             TabItem('Preview', controls=f'{id}-preview'),
             TabItem('Code', controls=f'{id}-code'),
-            data_tabs_toggle=f'#{id}-tab-content'
+            data_tabs_toggle=f'#{id}-tab-content',
+            cls=TabContainerT.rounded
         ),
         Ul(id=f'{id}-tab-content')(
-            Li(id=f'{id}-preview', role='tabpanel', aria_labelledby=f'{id}-preview-tab', cls='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800')(
+            Li(id=f'{id}-preview', role='tabpanel', aria_labelledby=f'{id}-preview-tab', cls='p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600')(
                 *c
             ),
-            Li(id=f'{id}-code', role='tabpanel', aria_labelledby=f'{id}-code-tab', cls='hidden rounded-lg bg-gray-50 dark:bg-gray-800')(
+            Li(id=f'{id}-code', role='tabpanel', aria_labelledby=f'{id}-code-tab', cls='hidden border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600')(
                 CodeBlock(code)
             ),   
         ),

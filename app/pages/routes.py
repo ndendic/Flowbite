@@ -18,6 +18,7 @@ from pages.skeleton import skeleton_components
 from pages.slider import slider_components
 from pages.tables import tables_components
 from pages.tabs import tabs_components
+from pages.buttons import button_components
 
 rt = APIRouter()
 
@@ -110,3 +111,8 @@ def get(req):
 @page_template("Tabs Components")
 def get(req):
     return tabs_components
+
+@rt("/buttons")
+@page_template("Buttons")
+def get(req):
+    return button_components

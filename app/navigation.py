@@ -131,23 +131,32 @@ standard_sidebar_items = [
     NavLi("Progress", href="/progress#", icon='activity',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Ranges", href="/ranges#", icon='sliders',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Placeholders", href="/skeleton#", icon='square-dashed',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Slider", href="/slider#", icon='slider',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Slider", href="/slider#", icon='panel-right-open',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
     NavLi("Tables", href="/tables#", icon='table',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Tabs", href="/tabs#", icon='tab',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Tabs", href="/tabs#", icon='app-window',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
-component_sidebar_items = component_registry.get_sidebar_items(SidebarItem)
+component_sidebar_items = component_registry.get_sidebar_items(NavChildLi)
 sidebar_items = standard_sidebar_items + component_sidebar_items
 
 def Sidebar():
     return Aside(
-        Div(
-            Ul(
-                *sidebar_items,
+        NavContainer(
+            NavParentLi(
+                *standard_sidebar_items,
+                label="Components",
+                icon='layout-dashboard',
+                cls='space-y-2 font-medium'
+            ),
+            NavParentLi(
+                *component_sidebar_items,
+                label="Extracted",
+                icon='layout-template',
                 cls='space-y-2 font-medium'
             ),
             cls='h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800'
         ),
+        Script('htmx.onLoad(function(content) {initSidebars();})'),
         id='logo-sidebar',
         aria_label='Sidebar',
         cls='fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
@@ -156,7 +165,6 @@ def Sidebar():
 def Main(content,cls=()):
     return DivCentered(
         Div(content,
-            Script('htmx.onLoad(function(content) {initTabs();})'),
             # Script('htmx.onLoad(function(content) {initSidebars();})'),
             cls='p-4 mt-18 max-w-4xl',
             id='content',

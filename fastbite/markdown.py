@@ -23,7 +23,7 @@ DEFAULT_CLASS_MAP = {
     
     # Body text and links
     'p': 'text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-6',
-    'a': 'text-blue-600 dark:text-blue-500 hover:underline font-medium',
+    'a': 'text-primary-600 dark:text-primary-500 hover:underline font-medium',
     
     # Lists with proper spacing
     'ul': 'list-disc space-y-2 pl-5 mb-6 text-base text-gray-700 dark:text-gray-300',
@@ -34,7 +34,7 @@ DEFAULT_CLASS_MAP = {
     'pre': 'bg-gray-50 dark:bg-gray-800 rounded-lg p-4 mb-6 overflow-x-auto',
     'code': 'font-mono text-sm bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded text-gray-800 dark:text-gray-200',
     'pre code': 'font-mono text-sm block overflow-x-auto text-gray-800 dark:text-gray-200',
-    'blockquote': 'pl-4 border-l-4 border-blue-500 italic mb-6 text-gray-700 dark:text-gray-300',
+    'blockquote': 'pl-4 border-l-4 border-primary-500 italic mb-6 text-gray-700 dark:text-gray-300',
     
     # Tables
     'table': 'w-full border-collapse mb-6',
