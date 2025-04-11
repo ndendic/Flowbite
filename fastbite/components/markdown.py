@@ -6,7 +6,7 @@ __all__ = ['DEFAULT_CLASS_MAP', 'apply_classes', 'render_md', 'render_md_article
 # %% ../nbs/21_markdown.ipynb 1
 from fasthtml.common import FT
 from fastcore.all import *
-from .core import *
+from ..core import *
 from .base import *
 from .base_styles import *
 

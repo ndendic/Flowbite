@@ -8,7 +8,7 @@ __all__ = ['ModalT', 'ModalContainer', 'ModalDialog', 'ModalHeader', 'ModalBody'
 import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
-from .core import *
+from ..core import *
 from .base import *
 from .base_styles import *
 from .media import *

@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fastbite.all import *
 from utils import component_showcase
-from fastbite.markdown import render_md, render_md_article # Import specific functions
+from fastbite.all import render_md, render_md_article # Import specific functions
 
 # --- Sample Markdown Content ---
 SAMPLE_MD = """# Heading 1
@@ -45,7 +45,7 @@ def _render_md_section():
         P("Rendering the sample Markdown with default classes:"),
         component_showcase(
             render_md(SAMPLE_MD),
-            code='''from fastbite.markdown import render_md
+            code='''from fastbite.all import render_md
 
 SAMPLE_MD = """# Heading 1\n... (rest of markdown) ..."""
 
@@ -63,7 +63,7 @@ render_md(SAMPLE_MD)''',
                 'p': 'text-gray-500 italic'
                 # Other tags will not have classes applied unless specified
             }),
-            code='''from fastbite.markdown import render_md
+            code='''from fastbite.all import render_md
 
 SAMPLE_MD = """..."""
 
@@ -87,7 +87,7 @@ render_md(SAMPLE_MD, class_map=custom_map)''',
                 'h1': 'underline decoration-wavy', # Adds underline to default H1 styles
                 'p': 'text-sm' # Overrides default paragraph size
             }),
-            code='''from fastbite.markdown import render_md
+            code='''from fastbite.all import render_md
 
 SAMPLE_MD = """..."""
 
@@ -115,7 +115,7 @@ def _render_md_article_section():
         P("Rendering the sample Markdown using ", Code("render_md_article"), ". Notice the prose styling applied."),
         component_showcase(
             render_md_article(SAMPLE_MD),
-            code='''from fastbite.markdown import render_md_article
+            code='''from fastbite.all import render_md_article
 
 SAMPLE_MD = """# Heading 1\n... (rest of markdown) ..."""
 
@@ -131,7 +131,7 @@ render_md_article(SAMPLE_MD)''',
             render_md_article(SAMPLE_MD, class_map_mods={
                 'blockquote': 'border-green-500' # Change blockquote border color
             }),
-            code='''from fastbite.markdown import render_md_article
+            code='''from fastbite.all import render_md_article
 
 SAMPLE_MD = """..."""
 

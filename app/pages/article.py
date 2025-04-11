@@ -80,7 +80,7 @@ def article_section():
         component_showcase(
             Div(basic_article),
             code="""# Import at the top of your file
-from fastbite.all import Article, ArticleTitle, ArticleMeta
+from fastbite.all import *
 
 # Basic article example
 Article(

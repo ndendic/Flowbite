@@ -4,7 +4,7 @@
 __all__ = ['Round', 'TextT', 'TextPresets', 'TextHeading', 'ListT']
 
 # %% ../nbs/01_base_styles.ipynb 1
-from .core import *
+from ..core import *
 from fastcore.all import *
 
 # TODO: Add animation and effects classes

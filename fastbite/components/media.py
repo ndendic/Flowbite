@@ -5,7 +5,7 @@ __all__ = ['Icon', 'IconLink', 'DiceBearAvatar', 'PicSumImg']
 
 # %% ../nbs/03_media.ipynb 1
 import fasthtml.common as fh
-from .core import *
+from ..core import *
 from fasthtml.common import Span, FT
 from fastcore.all import *
 from .base import *

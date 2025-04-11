@@ -8,7 +8,7 @@ from enum import Enum
 import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
-from .core import *
+from ..core import *
 from .base import *
 from .base_styles import *
 from .containers import *
