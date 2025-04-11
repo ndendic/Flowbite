@@ -119,17 +119,17 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
           **kwargs # Additional args for `Input`
           )->FT:    
     return Div(
-                FormLabel(label, fr=id, cls=lbl_cls) if label else None,
-                Div(cls="relative")(
-                    Div(
-                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
-                        cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
-                    ),
-                    fh.Select(*options,id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+            FormLabel(label, fr=id, cls=lbl_cls) if label else None,
+            Div(cls="relative")(
+                Div(
+                    Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                    cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
                 ),
-                P(help_text, cls=(help_cls,"mt-2")),
-                cls=(div_cls),                
-            )
+                fh.Select(*options,id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+            ),
+            P(help_text, cls=(help_cls,"mt-2")),
+            cls=(div_cls),                
+        )
 
 class RadioT(VEnum):
     default = "w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"

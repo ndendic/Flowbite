@@ -134,7 +134,7 @@ Input(label="Password", id=\'input-help\', type=\'password\', placeholder=\'â€¢â
         H3("Input with Icon", link=True, cls="mb-3"),
         P("Use the ", Code("icon"), " parameter (provide an icon name, e.g., from Bootstrap Icons) to add an icon inside the input field."),
         component_showcase(
-            Input(label="Email with Icon", id='input-icon', type='email', placeholder='name@flowbite.com', icon='envelope-fill'),
+            Input(label="Email with Icon", id='input-icon', type='email', placeholder='name@flowbite.com', icon='mail'),
             code='''from fastbite.all import Input
 
 Input(label="Email with Icon", id=\'input-icon\', type=\'email\', placeholder=\'name@flowbite.com\', icon=\'envelope-fill\')''',
@@ -266,10 +266,10 @@ def _select_section():
         H3("Default Select", link=True, cls="mb-3"),
         P("Basic select dropdown created using ", Code("Options"), "."),
         component_showcase(
-            Select(Options("United States", "Canada", "Mexico"), id='select-default'),
+            Select(*Options("United States", "Canada", "Mexico"), id='select-default'),
             code='''from fastbite.all import Select, Options
 
-Select(Options("United States", "Canada", "Mexico"), id=\'select-default\')''',
+Select(*Options("United States", "Canada", "Mexico"), id=\'select-default\')''',
             id="select-default"
         ),
         Br(),
@@ -278,7 +278,7 @@ Select(Options("United States", "Canada", "Mexico"), id=\'select-default\')''',
         P("Using ", Code("label"), " for the ", Code("FormLabel"), " and ", Code("placeholder"), " for the default unselected text (though native select might not show placeholder text reliably across browsers)."),
         component_showcase(
             Select(
-                Options("United States", "Canada", "Mexico"), 
+                *Options("United States", "Canada", "Mexico"), 
                 label="Choose a country", 
                 id='select-label-placeholder',
                 # Note: Placeholder attribute on select itself is not standard
@@ -286,7 +286,7 @@ Select(Options("United States", "Canada", "Mexico"), id=\'select-default\')''',
             code='''from fastbite.all import Select, Options
 
 Select(
-    Options("United States", "Canada", "Mexico"), 
+    *Options("United States", "Canada", "Mexico"), 
     label="Choose a country", 
     id=\'select-label-placeholder\'
     # Placeholder is usually achieved by adding an initial <option value="">Select...</option>
@@ -299,16 +299,16 @@ Select(
         P("Adding an ", Code("icon"), " and descriptive ", Code("help_text"), "."),
         component_showcase(
             Select(
-                Options("Technology", "Business", "Creative"),
+                *Options("Technology", "Business", "Creative"),
                 label="Select Category",
                 id='select-icon-help',
-                icon='tag-fill', # Example icon
+                icon='tag', # Example icon
                 help_text="Choose the category that best fits."
             ),
             code='''from fastbite.all import Select, Options
 
 Select(
-    Options("Technology", "Business", "Creative"),
+    *Options("Technology", "Business", "Creative"),
     label="Select Category",
     id=\'select-icon-help\',
     icon=\'tag-fill\', 
@@ -321,10 +321,10 @@ Select(
         H3("Disabled Select", link=True, cls="mb-3"),
         P("Setting ", Code("disabled=True"), " makes the select non-interactive."),
         component_showcase(
-            Select(Options("Option 1", "Option 2"), label="Disabled Select", id='select-disabled', disabled=True),
+            Select(*Options("Option 1", "Option 2"), label="Disabled Select", id='select-disabled', disabled=True),
             code='''from fastbite.all import Select, Options
 
-Select(Options("Option 1", "Option 2"), label="Disabled Select", id=\'select-disabled\', disabled=True)''',
+Select(*Options("Option 1", "Option 2"), label="Disabled Select", id=\'select-disabled\', disabled=True)''',
             id="select-disabled"
         ),
         Br(),

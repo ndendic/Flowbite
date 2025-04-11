@@ -1,5 +1,4 @@
 version = 1
-revision = 1
 requires-python = ">=3.11"
 
 [[package]]
@@ -321,6 +320,7 @@ wheels = [
 
 [[package]]
 name = "fastbite"
+version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "ft-datastar" },
@@ -341,7 +341,6 @@ requires-dist = [
     { name = "mistletoe", specifier = ">=1.4.0" },
     { name = "python-fasthtml", specifier = ">=0.12.1" },
 ]
-provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [
