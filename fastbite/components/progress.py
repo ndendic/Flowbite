@@ -10,6 +10,7 @@ from fastcore.all import *
 from ..core import *
 from .base import *
 from .base_styles import *
+from enum import Enum
 
 # %% ../../nbs/15_progress.ipynb 2
 class ProgressT(VEnum):
@@ -32,13 +33,13 @@ class ProgressT(VEnum):
     
 def Progress(*c, # Components to put in the progress bar (often nothing)
              label:str|FT='', # Label of the progress bar (often a string or a component)
-             label_cls=TextT.sm, # Additional classes on the label
-             progress_cls=ProgressT.progress_primary, # Additional classes on the progress bar
-             bg_cls=ProgressT.bg_default, # Additional classes on the background of the progress bar
+             label_cls:Enum|str|tuple=TextT.sm, # Additional classes on the label
+             progress_cls:Enum|str|tuple=ProgressT.progress_primary, # Additional classes on the progress bar
+             bg_cls:Enum|str|tuple=ProgressT.bg_default, # Additional classes on the background of the progress bar
              value="", # Value of the progress bar in percentage from 0 to 100
-             size:Literal['sm', 'md', 'lg']='md',
-             cls=(), # Additional classes on the progress bar
-             **kwargs # Additional args for `Progress` tag
+             size:Literal['sm', 'md', 'lg', 'xl']='md',
+             cls:Enum|str|tuple=(), # Additional classes on the progress bar background div
+             **kwargs # Additional args passed to background Div
              )->FT: # Progress(..., cls='uk-progress')
     "Creates a progress bar"
     size_map = {
@@ -50,7 +51,7 @@ def Progress(*c, # Components to put in the progress bar (often nothing)
     size_cls = size_map[size]
     return Div(
         Div(cls='flex justify-between mb-1')(
-            Span(label, cls=f'{label_cls}') if isinstance(label, str) else label
+            Span(label, cls=stringify(label_cls)) if isinstance(label, str) else label
         ),
         Div(
             Div(*c,style=f'width: {value}%', cls=(stringify(progress_cls), size_cls,"text-xs font-medium text-center p-0.5 leading-none")),

@@ -12,6 +12,7 @@ from ..core import *
 from .base import *
 from .base_styles import *
 from .media import *
+from enum import Enum
 
 # %% ../../nbs/14_modals.ipynb 2
 class ModalT(VEnum):
@@ -67,8 +68,8 @@ class ModalT(VEnum):
 
 def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
                   id:str='', # ID for the modal container
-                  cls:str='', # Additional classes on the modal container
-                  placement:str=None, # Placement of the modal (use ModalT placement variants)
+                  cls:Enum|str|tuple='', # Additional classes on the modal container
+                  placement:Enum|str|tuple=None, # Placement of the modal (use ModalT placement variants)
                   **kwargs # Additional args for the container div
                   )->FT:
     "Creates a modal container that components go in"
@@ -80,42 +81,42 @@ def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
     return Div(*c, id=id, tabindex='-1', aria_hidden='true', cls=tuple(classes), **kwargs)
 
 def ModalDialog(*c, # Components to put in the dialog (often `ModalBody`, `ModalHeader`, etc)
-                cls:str='', # Additional classes on the dialog
+                cls:Enum|str|tuple='', # Additional classes on the dialog
                 **kwargs # Additional args for the dialog div
                 )->FT:
     "Creates a modal dialog"
     return Div(Div(*c, cls=ModalT.dialog_inner), cls=(ModalT.dialog, stringify(cls)), **kwargs)
 
 def ModalHeader(*c, # Components to put in the header
-                cls:str='', # Additional classes on the header
+                cls:Enum|str|tuple='', # Additional classes on the header
                 **kwargs # Additional args for the header div
                 )->FT:
     "Creates a modal header"
     return Div(*c, cls=(ModalT.header, stringify(cls)), **kwargs)
 
 def ModalBody(*c, # Components to put in the body
-              cls:str='', # Additional classes on the body
+              cls:Enum|str|tuple='', # Additional classes on the body
               **kwargs # Additional args for the body div
               )->FT:
     "Creates a modal body"
     return Div(*c, cls=(ModalT.body, stringify(cls)), **kwargs)
 
 def ModalFooter(*c, # Components to put in the footer
-                cls:str='', # Additional classes on the footer
+                cls:Enum|str|tuple='', # Additional classes on the footer
                 **kwargs # Additional args for the footer div
                 )->FT:
     "Creates a modal footer"
     return Div(*c, cls=(ModalT.footer, stringify(cls)), **kwargs)
 
 def ModalTitle(*c, # Components to put in the title
-               cls:str='', # Additional classes on the title
+               cls:Enum|str|tuple='', # Additional classes on the title
                **kwargs # Additional args for the title
                )->FT:
     "Creates a modal title"
     return H3(*c, cls=(ModalT.title, stringify(cls)), **kwargs)
 
 def ModalCloseButton(*c, # Components to put in the button
-                     cls:str='', # Additional classes on the button
+                     cls:Enum|str|tuple='', # Additional classes on the button
                      modal_id:str='', # ID of modal to close
                      **kwargs # Additional args for the button
                      )->FT:
@@ -132,13 +133,13 @@ def ModalCloseButton(*c, # Components to put in the button
 def Modal(*c, # Components to put in the modal body
          header=None, # Components for the header (often a ModalTitle)
          footer=None, # Components for the footer
-         cls:str='', # Additional classes on the container
-         dialog_cls:str=ModalT.lg, # Additional classes on the dialog
-         header_cls:str='', # Additional classes on the header
-         body_cls:str='', # Additional classes on the body
-         footer_cls:str='', # Additional classes on the footer
+         cls:Enum|str|tuple='', # Additional classes on the container
+         dialog_cls:Enum|str|tuple=ModalT.lg, # Additional classes on the dialog
+         header_cls:Enum|str|tuple='', # Additional classes on the header
+         body_cls:Enum|str|tuple='', # Additional classes on the body
+         footer_cls:Enum|str|tuple='', # Additional classes on the footer
          id:str='', # ID for the modal
-         placement:str=ModalT.center, # Placement of the modal (use ModalT placement variants)
+         placement:Enum|str|tuple=ModalT.center, # Placement of the modal (use ModalT placement variants)
          **kwargs # Additional args for the container
          )->FT:
     "Creates a complete modal with header, body and footer sections"

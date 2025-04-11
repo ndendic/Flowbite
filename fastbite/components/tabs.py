@@ -24,13 +24,14 @@ class TabItemT(VEnum):
 
 def TabItem(text:str, # Components
             controls:str, # Controls of the tab
-            cls:str|FT|tuple="", # Additional classes on the `Li`
+            cls:Enum|str|tuple="", # Additional classes on the `Li`
+            button_cls:Enum|str|tuple='text-center inline-flex items-center inline-block p-4 border-b-2', # Added button_cls
             **kwargs # Additional args for the `Li`
            )->FT: # Tab item
     ctrl = f'{controls}' if controls else text
     "A TabItem where children will be different tabs"
-    return Li(role='presentation', cls=stringify((stringify(cls))))(
-            fh.Button(text, id=f'{text}-tab', data_tabs_target=f'#{ctrl}', type='button', role='tab', aria_controls=ctrl, aria_selected='false', cls='text-center inline-flex items-center inline-block p-4 border-b-2', **kwargs)
+    return Li(role='presentation', cls=stringify(cls))( # Use stringify for li cls
+            fh.Button(text, id=f'{text}-tab', data_tabs_target=f'#{ctrl}', type='button', role='tab', aria_controls=ctrl, aria_selected='false', cls=stringify(button_cls), **kwargs) # Use stringify for button_cls
         )
 
 class TabContainerT(VEnum):
@@ -40,19 +41,22 @@ class TabContainerT(VEnum):
     plain = "text-sm font-medium text-center text-gray-500 dark:text-gray-400"
 
 def TabContainer(*li, # Components
-                  cls=TabContainerT.base, # Additional classes on the `Ul`,
-                  active_items_cls=TabItemT.default_active, # Additional classes on the active items
-                  inactive_items_cls=TabItemT.default_inactive, # Additional classes on the inactive items
+                  cls:Enum|str|tuple=TabContainerT.base, # Additional classes on the `Ul`,
+                  active_items_cls:Enum|str|tuple=TabItemT.default_active, # Additional classes on the active items
+                  inactive_items_cls:Enum|str|tuple=TabItemT.default_inactive, # Additional classes on the inactive items
+                  ul_cls:Enum|str|tuple="-mb-px flex flex-wrap", # Added ul_cls
                   **kwargs # Additional args for the `Ul`
                  )->FT: # Tab container
     "A TabContainer where children will be different tabs"
-    ul_cls = "-mb-px flex flex-wrap"
+    # ul_cls = "-mb-px flex flex-wrap" # Replaced by param
     cls = stringify(cls)
-    return Div(cls=(FlexT.block,FlexT.wrap,stringify(cls)),**kwargs)(
+    active_items_cls=stringify(active_items_cls) # Use stringify
+    inactive_items_cls=stringify(inactive_items_cls) # Use stringify
+    return Div(cls=(FlexT.block,FlexT.wrap,stringify(cls)),**kwargs)( # stringify applied earlier
                 Ul(*li,
-                   cls=(ul_cls), 
-                   data_tabs_active_classes=active_items_cls, 
-                   data_tabs_inactive_classes=inactive_items_cls,
+                   cls=stringify(ul_cls), # Use stringify
+                   data_tabs_active_classes=active_items_cls, # stringify applied earlier
+                   data_tabs_inactive_classes=inactive_items_cls, # stringify applied earlier
                    **kwargs
                 ),
             Script('htmx.onLoad(function(content) {initTabs();})'),

@@ -12,6 +12,7 @@ from .base import *
 from .base_styles import *
 from .forms import *
 from .containers import *
+from enum import Enum
 
 # %% ../../nbs/12_range.ipynb 2
 class RangeT(VEnum):
@@ -27,14 +28,16 @@ def Range(*c, # contents of Range tag (often nothing)
           min=None, # Minimum value of the range
           max=None, # Maximum value of the range
           step=None, # Step value of the range
-          cls=RangeT.default, # Classes in addition to Range styling
-          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          cls:Enum|str|tuple=RangeT.default, # Classes in addition to Range styling
+          div_cls:Enum|str|tuple='mb-5', # Classes on container
+          label_cls:Enum|str|tuple='block mb-2 text-sm font-medium text-gray-900 dark:text-white', # Added label_cls
+          help_span_cls:Enum|str|tuple='text-sm text-gray-500 dark:text-gray-400', # Added help_span_cls
           **kwargs # Additional args for Range tag
            )->FT: 
     "A Range with default styling"
-    return Div(cls=div_cls)(
-            FormLabel(label, fr=id, cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white'),
+    return Div(cls=stringify(div_cls))(
+            FormLabel(label, fr=id, cls=stringify(label_cls)), # Use stringify
             fh.Input(*c, id=id, type='range',  value=value, min=min, max=max, step=step, cls=stringify(cls), **kwargs),
-            DivFullySpaced(*[Span(l, cls='text-sm text-gray-500 dark:text-gray-400') for l in help_labels]) if help_labels else None
+            DivFullySpaced(*[Span(l, cls=stringify(help_span_cls)) for l in help_labels]) if help_labels else None # Use stringify
         )   
 

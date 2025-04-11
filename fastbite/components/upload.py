@@ -7,15 +7,21 @@ __all__ = ['Upload', 'UploadZone']
 import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
+from ..core import *
+from .base import P, Div # Import specific base components
+from .forms import FormLabel # Import FormLabel
+from .media import Icon # Import Icon
+from enum import Enum # Added Enum import
 
 # %% ../../nbs/11_upload.ipynb 2
 def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
           help_text:str|FT = None, # Help text for the input
-          cls="mb-5", # Classes in addition to Upload styling
-          lbl_cls='block mb-2 text-sm font-medium text-gray-900 dark:text-white', # Classes for the label
+          cls:Enum|str|tuple="mb-5", # Classes in addition to Upload styling
+          lbl_cls:Enum|str|tuple='block mb-2 text-sm font-medium text-gray-900 dark:text-white', # Classes for the label
           multiple=False, # Whether to allow multiple file selection
           accept=None, # File types to accept (e.g. 'image/*')
-          button_cls='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400', # Classes for the button
+          input_cls:Enum|str|tuple='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400', # Renamed button_cls to input_cls
+          help_text_cls:Enum|str|tuple='mt-1 text-sm text-gray-500 dark:text-gray-300', # Added help_text_cls
           id='file_input', # ID for the file input
           name=None, # Name for the file input
           **kwargs # Additional args for the outer div
@@ -25,20 +31,24 @@ def Upload(label:str|FT = None, # Contents of Upload tag button (often text)
     if accept: input_kwargs['accept'] = accept
     if id: input_kwargs['id'] = id
     if name: input_kwargs['name'] = name
-    return Div(cls=cls)(
-        FormLabel(label, fr=id, cls=(lbl_cls,'block mb-2')),
-        fh.Input(aria_describedby=f'{id}_help', cls=button_cls,**input_kwargs),
-        P(help_text, id=f'{id}_help', cls='mt-1 text-sm text-gray-500 dark:text-gray-300')
+    return Div(cls=stringify(cls), **kwargs)( # Use stringify
+        FormLabel(label, fr=id, cls=stringify(lbl_cls)), # Use stringify
+        fh.Input(aria_describedby=f'{id}_help', cls=stringify(input_cls),**input_kwargs), # Use stringify
+        P(help_text, id=f'{id}_help', cls=stringify(help_text_cls)) # Use stringify
     )
 
 
 def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
           help_text:str|FT = None, # Help text for the input
-          cls="mb-5", # Classes in addition to Upload styling
-          lbl_cls=TextT.sm, # Classes for the label
+          cls:Enum|str|tuple="mb-5", # Classes in addition to outer Div styling
+          label_div_cls:Enum|str|tuple='flex flex-col items-center justify-center pt-5 pb-6', # Added label_div_cls
+          icon_cls:Enum|str|tuple='w-8 h-8 mb-4 text-gray-500 dark:text-gray-400', # Added icon_cls
+          p_label_cls:Enum|str|tuple='mb-2 text-sm text-gray-500 dark:text-gray-400', # Renamed lbl_cls to p_label_cls
+          p_help_cls:Enum|str|tuple='text-xs text-gray-500 dark:text-gray-400', # Added p_help_cls
+          form_label_cls:Enum|str|tuple='flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600', # Renamed button_cls to form_label_cls
+          input_cls:Enum|str|tuple='hidden', # Added input_cls
           multiple=False, # Whether to allow multiple file selection
           accept=None, # File types to accept (e.g. 'image/*')
-          button_cls='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400', # Classes for the button
           id='file_input', # ID for the file input
           name=None, # Name for the file input
           **kwargs # Additional args for the outer div
@@ -48,17 +58,15 @@ def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
     if accept: input_kwargs['accept'] = accept
     if id: input_kwargs['id'] = id
     if name: input_kwargs['name'] = name
-    return Div(
+    return Div(cls=stringify(cls),**kwargs)( # Use stringify
             FormLabel(
                 Div(
-                    
-                    Icon("cloud-upload",cls='w-8 h-8 mb-4 text-gray-500 dark:text-gray-400'),
-                    P(label,cls=(lbl_cls,'mb-2')),
-                    P(help_text, cls='text-xs text-gray-500 dark:text-gray-400'),
-                    cls='flex flex-col items-center justify-center pt-5 pb-6'
+                    Icon("cloud-upload",cls=stringify(icon_cls)), # Use stringify
+                    P(label,cls=stringify(p_label_cls)), # Use stringify
+                    P(help_text, cls=stringify(p_help_cls)), # Use stringify
+                    cls=stringify(label_div_cls) # Use stringify
                 ),
-                Input(id=id, type='file', cls='hidden'),fr=id,
-                cls='flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600'
-            ),
-            cls='flex items-center justify-center w-full'
+                fh.Input(id=id, type='file', cls=stringify(input_cls), **input_kwargs),fr=id, # Use stringify
+                cls=stringify(form_label_cls) # Use stringify
+            )
         )

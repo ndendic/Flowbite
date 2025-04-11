@@ -12,18 +12,20 @@ from .base import *
 from .base_styles import *
 from .media import *
 from .buttons import *
+from typing import Iterable
+from enum import Enum
 
 # %% ../../nbs/17_dropdown.ipynb 2
 def DropdownItem(*c, # Components to put in the dropdown item
                  href:str='#', # Href for the dropdown item
-                 cls='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white', # Additional classes on the dropdown item
+                 cls:Enum|str|tuple='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white', # Additional classes on the dropdown item
                  **kwargs # Additional args for the dropdown item
                  )->FT: # Dropdown item component
     "Creates a dropdown item"
     return fh.Li(fh.A(*c, href=href, cls=stringify(cls), **kwargs))
 
 def DropdownList(*li, # List items are dropdown items (Special `DropdownItem` such as `DropdownHeader`, `DropdownDivider`, `DropdownItem` can also be used)
-                 cls='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown
+                 cls:Enum|str|tuple='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown
                  **kwargs # Additional args for the dropdown
                  )->FT: # Dropdown list component
     "Creates a dropdown list"
@@ -32,7 +34,7 @@ def DropdownList(*li, # List items are dropdown items (Special `DropdownItem` su
 def DropdownContainer(*c, # Components to put in the dropdown container
                       id:str='', # ID for the dropdown
                       devider:bool=False, # Whether to show a divider
-                      cls='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
+                      cls:Enum|str|tuple='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
                       **kwargs # Additional args for the dropdown
                       )->FT: # Dropdown component
     "Creates a dropdown"
@@ -41,7 +43,7 @@ def DropdownContainer(*c, # Components to put in the dropdown container
     return fh.Div(*c, id=id, cls=(devider_cls, stringify(cls)), **kwargs)
 
 def DropdownHeader(*c, # Components to put in the dropdown header
-                   cls='text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
+                   cls:Enum|str|tuple='text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
                    **kwargs # Additional args for the dropdown header
                    )->FT: # Dropdown header component
     "Creates a dropdown header"
@@ -50,9 +52,9 @@ def DropdownHeader(*c, # Components to put in the dropdown header
 def Dropdown(*c, # Components to put in the dropdown
              id:str='', # ID for the dropdown
              header:FT|Iterable[FT]=None, # Components for the header (often a `DropdownHeader`)
-             header_cls='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
-             list_cls='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown list
-             cls='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the Dropdown Container
+             header_cls:Enum|str|tuple='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
+             list_cls:Enum|str|tuple='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown list
+             cls:Enum|str|tuple='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the Dropdown Container
              devider:bool=False, # Whether to show a divider
              **kwargs # Additional args for the dropdown
              )->FT: # Dropdown component
@@ -65,7 +67,7 @@ def Dropdown(*c, # Components to put in the dropdown
     return DropdownContainer(*res, id=id, devider=devider, cls=stringify(cls), **kwargs)
 
 def DropdownButton(*c, # Components to put in the dropdown button
-                   cls:Union[str,ButtonT]=ButtonT.primary, # Additional classes on the dropdown button
+                   cls:Enum|str|tuple=ButtonT.primary, # Additional classes on the dropdown button
                    controls:str='', # Control for the dropdown button
                    icon:str='chevron-down', # Icon for the dropdown button
                    show_icon:bool=True, # Whether to show the icon

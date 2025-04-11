@@ -10,26 +10,27 @@ from fasthtml.common import Span, FT
 from fastcore.all import *
 from .base import *
 from .base_styles import *
+from enum import Enum
 
 # %% ../../nbs/03_media.ipynb 2
 def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=20, 
            width:int=20, 
            stroke_width:int=None, # Thickness of lines
-           cls=(), # Additional classes on the `Uk_icon` tag
+           cls:Enum|str|tuple=(), # Additional classes on the `Uk_icon` tag
            **kwargs # Additional args for `Uk_icon` tag
            )->FT: # a lucide icon of the specified size 
     "Creates an icon using lucide icons"
     
-    return I(Script('lucide.createIcons();'),data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=cls, **kwargs)
+    return I(Script('lucide.createIcons();'),data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=stringify(cls), **kwargs)
 
 def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=None, 
            width:int=None, 
            stroke_width:int=None, # Thickness of lines
-           cls=(), # Additional classes on the icon
-           base_cls=(), # Additional classes on the icon
-           icon_cls=(), # Additional classes on the icon
+           cls:Enum|str|tuple=(), # Additional classes on the icon
+           base_cls:Enum|str|tuple=(), # Additional classes on the base element (A or Button)
+           icon_cls:Enum|str|tuple=(), # Additional classes on the icon element (I)
            button:bool=False, # Whether to use a button (defaults to a link)
            **kwargs # Additional args for `A` or `Button` tag
            )->FT: # a lucide icon  button or link of the specified size
@@ -37,25 +38,27 @@ def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons
     if not base_cls:
         base_cls = 'inline-flex items-center p-2 rounded-full' if button else 'inline-flex items-center'
     fn = fh.Button if button else fh.A
-    return fn(cls=(base_cls, stringify(cls)), **kwargs)(
-        Icon(icon=icon, height=height, width=width, stroke_width=stroke_width, cls=icon_cls))
+    return fn(cls=(stringify(base_cls), stringify(cls)), **kwargs)(
+        Icon(icon=icon, height=height, width=width, stroke_width=stroke_width, cls=stringify(icon_cls)))
 
 def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
                    h:int=12,         # Height 
                    w:int=12,  
-                   cls:str=Round.full,
+                   cls:Enum|str|tuple=Round.full,
+                   img_cls:Enum|str|tuple=(), # Added img_cls
                    **kwargs # Additional args for the span
                   ):          # Span with Avatar
     "Creates an Avatar using https://dicebear.com/"
     url = 'https://api.dicebear.com/8.x/lorelei/svg?seed='
     return Span(cls=(stringify(cls),f"relative flex h-{h} w-{w} shrink-0 overflow-hidden bg-gray-200 dark:bg-gray-700"))(
-            fh.Img(cls=f"aspect-square h-{h} w-{w}", alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))
+            fh.Img(cls=(f"aspect-square h-{h} w-{w}", stringify(img_cls)), alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))
 
 def PicSumImg(h:int=200,           # Height in pixels
               w:int=200,           # Width in pixels
               id:int=None,        # Optional specific image ID to use
               grayscale:bool=False, # Whether to return grayscale version
               blur:int=None,       # Optional blur amount (1-10)
+              cls:Enum|str|tuple=(), # Added cls parameter
               **kwargs             # Additional args for Img tag
               )->FT:              # Img tag with picsum image
     "Creates a placeholder image using https://picsum.photos/"
@@ -65,4 +68,4 @@ def PicSumImg(h:int=200,           # Height in pixels
     if grayscale: url = f"{url}?grayscale"
     if blur is not None: 
         url = f"{url}{'?' if not grayscale else '&'}blur={max(1,min(10,blur))}"
-    return fh.Img(src=url, loading="lazy", **kwargs)
+    return fh.Img(src=url, loading="lazy", cls=stringify(cls), **kwargs)

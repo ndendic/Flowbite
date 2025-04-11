@@ -9,6 +9,7 @@ from fastcore.all import *
 from ..core import *
 from .base import *
 from .base_styles import *
+from enum import Enum
 
 import mistletoe
 from lxml import html, etree
@@ -79,8 +80,9 @@ def render_md(md_content:str, # Markdown content
 
 def render_md_article(md_content:str, # Markdown content
                       class_map=None, # Class map
-                      class_map_mods=None # Additional class map
+                      class_map_mods=None, # Additional class map
+                      cls:Enum|str|tuple=("format lg:format-lg dark:format-invert") # Added cls parameter
                      )->FT: # Rendered markdown
     "Renders markdown using mistletoe and lxml"
-    return Div(render_md(md_content, class_map, class_map_mods),cls=("format lg:format-lg dark:format-invert"))
+    return Div(render_md(md_content, class_map, class_map_mods),cls=stringify(cls)) # Use stringify
 

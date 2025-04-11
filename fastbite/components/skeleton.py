@@ -10,6 +10,7 @@ from fastcore.all import *
 from ..core import *
 from .base import *
 from .base_styles import *
+from enum import Enum
 
 # %% ../../nbs/16_skeleton.ipynb 2
 class PlaceholderT(VEnum):
@@ -17,7 +18,7 @@ class PlaceholderT(VEnum):
     gray="p-4 flex items-center justify-center rounded-sm bg-gray-50 dark:bg-gray-800"
 
 def Placeholder(*c, # Components to put in the placeholder
-                  cls=PlaceholderT.dashed, # Additional classes on the placeholder
+                  cls:Enum|str|tuple=PlaceholderT.dashed, # Additional classes on the placeholder
                   **kwargs # Additional args for `Div` tag
                   )->FT: # Div(..., cls='uk-placeholder')
     "Creates a placeholder"

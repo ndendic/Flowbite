@@ -13,6 +13,7 @@ from fastcore.all import *
 from ..core import *
 from .base import *
 from .base_styles import *
+from typing import Union, Iterable
 
 # %% ../../nbs/05_containers.ipynb 2
 class FlexT(VEnum):
@@ -111,8 +112,8 @@ class ContainerSize(VEnum):
     responsive = "w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl px-4"  # Responsive sizing
 
 def Container(*c: Union[str, FT], 
-            size: Union[str, Enum]=ContainerSize.default, 
-            cls: Union[str, Enum, tuple]=(),
+            size: Enum|str|tuple=ContainerSize.default, 
+            cls: Enum|str|tuple=(),
             **kwargs) -> FT:
     """
     Container component based on Flowbite container sizes.
@@ -129,7 +130,7 @@ def Grid(*div, # `Div` components to put in the grid
          cols_lg:int=None, # Number of columns on large screens
          cols_xl:int=None, # Number of columns on extra large screens
          cols:int=None, # Number of columns on all screens
-         cls='gap-4', # Additional classes on the grid (tip: `gap` provides spacing for grids)
+         cls:Enum|str|tuple='gap-4', # Additional classes on the grid (tip: `gap` provides spacing for grids)
          **kwargs # Additional args for `Div` tag
          )->FT: # Responsive grid component
     "Creates a responsive grid layout with smart defaults based on content"
@@ -150,7 +151,7 @@ def Grid(*div, # `Div` components to put in the grid
     return Div(cls=(grid_cls, stringify(cls)), **kwargs)(*div)
 
 def DivFullySpaced(*c,                # Components
-                   cls='w-full',# Classes for outer div (`w-full` makes it use all available width)
+                   cls:Enum|str|tuple='w-full',# Classes for outer div (`w-full` makes it use all available width)
                    **kwargs           # Additional args for outer div
                   ):                  # Div with spaced components via flex classes
     "Creates a flex div with it's components having as much space between them as possible"
@@ -158,7 +159,7 @@ def DivFullySpaced(*c,                # Components
     return Div(cls=(FlexT.block,FlexT.between,FlexT.middle,cls), **kwargs)(*c)
 
 def DivCentered(*c,      # Components
-                cls='space-y-4',  # Classes for outer div (`space-y-4` provides spacing between components)
+                cls:Enum|str|tuple='space-y-4',  # Classes for outer div (`space-y-4` provides spacing between components)
                 vstack=True, # Whether to stack the components vertically
                 **kwargs # Additional args for outer div
                )->FT: # Div with components centered in it
@@ -167,7 +168,7 @@ def DivCentered(*c,      # Components
     return Div(cls=(FlexT.block,(FlexT.column if vstack else FlexT.row),FlexT.middle,FlexT.center,cls),**kwargs)(*c)
 
 def DivLAligned(*c, # Components
-                cls='space-x-4',  # Classes for outer div
+                cls:Enum|str|tuple='space-x-4',  # Classes for outer div
                 **kwargs # Additional args for outer div
                )->FT: # Div with components aligned to the left
     "Creates a flex div with it's components aligned to the left"
@@ -175,7 +176,7 @@ def DivLAligned(*c, # Components
     return Div(cls=(FlexT.block,FlexT.left,FlexT.middle,cls), **kwargs)(*c)
 
 def DivRAligned(*c, # Components
-                cls='space-x-4',  # Classes for outer div
+                cls:Enum|str|tuple='space-x-4',  # Classes for outer div
                 **kwargs # Additional args for outer div
                )->FT: # Div with components aligned to the right
     "Creates a flex div with it's components aligned to the right"
@@ -183,7 +184,7 @@ def DivRAligned(*c, # Components
     return Div(cls=(FlexT.block,FlexT.right,FlexT.middle,cls), **kwargs)(*c)
 
 def DivVStacked(*c, # Components
-                cls='space-y-4', # Additional classes on the div  (tip: `space-y-4` provides spacing between components)
+                cls:Enum|str|tuple='space-y-4', # Additional classes on the div  (tip: `space-y-4` provides spacing between components)
                 **kwargs # Additional args for the div
                )->FT: # Div with components stacked vertically
     "Creates a flex div with it's components stacked vertically"
@@ -191,7 +192,7 @@ def DivVStacked(*c, # Components
     return Div(cls=(FlexT.block,FlexT.column,FlexT.middle,cls), **kwargs)(*c)
 
 def DivHStacked(*c, # Components
-                cls='space-x-4', # Additional classes on the div (`space-x-4` provides spacing between components)
+                cls:Enum|str|tuple='space-x-4', # Additional classes on the div (`space-x-4` provides spacing between components)
                 **kwargs # Additional args for the div
                )->FT: # Div with components stacked horizontally
     "Creates a flex div with it's components stacked horizontally"
@@ -211,7 +212,7 @@ class SectionT(VEnum):
     xl = ContainerSize.xl+"py-12 px-4"
 
 def Section(*c, # contents of Section tag (often other tags)
-            cls=(), # Classes in addition to Section styling
+            cls:Enum|str|tuple=(), # Classes in addition to Section styling
             **kwargs # Additional args for Section tag
             )->FT: # Div(..., cls='uk-section')
     return fh.Section(*c, cls=(stringify(cls)), **kwargs)
@@ -227,35 +228,35 @@ class CardT(VEnum):
     plain = 'block max-w-sm p-6 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700'
 
 def CardTitle(*c, # Components (often a string)
-              cls=(), # Additional classes on the div
+              cls:Enum|str|tuple=(), # Additional classes on the div
               **kwargs # Additional args for the div
              ): 
     "Creates a card title"
     return fh.Div(*c, cls=('mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white',stringify(cls)), **kwargs)
 
 def CardHeader(*c, # Components that goes in the header (often a `ModalTitle` and description)
-               cls=(), # Additional classes on the div
+               cls:Enum|str|tuple=(), # Additional classes on the div
                **kwargs # Additional args for the div
               )->FT: # Container for the header of a card
     "Creates a card header"
     return fh.Div(*c, cls=(stringify(cls)), **kwargs)
 
 def CardBody(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
-              cls=(), # Additional classes on the div
+              cls:Enum|str|tuple=(), # Additional classes on the div
               **kwargs # Additional args for the div
              )->FT: # Container for the body of a card
     "Creates a card body"
     return fh.Div(*c, cls=('font-normal text-gray-700 dark:text-gray-400',stringify(cls)), **kwargs)
 
 def CardFooter(*c, # Components that go in the footer (often a `ModalCloseButton`)
-               cls=(), # Additional classes on the div
+               cls:Enum|str|tuple=(), # Additional classes on the div
                **kwargs # Additional args for the div
               )->FT: # Container for the footer of a card
     "Creates a card footer"
     return fh.Div(*c, cls=("mt-4",stringify(cls)), **kwargs)
 
 def CardContainer(*c, # Components (typically `CardHeader`, `CardBody`, `CardFooter`)
-                   cls=(), # Additional classes on the div
+                   cls:Enum|str|tuple=(), # Additional classes on the div
                    **kwargs # Additional args for the div
                   )->FT: # Container for a card
     "Creates a card container"
@@ -264,10 +265,10 @@ def CardContainer(*c, # Components (typically `CardHeader`, `CardBody`, `CardFoo
 def Card(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
         header:FT|Iterable[FT]=None, # Component(s) that goes in the header (often a `ModalTitle` and a subtitle)
         footer:FT|Iterable[FT]=None,  # Component(s) that goes in the footer (often a `ModalCloseButton`)
-        body_cls=(), # classes for the body
-        header_cls=(), # classes for the header
-        footer_cls=(), # classes for the footer
-        cls=CardT.default, 
+        body_cls:Enum|str|tuple=(), # classes for the body
+        header_cls:Enum|str|tuple=(), # classes for the header
+        footer_cls:Enum|str|tuple=(), # classes for the footer
+        cls:Enum|str|tuple=CardT.default, 
         **kwargs # additional arguments for the `CardContainer`
         )->FT: # Card component
     "Creates a Card with a header, body, and footer"
@@ -282,7 +283,7 @@ def Card(*c, # Components that go in the body (Main content of the card such as 
 # %% ../../nbs/05_containers.ipynb 7
 def Titled(title:str="FastHTML app", # Title of the page
            *c, # Contents of the page (often other tags)
-           cls=ContainerSize.xl, # Classes in addition to Container styling
+           cls:Enum|str|tuple=ContainerSize.xl, # Classes in addition to Container styling
            **kwargs # Additional args for Container (`Div` tag)
            )->FT: # Title, Main(Container(H1(title), content))
     "Creates a standard page structure for titled page.  Main(Container(title, content))"

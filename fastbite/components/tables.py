@@ -12,6 +12,7 @@ from .base import *
 from .base_styles import *
 from .containers import *
 from .media import *
+from enum import Enum
 
 # %% ../../nbs/20_tables.ipynb 2
 class TableT(VEnum):
@@ -41,7 +42,7 @@ class TableT(VEnum):
     cell_footer = "px-6 py-4"
 
 def Thead(*c, 
-          cls=TableT.row_header, 
+          cls:Enum|str|tuple=TableT.row_header, 
           **kwargs):
     "Creates a table header with Flowbite styling"
     # Extract any rounding classes from the parent table and apply only top rounding
@@ -52,8 +53,8 @@ def Thead(*c,
     return fh.Thead(*c, cls=(stringify(other_classes), *rounding_classes), **kwargs)
 
 def Table(*c, # Components (typically `Thead`, `Tbody`, `Tfoot`)
-          cls=TableT.table_default, # Classes for the table element itself
-          container_cls=TableT.container_default, # Classes for the outer container
+          cls:Enum|str|tuple=TableT.table_default, # Classes for the table element itself
+          container_cls:Enum|str|tuple=TableT.container_default, # Classes for the outer container
           responsive=True, # Whether to make the table responsive
           with_shadow=False, # Whether to add shadow styling
           **kwargs # Additional args for the table
@@ -72,7 +73,7 @@ def Table(*c, # Components (typically `Thead`, `Tbody`, `Tfoot`)
 
 def _TableCell(Component, 
                *c, # Components that go in the cell
-               cls=(), # Additional classes on the cell
+               cls:Enum|str|tuple=(), # Additional classes on the cell
                is_header=False, # Whether this is a header cell
                is_footer=False, # Whether this is a footer cell
                expand=False, # Whether to expand the cell
@@ -109,7 +110,7 @@ def Tf(*c, **kwargs):
     return _TableCell(fh.Td, *c, is_footer=True, **kwargs)
 
 def Tbody(*c,
-          cls=(), 
+          cls:Enum|str|tuple=(), 
           striped=False,
           hover=False,
           **kwargs):
@@ -121,7 +122,7 @@ def Tbody(*c,
     return fh.Tbody(*c, cls=tuple(classes), **kwargs)
 
 def Tr(*c,
-       cls=TableT.row_default,
+       cls:Enum|str|tuple=TableT.row_default,
        bordered=True,
        header=False,
        **kwargs):
@@ -134,7 +135,7 @@ def Tr(*c,
     return fh.Tr(*c, cls=stringify(cls), **kwargs)
 
 def TrHeader(*c,
-       cls=TableT.cell_header,
+       cls:Enum|str|tuple=TableT.cell_header,
        bordered=True,
        **kwargs):
     "Creates a table header row with Flowbite styling"
@@ -142,7 +143,7 @@ def TrHeader(*c,
     return fh.Tr(*c, cls=stringify(cls), **kwargs)
 
 def Tfoot(*c,
-          cls=TableT.row_footer,
+          cls:Enum|str|tuple=TableT.row_footer,
           **kwargs):
     "Creates a table footer with Flowbite styling"
     return fh.Tfoot(*c, cls=stringify(cls), **kwargs)
@@ -153,14 +154,16 @@ def DataTable(headers:list, # List of header labels
              id:str=None, # Optional ID for the table
              first_col_header=False, # Whether to style first column as header
              expand_column=None, # Index of column to expand (0-based)
-             cls=TableT.table_default, # Classes for the table element
-             container_cls="", # Classes for the outer container
-             row_cls="", # Classes to apply to each row
+             cls:Enum|str|tuple=TableT.table_default, # Classes for the table element
+             container_cls:Enum|str|tuple="", # Classes for the outer container
+             row_cls:Enum|str|tuple="", # Classes to apply to each row
              striped=False, # Whether to apply striped styling to rows
              hover=False, # Whether to apply hover styling to rows
              bordered=True, # Whether to apply borders between rows
              searchable=False, # Whether to apply searchable styling to rows
              sortable=False, # Whether to apply sortable styling to rows
+             th_cls:Enum|str|tuple=TableT.cell_first, # Added th_cls for first col header
+             tbody_cls:Enum|str|tuple="", # Added tbody_cls
              **kwargs # Additional args for the Table
             )->FT:
     "Creates a data table from headers and rows"
@@ -184,7 +187,7 @@ def DataTable(headers:list, # List of header labels
         for i, cell in enumerate(row):
             if first_col_header and i == 0:
                 cells.append(Th(cell, scope='row', 
-                              cls=TableT.cell_first,
+                              cls=stringify(th_cls), # Use stringify
                               expand=(i == expand_column)))
             else:
                 cells.append(Td(cell, expand=(i == expand_column)))
@@ -198,16 +201,16 @@ def DataTable(headers:list, # List of header labels
         if striped:
             row_classes += " " + stringify(TableT.row_striped)
         
-        data_rows.append(Tr(*cells, cls=row_classes))
+        data_rows.append(Tr(*cells, cls=row_classes)) # Use combined row_classes
     
     # Build tbody classes properly
-    tbody_classes = []
-    if striped: tbody_classes.append(stringify(TableT.row_striped))
-    if hover: tbody_classes.append(stringify(TableT.row_hover))
+    tbody_classes = stringify(tbody_cls) # Start with user provided
+    if striped: tbody_classes += " " + stringify(TableT.row_striped)
+    if hover: tbody_classes += " " + stringify(TableT.row_hover)
     
     return Table(
         Thead(header_row),
-        Tbody(*data_rows, cls=" ".join(tbody_classes) if tbody_classes else None),
+        Tbody(*data_rows, cls=tbody_classes.strip() if tbody_classes else None), # Use combined tbody_classes
         Tfoot(footer_row) if footer else None,
         fh.Script(f"""
             if (document.getElementById('{id}') && typeof simpleDatatables.DataTable !== 'undefined') {{

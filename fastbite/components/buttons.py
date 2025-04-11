@@ -93,7 +93,12 @@ class AT(VEnum):
 
 
 # %% ../../nbs/06_buttons.ipynb 3
-def Button(*c: Union[str, FT],cls: Union[str, Enum]=ButtonT.primary, shape: Union[str, Enum]=Round.default, size: Union[str, Enum]=ButtonSize.base, submit=True, **kwargs) -> FT: 
+def Button(*c: Union[str, FT],
+           cls: Enum|str|tuple=ButtonT.primary, 
+           shape: Enum|str|tuple=Round.default, 
+           size: Enum|str|tuple=ButtonSize.base, 
+           submit=True, 
+           **kwargs) -> FT: 
     base_class = "text-center inline-flex items-center"
     if 'type' not in kwargs: kwargs['type'] = 'submit' if submit else 'button'
     return fh.Button(*c, cls=(base_class, stringify(shape), stringify(cls), stringify(size)), **kwargs)

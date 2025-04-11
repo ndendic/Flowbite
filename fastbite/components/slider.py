@@ -13,10 +13,11 @@ from .base import *
 from .base_styles import *
 from .containers import *
 from .media import *
+from enum import Enum
 
 # %% ../../nbs/19_slider.ipynb 2
 def SliderContainer(*c, # Components
-                    cls=(), # Additional classes on the container
+                    cls:Enum|str|tuple=(), # Additional classes on the container
                     type:Literal['slide', 'static']='slide', # Type of slider
                     id:str=None, # Optional ID for the carousel
                     **kwargs # Additional args for the container
@@ -39,39 +40,46 @@ class SliderItemT(VEnum):
     cubic_bezier = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in-cubic'
 
 def SliderItem(*c, # Components to be displayed in the slide
-                cls=SliderItemT.default, # Additional classes for the items
-                **kwargs # Additional args for the items
+                cls:Enum|str|tuple=SliderItemT.default, # Additional classes for the items' inner div
+                outer_cls:Enum|str|tuple="hidden duration-700 ease-in-out", # Added outer_cls
+                **kwargs # Additional args for the outer items div
                 ) -> FT:
     "Creates a slider item"
     return fh.Div(
-        fh.Div(*c, cls=cls),  # Allow any content to be passed
-        cls="hidden duration-700 ease-in-out", 
+        fh.Div(*c, cls=stringify(cls)),  # Allow any content to be passed
+        cls=stringify(outer_cls), # Use stringify for outer_cls
         data_carousel_item=True, 
         **kwargs
     )
 
 def SliderItems(
         *c, # Components
-        cls='', # Additional classes for the items
-        **kwargs # Additional args for the items
+        cls:Enum|str|tuple='', # Additional classes for the items container
+        **kwargs # Additional args for the items container
     ) -> FT: # Div(..., cls='uk-slider-items uk-grid', ...)
     "Creates a slider items container"
+    # This component seems unused/deprecated in favor of Slider structure?
+    # Type hint added for consistency, but stringify isn't needed if unused.
     return Div(*c, cls=(stringify(cls)), **kwargs)
 
 def SliderControls(
-    cls='', # Additional classes for controls
-    **kwargs # Additional args for controls
+    cls:Enum|str|tuple='', # Additional classes for controls container (Not directly used on element)
+    prev_button_cls:Enum|str|tuple='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none', # Added prev_button_cls
+    next_button_cls:Enum|str|tuple='absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none', # Added next_button_cls
+    span_cls:Enum|str|tuple='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none', # Added span_cls
+    icon_cls:Enum|str|tuple='text-gray-800 dark:text-gray-300', # Added icon_cls
+    **kwargs # Additional args for controls (Not directly used)
 ) -> tuple:
     "Creates previous and next controls for the slider"
     prev_button = fh.Button(
         type='button',
         data_carousel_prev=True,
-        cls='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+        cls=stringify(prev_button_cls) # Use stringify
     )(
         fh.Span(
-            cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+            cls=stringify(span_cls) # Use stringify
         )(
-            Icon('chevron-left', height=24, width=24, cls='text-gray-800 dark:text-gray-300'),
+            Icon('chevron-left', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
             fh.Span('Previous', cls='sr-only')
         )
     )
@@ -79,12 +87,12 @@ def SliderControls(
     next_button = fh.Button(
         type='button',
         data_carousel_next=True,
-        cls='absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+        cls=stringify(next_button_cls) # Use stringify
     )(
         fh.Span(
-            cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+            cls=stringify(span_cls) # Use stringify
         )(
-            Icon('chevron-right', height=24, width=24, cls='text-gray-800 dark:text-gray-300'),
+            Icon('chevron-right', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
             fh.Span('Next', cls='sr-only')
         )
     )
@@ -94,8 +102,9 @@ def SliderControls(
 
 def SliderNav(
         num_slides:int, # Number of slides
-        cls='absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse', # Additional classes for the navigation
-        **kwargs # Additional args for the navigation
+        cls:Enum|str|tuple='absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse', # Additional classes for the navigation container
+        button_cls:Enum|str|tuple='w-3 h-3 rounded-full', # Added button_cls
+        **kwargs # Additional args for the navigation container
     ) -> FT:
     "Navigation indicators for Slider component"
     return Div(
@@ -104,15 +113,15 @@ def SliderNav(
             aria_current='true' if i == 0 else 'false',
             aria_label=f'Slide {i+1}',
             data_carousel_slide_to=f'{i}',
-            cls='w-3 h-3 rounded-full'
+            cls=stringify(button_cls) # Use stringify
         ) for i in range(num_slides)],
         cls=(stringify(cls)),
         **kwargs
     )
 
 def Slider(*items, # List of items to show in slider
-          wrapper_cls='relative min-h-56 overflow-hidden rounded-lg md:min-h-96', # Classes for the wrapper div
-          cls='', # Classes for slider container
+          wrapper_cls:Enum|str|tuple='relative min-h-56 overflow-hidden rounded-lg md:min-h-96', # Classes for the wrapper div
+          cls:Enum|str|tuple='', # Classes for slider container
           show_controls=True, # Whether to show navigation controls
           show_indicators=True, # Whether to show slide indicators
           static:bool=False, # Whether to show static slider
@@ -125,7 +134,7 @@ def Slider(*items, # List of items to show in slider
     wrapper = fh.Div(
         *[SliderItem(item) for item in items],
         Script("htmx.onLoad(function(content) {initCarousels();})"),
-        cls=wrapper_cls,
+        cls=stringify(wrapper_cls), # Use stringify
     )
     
     components = [wrapper]

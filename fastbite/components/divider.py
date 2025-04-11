@@ -21,7 +21,7 @@ class DividerT(VEnum):
 
 def Divider(*c, # contents of Divider tag (often nothing)
             vertical=False, # Whether to create a vertical divider
-            cls=(), # Classes in addition to Divider styling
+            cls:Enum|str|tuple=(), # Classes in addition to Divider styling
             **kwargs # Additional args for Divider tag
             )->FT: #  Hr(..., cls='uk-divider-icon') or Div(..., cls='uk-divider-vertical')
     "Divider with default styling and margin"
@@ -30,7 +30,10 @@ def Divider(*c, # contents of Divider tag (often nothing)
     return container(*c, cls=cls, **kwargs)
 
 # TODO: This is a copy of the DividerSplit function in fh_flowbite/components.py
-def DividerSplit(*c, cls=(), line_cls=(), text_cls=()):
+def DividerSplit(*c, 
+                 cls:Enum|str|tuple=(), 
+                 line_cls:Enum|str|tuple=(), 
+                 text_cls:Enum|str|tuple=()):
     "Creates a simple horizontal line divider with configurable thickness and vertical spacing"
     cls, line_cls, text_cls = map(stringify,(cls, line_cls, text_cls))
     return Div(

@@ -13,6 +13,7 @@ from .base import *
 from .base_styles import *
 from .media import *
 from .buttons import *
+from enum import Enum
 
 
 # %% ../../nbs/07_forms.ipynb 2
@@ -22,7 +23,7 @@ class FormT(VEnum):
 
 
 def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
-          cls=FormT.default, # Classes in addition to Form styling (default is 'space-y-3' to prevent scrunched up form elements)
+          cls:Enum|str|tuple=FormT.default, # Classes in addition to Form styling (default is 'space-y-3' to prevent scrunched up form elements)
           **kwargs # Additional args for Form tag
           )->FT: # Form(..., cls='space-y-3')
     "A Form with default spacing between form elements"
@@ -34,7 +35,7 @@ class LabelInputT(VEnum):
     error = 'block mb-2 text-sm font-medium text-red-700 dark:text-red-500'
 
 def FormLabel(*c, # contents of FormLabel tag (often text)
-               cls=LabelInputT.default, # Classes in addition to FormLabel styling
+               cls:Enum|str|tuple=LabelInputT.default, # Classes in addition to FormLabel styling
                **kwargs # Additional args for FormLabel tag
                )->FT: # Label(..., cls='uk-form-label')
     "A Label with default styling"
@@ -46,10 +47,10 @@ class InputT(VEnum):
     error = 'bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500'
 
 def Input(label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
-          cls=InputT.default, # Additional classes for `Input`
-          help_cls=TextT.sm, # Additional classes for `P` (help text)
-          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=LabelInputT.default, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=InputT.default, # Additional classes for `Input`
+          help_cls:Enum|str|tuple=TextT.sm, # Additional classes for `P` (help text)
+          div_cls:Enum|str|tuple='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
@@ -72,10 +73,10 @@ def Input(label:str|FT = None, # FormLabel content (often text)
             )
 
 def TextArea(label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
-          cls=InputT.default, # Additional classes for `Input`
-          help_cls=TextT.sm, # Additional classes for `P` (help text)
-          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=LabelInputT.default, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=InputT.default, # Additional classes for `Input`
+          help_cls:Enum|str|tuple=TextT.sm, # Additional classes for `P` (help text)
+          div_cls:Enum|str|tuple='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
@@ -106,10 +107,10 @@ def Options(*c,                    # Content for an `Option`
 
 def Select(*options, # Options for the select dropdown (can use `Options` helper function to create)
           label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=LabelInputT.default, # Additional classes for `FormLabel`
-          cls=InputT.default, # Additional classes for `Input`
-          help_cls=TextT.sm, # Additional classes for `P` (help text)
-          div_cls='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=LabelInputT.default, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=InputT.default, # Additional classes for `Input`
+          help_cls:Enum|str|tuple=TextT.sm, # Additional classes for `P` (help text)
+          div_cls:Enum|str|tuple='mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
@@ -138,10 +139,10 @@ class RadioT(VEnum):
 
 def Radio(value:str='', # Value for the radio button
           label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
-          cls=RadioT.default, # Additional classes for `Input`
-          help_cls=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
-          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=TextT.medium, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=RadioT.default, # Additional classes for `Input`
+          help_cls:Enum|str|tuple=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
+          div_cls:Enum|str|tuple='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           help_text:str|FT = None, # Help text for the input
           disabled=False, # Whether the input is disabled
@@ -164,10 +165,10 @@ class CheckboxT(VEnum):
     error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 rounded-sm focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
 
 def Checkbox(label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
-          cls=CheckboxT.default, # Additional classes for `Input`
-          help_cls=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
-          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=TextT.medium, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=CheckboxT.default, # Additional classes for `Input`
+          help_cls:Enum|str|tuple=TextT.xs+TextT.gray, # Additional classes for `P` (help text)
+          div_cls:Enum|str|tuple='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           help_text:str|FT = None, # Help text for the input
           disabled=False, # Whether the input is disabled
@@ -190,9 +191,9 @@ class SwitchT(VEnum):
     error = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600 dark:peer-checked:bg-red-600"
 
 def Switch(label:str|FT = None, # FormLabel content (often text)
-          lbl_cls=TextT.medium, # Additional classes for `FormLabel`
-          cls=SwitchT.default, # Additional classes for `Input`
-          div_cls='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
+          lbl_cls:Enum|str|tuple=TextT.medium, # Additional classes for `FormLabel`
+          cls:Enum|str|tuple=SwitchT.default, # Additional classes for `Input`
+          div_cls:Enum|str|tuple='flex mb-5', # Classes on container (default is `'space-y-2'` to prevent scrunched up form elements)
           id='', # id for `FormLabel` and `Input` (`id`, `name` and `for` attributes are set to this value)
           disabled=False, # Whether the input is disabled
           checked=False, # Whether the input is selected

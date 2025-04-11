@@ -186,7 +186,7 @@ def NavBar(*c,
 
 
 def SubNavBarItem(*c,
-                cls='text-gray-900 dark:text-white hover:underline', # Additional classes on the li            
+                cls:Enum|str|tuple='text-gray-900 dark:text-white hover:underline', # Additional classes on the li            
                 href='#', # Href for the link
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item

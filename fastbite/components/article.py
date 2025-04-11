@@ -10,24 +10,25 @@ from fastcore.all import *
 from ..core import *
 from .base import *
 from .base_styles import *
+from enum import Enum
 
 # %% ../../nbs/09_article.ipynb 2
 def Article(*c, # contents of Article tag (often other tags)
-            cls=(), # Classes in addition to Article styling
+            cls:Enum|str|tuple=(), # Classes in addition to Article styling
             **kwargs # Additional args for Article tag
             )->FT: # Article(..., cls='uk-article')
     "A styled article container for blog posts or similar content"
     return fh.Article(*c, cls=(TextT.article,stringify(cls)), **kwargs)
 
 def ArticleTitle(*c, # contents of ArticleTitle tag (often other tags)
-                 cls=(), # Classes in addition to ArticleTitle styling
+                 cls:Enum|str|tuple=(), # Classes in addition to ArticleTitle styling
                  **kwargs # Additional args for ArticleTitle tag
                  )->FT: # H1(..., cls='uk-article-title')
     "A title component for use within an Article"
     return H1(*c, cls=(TextT.article,stringify(cls)), **kwargs)
 
 def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
-                cls=(), # Classes in addition to ArticleMeta styling
+                cls:Enum|str|tuple=(), # Classes in addition to ArticleMeta styling
                 **kwargs # Additional args for ArticleMeta tag
                 )->FT: # P(..., cls='uk-article-meta')
     "A metadata component for use within an Article showing things like date, author etc"

@@ -59,7 +59,7 @@ class BadgeT(VEnum):
 
 def Badge(*c, # contents of Label tag (often text)
            icon=None,
-           cls:Union[str,Enum]=BadgeT.default_pill, # Classes in addition to Label styling
+           cls:Enum|str|tuple=BadgeT.default_pill, # Classes in addition to Label styling
            **kwargs # Additional args for Label tag
            )->FT: # Label(..., cls='uk-label')
     "FrankenUI labels, which look like pills"
@@ -68,8 +68,8 @@ def Badge(*c, # contents of Label tag (often text)
 def IconBadge(icon,
            h="2.5",
            w="2.5",
-           cls=(), # Classes in addition to Label styling
-           icon_cls=(), # Classes in addition to Icon styling
+           cls:Enum|str|tuple=(), # Classes in addition to Label styling
+           icon_cls:Enum|str|tuple=(), # Classes in addition to Icon styling
            **kwargs # Additional args for Label tag
            )->FT: # Label(..., cls='uk-label')
     "FrankenUI labels, which look like pills" 

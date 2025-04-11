@@ -323,14 +323,14 @@ def Output(*c:FT|str, # Contents of Output tag
 
 # %% ../../nbs/02_base.ipynb 4
 def CodeSpan(*c, # Contents of CodeSpan tag (inline text code snippets)
-             cls="text-sm text-primary-800 dark:text-primary-400 bg-tw-format-code-bg", # Classes in addition to CodeSpan styling
+             cls:Enum|str|tuple="text-sm text-primary-800 dark:text-primary-400 bg-tw-format-code-bg", # Classes in addition to CodeSpan styling
              **kwargs # Additional args for CodeSpan tag
              )->FT: # Code(..., cls='uk-codespan')
     "A CodeSpan with Styling"
     return fh.Code(*c, cls=(stringify(cls)), **kwargs)
 
 def Code(*c, # Contents of CodeSpan tag (inline text code snippets)
-             cls="text-sm text-primary-800 dark:text-primary-400 bg-tw-format-code-bg", # Classes in addition to CodeSpan styling
+             cls:Enum|str|tuple="text-sm text-primary-800 dark:text-primary-400 bg-tw-format-code-bg", # Classes in addition to CodeSpan styling
              **kwargs # Additional args for CodeSpan tag
              )->FT: # Code(..., cls='uk-codespan')
     "A Code with Styling"
@@ -359,7 +359,7 @@ class ParagrafT(VEnum):
     sm = TextT.sm+"my-3"
 
 def P(*c, # Contents of P tag (often text)
-      cls=ParagrafT.default, # Classes in addition to P styling
+      cls:Enum|str|tuple=ParagrafT.default, # Classes in addition to P styling
       **kwargs # Additional args for P tag
       )->FT: # P(..., cls='uk-p')
     "A P with Styling"
