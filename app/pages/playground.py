@@ -5,7 +5,6 @@ from fasthtml.svg import *
 from fastbite.all import *
 from fastbite.core import *
 from utils import component_showcase
-from theme_switcher import ThemeSwitcher
 from extracted.input_field import component as input_field_component
 from extracted.file_input import component as file_input_component
 

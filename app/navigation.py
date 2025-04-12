@@ -1,8 +1,19 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fastbite.all import *
-from app.theme_switcher import ThemeSwitcher
 from app.component_registry import component_registry
+
+# Define themes in the new format required by the Fastbite ThemeSwitcher
+default_themes_with_colors = {
+    "none": {"label": "Default", "colors": ["bg-gray-300", "bg-gray-400", "bg-gray-500"]},
+    "retro": {"label": "Retro Blue", "colors": ["bg-[#3c79f5]", "bg-[#265aea]", "bg-[#1e45d7]"]},
+    "emerald": {"label": "Emerald Green", "colors": ["bg-emerald-400", "bg-emerald-500", "bg-emerald-600"]},
+    "amber": {"label": "Amber Gold", "colors": ["bg-amber-400", "bg-amber-500", "bg-amber-600"]},
+    "rose": {"label": "Rose Pink", "colors": ["bg-rose-400", "bg-rose-500", "bg-rose-600"]},
+    # Placeholder colors - adjust these based on your actual theme definitions
+    "ocean-deep": {"label": "Ocean Deep", "colors": ["bg-blue-400", "bg-blue-500", "bg-blue-600"]},
+    "sunset-glow": {"label": "Sunset Glow", "colors": ["bg-orange-400", "bg-orange-500", "bg-orange-600"]}
+}
 
 def Navbar():
     return Nav(
@@ -11,14 +22,7 @@ def Navbar():
                 Div(
                     Button(
                         Span('Open sidebar', cls='sr-only'),
-                        Svg(
-                            Path(clip_rule='evenodd', fill_rule='evenodd', d='M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z'),
-                            aria_hidden='true',
-                            fill='currentColor',
-                            viewbox='0 0 20 20',
-                            xmlns='http://www.w3.org/2000/svg',
-                            cls='w-6 h-6'
-                        ),
+                        Icon('menu', cls='w-6 h-6'),
                         data_drawer_target='logo-sidebar',
                         data_drawer_toggle='logo-sidebar',
                         aria_controls='logo-sidebar',
@@ -34,24 +38,8 @@ def Navbar():
                     cls='flex items-center justify-start rtl:justify-end'
                 ),
                 Div(
-                    ThemeSwitcher(),
-                    Div(
-                        Icon(
-                            "moon",
-                            id='theme-toggle-dark-icon',
-                            cls='w-4 h-4'
-                        ),
-                        Icon(
-                            "sun",
-                            id='theme-toggle-light-icon',
-                            cls='w-4 h-4 hidden'
-                        ),
-                        Span('Toggle dark mode', cls='sr-only'),
-                        id='theme-toggle',
-                        data_tooltip_target='tooltip-toggle',
-                        type='button',
-                        cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
-                    ),
+                    ThemeSwitcher(themes=default_themes_with_colors),
+                    ThemeToggle(),
                     Div(
                         Div(
                             Div(

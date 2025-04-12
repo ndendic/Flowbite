@@ -19,7 +19,8 @@ from .components.skeleton import *
 from .components.slider import *
 from .components.tables import *
 from .components.tabs import *
+from .components.theme_switcher import *
 from .components.upload import *
 from .components.accordion import *
-from .components.pagination import *
+# from .components.pagination import *
 

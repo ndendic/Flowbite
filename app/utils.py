@@ -16,7 +16,7 @@ def component_showcase(*c:FT|str, # Components
             data_tabs_toggle=f'#{id}-tab-content',
             cls=TabContainerT.rounded
         ),
-        Ul(id=f'{id}-tab-content')(
+        Ul(id=f'{id}-tab-content', cls='relative')(
             Li(id=f'{id}-preview', role='tabpanel', aria_labelledby=f'{id}-preview-tab', cls='p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600')(
                 *c
             ),

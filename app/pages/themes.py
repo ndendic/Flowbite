@@ -1,7 +1,7 @@
 from fasthtml.common import *
 from fasthtml.svg import *
 from fastbite.all import *
-from theme_switcher import ThemeSwitcher
+# from theme_switcher import ThemeSwitcher
 
 themes = Container(
     H1("Color Themes", cls="text-3xl font-bold mb-6"),
@@ -11,7 +11,7 @@ themes = Container(
     H2("Theme Switcher", cls="text-2xl font-bold mb-4"),
     P("Use the switcher below to change themes:", cls="mb-4"),
     Div(
-        ThemeSwitcher(),
+        # ThemeSwitcher(),
         cls="mb-8 inline-block"
     ),
     
