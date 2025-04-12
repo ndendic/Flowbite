@@ -15,19 +15,6 @@ favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
 
-flowbite_hdrs = (
-    # Script(src="https://unpkg.com/@tailwindcss/browser@4"),
-    Link(
-        rel="stylesheet",
-        href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
-    ),
-    Script(src='https://unpkg.com/lucide@latest'),
-    Script(
-        "if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\r\n        document.documentElement.classList.add('dark');\r\n    } else {\r\n        document.documentElement.classList.remove('dark')\r\n    }"
-    ),
-    Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript')
-)
-
 flowbite_ftrs = [
     Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"), 
     Script("""
@@ -109,7 +96,7 @@ app, rt = fast_app(
     static_path="assets",
     hdrs=(
         favicons,
-        flowbite_hdrs,
+        fastbite_hdrs,
         datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
         HighlightJS(langs=["python", "javascript", "html", "css"]),
