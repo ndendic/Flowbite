@@ -12,7 +12,6 @@ DEFAULT_CONFIG = {
         }
     },
     "tailwind": {
-        "config": "tailwind.config.js",
         "minify": False
     }
 }

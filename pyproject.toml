@@ -17,10 +17,11 @@ dynamic = [
 ]
 
 dependencies = [
-    "ft-datastar",
     "mistletoe>=1.4.0",
     "python-fasthtml>=0.12.1",
     "typer>=0.15.2",
+    "tomli>=2.0.1",
+    "tomli-w>=1.0.0",
 ]
 
 [project.scripts]
