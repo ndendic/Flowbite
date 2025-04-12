@@ -1,6 +1,7 @@
 import typer
 from rich import print
 from rich.console import Console
+from rich.prompt import Prompt, Confirm
 from rich.progress import Progress, SpinnerColumn, TextColumn
 import subprocess
 from pathlib import Path
@@ -9,10 +10,14 @@ import sys
 from typing import Optional
 from urllib.request import urlretrieve
 import os
-from .config import load_config, Config
+from .config import load_config, Config, DEFAULT_CONFIG
 
 app = typer.Typer(help="FastBite CLI tool for project management")
 console = Console()
+
+def get_project_root() -> Path:
+    """Get the project root directory (where the command is being run)"""
+    return Path.cwd()
 
 def get_tailwind_binary_name() -> str:
     """Get the appropriate Tailwind binary name for the current platform"""
@@ -61,8 +66,8 @@ def get_tailwind_url(system: str, is_arm: bool, is_64bit: bool) -> tuple[str, st
     raise ValueError(f"Unsupported system: {system} (machine: {platform.machine()})")
 
 def get_binary_path() -> Path:
-    """Get the path to the Tailwind binary"""
-    return Path(__file__).parent.parent / "scripts" / get_tailwind_binary_name()
+    """Get the path to the Tailwind binary in the project root"""
+    return get_project_root() / get_tailwind_binary_name()
 
 def run_tailwind_command(config: Config, binary_path: Path, watch: bool = False) -> None:
     """Run Tailwind CLI with the specified configuration"""
@@ -176,7 +181,6 @@ html.dark {
     with open(path, "w") as f:
         f.write(content)
 
-@app.command()
 def install_tailwind(
     force: bool = typer.Option(False, "--force", "-f", help="Force reinstall even if Tailwind CLI exists"),
     install_path: Optional[str] = typer.Option(None, "--path", "-p", help="Custom installation path"),
@@ -197,8 +201,8 @@ def install_tailwind(
             if install_path:
                 install_dir = Path(install_path)
             else:
-                # Default to scripts directory in the package
-                install_dir = Path(__file__).parent.parent / "scripts"
+                # Default to project root
+                install_dir = get_project_root()
             
             full_path = install_dir / tailwind_filename
             
@@ -239,7 +243,8 @@ def install_tailwind(
 @app.command()
 def init(
     force: bool = typer.Option(False, "--force", "-f", help="Force overwrite existing configuration"),
-    install_path: Optional[str] = typer.Option(None, "--path", "-p", help="Custom installation path for Tailwind binary")
+    install_path: Optional[str] = typer.Option(None, "--path", "-p", help="Custom installation path for Tailwind binary"),
+    default_paths: bool = typer.Option(False, "--default", "-d", help="Use default paths without prompting")
 ):
     """Initialize FastBite project configuration and install Tailwind CLI."""
     try:
@@ -253,10 +258,31 @@ def init(
         if config.config_path.exists() and not force:
             console.print("[yellow]Configuration file already exists. Use --force to overwrite.")
             return
+
+        # Interactive path configuration if not using defaults
+        if not default_paths:
+            console.print("\n[bold]CSS Path Configuration[/]")
+            console.print(f"Default input path: [dim]{DEFAULT_CONFIG['paths']['css']['input']}[/dim]")
+            console.print(f"Default output path: [dim]{DEFAULT_CONFIG['paths']['css']['output']}[/dim]")
+            
+            if Confirm.ask("Would you like to customize the CSS paths?", default=False):
+                input_path = Prompt.ask(
+                    "Enter the path for your input CSS file",
+                    default=DEFAULT_CONFIG['paths']['css']['input']
+                )
+                output_path = Prompt.ask(
+                    "Enter the path for your output CSS file",
+                    default=DEFAULT_CONFIG['paths']['css']['output']
+                )
+                
+                # Update config with custom paths
+                config._config['paths']['css']['input'] = input_path
+                config._config['paths']['css']['output'] = output_path
+            else:
+                console.print("[dim]Using default paths...[/dim]")
         
         with console.status("[bold green]Initializing project...") as status:
             # Create assets directory structure
-            config.assets_path.mkdir(parents=True, exist_ok=True)
             config.css_input_path.parent.mkdir(parents=True, exist_ok=True)
             
             # Create initial CSS file if it doesn't exist or force is True
@@ -270,10 +296,14 @@ def init(
         
         console.print("\n[bold green]✓[/] Project initialized successfully!")
         console.print(f"[dim]Configuration saved to: {config.config_path}[/dim]")
-        console.print(f"[dim]CSS file created at: {config.css_input_path}[/dim]")
+        console.print(f"[dim]Input CSS file: {config.css_input_path}[/dim]")
+        console.print(f"[dim]Output CSS file: {config.css_output_path}[/dim]")
+        console.print(f"[dim]Tailwind binary installed at: {binary_path}[/dim]")
+        
+        # Show the watch command hint based on the paths
         console.print("\nNext steps:")
-        console.print("1. Run [bold]fastbite build[/] to generate your CSS")
-        console.print("2. Or run [bold]fastbite watch[/] to start development mode")
+        console.print("1. Run [bold]`fastbite build`[/] to generate your CSS")
+        console.print("2. Or run [bold]`fastbite dev`[/] to start development mode")
         
     except Exception as e:
         console.print(f"[bold red]Error:[/] Failed to initialize project: {str(e)}")
@@ -300,7 +330,7 @@ def build(
         raise typer.Exit(1)
 
 @app.command()
-def watch(
+def dev(
     install_path: Optional[str] = typer.Option(None, "--path", "-p", help="Custom installation path for Tailwind binary")
 ):
     """Start Tailwind CSS in watch mode for development."""
