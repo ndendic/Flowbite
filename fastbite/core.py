@@ -21,7 +21,8 @@ fastbite_hdrs = (
 )
 
 fastbite_ftrs = [
-    Script("""
+    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"), 
+    Script(NotStr("""
     document.addEventListener('DOMContentLoaded', function() {
         // Theme toggle functionality
         var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -31,11 +32,11 @@ fastbite_ftrs = [
         // Function to update icon visibility
         function updateThemeToggleIcons() {
             if (document.documentElement.classList.contains('dark')) {
-                themeToggleLightIcon && themeToggleLightIcon.classList.remove('hidden');
-                themeToggleDarkIcon && themeToggleDarkIcon.classList.add('hidden');
+                themeToggleLightIcon.classList.remove('hidden');
+                themeToggleDarkIcon.classList.add('hidden');
             } else {
-                themeToggleLightIcon && themeToggleLightIcon.classList.add('hidden');
-                themeToggleDarkIcon && themeToggleDarkIcon.classList.remove('hidden');
+                themeToggleLightIcon.classList.add('hidden');
+                themeToggleDarkIcon.classList.remove('hidden');
             }
         }
 
@@ -79,20 +80,19 @@ fastbite_ftrs = [
                 updateThemeToggleIcons();
             }
         });
-
-        // Initialize Flowbite after DOM is ready and theme is set
-        if (typeof window.initFlowbite === 'function') {
-            window.initFlowbite();
-        }
-        
-        // Preserve theme switcher's theme selection
-        const savedTheme = localStorage.getItem('theme') || 'none';
-        if (savedTheme !== 'none') {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        }
     });
-    """)
-]
+    """)),
+    Script(NotStr("""
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // On page load, set the theme based on localStorage
+        const savedTheme = localStorage.getItem('theme') || 'none';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        """))
+    ]
 
 # %% ../nbs/00_core.ipynb 5
 # need a better name, stringify might be too general for what it does 
