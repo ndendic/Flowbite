@@ -20,7 +20,11 @@ dependencies = [
     "ft-datastar",
     "mistletoe>=1.4.0",
     "python-fasthtml>=0.12.1",
+    "typer>=0.15.2",
 ]
+
+[project.scripts]
+fastbite = "fastbite.cli:app"
 
 [tool.uv.sources]
 flowbite = { workspace = true }
