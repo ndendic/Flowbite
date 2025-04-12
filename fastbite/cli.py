@@ -10,10 +10,18 @@ import sys
 from typing import Optional
 from urllib.request import urlretrieve
 import os
+import pkg_resources
 from .config import load_config, Config, DEFAULT_CONFIG
 
 app = typer.Typer(help="FastBite CLI tool for project management")
 console = Console()
+
+def get_template_content(template_name: str) -> str:
+    """Get the content of a template file from the templates directory"""
+    template_path = Path(__file__).parent / "templates" / template_name
+    if not template_path.exists():
+        raise FileNotFoundError(f"Template {template_name} not found at {template_path}")
+    return template_path.read_text()
 
 def get_project_root() -> Path:
     """Get the project root directory (where the command is being run)"""
@@ -97,89 +105,13 @@ def run_tailwind_command(config: Config, binary_path: Path, watch: bool = False)
 
 def create_input_css(path: Path) -> None:
     """Create an optimized input.css file for Tailwind v4"""
-    content = """@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom dark mode variant - more targeted approach */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* Theme configuration using CSS variables */
-@theme {
-    /* Primary colors - Rose theme by default */
-    --color-primary-50: #fff1f2;
-    --color-primary-100: #ffe4e6;
-    --color-primary-200: #fecdd3;
-    --color-primary-300: #fda4af;
-    --color-primary-400: #fb7185;
-    --color-primary-500: #f43f5e;
-    --color-primary-600: #e11d48;
-    --color-primary-700: #be123c;
-    --color-primary-800: #9f1239;
-    --color-primary-900: #881337;
-    --color-primary-950: #4c0519;
-
-    /* Gray scale */
-    --color-gray-50: #fafafa;
-    --color-gray-100: #f4f4f5;
-    --color-gray-200: #e4e4e7;
-    --color-gray-300: #d4d4d8;
-    --color-gray-400: #a1a1aa;
-    --color-gray-500: #71717a;
-    --color-gray-600: #52525b;
-    --color-gray-700: #3f3f46;
-    --color-gray-800: #27272a;
-    --color-gray-900: #18181b;
-    --color-gray-950: #09090b;
-
-    /* Font stacks */
-    --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif;
-    --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
-}
-
-/* Dark mode overrides */
-html.dark {
-    color-scheme: dark;
-}
-
-/* Ensure proper inheritance */
-.bg-inherit {
-    background-color: inherit;
-}
-
-/* Optional theme variations - can be activated with data-theme attribute */
-@layer base {
-    [data-theme='emerald'] {
-        --color-primary-50: #ecfdf5;
-        --color-primary-100: #d1fae5;
-        --color-primary-200: #a7f3d0;
-        --color-primary-300: #6ee7b7;
-        --color-primary-400: #34d399;
-        --color-primary-500: #10b981;
-        --color-primary-600: #059669;
-        --color-primary-700: #047857;
-        --color-primary-800: #065f46;
-        --color-primary-900: #064e3b;
-        --color-primary-950: #022c22;
-    }
-
-    [data-theme='amber'] {
-        --color-primary-50: #fffbeb;
-        --color-primary-100: #fef3c7;
-        --color-primary-200: #fde68a;
-        --color-primary-300: #fcd34d;
-        --color-primary-400: #fbbf24;
-        --color-primary-500: #f59e0b;
-        --color-primary-600: #d97706;
-        --color-primary-700: #b45309;
-        --color-primary-800: #92400e;
-        --color-primary-900: #78350f;
-        --color-primary-950: #451a03;
-    }
-}
-"""
-    with open(path, "w") as f:
-        f.write(content)
+    try:
+        content = get_template_content("base_theme.css")
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception as e:
+        console.print(f"[red]Error:[/] Failed to create input.css: {str(e)}")
+        raise typer.Exit(1)
 
 def install_tailwind(
     force: bool = typer.Option(False, "--force", "-f", help="Force reinstall even if Tailwind CLI exists"),
@@ -239,6 +171,50 @@ def install_tailwind(
             import traceback
             console.print("[dim]" + traceback.format_exc() + "[/dim]")
         raise typer.Exit(1)
+
+def update_package():
+    """Update the fastbite package using pip"""
+    try:
+        with console.status("[bold green]Checking for FastBite updates...") as status:
+            # Check if package is installed via pip
+            try:
+                from importlib.metadata import version, PackageNotFoundError
+                try:
+                    current_version = version("fastbite")
+                except PackageNotFoundError:
+                    console.print("[yellow]FastBite package not installed via pip, skipping update")
+                    return
+
+                # Create pip cache directory if it doesn't exist
+                pip_cache_dir = Path.home() / ".cache" / "pip"
+                pip_cache_dir.mkdir(parents=True, exist_ok=True)
+
+                # Use python -m pip to ensure we're using the right pip
+                result = subprocess.run(
+                    [sys.executable, "-m", "pip", "install", "--upgrade", "fastbite"],
+                    capture_output=True,
+                    text=True
+                )
+                
+                if result.returncode == 0:
+                    try:
+                        new_version = version("fastbite")
+                        if new_version != current_version:
+                            console.print(f"[bold green]✓[/] FastBite updated from version {current_version} to {new_version}")
+                        else:
+                            console.print(f"[bold green]✓[/] FastBite is already at the latest version ({current_version})")
+                    except Exception:
+                        console.print("[bold green]✓[/] FastBite updated successfully")
+                else:
+                    if "No matching distribution found" in result.stderr:
+                        console.print("[yellow]No updates available for FastBite")
+                    else:
+                        console.print(f"[red]Error during update:[/] {result.stderr}")
+            except ImportError:
+                console.print("[red]Error:[/] Could not import required modules for version checking")
+                    
+    except Exception as e:
+        console.print(f"[red]Error:[/] Could not update package: {str(e)}")
 
 @app.command()
 def init(
@@ -346,6 +322,68 @@ def dev(
         
     except Exception as e:
         console.print(f"[bold red]Error:[/] Failed to start watch mode: {str(e)}")
+        raise typer.Exit(1)
+
+@app.command()
+def update(
+    skip_package: bool = typer.Option(False, "--skip-package", help="Skip updating the FastBite package"),
+    install_path: Optional[str] = typer.Option(None, "--path", "-p", help="Custom installation path for Tailwind binary"),
+    verbose: bool = typer.Option(False, "--verbose", "-v", help="Show detailed debug information")
+):
+    """Update Tailwind binary and FastBite package to their latest versions."""
+    try:
+        console.print("[bold]Starting update process...[/]")
+        
+        # Update FastBite package first
+        if not skip_package:
+            update_package()
+        
+        # Get current binary path
+        binary_path = get_binary_path() if not install_path else Path(install_path) / get_tailwind_binary_name()
+        
+        # Create directory if it doesn't exist
+        binary_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Check if binary exists
+        if binary_path.exists():
+            console.print(f"\n[dim]Removing existing Tailwind binary at: {binary_path}[/dim]")
+            try:
+                binary_path.unlink()
+            except Exception as e:
+                console.print(f"[yellow]Warning: Could not remove existing binary: {str(e)}")
+                console.print("[yellow]You may need to remove it manually or run with elevated privileges")
+                return
+        
+        # Install new binary
+        console.print("\n[bold]Installing latest Tailwind version...[/]")
+        new_binary_path = install_tailwind(force=True, install_path=install_path)
+        
+        if new_binary_path and new_binary_path.exists():
+            # Try to get Tailwind version without outputting CSS
+            try:
+                version_result = subprocess.run(
+                    [str(new_binary_path), "--help"],
+                    capture_output=True,
+                    text=True
+                )
+                if version_result.returncode == 0:
+                    # Extract version from help output - it's usually in the first line
+                    version_line = version_result.stdout.splitlines()[0]
+                    if "tailwindcss" in version_line.lower():
+                        console.print(f"[bold green]✓[/] {version_line.strip()}")
+                    else:
+                        console.print("[bold green]✓[/] Tailwind CLI updated to latest version")
+                else:
+                    console.print("[bold green]✓[/] Tailwind CLI updated to latest version")
+            except Exception as e:
+                if verbose:
+                    console.print(f"[dim]Could not get version info: {str(e)}[/dim]")
+                console.print("[bold green]✓[/] Tailwind CLI updated to latest version")
+        
+        console.print("\n[bold green]Update completed successfully![/]")
+        
+    except Exception as e:
+        console.print(f"[bold red]Error:[/] Update failed: {str(e)}")
         raise typer.Exit(1)
 
 if __name__ == "__main__":

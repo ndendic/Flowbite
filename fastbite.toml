@@ -1,0 +1,9 @@
+[paths]
+assets = "assets"
+
+[paths.css]
+input = "assets/css/input.css"
+output = "assets/css/output.css"
+
+[tailwind]
+minify = false
