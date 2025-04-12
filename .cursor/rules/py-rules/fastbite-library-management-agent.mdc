@@ -1,0 +1,42 @@
+---
+description: Apply this rule when developing or modifying components within the fastbite library, specifically when editing Python source files directly (.py) rather than notebooks. This rule governs file creation, modification, synchronization with notebooks via nbdev_update, and export management using __all__. It ensures consistency with the project's nbdev-based structure even when bypassing direct notebook editing.
+globs: 
+alwaysApply: false
+---
+
+# Fastbite Library Management (Direct .py Editing)
+
+## Critical Rules
+
+  - Component development and modifications MUST be performed directly on the Python files within the `fastbite/` directory (e.g., `fastbite/components/component_name.py`).
+  - After making changes to `.py` files, you MUST manually instruct the user to run `nbdev_update` in their terminal to sync changes back to the corresponding Jupyter Notebooks (`.ipynb` files in `nbs/`). Failure to do so risks changes being overwritten.
+  - When creating a *new* component:
+      - Create the new Python file (e.g., `fastbite/components/new_component.py`).
+      - Manually add the corresponding import line (`from .components.new_component import *`) to `fastbite/all.py`.
+      - Instruct the user to run `nbdev_update` to create the corresponding notebook file and update the library structure.
+  - When adding new publicly accessible functions or classes within a component module (`.py` file), ensure they are added to the `__all__` list at the top of that file.
+
+## Examples
+
+<example>
+  Plan:
+  1. Edit `fastbite/components/buttons.py` to add a new parameter.
+  2. Add the new parameter to the `Button` function signature and logic.
+  3. Add the new parameter function/class (if applicable) to `__all__` in `fastbite/components/buttons.py`.
+  4. Propose the edit to `fastbite/components/buttons.py`.
+  5. Remind the user to run `nbdev_update` after the changes are applied.
+</example>
+
+<example type="invalid">
+  Plan:
+  1. Edit `fastbite/components/buttons.py` to add a new parameter.
+  2. Propose the edit to `fastbite/components/buttons.py`.
+  3. Forget to remind the user to run `nbdev_update`.
+</example>
+<example type="invalid">
+  Plan:
+  1. Create a new component `fastbite/components/cards.py`.
+  2. Propose the creation of `fastbite/components/cards.py`.
+  3. Forget to propose adding `from .components.cards import *` to `fastbite/all.py`.
+  4. Forget to remind the user to run `nbdev_update`.
+</example> 

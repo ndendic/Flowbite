@@ -20,4 +20,6 @@ from .components.slider import *
 from .components.tables import *
 from .components.tabs import *
 from .components.upload import *
+from .components.accordion import *
+from .components.pagination import *
 

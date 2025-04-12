@@ -132,5 +132,167 @@ html.dark .dark\:text-white {
     --color-gray-900: #18181b;
     --color-gray-950: #09090b;
   }
+  
+  [data-theme='oceanic-deep'] {
+    /* Primary Color Palette (Teal/Blue) */
+    --color-primary-50: #eff9ff; /* Lighter */
+    --color-primary-100: #e0f2fe;
+    --color-primary-200: #bae6fd;
+    --color-primary-300: #7dd3fc;
+    --color-primary-400: #38bdf8;
+    --color-primary-500: #0ea5e9; /* Core Primary */
+    --color-primary-600: #0284c7;
+    --color-primary-700: #0369a1;
+    --color-primary-800: #075985;
+    --color-primary-900: #0c4a6e;
+    --color-primary-950: #082f49; /* Darker */
 
+    /* Gray Color Palette (Cool Gray - Slate) */
+    --color-gray-50: #f8fafc;
+    --color-gray-100: #f1f5f9;
+    --color-gray-200: #e2e8f0;
+    --color-gray-300: #cbd5e1;
+    --color-gray-400: #94a3b8;
+    --color-gray-500: #64748b; /* Core Gray */
+    --color-gray-600: #475569;
+    --color-gray-700: #334155;
+    --color-gray-800: #1e293b;
+    --color-gray-900: #0f172a;
+    --color-gray-950: #020617; /* Darkest Gray */
+
+    /* Text Colors */
+    --color-text-primary: var(--color-gray-900); /* Primary text on light surfaces */
+    --color-text-secondary: var(--color-gray-600); /* Secondary text */
+    --color-text-muted: var(--color-gray-400); /* Muted text */
+    --color-text-on-primary: #ffffff; /* Text on primary color backgrounds */
+    --color-text-on-dark: var(--color-gray-100); /* Primary text on dark surfaces */
+
+    /* Surface/Background Colors */
+    --color-surface-50: #ffffff; /* Lightest background */
+    --color-surface-100: var(--color-gray-50);
+    --color-surface-200: var(--color-gray-100);
+    --color-surface-300: var(--color-gray-200);
+    --color-surface-ground: var(--color-gray-50); /* Main page background */
+    --color-surface-card: #ffffff; /* Card backgrounds */
+    --color-surface-dark: var(--color-gray-900); /* Dark background */
+
+    /* Status Colors */
+    --color-success-500: #22c55e; /* Green */
+    --color-warning-500: #f59e0b; /* Amber */
+    --color-danger-500: #ef4444; /* Red */
+
+    /* Border Colors */
+    --color-border-DEFAULT: var(--color-gray-300);
+    --color-border-muted: var(--color-gray-200);
+
+    /* Ring Colors (Focus Rings) */
+    --color-ring-DEFAULT: var(--color-primary-300);
+
+    /* Font Family (Example - assumes 'Inter' is loaded) */
+    --font-family-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* Border Radius */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 0.75rem; /* 12px */
+    --border-radius-full: 9999px;
+
+     /* Shadows (Example - using Tailwind defaults) */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-DEFAULT: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  }
+
+  /* --- Theme: Sunset Glow --- */
+  /* A warm, vibrant theme inspired by sunset colors. */
+  [data-theme='sunset-glow'] {
+    /* Primary Color Palette (Orange/Pink) */
+    --color-primary-50: #fff1f2; /* Lighter */
+    --color-primary-100: #ffe4e6;
+    --color-primary-200: #fecdd3;
+    --color-primary-300: #fda4af;
+    --color-primary-400: #fb7185;
+    --color-primary-500: #f43f5e; /* Core Primary (Rose 500) */
+    --color-primary-600: #e11d48;
+    --color-primary-700: #be123c;
+    --color-primary-800: #9f1239;
+    --color-primary-900: #881337;
+    --color-primary-950: #4c0519; /* Darker */
+
+    /* Secondary Color Palette (Optional - Example: Amber) */
+    --color-secondary-50: #fffbeb;
+    --color-secondary-100: #fef3c7;
+    --color-secondary-200: #fde68a;
+    --color-secondary-300: #fcd34d;
+    --color-secondary-400: #fbbf24;
+    --color-secondary-500: #f59e0b; /* Core Secondary */
+    --color-secondary-600: #d97706;
+    --color-secondary-700: #b45309;
+    --color-secondary-800: #92400e;
+    --color-secondary-900: #78350f;
+    --color-secondary-950: #451a03;
+
+    /* Gray Color Palette (Warm Gray - Stone) */
+    --color-gray-50: #fafaf9;
+    --color-gray-100: #f5f5f4;
+    --color-gray-200: #e7e5e4;
+    --color-gray-300: #d6d3d1;
+    --color-gray-400: #a8a29e;
+    --color-gray-500: #78716c; /* Core Gray */
+    --color-gray-600: #57534e;
+    --color-gray-700: #44403c;
+    --color-gray-800: #292524;
+    --color-gray-900: #1c1917;
+    --color-gray-950: #0c0a09; /* Darkest Gray */
+
+    /* Text Colors */
+    --color-text-primary: var(--color-gray-900);
+    --color-text-secondary: var(--color-gray-600);
+    --color-text-muted: var(--color-gray-400);
+    --color-text-on-primary: #ffffff;
+    --color-text-on-dark: var(--color-gray-100);
+
+    /* Surface/Background Colors */
+    --color-surface-50: #ffffff;
+    --color-surface-100: var(--color-gray-50);
+    --color-surface-200: var(--color-gray-100);
+    --color-surface-300: var(--color-gray-200);
+    --color-surface-ground: var(--color-gray-50);
+    --color-surface-card: #ffffff;
+    --color-surface-dark: var(--color-gray-900);
+
+    /* Status Colors */
+    --color-success-500: #16a34a; /* Green */
+    --color-warning-500: var(--color-secondary-500); /* Use Secondary Amber */
+    --color-danger-500: #dc2626; /* Red */
+
+    /* Border Colors */
+    --color-border-DEFAULT: var(--color-gray-300);
+    --color-border-muted: var(--color-gray-200);
+
+    /* Ring Colors (Focus Rings) */
+    --color-ring-DEFAULT: var(--color-primary-300);
+
+    /* Font Family (Example - keeping default) */
+    --font-family-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* Border Radius (Slightly sharper) */
+    --border-radius-sm: 0.125rem; /* 2px */
+    --border-radius-md: 0.375rem; /* 6px */
+    --border-radius-lg: 0.5rem; /* 8px */
+    --border-radius-full: 9999px;
+
+    /* Shadows (Example - using Tailwind defaults, could be customized) */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-DEFAULT: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  }
 }

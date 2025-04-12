@@ -19,7 +19,9 @@ default_themes = {
     "retro": "Retro Blue",
     "emerald": "Emerald Green",
     "amber": "Amber Gold",
-    "rose": "Rose Pink"
+    "rose": "Rose Pink",
+    "oceanic-deep": "Oceanic Deep",
+    "sunset-glow": "Sunset Glow"
 }
 
 def ThemeSwitcher(themes=default_themes):
@@ -63,6 +65,10 @@ def ThemeSwitcher(themes=default_themes):
             colors = ["bg-amber-400", "bg-amber-500", "bg-amber-600"]
         elif theme_value == "rose":
             colors = ["bg-rose-400", "bg-rose-500", "bg-rose-600"]
+        elif theme_value == "oceanic-deep":
+            colors = ["bg-primary-400", "bg-primary-500", "bg-primary-600"]
+        elif theme_value == "sunset-glow":
+            colors = ["bg-primary-400", "bg-primary-500", "bg-primary-600"]
         else:  # default
             colors = ["bg-gray-300", "bg-gray-400", "bg-gray-500"]
         
