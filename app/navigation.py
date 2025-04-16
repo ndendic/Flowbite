@@ -8,9 +8,10 @@ default_themes_with_colors = {
     "none": {"label": "Default", "colors": ["bg-gray-300", "bg-gray-400", "bg-gray-500"]},
     "retro": {"label": "Retro Blue", "colors": ["bg-[#3c79f5]", "bg-[#265aea]", "bg-[#1e45d7]"]},
     "emerald": {"label": "Emerald Green", "colors": ["bg-emerald-400", "bg-emerald-500", "bg-emerald-600"]},
-    "amber": {"label": "Amber Gold", "colors": ["bg-amber-400", "bg-amber-500", "bg-amber-600"]},
-    "rose": {"label": "Rose Pink", "colors": ["bg-rose-400", "bg-rose-500", "bg-rose-600"]},
+    # "amber": {"label": "Amber Gold", "colors": ["bg-amber-400", "bg-amber-500", "bg-amber-600"]},
+    # "rose": {"label": "Rose Pink", "colors": ["bg-rose-400", "bg-rose-500", "bg-rose-600"]},
     # Placeholder colors - adjust these based on your actual theme definitions
+    "shadcn-like": {"label": "Shadcn Style", "colors": ["bg-zinc-300", "bg-zinc-500", "bg-zinc-700"]},
     "ocean-deep": {"label": "Ocean Deep", "colors": ["bg-blue-400", "bg-blue-500", "bg-blue-600"]},
     "sunset-glow": {"label": "Sunset Glow", "colors": ["bg-orange-400", "bg-orange-500", "bg-orange-600"]}
 }

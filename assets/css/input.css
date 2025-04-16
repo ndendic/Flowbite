@@ -295,4 +295,81 @@ html.dark .dark\:text-white {
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   }
+
+  /* --- Theme: Shadcn-Like --- */
+  /* A theme inspired by the clean, modern aesthetic of Shadcn UI */
+  [data-theme='shadcn-like'] {
+    /* Primary Color Palette (Neutral - Zinc) */
+    --color-primary-50: #fafafa; 
+    --color-primary-100: #f4f4f5;
+    --color-primary-200: #e4e4e7;
+    --color-primary-300: #d4d4d8;
+    --color-primary-400: #a1a1aa;
+    --color-primary-500: #a1a1aa; /* Core Primary (Zinc 500) */
+    --color-primary-600: #27272a;
+    --color-primary-700: #27272a;
+    --color-primary-800: #27272a;
+    --color-primary-900: #18181b;
+    --color-primary-950: #09090b; 
+
+    /* Gray Color Palette (Using Zinc as well for consistency) */
+    --color-gray-50: var(--color-primary-50);
+    --color-gray-100: var(--color-primary-100);
+    --color-gray-200: var(--color-primary-200);
+    --color-gray-300: var(--color-primary-300);
+    --color-gray-400: var(--color-primary-400);
+    --color-gray-500: var(--color-primary-500);
+    --color-gray-600: var(--color-primary-600);
+    --color-gray-700: var(--color-primary-700);
+    --color-gray-800: var(--color-primary-800);
+    --color-gray-900: var(--color-primary-900);
+    --color-gray-950: var(--color-primary-950);
+
+    /* Text Colors */
+    --color-text-primary: var(--color-gray-900);
+    --color-text-secondary: var(--color-gray-600);
+    --color-text-muted: var(--color-gray-400);
+    --color-text-on-primary: #ffffff; /* Text on darker primary backgrounds */
+    --color-text-on-dark: var(--color-gray-100); 
+
+    /* Surface/Background Colors */
+    --color-surface-50: #ffffff; 
+    --color-surface-100: var(--color-gray-50);
+    --color-surface-200: var(--color-gray-100);
+    --color-surface-300: var(--color-gray-200);
+    --color-surface-ground: #ffffff; /* Often white or very light gray */
+    --color-surface-card: #ffffff;
+    --color-surface-dark: var(--color-gray-900);
+
+    /* Status Colors (Keep consistent or adjust slightly) */
+    --color-success-500: #22c55e; 
+    --color-warning-500: #f59e0b; 
+    --color-danger-500: #ef4444; 
+
+    /* Border Colors */
+    --color-border-DEFAULT: var(--color-gray-300);
+    --color-border-muted: var(--color-gray-200);
+
+    /* Ring Colors (Focus Rings) */
+    --color-ring-DEFAULT: var(--color-primary-400); /* Using a slightly lighter ring */
+
+    /* Font Family (System UI Stack - excluding Inter) */
+    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+    /* Border Radius (Often slightly sharper than default Bootstrap/Flowbite) */
+    --border-radius-sm: 0.2rem; 
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem; 
+    --border-radius-full: 9999px;
+
+    /* Shadows (Subtle) */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+    --shadow-DEFAULT: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.2);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.04);
+  }
 }

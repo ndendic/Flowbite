@@ -10,7 +10,6 @@ import sys
 from typing import Optional
 from urllib.request import urlretrieve
 import os
-import pkg_resources
 from .config import load_config, Config, DEFAULT_CONFIG
 
 app = typer.Typer(help="FastBite CLI tool for project management")
