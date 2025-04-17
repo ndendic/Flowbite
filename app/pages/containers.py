@@ -10,7 +10,7 @@ containers = Div(
     P("The ", Code("Container"), " component provides a responsive wrapper that centers content with appropriate padding. By default, it adapts to different screen sizes."),
     component_showcase(
         Container(
-            Div("Default Container", cls="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg text-center font-bold"),
+            Div("Default Container", cls="bg-blue-300 dark:bg-blue-700 p-4 rounded-lg text-center font-bold"),
         ),
         code="""Container(
     Div("Default Container", cls="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg text-center font-bold")

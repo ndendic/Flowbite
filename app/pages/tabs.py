@@ -172,7 +172,7 @@ def _customized_tabs_section():
                     Li(P("Content for Tab 2", cls=TextT.text_3xl+"text-white"), id="tab-2-custom", cls="p-4 hidden"),
                     Li(P("Content for Tab 3", cls=TextT.text_3xl+"text-white"), id="tab-3-custom", cls="p-4 hidden"),
                     id="custom-styled-tabs",
-                    cls="mt-2 rounded-lg"+BgColor.grad_lime
+                    cls="mt-2 rounded-lg"+BtnColor.grad_lime
                 ),
             ),
             code="""from fastbite.all import *
@@ -294,7 +294,7 @@ def _integration_section():
                     ),
                     id="tabs-with-cards"
                 ),
-                cls=CardT.hover
+                cls=CardT.plain
             ),
             code="""from fastbite.all import *
 

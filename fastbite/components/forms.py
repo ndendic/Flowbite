@@ -52,7 +52,13 @@ def Input(label:str|FT = None, # FormLabel content (often text)
                         Icon(icon,cls=IconT.default),
                         cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
-                    fh.Input(id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
+                    fh.Input(id=id, 
+                             placeholder=placeholder, 
+                             required=required, 
+                             cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), 
+                             disabled=disabled, 
+                             **kwargs
+                        )
                 ),
                 P(help_text, cls=(help_cls,"mt-2")),
                 cls=(div_cls),                

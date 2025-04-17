@@ -74,7 +74,7 @@ def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `pa
     "Creates a navigation list item with a parent nav for nesting"
     id = fh.unqid() if not id else id
     return fh.Li(
-        fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls=cls)(
+        fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls=stringify(cls))(
             Icon(icon, 
                 aria_hidden='true',
                 height=18,
@@ -97,7 +97,6 @@ def NavDividerLi(*c, # Components
     "Creates a navigation list item with a divider"
     return fh.Li(*c, cls=(stringify(cls)),**kwargs)
 
-# TODO: Navbar classes to fix
 def NavHeaderLi(*c, # Components
                 label:str='',
                 href:str='#',
@@ -142,20 +141,21 @@ def NavCloseLi(*c, # Components
 
 
 # %% ../../nbs/18_navigation.ipynb 3
+
 def NavBarItem(*c,
-                cls:Enum|str|tuple=(), # Additional classes on the li            
+                cls:Enum|str|tuple='block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-primary-700 md:p-0 dark:text-white md:dark:text-primary-500', # Additional classes on the li            
                 href='#', # Href for the link
                 **kwargs # Additional args for the li
                )->FT: # Navigation list item
     "Creates a navigation list item"
     return fh.Li(
                 fh.A(*c, href=href, aria_current='page', 
-                    cls='block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-primary-700 md:p-0 dark:text-white md:dark:text-primary-500'
+                    cls=stringify(cls)
                 ),
-                cls=(stringify(cls)),
                 **kwargs
             )
 
+# TODO: Navbar classes to fix
 def NavBar(*c,
             brand=H4("Title"), # Brand/logo component for left side
             right_cls:Enum|str|tuple='items-center space-x-4', # Spacing for desktop links
@@ -192,18 +192,18 @@ def SubNavBarItem(*c,
             )
 
 def SubNavBar(*c,
-              cls:Enum|str|tuple=(), # Additional classes on the nav
+              cls:Enum|str|tuple='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm', # Additional classes on the nav
+              nav_cls:Enum|str|tuple='bg-gray-50 dark:bg-gray-700', # Additional classes on the nav
               **kwargs # Additional args for the nav
              )->FT: # Sub navigation bar
     "Creates a sub navigation bar"
-    return fh.Nav(cls='bg-gray-50 dark:bg-gray-700')(
+    return fh.Nav(cls=stringify(nav_cls))(
     fh.Div(cls='max-w-screen-xl px-4 py-3 mx-auto')(
         fh.Div(cls='flex items-center')(
-            fh.Ul(cls='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm')(
+            fh.Ul(cls=stringify(cls))(
                 *c,
             )
         ),
-        # cls=(stringify(cls)),
         **kwargs
     )
 )

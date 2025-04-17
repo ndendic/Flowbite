@@ -431,7 +431,7 @@ SliderContainer(
                         ),
                         cls="flex items-center mt-2"
                     ),
-                    cls="p-6 px-16 rounded-lg shadow-md mx-4"+BgColor.pink_orange
+                    cls="p-6 px-16 rounded-lg shadow-md mx-4"+BtnColor.pink_orange
                 )
                 for quote, name, role in cites
             ],            
@@ -458,7 +458,7 @@ Slider(
             ),
             cls="flex items-center mt-2"
         ),
-        cls="p-6 rounded-lg shadow-md mx-4"+BgColor.pink_orange
+        cls="p-6 rounded-lg shadow-md mx-4"+BtnColor.pink_orange
     )
     for quote, name, role in cites
 ],            

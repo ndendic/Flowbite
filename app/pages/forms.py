@@ -12,19 +12,15 @@ def _form_section():
         P("Standard form layout with default spacing (", Code("cls=FormT.default"), ")."),
         component_showcase(
             Form(
-                FormLabel("Email address", fr="email_default"),
-                Input(id='email_default', type='email', placeholder='name@flowbite.com'),
-                FormLabel("Password", fr="password_default"),
-                Input(id='password_default', type='password'),
+                Input(id='email_default', label="Email address", type='email', placeholder='name@flowbite.com'),
+                Input(id='password_default', label="Password", type='password'),
                 Button("Submit", type='submit')
             ),
             code='''from fastbite.all import Form, FormLabel, Input, FormT, Button
 
 Form(
-    FormLabel("Email address", fr="email_default"),
-    Input(id=\'email_default\', type=\'email\', placeholder=\'name@flowbite.com\'),
-    FormLabel("Password", fr="password_default"),
-    Input(id=\'password_default\', type=\'password\'),
+    Input(id=\'email_default\', label="Email address", type=\'email\', placeholder=\'name@flowbite.com\'),
+    Input(id=\'password_default\', label="Password", type=\'password\'),
     Button("Submit", type=\'submit\')
 )''',
             id="form-default"
@@ -35,8 +31,7 @@ Form(
         P("A form with reduced width using ", Code("cls=FormT.slim"), "."),
         component_showcase(
             Form(
-                FormLabel("Username", fr="username_slim"),
-                Input(id='username_slim', placeholder='your_username'),
+                Input(id='username_slim', label="Username", placeholder='your_username'),
                 Button("Login", type='submit'),
                 cls=FormT.slim
             ),
