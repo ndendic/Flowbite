@@ -439,14 +439,14 @@ Button("Light", cls=ButtonT.light),'''
     Br(),
     H2("Keyboard Inputs"),
     P("Display keyboard shortcuts or inputs with the ", Code("Kbd"), " component. This component helps users identify keyboard combinations."),
-    P("Choose between ", Code("KbdT.default"), " and ", Code("KbdT.advanced"), " styles to match your design needs."),
+    P("Choose between ", Code("TextT.kbd_default"), " and ", Code("TextT.kbd_advanced"), " styles to match your design needs."),
     component_showcase(
         Div(
             P("Default style: ", Kbd("Ctrl + S")),
-            P("Advanced style: ", Kbd("Ctrl + Alt + Del", cls=KbdT.advanced))
+            P("Advanced style: ", Kbd("Ctrl + Alt + Del", cls=TextT.kbd_advanced))
         ),
         code="""P("Default style: ", Kbd("Ctrl + S")),
-P("Advanced style: ", Kbd("Ctrl + Alt + Del", cls=KbdT.advanced))""",
+P("Advanced style: ", Kbd("Ctrl + Alt + Del", cls=TextT.kbd_advanced))""",
         id="keyboard-inputs"
     ),
     Br(),

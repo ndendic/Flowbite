@@ -626,9 +626,15 @@ playground = Section(cls=(SectionT.default))(
     # tables,
     # navbars,
     # navs,
-    sliders,
+    # sliders,
     # dropdowns,
-
+    Accordion(
+        AccordionItem(
+            "Accordion Item 1",
+            "Accordion Item 2",
+            "Accordion Item 3"
+        )
+    ),
     # tables,
 
     # render_md(markdown_example),

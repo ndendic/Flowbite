@@ -55,7 +55,6 @@ def ThemeToggle() -> FT:
 
 def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = None, # Default to None
                   icon: FT = Icon("palette", cls="w-4 h-4"),
-                  container_cls: Enum|str|tuple="theme-switcher-container",
                   toggle_cls: Enum|str|tuple="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-2.5 py-2.5",
                   menu_cls: Enum|str|tuple="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600",
                   option_cls: Enum|str|tuple="w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-left",
@@ -69,7 +68,6 @@ def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = N
                 values are dictionaries containing 'label' (display name) and
                 'colors' (a list of 3 CSS background color classes for preview).
         icon: The icon component for the toggle button.
-        container_cls: CSS classes for the main container.
         toggle_cls: CSS classes for the dropdown toggle button.
         menu_cls: CSS classes for the dropdown menu.
         option_cls: CSS classes for each theme option button.
@@ -190,6 +188,5 @@ def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = N
             cls="relative"
         ),
         theme_script,
-        cls=stringify(container_cls),
         **kwargs
     ) 

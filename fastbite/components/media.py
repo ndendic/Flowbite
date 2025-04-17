@@ -49,7 +49,7 @@ def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
                    **kwargs # Additional args for the span
                   ):          # Span with Avatar
     "Creates an Avatar using https://dicebear.com/"
-    url = 'https://api.dicebear.com/8.x/lorelei/svg?seed='
+    url = 'https://api.dicebear.com/8.x/personas/svg?seed='
     return Span(cls=(stringify(cls),f"relative flex h-{h} w-{w} shrink-0 overflow-hidden bg-gray-200 dark:bg-gray-700"))(
             fh.Img(cls=(f"aspect-square h-{h} w-{w}", stringify(img_cls)), alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))
 
@@ -62,7 +62,7 @@ def PicSumImg(h:int=200,           # Height in pixels
               **kwargs             # Additional args for Img tag
               )->FT:              # Img tag with picsum image
     "Creates a placeholder image using https://picsum.photos/"
-    url = f"https://picsum.photos"
+    url = "https://picsum.photos"
     if id is not None: url = f"{url}/id/{id}"
     url = f"{url}/{w}/{h}"
     if grayscale: url = f"{url}?grayscale"

@@ -16,101 +16,7 @@ from .base_styles import *
 from typing import Union, Iterable
 
 # %% ../../nbs/05_containers.ipynb 2
-class FlexT(VEnum):
-    'Flexbox modifiers using Tailwind CSS'
-    def _generate_next_value_(name, start, count, last_values): return name
-    
-    # Display
-    block = 'flex'
-    inline = 'inline-flex'
-    
-    # Horizontal Alignment
-    left = 'justify-start' 
-    center = 'justify-center'
-    right = 'justify-end'
-    between = 'justify-between'
-    around = 'justify-around'
-    
-    # Vertical Alignment
-    stretch = 'items-stretch'
-    top = 'items-start'
-    middle = 'items-center' 
-    bottom = 'items-end'
-    
-    # Direction
-    row = 'flex-row'
-    row_reverse = 'flex-row-reverse'
-    column = 'flex-col'
-    column_reverse = 'flex-col-reverse'
-    
-    # Wrap
-    nowrap = 'flex-nowrap'
-    wrap = 'flex-wrap'
-    wrap_reverse = 'flex-wrap-reverse'
-
-class BackgroundT(VEnum):
-    primary = "bg-primary-100 dark:bg-primary-800"
-    secondary = "bg-gray-100 dark:bg-gray-800"
-    success = "bg-green-100 dark:bg-green-800"
-    warning = "bg-yellow-100 dark:bg-yellow-800"
-    error = "bg-red-100 dark:bg-red-800"
-    info = "bg-blue-100 dark:bg-blue-800"
-
-    hover_primary = "bg-primary-100 dark:bg-primary-800 hover:bg-primary-200 dark:hover:bg-primary-700"
-    hover_secondary = "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
-    hover_success = "bg-green-100 dark:bg-green-800 hover:bg-green-200 dark:hover:bg-green-700"
-    hover_warning = "bg-yellow-100 dark:bg-yellow-800 hover:bg-yellow-200 dark:hover:bg-yellow-700"
-    hover_error = "bg-red-100 dark:bg-red-800 hover:bg-red-200 dark:hover:bg-red-700"
-    hover_info = "bg-blue-100 dark:bg-blue-800 hover:bg-blue-200 dark:hover:bg-blue-700"
-    
-    grad_primary = "bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br"
-    grad_secondary = "bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br"
-    grad_success = "bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br"
-    grad_warning = "bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br"
-    grad_error = "bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br"
-    grad_info = "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br"
-    grad_blue = "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br"
-    grad_green = "bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br"
-    grad_cyan = "bg-gradient-to-r from-cyan-500 via-cyan-600 to-cyan-700 hover:bg-gradient-to-br"
-    grad_teal = "bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br"
-    grad_lime = "bg-gradient-to-r from-lime-500 via-lime-600 to-lime-700 hover:bg-gradient-to-br"
-    grad_red = "bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br"
-    grad_yellow = "bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br"
-    grad_pink = "bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br"
-    grad_purple = "bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br"
-    #Duotone
-    purple_blue = "bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"
-    cyan_blue = "bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl"
-    green_blue = "bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl"
-    purple_pink = "bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l"
-    pink_orange = "bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl"
-    teal_lime = "bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200"
-    red_yellow = "bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl"
-
 # %% ../../nbs/05_containers.ipynb 3
-class ContainerSize(VEnum):
-    """Container size variants for Flowbite components"""
-    # Base container with responsive padding
-    default = "container mx-auto"    
-    # Fixed width containers based on Flowbite size variables
-    # These add mx-auto to center and have responsive padding
-    _3xs = "max-w-3xs" # --container-3xs:16rem
-    _2xs = "max-w-2xs" # --container-2xs:18rem
-    xs = "max-w-xs"  # --container-xs:20rem
-    sm = "max-w-sm"  # --container-sm:24rem
-    md = "max-w-md"  # --container-md:28rem
-    lg = "max-w-lg"  # --container-lg:32rem
-    xl = "max-w-xl"  # --container-xl:36rem
-    _2xl = "max-w-2xl" # --container-2xl:42rem
-    _3xl = "max-w-3xl" # --container-3xl:48rem
-    _4xl = "max-w-4xl" # --container-4xl:56rem
-    _5xl = "max-w-5xl" # --container-5xl:64rem
-    _6xl = "max-w-6xl" # --container-6xl:72rem
-    _7xl = "max-w-7xl" # --container-7xl:80rem
-    # Special container types
-    fluid = "w-full px-4"  # Full width with padding
-    responsive = "w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl px-4"  # Responsive sizing
-
 def Container(*c: Union[str, FT], 
             size: Enum|str|tuple=ContainerSize.default, 
             cls: Enum|str|tuple=(),
@@ -201,16 +107,6 @@ def DivHStacked(*c, # Components
    
 
 # %% ../../nbs/05_containers.ipynb 5
-class SectionT(VEnum):
-    default = "py-12 px-4"
-    muted = BackgroundT.secondary+"py-12 px-4"
-    primary = BackgroundT.primary+"py-12 px-4"
-    secondary = BackgroundT.secondary+"py-12 px-4"
-    xs = ContainerSize.xs+"py-12 px-4"
-    sm = ContainerSize.sm+"py-12 px-4"
-    lg = ContainerSize.lg+"py-12 px-4"
-    xl = ContainerSize.xl+"py-12 px-4"
-
 def Section(*c, # contents of Section tag (often other tags)
             cls:Enum|str|tuple=(), # Classes in addition to Section styling
             **kwargs # Additional args for Section tag
@@ -218,42 +114,33 @@ def Section(*c, # contents of Section tag (often other tags)
     return fh.Section(*c, cls=(stringify(cls)), **kwargs)
 
 # %% ../../nbs/05_containers.ipynb 6
-class CardT(VEnum):
-    default = 'block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-    primary = 'block max-w-sm p-6 bg-primary-50 border border-gray-200 rounded-lg shadow-sm hover:bg-primary-100 dark:bg-primary-800 dark:border-gray-700 dark:hover:bg-primary-700'
-    secondary = 'block max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow-sm hover:bg-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-    destructive = 'block max-w-sm p-6 bg-red-50 border border-gray-200 rounded-lg shadow-sm hover:bg-red-300 dark:bg-red-800 dark:border-gray-700 dark:hover:bg-red-700'
-    horizontal = 'flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
-    hover = 'hover:shadow-lg hover:-translate-y-1 transition-all duration-200'
-    plain = 'block max-w-sm p-6 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700'
-
 def CardTitle(*c, # Components (often a string)
-              cls:Enum|str|tuple=(), # Additional classes on the div
+              cls:Enum|str|tuple=CardT.title, # Additional classes on the div
               **kwargs # Additional args for the div
              ): 
     "Creates a card title"
-    return fh.Div(*c, cls=('mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white',stringify(cls)), **kwargs)
+    return fh.Div(*c, cls=(stringify(cls)), **kwargs)
 
 def CardHeader(*c, # Components that goes in the header (often a `ModalTitle` and description)
                cls:Enum|str|tuple=(), # Additional classes on the div
                **kwargs # Additional args for the div
               )->FT: # Container for the header of a card
     "Creates a card header"
-    return fh.Div(*c, cls=(stringify(cls)), **kwargs)
+    return fh.Div(*c, cls=stringify(cls), **kwargs)
 
 def CardBody(*c, # Components that go in the body (Main content of the card such as a form, and image, a signin form, etc.)
-              cls:Enum|str|tuple=(), # Additional classes on the div
+              cls:Enum|str|tuple=CardT.body, # Additional classes on the div
               **kwargs # Additional args for the div
              )->FT: # Container for the body of a card
     "Creates a card body"
-    return fh.Div(*c, cls=('font-normal text-gray-700 dark:text-gray-400',stringify(cls)), **kwargs)
+    return fh.Div(*c, cls=stringify(cls), **kwargs)
 
 def CardFooter(*c, # Components that go in the footer (often a `ModalCloseButton`)
-               cls:Enum|str|tuple=(), # Additional classes on the div
+               cls:Enum|str|tuple=CardT.footer, # Additional classes on the div
                **kwargs # Additional args for the div
               )->FT: # Container for the footer of a card
     "Creates a card footer"
-    return fh.Div(*c, cls=("mt-4",stringify(cls)), **kwargs)
+    return fh.Div(*c, cls=stringify(cls), **kwargs)
 
 def CardContainer(*c, # Components (typically `CardHeader`, `CardBody`, `CardFooter`)
                    cls:Enum|str|tuple=(), # Additional classes on the div
@@ -281,7 +168,7 @@ def Card(*c, # Components that go in the body (Main content of the card such as 
 
 
 # %% ../../nbs/05_containers.ipynb 7
-def Titled(title:str="FastHTML app", # Title of the page
+def Titled(title:str="FastBite app", # Title of the page
            *c, # Contents of the page (often other tags)
            cls:Enum|str|tuple=ContainerSize.xl, # Classes in addition to Container styling
            **kwargs # Additional args for Container (`Div` tag)

@@ -28,10 +28,10 @@ def ArticleTitle(*c, # contents of ArticleTitle tag (often other tags)
     return H1(*c, cls=(TextT.article,stringify(cls)), **kwargs)
 
 def ArticleMeta(*c, # contents of ArticleMeta tag (often other tags)
-                cls:Enum|str|tuple=(), # Classes in addition to ArticleMeta styling
+                cls:Enum|str|tuple=TextT.article, # Classes in addition to ArticleMeta styling
                 **kwargs # Additional args for ArticleMeta tag
                 )->FT: # P(..., cls='uk-article-meta')
     "A metadata component for use within an Article showing things like date, author etc"
-    return P(*c, cls=('text-base text-gray-500 dark:text-gray-400',stringify(cls)), **kwargs)
+    return P(*c, cls=stringify(cls), **kwargs)
 
 

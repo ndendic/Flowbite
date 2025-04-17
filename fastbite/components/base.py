@@ -2,7 +2,7 @@
 
 # %% auto 0
 __all__ = ['HA', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub',
-           'Sup', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'KbdT', 'Kbd', 'Samp', 'Var', 'Figure',
+           'Sup', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'Kbd', 'Samp', 'Var', 'Figure',
            'Summary', 'Details', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'Meter']
 
 # %% ../../nbs/02_base.ipynb 1
@@ -14,9 +14,14 @@ from fastcore.all import *
 from enum import Enum
 
 # %% ../../nbs/02_base.ipynb 3
-def HA(id:str)->FT:
+class HAT(VEnum):
+    """Anchor tag variants"""
+    primary = "ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100"
+    secondary = "ml-2 text-secondary-700 opacity-0 transition-opacity dark:text-secondary-500 group-hover:opacity-100"
+
+def HA(id:str=None, txt:str='#',cls:Enum|str|tuple=HAT.primary)->FT:
     "A link to an anchor"
-    return (fh.Span(id=id, cls='absolute -top-[140px]'),fh.A('#', href=f'#{id}', aria_label='Link to this section', cls='ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100'))
+    return (fh.Span(id=id, cls='absolute -top-[140px]'),fh.A(txt, href=f'#{id}', aria_label='Link to this section', cls=stringify(cls)))
 
 def H1(*c:FT|str, # Contents of H1 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H1 styling
@@ -28,9 +33,9 @@ def H1(*c:FT|str, # Contents of H1 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H1(*c,link_el, cls=(TextHeading.h1, stringify(cls), 'relative group'), **kwargs)
+        return fh.H1(*c,link_el, cls=(TextPresets.h1, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H1(*c, cls=(TextHeading.h1, stringify(cls)), **kwargs)
+        return fh.H1(*c, cls=(TextPresets.h1, stringify(cls)), **kwargs)
 
 def H2(*c:FT|str, # Contents of H2 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H2 styling
@@ -42,9 +47,9 @@ def H2(*c:FT|str, # Contents of H2 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H2(*c,link_el, cls=(TextHeading.h2, stringify(cls), 'relative group'), **kwargs)
+        return fh.H2(*c,link_el, cls=(TextPresets.h2, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H2(*c, cls=(TextHeading.h2, stringify(cls)), **kwargs)
+        return fh.H2(*c, cls=(TextPresets.h2, stringify(cls)), **kwargs)
 
 def H3(*c:FT|str, # Contents of H3 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H3 styling   
@@ -56,9 +61,9 @@ def H3(*c:FT|str, # Contents of H3 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H3(*c,link_el, cls=(TextHeading.h3, stringify(cls), 'relative group'), **kwargs)
+        return fh.H3(*c,link_el, cls=(TextPresets.h3, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H3(*c, cls=(TextHeading.h3, stringify(cls)), **kwargs)
+        return fh.H3(*c, cls=(TextPresets.h3, stringify(cls)), **kwargs)
 
 def H4(*c:FT|str, # Contents of H4 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H4 styling
@@ -70,9 +75,9 @@ def H4(*c:FT|str, # Contents of H4 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H4(*c,link_el, cls=(TextHeading.h4, stringify(cls), 'relative group'), **kwargs)
+        return fh.H4(*c,link_el, cls=(TextPresets.h4, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H4(*c, cls=(TextHeading.h4, stringify(cls)), **kwargs)
+        return fh.H4(*c, cls=(TextPresets.h4, stringify(cls)), **kwargs)
 
 def H5(*c:FT|str, # Contents of H5 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H5 styling
@@ -84,9 +89,9 @@ def H5(*c:FT|str, # Contents of H5 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H5(*c,link_el, cls=(TextHeading.h5, stringify(cls), 'relative group'), **kwargs)
+        return fh.H5(*c,link_el, cls=(TextPresets.h5, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H5(*c, cls=(TextHeading.h5, stringify(cls)), **kwargs)
+        return fh.H5(*c, cls=(TextPresets.h5, stringify(cls)), **kwargs)
 
 def H6(*c:FT|str, # Contents of H6 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H6 styling
@@ -98,9 +103,9 @@ def H6(*c:FT|str, # Contents of H6 tag (often text)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
-        return fh.H6(*c,link_el, cls=(TextHeading.h6, stringify(cls), 'relative group'), **kwargs)
+        return fh.H6(*c,link_el, cls=(TextPresets.h6, stringify(cls), 'relative group'), **kwargs)
     else:        
-        return fh.H6(*c, cls=(TextHeading.h6, stringify(cls)), **kwargs)
+        return fh.H6(*c, cls=(TextPresets.h6, stringify(cls)), **kwargs)
 
 
 def Subtitle(*c:FT|str, # Contents of P tag (often text)
@@ -162,25 +167,25 @@ def Del(*c:FT|str, # Contents of Del tag (deleted text)
     return fh.Del(*c, cls=('line-through', TextT.gray, stringify(cls)), **kwargs)
 
 def Ins(*c:FT|str, # Contents of Ins tag (inserted text)
-        cls:Enum|str|tuple=(), # Additional classes
+        cls:Enum|str|tuple=(TextT.success, TextT.underline, TextT.sm), # Additional classes
         **kwargs # Additional args for Ins tag
         )->FT:
     "Styled inserted text"
-    return fh.Ins(*c, cls=(TextT.underline+' text-green-600', stringify(cls)), **kwargs)
+    return fh.Ins(*c, cls=stringify(cls), **kwargs)
 
 def Sub(*c:FT|str, # Contents of Sub tag (subscript)
-       cls:Enum|str|tuple=(), # Additional classes
+       cls:Enum|str|tuple=(TextT.sm,' -bottom-1 relative'), # Additional classes
        **kwargs # Additional args for Sub tag
        )->FT:
     "Styled subscript text"
-    return fh.Sub(*c, cls=(TextT.sm+' -bottom-1 relative', stringify(cls)), **kwargs)
+    return fh.Sub(*c, cls=stringify(cls), **kwargs)
 
 def Sup(*c:FT|str, # Contents of Sup tag (superscript) 
-        cls:Enum|str|tuple=(), # Additional classes
+        cls:Enum|str|tuple=(TextT.sm,' -top-1 relative'), # Additional classes
         **kwargs # Additional args for Sup tag
         )->FT:
     "Styled superscript text"
-    return fh.Sup(*c, cls=(TextT.sm+' -top-1 relative', stringify(cls)), **kwargs)
+    return fh.Sup(*c, cls=stringify(cls), **kwargs)
 
 
 def Caption(*c:FT|str, cls:Enum|str|tuple=(), **kwargs)->FT:
@@ -191,52 +196,47 @@ def Caption(*c:FT|str, cls:Enum|str|tuple=(), **kwargs)->FT:
 
 
 def Cite(*c:FT|str, # Contents of Cite tag
-         cls:Enum|str|tuple=(), # Additional classes
+         cls:Enum|str|tuple=(TextT.italic, TextT.gray), # Additional classes
          **kwargs # Additional args for Cite tag
          )->FT:
     "Styled citation text"
-    return fh.Cite(*c, cls=(TextT.italic, TextT.gray, stringify(cls)), **kwargs)
+    return fh.Cite(*c, cls=stringify(cls), **kwargs)
 
 def Time(*c:FT|str, # Contents of Time tag
-         cls:Enum|str|tuple=(), # Additional classes
+         cls:Enum|str|tuple=TextT.gray, # Additional classes
          datetime:str=None, # datetime attribute
          **kwargs # Additional args for Time tag
          )->FT:
     "Styled time element"
     if datetime: kwargs['datetime'] = datetime
-    return fh.Time(*c, cls=(TextT.gray, stringify(cls)), **kwargs)
+    return fh.Time(*c, cls=stringify(cls), **kwargs)
 
 def Address(*c:FT|str, # Contents of Address tag
-           cls:Enum|str|tuple=(), # Additional classes
+           cls:Enum|str|tuple=TextT.italic, # Additional classes
            **kwargs # Additional args for Address tag
            )->FT:
     "Styled address element"
-    return fh.Address(*c, cls=(TextT.italic, stringify(cls)), **kwargs)
+    return fh.Address(*c, cls=stringify(cls), **kwargs)
 
 
 def Abbr(*c:FT|str, # Contents of Abbr tag
-         cls:Enum|str|tuple=(), # Additional classes
+         cls:Enum|str|tuple=TextT.abbr, # Additional classes
          title:str=None, # Title attribute for abbreviation
          **kwargs # Additional args for Abbr tag
          )->FT:
     "Styled abbreviation with dotted underline"
     if title: kwargs['title'] = title
-    return fh.Abbr(*c, cls=('border-b border-dotted border-gray-300 dark:border-gray-500 hover:cursor-help', stringify(cls)), **kwargs)
+    return fh.Abbr(*c, cls=stringify(cls), **kwargs)
 
 def Dfn(*c:FT|str, # Contents of Dfn tag (definition)
-        cls:Enum|str|tuple=(), # Additional classes
+        cls:Enum|str|tuple=(TextT.medium, TextT.italic, TextT.gray), # Additional classes
         **kwargs # Additional args for Dfn tag
         )->FT:
     "Styled definition term with italic and medium weight"
-    return fh.Dfn(*c, cls=(TextT.medium + TextT.italic + TextT.gray, stringify(cls)), **kwargs)
-
-class KbdT(VEnum):
-    """Keyboard input variants"""
-    default = "font-mono px-1.5 py-0.5 text-sm bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-sm"
-    advanced = "px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+    return fh.Dfn(*c, cls=stringify(cls), **kwargs)
 
 def Kbd(*c:FT|str, # Contents of Kbd tag (keyboard input)
-        cls:Enum|str|tuple=KbdT.default, # Additional classes
+        cls:Enum|str|tuple=TextT.kbd_default, # Additional classes
         **kwargs # Additional args for Kbd tag
         )->FT:
     "Styled keyboard input with subtle background"
@@ -244,33 +244,35 @@ def Kbd(*c:FT|str, # Contents of Kbd tag (keyboard input)
 
 
 def Samp(*c:FT|str, # Contents of Samp tag (sample output)
-         cls:Enum|str|tuple=(), # Additional classes
+         cls:Enum|str|tuple=(TextT.gray, TextT.samp), # Additional classes
          **kwargs # Additional args for Samp tag
          )->FT:
     "Styled sample output with subtle background"
-    return fh.Samp(*c, cls=('font-mono bg-gray-200 dark:bg-gray-800 px-1 rounded', TextT.gray, stringify(cls)), **kwargs)
+    return fh.Samp(*c, cls=stringify(cls), **kwargs)
 
 def Var(*c:FT|str, # Contents of Var tag (variable)
-        cls:Enum|str|tuple=(), # Additional classes
+        cls:Enum|str|tuple=(TextT.gray, TextT.italic, 'font-mono'), # Additional classes
         **kwargs # Additional args for Var tag
         )->FT:
     "Styled variable with italic monospace"
-    return fh.Var(*c, cls=('font-mono',TextT.italic + TextT.gray, stringify(cls)), **kwargs)
+    return fh.Var(*c, cls=stringify(cls), **kwargs)
 
 
 def Figure(*c:FT|str, # Contents of Figure tag
           cls:Enum|str|tuple=(), # Additional classes 
+          base_cls:Enum|str|tuple='p-4 my-4 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm bg-gray-200 dark:bg-gray-800', # Additional classes
           **kwargs # Additional args for Figure tag
           )->FT:
     "Styled figure container with card-like appearance"
-    return fh.Figure(*c, cls=('p-4 my-4 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm bg-gray-200 dark:bg-gray-800', stringify(cls)), **kwargs)
+    return fh.Figure(*c, cls=(stringify(base_cls), stringify(cls)), **kwargs)
 
 def Summary(*c:FT|str, # Contents of Summary tag
            cls:Enum|str|tuple=(), # Additional classes
+           base_cls:Enum|str|tuple=(TextT.medium, 'p-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer'), # Additional classes
            **kwargs # Additional args for Summary tag
            )->FT:
     "Styled summary element"
-    return fh.Summary(*c, cls=(TextT.medium + ' p-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer', stringify(cls)), **kwargs)
+    return fh.Summary(*c, cls=(stringify(base_cls), stringify(cls)), **kwargs)
 
 
 def Details(*c:FT|str, # Contents of Details tag
@@ -288,38 +290,38 @@ def Details(*c:FT|str, # Contents of Details tag
 def Data(*c:FT|str, # Contents of Data tag
          value:str=None, # Value attribute
          cls:Enum|str|tuple=(), # Additional classes
+         base_cls:Enum|str|tuple='font-mono text-sm bg-gray-200 dark:bg-gray-800 px-1 rounded', # Additional classes
          **kwargs # Additional args for Data tag
          )->FT:
     "Styled data element"
     if value: kwargs['value'] = value
-    return fh.Data(*c, cls=('font-mono text-sm bg-gray-200 dark:bg-gray-800 px-1 rounded', stringify(cls)), **kwargs)
+    return fh.Data(*c, cls=(stringify(base_cls), stringify(cls)), **kwargs)
 
 
 def S(*c:FT|str, # Contents of S tag (strikethrough)
-      cls:Enum|str|tuple=(), # Additional classes
+      cls:Enum|str|tuple=('line-through', TextT.gray), # Additional classes
       **kwargs # Additional args for S tag
       )->FT:
     "Styled strikethrough text (different semantic meaning from Del)"
-    return fh.S(*c, cls=('line-through', TextT.gray, stringify(cls)), **kwargs)
+    return fh.S(*c, cls=stringify(cls), **kwargs)
 
 def U(*c:FT|str, # Contents of U tag (unarticulated annotation)
-      cls:Enum|str|tuple=(), # Additional classes
+      cls:Enum|str|tuple=(TextT.underline), # Additional classes
       **kwargs # Additional args for U tag
       )->FT:
     "Styled underline (for proper names in Chinese, proper spelling etc)"
-    return fh.U(*c, cls=(TextT.underline, stringify(cls)), **kwargs)
+    return fh.U(*c, cls=stringify(cls), **kwargs)
 
 def Output(*c:FT|str, # Contents of Output tag
           form:str=None, # ID of form this output belongs to
           for_:str=None, # IDs of elements this output is for
-          cls:Enum|str|tuple=(), # Additional classes
+          cls:Enum|str|tuple='font-mono bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded', # Additional classes
           **kwargs # Additional args for Output tag
           )->FT:
     "Styled output element for form results"
     if form: kwargs['form'] = form
     if for_: kwargs['for'] = for_  # Note: 'for' is reserved in Python
-    return fh.Output(*c, cls=('font-mono bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded', 
-                             stringify(cls)), **kwargs)
+    return fh.Output(*c, cls=stringify(cls), **kwargs)
 
 # %% ../../nbs/02_base.ipynb 4
 def CodeSpan(*c, # Contents of CodeSpan tag (inline text code snippets)
@@ -339,14 +341,14 @@ def Code(*c, # Contents of CodeSpan tag (inline text code snippets)
 def CodeBlock(*c: str, # Contents of Code tag (often text)
               cls: Enum | str | tuple = (), # Classes for the outer container
               code_cls: Enum | str | tuple = "'overflow-scroll max-h-full'", # Classes for the code tag
+              pre_cls: Enum | str | tuple = (TextT.gray, 'bg-gray-100 dark:bg-gray-800 p-0.4 rounded text-sm font-mono'), # Classes for the pre tag
               **kwargs # Additional args for Code tag
               ) -> FT: # Div(Pre(Code(..., cls='uk-codeblock), cls='multiple tailwind styles'), cls='uk-block')
     "CodeBlock with Styling"
     return fh.Div(
-        fh.Pre(Code(*c, cls=(stringify(code_cls)), **kwargs),
-            cls=(f'bg-gray-100 dark:bg-gray-800 {TextT.gray} p-0.4 rounded text-sm font-mono')),
-#             cls=('bg-gray-100 dark:bg-gray-800 dark:text-gray-200 p-0.4 rounded text-sm font-mono'))
-        cls=(Round.lg, stringify(cls)))
+            fh.Pre(Code(*c, cls=(stringify(code_cls)), **kwargs),cls=stringify(pre_cls)),
+            cls=(Round.lg, stringify(cls))
+        )
 
 class ParagrafT(VEnum):
     default = TextT.gray+"my-3"
@@ -369,11 +371,11 @@ def Meter(*c:FT|str, # Contents of Meter tag
           value:float=None, # Current value
           min:float=None, # Minimum value
           max:float=None, # Maximum value
-          cls:Enum|str|tuple=(), # Additional classes
+          cls:Enum|str|tuple='w-full h-2 rounded', # Additional classes
           **kwargs # Additional args for Meter tag
           )->FT:
     "Styled meter element"
     if value is not None: kwargs['value'] = value
     if min is not None: kwargs['min'] = min
     if max is not None: kwargs['max'] = max
-    return fh.Meter(*c, cls=('w-full h-2 rounded', stringify(cls)), **kwargs)
+    return fh.Meter(*c, cls=stringify(cls), **kwargs)

@@ -2,7 +2,7 @@ from fasthtml.common import *
 from fastbite.all import *
 from utils import component_showcase
 containers = Div(
-    H1("Container Examples", cls=TextHeading.h1),
+    H1("Container Examples", cls=TextPresets.h1),
     P("Containers are layout elements that organize content within defined boundaries. They provide structure to your application and control how components are positioned and sized."),
     P("Fastbite offers a variety of container components with different sizing options, responsive behaviors, and layout patterns to help you structure your application efficiently."),
     
@@ -377,7 +377,7 @@ DivCentered(
 
     # TODO Grid Layout Components
     # Section(        # Product Card Grid Example
-    #     H3("Product Card Grid", cls=TextHeading.h3 + " mt-8 mb-2"),
+    #     H3("Product Card Grid", cls=TextPresets.h3 + " mt-8 mb-2"),
     #     P("A practical example using Grid to display product cards.", cls=TextT.muted + " mb-4"),
         
     #     Container(
@@ -387,7 +387,7 @@ DivCentered(
     #                 Div(cls="relative h-48 rounded-t-lg overflow-hidden",
     #                     style="background-image: url('https://flowbite.com/docs/images/blog/image-1.jpg'); background-size: cover; background-position: center;"),
     #                 Div(
-    #                     H5("Product Title 1", cls=TextHeading.h5),
+    #                     H5("Product Title 1", cls=TextPresets.h5),
     #                     P("This is a product description. It showcases how to use Grid for product listings.", cls=TextT.muted + " mb-4"),
     #                     DivFullySpaced(
     #                         P("$29.99", cls=TextT.bold + TextT.lg),
@@ -403,7 +403,7 @@ DivCentered(
     #                 Div(cls="relative h-48 rounded-t-lg overflow-hidden",
     #                     style="background-image: url('https://flowbite.com/docs/images/blog/image-2.jpg'); background-size: cover; background-position: center;"),
     #                 Div(
-    #                     H5("Product Title 2", cls=TextHeading.h5),
+    #                     H5("Product Title 2", cls=TextPresets.h5),
     #                     P("Another product with a different image and price point.", cls=TextT.muted + " mb-4"),
     #                     DivFullySpaced(
     #                         P("$49.99", cls=TextT.bold + TextT.lg),
@@ -419,7 +419,7 @@ DivCentered(
     #                 Div(cls="relative h-48 rounded-t-lg overflow-hidden",
     #                     style="background-image: url('https://flowbite.com/docs/images/blog/image-3.jpg'); background-size: cover; background-position: center;"),
     #                 Div(
-    #                     H5("Product Title 3", cls=TextHeading.h5),
+    #                     H5("Product Title 3", cls=TextPresets.h5),
     #                     P("A third product showcasing the responsive grid layout.", cls=TextT.muted + " mb-4"),
     #                     DivFullySpaced(
     #                         P("$39.99", cls=TextT.bold + TextT.lg),
@@ -435,7 +435,7 @@ DivCentered(
     #                 Div(cls="relative h-48 rounded-t-lg overflow-hidden",
     #                     style="background-image: url('https://flowbite.com/docs/images/blog/image-4.jpg'); background-size: cover; background-position: center;"),
     #                 Div(
-    #                     H5("Product Title 4", cls=TextHeading.h5),
+    #                     H5("Product Title 4", cls=TextPresets.h5),
     #                     P("A fourth product to fill out the grid on larger screens.", cls=TextT.muted + " mb-4"),
     #                     DivFullySpaced(
     #                         P("$59.99", cls=TextT.bold + TextT.lg),

@@ -6,7 +6,7 @@ __all__ = ['AccordionType', 'Accordion', 'AccordionItem'] # Added AccordionItem
 # %% ../../nbs/XX_accordion.ipynb 1
 from enum import Enum
 import fasthtml.common as fh
-from fasthtml.common import FT
+from fasthtml.common import *
 from fastcore.all import *
 from ..core import *
 from .base import *
@@ -23,7 +23,7 @@ class AccordionType(VEnum):
 
 # %% ../../nbs/XX_accordion.ipynb 3
 def Accordion(*c: Union[str, FT],
-              id: str,
+              id: str = None,
               type: AccordionType|str = AccordionType.collapse,
               active_classes: str = 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
               inactive_classes: str = 'text-gray-500 dark:text-gray-400',
@@ -58,7 +58,7 @@ def Accordion(*c: Union[str, FT],
     # The data-active/inactive-classes attributes are used by Flowbite's JS to style the trigger (Button)
     # within the AccordionItem, not the main container itself.
     return fh.Div(*c,
-                  id=id,
+                  id=fh.unqid() if id is None else id,
                   data_accordion=stringify(type),
                   data_active_classes=final_active_classes,
                   data_inactive_classes=final_inactive_classes,
@@ -68,7 +68,7 @@ def Accordion(*c: Union[str, FT],
 # %% ../../nbs/XX_accordion.ipynb 4
 def AccordionItem(heading: Union[str, FT],
                   *body: Union[str, FT], # Changed to *body for flexibility
-                  item_id: str,
+                  item_id: str = None,
                   open: bool = False,
                   icon: bool = True,
                   flush: bool = False, # Pass flush explicitly
@@ -95,6 +95,7 @@ def AccordionItem(heading: Union[str, FT],
         trigger_kwargs: Additional HTML attributes for the trigger Button.
         body_kwargs: Additional HTML attributes for the inner body Div.
     """
+    item_id = fh.unqid() if item_id is None else item_id
     heading_id = f"accordion-{item_id}-heading"
     body_id = f"accordion-{item_id}-body"
     aria_expanded = 'true' if open else 'false'
@@ -142,7 +143,7 @@ def AccordionItem(heading: Union[str, FT],
         base_body_cls = flush_body_cls
     else:
         base_body_cls = non_flush_body_cls
-    final_body_cls = stringify(base_body_cls, body_cls)
+    final_body_cls = stringify((base_body_cls, body_cls))
 
 
     # --- Structure ---
