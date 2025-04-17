@@ -22,7 +22,7 @@ def Badge(*c, # contents of Badge (often text)
            **kwargs # Additional args for Label tag
            )->FT:
     "Flowbite badges, which look like labels"
-    return fh.Span(Icon(icon,cls='w-2.5 h-2.5 me-1.5') if icon else None,*c, cls=(stringify(cls),'inline-flex items-center' if icon else ''), **kwargs)
+    return fh.Span(Icon(icon,cls=IconT.badge) if icon else None,*c, cls=(stringify(cls),'inline-flex items-center' if icon else ''), **kwargs)
 
 def IconBadge(icon,
            h="2.5",

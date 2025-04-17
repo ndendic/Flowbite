@@ -15,11 +15,6 @@ from .containers import *
 from enum import Enum
 
 # %% ../../nbs/12_range.ipynb 2
-class RangeT(VEnum):
-    default = 'w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700'
-    sm = 'w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700'
-    lg = 'w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700'
-
 def Range(*c, # contents of Range tag (often nothing)
           value='', # Value of the range
           label='', # Label of the range

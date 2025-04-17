@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['HA', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'Subtitle', 'Q', 'Em', 'Strong', 'I', 'Small', 'Mark', 'Del', 'Ins', 'Sub',
            'Sup', 'Caption', 'Cite', 'Time', 'Address', 'Abbr', 'Dfn', 'Kbd', 'Samp', 'Var', 'Figure',
-           'Summary', 'Details', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'ParagrafT', 'P', 'Meter']
+           'Summary', 'Details', 'Data', 'S', 'U', 'Output', 'CodeSpan', 'Code', 'CodeBlock', 'P', 'Meter']
 
 # %% ../../nbs/02_base.ipynb 1
 import fasthtml.common as fh
@@ -14,11 +14,6 @@ from fastcore.all import *
 from enum import Enum
 
 # %% ../../nbs/02_base.ipynb 3
-class HAT(VEnum):
-    """Anchor tag variants"""
-    primary = "ml-2 text-primary-700 opacity-0 transition-opacity dark:text-primary-500 group-hover:opacity-100"
-    secondary = "ml-2 text-secondary-700 opacity-0 transition-opacity dark:text-secondary-500 group-hover:opacity-100"
-
 def HA(id:str=None, txt:str='#',cls:Enum|str|tuple=HAT.primary)->FT:
     "A link to an anchor"
     return (fh.Span(id=id, cls='absolute -top-[140px]'),fh.A(txt, href=f'#{id}', aria_label='Link to this section', cls=stringify(cls)))
@@ -350,18 +345,9 @@ def CodeBlock(*c: str, # Contents of Code tag (often text)
             cls=(Round.lg, stringify(cls))
         )
 
-class ParagrafT(VEnum):
-    default = TextT.gray+"my-3"
-    lead = TextT.gray+"my-3 text-lg md:text-xl"
-    capital_first = "my-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start"
-    link = "my-3 font-medium text-primary-600 underline dark:text-primary-500 dark:hover:text-primary-600 hover:text-primary-700 hover:no-underline"
-    primary = TextT.primary+"my-3"
-    secondary = TextT.secondary+"my-3"
-    xs = TextT.xs+"my-3"
-    sm = TextT.sm+"my-3"
 
 def P(*c, # Contents of P tag (often text)
-      cls:Enum|str|tuple=ParagrafT.default, # Classes in addition to P styling
+      cls:Enum|str|tuple=PT.default, # Classes in addition to P styling
       **kwargs # Additional args for P tag
       )->FT: # P(..., cls='uk-p')
     "A P with Styling"

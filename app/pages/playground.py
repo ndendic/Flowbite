@@ -614,7 +614,7 @@ This is a subheading.
 playground = Section(cls=(SectionT.default))(
     # input_field_component,
     P("This is your playground for developing Fastbite components.\n Go to and modify ",
-    Code("app/pages/playground.py")," to see the components in action.",cls=ParagrafT.lead+TextT.center),
+    Code("app/pages/playground.py")," to see the components in action.",cls=PT.lead+TextT.center),
     # datastar_example,
     # form_component,
     # badges_component,

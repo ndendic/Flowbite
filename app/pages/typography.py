@@ -36,63 +36,63 @@ H6("Linked Heading 6", link=True),""",
     Br(),
 
     H2("Paragraph Styles", link=True),
-    P("The ", Code("ParagrafT"), " enum provides various paragraph styling options for different content needs. These styles help create visual hierarchy and improve readability."),
+    P("The ", Code("PT"), " enum provides various paragraph styling options for different content needs. These styles help create visual hierarchy and improve readability."),
     component_showcase(
-        P("This is a default paragraph style with appropriate text color and spacing.", cls=ParagrafT.default),
-        code="""P("This is a default paragraph style with appropriate text color and spacing.", cls=ParagrafT.default)""",
+        P("This is a default paragraph style with appropriate text color and spacing.", cls=PT.default),
+        code="""P("This is a default paragraph style with appropriate text color and spacing.", cls=PT.default)""",
         id="paragraph-default"
     ),
     Br(),
 
     H3("Lead Paragraph"),
-    P("Use the ", Code("ParagrafT.lead"), " style for introductory paragraphs that should stand out with larger text."),
+    P("Use the ", Code("PT.lead"), " style for introductory paragraphs that should stand out with larger text."),
     component_showcase(
-        P("This is a lead paragraph with larger font size, perfect for introductions or important information.", cls=ParagrafT.lead),
-        code="""P("This is a lead paragraph with larger font size, perfect for introductions or important information.", cls=ParagrafT.lead)""",
+        P("This is a lead paragraph with larger font size, perfect for introductions or important information.", cls=PT.lead),
+        code="""P("This is a lead paragraph with larger font size, perfect for introductions or important information.", cls=PT.lead)""",
         id="paragraph-lead"
     ),
     Br(),
 
     H3("Capitalized First Letter"),
-    P("The ", Code("ParagrafT.capital_first"), " style creates a decorative drop cap effect with the first letter enlarged and the first line capitalized."),
+    P("The ", Code("PT.capital_first"), " style creates a decorative drop cap effect with the first letter enlarged and the first line capitalized."),
     component_showcase(
-        P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim enim et magna pharetra, at commodo elit tincidunt. Donec vel massa at dolor condimentum suscipit vel id nulla. Fusce commodo nibh sit amet urna pharetra, eget euismod orci luctus.", cls=ParagrafT.capital_first),
-        code="""P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim enim et magna pharetra, at commodo elit tincidunt. Donec vel massa at dolor condimentum suscipit vel id nulla. Fusce commodo nibh sit amet urna pharetra, eget euismod orci luctus.", cls=ParagrafT.capital_first)""",
+        P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim enim et magna pharetra, at commodo elit tincidunt. Donec vel massa at dolor condimentum suscipit vel id nulla. Fusce commodo nibh sit amet urna pharetra, eget euismod orci luctus.", cls=PT.capital_first),
+        code="""P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim enim et magna pharetra, at commodo elit tincidunt. Donec vel massa at dolor condimentum suscipit vel id nulla. Fusce commodo nibh sit amet urna pharetra, eget euismod orci luctus.", cls=PT.capital_first)""",
         id="paragraph-capital-first"
     ),
     Br(),
 
     H3("Link Style"),
-    P("The ", Code("ParagrafT.link"), " style formats text to appear as a clickable link with proper color and hover effects."),
+    P("The ", Code("PT.link"), " style formats text to appear as a clickable link with proper color and hover effects."),
     component_showcase(
-        P("This paragraph is styled to look like a clickable link with appropriate colors and hover effects.", cls=ParagrafT.link),
-        code="""P("This paragraph is styled to look like a clickable link with appropriate colors and hover effects.", cls=ParagrafT.link)""",
+        P("This paragraph is styled to look like a clickable link with appropriate colors and hover effects.", cls=PT.link),
+        code="""P("This paragraph is styled to look like a clickable link with appropriate colors and hover effects.", cls=PT.link)""",
         id="paragraph-link"
     ),
     Br(),
 
     H3("Colored Paragraphs"),
-    P("Use semantic color styles like ", Code("ParagrafT.primary"), " and ", Code("ParagrafT.secondary"), " to communicate importance or relationships."),
+    P("Use semantic color styles like ", Code("PT.primary"), " and ", Code("PT.secondary"), " to communicate importance or relationships."),
     component_showcase(
         Div(
-            P("This paragraph uses the primary color scheme for emphasis.", cls=ParagrafT.primary),
-            P("This paragraph uses the secondary color scheme for supporting information.", cls=ParagrafT.secondary)
+            P("This paragraph uses the primary color scheme for emphasis.", cls=PT.primary),
+            P("This paragraph uses the secondary color scheme for supporting information.", cls=PT.secondary)
         ),
-        code="""P("This paragraph uses the primary color scheme for emphasis.", cls=ParagrafT.primary),
-P("This paragraph uses the secondary color scheme for supporting information.", cls=ParagrafT.secondary)""",
+        code="""P("This paragraph uses the primary color scheme for emphasis.", cls=PT.primary),
+P("This paragraph uses the secondary color scheme for supporting information.", cls=PT.secondary)""",
         id="paragraph-colors"
     ),
     Br(),
 
     H3("Size Variants"),
-    P("Control paragraph text size with size-specific classes like ", Code("ParagrafT.xs"), " and ", Code("ParagrafT.sm"), " for different content needs."),
+    P("Control paragraph text size with size-specific classes like ", Code("PT.xs"), " and ", Code("PT.sm"), " for different content needs."),
     component_showcase(
         Div(
-            P("This extra small paragraph is useful for captions, footnotes, or less important information.", cls=ParagrafT.xs),
-            P("This small paragraph works well for secondary content while maintaining readability.", cls=ParagrafT.sm)
+            P("This extra small paragraph is useful for captions, footnotes, or less important information.", cls=PT.xs),
+            P("This small paragraph works well for secondary content while maintaining readability.", cls=PT.sm)
         ),
-        code="""P("This extra small paragraph is useful for captions, footnotes, or less important information.", cls=ParagrafT.xs),
-P("This small paragraph works well for secondary content while maintaining readability.", cls=ParagrafT.sm)""",
+        code="""P("This extra small paragraph is useful for captions, footnotes, or less important information.", cls=PT.xs),
+P("This small paragraph works well for secondary content while maintaining readability.", cls=PT.sm)""",
         id="paragraph-sizes"
     ),
     Br(),

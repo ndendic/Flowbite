@@ -50,6 +50,7 @@ def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
                   ):          # Span with Avatar
     "Creates an Avatar using https://dicebear.com/"
     url = 'https://api.dicebear.com/8.x/personas/svg?seed='
+    # TODO: move classes to controlable parameters
     return Span(cls=(stringify(cls),f"relative flex h-{h} w-{w} shrink-0 overflow-hidden bg-gray-200 dark:bg-gray-700"))(
             fh.Img(cls=(f"aspect-square h-{h} w-{w}", stringify(img_cls)), alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))
 

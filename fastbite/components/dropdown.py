@@ -35,12 +35,12 @@ def DropdownContainer(*c, # Components to put in the dropdown container
                       id:str='', # ID for the dropdown
                       devider:bool=False, # Whether to show a divider
                       cls:Enum|str|tuple='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
+                      devider_cls:Enum|str|tuple='divide-y divide-gray-100 dark:divide-gray-600', # Additional classes on the divider
                       **kwargs # Additional args for the dropdown
                       )->FT: # Dropdown component
     "Creates a dropdown"
     id = fh.unqid() if not id else id
-    devider_cls = 'divide-y divide-gray-100 dark:divide-gray-600' if devider else ''
-    return fh.Div(*c, id=id, cls=(devider_cls, stringify(cls)), **kwargs)
+    return fh.Div(*c, id=id, cls=(devider_cls if devider else '', stringify(cls)), **kwargs)
 
 def DropdownHeader(*c, # Components to put in the dropdown header
                    cls:Enum|str|tuple='text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header

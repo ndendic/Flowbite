@@ -17,10 +17,6 @@ from enum import Enum
 
 
 # %% ../../nbs/07_forms.ipynb 2
-class FormT(VEnum):
-    default = "max-w-md mx-auto"
-    slim = "max-w-sm mx-auto"
-
 
 def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
           cls:Enum|str|tuple=FormT.default, # Classes in addition to Form styling (default is 'space-y-3' to prevent scrunched up form elements)
@@ -29,22 +25,12 @@ def Form(*c, # contents of Form tag (often Buttons, FormLabels, and LabelInputs)
     "A Form with default spacing between form elements"
     return fh.Form(*c, cls=stringify(cls), **kwargs)
 
-class LabelInputT(VEnum):
-    default = 'block mb-2 text-sm font-medium text-gray-900 dark:text-white'
-    success = 'block mb-2 text-sm font-medium text-green-700 dark:text-green-500'
-    error = 'block mb-2 text-sm font-medium text-red-700 dark:text-red-500'
-
 def FormLabel(*c, # contents of FormLabel tag (often text)
                cls:Enum|str|tuple=LabelInputT.default, # Classes in addition to FormLabel styling
                **kwargs # Additional args for FormLabel tag
                )->FT: # Label(..., cls='uk-form-label')
     "A Label with default styling"
     return fh.Label(*c, cls=stringify(cls), **kwargs)
-
-class InputT(VEnum):
-    default = 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
-    success = 'bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500'
-    error = 'bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500'
 
 def Input(label:str|FT = None, # FormLabel content (often text)
           lbl_cls:Enum|str|tuple=LabelInputT.default, # Additional classes for `FormLabel`
@@ -63,7 +49,7 @@ def Input(label:str|FT = None, # FormLabel content (often text)
                 FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
-                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        Icon(icon,cls=IconT.default),
                         cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
                     fh.Input(id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
@@ -89,7 +75,7 @@ def TextArea(label:str|FT = None, # FormLabel content (often text)
                 FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
-                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        Icon(icon,cls=IconT.default),
                         cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
                     fh.Textarea(id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
@@ -123,7 +109,7 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
                 FormLabel(label, fr=id, cls=lbl_cls) if label else None,
                 Div(cls="relative")(
                     Div(
-                        Icon(icon,cls='w-4 h-4 text-gray-500 dark:text-gray-400'),
+                        Icon(icon,cls=IconT.default),
                         cls='absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
                     fh.Select(*options,id=id, placeholder=placeholder, required=required, cls=(cls,'ps-10' if icon else '','cursor-not-allowed' if disabled else ''), disabled=disabled, **kwargs)
@@ -131,11 +117,6 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
                 P(help_text, cls=(help_cls,"mt-2")),
                 cls=(div_cls),                
             )
-
-class RadioT(VEnum):
-    default = "w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-    success = "w-4 h-4 text-green-600 bg-green-100 border-green-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-green-600"
-    error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
 
 def Radio(value:str='', # Value for the radio button
           label:str|FT = None, # FormLabel content (often text)
@@ -159,11 +140,6 @@ def Radio(value:str='', # Value for the radio button
                 ),                         
             )
 
-class CheckboxT(VEnum):
-    default="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-    success = "w-4 h-4 text-green-600 bg-green-100 border-green-300 rounded-sm focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-green-600"
-    error = "w-4 h-4 text-red-600 bg-red-100 border-red-300 rounded-sm focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-red-600"
-
 def Checkbox(label:str|FT = None, # FormLabel content (often text)
           lbl_cls:Enum|str|tuple=TextT.medium, # Additional classes for `FormLabel`
           cls:Enum|str|tuple=CheckboxT.default, # Additional classes for `Input`
@@ -184,11 +160,6 @@ def Checkbox(label:str|FT = None, # FormLabel content (often text)
                     P(help_text, id=f'{id}-text', cls=help_cls)
                 ),                         
             )
-
-class SwitchT(VEnum):
-    default = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"
-    success = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
-    error = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600 dark:peer-checked:bg-red-600"
 
 def Switch(label:str|FT = None, # FormLabel content (often text)
           lbl_cls:Enum|str|tuple=TextT.medium, # Additional classes for `FormLabel`

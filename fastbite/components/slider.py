@@ -33,12 +33,6 @@ def SliderContainer(*c, # Components
         **kwargs
     )
 
-class SliderItemT(VEnum):
-    default = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-    linear = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-linear'
-    ease_out_in = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in'
-    cubic_bezier = 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-out-in-cubic'
-
 def SliderItem(*c, # Components to be displayed in the slide
                 cls:Enum|str|tuple=SliderItemT.default, # Additional classes for the items' inner div
                 outer_cls:Enum|str|tuple="hidden duration-700 ease-in-out", # Added outer_cls

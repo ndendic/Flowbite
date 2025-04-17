@@ -14,13 +14,6 @@ from .base_styles import *
 from .containers import *
 
 # %% ../../nbs/10_tabs.ipynb 2
-# TODO: Add horizontal tabs
-class TabItemT(VEnum):
-    "Enum for the tab item"
-    default_active = "text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-500 border-primary-600 dark:border-primary-500"
-    default_inactive = "dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
-#     pill_active = "py-3 text-white bg-primary-600 rounded-lg active"
-#     pill_inactive = "py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white"
 
 def TabItem(text:str, # Components
             controls:str, # Controls of the tab
@@ -33,12 +26,6 @@ def TabItem(text:str, # Components
     return Li(role='presentation', cls=stringify(cls))( # Use stringify for li cls
             fh.Button(text, id=f'{text}-tab', data_tabs_target=f'#{ctrl}', type='button', role='tab', aria_controls=ctrl, aria_selected='false', cls=stringify(button_cls), **kwargs) # Use stringify for button_cls
         )
-
-class TabContainerT(VEnum):
-    "Enum for the tab container"
-    base = "text-sm font-medium text-center text-gray-500 dark:text-gray-400 border-b-2 border-gray-200 dark:border-gray-700"
-    rounded = "border rounded-t-lg bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-50 dark:border-gray-600"
-    plain = "text-sm font-medium text-center text-gray-500 dark:text-gray-400"
 
 def TabContainer(*li, # Components
                   cls:Enum|str|tuple=TabContainerT.base, # Additional classes on the `Ul`,

@@ -5,7 +5,6 @@ __all__ = ['DividerT', 'Divider', 'DividerSplit', 'DividerLine']
 
 # %% ../../nbs/08_divider.ipynb 1
 from enum import Enum
-import fasthtml.common as fh
 from fasthtml.common import FT
 from fastcore.all import *
 from ..core import *
@@ -13,12 +12,6 @@ from .base import *
 from .base_styles import *
 
 # %% ../../nbs/08_divider.ipynb 2
-class DividerT(VEnum):
-    default = "h-px my-8 bg-gray-200 border-0 dark:bg-gray-600"
-    vertical = "h-full w-px mx-4 bg-gray-200 border-0 dark:bg-gray-600"
-    trimmed = "w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-600"
-    trimmed_vertical = "h-48 w-1 my-auto mx-4 bg-gray-100 border-0 rounded-sm md:mx-10 dark:bg-gray-600"
-
 def Divider(*c, # contents of Divider tag (often nothing)
             vertical=False, # Whether to create a vertical divider
             cls:Enum|str|tuple=(), # Classes in addition to Divider styling
@@ -37,7 +30,8 @@ def DividerSplit(*c,
     "Creates a simple horizontal line divider with configurable thickness and vertical spacing"
     cls, line_cls, text_cls = map(stringify,(cls, line_cls, text_cls))
     return Div(
-            Divider(cls='w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700'),
+        # TODO: move classes to controlable parameters
+            Divider(cls=DividerT.vertical_strong),
             Div(
                 *c,
                 cls='absolute px-4 -translate-x-1/2 left-1/2 bg-inherit'

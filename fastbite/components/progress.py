@@ -13,29 +13,14 @@ from .base_styles import *
 from enum import Enum
 
 # %% ../../nbs/15_progress.ipynb 2
-class ProgressT(VEnum):
-    progress_primary = 'rounded-full bg-primary-600'
-    progress_dark = 'rounded-full bg-gray-700 dark:bg-gray-300'
-    progress_blue = 'rounded-full bg-blue-600'
-    progress_red = 'rounded-full bg-red-600'
-    progress_green = 'rounded-full bg-green-600'
-    progress_yellow = 'rounded-full bg-yellow-600'
-    progress_purple = 'rounded-full bg-purple-600'
-    progress_pink = 'rounded-full bg-pink-600'
 
-    bg_default = 'w-full rounded-full bg-gray-200 dark:bg-gray-700'
-    bg_primary = 'w-full rounded-full bg-primary-600'
-    bg_dark = 'w-full rounded-full bg-gray-300 dark:bg-gray-700'
-    bg_blue = 'w-full rounded-full bg-blue-600'
-    bg_red = 'w-full rounded-full bg-red-600'
-    bg_green = 'w-full rounded-full bg-green-600'
-    bg_yellow = 'w-full rounded-full bg-yellow-600'
     
 def Progress(*c, # Components to put in the progress bar (often nothing)
              label:str|FT='', # Label of the progress bar (often a string or a component)
              label_cls:Enum|str|tuple=TextT.sm, # Additional classes on the label
              progress_cls:Enum|str|tuple=ProgressT.progress_primary, # Additional classes on the progress bar
              bg_cls:Enum|str|tuple=ProgressT.bg_default, # Additional classes on the background of the progress bar
+             base_cls:Enum|str|tuple="text-xs font-medium text-center p-0.5 leading-none", # Additional classes on the base of the progress bar
              value="", # Value of the progress bar in percentage from 0 to 100
              size:Literal['sm', 'md', 'lg', 'xl']='md',
              cls:Enum|str|tuple=(), # Additional classes on the progress bar background div
@@ -54,8 +39,8 @@ def Progress(*c, # Components to put in the progress bar (often nothing)
             Span(label, cls=stringify(label_cls)) if isinstance(label, str) else label
         ),
         Div(
-            Div(*c,style=f'width: {value}%', cls=(stringify(progress_cls), size_cls,"text-xs font-medium text-center p-0.5 leading-none")),
-            cls=(stringify(bg_cls),stringify(cls), size_cls),
+            Div(*c,style=f'width: {value}%', cls=(stringify(progress_cls), stringify(size_cls),stringify(base_cls))),
+            cls=(stringify(bg_cls),stringify(cls), stringify(size_cls)),
             **kwargs
         )
     )

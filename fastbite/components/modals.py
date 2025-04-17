@@ -15,56 +15,6 @@ from .media import *
 from enum import Enum
 
 # %% ../../nbs/14_modals.ipynb 2
-class ModalT(VEnum):
-    """Modal styling variants for Flowbite components"""
-    # Container styles
-    container = 'hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'
-    
-    # Dialog styles
-    dialog = 'relative p-4 w-full max-h-full'
-    dialog_inner = 'relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
-    
-    # Header styles
-    header = 'flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200'
-    
-    # Body styles
-    body = 'p-4 md:p-5'
-    
-    # Footer styles
-    footer = 'flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
-    
-    # Title styles
-    title = 'text-lg font-semibold text-gray-900 dark:text-white'
-    
-    # Close button styles
-    close_btn = 'text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
-    
-    # Size variants for dialog
-    sm = 'sm:max-w-sm'  # Small modal
-    md = 'max-w-md'     # Default/medium modal
-    lg = 'max-w-lg'     # Large modal
-    xl = 'max-w-xl'     # Extra large modal
-    _2xl = 'max-w-2xl'  # 2X large modal
-    _3xl = 'max-w-3xl'  # 3X large modal
-    _4xl = 'max-w-4xl'  # 4X large modal
-    _5xl = 'max-w-5xl'  # 5X large modal
-    _6xl = 'max-w-6xl'  # 6X large modal
-    _7xl = 'max-w-7xl'  # 7X large modal
-    
-    # Special size variants
-    fluid = 'w-full'    # Full width modal
-    responsive = 'w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl'  # Responsive modal
-    
-    # Placement variants
-    center = 'items-center justify-center'  # Center modal (default)
-    top_left = 'items-start justify-start'  # Top left
-    top_center = 'items-start justify-center'  # Top center
-    top_right = 'items-start justify-end'  # Top right
-    center_left = 'items-center justify-start'  # Center left
-    center_right = 'items-center justify-end'  # Center right
-    bottom_left = 'items-end justify-start'  # Bottom left
-    bottom_center = 'items-end justify-center'  # Bottom center
-    bottom_right = 'items-end justify-end'  # Bottom right
 
 def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
                   id:str='', # ID for the modal container

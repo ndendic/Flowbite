@@ -15,31 +15,6 @@ from .media import *
 from enum import Enum
 
 # %% ../../nbs/20_tables.ipynb 2
-class TableT(VEnum):
-    """Table styling variants for Flowbite components"""
-    # Table level styles
-    table_default = "w-full text-sm text-left rtl:text-right"
-    
-    # Container level styles
-    container_default = "relative overflow-x-auto"
-    container_responsive = "overflow-x-auto"
-    container_shadow = "shadow-md"
-    
-    # Row level styles
-    row_default = "bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
-    row_striped = "odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200"
-    row_hover = "hover:bg-gray-50 dark:hover:bg-gray-600"
-    row_bordered = "border-b dark:border-gray-700 border-gray-200"
-    row_header = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-    row_footer = "font-semibold text-gray-900 dark:text-white"
-
-    # Cell level styles
-    cell_default = "px-6 py-4 text-gray-500 dark:text-gray-400"
-    cell_expand = "w-full"
-    cell_shrink = "w-1"
-    cell_first = "font-medium text-gray-900 whitespace-nowrap dark:text-white"
-    cell_header = "px-6 py-3"
-    cell_footer = "px-6 py-4"
 
 def Thead(*c, 
           cls:Enum|str|tuple=TableT.row_header, 
