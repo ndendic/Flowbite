@@ -43,6 +43,13 @@ def home(req):
         Li(A("Themes", href="/themes")),
     )
 
+@rt("/about")
+def about(req):
+    return Div(
+        H1("About"),
+        P("This is the about page."),
+    )
+
 component_registry.register_routes(rt, page_template)
 app = add_routes(app)
 
