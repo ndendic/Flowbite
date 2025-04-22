@@ -73,7 +73,7 @@ def SliderControls(
         fh.Span(
             cls=stringify(span_cls) # Use stringify
         )(
-            Icon('chevron-left', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
+            Icon('lucide:chevron-left', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
             fh.Span('Previous', cls='sr-only')
         )
     )
@@ -86,7 +86,7 @@ def SliderControls(
         fh.Span(
             cls=stringify(span_cls) # Use stringify
         )(
-            Icon('chevron-right', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
+            Icon('lucide:chevron-right', height=24, width=24, cls=stringify(icon_cls)), # Use stringify
             fh.Span('Next', cls='sr-only')
         )
     )

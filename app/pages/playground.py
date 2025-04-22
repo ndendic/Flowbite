@@ -165,15 +165,15 @@ badges_component = fh.Div(
             ),
             H4("Icon",cls="mb-4"),
             fh.Div(
-                Badge("Default", icon="home",cls=BadgeT.default),
-                Badge("Dark", icon="home",cls=BadgeT.dark),
-                Badge("Red", icon="home",cls=BadgeT.red),
-                Badge("Yellow", icon="home",cls=BadgeT.yellow),
-                Badge("Green", icon="home",cls=BadgeT.green),
-                Badge("Blue", icon="home",cls=BadgeT.blue),
-                Badge("Indigo", icon="home",cls=BadgeT.indigo),
-                Badge("Purple", icon="home",cls=BadgeT.purple),
-                Badge("Pink", icon="home",cls=BadgeT.pink),
+                Badge("Default",icon="lucide:home",cls=BadgeT.default),
+                Badge("Dark",icon="lucide:home",cls=BadgeT.dark),
+                Badge("Red",icon="lucide:home",cls=BadgeT.red),
+                Badge("Yellow",icon="lucide:home",cls=BadgeT.yellow),
+                Badge("Green",icon="lucide:home",cls=BadgeT.green),
+                Badge("Blue",icon="lucide:home",cls=BadgeT.blue),
+                Badge("Indigo",icon="lucide:home",cls=BadgeT.indigo),
+                Badge("Purple",icon="lucide:home",cls=BadgeT.purple),
+                Badge("Pink",icon="lucide:home",cls=BadgeT.pink),
                 cls="space-x-2 mb-4"
             ),
             H4("Icon only",cls="mb-4"),
@@ -326,10 +326,10 @@ progress = fh.Div(
 )
 placeholders = fh.Div(
         Placeholder(cls=PlaceholderT.dashed),
-        Placeholder(Icon("plus"),cls=PlaceholderT.gray),
-        Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.sm),
-        Placeholder(Placeholder(Icon("plus"),cls=(PlaceholderT.gray,"h-48")),cls=(PlaceholderT.dashed,ContainerSize.lg)),
-        Placeholder(Placeholder(Icon("plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.xl),
+        Placeholder(Icon("lucide:plus"),cls=PlaceholderT.gray),
+        Placeholder(Placeholder(Icon("lucide:plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.sm),
+        Placeholder(Placeholder(Icon("lucide:plus"),cls=(PlaceholderT.gray,"h-48")),cls=(PlaceholderT.dashed,ContainerSize.lg)),
+        Placeholder(Placeholder(Icon("lucide:plus"),cls=PlaceholderT.gray),cls=PlaceholderT.dashed+ContainerSize.xl),
         cls="space-y-2"
     )
 navs = NavContainer(
@@ -343,7 +343,7 @@ navs = NavContainer(
                 parent=False,
             ),
             label="Home",
-            icon="home"
+           icon="lucide:home"
         ),
         NavDividerLi(),
         NavLi(label='About', href='#'),
@@ -356,7 +356,7 @@ navbars = fh.Div(
             NavBarItem("Services", href="#"),
             NavBarItem("Pricing", href="#"),
             NavBarItem("Contact", href="#"),
-            brand=DivLAligned(Icon("home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
+            brand=DivLAligned(Icon("lucide:home"),H4("Flowpy UI", cls=(TextT.tracking_wide,TextT.primary))),
         ),
         SubNavBar(
             SubNavBarItem("Home", href="#"),
@@ -628,13 +628,16 @@ playground = Section(cls=(SectionT.default))(
     # navs,
     # sliders,
     # dropdowns,
-    Accordion(
-        AccordionItem(
-            "Accordion Item 1",
-            "Accordion Item 2",
-            "Accordion Item 3"
-        )
-    ),
+    IconifyIcon(icon="fluent-emoji:angry-face", width=100, height=100, cls="text-red-500"),
+    Icon(icon="fluent-emoji:angry-face", width=100, height=100, cls="text-red-500"),
+    Button("Click me"),
+    # Accordion(
+    #     AccordionItem(
+    #         "Accordion Item 1",
+    #         "Accordion Item 2",
+    #         "Accordion Item 3"
+    #     )
+    # ),
     # tables,
 
     # render_md(markdown_example),

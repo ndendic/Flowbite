@@ -81,7 +81,7 @@ def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `pa
                 width=18,
                 cls=icon_cls) if icon else None,
             fh.Span(label, cls=label_cls),
-            Icon('chevron-down',height=20,width=20),
+            Icon('lucide:chevron-down',height=20,width=20),
             # Svg(xmlns='http://www.w3.org/2000/svg', fill='none', viewbox='0 0 10 6', cls='w-3 h-3')(
             #     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4')
             # )
@@ -170,7 +170,7 @@ def NavBar(*c,
         brand,
         fh.Button(data_collapse_toggle=menu_id, type='button', aria_controls=menu_id, aria_expanded='false', cls='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600')(
             fh.Span('Open main menu', cls='sr-only'),
-            Icon('menu')
+            Icon('lucide:menu')
         ),
         fh.Div(id=menu_id, cls='hidden w-full md:block md:w-auto')(
             fh.Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(

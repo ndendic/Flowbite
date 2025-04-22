@@ -41,7 +41,7 @@ def Input(label:str|FT = None, # FormLabel content (often text)
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
           help_text:str|FT = None, # Help text for the input
-          icon='', # Icon for the input
+         icon='lucide:', # Icon for the input
           disabled=False, # Whether the input is disabled
           **kwargs # Additional args for `Input`
           )->FT:    
@@ -73,7 +73,7 @@ def TextArea(label:str|FT = None, # FormLabel content (often text)
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
           help_text:str|FT = None, # Help text for the input
-          icon='', # Icon for the input
+         icon='lucide:', # Icon for the input
           disabled=False, # Whether the input is disabled
           **kwargs # Additional args for `Input`
           )->FT:    
@@ -107,7 +107,7 @@ def Select(*options, # Options for the select dropdown (can use `Options` helper
           placeholder='', # Placeholder text for the input
           required=False, # Whether the input is required
           help_text:str|FT = None, # Help text for the input
-          icon='', # Icon for the input
+         icon='lucide:', # Icon for the input
           disabled=False, # Whether the input is disabled
           **kwargs # Additional args for `Input`
           )->FT:    

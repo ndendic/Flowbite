@@ -20,7 +20,7 @@ def Navbar():
                 Div(
                     Button(
                         Span('Open sidebar', cls='sr-only'),
-                        Icon('menu', cls='w-6 h-6'),
+                        Icon('lucide:menu'),
                         data_drawer_target='logo-sidebar',
                         data_drawer_toggle='logo-sidebar',
                         aria_controls='logo-sidebar',
@@ -86,40 +86,27 @@ def Navbar():
         cls='fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700'
 ) 
 
-def SidebarItem(name, href = "#", icon=None):
-    return Li(
-        A(
-            icon,
-            Span(name, cls='ms-3'),
-            href=href + "#",
-            hx_boost="true",
-            hx_target="#content",
-            hx_swap_oob=True,
-            cls='flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group'
-        )
-    )
-
 standard_sidebar_items = [
-    NavLi("Home", href="/#", icon="home",hx_boost="true",hx_target="#content",hx_swap_oob=True),
-    NavLi("Typography", href="/typography#", icon="type",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Buttons", href="/buttons#", icon="stretch-horizontal",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Containers", href="/containers#", icon="layout-dashboard",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Playground", href="/playground#", icon="brush",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Icons and images", href="/icons#", icon="image",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Themes", href="/themes#", icon='palette',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Article", href="/article#", icon='file-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Badge", href="/badge#", icon='badge',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Dropdown", href="/dropdown#", icon='chevron-down',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Forms", href="/forms#", icon='book-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Markdown", href="/markdown#", icon='text-select',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Modals", href="/modals#", icon='picture-in-picture',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Navigation", href="/navigation#", icon='menu',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Progress", href="/progress#", icon='activity',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Ranges", href="/ranges#", icon='sliders',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Placeholders", href="/skeleton#", icon='square-dashed',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Slider", href="/slider#", icon='panel-right-open',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Tables", href="/tables#", icon='table',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
-    NavLi("Tabs", href="/tabs#", icon='app-window',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Home", href="/#",icon="lucide:home",hx_boost="true",hx_target="#content",hx_swap_oob=True),
+    NavLi("Typography", href="/typography#",icon="lucide:type",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Buttons", href="/buttons#",icon="lucide:stretch-horizontal",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Containers", href="/containers#",icon="lucide:layout-dashboard",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Playground", href="/playground#",icon="lucide:brush",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Icons and images", href="/icons#",icon="lucide:image",hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Themes", href="/themes#",icon='lucide:palette',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Article", href="/article#",icon='lucide:file-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Badge", href="/badge#",icon='lucide:badge',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Dropdown", href="/dropdown#",icon='lucide:chevron-down',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Forms", href="/forms#",icon='lucide:book-text',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Markdown", href="/markdown#",icon='lucide:text-select',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Modals", href="/modals#",icon='lucide:picture-in-picture',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Navigation", href="/navigation#",icon='lucide:menu',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Progress", href="/progress#",icon='lucide:activity',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Ranges", href="/ranges#",icon='lucide:sliders',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Placeholders", href="/skeleton#",icon='lucide:square-dashed',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Slider", href="/slider#",icon='lucide:panel-right-open',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Tables", href="/tables#",icon='lucide:table',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
+    NavLi("Tabs", href="/tabs#",icon='lucide:app-window',hx_boost="true",hx_target="#content",hx_swap_oob=True,),
 ]
 
 component_sidebar_items = component_registry.get_sidebar_items(NavChildLi)
@@ -131,14 +118,12 @@ def Sidebar():
             NavParentLi(
                 *standard_sidebar_items,
                 label="Components",
-                icon='layout-dashboard',
-                cls='space-y-2 font-medium'
+               icon='lucide:layout-dashboard',
             ),
             NavParentLi(
                 *component_sidebar_items,
                 label="Extracted",
-                icon='layout-template',
-                cls='space-y-2 font-medium'
+               icon='lucide:layout-template',
             ),
             cls='h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800'
         ),

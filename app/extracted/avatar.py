@@ -46,11 +46,11 @@ component = Div(
     P('Use this example as a placeholder icon for the user profile when there is no custom image available.'),
     component_showcase(Div(
     Div(
-        Icon("user",cls='w-10 h-10'),
+        Icon("lucide:user",cls='w-10 h-10'),
         cls='relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600'
     )
 ), code="""Div(
-    Icon("user",cls='w-10 h-10'),
+    Icon("lucide:user",cls='w-10 h-10'),
     cls='relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600'
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(

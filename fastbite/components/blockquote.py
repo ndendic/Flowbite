@@ -16,7 +16,7 @@ from .media import Icon
 # %% ../../nbs/04_blockquote.ipynb 2
 def Blockquote(*c:FT|str, # Contents of Blockquote tag (often text)
                with_icon:bool=False,
-               icon:FT=Icon("quote",cls=("h-8 w-8 mb-1",TextT.muted)),
+               icon:FT=Icon("lucide:quote",cls=("h-8 w-8 mb-1",TextT.muted)),
                cls:Enum|str|tuple=BlockquoteT.default, # Classes in addition to Blockquote styling
                **kwargs # Additional args for Blockquote tag
                )->FT: # Blockquote(..., cls='uk-blockquote')

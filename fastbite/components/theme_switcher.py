@@ -37,12 +37,12 @@ DEFAULT_THEMES = {
 def ThemeToggle() -> FT:
     return Div(
             Icon(
-                "moon",
+                "lucide:moon",
                 id='theme-toggle-dark-icon',
                 cls='w-4 h-4'
             ),
             Icon(
-                "sun",
+                "lucide:sun",
                 id='theme-toggle-light-icon',
                 cls='w-4 h-4 hidden'
             ),
@@ -54,7 +54,7 @@ def ThemeToggle() -> FT:
         )
 
 def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = None, # Default to None
-                  icon: FT = Icon("palette", cls="w-4 h-4"),
+                  icon: FT = Icon("lucide:palette", cls="w-4 h-4"),
                   toggle_cls: Enum|str|tuple="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-2.5 py-2.5",
                   menu_cls: Enum|str|tuple="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600",
                   option_cls: Enum|str|tuple="w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-left",

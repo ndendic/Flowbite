@@ -7,22 +7,40 @@ __all__ = ['Icon', 'IconLink', 'DiceBearAvatar', 'PicSumImg']
 import fasthtml.common as fh
 from ..core import *
 from fasthtml.common import Span, FT
+from fasthtml.components import Iconify_icon
 from fastcore.all import *
 from .base import *
 from .base_styles import *
 from enum import Enum
 
 # %% ../../nbs/03_media.ipynb 2
-def Icon(icon:str, # Icon name from [lucide icons](https://lucide.dev/icons/)
+def Icon(icon:str, # Icon name from [iconify icons](https://iconify.design/icons/)
            height:int=20, 
            width:int=20, 
            stroke_width:int=None, # Thickness of lines
            cls:Enum|str|tuple=(), # Additional classes on the `Uk_icon` tag
            **kwargs # Additional args for `Uk_icon` tag
            )->FT: # a lucide icon of the specified size 
-    "Creates an icon using lucide icons"
-    
-    return I(Script('lucide.createIcons();'),data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=stringify(cls), **kwargs)
+    "Creates an icon using iconify icons"
+    cls_str = stringify(cls)
+    has_tw_height = ' h-' in f' {cls_str} '
+    has_tw_width = ' w-' in f' {cls_str} '
+
+    iconify_kwargs = {
+        'icon': icon,
+        'stroke_width': stroke_width,
+        'cls': cls_str,
+        'inline': True,
+        **kwargs
+    }
+
+    if not has_tw_height:
+        iconify_kwargs['height'] = height
+    if not has_tw_width:
+        iconify_kwargs['width'] = width
+
+    return Iconify_icon(**iconify_kwargs)
+    # return I(Script('lucide.createIcons();'),data_lucide=icon, height=height, width=width, stroke_width=stroke_width, cls=stringify(cls), **kwargs)
 
 def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons/)
            height:int=None, 
@@ -41,15 +59,50 @@ def IconLink(icon:str,  # Icon name from [lucide icons](https://lucide.dev/icons
     return fn(cls=(stringify(base_cls), stringify(cls)), **kwargs)(
         Icon(icon=icon, height=height, width=width, stroke_width=stroke_width, cls=stringify(icon_cls)))
 
-def DiceBearAvatar(seed_name:str, # Seed name (ie 'Isaac Flath')
-                   h:int=12,         # Height 
+class DiceBearStyle(VEnum):
+    adventurer = 'adventurer'
+    adventurerNeutral = 'adventurerNeutral'
+    avataaars = 'avataaars'
+    avataaarsNeutral = 'avataaarsNeutral'
+    bigEars = 'bigEars'
+    bigEarsNeutral = 'bigEarsNeutral'
+    bigSmile = 'bigSmile'
+    bottts = 'bottts'
+    botttsNeutral = 'botttsNeutral'
+    croodles = 'croodles'
+    croodlesNeutral = 'croodlesNeutral'
+    dylan = 'dylan'
+    funEmoji = 'funEmoji'
+    glass = 'glass'
+    icons = 'icons'
+    identicon = 'identicon'
+    initials = 'initials'
+    lorelei = 'lorelei'
+    loreleiNeutral = 'loreleiNeutral'
+    micah = 'micah'
+    miniavs = 'miniavs'
+    notionists = 'notionists'
+    notionistsNeutral = 'notionistsNeutral'
+    openPeeps = 'openPeeps'
+    personas = 'personas'
+    pixelArt = 'pixelArt'
+    pixelArtNeutral = 'pixelArtNeutral'
+    rings = 'rings'
+    shapes = 'shapes'
+    thumbs = 'thumbs'
+    
+    
+
+def DiceBearAvatar(seed_name:str,
+                   h:int=12,     
                    w:int=12,  
                    cls:Enum|str|tuple=Round.full,
+                   style:DiceBearStyle=DiceBearStyle.personas,
                    img_cls:Enum|str|tuple=(), # Added img_cls
                    **kwargs # Additional args for the span
                   ):          # Span with Avatar
     "Creates an Avatar using https://dicebear.com/"
-    url = 'https://api.dicebear.com/8.x/personas/svg?seed='
+    url = f'https://api.dicebear.com/8.x/{style}/svg?seed='
     # TODO: move classes to controlable parameters
     return Span(cls=(stringify(cls),f"relative flex h-{h} w-{w} shrink-0 overflow-hidden bg-gray-200 dark:bg-gray-700"))(
             fh.Img(cls=(f"aspect-square h-{h} w-{w}", stringify(img_cls)), alt="Avatar", loading="lazy", src=f"{url}{seed_name}", **kwargs))

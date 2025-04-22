@@ -86,7 +86,7 @@ component = Div(
     component_showcase(Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -100,7 +100,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'alert-triangle',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -114,7 +114,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'check-circle',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -128,7 +128,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -142,7 +142,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -157,7 +157,7 @@ component = Div(
 ), code="""Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -171,7 +171,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'alert-triangle',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -185,7 +185,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'check-circle',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -199,7 +199,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'alert-triangle',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -213,7 +213,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -236,7 +236,7 @@ component = Div(
     component_showcase(Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -250,7 +250,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -264,7 +264,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -278,7 +278,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -292,7 +292,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -307,7 +307,7 @@ component = Div(
 ), code="""Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -321,7 +321,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -335,7 +335,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -349,7 +349,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -363,7 +363,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3'
         ),
@@ -386,7 +386,7 @@ component = Div(
     component_showcase(Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
@@ -405,7 +405,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
@@ -425,7 +425,7 @@ component = Div(
 ), code="""Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
@@ -444,7 +444,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 me-3 mt-[2px]'
         ),
@@ -501,7 +501,7 @@ component = Div(
     component_showcase(Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -533,7 +533,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -565,7 +565,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -597,7 +597,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -629,7 +629,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4 dark:text-gray-300'
         ),
@@ -662,7 +662,7 @@ component = Div(
 ), code="""Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -694,7 +694,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -726,7 +726,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -758,7 +758,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4'
         ),
@@ -790,7 +790,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 w-4 h-4 dark:text-gray-300'
         ),
@@ -831,7 +831,7 @@ component = Div(
     component_showcase(Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -862,7 +862,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -893,7 +893,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -955,7 +955,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 dark:text-gray-300'
         ),
@@ -987,7 +987,7 @@ component = Div(
 ), code="""Div(
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -1018,7 +1018,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -1049,7 +1049,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'circle-check',
+            'lucide:check-circle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -1080,7 +1080,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'triangle-alert',
+            'lucide:alert-triangle',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4'
         ),
@@ -1111,7 +1111,7 @@ component = Div(
     ),
     Div(
         Icon(
-            'info',
+            'lucide:info',
             aria_hidden='true',
             cls='shrink-0 inline w-4 h-4 dark:text-gray-300'
         ),
@@ -1152,7 +1152,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'info',
+                'lucide:info',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1185,7 +1185,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'triangle-alert',
+                'lucide:alert-triangle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1218,7 +1218,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'circle-check',
+                'lucide:check-circle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1251,7 +1251,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'triangle-alert',
+                'lucide:alert-triangle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1284,7 +1284,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'info',
+                'lucide:info',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2 dark:text-gray-300'
             ),
@@ -1318,7 +1318,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'info',
+                'lucide:info',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1351,7 +1351,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'triangle-alert',
+                'lucide:alert-triangle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1384,7 +1384,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'circle-check',
+                'lucide:check-circle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1417,7 +1417,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'triangle-alert',
+                'lucide:alert-triangle',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2'
             ),
@@ -1450,7 +1450,7 @@ component = Div(
     Div(
         Div(
             Icon(
-                'info',
+                'lucide:info',
                 aria_hidden='true',
                 cls='shrink-0 w-4 h-4 me-2 dark:text-gray-300'
             ),

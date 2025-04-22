@@ -63,20 +63,20 @@ Grid(*[Icon(icon) for icon in icon_names], cols=4)""",
         component_showcase(
             Div(
                 DivHStacked(
-                    Icon("house", height=16, width=16),
-                    Icon("house", height=24, width=24),
-                    Icon("house", height=32, width=32),
-                    Icon("house", height=48, width=48),
-                    Icon("house", height=64, width=64),
+                    Icon("lucide:house", height=16, width=16),
+                    Icon("lucide:house", height=24, width=24),
+                    Icon("lucide:house", height=32, width=32),
+                    Icon("lucide:house", height=48, width=48),
+                    Icon("lucide:house", height=64, width=64),
                 )
             ),
             code="""# Icons with different sizes
 DivHStacked(
-    Icon("house", height=16, width=16),
-    Icon("house", height=24, width=24),
-    Icon("house", height=32, width=32),
-    Icon("house", height=48, width=48),
-    Icon("house", height=64, width=64),
+    Icon("lucide:house", height=16, width=16),
+    Icon("lucide:house", height=24, width=24),
+    Icon("lucide:house", height=32, width=32),
+    Icon("lucide:house", height=48, width=48),
+    Icon("lucide:house", height=64, width=64),
 )""",
             id="icon-sizes"
         ),
@@ -89,20 +89,20 @@ DivHStacked(
         component_showcase(
             Div(
                 DivHStacked(
-                    Icon("circle", stroke_width=1),
-                    Icon("circle", stroke_width=1.5),
-                    Icon("circle", stroke_width=2),
-                    Icon("circle", stroke_width=2.5),
-                    Icon("circle", stroke_width=3),
+                    Icon("lucide:circle", stroke_width=1),
+                    Icon("lucide:circle", stroke_width=1.5),
+                    Icon("lucide:circle", stroke_width=2),
+                    Icon("lucide:circle", stroke_width=2.5),
+                    Icon("lucide:circle", stroke_width=3),
                 )
             ),
             code="""# Icons with different stroke widths
 DivHStacked(
-    Icon("circle", stroke_width=1),
-    Icon("circle", stroke_width=1.5),
-    Icon("circle", stroke_width=2),
-    Icon("circle", stroke_width=2.5),
-    Icon("circle", stroke_width=3),
+    Icon("lucide:circle", stroke_width=1),
+    Icon("lucide:circle", stroke_width=1.5),
+    Icon("lucide:circle", stroke_width=2),
+    Icon("lucide:circle", stroke_width=2.5),
+    Icon("lucide:circle", stroke_width=3),
 )""",
             id="icon-stroke-widths"
         ),
@@ -115,18 +115,18 @@ DivHStacked(
         component_showcase(
             Div(
                 DivHStacked(
-                    Button(Icon("plus", height=16, width=16, cls="mr-2"), " Add New"),
-                    Button(Icon("trash", height=16, width=16, cls="mr-2"), " Delete", cls=ButtonT.error),
-                    Button(Icon("save", height=16, width=16, cls="mr-2"), " Save", cls=ButtonT.success),
-                    Button(Icon("download", height=16, width=16, cls="mr-2"), " Download", cls=ButtonT.info),
+                    Button(Icon("lucide:plus", height=16, width=16, cls="mr-2"), " Add New"),
+                    Button(Icon("lucide:trash", height=16, width=16, cls="mr-2"), " Delete", cls=ButtonT.error),
+                    Button(Icon("lucide:save", height=16, width=16, cls="mr-2"), " Save", cls=ButtonT.success),
+                    Button(Icon("lucide:download", height=16, width=16, cls="mr-2"), " Download", cls=ButtonT.info),
                 )
             ),
             code="""# Icons in buttons with different styles
 DivHStacked(
-    Button(Icon("plus", height=16, width=16, cls="mr-2"), " Add New"),
-    Button(Icon("trash", height=16, width=16, cls="mr-2"), " Delete", cls=ButtonT.error),
-    Button(Icon("save", height=16, width=16, cls="mr-2"), " Save", cls=ButtonT.success),
-    Button(Icon("download", height=16, width=16, cls="mr-2"), " Download", cls=ButtonT.info),
+    Button(Icon("lucide:plus", height=16, width=16, cls="mr-2"), " Add New"),
+    Button(Icon("lucide:trash", height=16, width=16, cls="mr-2"), " Delete", cls=ButtonT.error),
+    Button(Icon("lucide:save", height=16, width=16, cls="mr-2"), " Save", cls=ButtonT.success),
+    Button(Icon("lucide:download", height=16, width=16, cls="mr-2"), " Download", cls=ButtonT.info),
 )""",
             id="icon-buttons"
         ),

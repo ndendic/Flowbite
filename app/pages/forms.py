@@ -129,7 +129,7 @@ Input(label="Password", id=\'input-help\', type=\'password\', placeholder=\'â€¢â
         H3("Input with Icon", link=True, cls="mb-3"),
         P("Use the ", Code("icon"), " parameter (provide an icon name, e.g., from Bootstrap Icons) to add an icon inside the input field."),
         component_showcase(
-            Input(label="Email with Icon", id='input-icon', type='email', placeholder='name@flowbite.com', icon='mail'),
+            Input(label="Email with Icon", id='input-icon', type='email', placeholder='name@flowbite.com',icon='lucide:mail'),
             code='''from fastbite.all import Input
 
 Input(label="Email with Icon", id=\'input-icon\', type=\'email\', placeholder=\'name@flowbite.com\', icon=\'envelope-fill\')''',
@@ -297,7 +297,7 @@ Select(
                 *Options("Technology", "Business", "Creative"),
                 label="Select Category",
                 id='select-icon-help',
-                icon='tag', # Example icon
+               icon='lucide:tag', # Example icon
                 help_text="Choose the category that best fits."
             ),
             code='''from fastbite.all import Select, Options

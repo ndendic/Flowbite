@@ -72,7 +72,7 @@ def ModalCloseButton(*c, # Components to put in the button
                      )->FT:
     "Creates a button that closes a modal"
     return fh.Button(
-        Icon('X'),
+        Icon('lucide:X'),
         Span('Close modal', cls='sr-only'),
         type='button',
         data_modal_toggle=modal_id,

@@ -63,7 +63,7 @@ Placeholder(
         Div(
             Placeholder(
                 Div(
-                    Icon("inbox", cls="w-10 h-10 mb-2 text-gray-400"),
+                    Icon("lucide:inbox", cls="w-10 h-10 mb-2 text-gray-400"),
                     H3("No items found", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
                     P("Your search didn't return any results", cls="text-gray-500 dark:text-gray-400"),
                     cls="flex flex-col items-center justify-center py-5"
@@ -76,7 +76,7 @@ from fasthtml.common import Div, H3, P
 
 Placeholder(
     Div(
-        Icon("inbox", cls="w-10 h-10 mb-2 text-gray-400"),
+        Icon("lucide:inbox", cls="w-10 h-10 mb-2 text-gray-400"),
         H3("No items found", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
         P("Your search didn't return any results", cls="text-gray-500 dark:text-gray-400"),
         cls="flex flex-col items-center justify-center py-5"
@@ -94,7 +94,7 @@ Placeholder(
         Div(
             Placeholder(
                 Div(
-                    Icon("file-plus", cls="w-10 h-10 mb-3 text-gray-400"),
+                    Icon("lucide:file-plus", cls="w-10 h-10 mb-3 text-gray-400"),
                     H3("No documents yet", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
                     P("Get started by creating your first document", cls="mb-4 text-gray-500 dark:text-gray-400"),
                     Button("Create Document", cls=ButtonT.primary),
@@ -108,7 +108,7 @@ from fasthtml.common import Div, H3, P
 
 Placeholder(
     Div(
-        Icon("file-plus", cls="w-10 h-10 mb-3 text-gray-400"),
+        Icon("lucide:file-plus", cls="w-10 h-10 mb-3 text-gray-400"),
         H3("No documents yet", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
         P("Get started by creating your first document", cls="mb-4 text-gray-500 dark:text-gray-400"),
         Button("Create Document", cls=ButtonT.primary),
@@ -319,7 +319,7 @@ Placeholder(
         Div(
             Placeholder(
                 Div(
-                    Icon("wifi-off", cls="w-12 h-12 mb-3 text-gray-400"),
+                    Icon("lucide:wifi-off", cls="w-12 h-12 mb-3 text-gray-400"),
                     H3("Content Unavailable", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
                     P("Sorry, we couldn't load this content. Please check your connection and try again.", 
                      cls="mb-4 text-gray-500 dark:text-gray-400 text-center max-w-xs"),
@@ -334,7 +334,7 @@ from fasthtml.common import Div, H3, P
 
 Placeholder(
     Div(
-        Icon("wifi-off", cls="w-12 h-12 mb-3 text-gray-400"),
+        Icon("lucide:wifi-off", cls="w-12 h-12 mb-3 text-gray-400"),
         H3("Content Unavailable", cls="mb-1 text-lg font-semibold text-gray-900 dark:text-white"),
         P("Sorry, we couldn't load this content. Please check your connection and try again.", 
            cls="mb-4 text-gray-500 dark:text-gray-400 text-center max-w-xs"),

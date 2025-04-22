@@ -61,7 +61,7 @@ def UploadZone(label:str|FT = None, # Contents of Upload tag button (often text)
     return Div(cls=stringify(cls),**kwargs)( # Use stringify
             FormLabel(
                 Div(
-                    Icon("cloud-upload",cls=stringify(icon_cls)), # Use stringify
+                    Icon("lucide:cloud-upload",cls=stringify(icon_cls)), # Use stringify
                     P(label,cls=stringify(p_label_cls)), # Use stringify
                     P(help_text, cls=stringify(p_help_cls)), # Use stringify
                     cls=stringify(label_div_cls) # Use stringify

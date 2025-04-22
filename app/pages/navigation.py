@@ -18,10 +18,10 @@ navigation_components = Div(
     component_showcase(
         Div(
             NavContainer(
-                NavLi("Dashboard", icon="home", href="#"),
-                NavLi("Projects", icon="folder", href="#"),
-                NavLi("Messages", icon="mail", href="#"),
-                NavLi("Settings", icon="settings", href="#")
+                NavLi("Dashboard",icon="lucide:home", href="#"),
+                NavLi("Projects",icon="lucide:folder", href="#"),
+                NavLi("Messages",icon="lucide:mail", href="#"),
+                NavLi("Settings",icon="lucide:settings", href="#")
             ),
             cls="w-64"
         ),
@@ -29,10 +29,10 @@ navigation_components = Div(
 
 # Create a basic navigation menu
 NavContainer(
-    NavLi("Dashboard", icon="home", href="#"),
-    NavLi("Projects", icon="folder", href="#"),
-    NavLi("Messages", icon="mail", href="#"),
-    NavLi("Settings", icon="settings", href="#")
+    NavLi("Dashboard",icon="lucide:home", href="#"),
+    NavLi("Projects",icon="lucide:folder", href="#"),
+    NavLi("Messages",icon="lucide:mail", href="#"),
+    NavLi("Settings",icon="lucide:settings", href="#")
 )""",
         id="basic-navigation"
     ),
@@ -93,23 +93,23 @@ NavContainer(
     component_showcase(
         Div(
             NavContainer(
-                NavLi("Dashboard", icon="home", href="#"),
+                NavLi("Dashboard",icon="lucide:home", href="#"),
                 NavParentLi(
                     NavChildLi("All projects", href="#"),
                     NavChildLi("Active projects", href="#"),
                     NavChildLi("Archived projects", href="#"),
                     label="Projects",
-                    icon="folder",
+                   icon="lucide:folder",
                     id="projects-nav"
                 ),
-                NavLi("Messages", icon="mail", href="#")
+                NavLi("Messages",icon="lucide:mail", href="#")
             ),
             cls="w-64"
         ),
         code="""from fastbite.all import NavContainer, NavLi, NavParentLi, NavChildLi
 
 NavContainer(
-    NavLi("Dashboard", icon="home", href="#"),
+    NavLi("Dashboard",icon="lucide:home", href="#"),
     NavParentLi(
         # Child navigation items
         NavChildLi("All projects", href="#"),
@@ -117,10 +117,10 @@ NavContainer(
         NavChildLi("Archived projects", href="#"),
         # Parent properties
         label="Projects",
-        icon="folder",
+       icon="lucide:folder",
         id="projects-nav"  # Unique ID for the dropdown
     ),
-    NavLi("Messages", icon="mail", href="#")
+    NavLi("Messages",icon="lucide:mail", href="#")
 )""",
         id="dropdown-navigation"
     ),
@@ -135,12 +135,12 @@ NavContainer(
             NavContainer(
                 NavHeaderLi(label="Admin Panel", href="#"),
                 NavSubtitle("Main navigation"),
-                NavLi("Dashboard", icon="home", href="#"),
-                NavLi("Users", icon="users", href="#"),
+                NavLi("Dashboard",icon="lucide:home", href="#"),
+                NavLi("Users",icon="lucide:users", href="#"),
                 NavDividerLi(),
                 NavSubtitle("Settings"),
-                NavLi("Profile", icon="user", href="#"),
-                NavLi("Security", icon="shield", href="#")
+                NavLi("Profile",icon="lucide:user", href="#"),
+                NavLi("Security",icon="lucide:shield", href="#")
             ),
             cls="w-64"
         ),
@@ -152,15 +152,15 @@ NavContainer(
     
     # Subtitle for categorizing items
     NavSubtitle("Main navigation"),
-    NavLi("Dashboard", icon="home", href="#"),
-    NavLi("Users", icon="users", href="#"),
+    NavLi("Dashboard",icon="lucide:home", href="#"),
+    NavLi("Users",icon="lucide:users", href="#"),
     
     # Divider for visual separation
     NavDividerLi(),
     
     NavSubtitle("Settings"),
-    NavLi("Profile", icon="user", href="#"),
-    NavLi("Security", icon="shield", href="#")
+    NavLi("Profile",icon="lucide:user", href="#"),
+    NavLi("Security",icon="lucide:shield", href="#")
 )""",
         id="structured-navigation"
     ),

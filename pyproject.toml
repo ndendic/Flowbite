@@ -22,6 +22,7 @@ dependencies = [
     "typer>=0.15.2",
     "tomli>=2.0.1",
     "tomli-w>=1.0.0",
+    "ft-datastar>=0.1.0",
 ]
 
 [project.scripts]
@@ -39,5 +40,7 @@ build-backend = "setuptools.build_meta"
 dev = [
     "ipykernel>=6.29.5",
     "logfire>=3.12.0",
+    "marimo>=0.13.0",
+    "monsterui>=1.0.19",
     "nbdev>=2.3.35",
 ]

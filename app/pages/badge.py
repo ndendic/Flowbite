@@ -156,27 +156,27 @@ Badge("Pink", cls=BadgeT.pink_outline)""",
         
         component_showcase(
             Div(
-                Badge("Default", icon="home", cls=BadgeT.default),
-                Badge("Dark", icon="home", cls=BadgeT.dark),
-                Badge("Red", icon="home", cls=BadgeT.red),
-                Badge("Yellow", icon="home", cls=BadgeT.yellow),
-                Badge("Green", icon="home", cls=BadgeT.green),
-                Badge("Blue", icon="home", cls=BadgeT.blue),
-                Badge("Indigo", icon="home", cls=BadgeT.indigo),
-                Badge("Purple", icon="home", cls=BadgeT.purple),
-                Badge("Pink", icon="home", cls=BadgeT.pink),
+                Badge("Default",icon="lucide:home", cls=BadgeT.default),
+                Badge("Dark",icon="lucide:home", cls=BadgeT.dark),
+                Badge("Red",icon="lucide:home", cls=BadgeT.red),
+                Badge("Yellow",icon="lucide:home", cls=BadgeT.yellow),
+                Badge("Green",icon="lucide:home", cls=BadgeT.green),
+                Badge("Blue",icon="lucide:home", cls=BadgeT.blue),
+                Badge("Indigo",icon="lucide:home", cls=BadgeT.indigo),
+                Badge("Purple",icon="lucide:home", cls=BadgeT.purple),
+                Badge("Pink",icon="lucide:home", cls=BadgeT.pink),
                 cls="space-x-2"
             ),
             code="""# Badges with icons
-Badge("Default", icon="home", cls=BadgeT.default)
-Badge("Dark", icon="home", cls=BadgeT.dark)
-Badge("Red", icon="home", cls=BadgeT.red)
-Badge("Yellow", icon="home", cls=BadgeT.yellow)
-Badge("Green", icon="home", cls=BadgeT.green)
-Badge("Blue", icon="home", cls=BadgeT.blue)
-Badge("Indigo", icon="home", cls=BadgeT.indigo)
-Badge("Purple", icon="home", cls=BadgeT.purple)
-Badge("Pink", icon="home", cls=BadgeT.pink)""",
+Badge("Default",icon="lucide:home", cls=BadgeT.default)
+Badge("Dark",icon="lucide:home", cls=BadgeT.dark)
+Badge("Red",icon="lucide:home", cls=BadgeT.red)
+Badge("Yellow",icon="lucide:home", cls=BadgeT.yellow)
+Badge("Green",icon="lucide:home", cls=BadgeT.green)
+Badge("Blue",icon="lucide:home", cls=BadgeT.blue)
+Badge("Indigo",icon="lucide:home", cls=BadgeT.indigo)
+Badge("Purple",icon="lucide:home", cls=BadgeT.purple)
+Badge("Pink",icon="lucide:home", cls=BadgeT.pink)""",
             id="icon-badges"
         ),
         
@@ -335,7 +335,7 @@ Div(
                 P("Pill styles: ", Code("default_pill"), ", ", Code("dark_pill"), ", ", Code("red_pill"), ", etc."),
             ),
             code="""# Badge component syntax
-Badge("Text", icon="icon-name", cls=BadgeT.variant)
+Badge("Text",icon="lucide:icon-name", cls=BadgeT.variant)
 
 # IconBadge component syntax
 IconBadge(icon="icon-name", h="2.5", w="2.5", cls=BackgroundT.variant, icon_cls="additional-icon-classes")

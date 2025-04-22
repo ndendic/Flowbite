@@ -358,15 +358,15 @@ Div(
                 DivFullySpaced(
                     DivHStacked(
                         Button(
-                            Icon("skip-back", cls="w-4 h-4"),
+                            Icon("lucide:skip-back", cls="w-4 h-4"),
                             cls="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
                         ),
                         Button(
-                            Icon("play", cls="w-5 h-5"),
+                            Icon("lucide:play", cls="w-5 h-5"),
                             cls="p-2 rounded-full bg-primary-600 text-white mx-2"
                         ),
                         Button(
-                            Icon("skip-forward", cls="w-4 h-4"),
+                            Icon("lucide:skip-forward", cls="w-4 h-4"),
                             cls="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
                         ),
                         cls="flex"
@@ -380,7 +380,7 @@ Div(
                             cls=RangeT.sm,
                             div_cls="mb-0 w-32"
                         ),
-                        Icon("volume-2", cls="w-5 h-5 ml-2"),
+                        Icon("lucide:volume-2", cls="w-5 h-5 ml-2"),
                         cls="flex items-center"
                     ),
                     cls="mt-4"
@@ -410,15 +410,15 @@ Div(
         # Playback controls
         DivCentered(
             Button(
-                Icon("skip-back", cls="w-4 h-4"),
+                Icon("lucide:skip-back", cls="w-4 h-4"),
                 cls="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
             ),
             Button(
-                Icon("play", cls="w-5 h-5"),
+                Icon("lucide:play", cls="w-5 h-5"),
                 cls="p-2 rounded-full bg-primary-600 text-white mx-2"
             ),
             Button(
-                Icon("skip-forward", cls="w-4 h-4"),
+                Icon("lucide:skip-forward", cls="w-4 h-4"),
                 cls="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
             ),
             cls="flex"
@@ -434,7 +434,7 @@ Div(
                 cls=RangeT.sm,
                 div_cls="mb-0 w-32"
             ),
-            Icon("volume-2", cls="w-5 h-5 ml-2"),
+            Icon("lucide:volume-2", cls="w-5 h-5 ml-2"),
             cls="flex items-center"
         ),
         cls="mt-4"

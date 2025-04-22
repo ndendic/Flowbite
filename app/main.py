@@ -1,5 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
+from monsterui.all import *
 from fastbite.all import *
 from fastbite.core import *
 from app.navigation import Sidebar, Main, Navbar
@@ -15,15 +16,18 @@ favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )
 
+monsterui_headers = Theme.rose.headers()
 app, rt = fast_app(
     live=True,
     pico=False,
     static_path="assets",
     hdrs=(
         favicons,
+        Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
         fastbite_hdrs,
         datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
+        Script(src='https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js'),
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
     ftrs=fastbite_ftrs,
