@@ -628,9 +628,23 @@ playground = Section(cls=(SectionT.default))(
     # navs,
     # sliders,
     # dropdowns,
-    IconifyIcon(icon="fluent-emoji:angry-face", width=100, height=100, cls="text-red-500"),
-    Icon(icon="fluent-emoji:angry-face", width=100, height=100, cls="text-red-500"),
-    Button("Click me"),
+    Modal(
+        P("This is the default modal body content.", cls=TextT.gray), 
+        P("You can put any content here."),        
+    header=[
+        ModalTitle("Default Modal Header"),
+        ModalCloseButton(modal_id='ModalBasic') # Use the specific close button
+    ],
+    footer=fh.Div(
+        Button("Accept", cls=ButtonT.primary, data_on_click=f'$show{"ModalBasic"} = !$show{"ModalBasic"}'), # Use toggle to close
+        Button("Decline", cls=ButtonT.secondary, data_on_click=f'$show{"ModalBasic"} = !$show{"ModalBasic"}'),
+        cls="space-x-2"
+    ),
+    id='ModalBasic',
+    ),
+    Button("Click me",
+        data_on_click='$showModalBasic = !$showModalBasic'
+    ),
     # Accordion(
     #     AccordionItem(
     #         "Accordion Item 1",

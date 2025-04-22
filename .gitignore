@@ -41,5 +41,6 @@ mcp.json
 dashboard/
 landing-pages/
 flowbite*
+package.json
 # Private individual user cursor rules
 .cursor/rules/_*.mdc

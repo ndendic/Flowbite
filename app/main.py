@@ -23,14 +23,12 @@ app, rt = fast_app(
     static_path="assets",
     hdrs=(
         favicons,
-        Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
         fastbite_hdrs,
         datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
-        Script(src='https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js'),
         HighlightJS(langs=["python", "javascript", "html", "css"]),
     ),
-    ftrs=fastbite_ftrs,
+    # ftrs=fastbite_ftrs,
     htmlkw=dict(data_theme="retro",cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
     # exception_handlers={404: custom_404_handler},
 )

@@ -19,7 +19,8 @@ from enum import Enum
 def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
                   id:str='', # ID for the modal container
                   cls:Enum|str|tuple='', # Additional classes on the modal container
-                  placement:Enum|str|tuple=None, # Placement of the modal (use ModalT placement variants)
+                  placement:Enum|str|tuple=ModalT.center, # Placement of the modal (use ModalT placement variants)
+                  backdrop:bool=True, # Whether to show the backdrop
                   **kwargs # Additional args for the container div
                   )->FT:
     "Creates a modal container that components go in"
@@ -28,7 +29,12 @@ def ModalContainer(*c, # Components to put in the modal (often `ModalDialog`)
         classes.append(placement)
     if cls:
         classes.append(stringify(cls))
-    return Div(*c, id=id, tabindex='-1', aria_hidden='true', cls=tuple(classes), **kwargs)
+    if backdrop:
+        classes.append(ModalT.backdrop)
+    return fh.Div(
+        fh.Div(data_signals=f'{{show{id}: false}}'),
+        Div(*c,data_show=f'$show{id} == true', id=id, tabindex='-1', cls=tuple(classes), **kwargs),
+    )
 
 def ModalDialog(*c, # Components to put in the dialog (often `ModalBody`, `ModalHeader`, etc)
                 cls:Enum|str|tuple='', # Additional classes on the dialog
@@ -72,10 +78,10 @@ def ModalCloseButton(*c, # Components to put in the button
                      )->FT:
     "Creates a button that closes a modal"
     return fh.Button(
-        Icon('lucide:X'),
+        Icon('lucide:x'),
         Span('Close modal', cls='sr-only'),
+        data_on_click=f'$show{modal_id} = !$show{modal_id}',
         type='button',
-        data_modal_toggle=modal_id,
         cls=(ModalT.close_btn, stringify(cls)),
         **kwargs
     )
@@ -90,6 +96,7 @@ def Modal(*c, # Components to put in the modal body
          footer_cls:Enum|str|tuple='', # Additional classes on the footer
          id:str='', # ID for the modal
          placement:Enum|str|tuple=ModalT.center, # Placement of the modal (use ModalT placement variants)
+        backdrop:bool=True, # Whether to show the backdrop
          **kwargs # Additional args for the container
          )->FT:
     "Creates a complete modal with header, body and footer sections"
@@ -99,9 +106,9 @@ def Modal(*c, # Components to put in the modal body
     if footer: res.append(ModalFooter(*footer if isinstance(footer, (list, tuple)) else [footer], cls=footer_cls))
     return ModalContainer(
         ModalDialog(*res, cls=dialog_cls),
-        Script('htmx.onLoad(function(content) {initModals();})'),
         id=id,
         cls=cls,
         placement=placement,
+        backdrop=backdrop,
         **kwargs
     )

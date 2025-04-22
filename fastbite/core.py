@@ -15,7 +15,6 @@ fastbite_hdrs = (
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
     ),
-    # Script(src='https://unpkg.com/lucide@latest'),
     Script(src='https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js'),
     Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
     Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js")

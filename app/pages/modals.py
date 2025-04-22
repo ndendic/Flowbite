@@ -1,23 +1,33 @@
 from fasthtml.common import *
 from fastbite.all import *
 from utils import component_showcase
+from ft_datastar import *
 
 # --- Basic Modal Section ---
 def _modal_basic_section():
-    modal_id = "modal-basic"
+    modal_id = "ModalBasic"
     return Section(
         H2("Basic Modal", link=True, cls="mb-4 mt-10"),
         P("The ", Code("Modal"), " component provides a convenient way to create modals with header, body, and footer sections. It uses Flowbite's JavaScript for toggling visibility."),
         P("You need a trigger element (like a button) with ", Code(f'data_modal_target="{modal_id}"'), " and ", Code(f'data_modal_toggle="{modal_id}"'), " attributes."),
         component_showcase(
             # Trigger Button
-            Button("Toggle Basic Modal", 
-                   data_modal_target=f'{modal_id}', 
-                   data_modal_toggle=modal_id),
+            Button("Toggle Basic Modal",                                
+                #    data_modal_target=f'{modal_id}', 
+                #    data_modal_toggle=modal_id),
+                   data_signals=f'{{show{modal_id}: false}}',
+                   data_on_click=f'$show{modal_id} = !$show{modal_id}'
+                   ),
+            Div(
+                "Controling this on the modal component",
+                data_show=f'$show{modal_id} == true',
+                cls="mt-4 bg-red-500"
+            ),
             # Modal Component (hidden by default)
             Modal(
                 P("This is the default modal body content.", cls=TextT.gray), 
                 P("You can put any content here."),
+                # data_show=f'$show{modal_id} == true',
                 header=[
                     ModalTitle("Default Modal Header"),
                     ModalCloseButton(modal_id=modal_id) # Use the specific close button
@@ -27,7 +37,7 @@ def _modal_basic_section():
                     Button("Decline", cls=ButtonT.secondary, data_modal_toggle=modal_id),
                     cls="space-x-2"
                 ),
-                id=modal_id
+                id=modal_id,
             ),
             code=f'''from fastbite.all import Modal, ModalTitle, ModalCloseButton, Button, ButtonT, TextT, P, Div
 

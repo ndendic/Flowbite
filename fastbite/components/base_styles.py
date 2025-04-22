@@ -555,8 +555,9 @@ class SwitchT(VEnum):
 class ModalT(VEnum):
     """Modal styling variants for Flowbite components"""
     # Container styles
-    container = 'hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'
-    
+    # container = 'overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full bg-gray-900/50 dark:bg-gray-900/80'
+    container = 'fixed top-0 right-0 left-0 z-50 w-full h-full overflow-x-hidden overflow-y-auto md:inset-0 flex'
+    backdrop = 'bg-gray-900/50 dark:bg-gray-900/80'
     # Dialog styles
     dialog = 'relative p-4 w-full max-h-full'
     dialog_inner = 'relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
