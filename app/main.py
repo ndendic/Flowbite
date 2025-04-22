@@ -26,9 +26,9 @@ app, rt = fast_app(
         fastbite_hdrs,
         datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
-        HighlightJS(langs=["python", "javascript", "html", "css"]),
+        HighlightJS(langs=["python"]),
     ),
-    # ftrs=fastbite_ftrs,
+    ftrs=fastbite_ftrs,
     htmlkw=dict(data_theme="retro",cls="bg-white dark:bg-gray-950 text-gray-900 dark:text-white font-sans antialiased"),
     # exception_handlers={404: custom_404_handler},
 )

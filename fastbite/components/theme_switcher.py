@@ -39,16 +39,56 @@ def ThemeToggle() -> FT:
             Icon(
                 "lucide:moon",
                 id='theme-toggle-dark-icon',
-                cls='w-4 h-4'
+                cls='w-4 h-4 hidden'
             ),
             Icon(
                 "lucide:sun",
                 id='theme-toggle-light-icon',
                 cls='w-4 h-4 hidden'
             ),
-            Span('Toggle dark mode', cls='sr-only'),
+            fh.Span('Toggle dark mode', cls='sr-only'),
+            # fh.Script("""
+            #     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            #     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+            #     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            #         themeToggleLightIcon.classList.remove('hidden');
+            #     } else {
+            #         themeToggleDarkIcon.classList.remove('hidden');
+            #     }
+
+            #     var themeToggleBtn = document.getElementById('theme-toggle');
+
+            #     themeToggleBtn.addEventListener('click', function() {
+
+            #         // toggle icons inside button
+            #         themeToggleDarkIcon.classList.toggle('hidden');
+            #         themeToggleLightIcon.classList.toggle('hidden');
+
+            #         // if set via local storage previously
+            #         if (localStorage.getItem('color-theme')) {
+            #             if (localStorage.getItem('color-theme') === 'light') {
+            #                 document.documentElement.classList.add('dark');
+            #                 localStorage.setItem('color-theme', 'dark');
+            #             } else {
+            #                 document.documentElement.classList.remove('dark');
+            #                 localStorage.setItem('color-theme', 'light');
+            #             }
+
+            #         // if NOT set via local storage previously
+            #         } else {
+            #             if (document.documentElement.classList.contains('dark')) {
+            #                 document.documentElement.classList.remove('dark');
+            #                 localStorage.setItem('color-theme', 'light');
+            #             } else {
+            #                 document.documentElement.classList.add('dark');
+            #                 localStorage.setItem('color-theme', 'dark');
+            #             }
+            #         }
+                    
+            #     });"""
+            # ),
             id='theme-toggle',
-            data_tooltip_target='tooltip-toggle',
             type='button',
             cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
         )
@@ -127,59 +167,6 @@ def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = N
         cls=stringify(menu_cls)
     )
 
-    theme_script = fh.Script(f"""
-    // Theme switching functionality for {dropdown_id}
-    document.addEventListener('DOMContentLoaded', function() {{
-        const dropdownId = '{dropdown_id}';
-        const themeButtons = document.querySelectorAll(`#${{dropdownId}} button`);
-        
-        // Function to set theme
-        if (!window.setTheme) {{
-            window.setTheme = function(theme) {{
-                document.documentElement.setAttribute('data-theme', theme);
-                localStorage.setItem('theme', theme);
-                
-                // Update active indicators across all theme switchers
-                const allThemeButtons = document.querySelectorAll('[id^="theme-palette-dropdown-"] button');
-                allThemeButtons.forEach(btn => {{
-                    const onclickAttr = btn.getAttribute('onclick');
-                    const clickedTheme = onclickAttr ? onclickAttr.match(/'([^']+)'/)[1] : null;
-                    
-                    if (clickedTheme === theme) {{
-                        btn.classList.add('bg-gray-100', 'dark:bg-gray-600');
-                    }} else {{
-                        btn.classList.remove('bg-gray-100', 'dark:bg-gray-600');
-                    }}
-                }});
-            }};
-        }}
-
-        // Function to update active state for a specific dropdown
-        const updateActiveState = () => {{
-            const savedTheme = localStorage.getItem('theme') || 'none';
-            themeButtons.forEach(btn => {{
-                const onclickAttr = btn.getAttribute('onclick');
-                const themeValue = onclickAttr ? onclickAttr.match(/'([^']+)'/)[1] : null;
-                
-                if (themeValue === savedTheme) {{
-                    btn.classList.add('bg-gray-100', 'dark:bg-gray-600');
-                }} else {{
-                    btn.classList.remove('bg-gray-100', 'dark:bg-gray-600');
-                }}
-            }});
-        }};
-
-        // Initial active state update on page load
-        updateActiveState();
-        
-        // Optional: Add listener for storage changes if theme can be changed by other means
-        // window.addEventListener('storage', (event) => {{
-        //     if (event.key === 'theme') {{
-        //         updateActiveState();
-        //     }}
-        // }});
-    }});
-    """)
 
     return fh.Div(
         fh.Div(
@@ -187,6 +174,5 @@ def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = N
             dropdown_menu,
             cls="relative"
         ),
-        theme_script,
         **kwargs
     ) 

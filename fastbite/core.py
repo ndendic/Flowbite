@@ -17,11 +17,18 @@ fastbite_hdrs = (
     ),
     Script(src='https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js'),
     Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
-    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js")
+    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"),
+    Script("""
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+""")
 )
 
 fastbite_ftrs = [
-    Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"), 
+    # Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"), 
     Script(NotStr("""
     document.addEventListener('DOMContentLoaded', function() {
         // Theme toggle functionality
