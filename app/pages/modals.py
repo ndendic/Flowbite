@@ -11,18 +11,6 @@ def _modal_basic_section():
         P("The ", Code("Modal"), " component provides a convenient way to create modals with header, body, and footer sections. It uses Flowbite's JavaScript for toggling visibility."),
         P("You need a trigger element (like a button) with ", Code(f'data_modal_target="{modal_id}"'), " and ", Code(f'data_modal_toggle="{modal_id}"'), " attributes."),
         component_showcase(
-            # Trigger Button
-            Button("Toggle Basic Modal",                                
-                #    data_modal_target=f'{modal_id}', 
-                #    data_modal_toggle=modal_id),
-                   data_signals=f'{{show{modal_id}: false}}',
-                   data_on_click=f'$show{modal_id} = !$show{modal_id}'
-                   ),
-            Div(
-                "Controling this on the modal component",
-                data_show=f'$show{modal_id} == true',
-                cls="mt-4 bg-red-500"
-            ),
             # Modal Component (hidden by default)
             Modal(
                 P("This is the default modal body content.", cls=TextT.gray), 
@@ -33,35 +21,34 @@ def _modal_basic_section():
                     ModalCloseButton(modal_id=modal_id) # Use the specific close button
                 ],
                 footer=Div(
-                    Button("Accept", cls=ButtonT.primary, data_modal_toggle=modal_id), # Use toggle to close
-                    Button("Decline", cls=ButtonT.secondary, data_modal_toggle=modal_id),
+                    Button("Accept", cls=ButtonT.primary, data_on_click=f'$show{modal_id} = !$show{modal_id}'), # Use toggle to close
+                    Button("Decline", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
                     cls="space-x-2"
                 ),
                 id=modal_id,
             ),
-            code=f'''from fastbite.all import Modal, ModalTitle, ModalCloseButton, Button, ButtonT, TextT, P, Div
-
-modal_id = "{modal_id}"
-
-# Trigger Button
-Button("Toggle Basic Modal", 
-       data_modal_target=f'{{modal_id}}', 
-       data_modal_toggle='{modal_id}')
-
-# Modal Component
-Modal(
-    P("This is the default modal body content.", cls=TextT.gray), 
+            # Trigger Button            
+            Button("Toggle Basic Modal",                                
+                   data_on_click=f'$show{modal_id} = !$show{modal_id}'
+                   ),
+            code=f'''Modal(
+P("This is the default modal body content.", cls=TextT.gray), 
     P("You can put any content here."),
+    # data_show=f'$show{modal_id} == true',
     header=[
         ModalTitle("Default Modal Header"),
-        ModalCloseButton(modal_id=modal_id)
+        ModalCloseButton(modal_id=modal_id) # Use the specific close button
     ],
     footer=Div(
-        Button("Accept", cls=ButtonT.primary, data_modal_toggle=modal_id),
-        Button("Decline", cls=ButtonT.secondary, data_modal_toggle=modal_id),
+        Button("Accept", cls=ButtonT.primary, data_on_click=f'$show{modal_id} = !$show{modal_id}'), # Use toggle to close
+        Button("Decline", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
         cls="space-x-2"
     ),
-    id=modal_id
+    id=modal_id,
+),
+# Trigger Button            
+Button("Toggle Basic Modal",                                
+       data_on_click=f'$show{modal_id} = !$show{modal_id}'
 )
 ''',
             id="modal-basic-showcase"
@@ -85,25 +72,24 @@ def _modal_sizing_section():
     }
     
     for name, size_cls in sizes.items():
-        modal_id = f"modal-size-{name}"
+        modal_id = f"modalSize{name}"
         section_content.extend([
             H3(f"{name.upper()} Modal", link=True, cls="mb-3"),
-            component_showcase(
-                # Trigger Button
-                Button(f"Toggle {name.upper()} Modal", 
-                       data_modal_target=f'{modal_id}', 
-                       data_modal_toggle=modal_id),
+            component_showcase(                
                 # Modal Component
                 Modal(
-                    P(f"This modal uses ", Code(f"dialog_cls=ModalT.{name}"), f" resulting in the '{size_cls}' class."),
+                    P("This modal uses ", Code(f"dialog_cls=ModalT.{name}"), f" resulting in the '{size_cls}' class."),
                     header=[
                         ModalTitle(f"{name.upper()} Modal Example"),
                         ModalCloseButton(modal_id=modal_id)
                     ],
-                    footer=Button("Close", cls=ButtonT.secondary, data_modal_toggle=modal_id),
+                    footer=Button("Close", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
                     id=modal_id,
                     dialog_cls=size_cls
                 ),
+                # Trigger Button
+                Button(f"Toggle {name.upper()} Modal", 
+                       data_on_click=f'$show{modal_id} = !$show{modal_id}'),
                 code=f'''from fastbite.all import Modal, ModalT, ModalTitle, ModalCloseButton, Button, ButtonT, P
 
 modal_id = "{modal_id}"
@@ -148,28 +134,27 @@ def _modal_placement_section():
     }
     
     for name, placement_cls in placements.items():
-        modal_id = f"modal-placement-{name.replace('-', '_')}"
+        modal_id = f"modalPlacement{name.replace('-', '_')}"
         name_title = name.replace('-', ' ').title()
         name_code = name.replace('-', '_')
         section_content.extend([
             H3(f"{name_title} Placement", link=True, cls="mb-3"),
-            component_showcase(
-                # Trigger Button
-                Button(f"Toggle {name_title} Modal", 
-                       data_modal_target=f'{modal_id}', 
-                       data_modal_toggle=modal_id),
+            component_showcase(                
                 # Modal Component
                 Modal(
-                    P(f"This modal uses ", Code(f"placement=ModalT.{name_code}"), f" resulting in the '{placement_cls}' class on the container."),
+                    P("This modal uses ", Code(f"placement=ModalT.{name_code}"), f" resulting in the '{placement_cls}' class on the container."),
                     header=[
                         ModalTitle(f"{name_title} Placement Example"),
                         ModalCloseButton(modal_id=modal_id)
                     ],
-                    footer=Button("Close", cls=ButtonT.secondary, data_modal_toggle=modal_id),
+                    footer=Button("Close", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
                     id=modal_id,
                     placement=placement_cls,
                     dialog_cls=ModalT.md # Use a smaller size for placement demo
                 ),
+                # Trigger Button
+                Button(f"Toggle {name_title} Modal", 
+                       data_on_click=f'$show{modal_id} = !$show{modal_id}'),
                 code=f'''from fastbite.all import Modal, ModalT, ModalTitle, ModalCloseButton, Button, ButtonT, P
 
 modal_id = "{modal_id}"
