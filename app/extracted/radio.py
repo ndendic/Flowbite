@@ -208,7 +208,7 @@ component = Div(
             ),
             cls='w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600'
         ),
-        cls='w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='w-48 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 ), code="""Div(
     H3('Identification', cls='mb-4 font-semibold text-gray-900 dark:text-white'),
@@ -245,7 +245,7 @@ component = Div(
             ),
             cls='w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600'
         ),
-        cls='w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='w-48 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -290,7 +290,7 @@ component = Div(
             ),
             cls='w-full dark:border-gray-600'
         ),
-        cls='items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='items-center w-full text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 ), code="""Div(
     H3('Identification', cls='mb-4 font-semibold text-gray-900 dark:text-white'),
@@ -327,7 +327,7 @@ component = Div(
             ),
             cls='w-full dark:border-gray-600'
         ),
-        cls='items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='items-center w-full text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     Div(
@@ -446,7 +446,7 @@ component = Div(
         data_popper_escaped=True,
         data_popper_placement='top',
         style='position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -528,7 +528,7 @@ component = Div(
         data_popper_escaped=True,
         data_popper_placement='top',
         style='position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -618,7 +618,7 @@ component = Div(
                     cls='w-5 h-5 ms-3 rtl:rotate-180'
                 ),
                 fr='hosting-small',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -638,7 +638,7 @@ component = Div(
                     cls='w-5 h-5 ms-3 rtl:rotate-180'
                 ),
                 fr='hosting-big',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         cls='grid w-full gap-6 md:grid-cols-2'
@@ -663,7 +663,7 @@ component = Div(
                     cls='w-5 h-5 ms-3 rtl:rotate-180'
                 ),
                 fr='hosting-small',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -683,7 +683,7 @@ component = Div(
                     cls='w-5 h-5 ms-3 rtl:rotate-180'
                 ),
                 fr='hosting-big',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         cls='grid w-full gap-6 md:grid-cols-2'

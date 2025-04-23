@@ -938,7 +938,7 @@ component = Div(
         ),
         id='accordion-flush',
         data_accordion='collapse',
-        data_active_classes='bg-white dark:bg-gray-900 text-gray-900 dark:text-white',
+        data_active_classes='bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white',
         data_inactive_classes='text-gray-500 dark:text-gray-400'
     )
 ), code="""Div(
@@ -1055,7 +1055,7 @@ component = Div(
         ),
         id='accordion-flush',
         data_accordion='collapse',
-        data_active_classes='bg-white dark:bg-gray-900 text-gray-900 dark:text-white',
+        data_active_classes='bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white',
         data_inactive_classes='text-gray-500 dark:text-gray-400'
     )
 )""", id="example_3",cls='mt-2 mb-6'),

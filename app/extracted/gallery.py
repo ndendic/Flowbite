@@ -385,7 +385,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -402,7 +402,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -453,7 +453,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -470,7 +470,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -669,11 +669,11 @@ component = Div(
     P('Use this example to show a list of tags and filter the images below based on the activately selected tag.'),
     component_showcase(Div(
     Div(
-        Button('All categories', type='button', cls='text-primary-700 hover:text-white border border-primary-600 bg-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-500 dark:bg-gray-900 dark:focus:ring-primary-800'),
-        Button('Shoes', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Bags', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Electronics', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Gaming', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('All categories', type='button', cls='text-primary-700 hover:text-white border border-primary-600 bg-gray-50 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-500 dark:bg-gray-900 dark:focus:ring-primary-800'),
+        Button('Shoes', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Bags', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Electronics', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Gaming', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
         cls='flex items-center justify-center py-4 md:py-8 flex-wrap'
     ),
     Div(
@@ -717,11 +717,11 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        Button('All categories', type='button', cls='text-primary-700 hover:text-white border border-primary-600 bg-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-500 dark:bg-gray-900 dark:focus:ring-primary-800'),
-        Button('Shoes', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Bags', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Electronics', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
-        Button('Gaming', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('All categories', type='button', cls='text-primary-700 hover:text-white border border-primary-600 bg-gray-50 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-500 dark:bg-gray-900 dark:focus:ring-primary-800'),
+        Button('Shoes', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Bags', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Electronics', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
+        Button('Gaming', type='button', cls='text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'),
         cls='flex items-center justify-center py-4 md:py-8 flex-wrap'
     ),
     Div(

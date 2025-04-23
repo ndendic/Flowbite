@@ -17,14 +17,14 @@ component = Div(
         H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
         P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='font-normal text-gray-700 dark:text-gray-400'),
         href='#',
-        cls='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+        cls='block max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
     )
 ), code="""Div(
     A(
         H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
         P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='font-normal text-gray-700 dark:text-gray-400'),
         href='#',
-        cls='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+        cls='block max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -54,7 +54,7 @@ component = Div(
             href='#',
             cls='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
         ),
-        cls='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -76,7 +76,7 @@ component = Div(
             href='#',
             cls='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
         ),
-        cls='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -114,7 +114,7 @@ component = Div(
             href='#',
             cls='inline-flex font-medium items-center text-primary-600 hover:underline'
         ),
-        cls='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -144,7 +144,7 @@ component = Div(
             href='#',
             cls='inline-flex font-medium items-center text-primary-600 hover:underline'
         ),
-        cls='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -181,7 +181,7 @@ component = Div(
             ),
             cls='p-5'
         ),
-        cls='max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -210,7 +210,7 @@ component = Div(
             ),
             cls='p-5'
         ),
-        cls='max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -229,7 +229,7 @@ component = Div(
             cls='flex flex-col justify-between p-4 leading-normal'
         ),
         href='#',
-        cls='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+        cls='flex flex-col items-center bg-gray-50 border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
     )
 ), code="""Div(
     A(
@@ -240,7 +240,7 @@ component = Div(
             cls='flex flex-col justify-between p-4 leading-normal'
         ),
         href='#',
-        cls='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+        cls='flex flex-col items-center bg-gray-50 border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -283,7 +283,7 @@ component = Div(
                     cls='py-2'
                 ),
                 id='dropdown',
-                cls='z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             ),
             cls='flex justify-end px-4 pt-4'
         ),
@@ -293,12 +293,12 @@ component = Div(
             Span('Visual Designer', cls='text-sm text-gray-500 dark:text-gray-400'),
             Div(
                 A('Add friend', href='#', cls='inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                A('Message', href='#', cls='py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                A('Message', href='#', cls='py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 cls='flex mt-4 md:mt-6'
             ),
             cls='flex flex-col items-center pb-10'
         ),
-        cls='w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -333,7 +333,7 @@ component = Div(
                     cls='py-2'
                 ),
                 id='dropdown',
-                cls='z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             ),
             cls='flex justify-end px-4 pt-4'
         ),
@@ -343,12 +343,12 @@ component = Div(
             Span('Visual Designer', cls='text-sm text-gray-500 dark:text-gray-400'),
             Div(
                 A('Add friend', href='#', cls='inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                A('Message', href='#', cls='py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                A('Message', href='#', cls='py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 cls='flex mt-4 md:mt-6'
             ),
             cls='flex flex-col items-center pb-10'
         ),
-        cls='w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -391,7 +391,7 @@ component = Div(
             action='#',
             cls='space-y-6'
         ),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -426,7 +426,7 @@ component = Div(
             action='#',
             cls='space-y-6'
         ),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(
@@ -501,7 +501,7 @@ component = Div(
             ),
             cls='px-5 pb-5'
         ),
-        cls='w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -568,7 +568,7 @@ component = Div(
             ),
             cls='px-5 pb-5'
         ),
-        cls='w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -625,7 +625,7 @@ component = Div(
             ),
             cls='items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse'
         ),
-        cls='w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full p-4 text-center bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -674,7 +674,7 @@ component = Div(
             ),
             cls='items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse'
         ),
-        cls='w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full p-4 text-center bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H2(
@@ -724,7 +724,7 @@ component = Div(
                 id='about',
                 role='tabpanel',
                 aria_labelledby='about-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 H2('We invest in the worldâ\x80\x99s potential', cls='mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'),
@@ -783,7 +783,7 @@ component = Div(
                 id='services',
                 role='tabpanel',
                 aria_labelledby='services-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 Dl(
@@ -807,11 +807,11 @@ component = Div(
                 id='statistics',
                 role='tabpanel',
                 aria_labelledby='statistics-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             id='defaultTabContent'
         ),
-        cls='w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -853,7 +853,7 @@ component = Div(
                 id='about',
                 role='tabpanel',
                 aria_labelledby='about-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 H2('We invest in the worldâ\x80\x99s potential', cls='mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'),
@@ -912,7 +912,7 @@ component = Div(
                 id='services',
                 role='tabpanel',
                 aria_labelledby='services-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 Dl(
@@ -936,11 +936,11 @@ component = Div(
                 id='statistics',
                 role='tabpanel',
                 aria_labelledby='statistics-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             id='defaultTabContent'
         ),
-        cls='w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     H2(
@@ -1019,7 +1019,7 @@ component = Div(
                 id='stats',
                 role='tabpanel',
                 aria_labelledby='stats-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 H2('We invest in the worldâ\x80\x99s potential', cls='mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'),
@@ -1078,7 +1078,7 @@ component = Div(
                 id='about',
                 role='tabpanel',
                 aria_labelledby='about-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 Div(
@@ -1194,18 +1194,18 @@ component = Div(
                     ),
                     id='accordion-flush',
                     data_accordion='collapse',
-                    data_active_classes='bg-white dark:bg-gray-800 text-gray-900 dark:text-white',
+                    data_active_classes='bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white',
                     data_inactive_classes='text-gray-500 dark:text-gray-400'
                 ),
                 id='faq',
                 role='tabpanel',
                 aria_labelledby='faq-tab',
-                cls='hidden p-4 bg-white rounded-lg dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800'
             ),
             id='fullWidthTabContent',
             cls='border-t border-gray-200 dark:border-gray-600'
         ),
-        cls='w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -1276,7 +1276,7 @@ component = Div(
                 id='stats',
                 role='tabpanel',
                 aria_labelledby='stats-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 H2('We invest in the worldâ\x80\x99s potential', cls='mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'),
@@ -1335,7 +1335,7 @@ component = Div(
                 id='about',
                 role='tabpanel',
                 aria_labelledby='about-tab',
-                cls='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800'
             ),
             Div(
                 Div(
@@ -1451,18 +1451,18 @@ component = Div(
                     ),
                     id='accordion-flush',
                     data_accordion='collapse',
-                    data_active_classes='bg-white dark:bg-gray-800 text-gray-900 dark:text-white',
+                    data_active_classes='bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white',
                     data_inactive_classes='text-gray-500 dark:text-gray-400'
                 ),
                 id='faq',
                 role='tabpanel',
                 aria_labelledby='faq-tab',
-                cls='hidden p-4 bg-white rounded-lg dark:bg-gray-800'
+                cls='hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800'
             ),
             id='fullWidthTabContent',
             cls='border-t border-gray-200 dark:border-gray-600'
         ),
-        cls='w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full bg-gray-50 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_10",cls='mt-2 mb-6'),
     H2(
@@ -1566,7 +1566,7 @@ component = Div(
             ),
             cls='flow-root'
         ),
-        cls='w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-md p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -1662,7 +1662,7 @@ component = Div(
             ),
             cls='flow-root'
         ),
-        cls='w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-md p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_11",cls='mt-2 mb-6'),
     H2(
@@ -1770,7 +1770,7 @@ component = Div(
             cls='space-y-5 my-7'
         ),
         Button('Choose plan', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-200 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center'),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -1870,7 +1870,7 @@ component = Div(
             cls='space-y-5 my-7'
         ),
         Button('Choose plan', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-200 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center'),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_12",cls='mt-2 mb-6'),
     H2(
@@ -1897,7 +1897,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -1914,7 +1914,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -1931,7 +1931,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -1948,9 +1948,9 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
         ),
-        cls='grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800'
+        cls='grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-gray-50 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1969,7 +1969,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -1986,7 +1986,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -2003,7 +2003,7 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700'
         ),
         Figure(
             Blockquote(
@@ -2020,9 +2020,9 @@ component = Div(
                 ),
                 cls='flex items-center justify-center'
             ),
-            cls='flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
+            cls='flex flex-col items-center justify-center p-8 text-center bg-gray-50 border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700'
         ),
-        cls='grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800'
+        cls='grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-gray-50 dark:bg-gray-800'
     )
 )""", id="example_13",cls='mt-2 mb-6'),
     H2(
@@ -2145,7 +2145,7 @@ component = Div(
                 cls='inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400'
             )
         ),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -2259,7 +2259,7 @@ component = Div(
                 cls='inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400'
             )
         ),
-        cls='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700'
+        cls='w-full max-w-sm p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_14",cls='mt-2 mb-6'),
     id='mainContent'

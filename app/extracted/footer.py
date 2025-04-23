@@ -39,7 +39,7 @@ component = Div(
             ),
             cls='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'
         ),
-        cls='bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800'
+        cls='bg-gray-50 rounded-lg shadow-sm m-4 dark:bg-gray-800'
     )
 ), code="""Div(
     Footer(
@@ -67,7 +67,7 @@ component = Div(
             ),
             cls='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'
         ),
-        cls='bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800'
+        cls='bg-gray-50 rounded-lg shadow-sm m-4 dark:bg-gray-800'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -113,7 +113,7 @@ component = Div(
             ),
             cls='w-full max-w-screen-xl mx-auto p-4 md:py-8'
         ),
-        cls='bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4'
+        cls='bg-gray-50 rounded-lg shadow-sm dark:bg-gray-900 m-4'
     )
 ), code="""Div(
     Footer(
@@ -151,7 +151,7 @@ component = Div(
             ),
             cls='w-full max-w-screen-xl mx-auto p-4 md:py-8'
         ),
-        cls='bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4'
+        cls='bg-gray-50 rounded-lg shadow-sm dark:bg-gray-900 m-4'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -298,7 +298,7 @@ component = Div(
             ),
             cls='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 ), code="""Div(
     Footer(
@@ -437,7 +437,7 @@ component = Div(
             ),
             cls='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -616,7 +616,7 @@ component = Div(
             ),
             cls='mx-auto w-full max-w-screen-xl'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 ), code="""Div(
     Footer(
@@ -787,7 +787,7 @@ component = Div(
             ),
             cls='mx-auto w-full max-w-screen-xl'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -820,7 +820,7 @@ component = Div(
             ),
             cls='flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0'
         ),
-        cls='fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-20 w-full p-4 bg-gray-50 border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600'
     )
 ), code="""Div(
     Footer(
@@ -845,7 +845,7 @@ component = Div(
             ),
             cls='flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0'
         ),
-        cls='fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-20 w-full p-4 bg-gray-50 border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(

@@ -321,7 +321,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             )
         ),
         aria_label='Breadcrumb',
@@ -407,7 +407,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             )
         ),
         aria_label='Breadcrumb',
@@ -446,7 +446,7 @@ component = Div(
                         ),
                         id='dropdownProject',
                         data_dropdown_toggle='dropdown-project',
-                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
+                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
                     ),
                     Div(
                         Ul(
@@ -463,7 +463,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-project',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     ),
                     cls='flex items-center'
                 )
@@ -491,7 +491,7 @@ component = Div(
                         ),
                         id='dropdownDatabase',
                         data_dropdown_toggle='dropdown-database',
-                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
+                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
                     ),
                     Div(
                         Ul(
@@ -508,7 +508,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-database',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     ),
                     cls='flex items-center'
                 ),
@@ -544,7 +544,7 @@ component = Div(
                         ),
                         id='dropdownProject',
                         data_dropdown_toggle='dropdown-project',
-                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
+                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
                     ),
                     Div(
                         Ul(
@@ -561,7 +561,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-project',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     ),
                     cls='flex items-center'
                 )
@@ -589,7 +589,7 @@ component = Div(
                         ),
                         id='dropdownDatabase',
                         data_dropdown_toggle='dropdown-database',
-                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
+                        cls='inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700'
                     ),
                     Div(
                         Ul(
@@ -606,7 +606,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-database',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     ),
                     cls='flex items-center'
                 ),

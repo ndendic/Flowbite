@@ -167,7 +167,7 @@ def NavBar(*c,
             right_cls:Enum|str|tuple='items-center space-x-4', # Spacing for desktop links
             mobile_cls:Enum|str|tuple='space-y-4', # Spacing for mobile links
             sticky:bool=False, # Whether to stick to the top of the page while scrolling
-            cls:Enum|str|tuple='bg-white border-gray-200 dark:bg-gray-900', # Classes for navbar
+            cls:Enum|str|tuple='bg-gray-50 border-gray-200 dark:bg-gray-900', # Classes for navbar
             menu_id=None, # ID for menu container (used for mobile toggle)
            ) ->FT:
     if menu_id is None: menu_id = fh.unqid()
@@ -179,7 +179,7 @@ def NavBar(*c,
             Icon('lucide:menu')
         ),
         fh.Div(id=menu_id, cls='hidden w-full md:block md:w-auto')(
-            fh.Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(
+            fh.Ul(cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')(
                 *c,
             )
         )

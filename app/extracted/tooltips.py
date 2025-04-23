@@ -62,7 +62,7 @@ component = Div(
         Div(data_popper_arrow=True, cls='tooltip-arrow'),
         id='tooltip-light',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip'
+        cls='absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip'
     ),
     Button('Dark tooltip', data_tooltip_target='tooltip-dark', type='button', cls='ms-3 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -79,7 +79,7 @@ component = Div(
         Div(data_popper_arrow=True, cls='tooltip-arrow'),
         id='tooltip-light',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip'
+        cls='absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 tooltip'
     ),
     Button('Dark tooltip', data_tooltip_target='tooltip-dark', type='button', cls='ms-3 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(

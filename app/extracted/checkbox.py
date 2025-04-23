@@ -208,7 +208,7 @@ component = Div(
             ),
             cls='w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600'
         ),
-        cls='w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='w-48 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 ), code="""Div(
     H3('Technology', cls='mb-4 font-semibold text-gray-900 dark:text-white'),
@@ -245,7 +245,7 @@ component = Div(
             ),
             cls='w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600'
         ),
-        cls='w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='w-48 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -290,7 +290,7 @@ component = Div(
             ),
             cls='w-full dark:border-gray-600'
         ),
-        cls='items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='items-center w-full text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 ), code="""Div(
     H3('Identification', cls='mb-4 font-semibold text-gray-900 dark:text-white'),
@@ -327,7 +327,7 @@ component = Div(
             ),
             cls='w-full dark:border-gray-600'
         ),
-        cls='items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
+        cls='items-center w-full text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     Div(
@@ -469,7 +469,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline'
         ),
         id='dropdownSearch',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -574,7 +574,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline'
         ),
         id='dropdownSearch',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -738,7 +738,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='react-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -758,7 +758,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='flowbite-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -778,7 +778,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='angular-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         cls='grid w-full gap-6 md:grid-cols-3'
@@ -803,7 +803,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='react-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -823,7 +823,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='flowbite-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         Li(
@@ -843,7 +843,7 @@ component = Div(
                     cls='block'
                 ),
                 fr='angular-option',
-                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-between w-full p-5 text-gray-500 bg-gray-50 border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'
             )
         ),
         cls='grid w-full gap-6 md:grid-cols-3'

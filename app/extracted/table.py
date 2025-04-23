@@ -31,21 +31,21 @@ component = Div(
                     Td('Silver', cls='px-6 py-4'),
                     Td('Laptop', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('White', cls='px-6 py-4'),
                     Td('Laptop PC', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('Black', cls='px-6 py-4'),
                     Td('Accessories', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -70,21 +70,21 @@ component = Div(
                     Td('Silver', cls='px-6 py-4'),
                     Td('Laptop', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('White', cls='px-6 py-4'),
                     Td('Laptop PC', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('Black', cls='px-6 py-4'),
                     Td('Accessories', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -129,7 +129,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -140,7 +140,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -151,7 +151,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Google Pixel Phone', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -162,7 +162,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Apple Watch 5', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -202,7 +202,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -213,7 +213,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -224,7 +224,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Google Pixel Phone', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -235,7 +235,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
+                    cls='odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Apple Watch 5', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -403,7 +403,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -414,7 +414,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -425,7 +425,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -459,7 +459,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -470,7 +470,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -481,7 +481,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -584,7 +584,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -595,7 +595,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -606,7 +606,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -694,7 +694,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -705,7 +705,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -716,7 +716,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -751,19 +751,19 @@ component = Div(
                     Th('Apple MacBook Pro 17"', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             Tfoot(
@@ -794,19 +794,19 @@ component = Div(
                     Th('Apple MacBook Pro 17"', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('1', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             Tfoot(
@@ -835,7 +835,7 @@ component = Div(
             Caption(
                 'Our products',
                 P('Browse a list of Fastbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
-                cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800'
+                cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-gray-50 dark:text-white dark:bg-gray-800'
             ),
             Thead(
                 Tr(
@@ -861,7 +861,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -872,7 +872,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -883,7 +883,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -896,7 +896,7 @@ component = Div(
             Caption(
                 'Our products',
                 P('Browse a list of Fastbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.', cls='mt-1 text-sm font-normal text-gray-500 dark:text-gray-400'),
-                cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800'
+                cls='p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-gray-50 dark:text-white dark:bg-gray-800'
             ),
             Thead(
                 Tr(
@@ -922,7 +922,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -933,7 +933,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -944,7 +944,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4 text-right'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -984,21 +984,21 @@ component = Div(
                     Td('Silver', cls='px-6 py-4'),
                     Td('Laptop', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('White', cls='px-6 py-4'),
                     Td('Laptop PC', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('Black', cls='px-6 py-4'),
                     Td('Accessories', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1023,21 +1023,21 @@ component = Div(
                     Td('Silver', cls='px-6 py-4'),
                     Td('Laptop', cls='px-6 py-4'),
                     Td('$2999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('White', cls='px-6 py-4'),
                     Td('Laptop PC', cls='px-6 py-4'),
                     Td('$1999', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
                     Td('Black', cls='px-6 py-4'),
                     Td('Accessories', cls='px-6 py-4'),
                     Td('$99', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1075,7 +1075,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -1086,7 +1086,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -1097,7 +1097,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1127,7 +1127,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Microsoft Surface Pro', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -1138,7 +1138,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200'
                 ),
                 Tr(
                     Th('Magic Mouse 2', scope='row', cls='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'),
@@ -1149,7 +1149,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800'
+                    cls='bg-gray-50 dark:bg-gray-800'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1215,7 +1215,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1238,7 +1238,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1261,7 +1261,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1284,7 +1284,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1307,7 +1307,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1330,7 +1330,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1353,7 +1353,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1376,7 +1376,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1399,7 +1399,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1422,7 +1422,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1476,7 +1476,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1499,7 +1499,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1522,7 +1522,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1545,7 +1545,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1568,7 +1568,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1591,7 +1591,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1614,7 +1614,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1637,7 +1637,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1660,7 +1660,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1683,7 +1683,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline ms-3'),
                         cls='flex items-center px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1717,7 +1717,7 @@ component = Div(
                 Input(type='text', id='table-search', placeholder='Search for items', cls='block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative mt-1'
             ),
-            cls='pb-4 bg-white dark:bg-gray-900'
+            cls='pb-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -1757,7 +1757,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1776,7 +1776,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1795,7 +1795,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1814,7 +1814,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1833,7 +1833,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1852,7 +1852,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -1878,7 +1878,7 @@ component = Div(
                 Input(type='text', id='table-search', placeholder='Search for items', cls='block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative mt-1'
             ),
-            cls='pb-4 bg-white dark:bg-gray-900'
+            cls='pb-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -1918,7 +1918,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1937,7 +1937,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1956,7 +1956,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1975,7 +1975,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -1994,7 +1994,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2013,7 +2013,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -2082,7 +2082,7 @@ component = Div(
                     id='dropdownRadioButton',
                     data_dropdown_toggle='dropdownRadio',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -2129,7 +2129,7 @@ component = Div(
                     data_popper_escaped=True,
                     data_popper_placement='top',
                     style='position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 3847.5px, 0px);',
-                    cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -2188,7 +2188,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2207,7 +2207,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2226,7 +2226,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2245,7 +2245,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2264,7 +2264,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2283,7 +2283,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -2315,7 +2315,7 @@ component = Div(
                     id='dropdownRadioButton',
                     data_dropdown_toggle='dropdownRadio',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -2362,7 +2362,7 @@ component = Div(
                     data_popper_escaped=True,
                     data_popper_placement='top',
                     style='position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 3847.5px, 0px);',
-                    cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -2421,7 +2421,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2440,7 +2440,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2459,7 +2459,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2478,7 +2478,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2497,7 +2497,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2516,7 +2516,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -2571,7 +2571,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2590,7 +2590,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2609,7 +2609,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2628,7 +2628,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2647,7 +2647,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2666,7 +2666,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2685,7 +2685,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2704,7 +2704,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2723,7 +2723,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2742,7 +2742,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -2757,25 +2757,25 @@ component = Div(
             ),
             Ul(
                 Li(
-                    A('Previous', href='#', cls='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('Previous', href='#', cls='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('1', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('1', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('2', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('2', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
                     A('3', href='#', aria_current='page', cls='flex items-center justify-center px-3 h-8 text-primary-600 border border-gray-300 bg-primary-50 hover:bg-primary-100 hover:text-primary-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white')
                 ),
                 Li(
-                    A('4', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('4', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('5', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('5', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('Next', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('Next', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 cls='inline-flex -space-x-px rtl:space-x-reverse text-sm h-8'
             ),
@@ -2824,7 +2824,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2843,7 +2843,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2862,7 +2862,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2881,7 +2881,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2900,7 +2900,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2919,7 +2919,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2938,7 +2938,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2957,7 +2957,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2976,7 +2976,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -2995,7 +2995,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -3010,25 +3010,25 @@ component = Div(
             ),
             Ul(
                 Li(
-                    A('Previous', href='#', cls='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('Previous', href='#', cls='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('1', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('1', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('2', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('2', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
                     A('3', href='#', aria_current='page', cls='flex items-center justify-center px-3 h-8 text-primary-600 border border-gray-300 bg-primary-50 hover:bg-primary-100 hover:text-primary-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white')
                 ),
                 Li(
-                    A('4', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('4', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('5', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('5', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 Li(
-                    A('Next', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
+                    A('Next', href='#', cls='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white')
                 ),
                 cls='inline-flex -space-x-px rtl:space-x-reverse text-sm h-8'
             ),
@@ -3085,7 +3085,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3104,7 +3104,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3123,7 +3123,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3142,7 +3142,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3161,7 +3161,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3180,7 +3180,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -3227,7 +3227,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3246,7 +3246,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3265,7 +3265,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3284,7 +3284,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3303,7 +3303,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3322,7 +3322,7 @@ component = Div(
                         A('Edit', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -3384,7 +3384,7 @@ component = Div(
                     id='dropdownActionButton',
                     data_dropdown_toggle='dropdownAction',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -3405,7 +3405,7 @@ component = Div(
                         cls='py-1'
                     ),
                     id='dropdownAction',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -3424,7 +3424,7 @@ component = Div(
                 Input(type='text', id='table-search-users', placeholder='Search for users', cls='block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative'
             ),
-            cls='flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900'
+            cls='flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -3478,7 +3478,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3512,7 +3512,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3546,7 +3546,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3580,7 +3580,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3614,7 +3614,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -3639,7 +3639,7 @@ component = Div(
                     id='dropdownActionButton',
                     data_dropdown_toggle='dropdownAction',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -3660,7 +3660,7 @@ component = Div(
                         cls='py-1'
                     ),
                     id='dropdownAction',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -3679,7 +3679,7 @@ component = Div(
                 Input(type='text', id='table-search-users', placeholder='Search for users', cls='block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative'
             ),
-            cls='flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900'
+            cls='flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -3733,7 +3733,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3767,7 +3767,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3801,7 +3801,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3835,7 +3835,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3869,7 +3869,7 @@ component = Div(
                         A('Edit user', href='#', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -3921,7 +3921,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
@@ -3937,7 +3937,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -3948,7 +3948,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -3969,7 +3969,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
@@ -3986,7 +3986,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -3997,7 +3997,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4018,7 +4018,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
@@ -4035,7 +4035,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -4046,7 +4046,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -4090,7 +4090,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
@@ -4106,7 +4106,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -4117,7 +4117,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4138,7 +4138,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
@@ -4155,7 +4155,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -4166,7 +4166,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4187,7 +4187,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             Div(
                                 Input(type='number', id='first_product', placeholder='1', required=True, cls='bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
@@ -4204,7 +4204,7 @@ component = Div(
                                     cls='w-3 h-3'
                                 ),
                                 type='button',
-                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                                cls='inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-gray-50 border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                             ),
                             cls='flex items-center'
                         ),
@@ -4215,7 +4215,7 @@ component = Div(
                         A('Remove', href='#', cls='font-medium text-red-600 dark:text-red-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -4277,7 +4277,7 @@ component = Div(
                     id='dropdownActionButton',
                     data_dropdown_toggle='dropdownAction',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -4298,7 +4298,7 @@ component = Div(
                         cls='py-1'
                     ),
                     id='dropdownAction',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -4317,7 +4317,7 @@ component = Div(
                 Input(type='text', id='table-search-users', placeholder='Search for users', cls='block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative'
             ),
-            cls='flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900'
+            cls='flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -4371,7 +4371,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_target='editUserModal', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4405,7 +4405,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4439,7 +4439,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4473,7 +4473,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4507,7 +4507,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -4583,7 +4583,7 @@ component = Div(
                         Button('Save all', type='submit', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                         cls='flex items-center p-6 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                     ),
-                    cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                    cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
                 ),
                 cls='relative w-full max-w-2xl max-h-full'
             ),
@@ -4612,7 +4612,7 @@ component = Div(
                     id='dropdownActionButton',
                     data_dropdown_toggle='dropdownAction',
                     type='button',
-                    cls='inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+                    cls='inline-flex items-center text-gray-500 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
                 ),
                 Div(
                     Ul(
@@ -4633,7 +4633,7 @@ component = Div(
                         cls='py-1'
                     ),
                     id='dropdownAction',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                 )
             ),
             Label('Search', fr='table-search', cls='sr-only'),
@@ -4652,7 +4652,7 @@ component = Div(
                 Input(type='text', id='table-search-users', placeholder='Search for users', cls='block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                 cls='relative'
             ),
-            cls='flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900'
+            cls='flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-gray-50 dark:bg-gray-900'
         ),
         Table(
             Thead(
@@ -4706,7 +4706,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_target='editUserModal', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4740,7 +4740,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4774,7 +4774,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4808,7 +4808,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600'
                 ),
                 Tr(
                     Td(
@@ -4842,7 +4842,7 @@ component = Div(
                         A('Edit user', href='#', type='button', data_modal_show='editUserModal', cls='font-medium text-primary-600 dark:text-primary-500 hover:underline'),
                         cls='px-6 py-4'
                     ),
-                    cls='bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
+                    cls='bg-gray-50 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -4918,7 +4918,7 @@ component = Div(
                         Button('Save all', type='submit', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                         cls='flex items-center p-6 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                     ),
-                    cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                    cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
                 ),
                 cls='relative w-full max-w-2xl max-h-full'
             ),

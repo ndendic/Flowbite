@@ -32,20 +32,20 @@ def _modal_basic_section():
                    data_on_click=f'$show{modal_id} = !$show{modal_id}'
                    ),
             code=f'''Modal(
-P("This is the default modal body content.", cls=TextT.gray), 
-    P("You can put any content here."),
-    # data_show=f'$show{modal_id} == true',
-    header=[
-        ModalTitle("Default Modal Header"),
-        ModalCloseButton(modal_id=modal_id) # Use the specific close button
-    ],
-    footer=Div(
-        Button("Accept", cls=ButtonT.primary, data_on_click=f'$show{modal_id} = !$show{modal_id}'), # Use toggle to close
-        Button("Decline", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
-        cls="space-x-2"
+    P("This is the default modal body content.", cls=TextT.gray), 
+        P("You can put any content here."),
+        # data_show=f'$show{modal_id} == true',
+        header=[
+            ModalTitle("Default Modal Header"),
+            ModalCloseButton(modal_id=modal_id) # Use the specific close button
+        ],
+        footer=Div(
+            Button("Accept", cls=ButtonT.primary, data_on_click=f'$show{modal_id} = !$show{modal_id}'), # Use toggle to close
+            Button("Decline", cls=ButtonT.secondary, data_on_click=f'$show{modal_id} = !$show{modal_id}'),
+            cls="space-x-2"
+        ),
+        id=modal_id,
     ),
-    id=modal_id,
-),
 # Trigger Button            
 Button("Toggle Basic Modal",                                
        data_on_click=f'$show{modal_id} = !$show{modal_id}'

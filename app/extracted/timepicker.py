@@ -145,7 +145,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-duration',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             cls='flex'
         ),
@@ -186,7 +186,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-duration',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             cls='flex'
         ),
@@ -406,7 +406,7 @@ component = Div(
         ),
         Button('Save time', id='saveTimeButton', type='button', cls='text-primary-700 dark:text-primary-500 text-sm hover:underline p-0'),
         id='dropdownTimepicker',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-auto dark:bg-gray-700 p-3'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-auto dark:bg-gray-700 p-3'
     )
 ), code="""Div(
     Button(
@@ -466,7 +466,7 @@ component = Div(
         ),
         Button('Save time', id='saveTimeButton', type='button', cls='text-primary-700 dark:text-primary-500 text-sm hover:underline p-0'),
         id='dropdownTimepicker',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-auto dark:bg-gray-700 p-3'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-auto dark:bg-gray-700 p-3'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -682,57 +682,57 @@ component = Div(
                 'Pick a time',
                 type='button',
                 data_collapse_toggle='timetable',
-                cls='inline-flex items-center w-full py-2 px-5 me-2 justify-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                cls='inline-flex items-center w-full py-2 px-5 me-2 justify-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
             ),
             Label('Pick a time', cls='sr-only'),
             Ul(
                 Li(
                     Input(type='radio', id='10-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='10-30-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='11-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='11-30-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='12-am', value=True, name='timetable', checked=True, cls='hidden peer'),
-                    Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='12-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='1-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='1-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='2-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='2-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='3-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='3-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 id='timetable',
                 cls='grid w-full grid-cols-2 gap-2 mt-5'
@@ -813,57 +813,57 @@ component = Div(
                 'Pick a time',
                 type='button',
                 data_collapse_toggle='timetable',
-                cls='inline-flex items-center w-full py-2 px-5 me-2 justify-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                cls='inline-flex items-center w-full py-2 px-5 me-2 justify-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
             ),
             Label('Pick a time', cls='sr-only'),
             Ul(
                 Li(
                     Input(type='radio', id='10-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='10-30-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='11-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='11-30-am', value=True, name='timetable', cls='hidden peer'),
-                    Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='12-am', value=True, name='timetable', checked=True, cls='hidden peer'),
-                    Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='12-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='1-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='1-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='2-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='2-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='3-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 Li(
                     Input(type='radio', id='3-30-pm', value=True, name='timetable', cls='hidden peer'),
-                    Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-white border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
+                    Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full p-2 text-sm font-medium text-center bg-gray-50 border rounded-lg cursor-pointer text-primary-600 border-primary-600 dark:hover:text-white dark:border-primary-500 dark:peer-checked:border-primary-500 peer-checked:border-primary-600 peer-checked:bg-primary-600 hover:text-white peer-checked:text-white dark:peer-checked:text-white hover:bg-primary-500 dark:text-primary-500 dark:bg-gray-900 dark:hover:bg-primary-600 dark:hover:border-primary-600 dark:peer-checked:bg-primary-500')
                 ),
                 id='timetable',
                 cls='grid w-full grid-cols-2 gap-2 mt-5'
@@ -900,7 +900,7 @@ component = Div(
         type='button',
         data_modal_target='timepicker-modal',
         data_modal_toggle='timepicker-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -929,63 +929,63 @@ component = Div(
                     Ul(
                         Li(
                             Input(type='radio', id='10-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='10-30-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='11-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='11-30-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='12-am', value=True, name='timetable', checked=True, cls='hidden peer'),
-                            Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='12-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='1-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='1-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='2-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='2-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='3-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='3-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         id='timetable',
                         cls='grid w-full grid-cols-3 gap-2 mb-5'
                     ),
                     Div(
                         Button('Save', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'),
-                        Button('Discard', type='button', data_modal_hide='timepicker-modal', cls='py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                        Button('Discard', type='button', data_modal_hide='timepicker-modal', cls='py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                         cls='grid grid-cols-2 gap-2'
                     ),
                     cls='p-4 pt-0'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-800'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800'
             ),
             cls='relative p-4 w-full max-w-[23rem] max-h-full'
         ),
@@ -1010,7 +1010,7 @@ component = Div(
         type='button',
         data_modal_target='timepicker-modal',
         data_modal_toggle='timepicker-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -1039,63 +1039,63 @@ component = Div(
                     Ul(
                         Li(
                             Input(type='radio', id='10-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('10:00 AM', fr='10-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='10-30-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('10:30 AM', fr='10-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='11-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('11:00 AM', fr='11-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='11-30-am', value=True, name='timetable', cls='hidden peer'),
-                            Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('11:30 AM', fr='11-30-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='12-am', value=True, name='timetable', checked=True, cls='hidden peer'),
-                            Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('12:00 AM', fr='12-am', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='12-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('12:30 PM', fr='12-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='1-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('01:00 PM', fr='1-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='1-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('01:30 PM', fr='1-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='2-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('02:00 PM', fr='2-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='2-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('02:30 PM', fr='2-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='3-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('03:00 PM', fr='3-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         Li(
                             Input(type='radio', id='3-30-pm', value=True, name='timetable', cls='hidden peer'),
-                            Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-white dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
+                            Label('03:30 PM', fr='3-30-pm', cls='inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 dark:hover:text-white bg-gray-50 dark:bg-gray-800 border rounded-lg cursor-pointer text-gray-500 border-gray-200 dark:border-gray-700 dark:peer-checked:border-primary-500 peer-checked:border-primary-700 dark:hover:border-gray-600 dark:peer-checked:text-primary-500 peer-checked:bg-primary-50 peer-checked:text-primary-700 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-600 dark:peer-checked:bg-primary-900')
                         ),
                         id='timetable',
                         cls='grid w-full grid-cols-3 gap-2 mb-5'
                     ),
                     Div(
                         Button('Save', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'),
-                        Button('Discard', type='button', data_modal_hide='timepicker-modal', cls='py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                        Button('Discard', type='button', data_modal_hide='timepicker-modal', cls='py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                         cls='grid grid-cols-2 gap-2'
                     ),
                     cls='p-4 pt-0'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-800'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800'
             ),
             cls='relative p-4 w-full max-w-[23rem] max-h-full'
         ),
@@ -1140,7 +1140,7 @@ component = Div(
                     Span('Business hours', cls='text-gray-900 dark:text-white text-base font-medium'),
                     Label(
                         Input(type='checkbox', value=True, name='business-hours', cls='sr-only peer'),
-                        Div(cls="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Business hours', cls='sr-only'),
                         cls='inline-flex items-center cursor-pointer'
                     ),
@@ -1539,10 +1539,10 @@ component = Div(
                 ),
                 'Add interval',
                 type='button',
-                cls='inline-flex items-center justify-center w-full py-2.5 mb-4 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-center w-full py-2.5 mb-4 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
             ),
             Div(
-                Button('Close', type='button', data_drawer_hide='drawer-timepicker', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                Button('Close', type='button', data_drawer_hide='drawer-timepicker', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 Button('Save all', type='submit', cls='text-white w-full inline-flex items-center justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                 cls='grid grid-cols-2 gap-4 bottom-4 left-0 w-full md:px-4 md:absolute'
             )
@@ -1550,7 +1550,7 @@ component = Div(
         id='drawer-timepicker',
         tabindex='-1',
         aria_labelledby='drawer-timepicker-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-96 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-96 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1580,7 +1580,7 @@ component = Div(
                     Span('Business hours', cls='text-gray-900 dark:text-white text-base font-medium'),
                     Label(
                         Input(type='checkbox', value=True, name='business-hours', cls='sr-only peer'),
-                        Div(cls="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Business hours', cls='sr-only'),
                         cls='inline-flex items-center cursor-pointer'
                     ),
@@ -1979,10 +1979,10 @@ component = Div(
                 ),
                 'Add interval',
                 type='button',
-                cls='inline-flex items-center justify-center w-full py-2.5 mb-4 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                cls='inline-flex items-center justify-center w-full py-2.5 mb-4 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
             ),
             Div(
-                Button('Close', type='button', data_drawer_hide='drawer-timepicker', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                Button('Close', type='button', data_drawer_hide='drawer-timepicker', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 Button('Save all', type='submit', cls='text-white w-full inline-flex items-center justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                 cls='grid grid-cols-2 gap-4 bottom-4 left-0 w-full md:px-4 md:absolute'
             )
@@ -1990,7 +1990,7 @@ component = Div(
         id='drawer-timepicker',
         tabindex='-1',
         aria_labelledby='drawer-timepicker-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-96 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-96 dark:bg-gray-800'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     id='mainContent'

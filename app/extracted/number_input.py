@@ -233,7 +233,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -498,7 +498,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -964,7 +964,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdown-currency',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
         ),
         cls='max-w-[18rem] mx-auto flex'
     )
@@ -1120,7 +1120,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdown-currency',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
         ),
         cls='max-w-[18rem] mx-auto flex'
     )
@@ -1235,27 +1235,27 @@ component = Div(
         Div(
             Div(
                 Label('First code', fr='code-1', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_next='code-2', id='code-1', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_next='code-2', id='code-1', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Second code', fr='code-2', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-1', data_focus_input_next='code-3', id='code-2', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-1', data_focus_input_next='code-3', id='code-2', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Third code', fr='code-3', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-2', data_focus_input_next='code-4', id='code-3', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-2', data_focus_input_next='code-4', id='code-3', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Fourth code', fr='code-4', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-3', data_focus_input_next='code-5', id='code-4', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-3', data_focus_input_next='code-5', id='code-4', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Fifth code', fr='code-5', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-4', data_focus_input_next='code-6', id='code-5', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-4', data_focus_input_next='code-6', id='code-5', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Sixth code', fr='code-6', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-5', id='code-6', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-5', id='code-6', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             cls='flex mb-2 space-x-2 rtl:space-x-reverse'
         ),
@@ -1267,27 +1267,27 @@ component = Div(
         Div(
             Div(
                 Label('First code', fr='code-1', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_next='code-2', id='code-1', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_next='code-2', id='code-1', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Second code', fr='code-2', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-1', data_focus_input_next='code-3', id='code-2', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-1', data_focus_input_next='code-3', id='code-2', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Third code', fr='code-3', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-2', data_focus_input_next='code-4', id='code-3', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-2', data_focus_input_next='code-4', id='code-3', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Fourth code', fr='code-4', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-3', data_focus_input_next='code-5', id='code-4', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-3', data_focus_input_next='code-5', id='code-4', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Fifth code', fr='code-5', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-4', data_focus_input_next='code-6', id='code-5', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-4', data_focus_input_next='code-6', id='code-5', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             Div(
                 Label('Sixth code', fr='code-6', cls='sr-only'),
-                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-5', id='code-6', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
+                Input(type='text', maxlength='1', data_focus_input_init=True, data_focus_input_prev='code-5', id='code-6', required=True, cls='block w-9 h-9 py-3 text-sm font-extrabold text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500')
             ),
             cls='flex mb-2 space-x-2 rtl:space-x-reverse'
         ),
@@ -1443,7 +1443,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-currency',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             Label('Your Email', fr='currency-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -1600,7 +1600,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-currency',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             Label('Your Email', fr='currency-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -1771,7 +1771,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='dropdown-fiat-currency',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
                 ),
                 cls='flex'
             ),
@@ -1891,7 +1891,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='dropdown-crypto',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
                 ),
                 cls='flex'
             ),
@@ -2059,7 +2059,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='dropdown-fiat-currency',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
                 ),
                 cls='flex'
             ),
@@ -2179,7 +2179,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='dropdown-crypto',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
                 ),
                 cls='flex'
             ),

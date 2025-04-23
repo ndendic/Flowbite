@@ -178,14 +178,14 @@ component = Div(
         H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
         P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='font-normal text-gray-700 dark:text-gray-400'),
         href='#',
-        cls='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+        cls='block max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
     )
 ), code="""Div(
     A(
         H5('Noteworthy technology acquisitions 2021', cls='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'),
         P('Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.', cls='font-normal text-gray-700 dark:text-gray-400'),
         href='#',
-        cls='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+        cls='block max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -222,7 +222,7 @@ component = Div(
             ),
             cls='p-5'
         ),
-        cls='max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
     )
 ), code="""Div(
     Div(
@@ -251,7 +251,7 @@ component = Div(
             ),
             cls='p-5'
         ),
-        cls='max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
+        cls='max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     id='mainContent'

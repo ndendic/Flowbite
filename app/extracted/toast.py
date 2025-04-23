@@ -48,11 +48,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-default',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-default',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -82,11 +82,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-default',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-default',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -124,11 +124,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-success',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-success',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     ),
     Div(
         Div(
@@ -157,11 +157,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-danger',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-danger',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     ),
     Div(
         Div(
@@ -190,11 +190,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-warning',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-warning',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -224,11 +224,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-success',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-success',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     ),
     Div(
         Div(
@@ -257,11 +257,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-danger',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-danger',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     ),
     Div(
         Div(
@@ -290,11 +290,11 @@ component = Div(
             type='button',
             data_dismiss_target='#toast-warning',
             aria_label='Close',
-            cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+            cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         ),
         id='toast-warning',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -317,7 +317,7 @@ component = Div(
         Div('Message sent successfully.', cls='ps-4 text-sm font-normal'),
         id='toast-simple',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -332,7 +332,7 @@ component = Div(
         Div('Message sent successfully.', cls='ps-4 text-sm font-normal'),
         id='toast-simple',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -360,13 +360,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-undo',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex items-center ms-auto space-x-2 rtl:space-x-reverse'
         ),
         id='toast-undo',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -386,13 +386,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-undo',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex items-center ms-auto space-x-2 rtl:space-x-reverse'
         ),
         id='toast-undo',
         role='alert',
-        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
+        cls='flex items-center w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -425,13 +425,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-message-cta',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex'
         ),
         id='toast-message-cta',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
+        cls='w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
     )
 ), code="""Div(
     Div(
@@ -456,13 +456,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-message-cta',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex'
         ),
         id='toast-message-cta',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
+        cls='w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -489,7 +489,7 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-notification',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex items-center mb-3'
         ),
@@ -521,7 +521,7 @@ component = Div(
         ),
         id='toast-notification',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-900 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-300'
+        cls='w-full max-w-xs p-4 text-gray-900 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-300'
     )
 ), code="""Div(
     Div(
@@ -540,7 +540,7 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-notification',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 justify-center items-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex items-center mb-3'
         ),
@@ -572,7 +572,7 @@ component = Div(
         ),
         id='toast-notification',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-900 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-300'
+        cls='w-full max-w-xs p-4 text-gray-900 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-300'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -605,7 +605,7 @@ component = Div(
                         A('Update', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-600 dark:focus:ring-primary-800')
                     ),
                     Div(
-                        A('Not now', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700')
+                        A('Not now', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700')
                     ),
                     cls='grid grid-cols-2 gap-2'
                 ),
@@ -624,13 +624,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-interactive',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 items-center justify-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex'
         ),
         id='toast-interactive',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
+        cls='w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
     )
 ), code="""Div(
     Div(
@@ -655,7 +655,7 @@ component = Div(
                         A('Update', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-600 dark:focus:ring-primary-800')
                     ),
                     Div(
-                        A('Not now', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700')
+                        A('Not now', href='#', cls='inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-center text-gray-900 bg-gray-50 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700')
                     ),
                     cls='grid grid-cols-2 gap-2'
                 ),
@@ -674,13 +674,13 @@ component = Div(
                 type='button',
                 data_dismiss_target='#toast-interactive',
                 aria_label='Close',
-                cls='ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+                cls='ms-auto -mx-1.5 -my-1.5 bg-gray-50 items-center justify-center shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
             ),
             cls='flex'
         ),
         id='toast-interactive',
         role='alert',
-        cls='w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
+        cls='w-full max-w-xs p-4 text-gray-500 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800 dark:text-gray-400'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(
@@ -717,50 +717,50 @@ component = Div(
         Div('Top left positioning.', cls='text-sm font-normal'),
         id='toast-top-left',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Top right positioning.', cls='text-sm font-normal'),
         id='toast-top-right',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 right-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 right-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Bottom right positioning.', cls='text-sm font-normal'),
         id='toast-bottom-right',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm right-5 bottom-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm right-5 bottom-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Bottom left positioning.', cls='text-sm font-normal'),
         id='toast-bottom-left',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm bottom-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm bottom-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
         Div('Top left positioning.', cls='text-sm font-normal'),
         id='toast-top-left',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Top right positioning.', cls='text-sm font-normal'),
         id='toast-top-right',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 right-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm top-5 right-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Bottom right positioning.', cls='text-sm font-normal'),
         id='toast-bottom-right',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm right-5 bottom-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm right-5 bottom-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     ),
     Div(
         Div('Bottom left positioning.', cls='text-sm font-normal'),
         id='toast-bottom-left',
         role='alert',
-        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm bottom-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
+        cls='fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-gray-50 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow-sm bottom-5 left-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     P(

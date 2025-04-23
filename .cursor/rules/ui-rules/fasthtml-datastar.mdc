@@ -1,0 +1,73 @@
+---
+description: Apply this rule when implementing dynamic UI behaviors in FastHTML applications using Data Star for state management. Specifically, use this when needing to toggle element visibility with smooth CSS transitions (like fade-in/out or height changes) rather than abrupt showing/hiding. This covers scenarios involving conditional class application based on Data Star state variables ($variable) for animations.
+globs: 
+alwaysApply: false
+---
+
+# FastHTML with Data Star UI Patterns
+
+## Critical Rules
+
+- Utilize Data Star state variables (e.g., `$myState`) initialized via `data-signals` or modified by actions like `data-on-click` to manage component state.
+- Prefer `data-class` over `data-show` when aiming for smooth CSS transitions during visibility changes (e.g., expanding/collapsing elements, fade effects). `data-show` often toggles `display:none` or `hidden`, which prevents CSS transitions on properties like `height`, `max-height`, or `opacity`.
+- For animated visibility toggling (e.g., dropdowns, accordions):
+    - Apply base CSS transition utilities (e.g., `transition-all`, `duration-300`, `ease-in-out`) to the element.
+    - Use `overflow-hidden` if transitioning `height` or `max-height`.
+    - Use `data-class` to conditionally apply classes controlling the animated properties based on a Data Star boolean state variable.
+        - Collapsed/Hidden state: Apply classes like `opacity-0`, `max-h-0`.
+        - Expanded/Visible state: Apply classes like `opacity-100`, `max-h-[adequate_value]` (e.g., `max-h-[1000px]`).
+- Ensure Data Star state variables used in `data-class` or `data-show` are correctly initialized and toggled.
+
+## Examples
+
+<example>
+  ```python
+  # Correctly using data-class for animated dropdown visibility in FastHTML/Data Star
+  import fastlite.common as fh
+  from fastlite.components.attrs import data_class, data_on_click, data_signals
+  
+  def AnimatedDropdown(id: str, trigger_label: str, *content):
+      # State variable $isOpen controls visibility
+      return fh.Div(
+          data_signals=f'{{{id}_open: false}}', # Initialize state
+          children=[
+              fh.Button(
+                  trigger_label,
+                  data_on_click=f'${id}_open = !${id}_open' # Toggle state
+              ),
+              fh.Div(
+                  *content,
+                  # Base transition classes + conditional classes via data-class
+                  cls="transition-all duration-300 ease-in-out overflow-hidden", 
+                  data_class=f"{{'max-h-0 opacity-0': !${id}_open, 'max-h-[500px] opacity-100': ${id}_open}}" 
+              )
+          ]
+      )
+  ```
+</example>
+
+<example type="invalid">
+  ```python
+  # Incorrectly using data-show for height animation (won't transition smoothly)
+  import fastlite.common as fh
+  from fastlite.components.attrs import data_show, data_on_click, data_signals
+  
+  def BrokenAnimatedDropdown(id: str, trigger_label: str, *content):
+      # State variable $isOpen controls visibility
+      return fh.Div(
+          data_signals=f'{{{id}_open: false}}', # Initialize state
+          children=[
+              fh.Button(
+                  trigger_label,
+                  data_on_click=f'${id}_open = !${id}_open' # Toggle state
+              ),
+              fh.Div(
+                  *content,
+                  # Applying transitions but using data-show - height/opacity won't animate
+                  cls="transition-all duration-300 ease-in-out overflow-hidden", 
+                  data_show=f'${id}_open' # This toggles display/hidden abruptly
+              )
+          ]
+      )
+  ```
+</example>

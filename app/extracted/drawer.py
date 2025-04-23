@@ -90,7 +90,7 @@ component = Div(
                 cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
             ),
             Div(
-                A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 A(
                     'Get access',
                     Svg(
@@ -109,7 +109,7 @@ component = Div(
             id='drawer-example',
             tabindex='-1',
             aria_labelledby='drawer-label',
-            cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+            cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
         )
     ), 
 code="""Div(
@@ -153,7 +153,7 @@ code="""Div(
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
-            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             A(
                 'Get access',
                 Svg(
@@ -172,7 +172,7 @@ code="""Div(
         id='drawer-example',
         tabindex='-1',
         aria_labelledby='drawer-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -361,7 +361,7 @@ code="""Div(
         id='drawer-navigation',
         tabindex='-1',
         aria_labelledby='drawer-navigation-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -542,7 +542,7 @@ code="""Div(
         id='drawer-navigation',
         tabindex='-1',
         aria_labelledby='drawer-navigation-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -617,7 +617,7 @@ code="""Div(
         id='drawer-contact',
         tabindex='-1',
         aria_labelledby='drawer-contact-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -684,7 +684,7 @@ code="""Div(
         id='drawer-contact',
         tabindex='-1',
         aria_labelledby='drawer-contact-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -807,7 +807,7 @@ code="""Div(
         id='drawer-form',
         tabindex='-1',
         aria_labelledby='drawer-form-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -922,7 +922,7 @@ code="""Div(
         id='drawer-form',
         tabindex='-1',
         aria_labelledby='drawer-form-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -989,7 +989,7 @@ code="""Div(
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
-            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             A(
                 'Get access',
                 Svg(
@@ -1008,7 +1008,7 @@ code="""Div(
         id='drawer-left-example',
         tabindex='-1',
         aria_labelledby='drawer-left-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1051,7 +1051,7 @@ code="""Div(
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
-            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             A(
                 'Get access',
                 Svg(
@@ -1070,7 +1070,7 @@ code="""Div(
         id='drawer-left-example',
         tabindex='-1',
         aria_labelledby='drawer-left-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H3(
@@ -1126,7 +1126,7 @@ code="""Div(
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
-            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             A(
                 'Get access',
                 Svg(
@@ -1145,7 +1145,7 @@ code="""Div(
         id='drawer-right-example',
         tabindex='-1',
         aria_labelledby='drawer-right-label',
-        cls='fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1188,7 +1188,7 @@ code="""Div(
             cls='mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
         Div(
-            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            A('Learn more', href='#', cls='px-4 py-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             A(
                 'Get access',
                 Svg(
@@ -1207,7 +1207,7 @@ code="""Div(
         id='drawer-right-example',
         tabindex='-1',
         aria_labelledby='drawer-right-label',
-        cls='fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800'
+        cls='fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-gray-50 w-80 dark:bg-gray-800'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H3(
@@ -1257,7 +1257,7 @@ code="""Div(
             'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
-        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
         A(
             'Get access',
             Svg(
@@ -1274,7 +1274,7 @@ code="""Div(
         id='drawer-top-example',
         tabindex='-1',
         aria_labelledby='drawer-top-label',
-        cls='fixed top-0 left-0 right-0 z-40 w-full p-4 transition-transform -translate-y-full bg-white dark:bg-gray-800'
+        cls='fixed top-0 left-0 right-0 z-40 w-full p-4 transition-transform -translate-y-full bg-gray-50 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1316,7 +1316,7 @@ code="""Div(
             'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
-        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
         A(
             'Get access',
             Svg(
@@ -1333,7 +1333,7 @@ code="""Div(
         id='drawer-top-example',
         tabindex='-1',
         aria_labelledby='drawer-top-label',
-        cls='fixed top-0 left-0 right-0 z-40 w-full p-4 transition-transform -translate-y-full bg-white dark:bg-gray-800'
+        cls='fixed top-0 left-0 right-0 z-40 w-full p-4 transition-transform -translate-y-full bg-gray-50 dark:bg-gray-800'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H3(
@@ -1383,7 +1383,7 @@ code="""Div(
             'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
-        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
         A(
             'Get access',
             Svg(
@@ -1400,7 +1400,7 @@ code="""Div(
         id='drawer-bottom-example',
         tabindex='-1',
         aria_labelledby='drawer-bottom-label',
-        cls='fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none'
+        cls='fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-gray-50 dark:bg-gray-800 transform-none'
     )
 ), code="""Div(
     Div(
@@ -1442,7 +1442,7 @@ code="""Div(
             'for Fastbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.',
             cls='max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400'
         ),
-        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+        A('Learn more', href='#', cls='px-4 py-2 me-2 text-sm font-medium text-center text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
         A(
             'Get access',
             Svg(
@@ -1459,7 +1459,7 @@ code="""Div(
         id='drawer-bottom-example',
         tabindex='-1',
         aria_labelledby='drawer-bottom-label',
-        cls='fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none'
+        cls='fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-gray-50 dark:bg-gray-800 transform-none'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -1659,7 +1659,7 @@ code="""Div(
         id='drawer-disable-body-scrolling',
         tabindex='-1',
         aria_labelledby='drawer-disable-body-scrolling-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -1840,7 +1840,7 @@ code="""Div(
         id='drawer-disable-body-scrolling',
         tabindex='-1',
         aria_labelledby='drawer-disable-body-scrolling-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H3(
@@ -2033,7 +2033,7 @@ code="""Div(
         id='drawer-body-scrolling',
         tabindex='-1',
         aria_labelledby='drawer-body-scrolling-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -2214,7 +2214,7 @@ code="""Div(
         id='drawer-body-scrolling',
         tabindex='-1',
         aria_labelledby='drawer-body-scrolling-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     H2(
@@ -2415,7 +2415,7 @@ code="""Div(
         id='drawer-backdrop',
         tabindex='-1',
         aria_labelledby='drawer-backdrop-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -2596,7 +2596,7 @@ code="""Div(
         id='drawer-backdrop',
         tabindex='-1',
         aria_labelledby='drawer-backdrop-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 )""", id="example_10",cls='mt-2 mb-6'),
     H3(
@@ -2789,7 +2789,7 @@ code="""Div(
         id='drawer-disabled-backdrop',
         tabindex='-1',
         aria_labelledby='drawer-disabled-backdrop-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 ), code="""Div(
     Div(
@@ -2970,7 +2970,7 @@ code="""Div(
         id='drawer-disabled-backdrop',
         tabindex='-1',
         aria_labelledby='drawer-disabled-backdrop-label',
-        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800'
+        cls='fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-gray-50 w-64 dark:bg-gray-800'
     )
 )""", id="example_11",cls='mt-2 mb-6'),
     H2(
@@ -3147,7 +3147,7 @@ code="""Div(
         id='drawer-swipe',
         tabindex='-1',
         aria_labelledby='drawer-swipe-label',
-        cls='fixed z-40 w-full overflow-y-auto bg-white border-t border-gray-200 rounded-t-lg dark:border-gray-700 dark:bg-gray-800 transition-transform bottom-0 left-0 right-0 translate-y-full bottom-[60px]'
+        cls='fixed z-40 w-full overflow-y-auto bg-gray-50 border-t border-gray-200 rounded-t-lg dark:border-gray-700 dark:bg-gray-800 transition-transform bottom-0 left-0 right-0 translate-y-full bottom-[60px]'
     )
 ), code="""Div(
     Div(
@@ -3300,7 +3300,7 @@ code="""Div(
         id='drawer-swipe',
         tabindex='-1',
         aria_labelledby='drawer-swipe-label',
-        cls='fixed z-40 w-full overflow-y-auto bg-white border-t border-gray-200 rounded-t-lg dark:border-gray-700 dark:bg-gray-800 transition-transform bottom-0 left-0 right-0 translate-y-full bottom-[60px]'
+        cls='fixed z-40 w-full overflow-y-auto bg-gray-50 border-t border-gray-200 rounded-t-lg dark:border-gray-700 dark:bg-gray-800 transition-transform bottom-0 left-0 right-0 translate-y-full bottom-[60px]'
     )
 )""", id="example_12",cls='mt-2 mb-6'),
     H2(
@@ -4119,7 +4119,7 @@ code="""Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"fixed z-40 h-screen w-80 overflow-y-auto bg-white p-4 dark:bg-gray-800"', cls='s'),
+                        Span('"fixed z-40 h-screen w-80 overflow-y-auto bg-gray-50 p-4 dark:bg-gray-800"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'
@@ -4618,7 +4618,7 @@ code="""Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"rounded-lg border border-gray-200 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"', cls='s'),
+                        Span('"rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'

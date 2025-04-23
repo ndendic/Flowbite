@@ -49,7 +49,7 @@ def Accordion(*c: Union[str, FT],
 
     # Apply specific classes if flush=True, overriding defaults/passed values if necessary for flush style
     if flush:
-        final_active_classes = 'bg-white dark:bg-gray-900 text-gray-900 dark:text-white'
+        final_active_classes = 'bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white'
         final_inactive_classes = 'text-gray-500 dark:text-gray-400'
 
     # Combine custom classes

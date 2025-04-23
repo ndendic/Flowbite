@@ -92,7 +92,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -109,7 +109,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -168,7 +168,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -185,7 +185,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -251,7 +251,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -268,7 +268,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -319,7 +319,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -336,7 +336,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -407,7 +407,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -424,7 +424,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -483,7 +483,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -500,7 +500,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -565,7 +565,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -582,7 +582,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -633,7 +633,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Previous', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_prev=True,
@@ -650,7 +650,7 @@ component = Div(
                     cls='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
                 ),
                 Span('Next', cls='sr-only'),
-                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
+                cls='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'
             ),
             type='button',
             data_carousel_next=True,
@@ -1180,7 +1180,7 @@ component = Div(
                     Span(
                         Span('activeClasses', cls='nx'),
                         Span(':', cls='o'),
-                        Span("'bg-white dark:bg-gray-800'", cls='s1'),
+                        Span("'bg-gray-50 dark:bg-gray-800'", cls='s1'),
                         Span(',', cls='p'),
                         cls='cl'
                     ),
@@ -1196,7 +1196,7 @@ component = Div(
                 ),
                 Span(
                     Span(
-                        Span("'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800'", cls='s1'),
+                        Span("'bg-gray-50/50 dark:bg-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-800'", cls='s1'),
                         Span(',', cls='p'),
                         cls='cl'
                     ),
@@ -2453,7 +2453,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"', cls='s'),
+                        Span('"inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-50/30 group-hover:bg-gray-50/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'
@@ -2682,7 +2682,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"', cls='s'),
+                        Span('"inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-50/30 group-hover:bg-gray-50/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'
@@ -3337,7 +3337,7 @@ component = Div(
                     Span(
                         Span('activeClasses', cls='nx'),
                         Span(':', cls='o'),
-                        Span("'bg-white dark:bg-gray-800'", cls='s1'),
+                        Span("'bg-gray-50 dark:bg-gray-800'", cls='s1'),
                         Span(',', cls='p'),
                         cls='cl'
                     ),
@@ -3353,7 +3353,7 @@ component = Div(
                 ),
                 Span(
                     Span(
-                        Span("'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800'", cls='s1'),
+                        Span("'bg-gray-50/50 dark:bg-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-800'", cls='s1'),
                         Span(',', cls='p'),
                         cls='cl'
                     ),

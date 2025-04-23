@@ -91,7 +91,7 @@ component = Div(
                         cls='px-6 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-gray-400'
                     ),
                     Td('Navigate to interactive elements', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-900 dark:border-gray-700'
+                    cls='bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700'
                 ),
                 Tr(
                     Th(
@@ -102,7 +102,7 @@ component = Div(
                         cls='px-6 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-gray-400'
                     ),
                     Td('Ensure elements with ARIA role="button" can be activated with both key commands.', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-900 dark:border-gray-700'
+                    cls='bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700'
                 ),
                 Tr(
                     Th(
@@ -159,7 +159,7 @@ component = Div(
                         cls='inline-flex items-center px-6 py-4 font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap'
                     ),
                     Td('Choose and activate previous/next tab.', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-900'
+                    cls='bg-gray-50 dark:bg-gray-900'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'
@@ -186,7 +186,7 @@ component = Div(
                         cls='px-6 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-gray-400'
                     ),
                     Td('Navigate to interactive elements', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-900 dark:border-gray-700'
+                    cls='bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700'
                 ),
                 Tr(
                     Th(
@@ -197,7 +197,7 @@ component = Div(
                         cls='px-6 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-gray-400'
                     ),
                     Td('Ensure elements with ARIA role="button" can be activated with both key commands.', cls='px-6 py-4'),
-                    cls='bg-white border-b dark:bg-gray-900 dark:border-gray-700'
+                    cls='bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700'
                 ),
                 Tr(
                     Th(
@@ -254,7 +254,7 @@ component = Div(
                         cls='inline-flex items-center px-6 py-4 font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap'
                     ),
                     Td('Choose and activate previous/next tab.', cls='px-6 py-4'),
-                    cls='bg-white dark:bg-gray-900'
+                    cls='bg-gray-50 dark:bg-gray-900'
                 )
             ),
             cls='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'

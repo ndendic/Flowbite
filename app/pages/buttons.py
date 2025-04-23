@@ -368,7 +368,7 @@ Button(
             Icon('logos:metamask-icon',cls='me-3'),
             'Connect with MetaMask',
             type='button',
-            cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
+            cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
         ),
         Button(
             Icon('logos:bitcoin',cls='me-3'),
@@ -405,7 +405,7 @@ Button(
             Icon('logos:visa',width=37, cls='me-3'),            
             'Pay with Visa',
             type='button',
-            cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2'
+            cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-gray-50 dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2'
         ),
         Button(
             Svg(
@@ -423,7 +423,7 @@ Button(
             ),
             'Pay with MasterCard',
             type='button',
-            cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
+            cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
         ),
         Button(
             Icon('logos:ethereum', height=18),
@@ -435,7 +435,7 @@ Button(
     Icon('logos:metamask-icon',cls='me-3'),
     'Connect with MetaMask',
     type='button',
-    cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
+    cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
 ),
 Button(
     Icon('logos:bitcoin',cls='me-3'),
@@ -472,7 +472,7 @@ Button(
     Icon('logos:visa',width=37, cls='me-3'),            
     'Pay with Visa',
     type='button',
-    cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2'
+    cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-gray-50 dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2'
 ),
 Button(
     Svg(
@@ -490,7 +490,7 @@ Button(
     ),
     'Pay with MasterCard',
     type='button',
-    cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
+    cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
 ),
 Button(
     Icon('logos:ethereum', height=18),
@@ -514,60 +514,60 @@ Button(
                 #     P('This is a special button style that incorporates a gradient color for the outline that can be used as a secondary style to the fully colored gradient buttons.'),
                 #     component_showcase(Div(
                 #     Button(
-                #         Span('Purple to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Purple to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-primary-500 group-hover:from-purple-600 group-hover:to-primary-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800'
                 #     ),
                 #     Button(
-                #         Span('Cyan to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Cyan to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-primary-500 group-hover:from-cyan-500 group-hover:to-primary-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800'
                 #     ),
                 #     Button(
-                #         Span('Green to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Green to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-primary-600 group-hover:from-green-400 group-hover:to-primary-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800'
                 #     ),
                 #     Button(
-                #         Span('Purple to pink', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Purple to pink', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800'
                 #     ),
                 #     Button(
-                #         Span('Pink to orange', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Pink to orange', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800'
                 #     ),
                 #     Button(
-                #         Span('Teal to Lime', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Teal to Lime', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800'
                 #     ),
                 #     Button(
-                #         Span('Red to Yellow', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Red to Yellow', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400'
                 #     )
                 # ), code="""Div(
                 #     Button(
-                #         Span('Purple to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Purple to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-primary-500 group-hover:from-purple-600 group-hover:to-primary-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800'
                 #     ),
                 #     Button(
-                #         Span('Cyan to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Cyan to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-primary-500 group-hover:from-cyan-500 group-hover:to-primary-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800'
                 #     ),
                 #     Button(
-                #         Span('Green to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Green to primary', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-primary-600 group-hover:from-green-400 group-hover:to-primary-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800'
                 #     ),
                 #     Button(
-                #         Span('Purple to pink', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Purple to pink', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800'
                 #     ),
                 #     Button(
-                #         Span('Pink to orange', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Pink to orange', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800'
                 #     ),
                 #     Button(
-                #         Span('Teal to Lime', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Teal to Lime', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800'
                 #     ),
                 #     Button(
-                #         Span('Red to Yellow', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
+                #         Span('Red to Yellow', cls='relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent'),
                 #         cls='relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400'
                 #     )
                 # )""", id="example_4",cls='mt-2 mb-6'),

@@ -31,7 +31,7 @@ component = Div(
                     cls='w-3 h-3 ms-2 rtl:rotate-180'
                 ),
                 href='#',
-                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
             ),
             cls='mb-10 ms-4'
         ),
@@ -69,7 +69,7 @@ component = Div(
                     cls='w-3 h-3 ms-2 rtl:rotate-180'
                 ),
                 href='#',
-                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
             ),
             cls='mb-10 ms-4'
         ),
@@ -130,7 +130,7 @@ component = Div(
                 ),
                 'Download ZIP',
                 href='#',
-                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
             ),
             cls='mb-10 ms-6'
         ),
@@ -203,7 +203,7 @@ component = Div(
                 ),
                 'Download ZIP',
                 href='#',
-                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
+                cls='inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700'
             ),
             cls='mb-10 ms-6'
         ),
@@ -427,7 +427,7 @@ component = Div(
                     Span('Funny Group', cls='bg-gray-100 text-gray-800 text-xs font-normal me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-600 dark:text-gray-300'),
                     cls='text-sm font-normal text-gray-500 dark:text-gray-300'
                 ),
-                cls='items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
+                cls='items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='mb-10 ms-6'
         ),
@@ -447,7 +447,7 @@ component = Div(
                     cls='items-center justify-between mb-3 sm:flex'
                 ),
                 Div("Hi ya'll! I wanted to share a webinar zeroheight is having regarding how to best measure your design system! This is the second session of our new webinar series on #DesignSystems discussions where we'll be speaking about Measurement.", cls='p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300'),
-                cls='p-4 bg-white border border-gray-200 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+                cls='p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='mb-10 ms-6'
         ),
@@ -465,7 +465,7 @@ component = Div(
                     Span('Finished', cls='font-semibold text-gray-900 dark:text-white'),
                     cls='text-sm font-normal text-gray-500 lex dark:text-gray-300'
                 ),
-                cls='items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
+                cls='items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='ms-6'
         ),
@@ -487,7 +487,7 @@ component = Div(
                     Span('Funny Group', cls='bg-gray-100 text-gray-800 text-xs font-normal me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-600 dark:text-gray-300'),
                     cls='text-sm font-normal text-gray-500 dark:text-gray-300'
                 ),
-                cls='items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
+                cls='items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='mb-10 ms-6'
         ),
@@ -507,7 +507,7 @@ component = Div(
                     cls='items-center justify-between mb-3 sm:flex'
                 ),
                 Div("Hi ya'll! I wanted to share a webinar zeroheight is having regarding how to best measure your design system! This is the second session of our new webinar series on #DesignSystems discussions where we'll be speaking about Measurement.", cls='p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300'),
-                cls='p-4 bg-white border border-gray-200 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+                cls='p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='mb-10 ms-6'
         ),
@@ -525,7 +525,7 @@ component = Div(
                     Span('Finished', cls='font-semibold text-gray-900 dark:text-white'),
                     cls='text-sm font-normal text-gray-500 lex dark:text-gray-300'
                 ),
-                cls='items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
+                cls='items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-xs sm:flex dark:bg-gray-700 dark:border-gray-600'
             ),
             cls='ms-6'
         ),

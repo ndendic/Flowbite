@@ -39,7 +39,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -62,7 +62,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -92,7 +92,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -115,7 +115,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -203,7 +203,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='shrink-0 inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='shrink-0 inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -226,7 +226,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -306,7 +306,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='shrink-0 inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='shrink-0 inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -329,7 +329,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -436,7 +436,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -459,7 +459,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -558,7 +558,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -581,7 +581,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -616,7 +616,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -648,7 +648,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -671,7 +671,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -698,7 +698,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -730,7 +730,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -753,7 +753,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -789,7 +789,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -815,7 +815,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -841,7 +841,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -905,7 +905,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -928,7 +928,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -956,7 +956,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -982,7 +982,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -1008,7 +1008,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -1072,7 +1072,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1095,7 +1095,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1147,7 +1147,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1170,7 +1170,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1214,7 +1214,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1237,7 +1237,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1278,7 +1278,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1301,7 +1301,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1334,7 +1334,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1357,7 +1357,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1448,7 +1448,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1471,7 +1471,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1554,7 +1554,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1577,7 +1577,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1684,7 +1684,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1707,7 +1707,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1806,7 +1806,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1829,7 +1829,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1864,7 +1864,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -1896,7 +1896,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -1919,7 +1919,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -1946,7 +1946,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -1978,7 +1978,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -2001,7 +2001,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -2037,7 +2037,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2063,7 +2063,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2089,7 +2089,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2153,7 +2153,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -2176,7 +2176,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -2204,7 +2204,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2230,7 +2230,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2256,7 +2256,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -2320,7 +2320,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -2343,7 +2343,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -2398,7 +2398,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -2421,7 +2421,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -2468,7 +2468,7 @@ component = Div(
             data_dropdown_toggle='dropdownDots',
             data_dropdown_placement='bottom-start',
             type='button',
-            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
+            cls='inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600'
         ),
         Div(
             Ul(
@@ -2491,7 +2491,7 @@ component = Div(
                 cls='py-2 text-sm text-gray-700 dark:text-gray-200'
             ),
             id='dropdownDots',
-            cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
+            cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600'
         ),
         cls='flex items-start gap-2.5'
     )
@@ -2884,7 +2884,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -2928,7 +2928,7 @@ component = Div(
                                 cls='w-5 h-5 text-white'
                             ),
                             data_tooltip_target='download-image',
-                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                            cls='inline-flex items-center justify-center rounded-full h-10 w-10 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                         ),
                         Div(
                             'Download image',
@@ -2981,7 +2981,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -3007,7 +3007,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -3033,7 +3033,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -3110,7 +3110,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-1',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -3136,7 +3136,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-2',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',
@@ -3162,7 +3162,7 @@ component = Div(
                                     cls='w-4 h-4 text-white'
                                 ),
                                 data_tooltip_target='download-image-3',
-                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
+                                cls='inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-50/30 hover:bg-gray-50/50 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50'
                             ),
                             Div(
                                 'Download image',

@@ -71,7 +71,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-4 mx-auto font-medium'
         ),
-        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -131,7 +131,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-4 mx-auto font-medium'
         ),
-        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -199,7 +199,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-4 mx-auto font-medium'
         ),
-        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -259,7 +259,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-4 mx-auto font-medium'
         ),
-        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -383,7 +383,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-5 mx-auto'
         ),
-        cls='fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-gray-50 border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -499,7 +499,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-5 mx-auto'
         ),
-        cls='fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-gray-50 border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -632,7 +632,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-6 mx-auto'
         ),
-        cls='fixed bottom-0 z-50 w-full h-16 -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 z-50 w-full h-16 -translate-x-1/2 bg-gray-50 border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -757,7 +757,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-6 mx-auto'
         ),
-        cls='fixed bottom-0 z-50 w-full h-16 -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 z-50 w-full h-16 -translate-x-1/2 bg-gray-50 border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -886,7 +886,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-5 mx-auto'
         ),
-        cls='fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 z-50 w-full -translate-x-1/2 bg-gray-50 border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -1008,7 +1008,7 @@ component = Div(
             ),
             cls='grid h-full max-w-lg grid-cols-5 mx-auto'
         ),
-        cls='fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 z-50 w-full -translate-x-1/2 bg-gray-50 border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -1153,9 +1153,9 @@ component = Div(
                 ),
                 cls='grid h-full max-w-lg grid-cols-3 mx-auto'
             ),
-            cls='sticky bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+            cls='sticky bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
         ),
-        cls='relative w-full max-w-sm overflow-y-scroll bg-white border border-gray-100 rounded-lg dark:bg-gray-700 dark:border-gray-600 h-96'
+        cls='relative w-full max-w-sm overflow-y-scroll bg-gray-50 border border-gray-100 rounded-lg dark:bg-gray-700 dark:border-gray-600 h-96'
     )
 ), code="""Div(
     Div(
@@ -1291,9 +1291,9 @@ component = Div(
                 ),
                 cls='grid h-full max-w-lg grid-cols-3 mx-auto'
             ),
-            cls='sticky bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
+            cls='sticky bottom-0 left-0 z-50 w-full h-16 bg-gray-50 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600'
         ),
-        cls='relative w-full max-w-sm overflow-y-scroll bg-white border border-gray-100 rounded-lg dark:bg-gray-700 dark:border-gray-600 h-96'
+        cls='relative w-full max-w-sm overflow-y-scroll bg-gray-50 border border-gray-100 rounded-lg dark:bg-gray-700 dark:border-gray-600 h-96'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -1433,7 +1433,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='moreOptionsDropdown',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
             ),
             cls='flex items-center justify-center mx-auto'
         ),
@@ -1503,7 +1503,7 @@ component = Div(
             ),
             cls='items-center justify-center hidden ms-auto md:flex'
         ),
-        cls='fixed bottom-0 left-0 z-50 grid w-full h-16 grid-cols-1 px-8 bg-white border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 grid w-full h-16 grid-cols-1 px-8 bg-gray-50 border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -1635,7 +1635,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='moreOptionsDropdown',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
             ),
             cls='flex items-center justify-center mx-auto'
         ),
@@ -1705,7 +1705,7 @@ component = Div(
             ),
             cls='items-center justify-center hidden ms-auto md:flex'
         ),
-        cls='fixed bottom-0 left-0 z-50 grid w-full h-16 grid-cols-1 px-8 bg-white border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 grid w-full h-16 grid-cols-1 px-8 bg-gray-50 border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(
@@ -1933,7 +1933,7 @@ component = Div(
             ),
             cls='items-center justify-center hidden ms-auto md:flex'
         ),
-        cls='fixed bottom-0 left-0 z-50 grid w-full h-24 grid-cols-1 px-8 bg-white border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 grid w-full h-24 grid-cols-1 px-8 bg-gray-50 border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
     )
 ), code="""Div(
     Div(
@@ -2153,7 +2153,7 @@ component = Div(
             ),
             cls='items-center justify-center hidden ms-auto md:flex'
         ),
-        cls='fixed bottom-0 left-0 z-50 grid w-full h-24 grid-cols-1 px-8 bg-white border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
+        cls='fixed bottom-0 left-0 z-50 grid w-full h-24 grid-cols-1 px-8 bg-gray-50 border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     id='mainContent'

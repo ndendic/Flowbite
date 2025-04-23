@@ -228,7 +228,7 @@ component = Div(
                     cls='hidden'
                 ),
                 data_copy_to_clipboard_target='npm-install-copy-text',
-                cls='absolute end-2.5 top-1/2 -translate-y-1/2 text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-white border-gray-200 border h-8'
+                cls='absolute end-2.5 top-1/2 -translate-y-1/2 text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-gray-50 border-gray-200 border h-8'
             ),
             cls='relative'
         ),
@@ -272,7 +272,7 @@ component = Div(
                     cls='hidden'
                 ),
                 data_copy_to_clipboard_target='npm-install-copy-text',
-                cls='absolute end-2.5 top-1/2 -translate-y-1/2 text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-white border-gray-200 border h-8'
+                cls='absolute end-2.5 top-1/2 -translate-y-1/2 text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-gray-50 border-gray-200 border h-8'
             ),
             cls='relative'
         ),
@@ -585,7 +585,7 @@ component = Div(
                     data_copy_to_clipboard_target='code-block',
                     data_copy_to_clipboard_content_type='innerHTML',
                     data_copy_to_clipboard_html_entities='true',
-                    cls='text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-white border-gray-200 border h-8'
+                    cls='text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-gray-50 border-gray-200 border h-8'
                 ),
                 cls='absolute top-2 end-2 bg-gray-50 dark:bg-gray-700'
             ),
@@ -643,7 +643,7 @@ component = Div(
                     data_copy_to_clipboard_target='code-block',
                     data_copy_to_clipboard_content_type='innerHTML',
                     data_copy_to_clipboard_html_entities='true',
-                    cls='text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-white border-gray-200 border h-8'
+                    cls='text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-gray-50 border-gray-200 border h-8'
                 ),
                 cls='absolute top-2 end-2 bg-gray-50 dark:bg-gray-700'
             ),
@@ -796,11 +796,11 @@ component = Div(
             cls='relative mb-6'
         ),
         Div(
-            Button('Cancel', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            Button('Cancel', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             Button('Next step', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'),
             cls='flex items-center space-x-4 rtl:space-x-reverse'
         ),
-        cls='w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5'
+        cls='w-full max-w-lg bg-gray-50 dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5'
     )
 ), code="""Div(
     Div(
@@ -937,11 +937,11 @@ component = Div(
             cls='relative mb-6'
         ),
         Div(
-            Button('Cancel', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+            Button('Cancel', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
             Button('Next step', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'),
             cls='flex items-center space-x-4 rtl:space-x-reverse'
         ),
-        cls='w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5'
+        cls='w-full max-w-lg bg-gray-50 dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(
@@ -1020,7 +1020,7 @@ component = Div(
             ),
             cls='relative bg-gray-50 dark:bg-gray-700 dark:border-gray-600 p-4 rounded-lg border border-gray-200 not-italic grid grid-cols-2'
         ),
-        cls='w-full max-w-md bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm rounded-lg p-5'
+        cls='w-full max-w-md bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm rounded-lg p-5'
     )
 ), code="""Div(
     Div(
@@ -1082,7 +1082,7 @@ component = Div(
             ),
             cls='relative bg-gray-50 dark:bg-gray-700 dark:border-gray-600 p-4 rounded-lg border border-gray-200 not-italic grid grid-cols-2'
         ),
-        cls='w-full max-w-md bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm rounded-lg p-5'
+        cls='w-full max-w-md bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm rounded-lg p-5'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -1106,7 +1106,7 @@ component = Div(
         type='button',
         data_modal_target='course-modal',
         data_modal_toggle='course-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -1171,10 +1171,10 @@ component = Div(
                         ),
                         cls='relative mb-4'
                     ),
-                    Button('Close', type='button', data_modal_hide='course-modal', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Close', type='button', data_modal_hide='course-modal', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='px-4 pb-4 md:px-5 md:pb-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-800'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800'
             ),
             cls='relative p-4 w-full max-w-lg max-h-full'
         ),
@@ -1197,7 +1197,7 @@ component = Div(
         type='button',
         data_modal_target='course-modal',
         data_modal_toggle='course-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -1262,10 +1262,10 @@ component = Div(
                         ),
                         cls='relative mb-4'
                     ),
-                    Button('Close', type='button', data_modal_hide='course-modal', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Close', type='button', data_modal_hide='course-modal', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='px-4 pb-4 md:px-5 md:pb-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-800'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-800'
             ),
             cls='relative p-4 w-full max-w-lg max-h-full'
         ),

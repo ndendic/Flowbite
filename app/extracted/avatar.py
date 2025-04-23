@@ -220,7 +220,7 @@ component = Div(
             cls='py-1'
         ),
         id='userDropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     DiceBearAvatar('Bonnie Green',h=10,w=10, cls='cursor-pointer',data_dropdown_toggle='userDropdown', data_dropdown_placement='bottom-start'),
@@ -248,7 +248,7 @@ component = Div(
             cls='py-1'
         ),
         id='userDropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H2(

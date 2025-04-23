@@ -361,7 +361,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-states',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             ),
             Label('Choose a state', fr='states', cls='sr-only'),
             Select(
@@ -556,7 +556,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-states',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
             ),
             Label('Choose a state', fr='states', cls='sr-only'),
             Select(

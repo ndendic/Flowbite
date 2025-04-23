@@ -38,7 +38,7 @@ component = Div(
         data_popover=True,
         id='popover-default',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Default popover', data_popover_target='popover-default', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -55,7 +55,7 @@ component = Div(
         data_popover=True,
         id='popover-default',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -119,7 +119,7 @@ component = Div(
         data_popover=True,
         id='popover-user-profile',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 ), code="""Div(
     Button('User profile', data_popover_target='popover-user-profile', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -175,7 +175,7 @@ component = Div(
         data_popover=True,
         id='popover-user-profile',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -257,7 +257,7 @@ component = Div(
                             ),
                             'Like page',
                             type='button',
-                            cls='inline-flex items-center justify-center w-full px-5 py-2 me-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                            cls='inline-flex items-center justify-center w-full px-5 py-2 me-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                         ),
                         Button(
                             Svg(
@@ -272,7 +272,7 @@ component = Div(
                             data_dropdown_toggle='dropdown-menu',
                             data_dropdown_placement='right',
                             type='button',
-                            cls='inline-flex items-center px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shrink-0 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                            cls='inline-flex items-center px-3 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg shrink-0 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                         ),
                         cls='flex'
                     ),
@@ -294,7 +294,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-menu',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     )
                 ),
                 cls='flex'
@@ -305,7 +305,7 @@ component = Div(
         data_popover=True,
         id='popover-company-profile',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 ), code="""Div(
     Button('Company profile', data_popover_target='popover-company-profile', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -379,7 +379,7 @@ component = Div(
                             ),
                             'Like page',
                             type='button',
-                            cls='inline-flex items-center justify-center w-full px-5 py-2 me-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                            cls='inline-flex items-center justify-center w-full px-5 py-2 me-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                         ),
                         Button(
                             Svg(
@@ -394,7 +394,7 @@ component = Div(
                             data_dropdown_toggle='dropdown-menu',
                             data_dropdown_placement='right',
                             type='button',
-                            cls='inline-flex items-center px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shrink-0 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                            cls='inline-flex items-center px-3 py-2 text-sm font-medium text-gray-900 bg-gray-50 border border-gray-200 rounded-lg shrink-0 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                         ),
                         cls='flex'
                     ),
@@ -416,7 +416,7 @@ component = Div(
                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                         ),
                         id='dropdown-menu',
-                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                     )
                 ),
                 cls='flex'
@@ -427,7 +427,7 @@ component = Div(
         data_popover=True,
         id='popover-company-profile',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -474,7 +474,7 @@ component = Div(
         data_popover=True,
         id='popover-image',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 ), code="""Div(
     P(
@@ -513,7 +513,7 @@ component = Div(
         data_popover=True,
         id='popover-image',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -567,7 +567,7 @@ component = Div(
         data_popover=True,
         id='popover-description',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
     )
 ), code="""Div(
     P(
@@ -613,7 +613,7 @@ component = Div(
         data_popover=True,
         id='popover-description',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -672,7 +672,7 @@ component = Div(
         data_popover=True,
         id='popover-description',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
     )
 ), code="""Div(
     Button(
@@ -723,7 +723,7 @@ component = Div(
         data_popover=True,
         id='popover-description',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -798,7 +798,7 @@ component = Div(
                 data_popover=True,
                 id='popover-password',
                 role='tooltip',
-                cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+                cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
             ),
             cls='mb-6'
         ),
@@ -877,7 +877,7 @@ component = Div(
                 data_popover=True,
                 id='popover-password',
                 role='tooltip',
-                cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
+                cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400'
             ),
             cls='mb-6'
         ),
@@ -918,7 +918,7 @@ component = Div(
         data_popover=True,
         id='popover-top',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Right popover', data_popover_target='popover-right', data_popover_placement='right', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -934,7 +934,7 @@ component = Div(
         data_popover=True,
         id='popover-right',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Bottom popover', data_popover_target='popover-bottom', data_popover_placement='bottom', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -950,7 +950,7 @@ component = Div(
         data_popover=True,
         id='popover-bottom',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Left popover', data_popover_target='popover-left', data_popover_placement='left', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -966,7 +966,7 @@ component = Div(
         data_popover=True,
         id='popover-left',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Top popover', data_popover_target='popover-top', data_popover_placement='top', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -983,7 +983,7 @@ component = Div(
         data_popover=True,
         id='popover-top',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Right popover', data_popover_target='popover-right', data_popover_placement='right', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -999,7 +999,7 @@ component = Div(
         data_popover=True,
         id='popover-right',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Bottom popover', data_popover_target='popover-bottom', data_popover_placement='bottom', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -1015,7 +1015,7 @@ component = Div(
         data_popover=True,
         id='popover-bottom',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Left popover', data_popover_target='popover-left', data_popover_placement='left', type='button', cls='text-white mb-3 me-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -1031,7 +1031,7 @@ component = Div(
         data_popover=True,
         id='popover-left',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -1062,7 +1062,7 @@ component = Div(
         data_popover=True,
         id='popover-hover',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Click popover', data_popover_target='popover-click', data_popover_trigger='click', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -1078,7 +1078,7 @@ component = Div(
         data_popover=True,
         id='popover-click',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Hover popover', data_popover_target='popover-hover', data_popover_trigger='hover', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-3 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -1095,7 +1095,7 @@ component = Div(
         data_popover=True,
         id='popover-hover',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     ),
     Button('Click popover', data_popover_target='popover-click', data_popover_trigger='click', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
     Div(
@@ -1111,7 +1111,7 @@ component = Div(
         data_popover=True,
         id='popover-click',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H2(
@@ -1140,7 +1140,7 @@ component = Div(
         data_popover=True,
         id='popover-offset',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Offset popover', data_popover_target='popover-offset', data_popover_offset='30', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -1157,7 +1157,7 @@ component = Div(
         data_popover=True,
         id='popover-offset',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     H2(
@@ -1188,7 +1188,7 @@ component = Div(
         data_popover=True,
         id='popover-animation',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Animated popover', data_popover_target='popover-animation', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -1205,7 +1205,7 @@ component = Div(
         data_popover=True,
         id='popover-animation',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_10",cls='mt-2 mb-6'),
     H2(
@@ -1233,7 +1233,7 @@ component = Div(
         data_popover=True,
         id='popover-no-arrow',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 ), code="""Div(
     Button('Default popover', data_popover_target='popover-no-arrow', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
@@ -1249,7 +1249,7 @@ component = Div(
         data_popover=True,
         id='popover-no-arrow',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
+        cls='absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800'
     )
 )""", id="example_11",cls='mt-2 mb-6'),
     H2(
@@ -2089,7 +2089,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"invisible absolute z-10 inline-block w-64 rounded-lg border border-gray-200 bg-white text-sm text-gray-500 opacity-0 shadow-xs transition-opacity duration-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"', cls='s'),
+                        Span('"invisible absolute z-10 inline-block w-64 rounded-lg border border-gray-200 bg-gray-50 text-sm text-gray-500 opacity-0 shadow-xs transition-opacity duration-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'

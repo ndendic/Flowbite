@@ -165,7 +165,7 @@ component = Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -584,7 +584,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -741,7 +741,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -1162,7 +1162,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'),
             Div(
@@ -1417,7 +1417,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Div(
                 Input(type='text', id='phone-input', aria_describedby='helper-text-explanation', pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}', placeholder='123-456-7890', required=True, cls='block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-primary-500'),
@@ -1851,7 +1851,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Div(
                 Input(type='text', id='phone-input', aria_describedby='helper-text-explanation', pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}', placeholder='123-456-7890', required=True, cls='block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-primary-500'),
@@ -2019,7 +2019,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='text-sm font-medium sr-only text-gray-900 dark:text-white'),
             Div(
@@ -2053,7 +2053,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-verification-option',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             cls='flex items-center mt-2'
         ),
@@ -2467,7 +2467,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-phone',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-52 dark:bg-gray-700'
             ),
             Label('Phone number:', fr='phone-input', cls='text-sm font-medium sr-only text-gray-900 dark:text-white'),
             Div(
@@ -2501,7 +2501,7 @@ code="""Div(
                     cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                 ),
                 id='dropdown-verification-option',
-                cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
+                cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-36 dark:bg-gray-700'
             ),
             cls='flex items-center mt-2'
         ),

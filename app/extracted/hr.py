@@ -71,7 +71,7 @@ component = Div(
                 viewbox='0 0 18 14',
                 cls='w-4 h-4 text-gray-700 dark:text-gray-300'
             ),
-            cls='absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900'
+            cls='absolute px-4 -translate-x-1/2 bg-gray-50 left-1/2 dark:bg-gray-900'
         ),
         cls='inline-flex items-center justify-center w-full'
     ),
@@ -88,7 +88,7 @@ component = Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
     Div(
         Hr(cls='w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700'),
-        Span('or', cls='absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900'),
+        Span('or', cls='absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-gray-50 left-1/2 dark:text-white dark:bg-gray-900'),
         cls='inline-flex items-center justify-center w-full'
     ),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil.', cls='text-gray-500 dark:text-gray-400')
@@ -96,7 +96,7 @@ component = Div(
     P('Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.', cls='text-gray-500 dark:text-gray-400'),
     Div(
         Hr(cls='w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700'),
-        Span('or', cls='absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900'),
+        Span('or', cls='absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-gray-50 left-1/2 dark:text-white dark:bg-gray-900'),
         cls='inline-flex items-center justify-center w-full'
     ),
     P('Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil.', cls='text-gray-500 dark:text-gray-400')

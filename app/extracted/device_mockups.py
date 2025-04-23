@@ -23,7 +23,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]'
     )
@@ -36,7 +36,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]'
     )
@@ -57,7 +57,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl'
     )
@@ -70,7 +70,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl'
     )
@@ -92,7 +92,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-xl overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-xl overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-xl h-[600px] w-[300px] shadow-xl'
     )
@@ -106,7 +106,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-xl overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-xl overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-xl h-[600px] w-[300px] shadow-xl'
     )
@@ -127,7 +127,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png', alt=True, cls='dark:hidden h-[426px] md:h-[654px]'),
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image-dark.png', alt=True, cls='hidden dark:block h-[426px] md:h-[654px]'),
-            cls='rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[454px] max-w-[341px] md:h-[682px] md:max-w-[512px]'
     )
@@ -140,7 +140,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png', alt=True, cls='dark:hidden h-[426px] md:h-[654px]'),
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image-dark.png', alt=True, cls='hidden dark:block h-[426px] md:h-[654px]'),
-            cls='rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[454px] max-w-[341px] md:h-[682px] md:max-w-[512px]'
     )
@@ -157,7 +157,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png', alt=True, cls='dark:hidden h-[156px] md:h-[278px] w-full rounded-lg'),
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png', alt=True, cls='hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg'),
-            cls='rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800'
+            cls='rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]'
     ),
@@ -170,7 +170,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png', alt=True, cls='dark:hidden h-[156px] md:h-[278px] w-full rounded-lg'),
             Img(src='https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png', alt=True, cls='hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg'),
-            cls='rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800'
+            cls='rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]'
     ),
@@ -259,7 +259,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-300 dark:border-gray-800 bg-gray-300 dark:bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]'
     )
@@ -272,7 +272,7 @@ component = Div(
         Div(
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png', alt=True, cls='dark:hidden w-[272px] h-[572px]'),
             Img(src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png', alt=True, cls='hidden dark:block w-[272px] h-[572px]'),
-            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800'
+            cls='rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-50 dark:bg-gray-800'
         ),
         cls='relative mx-auto border-gray-300 dark:border-gray-800 bg-gray-300 dark:bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]'
     )

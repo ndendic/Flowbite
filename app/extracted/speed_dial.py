@@ -43,7 +43,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -66,7 +66,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -89,7 +89,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -112,7 +112,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -159,7 +159,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -182,7 +182,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -205,7 +205,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -228,7 +228,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -287,7 +287,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -310,7 +310,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -333,7 +333,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -356,7 +356,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -403,7 +403,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -426,7 +426,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -449,7 +449,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -472,7 +472,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-lg border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -525,7 +525,7 @@ component = Div(
                 ),
                 Span('Share', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -539,7 +539,7 @@ component = Div(
                 ),
                 Span('Print', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -553,7 +553,7 @@ component = Div(
                 ),
                 Span('Save', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -567,7 +567,7 @@ component = Div(
                 ),
                 Span('Copy', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-inside-button',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -604,7 +604,7 @@ component = Div(
                 ),
                 Span('Share', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -618,7 +618,7 @@ component = Div(
                 ),
                 Span('Print', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -632,7 +632,7 @@ component = Div(
                 ),
                 Span('Save', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -646,7 +646,7 @@ component = Div(
                 ),
                 Span('Copy', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-inside-button-square',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -684,7 +684,7 @@ component = Div(
                 ),
                 Span('Share', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -698,7 +698,7 @@ component = Div(
                 ),
                 Span('Print', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -712,7 +712,7 @@ component = Div(
                 ),
                 Span('Save', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -726,7 +726,7 @@ component = Div(
                 ),
                 Span('Copy', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-inside-button',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -763,7 +763,7 @@ component = Div(
                 ),
                 Span('Share', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -777,7 +777,7 @@ component = Div(
                 ),
                 Span('Print', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -791,7 +791,7 @@ component = Div(
                 ),
                 Span('Save', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -805,7 +805,7 @@ component = Div(
                 ),
                 Span('Copy', cls='block mb-px text-xs font-medium'),
                 type='button',
-                cls='w-[56px] h-[56px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='w-[56px] h-[56px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-inside-button-square',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -851,7 +851,7 @@ component = Div(
                 ),
                 Span('Share', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -865,7 +865,7 @@ component = Div(
                 ),
                 Span('Print', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -879,7 +879,7 @@ component = Div(
                 ),
                 Span('Save', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -893,7 +893,7 @@ component = Div(
                 ),
                 Span('Copy', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-outside-button',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -930,7 +930,7 @@ component = Div(
                 ),
                 Span('Share', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -944,7 +944,7 @@ component = Div(
                 ),
                 Span('Print', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -958,7 +958,7 @@ component = Div(
                 ),
                 Span('Save', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -972,7 +972,7 @@ component = Div(
                 ),
                 Span('Copy', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-outside-button-square',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -1010,7 +1010,7 @@ component = Div(
                 ),
                 Span('Share', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1024,7 +1024,7 @@ component = Div(
                 ),
                 Span('Print', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1038,7 +1038,7 @@ component = Div(
                 ),
                 Span('Save', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1052,7 +1052,7 @@ component = Div(
                 ),
                 Span('Copy', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-outside-button',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -1089,7 +1089,7 @@ component = Div(
                 ),
                 Span('Share', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 hover:text-gray-900 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1103,7 +1103,7 @@ component = Div(
                 ),
                 Span('Print', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1117,7 +1117,7 @@ component = Div(
                 ),
                 Span('Save', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Button(
                 Svg(
@@ -1131,7 +1131,7 @@ component = Div(
                 ),
                 Span('Copy', cls='absolute block mb-px text-sm font-medium -translate-y-1/2 -start-14 top-1/2'),
                 type='button',
-                cls='relative w-[52px] h-[52px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='relative w-[52px] h-[52px] text-gray-500 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             id='speed-dial-menu-text-outside-button-square',
             cls='flex flex-col items-center hidden mb-4 space-y-2'
@@ -1233,7 +1233,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:border-gray-600 dark:bg-gray-700'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:border-gray-600 dark:bg-gray-700'
         ),
         Button(
             Svg(
@@ -1323,7 +1323,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-square',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1414,7 +1414,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:border-gray-600 dark:bg-gray-700'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:border-gray-600 dark:bg-gray-700'
         ),
         Button(
             Svg(
@@ -1504,7 +1504,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-square',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1587,7 +1587,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-alternative',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1661,7 +1661,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-alternative-square',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1736,7 +1736,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-alternative',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1810,7 +1810,7 @@ component = Div(
                 cls='text-sm text-gray-500 dark:text-gray-300'
             ),
             id='speed-dial-menu-dropdown-alternative-square',
-            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
+            cls='flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-gray-50 border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600'
         ),
         Button(
             Svg(
@@ -1883,7 +1883,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -1906,7 +1906,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -1929,7 +1929,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -1952,7 +1952,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -1998,7 +1998,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2021,7 +2021,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2044,7 +2044,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2067,7 +2067,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2112,7 +2112,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2135,7 +2135,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2158,7 +2158,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2181,7 +2181,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2228,7 +2228,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2251,7 +2251,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2274,7 +2274,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2297,7 +2297,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2358,7 +2358,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2381,7 +2381,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2404,7 +2404,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2427,7 +2427,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2474,7 +2474,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2497,7 +2497,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2520,7 +2520,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2543,7 +2543,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2620,7 +2620,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2643,7 +2643,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2666,7 +2666,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2689,7 +2689,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2736,7 +2736,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2759,7 +2759,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2782,7 +2782,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2805,7 +2805,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2855,7 +2855,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2878,7 +2878,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -2901,7 +2901,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -2924,7 +2924,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -2971,7 +2971,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -2994,7 +2994,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3017,7 +3017,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3040,7 +3040,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3095,7 +3095,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3118,7 +3118,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3141,7 +3141,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3164,7 +3164,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3211,7 +3211,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3234,7 +3234,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3257,7 +3257,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3280,7 +3280,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='top',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3346,7 +3346,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3369,7 +3369,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3392,7 +3392,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3415,7 +3415,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3463,7 +3463,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3486,7 +3486,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3509,7 +3509,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3532,7 +3532,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3594,7 +3594,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3617,7 +3617,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3640,7 +3640,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3663,7 +3663,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -3711,7 +3711,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-share',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Share',
@@ -3734,7 +3734,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-print',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Print',
@@ -3757,7 +3757,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-download',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Download',
@@ -3780,7 +3780,7 @@ component = Div(
                 type='button',
                 data_tooltip_target='tooltip-copy',
                 data_tooltip_placement='left',
-                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
+                cls='flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-50 rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-xs dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400'
             ),
             Div(
                 'Copy',
@@ -4589,7 +4589,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
+                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-gray-50 text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),
@@ -4822,7 +4822,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
+                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-gray-50 text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),
@@ -5067,7 +5067,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
+                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-gray-50 text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),
@@ -5324,7 +5324,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
+                        Span('"flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-gray-50 text-gray-500 shadow-xs hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),

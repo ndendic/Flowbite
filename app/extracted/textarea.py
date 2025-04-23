@@ -186,8 +186,8 @@ component = Div(
             ),
             Div(
                 Label('Publish post', fr='editor', cls='sr-only'),
-                Textarea(id='editor', rows='8', placeholder='Write an article...', required=True, cls='block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
-                cls='px-4 py-2 bg-white rounded-b-lg dark:bg-gray-800'
+                Textarea(id='editor', rows='8', placeholder='Write an article...', required=True, cls='block w-full px-0 text-sm text-gray-800 bg-gray-50 border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
+                cls='px-4 py-2 bg-gray-50 rounded-b-lg dark:bg-gray-800'
             ),
             cls='w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600'
         ),
@@ -352,8 +352,8 @@ component = Div(
             ),
             Div(
                 Label('Publish post', fr='editor', cls='sr-only'),
-                Textarea(id='editor', rows='8', placeholder='Write an article...', required=True, cls='block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
-                cls='px-4 py-2 bg-white rounded-b-lg dark:bg-gray-800'
+                Textarea(id='editor', rows='8', placeholder='Write an article...', required=True, cls='block w-full px-0 text-sm text-gray-800 bg-gray-50 border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
+                cls='px-4 py-2 bg-gray-50 rounded-b-lg dark:bg-gray-800'
             ),
             cls='w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600'
         ),
@@ -372,8 +372,8 @@ component = Div(
         Div(
             Div(
                 Label('Your comment', fr='comment', cls='sr-only'),
-                Textarea(id='comment', rows='4', placeholder='Write a comment...', required=True, cls='w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
-                cls='px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800'
+                Textarea(id='comment', rows='4', placeholder='Write a comment...', required=True, cls='w-full px-0 text-sm text-gray-900 bg-gray-50 border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
+                cls='px-4 py-2 bg-gray-50 rounded-t-lg dark:bg-gray-800'
             ),
             Div(
                 Button('Post comment', type='submit', cls='inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800'),
@@ -435,8 +435,8 @@ component = Div(
         Div(
             Div(
                 Label('Your comment', fr='comment', cls='sr-only'),
-                Textarea(id='comment', rows='4', placeholder='Write a comment...', required=True, cls='w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
-                cls='px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800'
+                Textarea(id='comment', rows='4', placeholder='Write a comment...', required=True, cls='w-full px-0 text-sm text-gray-900 bg-gray-50 border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400'),
+                cls='px-4 py-2 bg-gray-50 rounded-t-lg dark:bg-gray-800'
             ),
             Div(
                 Button('Post comment', type='submit', cls='inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800'),
@@ -533,7 +533,7 @@ component = Div(
                 type='button',
                 cls='p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600'
             ),
-            Textarea(id='chat', rows='1', placeholder='Your message...', cls='block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Textarea(id='chat', rows='1', placeholder='Your message...', cls='block mx-4 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
                 Svg(
                     Path(d='m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z'),
@@ -582,7 +582,7 @@ component = Div(
                 type='button',
                 cls='p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600'
             ),
-            Textarea(id='chat', rows='1', placeholder='Your message...', cls='block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+            Textarea(id='chat', rows='1', placeholder='Your message...', cls='block mx-4 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
             Button(
                 Svg(
                     Path(d='m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z'),

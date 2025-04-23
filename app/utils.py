@@ -17,10 +17,10 @@ def component_showcase(*c:FT|str, # Components
             cls=TabContainerT.rounded
         ),
         Ul(id=f'{id}-tab-content', cls='relative')(
-            Li(id=f'{id}-preview', role='tabpanel', aria_labelledby=f'{id}-preview-tab', cls='p-4 border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600')(
+            Li(id=f'{id}-preview', role='tabpanel', aria_labelledby=f'{id}-preview-tab', cls='p-4 border border-t-0 rounded-b-lg border-gray-300 dark:border-gray-600')(
                 *c
             ),
-            Li(id=f'{id}-code', role='tabpanel', aria_labelledby=f'{id}-code-tab', cls='hidden border border-t-0 rounded-b-lg border-gray-50 dark:border-gray-600')(
+            Li(id=f'{id}-code', role='tabpanel', aria_labelledby=f'{id}-code-tab', cls='hidden border border-t-0 rounded-b-lg border-gray-300 dark:border-gray-600')(
                 CodeBlock(code)
             ),   
         ),

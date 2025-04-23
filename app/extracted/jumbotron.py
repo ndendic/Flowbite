@@ -33,12 +33,12 @@ component = Div(
                     href='#',
                     cls='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
                 ),
-                A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 cls='flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0'
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 ), code="""Div(
     Section(
@@ -59,12 +59,12 @@ component = Div(
                     href='#',
                     cls='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
                 ),
-                A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                 cls='flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0'
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -154,7 +154,7 @@ component = Div(
                         href='#',
                         cls='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
                     ),
-                    A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex flex-col space-y-4 sm:flex-row sm:space-y-0'
                 ),
                 cls='flex flex-col justify-center'
@@ -164,7 +164,7 @@ component = Div(
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 ), code="""Div(
     Section(
@@ -186,7 +186,7 @@ component = Div(
                         href='#',
                         cls='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
                     ),
-                    A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    A('Learn more', href='#', cls='py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex flex-col space-y-4 sm:flex-row sm:space-y-0'
                 ),
                 cls='flex flex-col justify-center'
@@ -196,7 +196,7 @@ component = Div(
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -260,7 +260,7 @@ component = Div(
                         action='#',
                         cls='mt-8 space-y-6'
                     ),
-                    cls='w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800'
+                    cls='w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-gray-50 rounded-lg shadow-xl dark:bg-gray-800'
                 )
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16'
@@ -321,7 +321,7 @@ component = Div(
                         action='#',
                         cls='mt-8 space-y-6'
                     ),
-                    cls='w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800'
+                    cls='w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-gray-50 rounded-lg shadow-xl dark:bg-gray-800'
                 )
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16'
@@ -370,7 +370,7 @@ component = Div(
                         ),
                         cls='absolute inset-y-0 rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
-                    Input(type='email', id='default-email', placeholder='Enter your email here...', required=True, cls='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+                    Input(type='email', id='default-email', placeholder='Enter your email here...', required=True, cls='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                     Button('Sign up', type='submit', cls='text-white absolute end-2.5 bottom-2.5 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='relative'
                 ),
@@ -379,7 +379,7 @@ component = Div(
             cls='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative'
         ),
         Div(cls='bg-gradient-to-b from-primary-50 to-transparent dark:from-primary-900 w-full h-full absolute top-0 left-0 z-0'),
-        cls="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+        cls="bg-gray-50 dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
     )
 ), code="""Div(
     Section(
@@ -415,7 +415,7 @@ component = Div(
                         ),
                         cls='absolute inset-y-0 rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none'
                     ),
-                    Input(type='email', id='default-email', placeholder='Enter your email here...', required=True, cls='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
+                    Input(type='email', id='default-email', placeholder='Enter your email here...', required=True, cls='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
                     Button('Sign up', type='submit', cls='text-white absolute end-2.5 bottom-2.5 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='relative'
                 ),
@@ -424,7 +424,7 @@ component = Div(
             cls='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative'
         ),
         Div(cls='bg-gradient-to-b from-primary-50 to-transparent dark:from-primary-900 w-full h-full absolute top-0 left-0 z-0'),
-        cls="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+        cls="bg-gray-50 dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -535,7 +535,7 @@ component = Div(
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 ), code="""Div(
     Section(
@@ -638,7 +638,7 @@ component = Div(
             ),
             cls='py-8 px-4 mx-auto max-w-screen-xl lg:py-16'
         ),
-        cls='bg-white dark:bg-gray-900'
+        cls='bg-gray-50 dark:bg-gray-900'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(

@@ -60,7 +60,7 @@ def SliderControls(
     cls:Enum|str|tuple='', # Additional classes for controls container (Not directly used on element)
     prev_button_cls:Enum|str|tuple='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none', # Added prev_button_cls
     next_button_cls:Enum|str|tuple='absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none', # Added next_button_cls
-    span_cls:Enum|str|tuple='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none', # Added span_cls
+    span_cls:Enum|str|tuple='inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50/30 dark:bg-gray-800/30 group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none', # Added span_cls
     icon_cls:Enum|str|tuple='text-gray-800 dark:text-gray-300', # Added icon_cls
     **kwargs # Additional args for controls (Not directly used)
 ) -> tuple:

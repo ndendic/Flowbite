@@ -179,7 +179,7 @@ component = Div(
         Div(data_popper_arrow=True),
         id='popover-image',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 ), code="""Div(
     P(
@@ -217,7 +217,7 @@ component = Div(
         Div(data_popper_arrow=True),
         id='popover-image',
         role='tooltip',
-        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
+        cls='absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-gray-50 border border-gray-200 rounded-lg shadow-xs opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(

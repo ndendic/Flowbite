@@ -504,7 +504,7 @@ component = Div(
             role='status',
             cls='absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2'
         ),
-        cls='relative items-center block max-w-sm p-6 bg-white border border-gray-100 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-700'
+        cls='relative items-center block max-w-sm p-6 bg-gray-50 border border-gray-100 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-700'
     )
 ), code="""Div(
     Div(
@@ -524,7 +524,7 @@ component = Div(
             role='status',
             cls='absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2'
         ),
-        cls='relative items-center block max-w-sm p-6 bg-white border border-gray-100 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-700'
+        cls='relative items-center block max-w-sm p-6 bg-gray-50 border border-gray-100 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-700'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -665,7 +665,7 @@ component = Div(
         'Loading...',
         disabled=True,
         type='button',
-        cls='py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-2 focus:ring-primary-700 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center'
+        cls='py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-2 focus:ring-primary-700 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center'
     )
 ), code="""Div(
     Button(
@@ -698,7 +698,7 @@ component = Div(
         'Loading...',
         disabled=True,
         type='button',
-        cls='py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-2 focus:ring-primary-700 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center'
+        cls='py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-2 focus:ring-primary-700 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(

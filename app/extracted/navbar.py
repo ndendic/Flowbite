@@ -54,14 +54,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-default',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -105,14 +105,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-default',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -186,7 +186,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -198,14 +198,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-dropdown',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 ), code="""Div(
     Nav(
@@ -271,7 +271,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -283,14 +283,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-dropdown',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H2(
@@ -385,7 +385,7 @@ component = Div(
                                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                                         ),
                                         id='doubleDropdown',
-                                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                                     ),
                                     aria_labelledby='dropdownNavbarLink'
                                 ),
@@ -400,7 +400,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -412,14 +412,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-multi-level',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 ), code="""Div(
     Nav(
@@ -506,7 +506,7 @@ component = Div(
                                             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                                         ),
                                         id='doubleDropdown',
-                                        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                                        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                                     ),
                                     aria_labelledby='dropdownNavbarLink'
                                 ),
@@ -521,7 +521,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -533,14 +533,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-multi-level',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -593,14 +593,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 md:dark:hover:text-primary-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-sticky',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600'
+        cls='bg-gray-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600'
     )
 ), code="""Div(
     Nav(
@@ -645,14 +645,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 md:dark:hover:text-primary-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-sticky',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600'
+        cls='bg-gray-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -678,7 +678,7 @@ component = Div(
             ),
             cls='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     ),
     Nav(
         Div(
@@ -720,7 +720,7 @@ component = Div(
             ),
             cls='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     ),
     Nav(
         Div(
@@ -840,14 +840,14 @@ component = Div(
                     Li(
                         A('Services', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-search',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -935,14 +935,14 @@ component = Div(
                     Li(
                         A('Services', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-search',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -995,14 +995,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:dark:hover:text-primary-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-cta',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -1047,14 +1047,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:dark:hover:text-primary-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-cta',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H2(
@@ -1223,7 +1223,7 @@ component = Div(
                         cls='py-2 font-medium'
                     ),
                     id='language-dropdown-menu',
-                    cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700'
+                    cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700'
                 ),
                 Button(
                     Span('Open main menu', cls='sr-only'),
@@ -1260,14 +1260,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-language',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -1428,7 +1428,7 @@ component = Div(
                         cls='py-2 font-medium'
                     ),
                     id='language-dropdown-menu',
-                    cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700'
+                    cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700'
                 ),
                 Button(
                     Span('Open main menu', cls='sr-only'),
@@ -1465,14 +1465,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-language',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H2(
@@ -1525,7 +1525,7 @@ component = Div(
                         cls='py-2'
                     ),
                     id='user-dropdown',
-                    cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                 ),
                 Button(
                     Span('Open main menu', cls='sr-only'),
@@ -1562,14 +1562,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-user',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -1614,7 +1614,7 @@ component = Div(
                         cls='py-2'
                     ),
                     id='user-dropdown',
-                    cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                    cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                 ),
                 Button(
                     Span('Open main menu', cls='sr-only'),
@@ -1651,14 +1651,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='navbar-user',
                 cls='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H2(
@@ -1727,7 +1727,7 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='mega-menu-full',
                 cls='items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1'
@@ -1791,9 +1791,9 @@ component = Div(
                 cls='grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6'
             ),
             id='mega-menu-full-dropdown',
-            cls='mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600'
+            cls='mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-gray-50 border-y dark:bg-gray-800 dark:border-gray-600'
         ),
-        cls='bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:border-gray-600 dark:bg-gray-900'
     )
 ), code="""Div(
     Nav(
@@ -1850,7 +1850,7 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 md:dark:hover:bg-transparent dark:border-gray-700')
                     ),
-                    cls='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
+                    cls='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'
                 ),
                 id='mega-menu-full',
                 cls='items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1'
@@ -1914,9 +1914,9 @@ component = Div(
                 cls='grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6'
             ),
             id='mega-menu-full-dropdown',
-            cls='mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600'
+            cls='mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-gray-50 border-y dark:bg-gray-800 dark:border-gray-600'
         ),
-        cls='bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900'
+        cls='bg-gray-50 border-gray-200 dark:border-gray-600 dark:bg-gray-900'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     H2(
@@ -2820,7 +2820,7 @@ component = Div(
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"w-48 rounded-lg  border border-gray-200 bg-white text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white"', cls='s'),
+                        Span('"w-48 rounded-lg  border border-gray-200 bg-gray-50 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'

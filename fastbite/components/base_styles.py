@@ -324,7 +324,7 @@ class ButtonOutline(VEnum):
 class ButtonT(VEnum):
     """Button type variants"""
     primary = BtnColor.primary.value
-    secondary = stringify(("bg-white hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700", Border.default))
+    secondary = stringify(("bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700", Border.default))
     ghost = "hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
     link = "dark:text-white cursor-pointer"
     success = BtnColor.green.value   
@@ -450,11 +450,11 @@ class SectionT(VEnum):
     xl = ContainerSize.xl+"py-12 px-4"
 
 class CardT(VEnum):
-    default = stringify((Border.light, 'block max-w-sm p-6 bg-white rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700'))
+    default = stringify((Border.light, 'block max-w-sm p-6 bg-gray-50 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700'))
     primary = stringify((Border.light, 'block max-w-sm p-6 bg-primary-50 rounded-lg shadow-sm hover:bg-primary-100 dark:bg-primary-800 dark:hover:bg-primary-700'))
-    secondary = 'block max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow-sm hover:bg-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
+    secondary = 'block max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
     destructive = 'block max-w-sm p-6 bg-red-50 border border-gray-200 rounded-lg shadow-sm hover:bg-red-300 dark:bg-red-800 dark:border-gray-700 dark:hover:bg-red-700'
-    horizontal = 'flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+    horizontal = 'flex flex-col items-center bg-gray-50 border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
     hover = 'hover:shadow-lg hover:-translate-y-1 transition-all duration-200'
     plain = 'block max-w-sm p-6 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700'
     # Card elements
@@ -547,9 +547,9 @@ class CheckboxT(VEnum):
     error = stringify((Border.error, "w-4 h-4 text-red-600 bg-red-100 rounded-sm focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700"))
 
 class SwitchT(VEnum):
-    default = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"
-    success = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
-    error = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600 dark:peer-checked:bg-red-600"
+    default = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"
+    success = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600 dark:peer-checked:bg-green-600"
+    error = "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600 dark:peer-checked:bg-red-600"
 
 # Modals
 class ModalT(VEnum):
@@ -560,7 +560,7 @@ class ModalT(VEnum):
     backdrop = 'bg-gray-900/50 dark:bg-gray-900/80'
     # Dialog styles
     dialog = 'relative p-4 w-full max-h-full'
-    dialog_inner = 'relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+    dialog_inner = 'relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
     
     # Header styles
     header = 'flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200'
@@ -605,7 +605,7 @@ class ModalT(VEnum):
     bottom_right = 'items-end justify-end'  # Bottom right
 
 class NavT(VEnum):
-    default = 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+    default = 'bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700'
     primary = 'border border-primary-400 dark:border-primary-600 rounded-lg text-primary-500 dark:text-primary-500'
     secondary = 'border border-gray-400 dark:border-gray-600 rounded-lg'
     transparent = 'bg-transparent'
@@ -614,9 +614,9 @@ class NavT(VEnum):
     child_li = 'flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-9'
 
 class NavbarT(VEnum):
-    default = 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+    default = 'bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700'
     dark = 'bg-gray-800 dark:bg-gray-800'
-    light = 'bg-white dark:bg-gray-800'
+    light = 'bg-gray-50 dark:bg-gray-800'
     transparent = 'bg-transparent'
 
 # Progress
@@ -665,8 +665,8 @@ class TableT(VEnum):
     container_shadow = "shadow-md"
     
     # Row level styles
-    row_default = "bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
-    row_striped = "odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200"
+    row_default = "bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+    row_striped = "odd:bg-gray-50 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200"
     row_hover = "hover:bg-gray-50 dark:hover:bg-gray-600"
     row_bordered = "border-b dark:border-gray-700 border-gray-200"
     row_header = "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
@@ -689,7 +689,7 @@ class TabContainerT(VEnum):
 class TabItemT(VEnum):
     "Enum for the tab item"
     default_active = "text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-500 border-primary-600 dark:border-primary-500"
-    default_inactive = "dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+    default_inactive = "border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 hover:border-gray-600 dark:border-gray-700 dark:hover:text-gray-300"
 #     pill_active = "py-3 text-white bg-primary-600 rounded-lg active"
 #     pill_inactive = "py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white"
 

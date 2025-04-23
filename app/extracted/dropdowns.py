@@ -60,7 +60,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -96,7 +96,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_0",cls='mt-2 mb-6'),
     H2(
@@ -150,7 +150,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownHover',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -187,7 +187,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownHover',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_1",cls='mt-2 mb-6'),
     H3(
@@ -237,7 +237,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDelay',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -275,7 +275,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDelay',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_2",cls='mt-2 mb-6'),
     H2(
@@ -324,7 +324,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDivider',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -361,7 +361,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDivider',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_3",cls='mt-2 mb-6'),
     H2(
@@ -411,7 +411,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownInformation',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -453,7 +453,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownInformation',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_4",cls='mt-2 mb-6'),
     H2(
@@ -519,7 +519,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='doubleDropdown',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                 )
             ),
             Li(
@@ -532,7 +532,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='multi-dropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -590,7 +590,7 @@ component = Div(
                         cls='py-2 text-sm text-gray-700 dark:text-gray-200'
                     ),
                     id='doubleDropdown',
-                    cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+                    cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
                 )
             ),
             Li(
@@ -603,7 +603,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='multi-dropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_5",cls='mt-2 mb-6'),
     H2(
@@ -656,7 +656,7 @@ component = Div(
             cls='p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDefaultCheckbox',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -701,7 +701,7 @@ component = Div(
             cls='p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDefaultCheckbox',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_6",cls='mt-2 mb-6'),
     H3(
@@ -754,7 +754,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownBgHover',
-        cls='z-10 hidden w-48 bg-white rounded-lg shadow-sm dark:bg-gray-700'
+        cls='z-10 hidden w-48 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -799,7 +799,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownBgHover',
-        cls='z-10 hidden w-48 bg-white rounded-lg shadow-sm dark:bg-gray-700'
+        cls='z-10 hidden w-48 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
     )
 )""", id="example_7",cls='mt-2 mb-6'),
     H3(
@@ -885,7 +885,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownHelper',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -963,7 +963,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownHelper',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_8",cls='mt-2 mb-6'),
     H2(
@@ -1016,7 +1016,7 @@ component = Div(
             cls='p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDefaultRadio',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -1061,7 +1061,7 @@ component = Div(
             cls='p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDefaultRadio',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_9",cls='mt-2 mb-6'),
     H3(
@@ -1114,7 +1114,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRadioBgHover',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -1159,7 +1159,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRadioBgHover',
-        cls='z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden w-48 bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_10",cls='mt-2 mb-6'),
     H3(
@@ -1245,7 +1245,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRadioHelper',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -1323,7 +1323,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRadioHelper',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-60 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_11",cls='mt-2 mb-6'),
     H2(
@@ -1355,7 +1355,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Enable notifications', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1366,7 +1366,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Enable 2FA authentication', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1377,7 +1377,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Subscribe to newsletter', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1388,7 +1388,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownToggle',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-72 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-72 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -1412,7 +1412,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Enable notifications', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1423,7 +1423,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Enable 2FA authentication', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1434,7 +1434,7 @@ component = Div(
                 Div(
                     Label(
                         Input(type='checkbox', value=True, cls='sr-only peer'),
-                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
+                        Div(cls="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-gray-50 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-primary-600 dark:peer-checked:bg-primary-600"),
                         Span('Subscribe to newsletter', cls='ms-3 text-sm font-medium text-gray-900 dark:text-gray-300'),
                         cls='inline-flex items-center w-full cursor-pointer'
                     ),
@@ -1445,7 +1445,7 @@ component = Div(
             cls='p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownToggle',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-72 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-72 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_12",cls='mt-2 mb-6'),
     H2(
@@ -1555,7 +1555,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-primary-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-primary-500 hover:underline'
         ),
         id='dropdownUsers',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -1657,7 +1657,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-primary-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-primary-500 hover:underline'
         ),
         id='dropdownUsers',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 )""", id="example_13",cls='mt-2 mb-6'),
     H2(
@@ -1771,7 +1771,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline'
         ),
         id='dropdownSearch',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -1877,7 +1877,7 @@ component = Div(
             cls='flex items-center p-3 text-sm font-medium text-red-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-red-500 hover:underline'
         ),
         id='dropdownSearch',
-        cls='z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-60 dark:bg-gray-700'
     )
 )""", id="example_14",cls='mt-2 mb-6'),
     H2(
@@ -1900,7 +1900,7 @@ component = Div(
         id='dropdownMenuIconButton',
         data_dropdown_toggle='dropdownDots',
         type='button',
-        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
     ),
     Div(
         Ul(
@@ -1921,7 +1921,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDots',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     ),
     Button(
         Svg(
@@ -1935,7 +1935,7 @@ component = Div(
         id='dropdownMenuIconHorizontalButton',
         data_dropdown_toggle='dropdownDotsHorizontal',
         type='button',
-        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
     ),
     Div(
         Ul(
@@ -1956,7 +1956,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDotsHorizontal',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -1971,7 +1971,7 @@ component = Div(
         id='dropdownMenuIconButton',
         data_dropdown_toggle='dropdownDots',
         type='button',
-        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
     ),
     Div(
         Ul(
@@ -1992,7 +1992,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDots',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     ),
     Button(
         Svg(
@@ -2006,7 +2006,7 @@ component = Div(
         id='dropdownMenuIconHorizontalButton',
         data_dropdown_toggle='dropdownDotsHorizontal',
         type='button',
-        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        cls='inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
     ),
     Div(
         Ul(
@@ -2027,7 +2027,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownDotsHorizontal',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_15",cls='mt-2 mb-6'),
     H2(
@@ -2224,7 +2224,7 @@ component = Div(
         ),
         id='dropdownNotification',
         aria_labelledby='dropdownNotificationButton',
-        cls='z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:divide-gray-700'
+        cls='z-20 hidden w-full max-w-sm bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:divide-gray-700'
     )
 ), code="""Div(
     Button(
@@ -2413,7 +2413,7 @@ component = Div(
         ),
         id='dropdownNotification',
         aria_labelledby='dropdownNotificationButton',
-        cls='z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:divide-gray-700'
+        cls='z-20 hidden w-full max-w-sm bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:divide-gray-700'
     )
 )""", id="example_16",cls='mt-2 mb-6'),
     H2(
@@ -2456,7 +2456,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownAvatar',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -2491,7 +2491,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownAvatar',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_17",cls='mt-2 mb-6'),
     H3(
@@ -2543,7 +2543,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownAvatarName',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -2587,7 +2587,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownAvatarName',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_18",cls='mt-2 mb-6'),
     H2(
@@ -2665,7 +2665,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -2677,14 +2677,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse'
+                    cls='flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse'
                 ),
                 id='navbar-dropdown',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2.5'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 ), code="""Div(
     Nav(
@@ -2750,7 +2750,7 @@ component = Div(
                                 cls='py-1'
                             ),
                             id='dropdownNavbar',
-                            cls='z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
                         )
                     ),
                     Li(
@@ -2762,14 +2762,14 @@ component = Div(
                     Li(
                         A('Contact', href='#', cls='block py-2 px-3 text-gray-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
                     ),
-                    cls='flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse'
+                    cls='flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse'
                 ),
                 id='navbar-dropdown',
                 cls='hidden w-full md:block md:w-auto'
             ),
             cls='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2.5'
         ),
-        cls='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'
+        cls='bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700'
     )
 )""", id="example_19",cls='mt-2 mb-6'),
     H2(
@@ -2843,7 +2843,7 @@ component = Div(
             cls='p-3'
         ),
         id='dateRangeDropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-80 lg:w-96 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-80 lg:w-96 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -2905,7 +2905,7 @@ component = Div(
             cls='p-3'
         ),
         id='dateRangeDropdown',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-80 lg:w-96 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-80 lg:w-96 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_20",cls='mt-2 mb-6'),
     H2(
@@ -2955,7 +2955,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownSmall',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     ),
     Button(
         'Large dropdown',
@@ -2996,7 +2996,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownLarge',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 ), code="""Div(
     Button(
@@ -3038,7 +3038,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownSmall',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     ),
     Button(
         'Large dropdown',
@@ -3079,7 +3079,7 @@ component = Div(
             cls='py-2'
         ),
         id='dropdownLarge',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600'
     )
 )""", id="example_21",cls='mt-2 mb-6'),
     H2(
@@ -3128,7 +3128,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownTop',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown right',
@@ -3164,7 +3164,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRight',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown bottom',
@@ -3200,7 +3200,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownBottom',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         Svg(
@@ -3236,7 +3236,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownLeft',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -3273,7 +3273,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownTop',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown right',
@@ -3309,7 +3309,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRight',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown bottom',
@@ -3345,7 +3345,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownBottom',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         Svg(
@@ -3381,7 +3381,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownLeft',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_22",cls='mt-2 mb-6'),
     H3(
@@ -3434,7 +3434,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownLeftEnd',
-        cls='z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-20 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown right end',
@@ -3470,7 +3470,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRightEnd',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -3507,7 +3507,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownLeftEnd',
-        cls='z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-20 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     ),
     Button(
         'Dropdown right end',
@@ -3543,7 +3543,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownRightEnd',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_23",cls='mt-2 mb-6'),
     H2(
@@ -3600,7 +3600,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDistance',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -3638,7 +3638,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownDistance',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_24",cls='mt-2 mb-6'),
     H3(
@@ -3689,7 +3689,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownSkidding',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 ), code="""Div(
     Button(
@@ -3728,7 +3728,7 @@ component = Div(
             cls='py-2 text-sm text-gray-700 dark:text-gray-200'
         ),
         id='dropdownSkidding',
-        cls='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
+        cls='z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700'
     )
 )""", id="example_25",cls='mt-2 mb-6'),
     H2(
@@ -4619,7 +4619,7 @@ component = Div(
                         Span('"dropdownMenu"', cls='s'),
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"', cls='s'),
+                        Span('"z-10 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),

@@ -74,7 +74,7 @@ def Navbar():
                                 cls='py-1'
                             ),
                             id='dropdown-user',
-                            cls='z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                            cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                         ),
                         cls='flex items-center'
                     ),
@@ -84,7 +84,7 @@ def Navbar():
             ),
             cls='px-3 py-2 md:px-5'
         ),
-        cls='fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+        cls='fixed top-0 z-50 w-full bg-gray-50 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700'
 ) 
 
 standard_sidebar_items = [
@@ -126,12 +126,12 @@ def Sidebar():
                 label="Extracted",
                icon='lucide:layout-template',
             ),
-            cls='h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800'
+            cls='h-full px-3 pb-4 overflow-y-auto bg-gray-50 dark:bg-gray-800'
         ),
         Script('htmx.onLoad(function(content) {initSidebars();})'),
         id='logo-sidebar',
         aria_label='Sidebar',
-        cls='fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+        cls='fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gray-50 border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
     )
 
 def Main(content,cls=()):

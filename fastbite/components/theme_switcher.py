@@ -34,89 +34,34 @@ DEFAULT_THEMES = {
 # Note: Pass a dictionary with this structure when calling ThemeSwitcher to override defaults.
 
 # %% ../../nbs/XX_theme_switcher.ipynb 3
-def ThemeToggle() -> FT:
+def ThemeToggle(dark_icon:str='lucide:moon',
+                light_icon:str='lucide:sun',
+                cls:Enum|str|tuple='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
+                ) -> FT:
     return Div(
             Icon(
-                "lucide:moon",
+                dark_icon,
                 id='theme-toggle-dark-icon',
-                cls='w-4 h-4 hidden'
+                cls='hidden'
             ),
             Icon(
-                "lucide:sun",
+                light_icon,
                 id='theme-toggle-light-icon',
-                cls='w-4 h-4 hidden'
+                cls='hidden'
             ),
-            fh.Span('Toggle dark mode', cls='sr-only'),
-            # fh.Script("""
-            #     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-            #     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-            #     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            #         themeToggleLightIcon.classList.remove('hidden');
-            #     } else {
-            #         themeToggleDarkIcon.classList.remove('hidden');
-            #     }
-
-            #     var themeToggleBtn = document.getElementById('theme-toggle');
-
-            #     themeToggleBtn.addEventListener('click', function() {
-
-            #         // toggle icons inside button
-            #         themeToggleDarkIcon.classList.toggle('hidden');
-            #         themeToggleLightIcon.classList.toggle('hidden');
-
-            #         // if set via local storage previously
-            #         if (localStorage.getItem('color-theme')) {
-            #             if (localStorage.getItem('color-theme') === 'light') {
-            #                 document.documentElement.classList.add('dark');
-            #                 localStorage.setItem('color-theme', 'dark');
-            #             } else {
-            #                 document.documentElement.classList.remove('dark');
-            #                 localStorage.setItem('color-theme', 'light');
-            #             }
-
-            #         // if NOT set via local storage previously
-            #         } else {
-            #             if (document.documentElement.classList.contains('dark')) {
-            #                 document.documentElement.classList.remove('dark');
-            #                 localStorage.setItem('color-theme', 'light');
-            #             } else {
-            #                 document.documentElement.classList.add('dark');
-            #                 localStorage.setItem('color-theme', 'dark');
-            #             }
-            #         }
-                    
-            #     });"""
-            # ),
+            fh.Span('Toggle dark mode', cls='sr-only'),            
             id='theme-toggle',
             type='button',
-            cls='text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5'
+            cls=stringify(cls)
         )
 
 def ThemeSwitcher(themes: Dict[str, Dict[str, Union[str, List[str]]]] | None = None, # Default to None
-                  icon: FT = Icon("lucide:palette", cls="w-4 h-4"),
-                  toggle_cls: Enum|str|tuple="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-2.5 py-2.5",
-                  menu_cls: Enum|str|tuple="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600",
+                  icon: FT = Icon("lucide:palette", height=18, width=18),
+                  toggle_cls: Enum|str|tuple="flex items-center text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-2.5 py-2.5",
+                  menu_cls: Enum|str|tuple="z-50 hidden bg-gray-50 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600",
                   option_cls: Enum|str|tuple="w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-left",
                   preview_cls: Enum|str|tuple="inline-block w-3 h-3 rounded-full",
                   **kwargs: Any) -> FT:
-    """
-    Create a theme switcher component with a dropdown menu.
-
-    Args:
-        themes: A dictionary where keys are theme values (e.g., 'retro') and
-                values are dictionaries containing 'label' (display name) and
-                'colors' (a list of 3 CSS background color classes for preview).
-        icon: The icon component for the toggle button.
-        toggle_cls: CSS classes for the dropdown toggle button.
-        menu_cls: CSS classes for the dropdown menu.
-        option_cls: CSS classes for each theme option button.
-        preview_cls: CSS classes for the color preview circles (base class).
-        **kwargs: Additional attributes for the main container div.
-
-    Returns:
-        A container (FT) with the theme switcher component and necessary JavaScript.
-    """
     # Use default themes if none are provided
     current_themes = DEFAULT_THEMES if themes is None else themes
 

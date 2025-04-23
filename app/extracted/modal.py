@@ -79,10 +79,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='modal-01', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='modal-01', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='modal-01', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-2xl max-h-full'
         ),
@@ -133,10 +133,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='static-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='static-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='static-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-2xl max-h-full'
         ),
@@ -176,10 +176,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='static-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='static-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='static-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-2xl max-h-full'
         ),
@@ -227,10 +227,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     H3('Are you sure you want to delete this product?', cls='mb-5 text-lg font-normal text-gray-500 dark:text-gray-400'),
                     Button("Yes, I'm sure", data_modal_hide='popup-modal', type='button', cls='text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center'),
-                    Button('No, cancel', data_modal_hide='popup-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('No, cancel', data_modal_hide='popup-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='p-4 md:p-5 text-center'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -268,10 +268,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     H3('Are you sure you want to delete this product?', cls='mb-5 text-lg font-normal text-gray-500 dark:text-gray-400'),
                     Button("Yes, I'm sure", data_modal_hide='popup-modal', type='button', cls='text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center'),
-                    Button('No, cancel', data_modal_hide='popup-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('No, cancel', data_modal_hide='popup-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='p-4 md:p-5 text-center'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -343,7 +343,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -408,7 +408,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -494,7 +494,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -572,7 +572,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -632,7 +632,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-1',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         Li(
@@ -652,7 +652,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-2',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         Li(
@@ -672,7 +672,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-3',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         cls='space-y-4 mb-4'
@@ -680,7 +680,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     Button('Next step', cls='text-white inline-flex w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -732,7 +732,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-1',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         Li(
@@ -752,7 +752,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-2',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         Li(
@@ -772,7 +772,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                     cls='w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400'
                                 ),
                                 fr='job-3',
-                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
+                                cls='inline-flex items-center justify-between w-full p-5 text-gray-900 bg-gray-50 border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-primary-500 peer-checked:border-primary-600 dark:peer-checked:border-primary-600 peer-checked:text-primary-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500'
                             )
                         ),
                         cls='space-y-4 mb-4'
@@ -780,7 +780,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     Button('Next step', cls='text-white inline-flex w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -852,7 +852,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 'Download',
                                 type='button',
-                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                             ),
                             cls='mb-10 ms-8'
                         ),
@@ -885,7 +885,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 'Duplicate in Figma',
                                 type='button',
-                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                             ),
                             cls='mb-10 ms-8'
                         ),
@@ -910,7 +910,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     Button('My Downloads', cls='text-white inline-flex w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -974,7 +974,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 'Download',
                                 type='button',
-                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                             ),
                             cls='mb-10 ms-8'
                         ),
@@ -1007,7 +1007,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                                 ),
                                 'Duplicate in Figma',
                                 type='button',
-                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                                cls='py-2 px-3 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
                             ),
                             cls='mb-10 ms-8'
                         ),
@@ -1032,7 +1032,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     Button('My Downloads', cls='text-white inline-flex w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -1092,7 +1092,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                             ),
                             Div(
                                 Button('Upgrade to PRO', data_modal_hide='progress-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                                Button('Cancel', data_modal_hide='progress-modal', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                                Button('Cancel', data_modal_hide='progress-modal', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                                 cls='flex items-center mt-6 space-x-4 rtl:space-x-reverse'
                             )
                         ),
@@ -1100,7 +1100,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -1152,7 +1152,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                             ),
                             Div(
                                 Button('Upgrade to PRO', data_modal_hide='progress-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                                Button('Cancel', data_modal_hide='progress-modal', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                                Button('Cancel', data_modal_hide='progress-modal', type='button', cls='py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                                 cls='flex items-center mt-6 space-x-4 rtl:space-x-reverse'
                             )
                         ),
@@ -1160,7 +1160,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -1192,7 +1192,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
         type='button',
         data_modal_target='crypto-modal',
         data_modal_toggle='crypto-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -1327,7 +1327,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -1351,7 +1351,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
         type='button',
         data_modal_target='crypto-modal',
         data_modal_toggle='crypto-modal',
-        cls='text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
+        cls='text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700'
     ),
     Div(
         Div(
@@ -1486,7 +1486,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     ),
                     cls='p-4 md:p-5'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative p-4 w-full max-w-md max-h-full'
         ),
@@ -1539,10 +1539,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='small-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='small-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='small-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-md max-h-full'
         ),
@@ -1578,10 +1578,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='medium-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='medium-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='medium-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-lg max-h-full'
         ),
@@ -1617,10 +1617,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='large-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='large-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='large-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-4xl max-h-full'
         ),
@@ -1660,10 +1660,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='extralarge-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='extralarge-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='extralarge-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-7xl max-h-full'
         ),
@@ -1707,10 +1707,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='small-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='small-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='small-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-md max-h-full'
         ),
@@ -1746,10 +1746,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='medium-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='medium-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='medium-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-lg max-h-full'
         ),
@@ -1785,10 +1785,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='large-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='large-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='large-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-4xl max-h-full'
         ),
@@ -1828,10 +1828,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='extralarge-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='extralarge-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='extralarge-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-7xl max-h-full'
         ),
@@ -1894,10 +1894,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='top-left-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='top-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='top-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -1934,10 +1934,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='top-right-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='top-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='top-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -1974,10 +1974,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='bottom-left-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='bottom-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='bottom-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -2014,10 +2014,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='bottom-right-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='bottom-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='bottom-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -2062,10 +2062,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='top-left-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='top-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='top-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -2102,10 +2102,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='top-right-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='top-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='top-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -2142,10 +2142,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='bottom-left-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='bottom-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='bottom-left-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -2182,10 +2182,10 @@ It requires organizations to notify users as soon as possible of high-risk data 
                 ),
                 Div(
                     Button('I accept', data_modal_hide='bottom-right-modal', type='button', cls='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'),
-                    Button('Decline', data_modal_hide='bottom-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
+                    Button('Decline', data_modal_hide='bottom-right-modal', type='button', cls='py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'),
                     cls='flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600'
                 ),
-                cls='relative bg-white rounded-lg shadow-sm dark:bg-gray-700'
+                cls='relative bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700'
             ),
             cls='relative w-full max-w-2xl max-h-full'
         ),
@@ -3049,7 +3049,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                         Span('div', cls='nt'),
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"relative rounded-lg bg-white shadow-sm dark:bg-gray-700"', cls='s'),
+                        Span('"relative rounded-lg bg-gray-50 shadow-sm dark:bg-gray-700"', cls='s'),
                         Span('>', cls='p'),
                         cls='cl'
                     ),
@@ -3551,7 +3551,7 @@ It requires organizations to notify users as soon as possible of high-risk data 
                     Span(
                         Span('class', cls='na'),
                         Span('=', cls='o'),
-                        Span('"rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"', cls='s'),
+                        Span('"rounded-lg border border-gray-200 bg-gray-50 px-5 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"', cls='s'),
                         cls='cl'
                     ),
                     cls='line'

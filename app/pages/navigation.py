@@ -480,7 +480,7 @@ Div(
             Tr(
                 Td("cls", cls="px-4 py-2 border"),
                 Td("Enum|str|tuple", cls="px-4 py-2 border"),
-                Td("'bg-white...'", cls="px-4 py-2 border"),
+                Td("'bg-gray-50...'", cls="px-4 py-2 border"),
                 Td("Classes for navbar styling", cls="px-4 py-2 border")
             ),
             Tr(

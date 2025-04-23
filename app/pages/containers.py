@@ -395,7 +395,7 @@ DivCentered(
     #                     ),
     #                     cls="p-4"
     #                 ),
-    #                 cls="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+    #                 cls="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
     #             ),
                 
     #             # Product Card 2
@@ -411,7 +411,7 @@ DivCentered(
     #                     ),
     #                     cls="p-4"
     #                 ),
-    #                 cls="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+    #                 cls="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
     #             ),
                 
     #             # Product Card 3
@@ -427,7 +427,7 @@ DivCentered(
     #                     ),
     #                     cls="p-4"
     #                 ),
-    #                 cls="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+    #                 cls="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
     #             ),
                 
     #             # Product Card 4
@@ -443,7 +443,7 @@ DivCentered(
     #                     ),
     #                     cls="p-4"
     #                 ),
-    #                 cls="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+    #                 cls="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
     #             ),
                 
     #             cols_min=1,  # 1 column on mobile

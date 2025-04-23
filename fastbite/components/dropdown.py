@@ -34,7 +34,7 @@ def DropdownList(*li, # List items are dropdown items (Special `DropdownItem` su
 def DropdownContainer(*c, # Components to put in the dropdown container
                       id:str='', # ID for the dropdown
                       devider:bool=False, # Whether to show a divider
-                      cls:Enum|str|tuple='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
+                      cls:Enum|str|tuple='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the dropdown
                       devider_cls:Enum|str|tuple='divide-y divide-gray-100 dark:divide-gray-600', # Additional classes on the divider
                       **kwargs # Additional args for the dropdown
                       )->FT: # Dropdown component
@@ -54,7 +54,7 @@ def Dropdown(*c, # Components to put in the dropdown
              header:FT|Iterable[FT]=None, # Components for the header (often a `DropdownHeader`)
              header_cls:Enum|str|tuple='px-4 py-3 text-sm text-gray-900 dark:text-white', # Additional classes on the dropdown header
              list_cls:Enum|str|tuple='py-2 text-sm text-gray-700 dark:text-gray-200', # Additional classes on the dropdown list
-             cls:Enum|str|tuple='z-10 hidden bg-white rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the Dropdown Container
+             cls:Enum|str|tuple='z-10 hidden bg-gray-50 rounded-lg shadow-sm w-44 dark:bg-gray-700', # Additional classes on the Dropdown Container
              devider:bool=False, # Whether to show a divider
              **kwargs # Additional args for the dropdown
              )->FT: # Dropdown component
