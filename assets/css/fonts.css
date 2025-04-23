@@ -1,0 +1,130 @@
+/* --- Raveo Font Family --- */
+
+@font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Thin.woff2') format('woff2');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo ExtraLight.woff2') format('woff2');
+    font-weight: 200; /* ExtraLight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Light.woff2') format('woff2');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Regular.woff2') format('woff2');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Medium.woff2') format('woff2');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo SemiBold.woff2') format('woff2');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Bold.woff2') format('woff2');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo ExtraBold.woff2') format('woff2');
+    font-weight: 800; /* ExtraBold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo';
+    src: url('/assets/fonts/Raveo Black.woff2') format('woff2');
+    font-weight: 900; /* Black */
+    font-style: normal;
+  }
+  
+  /* --- Raveo Display Font Family --- */
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Thin.woff2') format('woff2');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display ExtraLight.woff2') format('woff2');
+    font-weight: 200; /* ExtraLight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Light.woff2') format('woff2');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Regular.woff2') format('woff2');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Medium.woff2') format('woff2');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display SemiBold.woff2') format('woff2');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Bold.woff2') format('woff2');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display ExtraBold.woff2') format('woff2');
+    font-weight: 800; /* ExtraBold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Raveo Display';
+    src: url('/assets/fonts/Raveo Display Black.woff2') format('woff2');
+    font-weight: 900; /* Black */
+    font-style: normal;
+  }
+  

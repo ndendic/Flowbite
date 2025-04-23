@@ -14,7 +14,7 @@ typography = Div(
     P("Each heading has pre-defined sizes and styling that follow proper document hierarchy."),
     component_showcase(
             H1("Linked Heading 1", link=True),
-            H1("Heading 1"),
+            H1("Heading 1 Rounded"),
             H2("Heading 2"),
             H3("Heading 3"),
             H3("Linked Heading 3", link=True),
