@@ -73,20 +73,26 @@ def NavParentLi(*nav_items, # `NavContainer` container for a nested nav with `pa
                )->FT: # Navigation list item
     "Creates a navigation list item with a parent nav for nesting"
     id = fh.unqid() if not id else id
+    id = id.replace('-', '')
     return fh.Li(
-        fh.Button(type='button', aria_controls=f'dropdown-{id}', data_collapse_toggle=f'dropdown-{id}', cls=stringify(cls))(
+        Div(data_signals=f'{{collapse{id}: false}}'),
+        fh.Button(type='button', cls=stringify(cls))(
             Icon(icon, 
-                aria_hidden='true',
                 height=18,
                 width=18,
                 cls=icon_cls) if icon else None,
             fh.Span(label, cls=label_cls),
             Icon('lucide:chevron-down',height=20,width=20),
-            # Svg(xmlns='http://www.w3.org/2000/svg', fill='none', viewbox='0 0 10 6', cls='w-3 h-3')(
-            #     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='m1 1 4 4 4-4')
-            # )
+            data_on_click=f'$collapse{id} = !$collapse{id}',
         ),
-        NavContainer(*nav_items, cls=NavT.child_list, parent=False, id=f'dropdown-{id}', **kwargs),
+
+        NavContainer(*nav_items, 
+                     cls=NavT.child_list+"transition-all duration-300 ease-in-out overflow-hidden", 
+                     parent=False, 
+                    #  data_show=f'$collapse{id}', 
+                     data_class=f"{{'max-h-0 opacity-0': !$collapse{id}, 'max-h-[1000px] opacity-100': $collapse{id}}}", 
+                     id=f'dropdown-{id}', 
+                     **kwargs),        
     )
     # return fh.Li(*nav_container,  cls=('uk-parent',  stringify(cls)),**kwargs)
 

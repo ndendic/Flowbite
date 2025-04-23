@@ -9,7 +9,6 @@ from pages.templates import page_template
 from route_collector import add_routes
 
 from component_registry import component_registry
-datastar_script = Script(src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.0-beta.8/bundles/datastar.js", type="module")
   
 
 favicons = Favicon(
@@ -24,7 +23,6 @@ app, rt = fast_app(
     hdrs=(
         favicons,
         fastbite_hdrs,
-        datastar_script,
         Link(rel="stylesheet", href="/css/output.css"),
         HighlightJS(langs=["python"]),
     ),

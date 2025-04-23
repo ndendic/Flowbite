@@ -10,14 +10,18 @@ from enum import Enum, auto
 from fastcore.all import *
 
 # %% ../nbs/00_core.ipynb 4
+datastar = Script(src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.0-beta.8/bundles/datastar.js", type="module")
+iconify = Script(src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js", type="module")
+
 fastbite_hdrs = (
     Link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css",
     ),
-    Script(src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js", type="module"),
-    Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
     Script(src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"),
+    iconify,
+    datastar,    
+    Script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3', type='text/javascript'),
     Script("""
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');

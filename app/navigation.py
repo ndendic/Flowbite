@@ -20,18 +20,19 @@ def Navbar():
                 Div(
                     Button(
                         Span('Open sidebar', cls='sr-only'),
-                        Icon('lucide:menu'),
+                        Img(src='images/logo.png', alt='Logo', cls='h-6'),
                         data_drawer_target='logo-sidebar',
                         data_drawer_toggle='logo-sidebar',
                         aria_controls='logo-sidebar',
                         type='button',
-                        cls='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+                        size=ButtonSize.sm,
+                        cls='inline-flex items-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
                     ),  
                     A(
-                        Img(src='images/logo.png', alt='Logo', cls='h-8 me-3'),
+                        # Img(src='images/logo.png', alt='Logo', cls='h-6 me-3'),
                         Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
                         href='/',
-                        cls='flex ms-2 md:me-24'
+                        cls='flex items-center md:me-24'
                     ),
                     cls='flex items-center justify-start rtl:justify-end'
                 ),
@@ -81,7 +82,7 @@ def Navbar():
                 ),
                 cls='flex items-center justify-between'
             ),
-            cls='px-3 py-3 lg:px-5 lg:pl-3'
+            cls='px-3 py-2 md:px-5'
         ),
         cls='fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700'
 ) 

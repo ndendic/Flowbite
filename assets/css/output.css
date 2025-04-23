@@ -1136,8 +1136,14 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
   .max-h-\[48px\] {
     max-height: 48px;
+  }
+  .max-h-\[1000px\] {
+    max-height: 1000px;
   }
   .max-h-full {
     max-height: 100%;
@@ -2395,6 +2401,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-900) 90%, transparent);
     }
+  }
+  .bg-gray-950 {
+    background-color: var(--color-gray-950);
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
@@ -3660,6 +3669,9 @@
   }
   .opacity-75 {
     opacity: 75%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .bg-blend-multiply {
     background-blend-mode: multiply;

@@ -609,7 +609,7 @@ class NavT(VEnum):
     primary = 'border border-primary-400 dark:border-primary-600 rounded-lg text-primary-500 dark:text-primary-500'
     secondary = 'border border-gray-400 dark:border-gray-600 rounded-lg'
     transparent = 'bg-transparent'
-    child_list = 'hidden space-y-2'
+    child_list = 'space-y-2'
     parent_li = 'flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700'
     child_li = 'flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-9'
 

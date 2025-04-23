@@ -100,27 +100,26 @@ NavContainer(
                     NavChildLi("Archived projects", href="#"),
                     label="Projects",
                    icon="lucide:folder",
-                    id="projects-nav"
+                    id="projectsNav"
                 ),
                 NavLi("Messages",icon="lucide:mail", href="#")
             ),
             cls="w-64"
         ),
-        code="""from fastbite.all import NavContainer, NavLi, NavParentLi, NavChildLi
-
-NavContainer(
-    NavLi("Dashboard",icon="lucide:home", href="#"),
-    NavParentLi(
-        # Child navigation items
-        NavChildLi("All projects", href="#"),
-        NavChildLi("Active projects", href="#"),
-        NavChildLi("Archived projects", href="#"),
-        # Parent properties
-        label="Projects",
-       icon="lucide:folder",
-        id="projects-nav"  # Unique ID for the dropdown
+        code="""Div(
+    NavContainer(
+        NavLi("Dashboard",icon="lucide:home", href="#"),
+        NavParentLi(
+            NavChildLi("All projects", href="#"),
+            NavChildLi("Active projects", href="#"),
+            NavChildLi("Archived projects", href="#"),
+            label="Projects",
+            icon="lucide:folder",
+            id="projectsNav"
+        ),
+        NavLi("Messages",icon="lucide:mail", href="#")
     ),
-    NavLi("Messages",icon="lucide:mail", href="#")
+    cls="w-64"
 )""",
         id="dropdown-navigation"
     ),
