@@ -20,7 +20,7 @@ def Home():
                     Label('Search', fr='default-search', cls='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300'),
                     Div(cls='relative')(
                         Input(type='search', id='default-search', placeholder='Search Mockups, Logos...', required='', cls='block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'),
-                        Button(type='submit', cls='text-white inline-flex items-center absolute right-2.5 bottom-2.5 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800')(
+                        Button(type='submit', cls='text-white inline-flex items-center absolute right-2.5 bottom-2 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800')(
                             Svg(fill='currentColor', viewbox='0 0 20 20', xmlns='http://www.w3.org/2000/svg', cls='w-4 h-4 mr-2 -ml-1')(
                                 Path(fill_rule='evenodd', d='M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z', clip_rule='evenodd')
                             ),

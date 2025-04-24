@@ -4,12 +4,11 @@ from monsterui.all import *
 from fastbite.all import *
 from fastbite.core import *
 from app.home import Home
-from pages.templates import page_template
+from app.pages.templates import page_template
 from route_collector import add_routes
 
 from component_registry import component_registry
   
-
 favicons = Favicon(
     light_icon="/images/favicon-light.svg", dark_icon="/images/favicon-dark.svg"
 )

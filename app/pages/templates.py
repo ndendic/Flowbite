@@ -17,6 +17,7 @@ def site_page(title, content):
             Main(content,cls="mx-4")   
         ),
     )
+
 def page_template(title):
     def decorator(func):
         def wrapper(request, *args, **kwargs):

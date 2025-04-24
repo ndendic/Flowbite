@@ -133,7 +133,7 @@ def Sidebar():
 def Main(content,cls=()):
     return DivCentered(
         Div(content,
-            cls='p-4 mt-16 max-w-4xl md:max-w-6xl',
+            cls='p-4 mt-16 max-w-4xl md:max-w-7xl',
             id='content',
 
         ),
