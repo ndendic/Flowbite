@@ -17,75 +17,72 @@ def Navbar():
     return Nav(
         Div(
             Div(
-                Div(
-                    Button(
-                        Span('Open sidebar', cls='sr-only'),
-                        Img(src='images/logo.png', alt='Logo', cls='h-6'),
-                        data_drawer_target='logo-sidebar',
-                        data_drawer_toggle='logo-sidebar',
-                        aria_controls='logo-sidebar',
-                        type='button',
-                        size=ButtonSize.sm,
-                        cls='inline-flex items-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
-                    ),  
-                    A(
-                        # Img(src='images/logo.png', alt='Logo', cls='h-6 me-3'),
-                        Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
-                        href='/',
-                        cls='flex items-center md:me-24'
-                    ),
-                    cls='flex items-center justify-start rtl:justify-end'
+                Button(
+                    Span('Open sidebar', cls='sr-only'),
+                    Img(src='images/logo.png', alt='Logo', cls='h-6'),
+                    data_drawer_target='logo-sidebar',
+                    data_drawer_toggle='logo-sidebar',
+                    aria_controls='logo-sidebar',
+                    type='button',
+                    size=ButtonSize.sm,
+                    cls='inline-flex items-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+                ),  
+                A(
+                    # Img(src='images/logo.png', alt='Logo', cls='h-6 me-3'),
+                    Span('Fastbite', cls='self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white'),
+                    href='/',
+                    cls='flex items-center md:me-24'
                 ),
+                cls='flex items-center justify-start rtl:justify-end'
+            ),
+            Div(
+                ThemeSwitcher(themes=default_themes_with_colors),
+                ThemeToggle(),
                 Div(
-                    ThemeSwitcher(themes=default_themes_with_colors),
-                    ThemeToggle(),
                     Div(
                         Div(
-                            Div(
-                                Span('Open user menu', cls='sr-only'),
-                                DiceBearAvatar(seed_name='Neil Sims',h=9,w=9),
-                                type='button',
-                                aria_expanded='false',
-                                data_dropdown_toggle='dropdown-user',
-                                cls='flex text-sm rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600'
-                            )
-                        ),
+                            Span('Open user menu', cls='sr-only'),
+                            DiceBearAvatar(seed_name='Neil Sims',h=9,w=9),
+                            type='button',
+                            aria_expanded='false',
+                            data_dropdown_toggle='dropdown-user',
+                            cls='flex text-sm rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600'
+                        )
+                    ),
+                    Div(
                         Div(
-                            Div(
-                                P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
-                                P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
-                                role='none',
-                                cls='px-4 py-3'
-                            ),
-                            Ul(
-                                Li(
-                                    A('Dashboard', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
-                                ),
-                                Li(
-                                    A('Settings', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
-                                ),
-                                Li(
-                                    A('Earnings', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
-                                ),
-                                Li(
-                                    A('Sign out', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
-                                ),
-                                role='none',
-                                cls='py-1'
-                            ),
-                            id='dropdown-user',
-                            cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600'
+                            P('Neil Sims', role='none', cls='text-sm text-gray-900 dark:text-white'),
+                            P('neil.sims@fastbite.com', role='none', cls='text-sm font-medium text-gray-900 truncate dark:text-gray-300'),
+                            role='none',
+                            cls='px-4 py-3'
                         ),
-                        cls='flex items-center'
+                        Ul(
+                            Li(
+                                A('Dashboard', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
+                            ),
+                            Li(
+                                A('Settings', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
+                            ),
+                            Li(
+                                A('Earnings', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
+                            ),
+                            Li(
+                                A('Sign out', href='#', role='menuitem', cls='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white')
+                            ),
+                            role='none',
+                            cls='py-1'
+                        ),
+                        id='dropdown-user',
+                        cls='z-50 hidden my-4 text-base list-none bg-gray-50 divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600'
                     ),
                     cls='flex items-center'
                 ),
-                cls='flex items-center justify-between'
+                cls='flex items-center'
             ),
-            cls='px-3 py-2 md:px-5'
+            cls='flex items-center justify-between px-3 py-2 md:px-5 w-full max-w-7xl'
         ),
-        cls='fixed top-0 z-50 w-full bg-gray-50 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700'
-) 
+        cls='flex items-center justify-center fixed top-0 z-50 w-full bg-gray-50 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+    ) 
 
 standard_sidebar_items = [
     NavLi("Home", href="/#",icon="lucide:home",hx_boost="true",hx_target="#content",hx_swap_oob=True),
@@ -128,17 +125,15 @@ def Sidebar():
             ),
             cls='h-full px-3 pb-4 overflow-y-auto bg-gray-50 dark:bg-gray-800'
         ),
-        Script('htmx.onLoad(function(content) {initSidebars();})'),
         id='logo-sidebar',
         aria_label='Sidebar',
-        cls='fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gray-50 border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
+        cls='fixed top-0 left-0 z-40 w-64 h-screen pt-16 transition-transform -translate-x-full bg-gray-50 border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700'
     )
 
 def Main(content,cls=()):
     return DivCentered(
         Div(content,
-            # Script('htmx.onLoad(function(content) {initSidebars();})'),
-            cls='p-4 mt-18 max-w-4xl',
+            cls='p-4 mt-16 max-w-4xl md:max-w-6xl',
             id='content',
 
         ),

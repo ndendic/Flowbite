@@ -3,8 +3,7 @@ from fasthtml.svg import *
 from monsterui.all import *
 from fastbite.all import *
 from fastbite.core import *
-from app.navigation import Sidebar, Main, Navbar
-from pages.typography import typography
+from app.home import Home
 from pages.templates import page_template
 from route_collector import add_routes
 
@@ -38,12 +37,7 @@ app, rt = fast_app(
 @rt("/")
 @page_template("Home")
 def home(req):
-    return Ul(
-        Li(A("Typography", href="/typography")), 
-        Li(A("Buttons", href="/buttons")),
-        Li(A("Containers", href="/containers")),
-        Li(A("Themes", href="/themes")),
-    )
+    return Home()
 
 @rt("/about")
 def about(req):

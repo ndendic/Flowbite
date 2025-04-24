@@ -166,6 +166,10 @@ html.dark .dark\:text-white {
     --color-text-on-primary: #ffffff; /* Text on primary color backgrounds */
     --color-text-on-dark: var(--color-gray-100); /* Primary text on dark surfaces */
 
+    --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
+    --font-body: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
+    --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+
     /* Surface/Background Colors */
     --color-surface-50: #ffffff; /* Lightest background */
     --color-surface-100: var(--color-gray-50);

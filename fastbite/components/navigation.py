@@ -167,7 +167,7 @@ def NavBar(*c,
             right_cls:Enum|str|tuple='items-center space-x-4', # Spacing for desktop links
             mobile_cls:Enum|str|tuple='space-y-4', # Spacing for mobile links
             sticky:bool=False, # Whether to stick to the top of the page while scrolling
-            cls:Enum|str|tuple='bg-gray-50 border-gray-200 dark:bg-gray-900', # Classes for navbar
+            cls:Enum|str|tuple='bg-gray-50 border-gray-200 dark:bg-gray-800', # Classes for navbar
             menu_id=None, # ID for menu container (used for mobile toggle)
            ) ->FT:
     if menu_id is None: menu_id = fh.unqid()
