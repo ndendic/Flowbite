@@ -1,5 +1,6 @@
 from fasthtml.common import *
 from fasthtml.svg import *
+import fasthtml.components as fh
 from fastbite.all import *
 from fastbite.all import CodeSpan as Code
 from utils import component_showcase
@@ -38,7 +39,7 @@ component = Div(
     ),
     component_showcase(Div(
     Div(
-        H2(
+        fh.H2(
             Div(
                 Span('What is Fastbite?'),
                 Svg(
@@ -74,8 +75,8 @@ component = Div(
             aria_labelledby='accordion-collapse-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -109,8 +110,8 @@ component = Div(
             aria_labelledby='accordion-collapse-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),

@@ -1,5 +1,4 @@
 version = 1
-revision = 1
 requires-python = ">=3.11"
 
 [[package]]
@@ -330,6 +329,7 @@ wheels = [
 
 [[package]]
 name = "fastbite"
+version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "ft-datastar" },
@@ -358,7 +358,6 @@ requires-dist = [
     { name = "tomli-w", specifier = ">=1.0.0" },
     { name = "typer", specifier = ">=0.15.2" },
 ]
-provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [

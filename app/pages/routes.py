@@ -1,5 +1,5 @@
 from fasthtml.core import APIRouter
-from pages.templates import page_template
+from pages.templates import components_page, components_page
 from pages.containers import containers
 from pages.themes import themes
 from pages.playground import playground
@@ -19,100 +19,106 @@ from pages.slider import slider_components
 from pages.tables import tables_components
 from pages.tabs import tabs_components
 from pages.buttons import button_components
-
+from pages.accordion import accordion_components
+from fasthtml.components import Div
 rt = APIRouter()
 
 @rt("/typography")
-@page_template("Typography")
+@components_page("Typography")
 def get(req):
     return typography
 
 @rt("/containers")
-@page_template("Containers")
+@components_page("Containers")
 def get(req):
     return containers
 
 @rt("/themes")
-@page_template("Color Themes")
+@components_page("Color Themes")
 def get(req):
     return themes
 
 @rt("/playground")
-@page_template("Playground")
+@components_page("Playground")
 def get(req):
     return playground
 
 @rt("/icons")
-@page_template("Icons")
+@components_page("Icons")
 def get(req):
     return icons_images
 
 @rt("/article")
-@page_template("Article")
+@components_page("Article")
 def get(req):
     return article_components
 
 @rt("/badge")
-@page_template("Badge")
+@components_page("Badge")
 def get(req):
     return badge_components
 
 @rt("/dropdown")
-@page_template("Dropdown")
+@components_page("Dropdown")
 def get(req):
     return dropdown_components
 
 @rt("/forms")
-@page_template("Forms")
+@components_page("Forms")
 def get(req):
     return forms_components
 
 @rt("/markdown")
-@page_template("Markdown")
+@components_page("Markdown")
 def get(req):
     return markdown_components
 
 @rt("/modals")
-@page_template("Modals")
+@components_page("Modals")
 def get(req):
     return modals_components
 
 @rt("/navigation")
-@page_template("Navigation")
+@components_page("Navigation")
 def get(req):
     return navigation_components
 
 @rt("/progress")
-@page_template("Progress")
+@components_page("Progress")
 def get(req):
     return progress_components
 
 @rt("/ranges")
-@page_template("Range Inputs")
+@components_page("Range Inputs")
 def get(req):
     return ranges_components
 
 @rt("/skeleton")
-@page_template("Placeholder Components")
+@components_page("Placeholder Components")
 def get(req):
     return skeleton_components
 
 @rt("/slider")
-@page_template("Slider Components")
+@components_page("Slider Components")
 def get(req):
     return slider_components
 
 @rt("/tables")
-@page_template("Table Components")
+@components_page("Table Components")
 def get(req):
     return tables_components
 
 @rt("/tabs")
-@page_template("Tabs Components")
+@components_page("Tabs Components")
 def get(req):
     return tabs_components
 
 @rt("/buttons")
-@page_template("Buttons")
+@components_page("Buttons")
 def get(req):
     return button_components
+
+@rt("/accordion")
+@components_page("Accordion")
+def get(req):
+    return accordion_components
