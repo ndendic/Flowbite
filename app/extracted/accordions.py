@@ -34,7 +34,7 @@ component = Div(
     ),
     P(
         'Use the ',
-        Code('data-accordion="collapse"'),
+        Code('data_accordion="collapse"'),
         ' to collapse every other child element when expanding a single one.'
     ),
     component_showcase(Div(
@@ -156,7 +156,7 @@ component = Div(
 ), code="""Div(
     Div(
         H2(
-            Button(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -191,7 +191,7 @@ component = Div(
             cls='hidden'
         ),
         H2(
-            Button(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -226,7 +226,7 @@ component = Div(
             cls='hidden'
         ),
         H2(
-            Button(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -282,8 +282,8 @@ component = Div(
     ),
     component_showcase(Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -327,8 +327,8 @@ component = Div(
             aria_labelledby='accordion-open-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -372,8 +372,8 @@ component = Div(
             aria_labelledby='accordion-open-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -427,8 +427,8 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -472,8 +472,8 @@ component = Div(
             aria_labelledby='accordion-open-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -517,8 +517,8 @@ component = Div(
             aria_labelledby='accordion-open-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span(
                     Svg(
                         Path(fill_rule='evenodd', d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z', clip_rule='evenodd'),
@@ -587,8 +587,8 @@ component = Div(
     P('Here’s an example where we apply the primary colors instead of gray:'),
     component_showcase(Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -622,8 +622,8 @@ component = Div(
             aria_labelledby='accordion-color-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -657,8 +657,8 @@ component = Div(
             aria_labelledby='accordion-color-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -703,8 +703,8 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -738,8 +738,8 @@ component = Div(
             aria_labelledby='accordion-color-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -773,8 +773,8 @@ component = Div(
             aria_labelledby='accordion-color-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -827,8 +827,8 @@ component = Div(
     P('Use this example to remove the background color and rounded borders from the accordion component.'),
     component_showcase(Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -843,7 +843,7 @@ component = Div(
                 data_accordion_target='#accordion-flush-body-1',
                 aria_expanded='true',
                 aria_controls='accordion-flush-body-1',
-                cls='flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
+                cls='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
             ),
             id='accordion-flush-heading-1'
         ),
@@ -856,14 +856,14 @@ component = Div(
                     'and start developing websites even faster with components on top of Tailwind CSS.',
                     cls='text-gray-500 dark:text-gray-400'
                 ),
-                cls='py-5 border-b border-gray-200 dark:border-gray-700'
+                cls='p-5 border-b border-gray-200 dark:border-gray-700'
             ),
             id='accordion-flush-body-1',
             aria_labelledby='accordion-flush-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -878,7 +878,7 @@ component = Div(
                 data_accordion_target='#accordion-flush-body-2',
                 aria_expanded='false',
                 aria_controls='accordion-flush-body-2',
-                cls='flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
+                cls='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
             ),
             id='accordion-flush-heading-2'
         ),
@@ -891,14 +891,14 @@ component = Div(
                     'based on the utility classes from Tailwind CSS and components from Fastbite.',
                     cls='text-gray-500 dark:text-gray-400'
                 ),
-                cls='py-5 border-b border-gray-200 dark:border-gray-700'
+                cls='p-5 border-b border-gray-200 dark:border-gray-700'
             ),
             id='accordion-flush-body-2',
             aria_labelledby='accordion-flush-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -913,7 +913,7 @@ component = Div(
                 data_accordion_target='#accordion-flush-body-3',
                 aria_expanded='false',
                 aria_controls='accordion-flush-body-3',
-                cls='flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
+                cls='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3'
             ),
             id='accordion-flush-heading-3'
         ),
@@ -931,7 +931,7 @@ component = Div(
                     ),
                     cls='ps-5 text-gray-500 list-disc dark:text-gray-400'
                 ),
-                cls='py-5 border-b border-gray-200 dark:border-gray-700'
+                cls='p-5 border-b border-gray-200 dark:border-gray-700'
             ),
             id='accordion-flush-body-3',
             aria_labelledby='accordion-flush-heading-3',
@@ -944,8 +944,8 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -979,8 +979,8 @@ component = Div(
             aria_labelledby='accordion-flush-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1014,8 +1014,8 @@ component = Div(
             aria_labelledby='accordion-flush-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What are the differences between Fastbite and Tailwind UI?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1073,14 +1073,14 @@ component = Div(
     ),
     component_showcase(Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion without an arrow'),
                 type='button',
                 data_accordion_target='#accordion-arrow-icon-body-1',
                 aria_expanded='true',
                 aria_controls='accordion-arrow-icon-body-1',
-                cls='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 bg-gray-100 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3'
+                cls='flex items-center justify-between w-full p-5 px-4 font-medium rtl:text-right text-gray-900 bg-gray-100 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3'
             ),
             id='accordion-arrow-icon-heading-1'
         ),
@@ -1098,8 +1098,8 @@ component = Div(
             id='accordion-arrow-icon-body-1',
             aria_labelledby='accordion-arrow-icon-heading-1'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion with another icon'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'),
@@ -1132,8 +1132,8 @@ component = Div(
             aria_labelledby='accordion-arrow-icon-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion without arrow rotation'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1177,8 +1177,8 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion without an arrow'),
                 type='button',
                 data_accordion_target='#accordion-arrow-icon-body-1',
@@ -1202,8 +1202,8 @@ component = Div(
             id='accordion-arrow-icon-body-1',
             aria_labelledby='accordion-arrow-icon-heading-1'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion with another icon'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'),
@@ -1236,8 +1236,8 @@ component = Div(
             aria_labelledby='accordion-arrow-icon-heading-2',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Accordion without arrow rotation'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1298,8 +1298,8 @@ component = Div(
     ),
     component_showcase(Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1329,8 +1329,8 @@ component = Div(
                 ),
                 P('What are the differences between Fastbite and Tailwind UI?', cls='mb-4 text-gray-500 dark:text-gray-400'),
                 Div(
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Open source'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1358,8 +1358,8 @@ component = Div(
                         aria_labelledby='accordion-nested-collapse-heading-1',
                         cls='hidden'
                     ),
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Architecture'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1387,8 +1387,8 @@ component = Div(
                         aria_labelledby='accordion-nested-collapse-heading-2',
                         cls='hidden'
                     ),
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Can I use both?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1435,8 +1435,8 @@ component = Div(
             aria_labelledby='accordion-collapse-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1475,8 +1475,8 @@ component = Div(
     )
 ), code="""Div(
     Div(
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('What is Fastbite?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1506,8 +1506,8 @@ component = Div(
                 ),
                 P('What are the differences between Fastbite and Tailwind UI?', cls='mb-4 text-gray-500 dark:text-gray-400'),
                 Div(
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Open source'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1535,8 +1535,8 @@ component = Div(
                         aria_labelledby='accordion-nested-collapse-heading-1',
                         cls='hidden'
                     ),
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Architecture'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1564,8 +1564,8 @@ component = Div(
                         aria_labelledby='accordion-nested-collapse-heading-2',
                         cls='hidden'
                     ),
-                    H2(
-                        Button(
+                    fh.H2(
+                        fh.Button(
                             Span('Can I use both?'),
                             Svg(
                                 Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
@@ -1612,8 +1612,8 @@ component = Div(
             aria_labelledby='accordion-collapse-heading-1',
             cls='hidden'
         ),
-        H2(
-            Button(
+        fh.H2(
+            fh.Button(
                 Span('Is there a Figma file available?'),
                 Svg(
                     Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),

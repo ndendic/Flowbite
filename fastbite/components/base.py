@@ -22,9 +22,12 @@ def H1(*c:FT|str, # Contents of H1 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H1 styling
        id:str=None, # ID of H1 tag
        link:bool=False, # Whether to link the H1 tag
+       bold:bool=False, # Whether to bold the H1 tag
        **kwargs # Additional args for H1 tag
        )->FT: # H1(..., cls='uk-h1')
     "H1 with styling and appropriate size"
+    if bold:
+        cls = (TextT.extrabold, *cls)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
@@ -36,9 +39,12 @@ def H2(*c:FT|str, # Contents of H2 tag (often text)
        cls:Enum|str|tuple=(), # Classes in addition to H2 styling
        id:str=None, # ID of H2 tag  
        link:bool=False, # Whether to link the H2 tag
+       bold:bool=False, # Whether to bold the H2 tag
        **kwargs # Additional args for H2 tag
        )->FT: # H2(..., cls='uk-h2')
     "H2 with styling and appropriate size"
+    if bold:
+        cls = (TextT.bold, *cls)
     if link:
         if not id: id = fh.unqid()
         link_el = HA(id)
@@ -351,7 +357,7 @@ def P(*c, # Contents of P tag (often text)
       **kwargs # Additional args for P tag
       )->FT: # P(..., cls='uk-p')
     "A P with Styling"
-    return fh.Div(fh.P(*c, cls=(stringify(cls)), **kwargs))
+    return fh.P(*c, cls=(stringify(cls)), **kwargs)
 
 def Meter(*c:FT|str, # Contents of Meter tag
           value:float=None, # Current value

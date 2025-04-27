@@ -76,7 +76,7 @@ class TextT(VEnum):
     article='format format-sm sm:format-base lg:format-lg format-primary dark:format-invert'
     # Text Color
     dark = 'text-white dark:text-gray-900'
-    gray = 'text-gray-500 dark:text-gray-400'
+    gray = 'text-gray-600 dark:text-gray-300'
     muted = 'text-gray-400 dark:text-gray-600'
     primary = 'text-primary-600 dark:text-primary-500'
     # TODO: Add secondary color
@@ -148,16 +148,16 @@ class TextPresets(VEnum):
     md_weight_muted = stringify((TextT.medium, TextT.muted))
 
     """Text heading variants for Flowbite components"""
-    h1 = "text-5xl font-extrabold dark:text-white mb-4"
-    h2 = "text-4xl font-bold dark:text-white mb-3"
-    h3 = "text-3xl font-bold dark:text-white mb-2"
-    h4 = "text-2xl font-bold dark:text-white mb-1"
-    h5 = "text-xl font-bold dark:text-white mb-0.5"
-    h6 = "text-lg font-bold dark:text-white"
+    h1 = "text-5xl dark:text-white mb-4 tracking-tighter"
+    h2 = "text-4xl dark:text-white mb-3 tracking-tighter"
+    h3 = "text-3xl dark:text-white mb-2"
+    h4 = "text-2xl dark:text-white mb-1"
+    h5 = "text-xl dark:text-white mb-0.5"
+    h6 = "text-lg dark:text-white"
 
 class PT(VEnum):
-    default = TextT.gray+"my-3"
-    lead = TextT.gray+"my-3 text-lg md:text-xl"
+    default = TextT.gray+"my-3 text-lg"
+    lead = TextT.gray+"my-3 text-lg/7 md:text-xl"
     capital_first = "my-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start"
     link = "my-3 font-medium text-primary-600 underline dark:text-primary-500 dark:hover:text-primary-600 hover:text-primary-700 hover:no-underline"
     primary = TextT.primary+"my-3"
