@@ -180,31 +180,36 @@ class ListT(VEnum):
 
 
 class Bg(VEnum):
-    """Button style variants for Flowbite components"""
     # Base styles
-    primary = "bg-primary-700 dark:bg-primary-600"
-    blue = "bg-blue-700 dark:bg-blue-600"
-    green = "bg-green-700 dark:bg-green-600"
-    cyan = "bg-cyan-700 dark:bg-cyan-600"
-    teal = "bg-teal-700 dark:bg-teal-600"
-    lime = "bg-lime-700 dark:bg-lime-600"
-    red = "bg-red-700 dark:bg-red-600"
-    yellow = "bg-yellow-400 dark:bg-yellow-600"
-    pink = "bg-pink-700 dark:bg-pink-600"
-    purple = "bg-purple-700 dark:bg-purple-600"
+    primary = "bg-primary-400 dark:bg-primary-500"
+    secondary = "bg-secondary-400 dark:bg-secondary-500"
+    accent = "bg-accent-400 dark:bg-accent-500"
+    blue = "bg-blue-400 dark:bg-blue-500"
+    green = "bg-green-400 dark:bg-green-500"
+    cyan = "bg-cyan-400 dark:bg-cyan-500"
+    teal = "bg-teal-400 dark:bg-teal-500"
+    lime = "bg-lime-400 dark:bg-lime-500"
+    red = "bg-red-400 dark:bg-red-500"
+    yellow = "bg-yellow-400 dark:bg-yellow-500"
+    pink = "bg-pink-400 dark:bg-pink-500"
+    purple = "bg-purple-400 dark:bg-purple-500"
     
-    primary_hover = "bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700"
-    blue_hover = "bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700"
-    green_hover = "bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700"
-    cyan_hover = "bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-600 dark:hover:bg-cyan-700"
-    teal_hover = "bg-teal-700 hover:bg-teal-800 dark:bg-teal-600 dark:hover:bg-teal-700"
-    lime_hover = "bg-lime-700 hover:bg-lime-800 dark:bg-lime-600 dark:hover:bg-lime-700"
-    red_hover = "bg-red-700 hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700"
-    yellow_hover = "bg-yellow-400 hover:bg-yellow-500 dark:bg-yellow-600 dark:hover:bg-yellow-500"
-    pink_hover = "bg-pink-700 hover:bg-pink-800 dark:bg-pink-600 dark:hover:bg-pink-700"
-    purple_hover = "bg-purple-700 hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-700"
+    primary_hover = "bg-primary-400 hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-600"
+    secondary_hover = "bg-secondary-400 hover:bg-secondary-500 dark:bg-secondary-500 dark:hover:bg-secondary-600"
+    accent_hover = "bg-accent-400 hover:bg-accent-500 dark:bg-accent-500 dark:hover:bg-accent-600"
+    blue_hover = "bg-blue-400 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
+    green_hover = "bg-green-400 hover:bg-green-500 dark:bg-green-500 dark:hover:bg-green-600"
+    cyan_hover = "bg-cyan-400 hover:bg-cyan-500 dark:bg-cyan-500 dark:hover:bg-cyan-600"
+    teal_hover = "bg-teal-400 hover:bg-teal-500 dark:bg-teal-500 dark:hover:bg-teal-600"
+    lime_hover = "bg-lime-400 hover:bg-lime-500 dark:bg-lime-500 dark:hover:bg-lime-600"
+    red_hover = "bg-red-400 hover:bg-red-500 dark:bg-red-500 dark:hover:bg-red-600"
+    yellow_hover = "bg-yellow-400 hover:bg-yellow-500 dark:bg-yellow-500 dark:hover:bg-yellow-600"
+    pink_hover = "bg-pink-400 hover:bg-pink-500 dark:bg-pink-500 dark:hover:bg-pink-600"
+    purple_hover = "bg-purple-400 hover:bg-purple-500 dark:bg-purple-500 dark:hover:bg-purple-600"
     
     grad_primary = "text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700"
+    grad_secondary = "text-white bg-gradient-to-r from-secondary-500 via-secondary-600 to-secondary-700"
+    grad_accent = "text-white bg-gradient-to-r from-accent-500 via-accent-600 to-accent-700"
     grad_blue = "text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"
     grad_green = "text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700"
     grad_cyan = "text-white bg-gradient-to-r from-cyan-500 via-cyan-600 to-cyan-700"
@@ -215,6 +220,12 @@ class Bg(VEnum):
     grad_pink = "text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700"
     grad_purple = "text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700"
     #Duotone
+    primary_accent = "text-white bg-gradient-to-br from-primary-500 to-accent-500"
+    secondary_accent = "text-white bg-gradient-to-br from-secondary-500 to-accent-500"
+    accent_primary = "text-white bg-gradient-to-br from-accent-500 to-primary-500"
+    accent_secondary = "text-white bg-gradient-to-br from-accent-500 to-secondary-500"
+    primary_secondary = "text-white bg-gradient-to-br from-primary-500 to-secondary-500"
+    secondary_primary = "text-white bg-gradient-to-br from-secondary-500 to-primary-500"
     purple_blue = "text-white bg-gradient-to-br from-purple-600 to-blue-500"
     cyan_blue = "text-white bg-gradient-to-r from-cyan-500 to-blue-500"
     green_blue = "text-white bg-gradient-to-br from-green-400 to-blue-600"
@@ -250,7 +261,10 @@ class Shadow(VEnum):
 class BtnColor(VEnum):
     """Button style variants for Flowbite components"""
     # Base styles
-    primary = "bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700  text-white focus:ring-primary-300 dark:focus:ring-primary-800"
+    primary = "bg-primary-500 hover:bg-primary-400 dark:bg-primary-500 dark:hover:bg-primary-600  text-white focus:ring-primary-300 dark:focus:ring-primary-800"
+    secondary = "bg-secondary-500 hover:bg-secondary-400 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:focus:ring-secondary-800 text-white focus:ring-secondary-300"
+    accent = "bg-accent-400 hover:bg-accent-500 dark:bg-accent-500 dark:hover:bg-accent-600 dark:focus:ring-accent-800 text-white focus:ring-accent-300"
+    gray = "bg-gray-400 hover:bg-gray-500 dark:bg-gray-500 dark:hover:bg-gray-600 dark:focus:ring-gray-800 text-white focus:ring-gray-300"
     blue = "bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white focus:ring-blue-300"
     green = "bg-green-700 hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-white focus:ring-green-300"
     cyan = "bg-cyan-700 hover:bg-cyan-800 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800 text-white focus:ring-cyan-300"
@@ -262,6 +276,9 @@ class BtnColor(VEnum):
     purple = "bg-purple-700 hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-white focus:ring-purple-300"
     
     grad_primary = "text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800"
+    grad_secondary = "text-white bg-gradient-to-r from-secondary-500 via-secondary-600 to-secondary-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-secondary-300 dark:focus:ring-secondary-800"
+    grad_accent = "text-white bg-gradient-to-r from-accent-500 via-accent-600 to-accent-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-accent-300 dark:focus:ring-accent-800"
+    grad_gray = "text-white bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-gray-800"
     grad_blue = "text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
     grad_green = "text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800"
     grad_cyan = "text-white bg-gradient-to-r from-cyan-500 via-cyan-600 to-cyan-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800"
@@ -272,6 +289,13 @@ class BtnColor(VEnum):
     grad_pink = "text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800"
     grad_purple = "text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800"
     #Duotone
+    primary_accent = "text-white bg-gradient-to-br from-primary-500 to-accent-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800"
+    secondary_accent = "text-white bg-gradient-to-br from-secondary-500 to-accent-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-secondary-300 dark:focus:ring-secondary-800"
+    accent_primary = "text-white bg-gradient-to-br from-accent-500 to-primary-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-accent-300 dark:focus:ring-accent-800"
+    accent_secondary = "text-white bg-gradient-to-br from-accent-500 to-secondary-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-accent-300 dark:focus:ring-accent-800"
+    primary_secondary = "text-white bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800"
+    secondary_primary = "text-white bg-gradient-to-br from-secondary-500 to-primary-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-secondary-300 dark:focus:ring-secondary-800"
+
     purple_blue = "text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
     cyan_blue = "text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800"
     green_blue = "text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
@@ -281,6 +305,8 @@ class BtnColor(VEnum):
     red_yellow = "text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400"
 
     grad_shadow_primary = 'text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-800 shadow-lg shadow-primary-500/50 dark:shadow-lg dark:shadow-primary-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
+    grad_shadow_secondary = 'text-white bg-gradient-to-r from-secondary-500 via-secondary-600 to-secondary-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-secondary-300 dark:focus:ring-secondary-800 shadow-lg shadow-secondary-500/50 dark:shadow-lg dark:shadow-secondary-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
+    grad_shadow_accent = 'text-white bg-gradient-to-r from-accent-500 via-accent-600 to-accent-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-accent-300 dark:focus:ring-accent-800 shadow-lg shadow-accent-500/50 dark:shadow-lg dark:shadow-accent-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
     grad_shadow_blue = 'text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
     grad_shadow_green = 'text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
     grad_shadow_cyan = 'text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
@@ -299,6 +325,7 @@ class IconT(VEnum):
     nav = "me-2 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
     primary = "w-4 h-4 text-primary-700 dark:text-primary-500"
     secondary = "w-4 h-4 text-secondary-700 dark:text-secondary-500"
+    accent = "w-4 h-4 text-accent-700 dark:text-accent-500"
     success = "w-4 h-4 text-green-700 dark:text-green-500"
     warning = "w-4 h-4 text-yellow-700 dark:text-yellow-500"
     error = "w-4 h-4 text-red-700 dark:text-red-500"
@@ -314,7 +341,10 @@ class ButtonSize(VEnum):
     
 class ButtonOutline(VEnum):
     """Button outline variants"""
-    default = "border border-primary-700 hover:bg-primary-800 dark:border-primary-500 dark:hover:bg-primary-500 text-primary-700 hover:text-white dark:text-primary-500 dark:hover:text-white focus:ring-primary-300 dark:focus:ring-primary-800"
+    default = "border border-primary-500 hover:bg-primary-500 dark:border-primary-400 dark:hover:bg-primary-500 text-primary-600 hover:text-white dark:text-primary-500 dark:hover:text-white focus:ring-primary-300 dark:focus:ring-primary-800"
+    secondary = "border border-secondary-500 hover:bg-secondary-500 dark:border-secondary-400 dark:hover:bg-secondary-500 text-secondary-600 hover:text-white dark:text-secondary-500 dark:hover:text-white focus:ring-secondary-300 dark:focus:ring-secondary-800"
+    accent = "border border-accent-500 hover:bg-accent-500 dark:border-accent-400 dark:hover:bg-accent-500 text-accent-600 hover:text-white dark:text-accent-500 dark:hover:text-white focus:ring-accent-300 dark:focus:ring-accent-800"
+    gray = "border border-gray-500 hover:bg-gray-500 dark:border-gray-400 dark:hover:bg-gray-500 text-gray-500 hover:text-white dark:text-gray-500 dark:hover:text-white focus:ring-gray-300 dark:focus:ring-gray-800"
     dark = "border border-gray-800 hover:bg-gray-900 dark:border-gray-600 dark:hover:bg-gray-600 text-gray-900 hover:text-white dark:text-gray-400 dark:hover:text-white focus:ring-gray-300 dark:focus:ring-gray-800"
     green = "border border-green-700 hover:bg-green-800 dark:border-green-500 dark:hover:bg-green-600 text-green-700 hover:text-white dark:text-green-500 dark:hover:text-white focus:ring-green-300 dark:focus:ring-green-800"
     red = "border border-red-700 hover:bg-red-800 dark:border-red-500 dark:hover:bg-red-600 text-red-700 hover:text-white dark:text-red-500 dark:hover:text-white focus:ring-red-300 dark:focus:ring-red-900"
@@ -324,8 +354,10 @@ class ButtonOutline(VEnum):
 class ButtonT(VEnum):
     """Button type variants"""
     primary = BtnColor.primary.value
-    secondary = stringify(("bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 text-gray-900 focus:ring-gray-200 dark:focus:ring-gray-700", Border.default))
-    ghost = "hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
+    secondary = BtnColor.secondary.value
+    accent = BtnColor.accent.value
+    gray = BtnColor.gray.value
+    ghost = "hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700 cursor-pointer"
     link = "dark:text-white cursor-pointer"
     success = BtnColor.green.value   
     warning = BtnColor.yellow.value

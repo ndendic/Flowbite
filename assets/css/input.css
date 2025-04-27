@@ -43,6 +43,32 @@ html.dark .dark\:text-white {
     --color-primary-800: #9f1239;
     --color-primary-900: #881337;
     --color-primary-950: #4c0519;    
+
+      
+    --color-secondary-50: #e5ffff;
+    --color-secondary-100: #ccfffe;
+    --color-secondary-200: #99fffd;
+    --color-secondary-300: #66fffc;
+    --color-secondary-400: #33fffc;
+    --color-secondary-500: #00fffb;
+    --color-secondary-600: #00ccc9;
+    --color-secondary-700: #009996;
+    --color-secondary-800: #006664;
+    --color-secondary-900: #003332;
+    --color-secondary-950: #001a19;
+
+    --color-accent-50: #fffce5;
+    --color-accent-100: #fff9cc;
+    --color-accent-200: #fff399;
+    --color-accent-300: #ffed66;
+    --color-accent-400: #ffe733;
+    --color-accent-500: #ffe100;
+    --color-accent-600: #ccb400;
+    --color-accent-700: #998700;
+    --color-accent-800: #665a00;
+    --color-accent-900: #332d00;
+    --color-accent-950: #1a1700;
+
     --font-sans: 'Raveo', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
     --font-body: 'Raveo', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple color-gray Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto color-gray Emoji';
     --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
@@ -51,18 +77,67 @@ html.dark .dark\:text-white {
 @layer base {
   /* Simple approach: transition only on html element for theme changes */
 
-  [data-theme='retro'] {
-    --color-primary-50: #eff5ff;
-    --color-primary-100: #dbe8fe;
-    --color-primary-200: #bfd8fe;
-    --color-primary-300: #93c0fd;
-    --color-primary-400: #619ef9;
-    --color-primary-500: #3c79f5;
-    --color-primary-600: #265aea;
-    --color-primary-700: #1e45d7;
-    --color-primary-800: #203cb6;
-    --color-primary-900: #1e358a;
-    --color-primary-950: #172254;
+  :root[data-theme="retro"] {
+    --text-50: #eff2f6;
+    --text-100: #dfe5ec;
+    --text-200: #becbda;
+    --text-300: #9eb0c7;
+    --text-400: #7d96b5;
+    --text-500: #5d7ca2;
+    --text-600: #4a6382;
+    --text-700: #384a61;
+    --text-800: #253241;
+    --text-900: #131920;
+    --text-950: #090c10;
+  
+    --color-gray-50: #f2f2f2;
+    --color-gray-100: #e6e6e6;
+    --color-gray-200: #cccccc;
+    --color-gray-300: #b3b3b3;
+    --color-gray-400: #999999;
+    --color-gray-500: #808080;
+    --color-gray-600: #666666;
+    --color-gray-700: #4d4d4d;
+    --color-gray-800: #333333;
+    --color-gray-900: #1a1a1a;
+    --color-gray-950: #0d0d0d;
+  
+    --color-primary-50: #ffe6e6;
+    --color-primary-100: #ffcccc;
+    --color-primary-200: #fe9a9a;
+    --color-primary-300: #fe6767;
+    --color-primary-400: #fe3434;
+    --color-primary-500: #fe0101;
+    --color-primary-600: #cb0101;
+    --color-primary-700: #980101;
+    --color-primary-800: #650101;
+    --color-primary-900: #330000;
+    --color-primary-950: #190000;
+  
+    --color-secondary-50: #eaf9fb;
+    --color-secondary-100: #d5f2f6;
+    --color-secondary-200: #aae6ee;
+    --color-secondary-300: #80d9e5;
+    --color-secondary-400: #56cddc;
+    --color-secondary-500: #2bc0d4;
+    --color-secondary-600: #239aa9;
+    --color-secondary-700: #1a737f;
+    --color-secondary-800: #114d55;
+    --color-secondary-900: #09262a;
+    --color-secondary-950: #041315;
+  
+    --color-accent-50: #fff9e6;
+    --color-accent-100: #fff2cc;
+    --color-accent-200: #fee59a;
+    --color-accent-300: #fed867;
+    --color-accent-400: #fecb34;
+    --color-accent-500: #febf01;
+    --color-accent-600: #cb9801;
+    --color-accent-700: #987201;
+    --color-accent-800: #654c01;
+    --color-accent-900: #332600;
+    --color-accent-950: #191300;
+  
   }
 
   [data-theme='emerald'] {

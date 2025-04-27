@@ -181,7 +181,3 @@ def AccordionItem(heading: Union[str, FT],
         id=heading_id,
         cls=final_heading_cls
     )
-
-# Placeholder for AccordionItem - we'll implement this next
-# class AccordionItem(...): ...
-# def AccordionItem(...): ... 

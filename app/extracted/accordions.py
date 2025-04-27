@@ -151,7 +151,7 @@ component = Div(
             cls='hidden'
         ),
         id='accordion-collapse',
-        data_accordion='collapse'
+        data_accordion='collapse',
     )
 ), code="""Div(
     Div(
