@@ -13,7 +13,7 @@ from .base import *
 from .base_styles import *
 # We might need fasthtml.svg later for the icon
 from fasthtml.svg import * # Added for potential icon use
-from typing import Dict, Any, Union # Added for typing
+from typing import Dict, Any, Union, Callable # Added for typing
 
 # %% ../../nbs/XX_accordion.ipynb 2
 class AccordionType(VEnum):
@@ -22,41 +22,48 @@ class AccordionType(VEnum):
     open = "open"
 
 # %% ../../nbs/XX_accordion.ipynb 3
+# Default classes for Accordion container's data attributes
+class AccordionContainerT(VEnum):
+    active = 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white'
+    inactive = 'text-gray-500 dark:text-gray-400'
+    active_flush = 'bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white'
+    inactive_flush = 'text-gray-500 dark:text-gray-400'
+
 def Accordion(*c: Union[str, FT],
               id: str = None,
               type: AccordionType|str = AccordionType.collapse,
-              active_classes: str = 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
-              inactive_classes: str = 'text-gray-500 dark:text-gray-400',
               flush: bool = False,
+              active_classes: str = None, # Now optional, defaults handled below
+              inactive_classes: str = None, # Now optional, defaults handled below
               cls: Enum|str|tuple=(),
               **kwargs) -> FT:
     """
-    Main Accordion component wrapper.
+    Container for AccordionItems. Manages overall behavior and styling.
 
     Args:
-        *c: AccordionItem components.
+        *c: Child elements, typically AccordionItems.
         id: Unique ID for the accordion container.
-        type: Controls accordion behavior ('collapse' or 'open').
-        active_classes: Tailwind classes for the active accordion trigger. Defaults based on Flowbite examples.
-        inactive_classes: Tailwind classes for the inactive accordion trigger. Defaults based on Flowbite examples.
-        flush: If True, applies flush styling (removes background/borders) by adjusting active/inactive classes.
-        cls: Additional CSS classes for the container.
-        **kwargs: Additional HTML attributes for the container.
+        type: Behavior type ('collapse' or 'open').
+        flush: If True, applies flush styling defaults for active/inactive classes.
+        active_classes: Custom classes applied to the *trigger* of the active AccordionItem.
+                        Overrides defaults. Use Flowbite's data attributes.
+        inactive_classes: Custom classes applied to the *trigger* of inactive AccordionItems.
+                          Overrides defaults. Use Flowbite's data attributes.
+        cls: Additional classes for the main accordion container Div.
+        **kwargs: Additional HTML attributes for the container Div.
     """
-    # Default classes based on Flowbite examples (non-flush)
-    final_active_classes = active_classes
-    final_inactive_classes = inactive_classes
 
-    # Apply specific classes if flush=True, overriding defaults/passed values if necessary for flush style
-    if flush:
-        final_active_classes = 'bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white'
-        final_inactive_classes = 'text-gray-500 dark:text-gray-400'
+    # Determine default active/inactive classes based on flush
+    default_active = AccordionContainerT.active_flush if flush else AccordionContainerT.active
+    default_inactive = AccordionContainerT.inactive_flush if flush else AccordionContainerT.inactive
 
-    # Combine custom classes
+    # Use provided classes or defaults
+    final_active_classes = active_classes if active_classes is not None else default_active
+    final_inactive_classes = inactive_classes if inactive_classes is not None else default_inactive
+
     container_cls = stringify(cls)
 
-    # The data-active/inactive-classes attributes are used by Flowbite's JS to style the trigger (Button)
-    # within the AccordionItem, not the main container itself.
+    # Pass final active/inactive classes via data attributes for Flowbite JS
     return fh.Div(*c,
                   id=fh.unqid() if id is None else id,
                   data_accordion=stringify(type),
@@ -65,33 +72,74 @@ def Accordion(*c: Union[str, FT],
                   cls=container_cls,
                   **kwargs)
 
+
 # %% ../../nbs/XX_accordion.ipynb 4
+# Default class strings for AccordionItem sub-components
+class AccordionItemT(VEnum):
+    trigger_base = 'flex items-center justify-between w-full font-medium rtl:text-right gap-3'
+    trigger_non_flush = 'p-5 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'
+    trigger_flush = 'py-5 border-b border-gray-200 dark:border-gray-700'
+    icon_base = 'w-3 h-3 shrink-0'
+    icon_open = 'rotate-180'
+    body_wrapper_base = ''
+    body_wrapper_hidden = 'hidden'
+    body_inner_non_flush = 'p-5 border border-gray-200 dark:border-gray-700'
+    body_inner_flush = 'py-5 border-b border-gray-200 dark:border-gray-700'
+
+class AccordionIconPosition(VEnum): # Added for potential future use or clarity
+    DEFAULT = 'default' # Standard icon position (typically end)
+
 def AccordionItem(heading: Union[str, FT],
-                  *body: Union[str, FT], # Changed to *body for flexibility
+                  *body: Union[str, FT],
                   item_id: str = None,
                   open: bool = False,
-                  icon: bool = True,
-                  flush: bool = False, # Pass flush explicitly
-                  heading_cls: Enum|str|tuple=(),
-                  trigger_cls: Enum|str|tuple=(),
-                  body_cls: Enum|str|tuple=(),
-                  body_wrapper_cls: Enum|str|tuple=(), # Class for the outer body div
-                  trigger_kwargs: Dict[str, Any]={},
-                  body_kwargs: Dict[str, Any]={}) -> FT:
+                  icon: Union[bool, FT, Callable] = True, # Allow bool, custom FT, or generator
+                  flush: bool = False,
+                  # --- Component Specific Classes ---
+                  heading_cls: Enum|str|tuple = (),
+                  # Trigger (Button) Classes
+                  trigger_base_cls: str = AccordionItemT.trigger_base,
+                  trigger_style_cls: str = None, # Overrides non-flush/flush defaults
+                  trigger_add_cls: Enum|str|tuple = (), # User additional classes
+                  # Icon Classes/Element
+                  icon_base_cls: str = AccordionItemT.icon_base,
+                  icon_open_cls: str = AccordionItemT.icon_open, # Class added when open
+                  icon_add_cls: Enum|str|tuple = (), # User additional classes for default icon
+                  # Body Wrapper Classes (Outer div, toggles visibility)
+                  body_wrapper_base_cls: str = AccordionItemT.body_wrapper_base,
+                  body_wrapper_hidden_cls: str = AccordionItemT.body_wrapper_hidden,
+                  body_wrapper_add_cls: Enum|str|tuple = (), # User additional classes
+                  # Body Inner Classes (Inner div, holds content, padding, border)
+                  body_inner_style_cls: str = None, # Overrides non-flush/flush defaults
+                  body_inner_add_cls: Enum|str|tuple = (), # User additional classes
+                  # --- Kwargs ---
+                  trigger_kwargs: Dict[str, Any] = {},
+                  body_kwargs: Dict[str, Any] = {}) -> FT:
     """
     Represents a single item within an Accordion.
 
     Args:
         heading: Content for the trigger button (usually text or simple HTML).
         *body: Content for the collapsible body section.
-        item_id: A unique string identifier for this item (used to generate element IDs).
-        open: If True, the item will be open by default.
-        icon: If True, includes the default chevron icon.
-        flush: If True, applies flush styling (modifies borders/padding).
-        heading_cls: Additional CSS classes for the H2 heading element.
-        trigger_cls: Additional CSS classes for the Button trigger element.
-        body_cls: Additional CSS classes for the inner Div containing the body content.
-        body_wrapper_cls: Additional CSS classes for the outer Div wrapping the body content.
+        item_id: Unique string identifier for this item (generates element IDs).
+        open: If True, the item is open by default.
+        icon: If True, includes default chevron icon. If False, no icon.
+              Can also be a custom FT element or a callable `lambda open: FT` returning an icon based on state.
+        flush: If True, applies flush styling defaults. MUST match parent Accordion flush value.
+        heading_cls: Classes for the H2 heading element wrapper.
+        trigger_base_cls: Base classes for the trigger Button (layout, font).
+        trigger_style_cls: Specific style classes (padding, border, bg, focus) for the trigger.
+                           Overrides default non-flush/flush styles if provided.
+        trigger_add_cls: Additional classes appended to the trigger Button.
+        icon_base_cls: Base classes for the default icon (size, shrink).
+        icon_open_cls: Class added to the default icon when the item is open (e.g., 'rotate-180').
+        icon_add_cls: Additional classes appended to the default icon Svg.
+        body_wrapper_base_cls: Base classes for the outer body Div (visibility controlled by 'hidden').
+        body_wrapper_hidden_cls: Class used to hide the body wrapper when closed (default: 'hidden').
+        body_wrapper_add_cls: Additional classes appended to the outer body Div.
+        body_inner_style_cls: Specific style classes (padding, border) for the inner body Div.
+                               Overrides default non-flush/flush styles if provided.
+        body_inner_add_cls: Additional classes appended to the inner body Div.
         trigger_kwargs: Additional HTML attributes for the trigger Button.
         body_kwargs: Additional HTML attributes for the inner body Div.
     """
@@ -101,23 +149,19 @@ def AccordionItem(heading: Union[str, FT],
     aria_expanded = 'true' if open else 'false'
 
     # --- Trigger Button Styling ---
-    base_trigger_cls = 'flex items-center justify-between w-full font-medium rtl:text-right gap-3'
-    # Note: Colors are typically applied via data-active-classes/data-inactive-classes on the parent Accordion
-    non_flush_trigger_cls = 'p-5 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'
-    flush_trigger_cls = 'py-5 border-b border-gray-200 dark:border-gray-700'
-
-    final_trigger_cls = [base_trigger_cls]
-    if flush:
-        final_trigger_cls.append(flush_trigger_cls)
-    else:
-        final_trigger_cls.append(non_flush_trigger_cls)
-    final_trigger_cls.append(stringify(trigger_cls))
+    # Determine default style class based on flush, unless overridden
+    default_trigger_style = AccordionItemT.trigger_flush if flush else AccordionItemT.trigger_non_flush
+    final_trigger_style = trigger_style_cls if trigger_style_cls is not None else default_trigger_style
+    # Combine base, style (default or overridden), and additional user classes
+    final_trigger_cls = stringify((trigger_base_cls, final_trigger_style, trigger_add_cls))
 
     # --- Icon ---
     icon_el = ()
-    if icon:
-        # Initial rotation applied if open=True, Flowbite JS handles subsequent toggles via data-accordion-icon
-        icon_cls = 'w-3 h-3 shrink-0' + (' rotate-180' if open else '')
+    if isinstance(icon, bool) and icon:
+        # Default Icon generation
+        current_icon_cls = [icon_base_cls]
+        if open: current_icon_cls.append(icon_open_cls) # Apply open class if initially open
+        current_icon_cls.append(stringify(icon_add_cls))
         icon_el = (Svg(
                         Path(stroke='currentColor', stroke_linecap='round', stroke_linejoin='round', stroke_width='2', d='M9 5 5 1 1 5'),
                         data_accordion_icon=True, # Tells Flowbite JS to handle rotation
@@ -125,56 +169,53 @@ def AccordionItem(heading: Union[str, FT],
                         xmlns='http://www.w3.org/2000/svg',
                         fill='none',
                         viewbox='0 0 10 6',
-                        cls=icon_cls
+                        cls=stringify(current_icon_cls)
                     ),)
+    elif not isinstance(icon, bool): # Custom FT or callable
+        if callable(icon):
+            icon_el = (icon(open),) # Pass open state to callable
+        else:
+            icon_el = (icon,) # Use provided FT element directly
 
     # --- Body Styling ---
-    # Outer wrapper controls visibility (hidden/block)
-    body_wrapper_classes = [] if open else ['hidden']
-    body_wrapper_classes.append(stringify(body_wrapper_cls))
+    # Outer wrapper controls visibility
+    body_wrapper_classes = [body_wrapper_base_cls]
+    if not open: body_wrapper_classes.append(body_wrapper_hidden_cls)
+    body_wrapper_classes.append(stringify(body_wrapper_add_cls))
+    final_body_wrapper_cls = stringify(body_wrapper_classes)
 
     # Inner div contains content and padding/borders
-    base_body_cls = ''
-    # Simplified border handling - applies border-b always. Fine-tuning (like removing last border) might need CSS :last-child or manual class adjustment on the last item.
-    non_flush_body_cls = 'p-5 border border-b-0 border-gray-200 dark:border-gray-700'
-    flush_body_cls = 'py-5 border-b border-gray-200 dark:border-gray-700'
-
-    if flush:
-        base_body_cls = flush_body_cls
-    else:
-        base_body_cls = non_flush_body_cls
-    final_body_cls = stringify((base_body_cls, body_cls))
+    default_body_inner_style = AccordionItemT.body_inner_flush if flush else AccordionItemT.body_inner_non_flush
+    final_body_inner_style = body_inner_style_cls if body_inner_style_cls is not None else default_body_inner_style
+    final_body_inner_cls = stringify((final_body_inner_style, body_inner_add_cls))
 
 
     # --- Structure ---
     trigger_button = fh.Button(
-        fh.Span(heading), # Heading text/content inside a Span
-        *icon_el, # Add the icon tuple if present
+        fh.Span(heading),
+        *icon_el,
         type='button',
         data_accordion_target=f"#{body_id}",
         aria_expanded=aria_expanded,
         aria_controls=body_id,
-        cls=final_trigger_cls,
+        cls=final_trigger_cls, # Use combined classes
         **trigger_kwargs
     )
 
     body_content = fh.Div(
-        *body, # Body content elements
-        cls=final_body_cls,
+        *body,
+        cls=final_body_inner_cls, # Use combined classes
         **body_kwargs
     )
 
-    # The outer body div that Flowbite JS toggles
     body_wrapper = fh.Div(
         body_content,
         id=body_id,
         aria_labelledby=heading_id,
-        cls=body_wrapper_classes,
+        cls=final_body_wrapper_cls, # Use combined classes
     )
 
-    # Using H2 wrapper based on Flowbite examples
     final_heading_cls = stringify(heading_cls)
-    # Flowbite's HTML structure puts the body_wrapper *inside* the H2, after the button.
     return fh.H2(
         trigger_button,
         body_wrapper,
